@@ -87,69 +87,177 @@
 						</ul>
 				
 						<span class="level-two">Developer technologies</span>
-				<details class="div-level-two">
-				<summary class="level-three">64-bit architecture</summary>
-				<p>Mac OS X Tiger added limited support for 64-bit applications on machines with 64-bit processors; Leopard extended the support for 64-bit applications to include applications using most of Mac OS X's libraries and frameworks.</p>
-				<p>In Snow Leopard, most built-in applications have been rebuilt to use the 64-bit x86-64 architecture (excluding iTunes, Front Row, Grapher and DVD Player applications). They will run in 32-bit mode on machines with 32-bit processors, and in 64-bit mode on machines with 64-bit processors.</p>
+						<details class="div-level-two">
+								<summary class="level-three">64-bit architecture</summary>
+								<p>Mac OS X Tiger added limited support for 64-bit applications on machines with 64-bit processors; Leopard extended the support for 64-bit applications to include applications using most of Mac OS X's libraries and frameworks.</p>
+								<p>In Snow Leopard, most built-in applications have been rebuilt to use the 64-bit x86-64 architecture (excluding iTunes, Front Row, Grapher and DVD Player applications). They will run in 32-bit mode on machines with 32-bit processors, and in 64-bit mode on machines with 64-bit processors.</p>
 
-				<p>In addition, the Mac OS X kernel has been rebuilt to run in 64-bit mode on some machines. On those machines, Snow Leopard supports up to 16 terabytes of RAM. Newer Xserve and Mac Pro machines will run a 64-bit kernel by default; newer iMac and MacBook Pro machines can run a 64-bit kernel, but will not do so by default. Users wishing to use the 64-bit kernel on those machines must hold down the numbers 6 and 4 on the keyboard while booting to get the 64-bit kernel to load. A change to the com.apple.Boot.plist will also enable users with compatible computers to permanently boot into 64-bit for those wishing to do so.</p>
+								<p>In addition, the Mac OS X kernel has been rebuilt to run in 64-bit mode on some machines. On those machines, Snow Leopard supports up to 16 terabytes of RAM. Newer Xserve and Mac Pro machines will run a 64-bit kernel by default; newer iMac and MacBook Pro machines can run a 64-bit kernel, but will not do so by default. Users wishing to use the 64-bit kernel on those machines must hold down the numbers 6 and 4 on the keyboard while booting to get the 64-bit kernel to load. A change to the com.apple.Boot.plist will also enable users with compatible computers to permanently boot into 64-bit for those wishing to do so.</p>
 
-				<p>Stuart Harris, software product marketing manager at Apple Australia, said, "For the most part, everything that they experience on the Mac, from the 64-bit point of view, the applications, the operating system, is all going to be 64-bit, but that at this stage there were very few things, such as device drivers, that required 64-bit mode at the kernel level".</p>
+								<p>Stuart Harris, software product marketing manager at Apple Australia, said, "For the most part, everything that they experience on the Mac, from the 64-bit point of view, the applications, the operating system, is all going to be 64-bit, but that at this stage there were very few things, such as device drivers, that required 64-bit mode at the kernel level".</p>
+								</details>
+						<details class="div-level-two">
+								<summary class="level-three">Grand Central Dispatch</summary>
+								<p>Grand Central Dispatch (GCD) uses the multiple processor cores now in every new Macintosh for more efficient performance. Due to the complexity of multithreaded programming and technical difficulties traditionally involved in making applications optimized for multicore CPUs, the majority of computer applications do not effectively use multiple processor cores. As a result, additional processing power, compared to single-core machines, often goes unused. Grand Central Dispatch includes APIs to help programmers efficiently use these cores for parallel programming.</p>
+
+								<p>Grand Central Dispatch abstracts the notion of threads away, and instead provides developers with the concept of queues—lists of jobs (blocks of code) that need to be executed. GCD takes the responsibility of distributing the jobs among actual threads and cores, and clearing up unused memory created by inactive or old threads to achieve maximum performance. Apple is also releasing APIs for Grand Central Dispatch for developers to use in their applications and also to analyze specific blocks of code running on Grand Central Dispatch.</p>
+
+								<p>A new C and Objective-C language feature named "Blocks" facilitates creation of code that will easily optimize to take advantage of Grand Central Dispatch.</p>
+						</details>
+						<details class="div-level-two">
+								<summary class="level-three">OpenCL</summary>
+								<p>OpenCL (Open Computing Language) addresses the power of graphics processing units (GPUs) to leverage them in any application, and not just for graphics-intensive applications like 3D games. OpenCL automatically optimizes for the kind of graphics processor in the Mac, adjusting itself to the available processing power. OpenCL provides consistent numeric precision and accuracy, fixing a problem that has hampered GPU-based programming in the past.</p>
+
+								<p>OpenCL includes a C-based programming language with a structure that is already familiar to Mac OS X programmers, who can use Xcode developer tools to adapt their programs to work with OpenCL. Only the most process intensive parts of the application need to be written in OpenCL C without affecting the rest of the code. OpenCL is an open standard that has been supported by AMD, Intel, and Nvidia; it is maintained by Khronos Group.</p>
+
+								<p>It serves a similar purpose to Nvidia's C for CUDA and Microsoft's Direct3D 11 compute shaders.</p>
+
+								<p>It only works with the following Mac GPUs: NVIDIA GeForce 320M, GT 330M, 9400M, 9600M GT, 8600M GT, GT 120, GT 130, GTX 285, 8800 GT, 8800 GS, Quadro FX 4800, FX 5600 and ATI Radeon HD 4670, HD 4850, HD 4870, HD 5670, HD 5750, HD 5770, HD 5870, HD 6490M, HD 6750M, HD 6770M, HD 6970M. If the system does not possess one of these compatible GPUs, OpenCL code will instead execute on the system's CPU.</p>
+						</details>
+						<details class="div-level-two">
+								<summary class="level-three">CUPS</summary>
+								<p>CUPS (the printing system used in many Unix-like operating systems) has been updated to version 1.4 which provides improved driver, networking, and Kerberos support along with performance improvements. CUPS 1.4 is also the first implementation of the Internet Printing Protocol version 2.1.</p>
+						</details>
+						<details class="div-level-two">
+								<summary class="level-three">Power management</summary>
+								<p>Power management has been improved, with implementation of a new wake on demand feature supported on more recent Macintosh hardware. Wake on demand takes advantage of the sleep proxy service implemented in AirPort and Time Capsule routers, so that the computer can sleep while the router responds to mDNS queries. Should the request require the host computer to wake up, the router sends the necessary special wake-up-packet to the sleeping computer.</p>
+						</details>
 				</details>
-				<details class="div-level-two">
-				<summary class="level-three">Grand Central Dispatch</summary>
-				<p>Grand Central Dispatch (GCD) uses the multiple processor cores now in every new Macintosh for more efficient performance. Due to the complexity of multithreaded programming and technical difficulties traditionally involved in making applications optimized for multicore CPUs, the majority of computer applications do not effectively use multiple processor cores. As a result, additional processing power, compared to single-core machines, often goes unused. Grand Central Dispatch includes APIs to help programmers efficiently use these cores for parallel programming.</p>
-
-				<p>Grand Central Dispatch abstracts the notion of threads away, and instead provides developers with the concept of queues—lists of jobs (blocks of code) that need to be executed. GCD takes the responsibility of distributing the jobs among actual threads and cores, and clearing up unused memory created by inactive or old threads to achieve maximum performance. Apple is also releasing APIs for Grand Central Dispatch for developers to use in their applications and also to analyze specific blocks of code running on Grand Central Dispatch.</p>
-
-				<p>A new C and Objective-C language feature named "Blocks" facilitates creation of code that will easily optimize to take advantage of Grand Central Dispatch.</p>
-				</details>
-				<details class="div-level-two">
-				<summary class="level-three">OpenCL</summary>
-				<p>OpenCL (Open Computing Language) addresses the power of graphics processing units (GPUs) to leverage them in any application, and not just for graphics-intensive applications like 3D games. OpenCL automatically optimizes for the kind of graphics processor in the Mac, adjusting itself to the available processing power. OpenCL provides consistent numeric precision and accuracy, fixing a problem that has hampered GPU-based programming in the past.</p>
-
-				<p>OpenCL includes a C-based programming language with a structure that is already familiar to Mac OS X programmers, who can use Xcode developer tools to adapt their programs to work with OpenCL. Only the most process intensive parts of the application need to be written in OpenCL C without affecting the rest of the code. OpenCL is an open standard that has been supported by AMD, Intel, and Nvidia; it is maintained by Khronos Group.</p>
-
-				<p>It serves a similar purpose to Nvidia's C for CUDA and Microsoft's Direct3D 11 compute shaders.</p>
-
-				<p>It only works with the following Mac GPUs: NVIDIA GeForce 320M, GT 330M, 9400M, 9600M GT, 8600M GT, GT 120, GT 130, GTX 285, 8800 GT, 8800 GS, Quadro FX 4800, FX 5600 and ATI Radeon HD 4670, HD 4850, HD 4870, HD 5670, HD 5750, HD 5770, HD 5870, HD 6490M, HD 6750M, HD 6770M, HD 6970M. If the system does not possess one of these compatible GPUs, OpenCL code will instead execute on the system's CPU.</p>
-				</details>
-				<details class="div-level-two">
-				<summary class="level-three">CUPS</summary>
-				<p>CUPS (the printing system used in many Unix-like operating systems) has been updated to version 1.4 which provides improved driver, networking, and Kerberos support along with performance improvements. CUPS 1.4 is also the first implementation of the Internet Printing Protocol version 2.1.</p>
-				</details>
-				<details class="div-level-two">
-				<summary class="level-three">Power management</summary>
-				<p>Power management has been improved, with implementation of a new wake on demand feature supported on more recent Macintosh hardware. Wake on demand takes advantage of the sleep proxy service implemented in AirPort and Time Capsule routers, so that the computer can sleep while the router responds to mDNS queries. Should the request require the host computer to wake up, the router sends the necessary special wake-up-packet to the sleeping computer.</p>
-				</details>
-				</details>
-				<details>
-				<summary class="level-one">User Interface</summary>
-				<p>While the Finder was completely rewritten in Cocoa, it did not receive a major user interface overhaul. Instead, the interface has been modified in several areas to promote ease of use. These changes include:</p>
-				<ul>
-				<li>The "traffic light" titlebar controls are now slightly lighter in appearance and have less depth than they did in Mac OS X 10.5.</li>
-				<li>Exposé can now display windows for a single program by left clicking and holding its icon in the dock. Windows are arranged in a new grid pattern.</li>
-				<li>Contextual menus which come out of Dock icons now have more options and have a new look, with a semi-transparent charcoal background and white text.</li>
-				<li>An option has been added to the Finder preferences that allows the user to modify search behavior. The default setting can be selected to (1) search the entire computer, (2) search only the current folder from which the search was initiated, or (3) perform the search based on the previously used scope.</li>
-				<li>Dock Stacks, when viewed as a grid, allow viewing of a subfolder as a new stack, rather than launching a Finder window, in a manner similar to "tunnelling". When viewed as grids or lists, scroll-bars are provided to navigate folders with more items than the current screen resolution will accommodate, as the program does not scale the icons to show as many as possible the way it did in OS X 10.5.</li>
-				<li>The default gamma has been changed from 1.8 to 2.2 to better serve the color needs of digital content producers and consumers.</li>
-				<li>Windows can now be minimized directly onto their application's icon in the dock.</li>
-				<li>Faster PDF and JPEG icon refreshes.</li>
-				<li>When searching for a network, the AirPort menu-bar icon animates until it finds a network and shows network strength of available networks in the drop down menu.</li>
-				<li>Prefixes for bytes are now used in strictly decimal meaning (as opposed to their binary meaning) when describing disk space, such that an indicated file size of 1 MB corresponds to 1 million bytes, as commonly used by hard disk manufacturers.</li>
-				<li>Snow Leopard shuts down and goes to sleep faster.</li>
-				<li>New wallpapers</li>
-				<li>As with most upgrades of Mac OS X, new wallpapers are available. There are new wallpapers in the Nature (two of which are of snow leopards), Plants and Black and White sub-folders under the Apple folder. Furthermore, there are new Apple wallpaper sub-folders with multiple wallpapers:</li>
-				<ul>
-				<li>Art: Dancer on the Stage, Nighthawks, Poppies Blooming, A Sunday Afternoon on the Island of La Grande Jatte, Suprematism, The Great Wave off Kanagawa, and Water Lilies.</li>
-				<li>Patterns: Pinstripe and Saree.</li>
-				<li>New solid colors can be used as wallpapers as well. There is a new blue and gray, as well as a solid kelp which serves as the "green wallpaper." The default "space nebula" wallpaper has been updated as well.</li>
-				</ul>
-				</ul>
 				
-				<figure class="UI-Screenshots">
-						<img src="../Images/UI/Mac_OS_X_Leopard.jpg" alt="A screenshot of Mac OS X Leopard." loading="lazy" class="UI-Screenshots" style="width: 60vw; height: 48vw;">
-						<figcaption>A screenshot of Mac OS X Tiger's user interface. Note that the Apple logo on the menu bar has been changed to one with a less glossy appearance.</figcaption>
+				<details>
+				<summary class="level-one">Release History</summary>
+				<table>
+						<tbody>
+								<tr>
+										<th>Version</th>
+										<th>Build</th>
+										<th>Date</th>
+										<th style="width: 76px;">Darwin Version</th>
+										<th>Notes</th>
+								</tr>
+								<tr>
+										<td style="text-align: center;" rowspan="2">10.6</td>
+										<td>10A432</td>
+										<td rowspan="2">August 28, 2009</td>
+										<td rowspan="2">10.0</td>
+										<td>Original retail DVD release</td>
+								</tr>
+								<tr>
+										<td>10A433</td>
+										<td>Server edition; Original retail DVD release</td>
+								</tr>
+								<tr>
+										<td style="text-align: center;">10.6.1</td>
+										<td>10B504</td>
+										<td>September 10, 2009</td>
+										<td>10.1</td>
+										<td>About the Mac OS X v10.6.1 Update</td>
+								</tr>
+								<tr>
+										<td style="text-align: center;">10.6.2</td>
+										<td>10C540</td>
+										<td>November 9, 2009</td>
+										<td>10.2</td>
+										<td>About the Mac OS X v10.6.2 Update</td>
+								</tr>
+								<tr>
+										<td style="text-align: center;" rowspan="3">10.6.3</td>
+										<td>10D573</td>
+										<td>March 29, 2010</td>
+										<td rowspan="3">10.3</td>
+										<td>About the Mac OS X v10.6.3 Update</td>
+								</tr>
+								<tr>
+										<td>10D575</td>
+										<td>April 1, 2010</td>
+										<td>Second retail DVD release</td>
+										<td style="vertical-align: middle; text-align: center;">—</td>
+								</tr>
+								<tr>
+								<td>10D578</td>
+								<td>April 13, 2010</td>
+								<td>About the Mac OS X v10.6.3 Update; v1.1</td>
+								</tr>
+								<tr>
+										<td style="text-align: center;">10.6.4</td>
+										<td>10F569</td>
+										<td>June 15, 2010</td>
+										<td>10.4</td>
+										<td>About the Mac OS X v10.6.4 Update</td>
+								</tr>
+								<tr>
+										<td style="text-align: center;">10.6.5</td>
+										<td>10H574</td>
+										<td>November 10, 2010</td>
+										<td>10.5</td>
+										<td>About the Mac OS X v10.6.5 Update</td>
+								</tr>
+								<tr>
+										<td style="text-align: center;">10.6.6</td>
+										<td>10J567</td>
+										<td>January 6, 2011</td>
+										<td>10.6</td>
+										<td>About the Mac OS X v10.6.6 Update</td>
+								</tr>
+								<tr>
+										<td style="text-align: center;" rowspan="3">10.6.7</td>
+										<td>10J869</td>
+										<td rowspan="2">March 21, 2011</td>
+										<td rowspan="3">10.7</td>
+										<td>About the Mac OS X v10.6.7 Update</td>
+								</tr>
+								<tr>
+										<td>10J3250</td>
+										<td>For the early 2011 Macbook Pro</td>
+										</tr>
+										<tr>
+										<td>10J4138</td>
+										<td>May 4, 2011</td>
+										<td>For the mid 2011 iMac 21.5"</td>
+								</tr>
+								<tr>
+										<td style="text-align: center;" rowspan="2">10.6.8</td>
+										<td>10K540</td>
+										<td>June 23, 2011</td>
+										<td rowspan="2">10.8</td>
+										<td>About the Mac OS X v10.6.8 Update</td>
+								</tr>
+								<tr>
+										<td>10K549</td>
+										<td>July 25, 2011</td>
+										<td>About the Mac OS X v10.6.8 Update; v1.1</td>
+								</tr>
+						</tbody>
+						</table>
+				</details>
+				
+				<details>
+						<summary class="level-one">User Interface</summary>
+						<p>While the Finder was completely rewritten in Cocoa, it did not receive a major user interface overhaul. Instead, the interface has been modified in several areas to promote ease of use. These changes include:</p>
+						<ul>
+								<li>The "traffic light" titlebar controls are now slightly lighter in appearance and have less depth than they did in Mac OS X 10.5.</li>
+								<li>Exposé can now display windows for a single program by left clicking and holding its icon in the dock. Windows are arranged in a new grid pattern.</li>
+								<li>Contextual menus which come out of Dock icons now have more options and have a new look, with a semi-transparent charcoal background and white text.</li>
+								<li>An option has been added to the Finder preferences that allows the user to modify search behavior. The default setting can be selected to (1) search the entire computer, (2) search only the current folder from which the search was initiated, or (3) perform the search based on the previously used scope.</li>
+								<li>Dock Stacks, when viewed as a grid, allow viewing of a subfolder as a new stack, rather than launching a Finder window, in a manner similar to "tunnelling". When viewed as grids or lists, scroll-bars are provided to navigate folders with more items than the current screen resolution will accommodate, as the program does not scale the icons to show as many as possible the way it did in OS X 10.5.</li>
+								<li>The default gamma has been changed from 1.8 to 2.2 to better serve the color needs of digital content producers and consumers.</li>
+								<li>Windows can now be minimized directly onto their application's icon in the dock.</li>
+								<li>Faster PDF and JPEG icon refreshes.</li>
+								<li>When searching for a network, the AirPort menu-bar icon animates until it finds a network and shows network strength of available networks in the drop down menu.</li>
+								<li>Prefixes for bytes are now used in strictly decimal meaning (as opposed to their binary meaning) when describing disk space, such that an indicated file size of 1 MB corresponds to 1 million bytes, as commonly used by hard disk manufacturers.</li>
+								<li>Snow Leopard shuts down and goes to sleep faster.</li>
+								<li>New wallpapers</li>
+								<li>As with most upgrades of Mac OS X, new wallpapers are available. There are new wallpapers in the Nature (two of which are of snow leopards), Plants and Black and White sub-folders under the Apple folder. Furthermore, there are new Apple wallpaper sub-folders with multiple wallpapers:</li>
+								<ul>
+										<li>Art: Dancer on the Stage, Nighthawks, Poppies Blooming, A Sunday Afternoon on the Island of La Grande Jatte, Suprematism, The Great Wave off Kanagawa, and Water Lilies.</li>
+										<li>Patterns: Pinstripe and Saree.</li>
+										<li>New solid colors can be used as wallpapers as well. There is a new blue and gray, as well as a solid kelp which serves as the "green wallpaper." The default "space nebula" wallpaper has been updated as well.</li>
+								</ul>
+						</ul>
+						
+						<figure class="UI-Screenshots">
+								<img src="../Images/UI/Mac_OS_X_Leopard.jpg" alt="A screenshot of Mac OS X Leopard." loading="lazy" class="UI-Screenshots" style="width: 60vw;">
+								<figcaption>A screenshot of Mac OS X Tiger's user interface. Note that the Apple logo on the menu bar has been changed to one with a less glossy appearance.</figcaption>
 						</figure>
 				</details>
 

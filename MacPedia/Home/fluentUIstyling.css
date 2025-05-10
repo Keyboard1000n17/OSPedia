@@ -11,7 +11,7 @@ width: 100%;
 display: flex;
 justify-content: space-between;
 align-items: center;
-height: 9vh;
+height: 10vh;
 list-style: none;
 }
 
@@ -197,7 +197,7 @@ align-content: center;
 margin: 1vh;
 padding: 3vh;
 border-radius: 10px;
-height: 8vh;
+height: 12vh;
 background-position: center center;
 display: grid; 
 transition: filter, box-shadow ease-out 0.3s, height ease 0.2s;
@@ -206,7 +206,7 @@ transition: filter, box-shadow ease-out 0.3s, height ease 0.2s;
 .macver:hover {
 filter: brightness(160%);
 box-shadow: 0px 0px 15px 5px black;
-height: 9vh;
+height: 15vh;
 }
 
 .macref {
