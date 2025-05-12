@@ -1,0 +1,28 @@
+# Rust
+/target/
+**/*.rs.bk
+
+# Tauri build artifacts
+/src-tauri/target/
+/src-tauri/.cargo/
+/src-tauri/Cargo.lock
+
+#Tauri src folder
+/src-tauri/
+
+# Frontend (if using npm/yarn/pnpm)
+/node_modules/
+/dist/
+/build/
+/.vite/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.code-workspace
+
+# WebView2 runtime installer (if downloaded)
+MicrosoftEdgeWebView2Setup.exe
