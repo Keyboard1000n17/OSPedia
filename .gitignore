@@ -7,8 +7,6 @@
 /src-tauri/.cargo/
 /src-tauri/Cargo.lock
 
-#Tauri src folder
-/src-tauri/
 
 # Frontend (if using npm/yarn/pnpm)
 /node_modules/
