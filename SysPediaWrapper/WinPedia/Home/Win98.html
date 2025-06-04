@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="Unicode">
+<title>WinPedia - Windows 98</title>
+<link rel="icon" href="../Images/WinPedia-favicon.svg">
+<style>
+#ul, .li, .nav {
+list-style: none;
+margin-right: 20px;
+text-decoration: none;
+color: #3266fb;
+display: inline-block;
+}
+
+.nav:hover {
+color: #001fff;
+}
+
+nav {
+background-color: rgba(255, 255, 255, 0.75);
+backdrop-filter: blur(10px);
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1;
+overflow: hidden;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 9vh;
+list-style: none;
+}
+
+footer {
+background-color: rgba(255, 255, 255, 0.75);
+backdrop-filter: blur(10px);
+position: fixed;
+bottom: 0;
+right: 0;
+z-index: 1;
+overflow: hidden;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 9vh;
+padding: 5px;
+color: #000000;
+}
+
+button {
+border-radius: 10px;
+padding: 10px;
+background-color: rgba(255, 255, 255, 0.5);
+width: 100%;
+height: 75%;
+font-family: inherit;
+font-size: inherit;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: box-shadow ease-out 0.3s;
+border-style: none;
+}
+
+button:hover {
+box-shadow: 0px 0px 15px 2px black;
+}
+
+#child-container-in-footer {
+margin: 10px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: auto;
+width: 100%;
+text-align: center;
+align-items: center;
+}
+
+body {
+margin: 10vh 0.5vw 10vh 0.5vw;
+font-family: Segoe UI;
+font-size: 2vh;
+background-image: url(../Images/wallpaper/win98.jpg);
+background-size: cover;
+background-attachment: fixed;
+background-position-x: 0px;
+color: #FFFFFF;
+overflow-x: hidden;
+
+}
+
+#container {
+margin: 10px;
+overflow: auto;
+}
+
+#heading {
+font-size: 4vh;
+font-weight: bold;
+}
+
+#info {
+display: flow-root;
+background-color: rgba(255, 255, 255, 0.75);
+backdrop-filter: blur(7.5px);
+padding: 30px;
+border: solid 1px black;
+border-radius: 10px;
+margin: 10px;
+color: black;
+height: auto;
+}
+
+img {
+float: right;
+}
+
+li {
+list-style: disc;
+color: #FFFFFF;
+}
+
+summary {
+font-weight: bold;
+font-size: 2.5vh;
+}
+
+a {
+color: #000000;
+text-decoration: none;
+}
+
+@media (max-width: 1440px){
+#homeContainer {
+display: block;
+}
+nav {
+height: 9vh;
+}
+img {
+float: none;
+}
+table {
+float: none;
+align-self: center;
+width: 98%;
+}
+#info {
+display: flex;
+flex-direction: column;
+align-content: center;
+text-align: center;
+}
+body {
+background-position: center;
+}
+#features {
+line-height: 2.75vh;
+}
+}
+
+.bolden {
+font-weight: 600;
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<img src="../Images/WinPedia-logo.svg" alt="logo" height="60%">
+<ul>
+<li class="nav"><a href="./Homepage.html" class="nav">Home</a></li> 
+<li class="nav"><a href="../AboutMe/AboutMe.html" class="nav">About Me</a></li>
+</ul>
+</nav>
+</header>
+
+<div id="container">
+
+<span id="heading">Windows 98</span>
+
+<p>
+Windows 98 was consumer-oriented operating system developed by Microsoft as part of its Windows 9x series of operating systems. It was the second operating system in the 9x line, as the successor to Windows 95. It was released to manufacturing on May 15, 1998, and to retail on June 25, 1998. Like its predecessor, it was a hybrid 16-bit and 32-bit monolithic product with the boot stage based on MS-DOS.
+</p>
+
+<div id="info">
+<img src="../Images/icons/w98.png" alt="Windows 98" style="align-self: center; width: 50vh; height: 34vh;">
+<p>Date released: May 15, 1998</p>
+<p>End of Support: Mainstream - December 31, 2001<br> Extended: December 31, 2001</p>
+<p>Last release: Second Edition (4.10.2222 A) on June 10, 1999</p>
+<p>Succeeded by: Windows ME (released 2000)</p>
+<p>Codename: Memphis</p>
+<p>Developed by: Microsoft Corporation</p>
+</div>
+<p>
+
+Windows 98 is web-integrated and bears many similarities to its predecessor, Windows 95. Most of its improvements were either cosmetic or designed to improve the user experience, but there were also a handful of features introduced to enhance the system functionality and capabilities, which included improved USB support, accessibility, and support for hardware advancements such as DVD players. Windows 98 was the first edition of Windows to adopt the Windows Driver Model, and introduced features that would become standard in future generations of Windows, such as Disk Cleanup, Windows Update, multi-monitor support, and Internet Connection Sharing.
+</p>
+
+<p>
+Microsoft had marketed Windows 98 as a "tune-up" to Windows 95, rather than as an entirely improved next generation of Windows. Upon release, Windows 98 was mostly well-received for its web-integrated interface and ease of use, as well as its addressing of issues present in Windows 95, although some pointed out that it wasn't much more stable than Windows 95. It sold an estimated 58 million licenses and saw one major update, known as Windows 98 Second Edition (SE), released on June 10, 1999. After the release of its successor, Windows Me in 2000, mainstream support for Windows 98 and 98 SE ended on June 30, 2002, followed by extended support on July 11, 2006 along with Windows Me's end of extended support.</p>
+<hr>
+<details>
+<summary>Development History</summary>
+<p>Following the success of Windows 95, the development of Windows 98 began, initially under the development codename "Memphis". The first test version, Windows Memphis Developer Release, was released in January 1997.</p>
+<p>Memphis first entered beta as Windows Memphis Beta 1, released on June 30, 1997. It was followed by Windows 98 Beta 2, which dropped the Memphis name and was released in July. Microsoft had planned a full release of Windows 98 for the first quarter of 1998, along with a Windows 98 upgrade pack for Windows 95, but it also had a similar upgrade for Windows 3.x operating systems planned for the second quarter. Stacey Breyfogle, a product manager for Microsoft, explained that the later release of the upgrade for Windows 3 was because the upgrade required more testing than that for Windows 95 due to the presence of more compatibility issues, and without user objections, Microsoft merged the two upgrade packs into one and set all of their release dates to the second quarter.</p>
+<p>On December 15, 1997, Microsoft released Windows 98 Beta 3. It was the first build to be able to upgrade from Windows 3.1x, and introduced new startup and shutdown sounds. Near its completion, Windows 98 Release Candidate was released on April 3, 1998, which expired on December 31 of the same year. This coincided with a notable press demonstration at COMDEX that month. Microsoft CEO Bill Gates was highlighting the operating system's ease of use and enhanced support for Plug and Play (PnP). However, when presentation assistant Chris Capossela plugged a USB scanner in, the operating system crashed, displaying a Blue Screen of Death. Bill Gates remarked after derisive applause and cheering from the audience, "That must be why we're not shipping Windows 98 yet." Video footage of this event became a popular Internet phenomenon.</p>
+<p>Build 1998 was compiled as Windows 98 on May 11, 1998, before being fully released to manufacturing on May 15. The company was facing pending legal action for allowing free downloads of, and planning to ship Windows licenses with, Internet Explorer 4.0 in an alleged effort to expand its software monopoly. Microsoft's critics believed the lawsuit would further delay Windows 98's public release; it did not, and the operating system was released on June 25, 1998.</p>
+<p>A second major version of the operating system called Windows 98 Second Edition was later unveiled in March 1999. Microsoft compiled the final build on April 23, 1999, before being fully released to manufacturing on May 5, and publicly released on June 10, 1999. Windows 98 was to be the final product in the Windows 9x line until Microsoft briefly revived the line to release Windows Me in 2000 as the final Windows 9x product before the introduction of Windows XP in 2001, which was based on the Windows NT architecture and kernel used in Windows 2000.</p>
+</details>
+<hr>
+<details>
+
+<summary>Features</summary>
+
+<p>The first release of Windows 98 included Internet Explorer 4.01 SP1. This was updated to 5.0 in the Second Edition. Besides Internet Explorer, many other Internet companion applications are included such as Outlook Express, Windows Address Book, FrontPage Express, Microsoft Chat, Personal Web Server and a Web Publishing Wizard, and NetShow. NetMeeting allows multiple users to hold conference calls and work with each other on a document.</p>
+
+<p>The Windows 98 shell is web-integrated; it contains deskbands, Active Desktop, Channels, ability to minimize foreground windows by clicking their button on the taskbar, single-click launching, Back and Forward navigation buttons, favorites, and address bar in Windows Explorer, image thumbnails, folder infotips and Web view in folders, and folder customization through HTML-based templates. The taskbar supports customizable toolbars designed to speed up access to the Web or the user's desktop; these toolbars include an Address Bar and Quick Launch. With the Address Bar, the user accesses the Web by typing in a URL, and Quick Launch contains shortcuts or buttons that perform system functions such as switching between windows and the desktop with the Show Desktop button. Another feature of this new shell is that dialog boxes show up in the Alt-Tab sequence.</p>
+
+<p>Windows 98 also integrates shell enhancements, themes and other features from Microsoft Plus! for Windows 95 such as DriveSpace 3, Compression Agent, Dial-Up Networking Server, Dial-Up Scripting Tool and Task Scheduler. Windows 98 had its own separately purchasable Plus! pack, called "Plus! 98".</p>
+
+<p>Title bars of windows and dialog boxes support two-color gradients, a feature ported from and refined from Microsoft Office 95. Windows menus and tooltips support slide animation. Windows Explorer in Windows 98, as in Windows 95, converts all-uppercase filenames to sentence case for readability purposes; however, it also provides an option Allow all uppercase names to display them in their original case. Windows Explorer includes support for compressed CAB files. The Quick Res and Telephony Location Manager Windows 95 PowerToys are integrated into the core operating system.</p>
+<div id="features">
+<details>
+<summary style="font-size: 2.125vh; font-weight: 700">Improvements to hardware support</summary>
+
+<p>Windows 98 was the first operating system to use the Windows Driver Model (WDM). This fact was not well publicized when Windows 98 was released, and most hardware producers continued to develop drivers for the older VxD driver standard, which Windows 98 supported for compatibility's sake. The WDM standard only achieved widespread adoption years later, mostly through Windows 2000 and Windows XP, as they were not compatible with the older VxD standard. With the Windows Driver Model, developers could write drivers that were compatible with other versions of Windows. Device driver access in WDM is implemented through a VxD device driver, NTKERN.VXD, which implements several Windows NT-specific kernel support functions.</p>
+
+<p>Support for WDM audio enables digital mixing, routing and processing of simultaneous audio streams, and kernel streaming with high-quality sample rate conversion on Windows 98. WDM Audio allows for software emulation of legacy hardware to support MS-DOS games, DirectSound support, and MIDI wavetable synthesis. The Windows 95 11-device limitation for MIDI devices is eliminated. A Microsoft GS Wavetable Synthesizer licensed from Roland shipped with Windows 98 for WDM audio drivers. Windows 98 supports digital playback of audio CDs, and the Second Edition improves WDM audio support by adding DirectSound hardware mixing and DirectSound 3D hardware abstraction, DirectMusic kernel support, KMixer sample-rate conversion for capture streams, and multichannel audio support. All audio is sampled by the Kernel Mixer to a fixed sampling rate, which may result in some audio getting upsampled or downsampled and having a high latency, except when using Kernel Streaming or third-party audio paths like ASIO which allow unmixed audio streams and lower latency. Windows 98 also includes a WDM streaming class driver (Stream.sys) to address real time multimedia data stream processing requirements and a WDM kernel-mode video transport for enhanced video playback and capture.</p>
+
+<p>Windows Driver Model also includes Broadcast Driver Architecture, the backbone for TV technologies support in Windows. WebTV for Windows utilized BDA to allow viewing television on the computer if a compatible TV tuner card is installed. TV listings could be updated from the Internet and WaveTop Data Broadcasting allowed extra data about broadcasts to be received via regular television signals using an antenna or cable, by embedding data streams into the vertical blanking interval portion of existing broadcast television signals.</p>
+</details>
+<details>
+<summary style="font-size: 2.125vh; font-weight: 700">Other device support improvements</summary>
+
+<p>Windows 98 had more robust USB support than Windows 95, which only had support in OEM versions OSR2.1 and later. Windows 98 supports USB hubs, USB scanners and imaging class devices. Windows 98 also introduced built-in support for some USB Human Interface Device class (USB HID) and PID class devices such as USB mice, keyboards, force feedback joysticks etc. including additional keyboard functions through a certain number of Consumer Page HID controls. Windows 98 also supports UDMA, 3DNow! and SSE.</p>
+
+<p>Windows 98 introduced ACPI 1.0 support which enabled Standby and Hibernate states. However, hibernation support was extremely limited and vendor-specific. Hibernation was only available if compatible (PnP) hardware and BIOS are present, and the hardware manufacturer or OEM supplied ACPI-compatible drivers. However, there are hibernation issues with the FAT32 file system, making hibernation problematic and unreliable.</p>
+
+<p>Windows 98, in general, provides improved — and a broader range of — support for IDE and SCSI drives and drive controllers, floppy drive controllers and all other classes of hardware as compared to Windows 95. There is integrated Accelerated Graphics Port (AGP) support (although the USB Supplement to Windows 95 OSR2 and later releases of Windows 95 did have AGP support). Windows 98 has built-in DVD support and UDF 1.02 read support. The Still imaging architecture (STI) with TWAIN support was introduced for scanners and cameras and Image Color Management 2.0 for devices to perform color space transformations. Multiple monitor support allows using up to nine multiple monitors on a single PC, with the feature requiring one PCI graphics adapter per monitor. Windows 98 shipped with DirectX 5.2, which notably included DirectShow. Windows 98 Second Edition would later ship with DirectX 6.1.</p>
+</details>
+<details>
+<summary style="font-size: 2.125vh; font-weight: 700">Networking enhancements</summary>
+
+<p>Windows 98 networking enhancements to TCP/IP include built-in support for Winsock 2, SMB signing, a new IP Helper API, Automatic Private IP Addressing (also known as link-local addressing), IP multicasting, and performance enhancements for high-speed high bandwidth networks. Multihoming support with TCP/IP is improved and includes RIP listener support.</p>
+
+<p>The DHCP client has been enhanced to include address assignment conflict detection and longer timeout intervals. NetBT configuration in the WINS client has been improved to continue persistently querying multiple WINS servers if it failed to establish the initial session until all of the WINS servers specified have been queried or a connection is established.</p>
+
+<p>Network Driver Interface Specification 5 support means Windows 98 can support a wide range of network media, including Ethernet, Fiber Distributed Data Interface (FDDI), Token Ring, Asynchronous Transfer Mode (ATM), ISDN, wide area networks, X.25, and Frame Relay. Additional features include NDIS power management, support for quality of service, Windows Management Instrumentation (WMI) and support for a single INF file format across all Windows versions.</p>
+
+<p>Windows 98 Dial-Up Networking supports PPTP tunneling, support for ISDN adapters, multilink support, and connection-time scripting to automate non-standard login connections. Multilink channel aggregation enables users to combine all available dial-up lines to achieve higher transfer speeds. PPP connection logs can show actual packets being passed and Windows 98 allows PPP logging per connection. The Dial-Up Networking improvements are also available in Windows 95 OSR2 and are downloadable for earlier Windows 95 releases.</p>
+
+<p>For networked computers that have user profiles enabled, Windows 98 introduces Microsoft Family Logon which lists all users that have been configured for that computer, enabling users to simply select their names from a list rather than having to type them in.</p>
+
+<p>Windows 98 supports IrDA 3.0 which specifies both Serial Infrared Devices and Fast Infrared devices, which are capable of sending and receiving data at 4 Mbit/s. Infrared Recipient, a new application for transferring files through an infrared connection is included. The IrDA stack in Windows 98 supports networking profiles over the IrCOMM kernel-mode driver. Windows 98 also has built-in support for browsing Distributed File System trees on Server Message Block shares such as Windows NT servers.</p>
+
+<p>UPnP and NAT traversal APIs can be installed on Windows 98 by installing the Windows XP Network Setup Wizard. An L2TP/IPsec VPN client can also be downloaded. By installing Active Directory Client Extensions, Windows 98 can take advantage of several Windows 2000 Active Directory features.</p>
+</details>
+<details>
+<summary style="font-size: 2.125vh; font-weight: 700">Improvements to the system and built-in utilities</summary>
+
+<span style="font-size: 2.125vh; font-weight: 600">Performance improvements </span>
+<p>Windows 95 introduced the 32-bit, protected-mode cache driver VCACHE (replacing SMARTDrv) to cache the most recently accessed information from the hard drive in memory, divided into chunks. However, the cache parameters needed manual tuning as it degraded performance by consuming too much memory and not releasing it quickly enough, forcing paging to occur far too early. The Windows 98 VCACHE cache size management for disk and network access, CD-ROM access and paging is more dynamic compared to Windows 95, resulting in no tuning being required for cache parameters. On the FAT32 file system, Windows 98 has a performance feature called MapCache that can run applications from the disk cache itself if the code pages of executable files are aligned/mapped on 4K boundaries, instead of copying them to virtual memory. This results in more memory being available to run applications, and lesser usage of the swap file.</p>
+
+<p>Windows 98 registry handling is more robust than Windows 95 to avoid corruption and there are several enhancements to eliminate limitations and improve registry performance. The Windows 95 registry key size limitation of 64 KB is gone. The registry uses less memory and has better caching.</p>
+
+<p>Disk Defragmenter has been improved to rearrange program files that are frequently used to a hard disk region optimized for program start. Despite this, the quirk of the hard drive being rescanned if the contents of the hard drive had changed (denoted by the message "Drive contents changed....restarting.") is still present in this version, remaining identical to that of Windows 95. If it gets stuck on the same area too many times, it will ask the user if it should keep trying or give up. This quirk was removed with Windows Me's version of Disk Defragmenter and will function on Windows 98 or Windows 95 if the user simply copies it over.</p>
+
+<p>Windows 98 also supports a Fast Shutdown feature that initiates shutdown without uninitializing device drivers. However, this can cause Windows 98 to hang instead of shutting down the computer if a buggy driver is active, so Microsoft supplied instructions for disabling the feature. Windows 98 supports write-behind caching for removable disk drives. A utility for converting FAT16 partitions to FAT32 without formatting the partition is also included, however it is not compatible with DriveSpace.</p>
+</details>
+<details>
+<summary style="font-size: 2.125vh; font-weight: 700">Other system tools</summary>
+
+<p>A number of improvements are made to various other system tools and accessories in Windows 98. Microsoft Backup supports differential backup and SCSI tape devices in Windows 98. Disk Cleanup, a new tool, enables users to clear their disks of unnecessary files. Cleanup locations are extensible through Disk Cleanup handlers. Disk Cleanup can be automated for regular silent cleanups.</p>
+
+<p>Scanreg (DOS) and ScanRegW are Registry Checker tools used to back up, restore or optimize the Windows registry. ScanRegW tests the registry's integrity and saves a backup copy each time Windows successfully boots. The maximum number of copies could be customized by the user through "scanreg.ini" file. The restoration of a registry that causes Windows to fail to boot can only be done from DOS mode using ScanReg.</p>
+
+<p>System Configuration Utility is a new system utility used to disable programs and services that are not required to run the computer. A Maintenance Wizard is included that schedules and automates ScanDisk, Disk Defragmenter and Disk Cleanup. Windows Script Host, with VBScript and JScript engines is built-in and upgradeable to version 5.6. System File Checker checks installed versions of system files to ensure they were the same version as the one installed with Windows 98 or newer. Corrupt or older versions are replaced by the correct versions. This tool was introduced to resolve the DLL hell issue and was replaced in Windows Me by System File Protection.</p>
+
+<p>Windows 98 Setup simplifies installation, reducing the bulk of user input required. The Windows 98 Startup Disk contains generic, real-mode ATAPI and SCSI CD-ROM drivers that can be used instead in the event that the specific driver for a CD-ROM is unavailable.</p>
+
+<p>The system could be updated using Windows Update. A utility to automatically notify the user of critical updates was later released.</p>
+
+<p>Windows 98 includes an improved version of the Dr. Watson utility that collects and lists comprehensive information such as running tasks, startup programs with their command line switches, system patches, kernel driver, user drivers, DOS drivers and 16-bit modules. With Dr. Watson loaded in the system tray, whenever a software fault occurs (general protection fault, hang, etc.), Dr. Watson will intercept it and indicate what software crashed and its cause.</p>
+
+<p>Windows Report Tool takes a snapshot of system configuration and lets users submit a manual problem report along with system information to technicians. It has e-mail confirmation for submitted reports.</p>
+
+<span style="font-size: 21px; font-weight: 600">Accessories</span>
+
+<p>Windows 98 includes Microsoft Magnifier, Accessibility Wizard and Microsoft Active Accessibility 1.1 API (upgradeable to MSAA 2.0.) A new HTML Help system with 15 Troubleshooting Wizards was introduced to replace WinHelp.</p>
+
+<p>Users can configure the font in Notepad. Microsoft Paint supports GIF transparency. HyperTerminal supports a TCP/IP connection method, which allows it to be used as a Telnet client. Imaging for Windows is updated. System Monitor—used to track the performance of hardware and software—supports output to a log file.</p>
+
+<span style="font-size: 21px; font-weight: 600">Miscellaneous improvements</span>
+<ul>
+<li>Telephony API (TAPI) 2.1</li>
+<li>DCOM version 1.2</li>
+<li>Ability to list fonts by similarity determined using PANOSE information.</li>
+<li>Tools to automate setup, such as Batch 98 and INFInst.exe, support error-checking, gathering information automatically to create an INF file directly from a machine's registry, customizing IE4, shell and desktop settings and adding custom drivers.</li>
+<li>Several other Resource Kit tools are included on the Windows 98 CD.</li>
+<li>Windows 98 has new system event sounds for Low Battery Alarm and Critical Battery Alarm.</li>
+<li>Windows 98 also introduced new and updated system sounds. The new startup sound for Windows 98 was composed by Microsoft sound engineer Ken Kato, who considered it to be a "tough act to follow".</li>
+<li>Windows 98 shipped with Flash Player and Shockwave Player preinstalled.</li>
+</ul>
+</details>
+</div>
+</details>
+<hr>
+<details>
+<summary>Windows 98 Second Edition</summary>
+<p>Windows 98 Second Edition (often shortened to Windows 98 SE and sometimes to Win98 SE or 98 SE) is an updated version of Windows 98 released on June 10, 1999, about eight months before the release of the business-oriented Windows 2000. It includes many bug fixes, improved WDM audio and modem support, improved USB support, added SSE2 support, the replacement of Internet Explorer 4.0 with Internet Explorer 5.0, Web Folders (WebDAV namespace extension for Windows Explorer), and related shell updates. Also included is basic OHCI-compliant FireWire DV camcorder support (MSDV class driver) and SBP-2 support for mass storage class devices. Wake-On-LAN reenables suspended networked computers due to network activity, and Internet Connection Sharing allows multiple networked client computers to share an Internet connection via a single host computer.</p>
+
+<p>Other features in the update include DirectX 6.1 which introduced major improvements to DirectSound and the introduction of DirectMusic, improvements to Asynchronous Transfer Mode support (IP/ATM, PPP/ATM and WinSock 2/ATM support), Windows Media Player 6.1 replacing the older Media Player 4.1, Microsoft NetMeeting 3.0, MDAC 2.1 and WMI. A memory overflow issue was resolved in which earlier versions of Windows 98 would crash most systems if left running for 49.7 days (equal to 232 milliseconds); this bug was also present on its predecessor, Windows 95. Windows 98 SE could be obtained as retail upgrade and full version packages, as well as OEM and a Second Edition Updates Disc for existing Windows 98 users. USB audio device class support is present from Windows 98 SE onwards. Windows 98 Second Edition improved WDM support in general for all devices, and it introduced support for WDM for modems (and therefore USB modems and virtual COM ports). However, Microsoft driver support for both USB printers and USB mass-storage device class is not available for Windows 98.</p>
+</details>
+<hr>
+<details>
+<summary>User Interface</summary>
+<p>Windows 98 was released to positive reviews, with praise directed to its improved graphical user interface and customizability, ease of use, and the degree to which it addressed complaints that users and critics had with Windows 95. Michael Sweet of Smart Computing characterized it as heavily integrating features of the web browser, and found file and folder navigation easier.  Ed Bott of PC Computing lauded the bug fixes, easier troubleshooting, and support for hardware advances such as DVD players and USB. However, he also found that the operating system crashed only slightly less frequently, and criticized the high upgrade price and system requirements. He rated it four stars out of five.</p>
+<p>Windows 98's GUI built upon the foundation of its predecessor Windows 95. Many of its improvements were cosmetic. The title bars of windows and dialog boxes now had a blue-to-white gradient. The taskbar, Start button and Start menu remained cosmetically identical to those of Windows 95. Overall, one could not differentiate between the OS and its predecessor simply by looking at the desktop.</p>
+</details>
+<hr>
+</div>
+<footer>
+<div id="child-container-in-footer">
+<a href="./WinNT4_0.html"><button>Previous</button></a>
+<p>Windows NT 4.0</p>
+<p><b>Windows 98</b></p>
+<p>Windows 2000</p>
+<a href="./Win2000.html"><button>Next</button></a>
+</div>
+</footer>
+</body>
+</html>
