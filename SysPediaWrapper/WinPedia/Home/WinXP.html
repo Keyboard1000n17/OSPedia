@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="Unicode">
+<title>WinPedia - Windows XP</title>
+<link rel="icon" href="../Images/WinPedia-favicon.svg">
+<style>
+#ul, .li, .nav {
+list-style: none;
+margin-right: 20px;
+text-decoration: none;
+color: #3266fb;
+display: inline-block;
+}
+
+.nav:hover {
+color: #001fff;
+}
+
+nav {
+background-color: rgba(255, 255, 255, 0.75);
+backdrop-filter: blur(10px);
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1;
+overflow: hidden;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 9vh;
+list-style: none;
+}
+
+footer {
+background-color: rgba(255, 255, 255, 0.75);
+backdrop-filter: blur(10px);
+position: fixed;
+bottom: 0;
+right: 0;
+z-index: 1;
+overflow: hidden;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 9vh;
+padding: 5px;
+color: #000000;
+}
+
+button {
+border-radius: 10px;
+padding: 10px;
+background-color: rgba(255, 255, 255, 0.5);
+width: 100%;
+height: 75%;
+font-family: inherit;
+font-size: inherit;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: box-shadow ease-out 0.3s;
+border-style: none;
+}
+
+button:hover {
+box-shadow: 0px 0px 15px 2px black;
+}
+
+#child-container-in-footer {
+margin: 10px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: auto;
+width: 100%;
+text-align: center;
+align-items: center;
+}
+
+body {
+margin: 10vh 0.5vw 10vh 0.5vw;
+font-family: Segoe UI;
+font-size: 2vh;
+background-image: url(../Images/wallpaper/winXP.jpg);
+background-size: cover;
+background-attachment: fixed;
+background-position-x: 0px;
+color: #FFFFFF;
+overflow-x: hidden;
+
+}
+
+#container {
+margin: 10px;
+overflow: auto;
+}
+
+#heading {
+font-size: 4vh;
+font-weight: bold;
+}
+
+#info {
+display: flow-root;
+background-color: rgba(255, 255, 255, 0.75);
+backdrop-filter: blur(7.5px);
+padding: 30px;
+border: solid 1px black;
+border-radius: 10px;
+margin: 10px;
+color: black;
+height: auto;
+}
+
+img {
+float: right;
+}
+
+li {
+list-style: disc;
+color: #FFFFFF;
+}
+
+summary {
+font-weight: bold;
+font-size: 2.5vh;
+}
+
+a {
+color: #000000;
+text-decoration: none;
+}
+
+@media (max-width: 1440px){
+#homeContainer {
+display: block;
+}
+nav {
+height: 9vh;
+}
+img {
+float: none;
+}
+table {
+float: none;
+align-self: center;
+width: 98%;
+}
+#info {
+display: flex;
+flex-direction: column;
+align-content: center;
+text-align: center;
+}
+body {
+background-position: center;
+}
+#features {
+line-height: 2.75vh;
+}
+}
+
+.bolden {
+font-weight: 600;
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<img src="../Images/WinPedia-logo.svg" alt="logo" height="60%">
+<ul>
+<li class="nav"><a href="./Homepage.html" class="nav">Home</a></li> 
+<li class="nav"><a href="../AboutMe/AboutMe.html" class="nav">About Me</a></li>
+</ul>
+</nav>
+</header>
+
+<div id="container">
+
+<span id="heading">Windows XP</span>
+
+<p>Windows XP is a major release of Microsoft's Windows NT operating systems. It was released to manufacturing on August 24, 2001, and later to retail on October 25, 2001. It is a direct successor to Windows 2000 for high-end and business users and Windows Me for home users.</p>
+
+<div id="info">
+<img src="../Images/icons/wXP.png" alt="Windows XP" style="align-self: center; width: 25vh; height: 25vh;">
+<p>Date released: August 24, 2001</p>
+<p>End of Support: Mainstream - December 31, 2003<br>Extended - July 11, 2006</p>
+<p>Last release: 4.90.3000 on September 14, 2000 </p>
+<p>Succeeded by: Windows Vista (released 2007)</p>
+<p>Codename: Whistler</p>
+<p>Developed by: Microsoft Corporation</p>
+</div>
+
+<p>Development of Windows XP began in the late 1990s under the codename "Neptune", built on the Windows NT kernel and explicitly intended for mainstream consumer use. An updated version of Windows 2000, codenamed "<abbr title="Windows Odyssey was a version of Windows that never left the planning stage">Odyssey</abbr>", was also initially planned for the business market. However, in January 2000, both Windows Odyssey and Neptune were scrapped and replaced by a single unified operating system codenamed "Whistler" based on the Windows NT kernel, which would serve both home consumers and buisness markets. Thsi occured as they realized that both were going to based on the same Windows 2000 codebase. Therefore, Windows XP is the first consumer edition of Windows which is not based on the Windows 95 kernel or MS-DOS. Windows XP removed support for PC-98, i486, and SGI Visual Workstation 320 and 540 architecture, and only runs on 32-bit x86 CPUs and devices that use BIOS firmware.</p>
+
+<p>Upon its release, Windows XP received critical acclaim, noting increased performance and stability (especially compared to Windows Me), a new, visually appealing user interface, improved hardware support, and expanded multimedia capabilities. Windows XP and Windows Server 2003 were succeeded by Windows Vista and Windows Server 2008, released in 2007 and 2008, respectively. Mainstream support for Windows XP ended on April 14, 2009, and extended support ended on April 8, 2014. Windows Embedded POSReady 2009, based on Windows XP Professional, received security updates until April 2019. The final security update for Service Pack 3 was released on May 14, 2019. Unofficial methods were made available to apply the updates to other editions of Windows XP, which Microsoft has discouraged, citing compatibility issues.</p>
+<hr>
+<details>
+<summary>Development</summary>
+<p>In the late 1990s, initial development of what would become Windows XP was focused on two individual products: "Odyssey", which was reportedly intended to succeed the future Windows 2000 and "Neptune", which was reportedly a consumer-oriented operating system using the Windows NT architecture, succeeding the MS-DOS-based Windows 98.</p>
+<p>However, the projects proved to be too ambitious. In January 2000, shortly prior to the official release of Windows 2000, technology writer Paul Thurrott reported that Microsoft had shelved both Neptune and Odyssey in favor of a new product codenamed "Whistler", named after Whistler, British Columbia, as many Microsoft employees skied at the Whistler-Blackcomb ski resort. The goal of Whistler was to unify both the consumer and business-oriented Windows lines under a single, Windows NT platform. Thurrott stated that Neptune had become "a black hole when all the features that were cut from Windows Me were simply re-tagged as Neptune features. And since Neptune and Odyssey would be based on the same code-base anyway, it made sense to combine them into a single project".</p>
+<p>At PDC on July 13, 2000, Microsoft announced that Whistler would be released during the second half of 2001, and also unveiled the first preview build, 2250, which featured an early implementation of Windows XP's visual styles system and interface changes to Windows Explorer and the Control Panel.</p>
+<p>Microsoft released the first public beta build of Whistler, build 2296, on October 31, 2000. Subsequent builds gradually introduced features that users of the release version of Windows XP would recognize, such as Internet Explorer 6.0, the Microsoft Product Activation system, and the Bliss desktop background.</p>
+<p>Whistler was officially unveiled during a media event on February 5, 2001, under the name Windows XP, where XP stands for "eXPerience".</p>
+<p>In June 2001, Microsoft indicated that it was planning to spend at least US$1 billion on marketing and promoting Windows XP, in conjunction with Intel and other PC makers. The theme of the campaign, "Yes You Can", was designed to emphasize the platform's overall capabilities. Microsoft had originally planned to use the slogan "Prepare to Fly", but it was replaced because of sensitivity issues in the wake of the September 11 attacks.</p>
+<p>On August 24, 2001, Windows XP build 2600 was released to manufacturing (RTM). During a ceremonial media event at Microsoft Redmond Campus, copies of the RTM build were given to representatives of several major PC manufacturers in briefcases, who then flew off on decorated helicopters. While PC manufacturers would be able to release devices running XP beginning on September 24, 2001, XP was expected to reach general retail availability on October 25, 2001. On the same day, Microsoft also announced the final retail pricing of XP's two main editions, "Home" (as a replacement for Windows Me for home computing) and "Professional" (as a replacement for Windows 2000 for high-end users).</p>
+
+<span style="font-size: 2.3vh; font-weight: 800;">Service packs</span>
+<p>A service pack is a cumulative update package that is a superset of all updates, and even service packs, that have been released before it. Three service packs have been released for Windows XP. Service Pack 3 is slightly different, as it needs at least Service Pack 1 to have been installed, in order to update a live OS. However, Service Pack 3 can still be embedded into a Windows installation disc where SP1 is not reported as a prerequisite for doing so.</p>
+
+<p>The boot screens for all editions of Windows XP have been unified by Service Pack 2 for Windows XP with a new one that no longer displays the SKU, with the boot screen for Home Edition using a blue progress bar instead of green. The copyright years on the boot screen were also removed.</p>
+<details>
+<summary style="font-weight: 600; font-size: 2.2vh;">Service Pack 1</summary>
+<p>Service Pack 1 (SP1) for Windows XP was released on September 9, 2002. It contained over 300 minor, post-RTM bug fixes, along with all security patches released since the original release of XP. SP1 also added USB 2.0 support, the Microsoft Java Virtual Machine, .NET Framework support, and support for technologies used by the then-upcoming Media Center and Tablet PC editions of XP. The most significant change on SP1 was the addition of Set Program Access and Defaults, a settings page which allows programs to be set as default for certain types of activities (such as media players or web browsers) and for access to bundled, Microsoft programs (such as Internet Explorer or Windows Media Player) to be disabled. This feature was added to comply with the settlement of United States v. Microsoft Corp., which required Microsoft to offer the ability for OEMs to bundle third-party competitors to software it bundles with Windows (such as Internet Explorer and Windows Media Player), and give them the same level of prominence as those normally bundled with the OS.</p>
+
+<p>On February 3, 2003, Microsoft released Service Pack 1a (SP1a). It was the same as SP1, except the Microsoft Java Virtual Machine was excluded.</p>
+</details>
+<details>
+<summary style="font-weight: 600; font-size: 2.2vh;">Service Pack 2</summary>
+<p>Service Pack 2 (SP2) for Windows XP Home edition and Professional edition was released on August 25, 2004. Headline features included WPA encryption compatibility for Wi-Fi and usability improvements to the Wi-Fi networking user interface, partial Bluetooth support, and various improvements to security systems.</p>
+
+<p>Headed by former computer hacker Window Snyder, the service pack's security improvements (codenamed "Springboard", as these features were intended to underpin additional changes in Longhorn) included a major revision to the included firewall (renamed Windows Firewall, and now enabled by default), and an update to Data Execution Prevention, which gained hardware support in the NX bit that can stop some forms of buffer overflow attacks. Raw socket support is removed (which supposedly limits the damage done by zombie machines) and the Windows Messenger service (which had been abused to cause pop-up advertisements to be displayed as system messages without a web browser or any additional software) became disabled by default. Additionally, security-related improvements were made to e-mail and web browsing. Service Pack 2 also added Security Center, an interface that provides a general overview of the system's security status, including the state of the firewall and automatic updates. Third-party firewall and antivirus software can also be monitored from Security Center.</p>
+
+<p>In August 2006, Microsoft released updated installation media for Windows XP and Windows Server 2003 SP2 (SP2b), in order to incorporate a patch requiring ActiveX controls in Internet Explorer to be manually activated before a user may interact with them. This was done so that the browser would not violate a patent owned by Eolas. Microsoft has since licensed the patent, and released a patch reverting the change in April 2008. In September 2007, another minor revision known as SP2c was released for XP Professional, extending the number of available product keys for the operating system to "support the continued availability of Windows XP Professional through the scheduled system builder channel end-of-life (EOL) date of January 31, 2009."</p>
+</details>
+<details>
+<summary style="font-weight: 600; font-size: 2.2vh;">Service Pack 3</summary>
+<p>The third and final Service Pack, SP3, was released through different channels between April 21 and June 10, 2008, about a year after the release of Windows Vista, and about a year before the release of Windows 7. Service Pack 3 was not available for Windows XP x64 Edition, which was based on the Windows Server 2003 kernel and, as a result, used its service packs rather than the ones for the other editions.</p>
+
+<p>It began being automatically pushed out to Automatic Updates users on July 10, 2008. A feature set overview which detailed new features available separately as stand-alone updates to Windows XP, as well as backported features from Windows Vista, was posted by Microsoft. A total of 1,174 fixes are included in SP3. Service Pack 3 could be installed on systems with Internet Explorer up to and including version 8; Internet Explorer 7 was not included as part of SP3. It also did not include Internet Explorer 8, but instead was included in Windows 7, which was released one year after XP SP3.</p>
+
+<p>Service Pack 3 included security enhancements over and above those of SP2, including APIs allowing developers to enable Data Execution Prevention for their code, independent of system-wide compatibility enforcement settings, the Security Support Provider Interface, improvements to WPA2 security, and an updated version of the Microsoft Enhanced Cryptographic Provider Module that is FIPS 140-2 certified.</p>
+
+<p>In incorporating all previously released updates not included in SP2, Service Pack 3 included many other key features. Windows Imaging Component allowed camera vendors to integrate their own proprietary image codecs with the operating system's features, such as thumbnails and slideshows. In enterprise features, Remote Desktop Protocol 6.1 included support for ClearType and 32-bit color depth over RDP, while improvements made to Windows Management Instrumentation in Windows Vista to reduce the possibility of corruption of the WMI repository were backported to XP SP3.</p>
+
+<p>In addition, SP3 contains updates to the operating system components of Windows XP Media Center Edition (MCE) and Windows XP Tablet PC Edition, and security updates for .NET Framework version 1.0, which is included in these editions. However, it does not include update rollups for the Windows Media Center application in Windows XP MCE 2005. SP3 also omits security updates for Windows Media Player 10, although the player is included in Windows XP MCE 2005.</p>
+</details>
+</details>
+<hr>
+<details>
+<summary>Features</summary>
+<p>Windows XP introduced multitudes of new features, but also removed a few. These include the changes to the user interface, infrastructure, networking and internet functionality and backward compatibility, not to mention other features.</p>
+
+<details>
+<summary style="font-weight: 600; font-size: 2.2vh;">Infrastructure</summary>
+<p>Windows XP uses prefetching to improve startup and application launch times. It also became possible to revert the installation of an updated device driver, should the updated driver produce undesirable results.</p>
+
+<p>A copy protection system known as Windows Product Activation was introduced with Windows XP and its server counterpart, Windows Server 2003. All non-enterprise (Volume Licensing) Windows licenses must be tied to a unique ID generated using information from the computer hardware, transmitted either via the internet or a telephone hotline. If Windows is not activated within 30 days of installation, the OS will cease to function until it is activated. Windows also periodically verifies the hardware to check for changes. If significant hardware changes are detected, the activation is voided, and Windows must be re-activated.</p>
+</details>
+<details>
+<summary style="font-weight: 600; font-size: 2.2vh;">Networking and internet functionality</summary>
+<p>Windows XP was originally bundled with Internet Explorer 6, Outlook Express 6, Windows Messenger, and MSN Explorer. New networking features were also added, including Internet Connection Firewall, Internet Connection Sharing integration with UPnP, NAT traversal APIs, Quality of Service features, IPv6 and Teredo tunneling, Background Intelligent Transfer Service, extended fax features, network bridging, peer to peer networking, support for most DSL modems, IEEE 802.11 (Wi-Fi) connections with auto configuration and roaming, TAPI 3.1, and networking over FireWire. Remote Assistance and Remote Desktop were also added, which allow users to connect to a computer running Windows XP from across a network or the Internet and access their applications, files, printers, and devices or request help. Improvements were also made to IntelliMirror features such as Offline Files, roaming user profiles, and folder redirection.</p>
+</details>
+<details>
+<summary style="font-weight: 600; font-size: 2.2vh;">Backward compatibility</summary>
+<p>To enable running software that targets or locks out specific versions of Windows, "Compatibility mode" was added. It allows pretending a selected earlier version of Windows to software, starting at Windows 95. This feature was first introduced in Windows 2000 Service Pack 2, released five months before the release of Windows XP, and was backported from prerelease Windows XP builds. Unlike with Windows XP, however, it was hidden from the operating system as it was not enabled by default and had to be manually activated through the Register Server utility. It was also only available to administrator users. Windows XP has this feature activated out of the box and also grants it to regular users.</p>
+</details>
+<details>
+<summary style="font-weight: 600; font-size: 2.2vh;">Other features</summary>
+<ul>
+<li>Improved application compatibility and shims compared to Windows 2000.</li>
+<li>DirectX 8.1, upgradeable to DirectX 9.0c.</li>
+<li>A number of new features in Windows Explorer including task panes, thumbnails, and the option to view photos as a slideshow.</li>
+<li>Improved imaging features such as Windows Picture and Fax Viewer.</li>
+<li>Faster start-up, (because of improved Prefetch functions) logon, logoff, hibernation, and application launch sequences.</li>
+<li>Numerous improvements to increase the system reliability such as improved System Restore, Automated System Recovery, and driver reliability improvements through Device Driver Rollback.</li>
+<li>Hardware support improvements such as FireWire 800, and improvements to multi-monitor support under the name "DualView".</li>
+<li>Fast user switching.</li>
+<li>The ClearType font rendering mechanism, which is designed to improve text readability on liquid-crystal display (LCD) and similar monitors, especially laptops.</li>
+<li>Side-by-side assemblies and registration-free COM.</li>
+<li>General improvements to international support such as more locales, languages and scripts, MUI support in Terminal Services, improved Input Method Editors, and National Language Support.</li>
+</ul>
+</details>
+<details>
+<summary style="font-weight: 600; font-size: 2.2vh;">Removed features</summary>
+<p>Some of the programs and features that were part of the previous versions of Windows did not make it to Windows XP. Various MS-DOS commands available in its Windows 9x predecessor were removed, as were the POSIX and OS/2 subsystems.</p>
+<p>In networking, NetBEUI, NWLink and NetDDE were deprecated and not installed by default. Plug-and-play–incompatible communication devices (like modems and network interface cards) were no longer supported.</p>
+<p>Service Pack 2 and Service Pack 3 also removed features from Windows XP, including support for TCP half-open connections and the address bar on the taskbar.</p>
+</details>
+</details>
+<hr>
+<details>
+<summary>Editions</summary>
+<p>Windows XP was released in two major editions on launch: Home Edition and Professional Edition. Both editions were made available at retail as pre-loaded software on new computers and as boxed copies. Boxed copies were sold as "Upgrade" or "Full" licenses; the "Upgrade" versions were slightly cheaper, but require an existing version of Windows to install. The "Full" version can be installed on systems without an operating system or existing version of Windows. The two editions of XP were aimed at different markets: Home Edition is explicitly intended for consumer use and disables or removes certain advanced and enterprise-oriented features present on Professional, such as the ability to join a Windows domain, Internet Information Services, and Multilingual User Interface. Windows 98 or Me can be upgraded to either edition, but Windows NT 4.0 and Windows 2000 can only be upgraded to Professional. Windows' software license agreement for pre-loaded licenses allows the software to be "returned" to the OEM for a refund if the user does not wish to use it. Despite the refusal of some manufacturers to honor the entitlement, it has been enforced by courts in some countries.</p>
+
+<p>Two specialized variants of XP were introduced in 2002 for certain types of hardware, exclusively through OEM channels as pre-loaded software. Windows XP Media Center Edition was initially designed for high-end home theater PCs with TV tuners (marketed under the term "Media Center PC"), offering expanded multimedia functionality, an electronic program guide, and digital video recorder (DVR) support through the Windows Media Center application. Microsoft also unveiled Windows XP Tablet PC Edition, which contains additional pen input features, and is optimized for mobile devices meeting its Tablet PC specifications. Two different 64-bit editions of XP were made available. The first, Windows XP 64-Bit Edition, was intended for IA-64 (Itanium) systems; as IA-64 usage declined on workstations in favor of AMD's x86-64 architecture, the Itanium edition was discontinued in January 2005. A new 64-bit edition supporting the x86-64 architecture, called Windows XP Professional x64 Edition, was released in April 2005.</p>
+
+<p>Microsoft also targeted emerging markets with the 2004 introduction of Windows XP Starter Edition, a special variant of Home Edition intended for low-cost PCs. The OS is primarily aimed at first-time computer owners, containing heavy localization (including wallpapers and screen savers incorporating images of local landmarks), and a "My Support" area which contains video tutorials on basic computing tasks. It also removes certain "complex" features, and does not allow users to run more than three applications at a time. After a pilot program in India and Thailand, Starter was released in other emerging markets throughout 2005. In 2006, Microsoft also unveiled the FlexGo initiative, which would also target emerging markets with subsidized PCs on a pre-paid, subscription basis.</p>
+
+<p>As a result of unfair competition lawsuits in Europe and South Korea, which both alleged that Microsoft had improperly leveraged its status in the PC market to favor its own bundled software, Microsoft was ordered to release special editions of XP in these markets that excluded certain applications. In March 2004, after the European Commission fined Microsoft €497 million (US$603 million), Microsoft was ordered to release "N" editions of XP that excluded Windows Media Player, encouraging users to pick and download their own media player software. As it was sold at the same price as the edition with Windows Media Player included, certain OEMs (such as Dell, who offered it for a short period, along with Hewlett-Packard, Lenovo and Fujitsu Siemens) chose not to offer it. Consumer interest was minuscule, with roughly 1,500 units shipped to OEMs, and no reported sales to consumers. In December 2005, the Korean Fair Trade Commission ordered Microsoft to make available editions of Windows XP and Windows Server 2003 that do not contain Windows Media Player or Windows Messenger. The "K" and "KN" editions of Windows XP were released in August 2006, and are only available in English and Korean, and also contain links to third-party instant messenger and media player software.</p>
+</details>
+<hr>
+<details>
+<summary>User interface</summary>
+<p>While retaining some similarities to previous versions, Windows XP's interface was overhauled with a new visual appearance, with an increased use of alpha compositing effects, drop shadows, and "visual styles", which completely changed the appearance of the operating system. The number of effects enabled are determined by the operating system based on the computer's processing power, and can be enabled or disabled on a case-by-case basis. XP also added ClearType, a new subpixel rendering system designed to improve the appearance of fonts on liquid-crystal displays. A new set of system icons was also introduced. The default wallpaper, Bliss, is a photo of a landscape in the Napa Valley outside Napa, California, with rolling green hills and a blue sky with stratocumulus and cirrus clouds.</p>
+<p>The Start menu received its first major overhaul in XP, switching to a two-column layout with the ability to list, pin, and display frequently used applications, recently opened documents, and the traditional cascading "All Programs" menu. The taskbar can now group windows opened by a single application into one taskbar button, with a popup menu listing the individual windows. The notification area also hides "inactive" icons by default. A "common tasks" list was added, and Windows Explorer's sidebar was updated to use a new task-based design with lists of common actions; the tasks displayed are contextually relevant to the type of content in a folder (e.g. a folder with music displays offers to play all the files in the folder, or burn them to a CD).</p>
+<p>Fast user switching allows additional users to log into a Windows XP machine without existing users having to close their programs and log out. Although only one user at the time can use the console (i.e., monitor, keyboard, and mouse), previous users can resume their session once they regain control of the computer. Service Pack 2 and Service Pack 3 also introduced new features to Windows XP post-release, including the Windows Security Center, Bluetooth support, Data Execution Prevention, Windows Firewall, and support for SDHC cards that are larger than 4 GB and smaller than 32 GB.</p>
+</details>
+<hr>
+</div>
+<footer>
+<div id="child-container-in-footer">
+<a href="./WinME.html"><button>Previous</button></a>
+<p>Windows ME</p>
+<p><b>Windows XP</b></p>
+<p>Windows Vista</p>
+<a href="./WinVista.html"><button>Next</button></a>
+</div>
+</footer>
+</body>
+</html>
