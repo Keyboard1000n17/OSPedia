@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="Unicode">
+<title>WinPedia - Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="icon" href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg">
+<style>
+nav, ul {
+list-style: none;
+}
+
+nav, ul, li {
+display: inline-block;
+margin-right: 20px;
+}
+
+.nav {
+text-decoration: none;
+color: #3266fb
+}
+
+.nav:hover {
+color: #7fbff7;
+}
+
+nav {
+background-color: rgba(255, 255, 255, 0.75);
+backdrop-filter: blur(10px);
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1;
+overflow: hidden;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 8%;
+}
+
+body {
+margin: 9vh 0 0 0;
+font-family: "Segoe UI", Open Sans;
+background-image: url(../Images/wallpaper/win11.jpg);
+background-size: cover;
+background-position: bottom;
+background-repeat: no-repeat;
+background-attachment: fixed;
+color: #FFFFFF;
+font-size: 2vh;
+height: 100vh;
+}
+
+#homeContainer {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto;
+margin: 10px;
+height: 90%;
+}
+
+#logo {
+height: 60%;
+}
+
+.winver {
+justify-content: center;
+align-content: center;
+margin: 1vh;
+padding: 3vh;
+border-radius: 10px;
+height: 8vh;
+background-position: center center;
+display: grid; 
+transition: filter, box-shadow ease-out 0.3s, height ease 0.2s;
+}
+
+#Other {
+grid-column: 2/span 2;
+}
+
+span {
+font-weight: bold;
+}
+
+.winref {
+text-decoration: none;
+color: #FFFFFF;
+}
+
+.winref:hover {
+text-decoration: none;
+}
+
+.winver:hover {
+filter: brightness(160%);
+box-shadow: 0px 0px 15px 5px black;
+height: 9vh;
+}
+
+@media (max-width: 768px){
+#homeContainer {
+display: block;
+}
+.winver {
+height: 15vh;
+text-align: center;
+}
+nav {
+height: 10vh;
+}
+body{
+margin: 180px 0 0 0;
+font-size: 36px;
+}
+.winref {
+margin: 10px;
+}
+.winver:hover {
+filter: brightness(100%);
+box-shadow: none;
+height: 16vh;
+}
+}
+</style>
+</head>
+<body>
+<header>
+ <nav>
+<img src="../Images/WinPedia-logo.svg" alt="logo" height="60%">
+<ul>
+<li class="nav"><a href="./Homepage.html" class="nav">Home</a></li> 
+<li class="nav"><a href="./AboutMe/AboutMe.html" class="nav">About Me</a></li>
+</ul>
+</nav>
+</header>
+
+<div id="homeContainer">
+
+<a href="./Win1_0.html" class="winref">
+<div id="1_0" class="winver"  style="background-image: url(../Images/wallpaper/win1_0.jpg); background-size: cover;">
+<span>Windows 1.0</span>
+</div>
+</a>
+
+<a href="./Win2_0.html" class="winref">
+<div id="2_0" class="winver" style="background-image: url(../Images/wallpaper/win2_0.png); 
+background-size: cover;">
+<span>Windows 2.0</span>
+</div>
+</a>
+
+<a href="./Win3_0.html" class="winref">
+<div id="3_0" class="winver" style="background-image: url(../Images/wallpaper/win3_0.png); 
+background-size: cover;">
+<span>Windows 3.0</span>
+</div>
+</a>
+
+<a href="./Win3_1.html" class="winref">
+<div id="3_1" class="winver" style="background-image: url(../Images/wallpaper/win3_1.png); 
+background-size: cover;">
+<span>Windows 3.1</span>
+</div>
+</a>
+
+<a href="./Win95.html" class="winref">
+<div id="95" class="winver" style="background-image: url(../Images/wallpaper/win95.png); 
+background-size: cover;">
+<span>Windows 95</span>
+</div>
+</a>
+
+<a href="./WinNT4_0.html" class="winref">
+<div id="NT4_0" class="winver" style="background-image: url(../Images/wallpaper/winNT4.0.png); 
+background-size: cover; background-position: top right;">
+<span>Windows NT 4.0</span>
+</div>
+</a>
+
+<a href="./Win98.html" class="winref">
+<div id="98" class="winver" style="background-image: url(../Images/wallpaper/win98.jpg); 
+background-size: cover;">
+<span>Windows 98</span>
+</div>
+</a>
+
+<a href="./Win2000.html" class="winref">
+<div id="2000" class="winver" style="background-image: url(../Images/wallpaper/win2000.png); 
+background-size: cover;">
+<span>Windows 2000</span>
+</div>
+</a>
+
+<a href="./WinME.html" class="winref">
+<div id="ME" class="winver" style="background-image: url(../Images/wallpaper/winME.png); 
+background-size: cover;">
+<span>Windows ME</span>
+</div>
+</a>
+
+<a href="./WinXP.html" class="winref">
+<div id="XP" class="winver" style="background-image: url(../Images/wallpaper/winXP.jpg); 
+background-size: cover;">
+<span>Windows XP</span>
+</div>
+</a>
+
+<a href="./WinVista.html" class="winref">
+<div id="Vista" class="winver" style="background-image: url(../Images/wallpaper/winVista.jpg); 
+background-size: cover;">
+<span>Windows Vista</span>
+</div>
+</a>
+
+<a href="./Win7.html" class="winref">
+<div id="7" class="winver" style="background-image: url(../Images/wallpaper/win7.jpg); 
+background-size: cover;">
+<span>Windows 7</span>
+</div>
+</a>
+
+<a href="./Win8.html" class="winref">
+<div id="8" class="winver" style="background-image: url(../Images/wallpaper/win8.jpg); 
+background-size: cover;">
+<span>Windows 8</span>
+</div>
+</a>
+
+<a href="./Win8_1.html" class="winref">
+<div id="8_1" class="winver" style="background-image: url(../Images/wallpaper/win8_1.jpg); 
+background-size: cover;">
+<span>Windows 8.1</span>
+</div>
+</a>
+
+<a href="./Win10.html" class="winref">
+<div id="10" class="winver" style="background-image: url(../Images/wallpaper/win10.jpg); 
+background-size: cover;">
+<span>Windows 10</span>
+</div>
+</a>
+
+<a href="./Win11.html" class="winref">
+<div id="11" class="winver" style="background-image: url(../Images/wallpaper/win11.jpg); 
+background-size: cover;">
+<span>Windows 11</span>
+</div>
+</a>
+
+<a href="./Other.html" id="Other" class="winref">
+<div id="Other2" class="winver" style="background-image: url(../Images/wallpaper/win10x.png); 
+background-size: cover;">
+<span>Other Notable Versions of Windows</span>
+</div>
+</a>
+
+</div>
+
+
+</body></html>

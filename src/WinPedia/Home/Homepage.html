@@ -3,7 +3,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="Unicode">
 <title>WinPedia - Home</title>
-<link rel="icon" href="../Images/WinPedia-favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="icon" href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg">
 <style>
 nav, ul {
 list-style: none;
@@ -40,7 +43,7 @@ height: 8%;
 
 body {
 margin: 9vh 0 0 0;
-font-family: Segoe UI;
+font-family: "Segoe UI", Open Sans;
 background-image: url(../Images/wallpaper/win11.jpg);
 background-size: cover;
 background-position: bottom;
@@ -98,7 +101,7 @@ box-shadow: 0px 0px 15px 5px black;
 height: 9vh;
 }
 
-@media (max-width: 1440px, min-resolution: 300dpi){
+@media (max-width: 768px){
 #homeContainer {
 display: block;
 }
