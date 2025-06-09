@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/"
+  to = "/src/WinPedia/Home/Homepage.html"
+  status = 200
