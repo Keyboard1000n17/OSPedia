@@ -1,281 +1,581 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="Unicode">
-<title>WinPedia - Windows 8.1</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link rel="icon" href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg">
-<style>
-#ul, .li, .nav {
-list-style: none;
-margin-right: 20px;
-text-decoration: none;
-color: #3266fb;
-display: inline-block;
-}
+  <head>
+    <meta charset="Unicode" />
+    <title>WinPedia - Windows 8.1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg"
+    />
+    <style>
+      #ul,
+      .li,
+      .nav {
+        list-style: none;
+        margin-right: 20px;
+        text-decoration: none;
+        color: #3266fb;
+        display: inline-block;
+      }
 
-.nav:hover {
-color: #001fff;
-}
+      .nav:hover {
+        color: #001fff;
+      }
 
-nav {
-background-color: rgba(255, 255, 255, 0.75);
-backdrop-filter: blur(10px);
-position: fixed;
-top: 0;
-left: 0;
-z-index: 1;
-overflow: hidden;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 9vh;
-list-style: none;
-}
+      nav {
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 9vh;
+        list-style: none;
+      }
 
-footer {
-background-color: rgba(255, 255, 255, 0.75);
-backdrop-filter: blur(10px);
-position: fixed;
-bottom: 0;
-right: 0;
-z-index: 1;
-overflow: hidden;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 9vh;
-padding: 5px;
-color: #000000;
-}
+      footer {
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 9vh;
+        padding: 5px;
+        color: #000000;
+      }
 
-button {
-border-radius: 10px;
-padding: 10px;
-background-color: rgba(255, 255, 255, 0.5);
-width: 100%;
-height: 75%;
-font-family: inherit;
-font-size: inherit;
-display: flex;
-justify-content: center;
-align-items: center;
-transition: box-shadow ease-out 0.3s;
-border-style: none;
-}
+      button {
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+        height: 75%;
+        font-family: inherit;
+        font-size: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: box-shadow ease-out 0.3s;
+        border-style: none;
+      }
 
-button:hover {
-box-shadow: 0px 0px 15px 2px black;
-}
+      button:hover {
+        box-shadow: 0px 0px 15px 2px black;
+      }
 
-#child-container-in-footer {
-margin: 10px;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: auto;
-width: 100%;
-text-align: center;
-align-items: center;
-}
+      #child-container-in-footer {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+      }
 
-body {
-margin: 10vh 0.5vw 10vh 0.5vw;
-font-family: Segoe UI;
-font-size: 2vh;
-background-image: url(../Images/wallpaper/win8_1.jpg);
-background-size: cover;
-background-attachment: fixed;
-background-position-x: 0px;
-color: #FFFFFF;
-overflow-x: hidden;
+      body {
+        margin: 10vh 0.5vw 10vh 0.5vw;
+        font-family: Segoe UI;
+        font-size: 2vh;
+        background-image: url(../Images/wallpaper/win8_1.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: 0px;
+        color: #ffffff;
+        overflow-x: hidden;
+      }
 
-}
+      #container {
+        margin: 10px;
+        overflow: auto;
+      }
 
-#container {
-margin: 10px;
-overflow: auto;
-}
+      #heading {
+        font-size: 4vh;
+        font-weight: bold;
+      }
 
-#heading {
-font-size: 4vh;
-font-weight: bold;
-}
+      #info {
+        display: flow-root;
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(7.5px);
+        padding: 30px;
+        border: solid 1px black;
+        border-radius: 10px;
+        margin: 10px;
+        color: black;
+        height: auto;
+      }
 
-#info {
-display: flow-root;
-background-color: rgba(255, 255, 255, 0.75);
-backdrop-filter: blur(7.5px);
-padding: 30px;
-border: solid 1px black;
-border-radius: 10px;
-margin: 10px;
-color: black;
-height: auto;
-}
+      img {
+        float: right;
+      }
 
-img {
-float: right;
-}
+      li {
+        list-style: disc;
+        color: #ffffff;
+      }
 
-li {
-list-style: disc;
-color: #FFFFFF;
-}
+      summary {
+        font-weight: bold;
+        font-size: 2.5vh;
+      }
 
-summary {
-font-weight: bold;
-font-size: 2.5vh;
-}
+      a {
+        color: #000000;
+        text-decoration: none;
+      }
 
-a {
-color: #000000;
-text-decoration: none;
-}
+      @media (max-width: 1440px) {
+        #homeContainer {
+          display: block;
+        }
+        nav {
+          height: 9vh;
+        }
+        img {
+          float: none;
+        }
+        table {
+          float: none;
+          align-self: center;
+          width: 98%;
+        }
+        #info {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          text-align: center;
+        }
+        body {
+          background-position: center;
+        }
+        #features {
+          line-height: 2.75vh;
+        }
+      }
 
-@media (max-width: 1440px){
-#homeContainer {
-display: block;
-}
-nav {
-height: 9vh;
-}
-img {
-float: none;
-}
-table {
-float: none;
-align-self: center;
-width: 98%;
-}
-#info {
-display: flex;
-flex-direction: column;
-align-content: center;
-text-align: center;
-}
-body {
-background-position: center;
-}
-#features {
-line-height: 2.75vh;
-}
-}
+      .bolden {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="../Images/WinPedia-logo.svg" alt="logo" height="60%" />
+        <ul>
+          <li class="nav"><a href="./Homepage.html" class="nav">Home</a></li>
+          <li class="nav">
+            <a href="../AboutMe/AboutMe.html" class="nav">About Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-.bolden {
-font-weight: 600;
-}
-</style>
-</head>
-<body>
-<header>
-<nav>
-<img src="../Images/WinPedia-logo.svg" alt="logo" height="60%">
-<ul>
-<li class="nav"><a href="./Homepage.html" class="nav">Home</a></li> 
-<li class="nav"><a href="../AboutMe/AboutMe.html" class="nav">About Me</a></li>
-</ul>
-</nav>
-</header>
+    <div id="container">
+      <span id="heading">Windows 8.1</span>
 
-<div id="container">
+      <p style="font-size: 1.6vh; font-style: italic">
+        This webpage does not have a section on editions as there is no
+        information on Wikipedia about its editions. The four editions are the
+        base edition (simply branded as Windows 8.1), Windows 8.1 Pro, Windows
+        8.1 Enterprise, and Windows RT 8.1 (designed for tablet PCs and other
+        mobile devices with ARM processors.
+      </p>
 
-<span id="heading">Windows 8.1</span>
+      <p>
+        Windows 8.1 is a release of the Windows NT operating system developed by
+        Microsoft. It was released to manufacturing on August 27, 2013, and
+        broadly released for retail sale on October 17, 2013, about a year after
+        the retail release of its predecessor, and succeeded by Windows 10 on
+        July 29, 2015. Windows 8.1 was made available for download via MSDN and
+        Technet and available as a free upgrade for retail copies of Windows 8
+        and Windows RT users via the Windows Store. A server version, Windows
+        Server 2012 R2, was released on October 18, 2013.
+      </p>
 
-<p style="font-size: 1.6vh; font-style: italic;">This webpage does not have a section on editions as there is no information on Wikipedia about its editions. The four editions are the base edition (simply branded as Windows 8.1), Windows 8.1 Pro, Windows 8.1 Enterprise, and Windows RT 8.1 (designed for tablet PCs and other mobile devices with ARM processors.</p>
+      <div id="info">
+        <img
+          src="../Images/icons/w8n8.1.png"
+          alt="Windows 8.1"
+          style="align-self: center; width: 25vh; height: 25vh"
+        />
+        <p>Date released: Augst 27, 2013</p>
+        <p>
+          End of Support: Mainstream - January 9, 2018 <br />Extended - January
+          10, 2023
+        </p>
+        <p>Last release: 6.3.9600 on January 10, 2023</p>
+        <p>Succeeded by: Windows 10 (released 2015)</p>
+        <p>Codename: Blue</p>
+        <p>Developed by: Microsoft Corporation</p>
+      </div>
 
-<p>Windows 8.1 is a release of the Windows NT operating system developed by Microsoft. It was released to manufacturing on August 27, 2013, and broadly released for retail sale on October 17, 2013, about a year after the retail release of its predecessor, and succeeded by Windows 10 on July 29, 2015. Windows 8.1 was made available for download via MSDN and Technet and available as a free upgrade for retail copies of Windows 8 and Windows RT users via the Windows Store. A server version, Windows Server 2012 R2, was released on October 18, 2013.</p>
+      <p>
+        Windows 8.1 aimed to address complaints of Windows 8 users and reviewers
+        on launch. Enhancements include an improved Start screen, additional
+        snap views, additional bundled apps, tighter OneDrive (formerly
+        SkyDrive) integration, Internet Explorer 11 (IE11), a Bing-powered
+        unified search system, restoration of a visible Start button on the
+        taskbar, and the ability to restore the previous behavior of opening the
+        user's desktop on login instead of the Start screen. Windows 8.1 also
+        added support for then emerging technologies like high-resolution
+        displays, 3D printing, Wi-Fi Direct, and Miracast streaming, as well as
+        the ReFS file system.
+      </p>
 
-<div id="info">
-<img src="../Images/icons/w8n8.1.png" alt="Windows 8.1" style="align-self: center; width: 25vh; height: 25vh;">
-<p>Date released: Augst 27, 2013</p>
-<p>End of Support: Mainstream - January 9, 2018 <br>Extended - January 10, 2023</p>
-<p>Last release: 6.3.9600 on January 10, 2023 </p>
-<p>Succeeded by: Windows 10 (released 2015)</p>
-<p>Codename: Blue</p>
-<p>Developed by: Microsoft Corporation</p>
-</div>
+      <details>
+        <summary>Development</summary>
+        <p>
+          In February 2013, ZDNet writer Mary Jo Foley disclosed potential
+          rumors about "Blue", the codename for a wave of planned updates across
+          several Microsoft products and services, including Windows 8, Windows
+          Phone 8, Outlook.com, and SkyDrive. In particular, the report detailed
+          that Microsoft was planning to shift to a more "continuous"
+          development model, which would see major revisions to its main
+          software platforms released on a consistent yearly cycle to keep up
+          with market demands. Lending credibility to the reports, Foley noted
+          that a Microsoft staff member had listed experience with "Windows
+          Blue" on his LinkedIn profile, and listed it as a separate operating
+          system from 8.
+        </p>
 
-<p>Windows 8.1 aimed to address complaints of Windows 8 users and reviewers on launch. Enhancements include an improved Start screen, additional snap views, additional bundled apps, tighter OneDrive (formerly SkyDrive) integration, Internet Explorer 11 (IE11), a Bing-powered unified search system, restoration of a visible Start button on the taskbar, and the ability to restore the previous behavior of opening the user's desktop on login instead of the Start screen. Windows 8.1 also added support for then emerging technologies like high-resolution displays, 3D printing, Wi-Fi Direct, and Miracast streaming, as well as the ReFS file system.</p>
+        <p>
+          A post-RTM build of Windows 8, build 9364, was leaked in March 2013.
+          The build, which was believed to be of "Windows Blue", revealed a
+          number of enhancements across Windows 8's interface, including
+          additional size options for tiles, expanded color options on the Start
+          screen, the expansion of PC Settings to include more options that were
+          previously exclusive to the desktop Control Panel, the ability for
+          apps to snap to half of the screen, the ability to take screenshots
+          from the Share charm, additional stock apps, increased SkyDrive
+          integration (such as automatic device backups) and Internet Explorer
+          11. Shortly afterward on March 26, 2013, corporate vice president of
+          corporate communications Frank X. Shaw officially acknowledged the
+          "Blue" project, stating that continuous development would be "the new
+          normal" at Microsoft, and that "Our product groups are also taking a
+          unified planning approach so people get what they want—all of their
+          devices, apps and services working together wherever they are and for
+          whatever they are doing."
+        </p>
 
-<details>
-<summary>Development</summary>
-<p>In February 2013, ZDNet writer Mary Jo Foley disclosed potential rumors about "Blue", the codename for a wave of planned updates across several Microsoft products and services, including Windows 8, Windows Phone 8, Outlook.com, and SkyDrive. In particular, the report detailed that Microsoft was planning to shift to a more "continuous" development model, which would see major revisions to its main software platforms released on a consistent yearly cycle to keep up with market demands. Lending credibility to the reports, Foley noted that a Microsoft staff member had listed experience with "Windows Blue" on his LinkedIn profile, and listed it as a separate operating system from 8.</p>
+        <p>
+          On April 8, 2014, Microsoft released the Windows 8.1 Update, which
+          included all past updates plus new features, unveiled by Microsoft
+          vice president Joe Belfiore at Mobile World Congress on February 23,
+          2014, and detailed in full at Microsoft's Build conference on April 2.
+          Belfiore noted that the update would lower the minimum system
+          requirements for Windows, so it can be installed on devices with as
+          little as 1 GB of RAM and 16 GB of storage. Unlike Windows 8.1 itself,
+          this cumulative update is distributed through Windows Update, and must
+          be installed in order to receive any further patches.
+        </p>
 
- <p>A post-RTM build of Windows 8, build 9364, was leaked in March 2013. The build, which was believed to be of "Windows Blue", revealed a number of enhancements across Windows 8's interface, including additional size options for tiles, expanded color options on the Start screen, the expansion of PC Settings to include more options that were previously exclusive to the desktop Control Panel, the ability for apps to snap to half of the screen, the ability to take screenshots from the Share charm, additional stock apps, increased SkyDrive integration (such as automatic device backups) and Internet Explorer 11. Shortly afterward on March 26, 2013, corporate vice president of corporate communications Frank X. Shaw officially acknowledged the "Blue" project, stating that continuous development would be "the new normal" at Microsoft, and that "Our product groups are also taking a unified planning approach so people get what they want—all of their devices, apps and services working together wherever they are and for whatever they are doing." </p>
- 
-<p>On April 8, 2014, Microsoft released the Windows 8.1 Update, which included all past updates plus new features, unveiled by Microsoft vice president Joe Belfiore at Mobile World Congress on February 23, 2014, and detailed in full at Microsoft's Build conference on April 2. Belfiore noted that the update would lower the minimum system requirements for Windows, so it can be installed on devices with as little as 1 GB of RAM and 16 GB of storage. Unlike Windows 8.1 itself, this cumulative update is distributed through Windows Update, and must be installed in order to receive any further patches.</p>
+        <p>
+          At the 2014 Build conference, during April, Microsoft's Terry Myerson
+          unveiled further GUI changes for Windows 8.1, including the ability to
+          run Metro-style apps inside desktop windows, and a revised Start menu,
+          which creates a compromise between the Start menu design used by
+          Windows 7 and the Start screen, by combining the application listing
+          in the first column with a second that can be used to display app
+          tiles, whereas Windows 8.0 used a screen hotspot ("hot corner").
+          Myerson stated that these changes would occur in a future update, but
+          did not elaborate further. A distinction is the removal of the tooltip
+          with the preview thumbnail of the Start screen.
+        </p>
+      </details>
+      <hr />
+      <details>
+        <summary>Features</summary>
+        <p>
+          Many of the changes on Windows 8.1, particularly to the user
+          interface, were made in response to criticisms from early adopters and
+          other critics after the release of Windows 8.
+        </p>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">Apps</summary>
+          <p>
+            The suite of pre-loaded apps bundled with Windows 8 were changed in
+            Windows 8.1; PC Settings was expanded to include options that were
+            previously exclusive to the desktop Control Panel, Windows Store was
+            updated with an improved interface for browsing apps and automatic
+            updates, the Mail app includes an updated interface and additional
+            features, the Camera app integrates Photosynth for creating
+            panoramas, and additional editing tools were added to the Photos app
+            (while integration with Flickr and Facebook was completely removed).
+            A number of additional stock apps were also added, including
+            Calculator, Food and Drink, Health and Fitness, Sound Recorder,
+            Reading List (which can be used to collect and sync content from
+            apps through OneDrive), Scan, and Help + Tips. For Windows RT users,
+            Windows 8.1 also adds a version of Microsoft Outlook to the included
+            Office 2013 RT suite. However, it does not support data loss
+            protection, Group Policy, Lync integration, or creating emails with
+            information rights management. Windows Store is enabled by default
+            within Windows To Go environments. On January 31, 2020, Microsoft
+            released the new Microsoft Edge web browser for Windows 8.1.
+          </p>
+        </details>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">
+            Online services and functionality
+          </summary>
+          <p>
+            Windows 8.1 adds tighter integration with several Microsoft-owned
+            services. OneDrive (formerly SkyDrive) is integrated at the system
+            level to sync user settings and files. Files are automatically
+            downloaded in the background when they are accessed from the user's
+            OneDrive folder, unless they are marked to be available offline. By
+            default, only file metadata and thumbnails are stored locally, and
+            reparse points are used to give the appearance of a normal directory
+            structure to provide backwards compatibility. The OneDrive app was
+            updated to include a local file manager. OneDrive use on Windows 8.1
+            requires that a user's Windows account be linked to a Microsoft
+            account; the previous SkyDrive desktop client (which did not have
+            this requirement) is not supported on Windows 8.1.
+          </p>
 
-<p>At the 2014 Build conference, during April, Microsoft's Terry Myerson unveiled further GUI changes for Windows 8.1, including the ability to run Metro-style apps inside desktop windows, and a revised Start menu, which creates a compromise between the Start menu design used by Windows 7 and the Start screen, by combining the application listing in the first column with a second that can be used to display app tiles, whereas Windows 8.0 used a screen hotspot ("hot corner"). Myerson stated that these changes would occur in a future update, but did not elaborate further. A distinction is the removal of the tooltip with the preview thumbnail of the Start screen.</p>
-</details>
-<hr>
-<details>
-<summary>Features</summary>
-<p>Many of the changes on Windows 8.1, particularly to the user interface, were made in response to criticisms from early adopters and other critics after the release of Windows 8.</p>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">Apps</summary>
-<p>The suite of pre-loaded apps bundled with Windows 8 were changed in Windows 8.1; PC Settings was expanded to include options that were previously exclusive to the desktop Control Panel, Windows Store was updated with an improved interface for browsing apps and automatic updates, the Mail app includes an updated interface and additional features, the Camera app integrates Photosynth for creating panoramas, and additional editing tools were added to the Photos app (while integration with Flickr and Facebook was completely removed). A number of additional stock apps were also added, including Calculator, Food and Drink, Health and Fitness, Sound Recorder, Reading List (which can be used to collect and sync content from apps through OneDrive), Scan, and Help + Tips. For Windows RT users, Windows 8.1 also adds a version of Microsoft Outlook to the included Office 2013 RT suite. However, it does not support data loss protection, Group Policy, Lync integration, or creating emails with information rights management. Windows Store is enabled by default within Windows To Go environments. On January 31, 2020, Microsoft released the new Microsoft Edge web browser for Windows 8.1.</p>
-</details>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">Online services and functionality</summary>
-<p>Windows 8.1 adds tighter integration with several Microsoft-owned services. OneDrive (formerly SkyDrive) is integrated at the system level to sync user settings and files. Files are automatically downloaded in the background when they are accessed from the user's OneDrive folder, unless they are marked to be available offline. By default, only file metadata and thumbnails are stored locally, and reparse points are used to give the appearance of a normal directory structure to provide backwards compatibility. The OneDrive app was updated to include a local file manager. OneDrive use on Windows 8.1 requires that a user's Windows account be linked to a Microsoft account; the previous SkyDrive desktop client (which did not have this requirement) is not supported on Windows 8.1.</p>
+          <p>
+            A Bing-based unified search system was added; it can analyze a
+            user's search habits to return results featuring relevant local and
+            online content. Full-screen "hero" displays aggregate news articles,
+            Wikipedia entries, multimedia, and other content related to a search
+            query; for instance, searching for a music performer would return
+            photos of the performer, a biography, and their available songs and
+            albums on Xbox Music. The messaging app from Windows 8 has been
+            replaced by Skype, which also allows users to accept calls directly
+            from the lock screen. Windows 8.1 also includes Internet Explorer
+            11, which adds support for SPDY and WebGL, and expanded developer
+            tools. The Metro-style variant of IE11 also adds tab syncing, the
+            ability to open an unlimited number of tabs, and Reading List
+            integration.
+          </p>
 
-<p>A Bing-based unified search system was added; it can analyze a user's search habits to return results featuring relevant local and online content. Full-screen "hero" displays aggregate news articles, Wikipedia entries, multimedia, and other content related to a search query; for instance, searching for a music performer would return photos of the performer, a biography, and their available songs and albums on Xbox Music. The messaging app from Windows 8 has been replaced by Skype, which also allows users to accept calls directly from the lock screen. Windows 8.1 also includes Internet Explorer 11, which adds support for SPDY and WebGL, and expanded developer tools. The Metro-style variant of IE11 also adds tab syncing, the ability to open an unlimited number of tabs, and Reading List integration.</p>
+          <p>
+            Due to Facebook Connect service changes, Facebook support is
+            disabled in all bundled apps effective June 8, 2015.
+          </p>
+        </details>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">
+            Security and hardware compatibility
+          </summary>
+          <p>
+            On compatible hardware, Windows 8.1 also features a transparent
+            "device encryption" system based on BitLocker. Encryption begins as
+            soon as a user begins using the system; the recovery key is stored
+            to either the user's Microsoft account or an Active Directory login,
+            allowing it to be retrieved from any computer. While device
+            encryption is offered on all editions of Windows 8.1 unlike
+            BitLocker (which is exclusive to the Pro and Enterprise editions),
+            device encryption requires that the device meet the Connected
+            Standby specification and have a Trusted Platform Module (TPM) 2.0
+            chip. Windows 8.1 also introduces improved fingerprint recognition
+            APIs, which allows user login, User Account Control, Windows Store
+            and Windows Store apps to use enrolled fingerprints as an
+            authentication method. A new kiosk mode known as "Assigned Access"
+            was also added, allowing a device to be configured to use a single
+            app in a restricted environment. Additionally, Windows Defender
+            includes an intrusion detection system which can scan network
+            activity for signs of malware. Windows 8.1 also allows third-party
+            VPN clients to automatically trigger connections.
+          </p>
 
-<p>Due to Facebook Connect service changes, Facebook support is disabled in all bundled apps effective June 8, 2015.</p>
-</details>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">Security and hardware compatibility</summary>
-<p>On compatible hardware, Windows 8.1 also features a transparent "device encryption" system based on BitLocker. Encryption begins as soon as a user begins using the system; the recovery key is stored to either the user's Microsoft account or an Active Directory login, allowing it to be retrieved from any computer. While device encryption is offered on all editions of Windows 8.1 unlike BitLocker (which is exclusive to the Pro and Enterprise editions), device encryption requires that the device meet the Connected Standby specification and have a Trusted Platform Module (TPM) 2.0 chip. Windows 8.1 also introduces improved fingerprint recognition APIs, which allows user login, User Account Control, Windows Store and Windows Store apps to use enrolled fingerprints as an authentication method. A new kiosk mode known as "Assigned Access" was also added, allowing a device to be configured to use a single app in a restricted environment. Additionally, Windows Defender includes an intrusion detection system which can scan network activity for signs of malware. Windows 8.1 also allows third-party VPN clients to automatically trigger connections.</p>
+          <p>
+            For enterprise device management, Windows 8.1 adds support for the
+            Workplace Join feature of Windows Server 2012 R2, which allows users
+            to enroll their own device into corporate networks with finer
+            control over access to resources and security requirements. Windows
+            8.1 also supports the OMA Device Management specifications. Remote
+            Data Control can be used to remotely wipe specific "corporate" data
+            from Windows 8.1 devices.
+          </p>
 
-<p>For enterprise device management, Windows 8.1 adds support for the Workplace Join feature of Windows Server 2012 R2, which allows users to enroll their own device into corporate networks with finer control over access to resources and security requirements. Windows 8.1 also supports the OMA Device Management specifications. Remote Data Control can be used to remotely wipe specific "corporate" data from Windows 8.1 devices.</p>
+          <p>
+            The 64-bit variants of Windows 8.1 no longer support processors
+            which do not implement the double-width compare and exchange
+            (CMPXCHG16B) CPU instruction (which the installer reports as a lack
+            of support for "CompareExchange128"). A Microsoft spokesperson noted
+            that the change primarily affects systems with older AMD 64-bit
+            processors, and that "the number of affected processors are
+            extremely small since this instruction has been supported for
+            greater than 10 years." It mostly concerns Socket 754 and Socket 939
+            Athlon 64 from 2004 and 2005; the Socket AM2 CPUs should all have
+            the instruction. Brad Chacos of PC World also reported a case in
+            which Windows 8.1 rejected Intel Core 2 Quad Q9300 and a Q9550S
+            despite their support for this instruction, because the associated
+            Intel DP35DP motherboard did not. These changes do not affect the
+            32-bit variants of Windows 8.1.
+          </p>
+        </details>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">
+            Hardware functionality
+          </summary>
+          <p>
+            Windows 8.1 adds support for 3D printing, pairing with printers
+            using NFC tags, Wi-Fi Direct, Miracast media streaming, tethering,
+            and NVMe. In response to the increasing pixel density in displays,
+            Windows 8.1 can scale text and GUI elements up to 200% (whereas
+            Windows 8 supported only 150%) and set scaling settings
+            independently on each display in multi-monitor configurations.
+          </p>
+        </details>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">
+            Removed features
+          </summary>
+          <p>
+            Backup and Restore, the backup component of Windows that had been
+            deprecated but was available in Windows 8 through a Control Panel
+            applet called "Windows 7 File Recovery", was removed.
+          </p>
 
-<p>The 64-bit variants of Windows 8.1 no longer support processors which do not implement the double-width compare and exchange (CMPXCHG16B) CPU instruction (which the installer reports as a lack of support for "CompareExchange128"). A Microsoft spokesperson noted that the change primarily affects systems with older AMD 64-bit processors, and that "the number of affected processors are extremely small since this instruction has been supported for greater than 10 years." It mostly concerns Socket 754 and Socket 939 Athlon 64 from 2004 and 2005; the Socket AM2 CPUs should all have the instruction. Brad Chacos of PC World also reported a case in which Windows 8.1 rejected Intel Core 2 Quad Q9300 and a Q9550S despite their support for this instruction, because the associated Intel DP35DP motherboard did not. These changes do not affect the 32-bit variants of Windows 8.1.</p>
-</details>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">Hardware functionality</summary>
-<p>Windows 8.1 adds support for 3D printing, pairing with printers using NFC tags, Wi-Fi Direct, Miracast media streaming, tethering, and NVMe. In response to the increasing pixel density in displays, Windows 8.1 can scale text and GUI elements up to 200% (whereas Windows 8 supported only 150%) and set scaling settings independently on each display in multi-monitor configurations.</p>
-</details>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">Removed features</summary>
-<p>Backup and Restore, the backup component of Windows that had been deprecated but was available in Windows 8 through a Control Panel applet called "Windows 7 File Recovery", was removed.</p>
+          <p>
+            Windows 8.1 also removes the graphical user interface for the
+            Windows System Assessment Tool, meaning that the Windows Experience
+            Index is no longer displayed. The command line variant of the tool
+            remains available on the system. Microsoft reportedly removed the
+            graphical Windows Experience Index in order to promote the idea that
+            all kinds of hardware run Windows 8 equally well.
+          </p>
 
-<p>Windows 8.1 also removes the graphical user interface for the Windows System Assessment Tool, meaning that the Windows Experience Index is no longer displayed. The command line variant of the tool remains available on the system. Microsoft reportedly removed the graphical Windows Experience Index in order to promote the idea that all kinds of hardware run Windows 8 equally well.</p>
+          <p>
+            Windows 8.1 removed the ability of several Universal Windows
+            Platform apps to act as "hubs" connecting similar services within a
+            single interface:
+          </p>
+          <ul>
+            <li>
+              The Photos app lost the ability to view photos from Facebook,
+              Flickr or SkyDrive (branded as OneDrive since February 2014).
+              Instead, each service provider is expected to create its own app.
+            </li>
+            <li>
+              The Messaging app, which was interoperable with Windows Live
+              Messenger and Facebook Chat, was deprecated in favor of a Skype
+              app that is not compatible with Facebook Chat;
+            </li>
+            <li>
+              The Calendar app can only connect to Microsoft services such as
+              Outlook.com and Microsoft Exchange, with support for Google
+              Calendar removed.
+            </li>
+            <li>
+              Since October 2016, all future patches are cumulative as with
+              Windows 10; individual patches can no longer be downloaded.
+            </li>
+          </ul>
+          <p>
+            Users can only upgrade their previous version of Windows to Windows
+            8.1 using the revised installer introduced in Windows 8: they can no
+            longer use setup.exe in the sources folder to upgrade their system.
+          </p>
+        </details>
+      </details>
+      <hr />
+      <details>
+        <summary>User interface and desktop</summary>
+        <p>
+          The Start screen received several enhancements on Windows 8.1,
+          including an extended "All Apps" view with sort modes (accessed by
+          clicking a new down arrow button or swiping upward), small and
+          extra-large sizes for tiles, and colored tiles for desktop program
+          shortcuts. Additional customization options were also added, such as
+          expanded color options, new backgrounds (some of which incorporate
+          animated elements), and the ability for the Start screen to use the
+          desktop background instead. Applications were no longer added to the
+          Start screen automatically when installed, and all applications now
+          have colored tiles (desktop programs were previously shown in a single
+          color). The app snapping system was also extended; up to four apps can
+          be snapped onto a single display depending on screen size, apps can be
+          snapped to fill half the screen, and can also be used on any display
+          in a multi-monitor configuration. Apps can also launch other apps in a
+          snapped view to display content; for example, the Mail app can open a
+          photo attachment in a picture viewer snapped to another half of the
+          screen. Improved support is also provided by apps for using devices in
+          a portrait (vertical) orientation. The lock screen offers the ability
+          to use a photo slideshow as its backdrop, and a shortcut to the Camera
+          app by swiping up. The on-screen keyboard has an improved autocomplete
+          mechanism which displays multiple word suggestions, and allows users
+          to select from them by sliding on the spacebar. The autocomplete
+          dictionary is also automatically updated using data from Bing,
+          allowing it to recognize and suggest words relating to current trends
+          and events. Similarly to Windows Phone, certain apps now display a
+          narrow bar with three dots on it to indicate the presence of a pop-up
+          menu accessible by swiping, clicking on the dots, or right-clicking.
+        </p>
 
-<p>Windows 8.1 removed the ability of several Universal Windows Platform apps to act as "hubs" connecting similar services within a single interface:</p>
-<ul>
-<li>The Photos app lost the ability to view photos from Facebook, Flickr or SkyDrive (branded as OneDrive since February 2014). Instead, each service provider is expected to create its own app.</li>
-<li>The Messaging app, which was interoperable with Windows Live Messenger and Facebook Chat, was deprecated in favor of a Skype app that is not compatible with Facebook Chat;</li>
-<li>The Calendar app can only connect to Microsoft services such as Outlook.com and Microsoft Exchange, with support for Google Calendar removed.</li>
-<li>Since October 2016, all future patches are cumulative as with Windows 10; individual patches can no longer be downloaded.</li>
-</ul>
-<p>Users can only upgrade their previous version of Windows to Windows 8.1 using the revised installer introduced in Windows 8: they can no longer use setup.exe in the sources folder to upgrade their system.</p>
-</details>
-</details>
-<hr>
-<details>
-<summary>User interface and desktop</summary>
-<p>The Start screen received several enhancements on Windows 8.1, including an extended "All Apps" view with sort modes (accessed by clicking a new down arrow button or swiping upward), small and extra-large sizes for tiles, and colored tiles for desktop program shortcuts. Additional customization options were also added, such as expanded color options, new backgrounds (some of which incorporate animated elements), and the ability for the Start screen to use the desktop background instead. Applications were no longer added to the Start screen automatically when installed, and all applications now have colored tiles (desktop programs were previously shown in a single color). The app snapping system was also extended; up to four apps can be snapped onto a single display depending on screen size, apps can be snapped to fill half the screen, and can also be used on any display in a multi-monitor configuration. Apps can also launch other apps in a snapped view to display content; for example, the Mail app can open a photo attachment in a picture viewer snapped to another half of the screen. Improved support is also provided by apps for using devices in a portrait (vertical) orientation. The lock screen offers the ability to use a photo slideshow as its backdrop, and a shortcut to the Camera app by swiping up. The on-screen keyboard has an improved autocomplete mechanism which displays multiple word suggestions, and allows users to select from them by sliding on the spacebar. The autocomplete dictionary is also automatically updated using data from Bing, allowing it to recognize and suggest words relating to current trends and events. Similarly to Windows Phone, certain apps now display a narrow bar with three dots on it to indicate the presence of a pop-up menu accessible by swiping, clicking on the dots, or right-clicking.</p>
+        <p>
+          To improve the usability of the desktop interface, a visible Start
+          button was restored to the taskbar for opening the Start screen, and
+          the Quick Links menu (accessed by right-clicking the Start button or
+          pressing Win+X) now contains shutdown and sign-out options. Users can
+          also modify certain user interface behaviors, such as disabling the
+          upper hot corners for using the charms and recent apps list, going to
+          the desktop instead of the Start screen on login or after closing all
+          apps on a screen, automatically opening the "All Apps" view on the
+          Start screen when opened, and prioritizing desktop programs on the
+          "Category" sort mode on "All Apps". To assist users in learning the
+          Windows 8 user interface, an interactive tutorial was also offered,
+          along with a new Help + Tips app for additional information. In
+          contrast, Windows RT 8.1 downplays the desktop interface further by
+          not displaying the Desktop tile on its default Start screen at all
+          (however, it can still be manually added to the Start screen).
+        </p>
 
-<p>To improve the usability of the desktop interface, a visible Start button was restored to the taskbar for opening the Start screen, and the Quick Links menu (accessed by right-clicking the Start button or pressing Win+X) now contains shutdown and sign-out options. Users can also modify certain user interface behaviors, such as disabling the upper hot corners for using the charms and recent apps list, going to the desktop instead of the Start screen on login or after closing all apps on a screen, automatically opening the "All Apps" view on the Start screen when opened, and prioritizing desktop programs on the "Category" sort mode on "All Apps". To assist users in learning the Windows 8 user interface, an interactive tutorial was also offered, along with a new Help + Tips app for additional information. In contrast, Windows RT 8.1 downplays the desktop interface further by not displaying the Desktop tile on its default Start screen at all (however, it can still be manually added to the Start screen).</p>
+        <p>
+          Windows manager Chaitanya Sareen stated that the restoration of the
+          visible Start button was intended to be a "warm blanket" for users who
+          had become confused by the removal of the button on 8; the Start
+          button was originally removed to reflect Windows 8's treatment of the
+          desktop as an "app" rather than the main interface.
+        </p>
 
-<p>Windows manager Chaitanya Sareen stated that the restoration of the visible Start button was intended to be a "warm blanket" for users who had become confused by the removal of the button on 8; the Start button was originally removed to reflect Windows 8's treatment of the desktop as an "app" rather than the main interface.</p>
-
-<p>Further interface behavior changes are made on the April 2014 "Windows 8.1 Update", which are oriented towards non-touch environments (such as desktop and laptop PCs) that use a keyboard and mouse, and improve integration between Windows Store apps and the desktop. When a mouse is in use, the Desktop is shown on startup by default, the Start screen uses context menus instead of a toolbar across the bottom of the screen for manipulating tiles, an autohiding title bar with minimize and close buttons is displayed within apps at the top of the screen, the taskbar can display and pin apps alongside desktop programs and be accessed from within apps, and visible search and power buttons are added to the Start screen. In non-touch environments, the default image viewer and media player programs were changed back to Windows Photo Viewer and Windows Media Player in lieu of the Xbox Video and Photos apps.</p>
-</details>
-</details>
-<hr>
-</div>
-<footer>
-<div id="child-container-in-footer">
-<a href="./Win8.html"><button>Previous</button></a>
-<p>Windows 8</p>
-<p><b>Windows 8.1</b></p>
-<p>Windows 10</p>
-<a href="./Win10.html"><button>Next</button></a>
-</div>
-</footer>
-</body>
+        <p>
+          Further interface behavior changes are made on the April 2014 "Windows
+          8.1 Update", which are oriented towards non-touch environments (such
+          as desktop and laptop PCs) that use a keyboard and mouse, and improve
+          integration between Windows Store apps and the desktop. When a mouse
+          is in use, the Desktop is shown on startup by default, the Start
+          screen uses context menus instead of a toolbar across the bottom of
+          the screen for manipulating tiles, an autohiding title bar with
+          minimize and close buttons is displayed within apps at the top of the
+          screen, the taskbar can display and pin apps alongside desktop
+          programs and be accessed from within apps, and visible search and
+          power buttons are added to the Start screen. In non-touch
+          environments, the default image viewer and media player programs were
+          changed back to Windows Photo Viewer and Windows Media Player in lieu
+          of the Xbox Video and Photos apps.
+        </p>
+      </details>
+      <hr />
+    </div>
+    <footer>
+      <div id="child-container-in-footer">
+        <a href="./Win8.html"><button>Previous</button></a>
+        <p>Windows 8</p>
+        <p><b>Windows 8.1</b></p>
+        <p>Windows 10</p>
+        <a href="./Win10.html"><button>Next</button></a>
+      </div>
+    </footer>
+  </body>
 </html>

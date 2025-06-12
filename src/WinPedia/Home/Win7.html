@@ -1,266 +1,596 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="Unicode">
-<title>WinPedia - Windows 7</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link rel="icon" href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg">
-<style>
-#ul, .li, .nav {
-list-style: none;
-margin-right: 20px;
-text-decoration: none;
-color: #3266fb;
-display: inline-block;
-}
+  <head>
+    <meta charset="Unicode" />
+    <title>WinPedia - Windows 7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg"
+    />
+    <style>
+      #ul,
+      .li,
+      .nav {
+        list-style: none;
+        margin-right: 20px;
+        text-decoration: none;
+        color: #3266fb;
+        display: inline-block;
+      }
 
-.nav:hover {
-color: #001fff;
-}
+      .nav:hover {
+        color: #001fff;
+      }
 
-nav {
-background-color: rgba(255, 255, 255, 0.75);
-backdrop-filter: blur(10px);
-position: fixed;
-top: 0;
-left: 0;
-z-index: 1;
-overflow: hidden;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 9vh;
-list-style: none;
-}
+      nav {
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 9vh;
+        list-style: none;
+      }
 
-footer {
-background-color: rgba(255, 255, 255, 0.75);
-backdrop-filter: blur(10px);
-position: fixed;
-bottom: 0;
-right: 0;
-z-index: 1;
-overflow: hidden;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 9vh;
-padding: 5px;
-color: #000000;
-}
+      footer {
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 9vh;
+        padding: 5px;
+        color: #000000;
+      }
 
-button {
-border-radius: 10px;
-padding: 10px;
-background-color: rgba(255, 255, 255, 0.5);
-width: 100%;
-height: 75%;
-font-family: inherit;
-font-size: inherit;
-display: flex;
-justify-content: center;
-align-items: center;
-transition: box-shadow ease-out 0.3s;
-border-style: none;
-}
+      button {
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+        height: 75%;
+        font-family: inherit;
+        font-size: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: box-shadow ease-out 0.3s;
+        border-style: none;
+      }
 
-button:hover {
-box-shadow: 0px 0px 15px 2px black;
-}
+      button:hover {
+        box-shadow: 0px 0px 15px 2px black;
+      }
 
-#child-container-in-footer {
-margin: 10px;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: auto;
-width: 100%;
-text-align: center;
-align-items: center;
-}
+      #child-container-in-footer {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+      }
 
-body {
-margin: 10vh 0.5vw 10vh 0.5vw;
-font-family: Segoe UI;
-font-size: 2vh;
-background-image: url(../Images/wallpaper/win7.jpg);
-background-size: cover;
-background-attachment: fixed;
-background-position-x: 0px;
-color: #FFFFFF;
-overflow-x: hidden;
+      body {
+        margin: 10vh 0.5vw 10vh 0.5vw;
+        font-family: Segoe UI;
+        font-size: 2vh;
+        background-image: url(../Images/wallpaper/win7.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: 0px;
+        color: #ffffff;
+        overflow-x: hidden;
+      }
 
-}
+      #container {
+        margin: 10px;
+        overflow: auto;
+      }
 
-#container {
-margin: 10px;
-overflow: auto;
-}
+      #heading {
+        font-size: 4vh;
+        font-weight: bold;
+      }
 
-#heading {
-font-size: 4vh;
-font-weight: bold;
-}
+      #info {
+        display: flow-root;
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(7.5px);
+        padding: 30px;
+        border: solid 1px black;
+        border-radius: 10px;
+        margin: 10px;
+        color: black;
+        height: auto;
+      }
 
-#info {
-display: flow-root;
-background-color: rgba(255, 255, 255, 0.75);
-backdrop-filter: blur(7.5px);
-padding: 30px;
-border: solid 1px black;
-border-radius: 10px;
-margin: 10px;
-color: black;
-height: auto;
-}
+      img {
+        float: right;
+      }
 
-img {
-float: right;
-}
+      li {
+        list-style: disc;
+        color: #ffffff;
+      }
 
-li {
-list-style: disc;
-color: #FFFFFF;
-}
+      summary {
+        font-weight: bold;
+        font-size: 2.5vh;
+      }
 
-summary {
-font-weight: bold;
-font-size: 2.5vh;
-}
+      a {
+        color: #000000;
+        text-decoration: none;
+      }
 
-a {
-color: #000000;
-text-decoration: none;
-}
+      @media (max-width: 1440px) {
+        #homeContainer {
+          display: block;
+        }
+        nav {
+          height: 9vh;
+        }
+        img {
+          float: none;
+        }
+        table {
+          float: none;
+          align-self: center;
+          width: 98%;
+        }
+        #info {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          text-align: center;
+        }
+        body {
+          background-position: center;
+        }
+        #features {
+          line-height: 2.75vh;
+        }
+      }
 
-@media (max-width: 1440px){
-#homeContainer {
-display: block;
-}
-nav {
-height: 9vh;
-}
-img {
-float: none;
-}
-table {
-float: none;
-align-self: center;
-width: 98%;
-}
-#info {
-display: flex;
-flex-direction: column;
-align-content: center;
-text-align: center;
-}
-body {
-background-position: center;
-}
-#features {
-line-height: 2.75vh;
-}
-}
+      .bolden {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="../Images/WinPedia-logo.svg" alt="logo" height="60%" />
+        <ul>
+          <li class="nav"><a href="./Homepage.html" class="nav">Home</a></li>
+          <li class="nav">
+            <a href="../AboutMe/AboutMe.html" class="nav">About Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-.bolden {
-font-weight: 600;
-}
-</style>
-</head>
-<body>
-<header>
-<nav>
-<img src="../Images/WinPedia-logo.svg" alt="logo" height="60%">
-<ul>
-<li class="nav"><a href="./Homepage.html" class="nav">Home</a></li> 
-<li class="nav"><a href="../AboutMe/AboutMe.html" class="nav">About Me</a></li>
-</ul>
-</nav>
-</header>
+    <div id="container">
+      <span id="heading">Windows 7</span>
 
-<div id="container">
+      <p>
+        Windows 7 is a major release of the Windows NT operating system
+        developed by Microsoft. It was released to manufacturing on July 22,
+        2009, and became generally available on October 22, 2009. It is the
+        successor to Windows Vista, released nearly three years earlier. Windows
+        7's server counterpart, Windows Server 2008 R2, was released at the same
+        time. It was succeeded by Windows 8 in October 2012.
+      </p>
 
-<span id="heading">Windows 7</span>
+      <div id="info">
+        <img
+          src="../Images/icons/w7.png"
+          alt="Windows 7"
+          style="align-self: center; width: 25vh; height: 25vh"
+        />
+        <p>Date released: October 22, 2009</p>
+        <p>End of Support: January 14, 2020</p>
+        <p>Last release: 4.90.3000 on September 14, 2000</p>
+        <p>Succeeded by: Windows 8 (released 2012)</p>
+        <p>Codename: Blackcomb</p>
+        <p>Developed by: Microsoft Corporation</p>
+      </div>
 
-<p>Windows 7 is a major release of the Windows NT operating system developed by Microsoft. It was released to manufacturing on July 22, 2009, and became generally available on October 22, 2009. It is the successor to Windows Vista, released nearly three years earlier. Windows 7's server counterpart, Windows Server 2008 R2, was released at the same time. It was succeeded by Windows 8 in October 2012.</p>
+      <p>
+        Extended support ended on January 14, 2020, over ten years after the
+        release of Windows 7, after which the operating system ceased receiving
+        further updates. A paid support program was available for enterprises,
+        providing security updates for Windows 7 for up to three years after the
+        official end of life. Windows 7 was intended to be an incremental
+        upgrade to Microsoft Windows, addressing Windows Vista's poor critical
+        reception while maintaining hardware and software compatibility. Windows
+        7 continued improvements on the Windows Aero user interface with the
+        addition of a redesigned taskbar that allows pinned applications, and
+        new window management features. Other new features were added to the
+        operating system which included libraries, the new file-sharing system
+        HomeGroup, and support for multitouch input. A new "Action Center" was
+        added to provide an overview of system security and maintenance
+        information, and the User Account Control system was slightly modified
+        to make it less intrusive. Windows 7 also shipped with updated versions
+        of several stock applications, including Internet Explorer 8, Windows
+        Media Player, and Windows Media Center.
+      </p>
 
-<div id="info">
-<img src="../Images/icons/w7.png" alt="Windows 7" style="align-self: center; width: 25vh; height: 25vh;">
-<p>Date released: October 22, 2009</p>
-<p>End of Support: January 14, 2020</p>
-<p>Last release: 4.90.3000 on September 14, 2000 </p>
-<p>Succeeded by: Windows 8 (released 2012)</p>
-<p>Codename: Blackcomb</p>
-<p>Developed by: Microsoft Corporation</p>
-</div>
+      <p>
+        Unlike Windows Vista, Windows 7 received lots of praise, with critics
+        considering the operating system to be a major improvement over its
+        predecessor because of its improved performance, its more intuitive
+        interface, fewer User Account Control popups, and other improvements
+        made across the operating system. Windows 7 was a major success for
+        Microsoft; even before its official release, pre-order sales for the
+        operating system on the online retailer Amazon.com had surpassed
+        previous records. In just six months, over 100 million copies had been
+        sold worldwide, increasing to over 630 million licenses by July 2012. By
+        January 2018, Windows 10 surpassed Windows 7 as the most popular version
+        of Windows worldwide. Windows 11 overtook Windows 7 as the second most
+        popular Windows version on all continents in August 2022. The legacy and
+        impact of Windows 7 is still seen today. As of 2024, just 3% of
+        traditional PCs running Windows are running Windows 7, although it
+        remains relatively popular in parts of the world, such as China (where
+        it is tied with Windows 11), and is still second most popular in some
+        countries.
+      </p>
 
-<p>Extended support ended on January 14, 2020, over ten years after the release of Windows 7, after which the operating system ceased receiving further updates. A paid support program was available for enterprises, providing security updates for Windows 7 for up to three years after the official end of life. Windows 7 was intended to be an incremental upgrade to Microsoft Windows, addressing Windows Vista's poor critical reception while maintaining hardware and software compatibility. Windows 7 continued improvements on the Windows Aero user interface with the addition of a redesigned taskbar that allows pinned applications, and new window management features. Other new features were added to the operating system which included libraries, the new file-sharing system HomeGroup, and support for multitouch input. A new "Action Center" was added to provide an overview of system security and maintenance information, and the User Account Control system was slightly modified to make it less intrusive. Windows 7 also shipped with updated versions of several stock applications, including Internet Explorer 8, Windows Media Player, and Windows Media Center.</p>
+      <p>
+        Windows 7 is the final version of Windows that supports processors
+        without SSE2 or NX (although an update released in 2018 dropped support
+        for non-SSE2 processors). Its successor, Windows 8, requires a processor
+        with SSE2 and NX (for any then-supported architecture).
+      </p>
+      <hr />
+      <details>
+        <summary>Development</summary>
+        <p>
+          Originally, a version of Windows codenamed "Blackcomb" was planned as
+          the successor to Windows XP and Windows Server 2003 in 2000. Major
+          features were planned for Blackcomb, including an emphasis on
+          searching and querying data and an advanced storage system named WinFS
+          to enable such scenarios. However, an interim, minor release,
+          codenamed "Longhorn," was announced for 2003, delaying the development
+          of Blackcomb. By the middle of 2003, however, Longhorn had acquired
+          some of the features originally intended for Blackcomb. After three
+          major malware outbreaks—the Blaster, Nachi, and Sobig worms—exploited
+          flaws in Windows operating systems within a short time period in
+          August 2003, Microsoft changed its development priorities, putting
+          some of Longhorn's major development work on hold while developing new
+          service packs for Windows XP and Windows Server 2003. Development of
+          Longhorn (Windows Vista) was also restarted, and thus delayed, in
+          August 2004. A number of features were cut from Longhorn. Blackcomb
+          was renamed Vienna in early 2006, and was later canceled in 2007 due
+          to the scope of the project.
+        </p>
 
-<p>Unlike Windows Vista, Windows 7 received lots of praise, with critics considering the operating system to be a major improvement over its predecessor because of its improved performance, its more intuitive interface, fewer User Account Control popups, and other improvements made across the operating system. Windows 7 was a major success for Microsoft; even before its official release, pre-order sales for the operating system on the online retailer Amazon.com had surpassed previous records. In just six months, over 100 million copies had been sold worldwide, increasing to over 630 million licenses by July 2012. By January 2018, Windows 10 surpassed Windows 7 as the most popular version of Windows worldwide. Windows 11 overtook Windows 7 as the second most popular Windows version on all continents in August 2022. The legacy and impact of Windows 7 is still seen today. As of 2024, just 3% of traditional PCs running Windows are running Windows 7, although it remains relatively popular in parts of the world, such as China (where it is tied with Windows 11), and is still second most popular in some countries.</p>
+        <p>
+          When released, Windows Vista was criticized for its long development
+          time, performance issues, spotty compatibility with existing hardware
+          and software at launch, changes affecting the compatibility of certain
+          PC games, and unclear assurances by Microsoft that certain computers
+          shipping with XP before launch would be "Vista Capable" (which led to
+          a class-action lawsuit), among other critiques. As such, the adoption
+          of Vista in comparison to XP remained somewhat low. In July 2007,
+          following the shelving of the Vienna project and six months following
+          the public release of Vista, it was reported that the next version of
+          Windows would then be codenamed Windows 7, with plans for a final
+          release within three years. Bill Gates, in an interview with Newsweek,
+          suggested that Windows 7 would be more "user-centric". Gates later
+          said that Windows 7 would also focus on performance improvements.
+          Steven Sinofsky later expanded on this point, explaining in the
+          Engineering Windows 7 blog that the company was using a variety of new
+          tracing tools to measure the performance of many areas of the
+          operating system on an ongoing basis, to help locate inefficient code
+          paths and to help prevent performance regressions. Senior Vice
+          President Bill Veghte stated that Windows Vista users migrating to
+          Windows 7 would not find the kind of device compatibility issues they
+          encountered migrating from Windows XP. An estimated 1,000 developers
+          worked on Windows 7. These were broadly divided into "core operating
+          system" and "Windows client experience", in turn organized into 25
+          teams of around 40 developers on average.
+        </p>
 
-<p>Windows 7 is the final version of Windows that supports processors without SSE2 or NX (although an update released in 2018 dropped support for non-SSE2 processors). Its successor, Windows 8, requires a processor with SSE2 and NX (for any then-supported architecture).</p>
-<hr>
-<details>
-<summary>Development</summary>
-<p>Originally, a version of Windows codenamed "Blackcomb" was planned as the successor to Windows XP and Windows Server 2003 in 2000. Major features were planned for Blackcomb, including an emphasis on searching and querying data and an advanced storage system named WinFS to enable such scenarios. However, an interim, minor release, codenamed "Longhorn," was announced for 2003, delaying the development of Blackcomb. By the middle of 2003, however, Longhorn had acquired some of the features originally intended for Blackcomb. After three major malware outbreaks—the Blaster, Nachi, and Sobig worms—exploited flaws in Windows operating systems within a short time period in August 2003, Microsoft changed its development priorities, putting some of Longhorn's major development work on hold while developing new service packs for Windows XP and Windows Server 2003. Development of Longhorn (Windows Vista) was also restarted, and thus delayed, in August 2004. A number of features were cut from Longhorn. Blackcomb was renamed Vienna in early 2006, and was later canceled in 2007 due to the scope of the project.</p>
+        <p>
+          In October 2008, it was announced that Windows 7 would also be the
+          official name of the operating system. There had been some confusion
+          over naming the product Windows 7, while versioning it as 6.1 to
+          indicate its similar build to Windows Vista and increase compatibility
+          with applications that only check major version numbers, similar to
+          Windows 2000 and Windows XP both having 5.x version numbers. The first
+          external release to select Microsoft partners came in January 2008
+          with Milestone 1, build 6519. Speaking about Windows 7 on October 16,
+          2008, Microsoft CEO Steve Ballmer confirmed compatibility between
+          Windows Vista and Windows 7, indicating that Windows 7 would be a
+          refined version of Windows Vista.
+        </p>
 
-<p>When released, Windows Vista was criticized for its long development time, performance issues, spotty compatibility with existing hardware and software at launch, changes affecting the compatibility of certain PC games, and unclear assurances by Microsoft that certain computers shipping with XP before launch would be "Vista Capable" (which led to a class-action lawsuit), among other critiques. As such, the adoption of Vista in comparison to XP remained somewhat low. In July 2007, following the shelving of the Vienna project and six months following the public release of Vista, it was reported that the next version of Windows would then be codenamed Windows 7, with plans for a final release within three years. Bill Gates, in an interview with Newsweek, suggested that Windows 7 would be more "user-centric". Gates later said that Windows 7 would also focus on performance improvements. Steven Sinofsky later expanded on this point, explaining in the Engineering Windows 7 blog that the company was using a variety of new tracing tools to measure the performance of many areas of the operating system on an ongoing basis, to help locate inefficient code paths and to help prevent performance regressions. Senior Vice President Bill Veghte stated that Windows Vista users migrating to Windows 7 would not find the kind of device compatibility issues they encountered migrating from Windows XP. An estimated 1,000 developers worked on Windows 7. These were broadly divided into "core operating system" and "Windows client experience", in turn organized into 25 teams of around 40 developers on average.</p>
+        <p>
+          At PDC 2008, Microsoft demonstrated Windows 7 with its reworked
+          taskbar. On December 27, 2008, the Windows 7 Beta was leaked onto the
+          Internet via BitTorrent. According to a performance test by ZDNet,
+          Windows 7 Beta beat both Windows XP and Windows Vista in several key
+          areas, including boot and shutdown time and working with files, such
+          as loading documents. Other areas did not beat XP, including PC Pro
+          benchmarks for typical office activities and video editing, which
+          remain identical to Vista and slower than XP. On January 7, 2009, the
+          x64 version of the Windows 7 Beta (build 7000) was leaked onto the
+          web, with some torrents being infected with a trojan. At CES 2009,
+          Microsoft CEO Steve Ballmer announced the Windows 7 Beta, build 7000,
+          had been made available for download to MSDN and TechNet subscribers
+          in the format of an ISO image. The stock wallpaper of the beta version
+          contained a digital image of the Betta fish.
+        </p>
 
-<p>In October 2008, it was announced that Windows 7 would also be the official name of the operating system. There had been some confusion over naming the product Windows 7, while versioning it as 6.1 to indicate its similar build to Windows Vista and increase compatibility with applications that only check major version numbers, similar to Windows 2000 and Windows XP both having 5.x version numbers. The first external release to select Microsoft partners came in January 2008 with Milestone 1, build 6519. Speaking about Windows 7 on October 16, 2008, Microsoft CEO Steve Ballmer confirmed compatibility between Windows Vista and Windows 7, indicating that Windows 7 would be a refined version of Windows Vista.</p>
+        <p>
+          The release candidate, build 7100, became available for MSDN and
+          TechNet subscribers, and Connect Program participants on April 30,
+          2009. On May 5, 2009, it became available to the general public,
+          although it had also been leaked onto the Internet via BitTorrent. The
+          release candidate was available in five languages and expired on June
+          1, 2010, with shutdowns every two hours starting March 1, 2010.
+          Microsoft stated that Windows 7 would be released to the general
+          public on October 22, 2009, less than three years after the launch of
+          its predecessor. Microsoft released Windows 7 to MSDN and Technet
+          subscribers on August 6, 2009. Microsoft announced that Windows 7,
+          along with Windows Server 2008 R2, was released to manufacturing in
+          the United States and Canada on July 22, 2009. Windows 7 build
+          7600.16385.090713-1255, which was compiled on July 13, 2009, was
+          declared the final RTM build after passing all Microsoft's tests
+          internally.
+        </p>
+      </details>
+      <hr />
+      <details>
+        <summary>Features</summary>
+        <p>
+          Among Windows 7's new features are advances in touch and handwriting
+          recognition, support for virtual hard disks, improved performance on
+          multi-core processors, improved boot performance, DirectAccess, and
+          kernel improvements. Windows 7 adds support for systems using multiple
+          heterogeneous graphics cards from different vendors (Heterogeneous
+          Multi-adapter), a new version of Windows Media Center, a Gadget for
+          Windows Media Center, improved media features, XPS Essentials Pack,
+          and Windows PowerShell being included, and a redesigned Calculator
+          with multiline capabilities including Programmer and Statistics modes
+          along with unit conversion for length, weight, temperature, and
+          several others. Many new items have been added to the Control Panel,
+          including ClearType Text Tuner, Display Color Calibration Wizard,
+          Gadgets, Recovery, Troubleshooting, Workspaces Center, Location and
+          Other Sensors, Credential Manager, Biometric Devices, System Icons,
+          and Display. Windows Security Center has been renamed to Action Center
+          (Windows Health Center and Windows Solution Center in earlier builds),
+          which encompasses both security and maintenance of the computer.
+          ReadyBoost on 32-bit editions now supports up to 256 gigabytes of
+          extra allocation. Windows 7 also supports images in RAW image format
+          through the addition of Windows Imaging Component-enabled image
+          decoders, which enables raw image thumbnails, previewing and metadata
+          display in Windows Explorer, plus full-size viewing and slideshows in
+          Windows Photo Viewer and Windows Media Center. Windows 7 also has a
+          native TFTP client with the ability to transfer files to or from a
+          TFTP server.
+        </p>
 
-<p>At PDC 2008, Microsoft demonstrated Windows 7 with its reworked taskbar. On December 27, 2008, the Windows 7 Beta was leaked onto the Internet via BitTorrent. According to a performance test by ZDNet, Windows 7 Beta beat both Windows XP and Windows Vista in several key areas, including boot and shutdown time and working with files, such as loading documents. Other areas did not beat XP, including PC Pro benchmarks for typical office activities and video editing, which remain identical to Vista and slower than XP. On January 7, 2009, the x64 version of the Windows 7 Beta (build 7000) was leaked onto the web, with some torrents being infected with a trojan. At CES 2009, Microsoft CEO Steve Ballmer announced the Windows 7 Beta, build 7000, had been made available for download to MSDN and TechNet subscribers in the format of an ISO image. The stock wallpaper of the beta version contained a digital image of the Betta fish.</p>
+        <p>
+          The taskbar has seen the biggest visual changes, where the old Quick
+          Launch toolbar has been replaced with the ability to pin applications
+          to the taskbar. Buttons for pinned applications are integrated with
+          the task buttons. These buttons also enable Jump Lists to allow easy
+          access to common tasks, and files frequently used with specific
+          applications. The revamped taskbar also allows the reordering of
+          taskbar buttons. To the far right of the system clock is a small
+          rectangular button that serves as the Show desktop icon. By default,
+          hovering over this button makes all visible windows transparent for a
+          quick look at the desktop. In touch-enabled displays such as touch
+          screens, tablet PCs, etc., this button is slightly (8 pixels) wider in
+          order to accommodate being pressed by a finger. Clicking this button
+          minimizes all windows, and clicking it a second time restores them.
+        </p>
 
-<p>The release candidate, build 7100, became available for MSDN and TechNet subscribers, and Connect Program participants on April 30, 2009. On May 5, 2009, it became available to the general public, although it had also been leaked onto the Internet via BitTorrent. The release candidate was available in five languages and expired on June 1, 2010, with shutdowns every two hours starting March 1, 2010. Microsoft stated that Windows 7 would be released to the general public on October 22, 2009, less than three years after the launch of its predecessor. Microsoft released Windows 7 to MSDN and Technet subscribers on August 6, 2009. Microsoft announced that Windows 7, along with Windows Server 2008 R2, was released to manufacturing in the United States and Canada on July 22, 2009. Windows 7 build 7600.16385.090713-1255, which was compiled on July 13, 2009, was declared the final RTM build after passing all Microsoft's tests internally.</p>
-</details>
-<hr>
-<details>
-<summary>Features</summary>
-<p>Among Windows 7's new features are advances in touch and handwriting recognition,  support for virtual hard disks, improved performance on multi-core processors, improved boot performance, DirectAccess, and kernel improvements. Windows 7 adds support for systems using multiple heterogeneous graphics cards from different vendors (Heterogeneous Multi-adapter), a new version of Windows Media Center, a Gadget for Windows Media Center, improved media features, XPS Essentials Pack, and Windows PowerShell being included, and a redesigned Calculator with multiline capabilities including Programmer and Statistics modes along with unit conversion for length, weight, temperature, and several others. Many new items have been added to the Control Panel, including ClearType Text Tuner, Display Color Calibration Wizard, Gadgets, Recovery, Troubleshooting, Workspaces Center, Location and Other Sensors, Credential Manager, Biometric Devices, System Icons, and Display. Windows Security Center has been renamed to Action Center (Windows Health Center and Windows Solution Center in earlier builds), which encompasses both security and maintenance of the computer. ReadyBoost on 32-bit editions now supports up to 256 gigabytes of extra allocation. Windows 7 also supports images in RAW image format through the addition of Windows Imaging Component-enabled image decoders, which enables raw image thumbnails, previewing and metadata display in Windows Explorer, plus full-size viewing and slideshows in Windows Photo Viewer and Windows Media Center. Windows 7 also has a native TFTP client with the ability to transfer files to or from a TFTP server.</p> 
+        <p>
+          Window management in Windows 7 has several new features: Aero Snap
+          maximizes a window when it is dragged to the top, left, or right of
+          the screen. Dragging windows to the left or right edges of the screen
+          allows users to snap software windows to either side of the screen,
+          such that the windows take up half the screen. When a user moves
+          windows that were snapped or maximized using Snap, the system restores
+          their previous state. Snap functions can also be triggered with
+          keyboard shortcuts. Aero Shake hides all inactive windows when the
+          active window's title bar is dragged back and forth rapidly.
+        </p>
 
-<p>The taskbar has seen the biggest visual changes, where the old Quick Launch toolbar has been replaced with the ability to pin applications to the taskbar. Buttons for pinned applications are integrated with the task buttons. These buttons also enable Jump Lists to allow easy access to common tasks, and files frequently used with specific applications. The revamped taskbar also allows the reordering of taskbar buttons. To the far right of the system clock is a small rectangular button that serves as the Show desktop icon. By default, hovering over this button makes all visible windows transparent for a quick look at the desktop. In touch-enabled displays such as touch screens, tablet PCs, etc., this button is slightly (8 pixels) wider in order to accommodate being pressed by a finger. Clicking this button minimizes all windows, and clicking it a second time restores them.</p>
+        <p>
+          Windows 7 includes 13 additional sound schemes, titled Afternoon,
+          Calligraphy, Characters, Cityscape, Delta, Festival, Garden, Heritage,
+          Landscape, Quirky, Raga, Savanna, and Sonata. Internet Spades,
+          Internet Backgammon and Internet Checkers, which were removed in
+          Windows Vista, were restored in Windows 7. Users are able to disable
+          or customize many more Windows components than was possible in Windows
+          Vista. New additions to this list of components include Internet
+          Explorer 8, Windows Media Player 12, Windows Media Center, Windows
+          Search, and Windows Gadget Platform. A new version of Microsoft
+          Virtual PC, newly renamed as Windows Virtual PC was made available for
+          Windows 7 Professional, Enterprise, and Ultimate editions. It allows
+          multiple Windows environments, including Windows XP Mode, to run on
+          the same machine. Windows XP Mode runs Windows XP in a virtual
+          machine, and displays applications within separate windows on the
+          Windows 7 desktop. Furthermore, Windows 7 supports the mounting of a
+          virtual hard disk (VHD) as a normal data storage, and the bootloader
+          delivered with Windows 7 can boot the Windows system from a VHD;
+          however, this ability is only available in the Enterprise and Ultimate
+          editions. The Remote Desktop Protocol (RDP) of Windows 7 is also
+          enhanced to support real-time multimedia application including video
+          playback and 3D games, thus allowing use of DirectX 10 in remote
+          desktop environments. The three application limit, previously present
+          in the Windows Vista and Windows XP Starter Editions, has been removed
+          from Windows 7. All editions include some new and improved features,
+          such as Windows Search, Security features, and some features new to
+          Windows 7, that originated within Vista. Optional BitLocker Drive
+          Encryption is included with Windows 7 Ultimate and Enterprise. Windows
+          Defender is included; Microsoft Security Essentials antivirus software
+          is a free download. All editions include Shadow Copy, which—every day
+          or so—System Restore uses (Shadow Copy) to take an automatic "previous
+          version" snapshot of user files that have changed. Backup and restore
+          have also been improved, and the Windows Recovery
+          Environment—installed by default—replaces the optional Recovery
+          Console of Windows XP.
+        </p>
 
-<p>Window management in Windows 7 has several new features: Aero Snap maximizes a window when it is dragged to the top, left, or right of the screen. Dragging windows to the left or right edges of the screen allows users to snap software windows to either side of the screen, such that the windows take up half the screen. When a user moves windows that were snapped or maximized using Snap, the system restores their previous state. Snap functions can also be triggered with keyboard shortcuts. Aero Shake hides all inactive windows when the active window's title bar is dragged back and forth rapidly.</p>
+        <p>
+          A new system known as "Libraries" was added for file management; users
+          can aggregate files from multiple folders into a "Library." By
+          default, libraries for categories such as Documents, Pictures, Music,
+          and Video are created, consisting of the user's personal folder and
+          the Public folder for each. The system is also used as part of a new
+          home networking system known as HomeGroup; devices are added to the
+          network with a password, and files and folders can be shared with all
+          other devices in the HomeGroup, or with specific users. The default
+          libraries, along with printers, are shared by default, but the
+          personal folder is set to read-only access by other users, and the
+          Public folder can be accessed by anyone.
+        </p>
 
-<p>Windows 7 includes 13 additional sound schemes, titled Afternoon, Calligraphy, Characters, Cityscape, Delta, Festival, Garden, Heritage, Landscape, Quirky, Raga, Savanna, and Sonata. Internet Spades, Internet Backgammon and Internet Checkers, which were removed in Windows Vista, were restored in Windows 7. Users are able to disable or customize many more Windows components than was possible in Windows Vista. New additions to this list of components include Internet Explorer 8, Windows Media Player 12, Windows Media Center, Windows Search, and Windows Gadget Platform. A new version of Microsoft Virtual PC, newly renamed as Windows Virtual PC was made available for Windows 7 Professional, Enterprise, and Ultimate editions. It allows multiple Windows environments, including Windows XP Mode, to run on the same machine. Windows XP Mode runs Windows XP in a virtual machine, and displays applications within separate windows on the Windows 7 desktop. Furthermore, Windows 7 supports the mounting of a virtual hard disk (VHD) as a normal data storage, and the bootloader delivered with Windows 7 can boot the Windows system from a VHD; however, this ability is only available in the Enterprise and Ultimate editions. The Remote Desktop Protocol (RDP) of Windows 7 is also enhanced to support real-time multimedia application including video playback and 3D games, thus allowing use of DirectX 10 in remote desktop environments. The three application limit, previously present in the Windows Vista and Windows XP Starter Editions, has been removed from Windows 7. All editions include some new and improved features, such as Windows Search, Security features, and some features new to Windows 7, that originated within Vista. Optional BitLocker Drive Encryption is included with Windows 7 Ultimate and Enterprise. Windows Defender is included; Microsoft Security Essentials antivirus software is a free download. All editions include Shadow Copy, which—every day or so—System Restore uses (Shadow Copy) to take an automatic "previous version" snapshot of user files that have changed. Backup and restore have also been improved, and the Windows Recovery Environment—installed by default—replaces the optional Recovery Console of Windows XP.</p>
+        <p>
+          Windows 7 includes improved globalization support through a new
+          Extended Linguistic Services API to provide multilingual support
+          (particularly in Ultimate and Enterprise editions). Microsoft also
+          implemented better support for solid-state drives, including the new
+          TRIM command, and Windows 7 is able to identify a solid-state drive
+          uniquely. Native support for USB 3.0 is not included because of delays
+          in the finalization of the standard. At WinHEC 2008 Microsoft
+          announced that color depths of 30-bit and 48-bit would be supported in
+          Windows 7 along with the wide color gamut scRGB (which for HDMI 1.3
+          can be converted and output as xvYCC). The video modes supported in
+          Windows 7 are 16-bit sRGB, 24-bit sRGB, 30-bit sRGB, 30-bit with
+          extended color gamut sRGB, and 48-bit scRGB.
+        </p>
 
-<p>A new system known as "Libraries" was added for file management; users can aggregate files from multiple folders into a "Library." By default, libraries for categories such as Documents, Pictures, Music, and Video are created, consisting of the user's personal folder and the Public folder for each. The system is also used as part of a new home networking system known as HomeGroup; devices are added to the network with a password, and files and folders can be shared with all other devices in the HomeGroup, or with specific users. The default libraries, along with printers, are shared by default, but the personal folder is set to read-only access by other users, and the Public folder can be accessed by anyone.</p>
+        <p>
+          For developers, Windows 7 includes a new networking API with support
+          for building SOAP-based web services in native code (as opposed to
+          .NET-based WCF web services), new features to simplify development of
+          installation packages and shorten application install times. Windows
+          7, by default, generates fewer User Account Control (UAC) prompts
+          because it allows digitally signed Windows components to gain elevated
+          privileges without a prompt. Additionally, users can now adjust the
+          level at which UAC operates using a sliding scale.
+        </p>
 
-<p>Windows 7 includes improved globalization support through a new Extended Linguistic Services API to provide multilingual support (particularly in Ultimate and Enterprise editions). Microsoft also implemented better support for solid-state drives, including the new TRIM command, and Windows 7 is able to identify a solid-state drive uniquely. Native support for USB 3.0 is not included because of delays in the finalization of the standard. At WinHEC 2008 Microsoft announced that color depths of 30-bit and 48-bit would be supported in Windows 7 along with the wide color gamut scRGB (which for HDMI 1.3 can be converted and output as xvYCC). The video modes supported in Windows 7 are 16-bit sRGB, 24-bit sRGB, 30-bit sRGB, 30-bit with extended color gamut sRGB, and 48-bit scRGB.</p>
+        <p>
+          Certain capabilities and programs that were a part of Windows Vista
+          are no longer present or have been changed, resulting in the removal
+          of certain functionalities; these include the classic Start Menu user
+          interface, some taskbar features, Windows Explorer features, Windows
+          Media Player features, Windows Ultimate Extras, Search button, and
+          InkBall. Four applications bundled with Windows Vista—Windows Photo
+          Gallery, Windows Movie Maker, Windows Calendar and Windows Mail—are
+          not included with Windows 7 and were replaced by Windows Live-branded
+          versions as part of the Windows Live Essentials suite.
+        </p>
+      </details>
+      <hr />
+      <details>
+        <summary>Editions</summary>
+        <p>
+          Windows 7 is available in six different editions, of which the Home
+          Premium, Professional, and Ultimate were available at retail in most
+          countries, and as pre-loaded software on most new computers. Home
+          Premium and Professional were aimed at home users and small businesses
+          respectively, while Ultimate was aimed at enthusiasts. Each edition of
+          Windows 7 includes all of the capabilities and features of the edition
+          below it, and adds additional features oriented towards their market
+          segments; for example, Professional adds additional networking and
+          security features such as Encrypting File System and the ability to
+          join a domain. Ultimate contained a superset of the features from Home
+          Premium and Professional, along with other advanced features oriented
+          towards power users, such as BitLocker drive encryption; unlike
+          Windows Vista, there were no "Ultimate Extras" add-ons created for
+          Windows 7 Ultimate. Retail copies were available in "upgrade" and
+          higher-cost "full" version licenses; "upgrade" licenses require an
+          existing version of Windows to install, while "full" licenses can be
+          installed on computers with no existing operating system.
+        </p>
 
-<p>For developers, Windows 7 includes a new networking API with support for building SOAP-based web services in native code (as opposed to .NET-based WCF web services), new features to simplify development of installation packages and shorten application install times. Windows 7, by default, generates fewer User Account Control (UAC) prompts because it allows digitally signed Windows components to gain elevated privileges without a prompt. Additionally, users can now adjust the level at which UAC operates using a sliding scale.</p>
+        <p>
+          The remaining three editions were not available at retail, of which
+          two were available exclusively through OEM channels as pre-loaded
+          software. The Starter edition is a stripped-down version of Windows 7
+          meant for low-cost devices such as netbooks. In comparison to Home
+          Premium, Starter has reduced multimedia functionality, does not allow
+          users to change their desktop wallpaper or theme, disables the "Aero
+          Glass" theme, does not have support for multiple monitors, and can
+          only address 2GB of RAM. Home Basic was sold only in emerging markets,
+          and was positioned in between Home Premium and Starter. The highest
+          edition, Enterprise, is functionally similar to Ultimate, but is only
+          sold through volume licensing via Microsoft's Software Assurance
+          program.
+        </p>
 
-<p>Certain capabilities and programs that were a part of Windows Vista are no longer present or have been changed, resulting in the removal of certain functionalities; these include the classic Start Menu user interface, some taskbar features, Windows Explorer features, Windows Media Player features, Windows Ultimate Extras, Search button, and InkBall. Four applications bundled with Windows Vista—Windows Photo Gallery, Windows Movie Maker, Windows Calendar and Windows Mail—are not included with Windows 7 and were replaced by Windows Live-branded versions as part of the Windows Live Essentials suite.</p>
-</details>
-<hr>
-<details>
-<summary>Editions</summary>
-<p>Windows 7 is available in six different editions, of which the Home Premium, Professional, and Ultimate were available at retail in most countries, and as pre-loaded software on most new computers. Home Premium and Professional were aimed at home users and small businesses respectively, while Ultimate was aimed at enthusiasts. Each edition of Windows 7 includes all of the capabilities and features of the edition below it, and adds additional features oriented towards their market segments; for example, Professional adds additional networking and security features such as Encrypting File System and the ability to join a domain. Ultimate contained a superset of the features from Home Premium and Professional, along with other advanced features oriented towards power users, such as BitLocker drive encryption; unlike Windows Vista, there were no "Ultimate Extras" add-ons created for Windows 7 Ultimate. Retail copies were available in "upgrade" and higher-cost "full" version licenses; "upgrade" licenses require an existing version of Windows to install, while "full" licenses can be installed on computers with no existing operating system.</p>
-
-<p>The remaining three editions were not available at retail, of which two were available exclusively through OEM channels as pre-loaded software. The Starter edition is a stripped-down version of Windows 7 meant for low-cost devices such as netbooks. In comparison to Home Premium, Starter has reduced multimedia functionality, does not allow users to change their desktop wallpaper or theme, disables the "Aero Glass" theme, does not have support for multiple monitors, and can only address 2GB of RAM. Home Basic was sold only in emerging markets, and was positioned in between Home Premium and Starter. The highest edition, Enterprise, is functionally similar to Ultimate, but is only sold through volume licensing via Microsoft's Software Assurance program.</p>
-
-<p>All editions aside from Starter support both IA-32 and x86-64 architectures, Starter only supports 32-bit systems. Retail copies of Windows 7 are distributed on two DVDs: one for the IA-32 version and the other for x86-64. OEM copies include one DVD, depending on the processor architecture licensed. The installation media for consumer versions of Windows 7 are identical, the product key and corresponding license determines the edition that is installed. The Windows Anytime Upgrade service can be used to purchase an upgrade that unlocks the functionality of a higher edition, such as going from Starter to Home Premium, and Home Premium to Ultimate. Most copies of Windows 7 only contained one license; in certain markets, a "Family Pack" version of Windows 7 Home Premium was also released for a limited time, which allowed upgrades on up to three computers. In certain regions, copies of Windows 7 were only sold in, and could only be activated in a designated region.</p>
-</details>
-<hr>
-<details>
-<summary>User Interface</summary> <!-- WRITTEN FROM KNOWLEDGE ABOUT WINDOWS 7, NOT COPIED FROM OUTSIDE-->
-<p>Windows 7 kept the Windows Aero theme, albeit with a few changes. Some of the lower editions like Starter and 
-Home Basic did not support Windows Aero effects, as they were meant for low-end PCs which would be likely 
-incapable of handling complex visual effects. The higher editions supported Windows Aero effects, but could be 
-disabled if one prefers so. The taskbar was different from the the one in Windows Vista; it was redesigned so that one 
-could pin applications to the taskbar for quick access, eliminating the need for the Quick Launch toolbar and therefore leading to its removal.</p>
-</details>
-<hr>
-</div>
-<footer>
-<div id="child-container-in-footer">
-<a href="./WinVista.html"><button>Previous</button></a>
-<p>Windows Vista</p>
-<p><b>Windows 7</b></p>
-<p>Windows 8</p>
-<a href="./Win8.html"><button>Next</button></a>
-</div>
-</footer>
-</body>
+        <p>
+          All editions aside from Starter support both IA-32 and x86-64
+          architectures, Starter only supports 32-bit systems. Retail copies of
+          Windows 7 are distributed on two DVDs: one for the IA-32 version and
+          the other for x86-64. OEM copies include one DVD, depending on the
+          processor architecture licensed. The installation media for consumer
+          versions of Windows 7 are identical, the product key and corresponding
+          license determines the edition that is installed. The Windows Anytime
+          Upgrade service can be used to purchase an upgrade that unlocks the
+          functionality of a higher edition, such as going from Starter to Home
+          Premium, and Home Premium to Ultimate. Most copies of Windows 7 only
+          contained one license; in certain markets, a "Family Pack" version of
+          Windows 7 Home Premium was also released for a limited time, which
+          allowed upgrades on up to three computers. In certain regions, copies
+          of Windows 7 were only sold in, and could only be activated in a
+          designated region.
+        </p>
+      </details>
+      <hr />
+      <details>
+        <summary>User Interface</summary>
+        <!-- WRITTEN FROM KNOWLEDGE ABOUT WINDOWS 7, NOT COPIED FROM OUTSIDE-->
+        <p>
+          Windows 7 kept the Windows Aero theme, albeit with a few changes. Some
+          of the lower editions like Starter and Home Basic did not support
+          Windows Aero effects, as they were meant for low-end PCs which would
+          be likely incapable of handling complex visual effects. The higher
+          editions supported Windows Aero effects, but could be disabled if one
+          prefers so. The taskbar was different from the the one in Windows
+          Vista; it was redesigned so that one could pin applications to the
+          taskbar for quick access, eliminating the need for the Quick Launch
+          toolbar and therefore leading to its removal.
+        </p>
+      </details>
+      <hr />
+    </div>
+    <footer>
+      <div id="child-container-in-footer">
+        <a href="./WinVista.html"><button>Previous</button></a>
+        <p>Windows Vista</p>
+        <p><b>Windows 7</b></p>
+        <p>Windows 8</p>
+        <a href="./Win8.html"><button>Next</button></a>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,279 +1,646 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="Unicode">
-<title>WinPedia - Windows 8</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link rel="icon" href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg">
-<style>
-#ul, .li, .nav {
-list-style: none;
-margin-right: 20px;
-text-decoration: none;
-color: #3266fb;
-display: inline-block;
-}
+  <head>
+    <meta charset="Unicode" />
+    <title>WinPedia - Windows 8</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg"
+    />
+    <style>
+      #ul,
+      .li,
+      .nav {
+        list-style: none;
+        margin-right: 20px;
+        text-decoration: none;
+        color: #3266fb;
+        display: inline-block;
+      }
 
-.nav:hover {
-color: #001fff;
-}
+      .nav:hover {
+        color: #001fff;
+      }
 
-nav {
-background-color: rgba(255, 255, 255, 0.75);
-backdrop-filter: blur(10px);
-position: fixed;
-top: 0;
-left: 0;
-z-index: 1;
-overflow: hidden;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 9vh;
-list-style: none;
-}
+      nav {
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 9vh;
+        list-style: none;
+      }
 
-footer {
-background-color: rgba(255, 255, 255, 0.75);
-backdrop-filter: blur(10px);
-position: fixed;
-bottom: 0;
-right: 0;
-z-index: 1;
-overflow: hidden;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 9vh;
-padding: 5px;
-color: #000000;
-}
+      footer {
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 9vh;
+        padding: 5px;
+        color: #000000;
+      }
 
-button {
-border-radius: 10px;
-padding: 10px;
-background-color: rgba(255, 255, 255, 0.5);
-width: 100%;
-height: 75%;
-font-family: inherit;
-font-size: inherit;
-display: flex;
-justify-content: center;
-align-items: center;
-transition: box-shadow ease-out 0.3s;
-border-style: none;
-}
+      button {
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+        height: 75%;
+        font-family: inherit;
+        font-size: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: box-shadow ease-out 0.3s;
+        border-style: none;
+      }
 
-button:hover {
-box-shadow: 0px 0px 15px 2px black;
-}
+      button:hover {
+        box-shadow: 0px 0px 15px 2px black;
+      }
 
-#child-container-in-footer {
-margin: 10px;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: auto;
-width: 100%;
-text-align: center;
-align-items: center;
-}
+      #child-container-in-footer {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+      }
 
-body {
-margin: 10vh 0.5vw 10vh 0.5vw;
-font-family: Segoe UI;
-font-size: 2vh;
-background-image: url(../Images/wallpaper/win8.jpg);
-background-size: cover;
-background-attachment: fixed;
-background-position-x: 0px;
-color: #FFFFFF;
-overflow-x: hidden;
+      body {
+        margin: 10vh 0.5vw 10vh 0.5vw;
+        font-family: Segoe UI;
+        font-size: 2vh;
+        background-image: url(../Images/wallpaper/win8.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: 0px;
+        color: #ffffff;
+        overflow-x: hidden;
+      }
 
-}
+      #container {
+        margin: 10px;
+        overflow: auto;
+      }
 
-#container {
-margin: 10px;
-overflow: auto;
-}
+      #heading {
+        font-size: 4vh;
+        font-weight: bold;
+      }
 
-#heading {
-font-size: 4vh;
-font-weight: bold;
-}
+      #info {
+        display: flow-root;
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(7.5px);
+        padding: 30px;
+        border: solid 1px black;
+        border-radius: 10px;
+        margin: 10px;
+        color: black;
+        height: auto;
+      }
 
-#info {
-display: flow-root;
-background-color: rgba(255, 255, 255, 0.75);
-backdrop-filter: blur(7.5px);
-padding: 30px;
-border: solid 1px black;
-border-radius: 10px;
-margin: 10px;
-color: black;
-height: auto;
-}
+      img {
+        float: right;
+      }
 
-img {
-float: right;
-}
+      li {
+        list-style: disc;
+        color: #ffffff;
+      }
 
-li {
-list-style: disc;
-color: #FFFFFF;
-}
+      summary {
+        font-weight: bold;
+        font-size: 2.5vh;
+      }
 
-summary {
-font-weight: bold;
-font-size: 2.5vh;
-}
+      a {
+        color: #000000;
+        text-decoration: none;
+      }
 
-a {
-color: #000000;
-text-decoration: none;
-}
+      @media (max-width: 1440px) {
+        #homeContainer {
+          display: block;
+        }
+        nav {
+          height: 9vh;
+        }
+        img {
+          float: none;
+        }
+        table {
+          float: none;
+          align-self: center;
+          width: 98%;
+        }
+        #info {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          text-align: center;
+        }
+        body {
+          background-position: center;
+        }
+        #features {
+          line-height: 2.75vh;
+        }
+      }
 
-@media (max-width: 1440px){
-#homeContainer {
-display: block;
-}
-nav {
-height: 9vh;
-}
-img {
-float: none;
-}
-table {
-float: none;
-align-self: center;
-width: 98%;
-}
-#info {
-display: flex;
-flex-direction: column;
-align-content: center;
-text-align: center;
-}
-body {
-background-position: center;
-}
-#features {
-line-height: 2.75vh;
-}
-}
+      .bolden {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="../Images/WinPedia-logo.svg" alt="logo" height="60%" />
+        <ul>
+          <li class="nav"><a href="./Homepage.html" class="nav">Home</a></li>
+          <li class="nav">
+            <a href="../AboutMe/AboutMe.html" class="nav">About Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-.bolden {
-font-weight: 600;
-}
-</style>
-</head>
-<body>
-<header>
-<nav>
-<img src="../Images/WinPedia-logo.svg" alt="logo" height="60%">
-<ul>
-<li class="nav"><a href="./Homepage.html" class="nav">Home</a></li> 
-<li class="nav"><a href="../AboutMe/AboutMe.html" class="nav">About Me</a></li>
-</ul>
-</nav>
-</header>
+    <div id="container">
+      <span id="heading">Windows 8</span>
 
-<div id="container">
+      <p>
+        Windows 8 is a major release of the Windows NT operating system
+        developed by Microsoft. It was released to manufacturing on August 1,
+        2012, made available for download via MSDN and TechNet on August 15,
+        2012, and generally released for retail on October 26, 2012.
+      </p>
 
-<span id="heading">Windows 8</span>
+      <div id="info">
+        <img
+          src="../Images/icons/w8n8.1.png"
+          alt="Windows 8"
+          style="align-self: center; width: 25vh; height: 25vh"
+        />
+        <p>Date released: August 15, 2012</p>
+        <p>
+          End of Support: Mainstream - January 9, 2018 <br />Extended - January
+          10, 2023
+        </p>
+        <p>Last release: 6.3.9600 on January 10, 2023</p>
+        <p>Succeeded by: Windows 8.1 (released 2013)</p>
+        <p>Codename: Sun Valley</p>
+        <p>Developed by: Microsoft Corporation</p>
+      </div>
 
-<p>Windows 8 is a major release of the Windows NT operating system developed by Microsoft. It was released to manufacturing on August 1, 2012, made available for download via MSDN and TechNet on August 15, 2012, and generally released for retail on October 26, 2012.</p>
+      <p>
+        Windows 8 introduced major changes to the operating system's platform
+        and user interface with the intention to improve its user experience on
+        tablets, where Windows was competing with mobile operating systems such
+        as Android and iOS. These changes included a Windows shell and GUI
+        optimised for touchscreeen devices, along with a start screen based on
+        Microsoft's new Metro design language, integration with online services,
+        the Windows Store, and a new keyboard shortcut for screenshots. Many of
+        these features were adapted from Windows Phone. Windows 8 also added
+        support for USB 3.0, Advanced Format, near-field communication, and
+        cloud computing, as well as a new lock screen with clock and
+        notifications. Additional security features—including built-in antivirus
+        software, integration with Microsoft SmartScreen phishing filtering, and
+        support for Secure Boot on supported devices—were introduced. It was the
+        first Windows version to support ARM architecture under the Windows RT
+        branding. CPUs without PAE, SSE2 and NX are unsupported in this version.
+      </p>
 
-<div id="info">
-<img src="../Images/icons/w8n8.1.png" alt="Windows 8" style="align-self: center; width: 25vh; height: 25vh;">
-<p>Date released: August 15, 2012</p>
-<p>End of Support: Mainstream - January 9, 2018 <br>Extended - January 10, 2023</p>
-<p>Last release: 6.3.9600 on January 10, 2023 </p>
-<p>Succeeded by: Windows 8.1 (released 2013)</p>
-<p>Codename: Sun Valley</p>
-<p>Developed by: Microsoft Corporation</p>
-</div>
+      <p>
+        Windows 8 received a mostly negative reception. Although the reaction to
+        its performance improvements, security enhancements, and improved
+        support for touchscreen devices was positive, the new user interface was
+        widely criticized as confusing and unintuitive, especially when used
+        with a keyboard and mouse instead of a touchscreen. Even then, 60
+        million licenses were sold through January 2013, including upgrades and
+        sales to OEMs for new PCs.
+      </p>
 
-<p>Windows 8 introduced major changes to the operating system's platform and user interface with the intention to improve its user experience on tablets, where Windows was competing with mobile operating systems such as Android and iOS. These changes included a Windows shell and GUI optimised for touchscreeen devices, along with a start screen based on Microsoft's new Metro design language, integration with online services, the Windows Store, and a new keyboard shortcut for screenshots. Many of these features were adapted from Windows Phone. Windows 8 also added support for USB 3.0, Advanced Format, near-field communication, and cloud computing, as well as a new lock screen with clock and notifications. Additional security features—including built-in antivirus software, integration with Microsoft SmartScreen phishing filtering, and support for Secure Boot on supported devices—were introduced. It was the first Windows version to support ARM architecture under the Windows RT branding. CPUs without PAE, SSE2 and NX are unsupported in this version.  </p>
+      <hr />
+      <details>
+        <summary>Development</summary>
+        <p>
+          Development started in 2009 while Microsoft was finishing work on
+          Windows 7. In January 2011, it was announced at the Consumer
+          Electronics Show that Windows 8 would add support for ARM
+          System-on-Chips alongside the existing 32-bit processors produced by
+          vendors, especially AMD and Intel. Windows division president Steven
+          Sinofsky demonstrated an early build of the OS on prototype devices,
+          while Microsoft CEO Steve Ballmer announced the company's goal for
+          Windows to be "everywhere on every kind of device without compromise."
+          Details also began to surface about a new application framework for
+          Windows 8 codenamed "Jupiter", which would be used to make "immersive"
+          applications using XAML (similarly to Windows Phone and Silverlight)
+          that could be distributed through a new packaging system and a rumored
+          application store.
+        </p>
 
-<p>Windows 8 received a mostly negative reception. Although the reaction to its performance improvements, security enhancements, and improved support for touchscreen devices was positive, the new user interface was widely criticized as confusing and unintuitive, especially when used with a keyboard and mouse instead of a touchscreen. Even then, 60 million licenses were sold through January 2013, including upgrades and sales to OEMs for new PCs.</p>
+        <p>
+          The earliest available build of Windows 8 is build 7700, which was
+          compiled in January 2010. It was almost identical to Windows 7 except
+          for the wallpaper being different—the same one from the Beta and
+          Release Candidate. In addition, there were a few references to Windows
+          8 in this build's Local Group Policy Editor Utility. Two milestone
+          releases of Windows 8 (builds 7850 and 7955) and one milestone release
+          of Windows Server 2012 (build 7959) was leaked to the general public.
+          <b>Milestone 1, Build 7850</b>, was built on September 22, 2010 and
+          leaked on April 12, 2011. The leaked copy was Enterprise edition, and
+          other editions leaked later. It was discovered that Metro existed in
+          this build, in 2020, after disabling the Redpill feature lockout. The
+          start screen was primitive, a screen with a white background and gray
+          tiles. The charms bar was included, but was unusable. The OS still
+          reads "Windows 7". <b>Milestone 2, Build 7955</b>, was leaked on April
+          25, 2011. The traditional Blue Screen of Death (BSoD) was replaced by
+          a new black screen, but was later reverted to a different blue color.
+          This build introduced a new ribbon in Windows Explorer. The "Windows
+          7" logo was temporarily replaced with text displaying "Microsoft
+          Confidential". Both builds 7850 and 7955 leaked alongside Windows
+          Server 2012 build 7959. On June 17, 2011, build 7989 64-bit edition
+          was leaked. It introduced a new boot screen featuring the same Betta
+          fish as the default Windows 7 Beta wallpaper, which was later
+          replaced, and the circling dots as featured in the final build
+          (although the final version comes with smaller circling dots). It also
+          had the text Welcome below them, which was scrapped.
+        </p>
+      </details>
+      <hr />
+      <details>
+        <summary>Features</summary>
+        <p>
+          New features and functionality in Windows 8 include a faster startup
+          through UEFI integration and the new "Hybrid Boot" mode (which
+          hibernates the Windows kernel on shutdown to speed up the subsequent
+          boot), a new lock screen with a clock and notifications, and the
+          ability for enterprise users to create live USB variants of Windows
+          (also known as Windows To Go). It also includes native support for USB
+          3 devices, which allow for faster data transfers and improved power
+          management with compatible devices, and hard disk 4KB Advanced Format
+          support, as well as support for near field communication to facilitate
+          sharing and communication between devices.
+        </p>
 
-<hr>
-<details>
-<summary>Development</summary>
-<p>Development started in 2009 while Microsoft was finishing work on Windows 7. In January 2011, it was announced at the Consumer Electronics Show that Windows 8 would add support for ARM System-on-Chips alongside the existing 32-bit processors produced by vendors, especially AMD and Intel. Windows division president Steven Sinofsky demonstrated an early build of the OS on prototype devices, while Microsoft CEO Steve Ballmer announced the company's goal for Windows to be "everywhere on every kind of device without compromise." Details also began to surface about a new application framework for Windows 8 codenamed "Jupiter", which would be used to make "immersive" applications using XAML (similarly to Windows Phone and Silverlight) that could be distributed through a new packaging system and a rumored application store.</p>
+        <p>
+          Windows Explorer, which has been renamed to File Explorer, now
+          includes a ribbon in place of the command bar. File operation dialog
+          boxes have been updated to provide more detailed statistics, the
+          ability to pause file transfers, and improvements in the ability to
+          manage conflicts when copying files. A new "File History" function
+          allows incremental revisions of files to be backed up to and restored
+          from a secondary storage device, while Storage Spaces allows users to
+          combine different sized hard disks into virtual drives and specify
+          mirroring, parity, or no redundancy on a folder-by-folder basis. For
+          easier management of files and folders, Windows 8 introduces the
+          ability to move selected files or folders via drag and drop from a
+          parent folder into a subfolder listed within the breadcrumb hierarchy
+          of the address bar in File Explorer.
+        </p>
 
-<p>The earliest available build of Windows 8 is build 7700, which was compiled in January 2010. It was almost identical to Windows 7 except for the wallpaper being different—the same one from the Beta and Release Candidate. In addition, there were a few references to Windows 8 in this build's Local Group Policy Editor Utility. Two milestone releases of Windows 8 (builds 7850 and 7955) and one milestone release of Windows Server 2012 (build 7959) was leaked to the general public. <b>Milestone 1, Build 7850</b>, was built on September 22, 2010 and leaked on April 12, 2011. The leaked copy was Enterprise edition, and other editions leaked later. It was discovered that Metro existed in this build, in 2020, after disabling the Redpill feature lockout. The start screen was primitive, a screen with a white background and gray tiles. The charms bar was included, but was unusable. The OS still reads "Windows 7". <b>Milestone 2, Build 7955</b>, was leaked on April 25, 2011. The traditional Blue Screen of Death (BSoD) was replaced by a new black screen, but was later reverted to a different blue color. This build introduced a new ribbon in Windows Explorer. The "Windows 7" logo was temporarily replaced with text displaying "Microsoft Confidential". Both builds 7850 and 7955 leaked alongside Windows Server 2012 build 7959. On June 17, 2011, build 7989 64-bit edition was leaked. It introduced a new boot screen featuring the same Betta fish as the default Windows 7 Beta wallpaper, which was later replaced, and the circling dots as featured in the final build (although the final version comes with smaller circling dots). It also had the text Welcome below them, which was scrapped.</p>
-</details>
-<hr>
-<details>
-<summary>Features</summary>
-<p>New features and functionality in Windows 8 include a faster startup through UEFI integration and the new "Hybrid Boot" mode (which hibernates the Windows kernel on shutdown to speed up the subsequent boot), a new lock screen with a clock and notifications, and the ability for enterprise users to create live USB variants of Windows (also known as Windows To Go). It also includes native support for USB 3 devices, which allow for faster data transfers and improved power management with compatible devices, and hard disk 4KB Advanced Format support, as well as support for near field communication to facilitate sharing and communication between devices.</p>
+        <p>
+          Task Manager has been redesigned, including a new processes tab with
+          the option to display fewer or more details of running applications
+          and background processes, a heat map using different colors indicating
+          the level of resource usage, network and disk counters, grouping by
+          process type (e.g. applications, background processes and Windows
+          processes), friendly names for processes and a new option which allows
+          users to search the web to find information about obscure processes.
+          Additionally, the Blue Screen of Death has been updated with a simpler
+          and modern design with less technical information displayed.
+        </p>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">
+            Safety and security
+          </summary>
+          <p>
+            New security features in Windows 8 include two new authentication
+            methods tailored towards touchscreens (PINs and picture passwords),
+            the addition of antivirus capabilities to Windows Defender (bringing
+            it in parity with Microsoft Security Essentials). SmartScreen
+            filtering integrated into Windows, Family Safety offers parental
+            controls, which allows parents to monitor and manage their
+            children's activities on a device with activity reports and safety
+            controls. Windows 8 also provides integrated system recovery through
+            the new "Refresh" and "Reset" functions, including system recovery
+            from USB drive. Windows 8's first security patches would be released
+            on November 13, 2012; it would contain three fixes deemed "critical"
+            by the company.
+          </p>
 
-<p>Windows Explorer, which has been renamed to File Explorer, now includes a ribbon in place of the command bar. File operation dialog boxes have been updated to provide more detailed statistics, the ability to pause file transfers, and improvements in the ability to manage conflicts when copying files. A new "File History" function allows incremental revisions of files to be backed up to and restored from a secondary storage device, while Storage Spaces allows users to combine different sized hard disks into virtual drives and specify mirroring, parity, or no redundancy on a folder-by-folder basis. For easier management of files and folders, Windows 8 introduces the ability to move selected files or folders via drag and drop from a parent folder into a subfolder listed within the breadcrumb hierarchy of the address bar in File Explorer.</p>
+          <p>
+            Windows 8 supports a feature of the UEFI specification known as
+            "Secure boot", which uses a public-key infrastructure to verify the
+            integrity of the operating system and prevent unauthorized programs
+            such as bootkits from infecting the device's boot process. Some
+            pre-built devices may be described as "certified" by Microsoft;
+            these must have secure boot enabled by default, and provide ways for
+            users to disable or re-configure the feature. ARM-based Windows RT
+            devices must have secure boot permanently enabled.
+          </p>
+        </details>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">
+            Online services and functionality
+          </summary>
+          <p>
+            Windows 8 provides tighter integration with online services from
+            Microsoft and others. A user can now log into Windows with a
+            Microsoft account, which can be used to access services and
+            synchronize applications and settings between multiple devices. A
+            client app for Microsoft's SkyDrive cloud storage service allows
+            apps to save files directly to SkyDrive. However, a SkyDrive client
+            for the desktop and File Explorer is not included in Windows 8, and
+            must be downloaded separately. Bundled multimedia apps are provided
+            under the Xbox brand, including Xbox Music, Xbox Video, and the Xbox
+            SmartGlass companion for use with an Xbox 360 console. Games can
+            integrate into an Xbox Live hub app, which also allows users to view
+            their profile and Gamerscore. Other bundled apps provide the ability
+            to link Flickr and Facebook. Due to Facebook Connect service
+            changes, Facebook support is disabled in all bundled apps effective
+            June 8, 2015.
+          </p>
 
-<p>Task Manager has been redesigned, including a new processes tab with the option to display fewer or more details of running applications and background processes, a heat map using different colors indicating the level of resource usage, network and disk counters, grouping by process type (e.g. applications, background processes and Windows processes), friendly names for processes and a new option which allows users to search the web to find information about obscure processes. Additionally, the Blue Screen of Death has been updated with a simpler and modern design with less technical information displayed.</p>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">Safety and security</summary>
-<p>New security features in Windows 8 include two new authentication methods tailored towards touchscreens (PINs and picture passwords), the addition of antivirus capabilities to Windows Defender (bringing it in parity with Microsoft Security Essentials). SmartScreen filtering integrated into Windows, Family Safety offers parental controls, which allows parents to monitor and manage their children's activities on a device with activity reports and safety controls. Windows 8 also provides integrated system recovery through the new "Refresh" and "Reset" functions, including system recovery from USB drive. Windows 8's first security patches would be released on November 13, 2012; it would contain three fixes deemed "critical" by the company.</p>
+          <p>
+            Internet Explorer 10 is included as two variants – a desktop program
+            and a touch-optimized app. It also includes increased support for
+            HTML5, CSS3, and hardware acceleration. The app does not support
+            plugins or ActiveX components, but includes a variant of Adobe Flash
+            Player that is optimized for touch and low-power usage. Initially,
+            Adobe Flash would only work on sites included on a "Compatibility
+            View" whitelist; however, after feedback from users and additional
+            compatibility tests, an update in March 2013 changed this behavior
+            to use a smaller blacklist of sites with known compatibility issues
+            instead, allowing Flash to be used with most sites by default. The
+            desktop variant does not contain these limitations.v
+          </p>
 
-<p>Windows 8 supports a feature of the UEFI specification known as "Secure boot", which uses a public-key infrastructure to verify the integrity of the operating system and prevent unauthorized programs such as bootkits from infecting the device's boot process. Some pre-built devices may be described as "certified" by Microsoft; these must have secure boot enabled by default, and provide ways for users to disable or re-configure the feature. ARM-based Windows RT devices must have secure boot permanently enabled.</p>
-</details>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">Online services and functionality</summary>
-<p>Windows 8 provides tighter integration with online services from Microsoft and others. A user can now log into Windows with a Microsoft account, which can be used to access services and synchronize applications and settings between multiple devices. A client app for Microsoft's SkyDrive cloud storage service allows apps to save files directly to SkyDrive. However, a SkyDrive client for the desktop and File Explorer is not included in Windows 8, and must be downloaded separately. Bundled multimedia apps are provided under the Xbox brand, including Xbox Music, Xbox Video, and the Xbox SmartGlass companion for use with an Xbox 360 console. Games can integrate into an Xbox Live hub app, which also allows users to view their profile and Gamerscore. Other bundled apps provide the ability to link Flickr and Facebook. Due to Facebook Connect service changes, Facebook support is disabled in all bundled apps effective June 8, 2015.</p>
+          <p>
+            Windows 8 also incorporates improved support for mobile broadband;
+            the operating system can now detect the insertion of a SIM card and
+            automatically configure connection settings (including APNs and
+            carrier branding), and reduce its Internet usage to conserve
+            bandwidth on metered networks. An integrated airplane mode setting
+            enables users to globally disable all wireless connectivity.
+            Carriers can also offer account management systems through Windows
+            Store apps, which can be automatically installed as a part of the
+            connection process and offer usage statistics on their respective
+            tile.
+          </p>
+        </details>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">
+            Windows Store apps
+          </summary>
+          <p>
+            Windows 8 introduces a new style of application, Windows Store apps.
+            According to Microsoft developer Jensen Harris, these apps are
+            optimized for touchscreen environments and are more specialized than
+            current desktop applications. Apps can run either in a full-screen
+            mode or be snapped to the side of a screen. Apps can provide toast
+            notifications on screen or animate their tiles on the Start screen
+            with dynamic content. Apps can use "contracts"; a collection of
+            hooks to provide common functionality that can integrate with other
+            apps, including search and sharing. Apps can also provide
+            integration with other services; for example, the People app can
+            connect to a variety of different social networks and services (such
+            as Facebook, Skype, and People service), while the Photos app can
+            aggregate photos from services such as Facebook and Flickr.
+          </p>
 
-<p>Internet Explorer 10 is included as two variants – a desktop program and a touch-optimized app. It also includes increased support for HTML5, CSS3, and hardware acceleration. The app does not support plugins or ActiveX components, but includes a variant of Adobe Flash Player that is optimized for touch and low-power usage. Initially, Adobe Flash would only work on sites included on a "Compatibility View" whitelist; however, after feedback from users and additional compatibility tests, an update in March 2013 changed this behavior to use a smaller blacklist of sites with known compatibility issues instead, allowing Flash to be used with most sites by default. The desktop variant does not contain these limitations.v
+          <p>
+            Windows Store apps run within a new set of APIs known as Windows
+            Runtime, which supports programming languages such as C, C++, Visual
+            Basic .NET, C#, along with HTML5 and JavaScript. If written in some
+            "high-level" languages, apps written for Windows Runtime can be
+            compatible with both Intel and ARM variants of Windows, otherwise
+            they are not binary code compatible. Components may be compiled as
+            Windows Runtime Components, permitting their use by all compatible
+            languages. To ensure stability and security, apps run within a
+            sandboxed environment, and require permissions to use certain other
+            functionalities, such as accessing the Internet or a camera.
+          </p>
 
-<p>Windows 8 also incorporates improved support for mobile broadband; the operating system can now detect the insertion of a SIM card and automatically configure connection settings (including APNs and carrier branding), and reduce its Internet usage to conserve bandwidth on metered networks. An integrated airplane mode setting enables users to globally disable all wireless connectivity. Carriers can also offer account management systems through Windows Store apps, which can be automatically installed as a part of the connection process and offer usage statistics on their respective tile.</p>
-</details>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">Windows Store apps</summary>
-<p>Windows 8 introduces a new style of application, Windows Store apps. According to Microsoft developer Jensen Harris, these apps are optimized for touchscreen environments and are more specialized than current desktop applications. Apps can run either in a full-screen mode or be snapped to the side of a screen. Apps can provide toast notifications on screen or animate their tiles on the Start screen with dynamic content. Apps can use "contracts"; a collection of hooks to provide common functionality that can integrate with other apps, including search and sharing. Apps can also provide integration with other services; for example, the People app can connect to a variety of different social networks and services (such as Facebook, Skype, and People service), while the Photos app can aggregate photos from services such as Facebook and Flickr.</p>
+          <p>
+            Retail variants of Windows 8 are only able to install these apps
+            through Windows Store – a namesake distribution platform that offers
+            both apps, and listings for desktop programs certified for
+            comparability with Windows 8. A method to sideload apps from outside
+            Windows Store is available to devices running Windows 8 Enterprise
+            and joined to a domain; Windows 8 Pro and Windows RT devices that
+            are not part of a domain can also sideload apps, but only after
+            special product keys are obtained through volume licensing.
+          </p>
 
-<p>Windows Store apps run within a new set of APIs known as Windows Runtime, which supports programming languages such as C, C++, Visual Basic .NET, C#, along with HTML5 and JavaScript. If written in some "high-level" languages, apps written for Windows Runtime can be compatible with both Intel and ARM variants of Windows, otherwise they are not binary code compatible. Components may be compiled as Windows Runtime Components, permitting their use by all compatible languages. To ensure stability and security, apps run within a sandboxed environment, and require permissions to use certain other functionalities, such as accessing the Internet or a camera.</p>
+          <p>
+            The term "Immersive app" had been used internally by Microsoft
+            developers to refer to the apps prior to the first official
+            presentation of Windows 8, after which they were referred to as
+            "Metro-style apps" in reference to the Metro design language. The
+            term was phased out in August 2012; a Microsoft spokesperson denied
+            rumors that the change was related to a potential trademark issue,
+            and stated that "Metro" was only a codename that would be replaced
+            prior to Windows 8's release. Following these reports, the terms
+            "Modern UI-style apps", "Windows 8-style apps", and "Windows Store
+            apps" began to be used in various Microsoft documents and material
+            to refer to the new apps. In an interview on September 12, 2012,
+            Soma Somasegar (vice president of Microsoft's development software
+            division) confirmed that "Windows Store apps" would be the official
+            term for the apps. An MSDN page explaining the Metro design language
+            uses the term "Modern design" to refer to the language as a whole.
+          </p>
+        </details>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">
+            Web browsers
+          </summary>
 
-<p>Retail variants of Windows 8 are only able to install these apps through Windows Store – a namesake distribution platform that offers both apps, and listings for desktop programs certified for comparability with Windows 8. A method to sideload apps from outside Windows Store is available to devices running Windows 8 Enterprise and joined to a domain; Windows 8 Pro and Windows RT devices that are not part of a domain can also sideload apps, but only after special product keys are obtained through volume licensing.</p>
+          <p>
+            Exceptions to the restrictions faced by Windows Store apps are given
+            to web browsers. The user's default browser can distribute a
+            Metro-style web browser in the same package as the desktop variant,
+            which has access to functionality unavailable to other apps, such as
+            being able to permanently run in the background, use multiple
+            background processes, and use Windows API code instead of WinRT
+            (allowing for code to be re-used with the desktop variant, while
+            still taking advantage of features available to Windows Store apps,
+            such as charms). Microsoft advertises this exception privilege "New
+            experience enabled" (formerly "Metro-style enabled").
+          </p>
 
-<p>The term "Immersive app" had been used internally by Microsoft developers to refer to the apps prior to the first official presentation of Windows 8, after which they were referred to as "Metro-style apps" in reference to the Metro design language. The term was phased out in August 2012; a Microsoft spokesperson denied rumors that the change was related to a potential trademark issue, and stated that "Metro" was only a codename that would be replaced prior to Windows 8's release. Following these reports, the terms "Modern UI-style apps", "Windows 8-style apps", and "Windows Store apps" began to be used in various Microsoft documents and material to refer to the new apps. In an interview on September 12, 2012, Soma Somasegar (vice president of Microsoft's development software division) confirmed that "Windows Store apps" would be the official term for the apps. An MSDN page explaining the Metro design language uses the term "Modern design" to refer to the language as a whole.</p>
-</details>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">Web browsers</summary>
+          <p>
+            The developers of both Chrome and Firefox committed to developing
+            Metro-style variants of their browsers; while Chrome's "Windows 8
+            mode" (discontinued on Chrome version 49) uses a full-screen version
+            of the existing desktop interface, Firefox's variant (which was
+            first made available on the "Aurora" release channel in September
+            2013) uses a touch-optimized interface inspired by the Android
+            variant of Firefox. In October 2013, Chrome's app was changed to
+            mimic the desktop environment used by ChromeOS. Development of the
+            Firefox app for Windows 8 has since been cancelled, citing a lack of
+            user adoption of the beta versions.
+          </p>
+        </details>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">
+            Removed features
+          </summary>
+          <p>
+            Several notable features were removed in Windows 8; support for
+            playing DVD-Video was removed from Windows Media Player due to the
+            cost of licensing the necessary decoders (especially for devices
+            which do not include optical disc drives at all) and the prevalence
+            of online streaming services. For the same reasons, Windows Media
+            Center is not included by default on Windows 8, but Windows Media
+            Center and DVD playback support could be purchased in the "Pro Pack"
+            (which upgrades the system to Windows 8 Pro) or the "Media Center
+            Pack" add-on for Windows 8 Pro. As with prior versions, third-party
+            DVD player software can still be used to enable DVD playback.
+          </p>
 
-<p>Exceptions to the restrictions faced by Windows Store apps are given to web browsers. The user's default browser can distribute a Metro-style web browser in the same package as the desktop variant, which has access to functionality unavailable to other apps, such as being able to permanently run in the background, use multiple background processes, and use Windows API code instead of WinRT (allowing for code to be re-used with the desktop variant, while still taking advantage of features available to Windows Store apps, such as charms). Microsoft advertises this exception privilege "New experience enabled" (formerly "Metro-style enabled").</p>
+          <p>
+            Backup and Restore, the backup component of Windows, was deprecated.
+            It still shipped with Windows 8 and continues to work on preset
+            schedules, but it was pushed to the background and can only be
+            accessed through a Control Panel applet called "Windows 7 File
+            Recovery".  Shadow Copy, a component of Windows Explorer that once
+            saved previous versions of changed files, no longer protects local
+            files and folders. It can only access previous versions of shared
+            files stored on a Windows Server computer.  The subsystem on which
+            these components worked, however, is still available for other
+            software to use.
+          </p>
 
-<p>The developers of both Chrome and Firefox committed to developing Metro-style variants of their browsers; while Chrome's "Windows 8 mode" (discontinued on Chrome version 49) uses a full-screen version of the existing desktop interface, Firefox's variant (which was first made available on the "Aurora" release channel in September 2013) uses a touch-optimized interface inspired by the Android variant of Firefox. In October 2013, Chrome's app was changed to mimic the desktop environment used by ChromeOS. Development of the Firefox app for Windows 8 has since been cancelled, citing a lack of user adoption of the beta versions.</p>
-</details>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">Removed features</summary>
-<p>Several notable features were removed in Windows 8; support for playing DVD-Video was removed from Windows Media Player due to the cost of licensing the necessary decoders (especially for devices which do not include optical disc drives at all) and the prevalence of online streaming services. For the same reasons, Windows Media Center is not included by default on Windows 8, but Windows Media Center and DVD playback support could be purchased in the "Pro Pack" (which upgrades the system to Windows 8 Pro) or the "Media Center Pack" add-on for Windows 8 Pro. As with prior versions, third-party DVD player software can still be used to enable DVD playback.</p>
+          <p>
+            Support for older XPDM and VGA display adapter drivers was removed
+            in favor of heightened kernel stability, GPU scheduling performance
+            and security.
+          </p>
+        </details>
+      </details>
+      <hr />
+      <details>
+        <summary>Editions</summary>
+        <p>
+          Windows 8 is available in three different editions, of which only the
+          base edition, branded simply as Windows 8, and Windows 8 Pro, were
+          sold at retail in most countries, and as pre-loaded software on new
+          computers. Each edition of Windows 8 includes all of the capabilities
+          and features of the edition preceding it, and add additional features
+          oriented towards their market segments. Windows 8 was distributed as a
+          retail box product on DVD, and through a digital download that could
+          be converted into DVD or USB install media. From its launch until
+          January 31, 2013, as part of a launch promotion, Microsoft offered
+          Windows 8 Pro upgrades at a discounted price of US$39.99 online, or
+          $69.99 for a retail box; afterward the Windows 8 price has been
+          $119.99 and the Pro price $199.99. Those who purchased new PCs
+          pre-loaded with Windows 7 Home Basic, Home Premium, Professional, or
+          Ultimate between June 2, 2012, and January 31, 2013, could digitally
+          purchase a Windows 8 Pro upgrade for US$14.99. Several PC
+          manufacturers offered rebates and refunds on Windows 8 upgrades
+          obtained through promotions on select models, such as those of
+          Hewlett-Packard (in the U.S. and Canada on select models) and Acer (in
+          Europe on selected Ultrabook models). During these promotions, the
+          Windows Media Center add-on for Windows 8 Pro was also offered for
+          free. Unlike previous versions of Windows, Windows 8 was distributed
+          at retail only under "Upgrade" licenses, which require a previous
+          version of Windows to install. The "full version software" SKU, which
+          was more expensive but could be installed on computers without an
+          eligible OS or none at all, was discontinued. In lieu of a full
+          version, a specialized "System Builder" SKU was introduced. The
+          "System Builder" replaced the original equipment manufacturer (OEM)
+          SKU, which was only allowed for use on PCs meant for resale but added
+          a "Personal Use License" exemption that officially allowed its
+          purchase and personal use by users on homebuilt computers. Retail
+          distribution of Windows 8 has since been discontinued in favor of
+          Windows 8.1. Unlike Windows 8, 8.1 is available as "full version
+          software" as both a packaged DVD and online for download, and does not
+          require a previous version of Windows in order to be installed.
+          Pricing for these new copies remains identical with that of Windows 8.
+          With the retail release of Windows 8.1 returning to being full version
+          software, the "Personal Use License" exemption was removed from the
+          OEM SKU, meaning that end users building their own PCs for personal
+          use must use the full retail variant in order to satisfy the Windows
+          8.1 licensing requirements.
+        </p>
+      </details>
+      <hr />
+      <details>
+        <summary>User Interface</summary>
+        <p>
+          Windows 8 introduces significant changes to the operating system's
+          user interface, many of which are aimed at improving its experience on
+          tablet computers and other touchscreen devices. The new user interface
+          is based on Microsoft's Metro design language and uses a Start screen
+          similar to that of Windows Phone 7 as the primary means of launching
+          applications. The Start screen displays a customizable array of tiles
+          linking to various apps and desktop programs, some of which can
+          display constantly updated information and content through "live
+          tiles". As a form of multi-tasking, apps can be snapped to the side of
+          a screen. Alongside the traditional Control Panel, a new simplified
+          and touch-optimized settings app known as "PC Settings" is used for
+          basic configuration and user settings. It does not include many of the
+          advanced options still accessible from the Control Panel.
+        </p>
 
-<p>Backup and Restore, the backup component of Windows, was deprecated. It still shipped with Windows 8 and continues to work on preset schedules, but it was pushed to the background and can only be accessed through a Control Panel applet called "Windows 7 File Recovery".  Shadow Copy, a component of Windows Explorer that once saved previous versions of changed files, no longer protects local files and folders. It can only access previous versions of shared files stored on a Windows Server computer.  The subsystem on which these components worked, however, is still available for other software to use.</p>
-
-<p>Support for older XPDM and VGA display adapter drivers was removed in favor of heightened kernel stability, GPU scheduling performance and security.</p>
-</details>
-</details><hr>
-<details>
-<summary>Editions</summary>
-<p>Windows 8 is available in three different editions, of which only the base edition, branded simply as Windows 8, and Windows 8 Pro, were sold at retail in most countries, and as pre-loaded software on new computers. Each edition of Windows 8 includes all of the capabilities and features of the edition preceding it, and add additional features oriented towards their market segments. Windows 8 was distributed as a retail box product on DVD, and through a digital download that could be converted into DVD or USB install media. From its launch until January 31, 2013, as part of a launch promotion, Microsoft offered Windows 8 Pro upgrades at a discounted price of US$39.99 online, or $69.99 for a retail box; afterward the Windows 8 price has been $119.99 and the Pro price $199.99. Those who purchased new PCs pre-loaded with Windows 7 Home Basic, Home Premium, Professional, or Ultimate between June 2, 2012, and January 31, 2013, could digitally purchase a Windows 8 Pro upgrade for US$14.99. Several PC manufacturers offered rebates and refunds on Windows 8 upgrades obtained through promotions on select models, such as those of Hewlett-Packard (in the U.S. and Canada on select models) and Acer (in Europe on selected Ultrabook models). During these promotions, the Windows Media Center add-on for Windows 8 Pro was also offered for free. Unlike previous versions of Windows, Windows 8 was distributed at retail only under "Upgrade" licenses, which require a previous version of Windows to install. The "full version software" SKU, which was more expensive but could be installed on computers without an eligible OS or none at all, was discontinued. In lieu of a full version, a specialized "System Builder" SKU was introduced. The "System Builder" replaced the original equipment manufacturer (OEM) SKU, which was only allowed for use on PCs meant for resale but added a "Personal Use License" exemption that officially allowed its purchase and personal use by users on homebuilt computers. Retail distribution of Windows 8 has since been discontinued in favor of Windows 8.1. Unlike Windows 8, 8.1 is available as "full version software" as both a packaged DVD and online for download, and does not require a previous version of Windows in order to be installed. Pricing for these new copies remains identical with that of Windows 8. With the retail release of Windows 8.1 returning to being full version software, the "Personal Use License" exemption was removed from the OEM SKU, meaning that end users building their own PCs for personal use must use the full retail variant in order to satisfy the Windows 8.1 licensing requirements.</p>
-</details><hr>
-<details>
-<summary>User Interface</summary>
-<p>Windows 8 introduces significant changes to the operating system's user interface, many of which are aimed at improving its experience on tablet computers and other touchscreen devices. The new user interface is based on Microsoft's Metro design language and uses a Start screen similar to that of Windows Phone 7 as the primary means of launching applications. The Start screen displays a customizable array of tiles linking to various apps and desktop programs, some of which can display constantly updated information and content through "live tiles". As a form of multi-tasking, apps can be snapped to the side of a screen. Alongside the traditional Control Panel, a new simplified and touch-optimized settings app known as "PC Settings" is used for basic configuration and user settings. It does not include many of the advanced options still accessible from the Control Panel.</p>
-
-<p>A vertical toolbar known as the charms (accessed by swiping from the right edge of a touchscreen, swiping from the right edge of a touchpad, or pointing the cursor at hotspots in the right corners of a screen) provides access to system and app-related functions, such as search, sharing, device management, settings, and a Start button. The traditional desktop environment for running desktop applications is accessed via a tile on the Start screen. The Start button on the taskbar from previous versions of Windows has been converted into a hotspot (or "hot corner") in the lower-left corner of the screen, which displays a large tooltip displaying a thumbnail of the Start screen. Windows 8.1 added the start button back to the taskbar after many complaints, but removed the preview thumbnail. Swiping from the left edge of a touchscreen or clicking in the top-left corner of the screen allows one to switch between apps and Desktop. Pointing the cursor at the top-left corner of the screen and moving down reveals a thumbnail list of active apps. Aside from the removal of the Start button and the replacement of the Aero Glass theme with a flatter and solid-colored design (Metro-style UI), the desktop interface on Windows 8 is similar to that of Windows 7.</p>
-</details><hr>
-<footer>
-<div id="child-container-in-footer">
-<a href="./Win7.html"><button>Previous</button></a>
-<p>Windows 7</p>
-<p><b>Windows 8</b></p>
-<p>Windows 8.1</p>
-<a href="./Win8_1.html"><button>Next</button></a>
-</div>
-</footer>
-</div>
-</body>
+        <p>
+          A vertical toolbar known as the charms (accessed by swiping from the
+          right edge of a touchscreen, swiping from the right edge of a
+          touchpad, or pointing the cursor at hotspots in the right corners of a
+          screen) provides access to system and app-related functions, such as
+          search, sharing, device management, settings, and a Start button. The
+          traditional desktop environment for running desktop applications is
+          accessed via a tile on the Start screen. The Start button on the
+          taskbar from previous versions of Windows has been converted into a
+          hotspot (or "hot corner") in the lower-left corner of the screen,
+          which displays a large tooltip displaying a thumbnail of the Start
+          screen. Windows 8.1 added the start button back to the taskbar after
+          many complaints, but removed the preview thumbnail. Swiping from the
+          left edge of a touchscreen or clicking in the top-left corner of the
+          screen allows one to switch between apps and Desktop. Pointing the
+          cursor at the top-left corner of the screen and moving down reveals a
+          thumbnail list of active apps. Aside from the removal of the Start
+          button and the replacement of the Aero Glass theme with a flatter and
+          solid-colored design (Metro-style UI), the desktop interface on
+          Windows 8 is similar to that of Windows 7.
+        </p>
+      </details>
+      <hr />
+      <footer>
+        <div id="child-container-in-footer">
+          <a href="./Win7.html"><button>Previous</button></a>
+          <p>Windows 7</p>
+          <p><b>Windows 8</b></p>
+          <p>Windows 8.1</p>
+          <a href="./Win8_1.html"><button>Next</button></a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

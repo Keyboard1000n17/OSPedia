@@ -1,343 +1,998 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="Unicode">
-<title>WinPedia - Windows 10</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link rel="icon" href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg">
-<style>
-#ul, .li, .nav {
-list-style: none;
-margin-right: 20px;
-text-decoration: none;
-color: #3266fb;
-display: inline-block;
-}
+  <head>
+    <meta charset="Unicode" />
+    <title>WinPedia - Windows 10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg"
+    />
+    <style>
+      #ul,
+      .li,
+      .nav {
+        list-style: none;
+        margin-right: 20px;
+        text-decoration: none;
+        color: #3266fb;
+        display: inline-block;
+      }
 
-.nav:hover {
-color: #001fff;
-}
+      .nav:hover {
+        color: #001fff;
+      }
 
-nav {
-background-color: rgba(255, 255, 255, 0.75);
-backdrop-filter: blur(10px);
-position: fixed;
-top: 0;
-left: 0;
-z-index: 1;
-overflow: hidden;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 9vh;
-list-style: none;
-}
+      nav {
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 9vh;
+        list-style: none;
+      }
 
-footer {
-background-color: rgba(255, 255, 255, 0.75);
-backdrop-filter: blur(10px);
-position: fixed;
-bottom: 0;
-right: 0;
-z-index: 1;
-overflow: hidden;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 9vh;
-padding: 5px;
-color: #000000;
-}
+      footer {
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 9vh;
+        padding: 5px;
+        color: #000000;
+      }
 
-button {
-border-radius: 10px;
-padding: 10px;
-background-color: rgba(255, 255, 255, 0.5);
-width: 100%;
-height: 75%;
-font-family: inherit;
-font-size: inherit;
-display: flex;
-justify-content: center;
-align-items: center;
-transition: box-shadow ease-out 0.3s;
-border-style: none;
-}
+      button {
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+        height: 75%;
+        font-family: inherit;
+        font-size: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: box-shadow ease-out 0.3s;
+        border-style: none;
+      }
 
-button:hover {
-box-shadow: 0px 0px 15px 2px black;
-}
+      button:hover {
+        box-shadow: 0px 0px 15px 2px black;
+      }
 
-#child-container-in-footer {
-margin: 10px;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: auto;
-width: 100%;
-text-align: center;
-align-items: center;
-}
+      #child-container-in-footer {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+      }
 
-body {
-margin: 10vh 0.5vw 10vh 0.5vw;
-font-family: Segoe UI;
-font-size: 2vh;
-background-image: url(../Images/wallpaper/win10.jpg);
-background-size: cover;
-background-attachment: fixed;
-background-position-x: 0px;
-color: #FFFFFF;
-overflow-x: hidden;
+      body {
+        margin: 10vh 0.5vw 10vh 0.5vw;
+        font-family: Segoe UI;
+        font-size: 2vh;
+        background-image: url(../Images/wallpaper/win10.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: 0px;
+        color: #ffffff;
+        overflow-x: hidden;
+      }
 
-}
+      #container {
+        margin: 10px;
+        overflow: auto;
+      }
 
-#container {
-margin: 10px;
-overflow: auto;
-}
+      #heading {
+        font-size: 4vh;
+        font-weight: bold;
+      }
 
-#heading {
-font-size: 4vh;
-font-weight: bold;
-}
+      #info {
+        display: flow-root;
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(7.5px);
+        padding: 30px;
+        border: solid 1px black;
+        border-radius: 10px;
+        margin: 10px;
+        color: black;
+        height: auto;
+      }
 
-#info {
-display: flow-root;
-background-color: rgba(255, 255, 255, 0.75);
-backdrop-filter: blur(7.5px);
-padding: 30px;
-border: solid 1px black;
-border-radius: 10px;
-margin: 10px;
-color: black;
-height: auto;
-}
+      img {
+        float: right;
+      }
 
-img {
-float: right;
-}
+      li {
+        list-style: disc;
+        color: #ffffff;
+      }
 
-li {
-list-style: disc;
-color: #FFFFFF;
-}
+      summary {
+        font-weight: bold;
+        font-size: 2.5vh;
+      }
 
-summary {
-font-weight: bold;
-font-size: 2.5vh;
-}
+      a {
+        color: #000000;
+        text-decoration: none;
+      }
 
-a {
-color: #000000;
-text-decoration: none;
-}
+      @media (max-width: 1440px) {
+        #homeContainer {
+          display: block;
+        }
+        nav {
+          height: 9vh;
+        }
+        img {
+          float: none;
+        }
+        table {
+          float: none;
+          align-self: center;
+          width: 98%;
+        }
+        #info {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          text-align: center;
+        }
+        body {
+          background-position-x: 1280px;
+        }
+        #features {
+          line-height: 2.75vh;
+        }
+      }
 
-@media (max-width: 1440px){
-#homeContainer {
-display: block;
-}
-nav {
-height: 9vh;
-}
-img {
-float: none;
-}
-table {
-float: none;
-align-self: center;
-width: 98%;
-}
-#info {
-display: flex;
-flex-direction: column;
-align-content: center;
-text-align: center;
-}
-body {
-background-position-x: 1280px;
-}
-#features {
-line-height: 2.75vh;
-}
-}
+      .bolden {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="../Images/WinPedia-logo.svg" alt="logo" height="60%" />
+        <ul>
+          <li class="nav"><a href="./Homepage.html" class="nav">Home</a></li>
+          <li class="nav">
+            <a href="../AboutMe/AboutMe.html" class="nav">About Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-.bolden {
-font-weight: 600;
-}
-</style>
-</head>
-<body>
-<header>
-<nav>
-<img src="../Images/WinPedia-logo.svg" alt="logo" height="60%">
-<ul>
-<li class="nav"><a href="./Homepage.html" class="nav">Home</a></li> 
-<li class="nav"><a href="../AboutMe/AboutMe.html" class="nav">About Me</a></li>
-</ul>
-</nav>
-</header>
+    <div id="container">
+      <span id="heading">Windows 10</span>
 
-<div id="container">
+      <p>
+        Windows 10 is a major release of Microsoft's Windows NT operating system
+        as the successor to Windows 8.1. It was released to manufacturing on
+        July 15, 2015, and later to retail on July 29, 2015. Windows 10 was made
+        available for download via MSDN and TechNet, as a free upgrade for
+        retail copies of Windows 8 and Windows 8.1 users via the Microsoft
+        Store, and to Windows 7 users via Windows Update. Unlike previous
+        Windows NT releases, Windows 10 receives new builds on an ongoing basis,
+        which are available at no additional cost to users; devices in
+        enterprise environments can alternatively use long-term support
+        milestones that only receive critical updates, such as security patches.
+      </p>
 
-<span id="heading">Windows 10</span>
+      <div id="info">
+        <img
+          src="../Images/icons/w10.png"
+          alt="Windows 10"
+          style="align-self: center"
+        />
+        <p>Date released: July 15, 2015</p>
+        <p>End of Support: October 14, 2025</p>
+        <p>Latest release: 22H2 (10.0.19045.5247) on December 10, 2024</p>
+        <p>Succeeded by: Windows 11 (released 2021)</p>
+        <p>Codename: Threshold</p>
+        <p>Developed by: Microsoft Corporation</p>
+      </div>
 
-<p>Windows 10 is a major release of Microsoft's Windows NT operating system as the successor to Windows 8.1. It was released to manufacturing on July 15, 2015, and later to retail on July 29, 2015. Windows 10 was made available for download via MSDN and TechNet, as a free upgrade for retail copies of Windows 8 and Windows 8.1 users via the Microsoft Store, and to Windows 7 users via Windows Update. Unlike previous Windows NT releases, Windows 10 receives new builds on an ongoing basis, which are available at no additional cost to users; devices in enterprise environments can alternatively use long-term support milestones that only receive critical updates, such as security patches.</p>
+      <p>
+        Unlike the tablet-oriented approach of Windows 8, Microsoft provided the
+        desktop-oriented interface in line with previous versions of Windows in
+        Windows 10. Other features added include Xbox Live integration, the
+        virtual assistant Cortana, virtual desktops and the improved Settings
+        component. Windows 10 also replaced Internet Explorer with Microsoft
+        Edge. Like previous versions, Windows 10 has been developed primarily
+        for x86 processors; although a version of Windows 10 for ARM processors
+        was released in 2018. Windows 10 received generally positive reviews
+        upon its original release, and praise was given to the return of the
+        desktop interface, improved bundled software compared to Windows 8.1,
+        and other capabilities. However, media outlets were critical of
+        behavioral changes of the system such as mandatory update installation,
+        privacy concerns over data collection and the adware-like tactics used
+        to promote the operating system on its release. Microsoft initially
+        aimed to have Windows 10 installed on over one billion devices within
+        three years of its release, but this goal was ultimately reached almost
+        five years after release on March 16, 2020, and it surpassed Windows 7
+        as the most popular version of Windows worldwide by January 2018, which
+        remains to be the case in 2024. Windows 10 is the most-used traditional
+        PC operating system, with a 46% share of users.
+      </p>
 
-<div id="info">
-<img src="../Images/icons/w10.png" alt="Windows 10" style="align-self: center;">
-<p>Date released: July 15, 2015</p>	
-<p>End of Support: October 14, 2025</p>
-<p>Latest release: 22H2 (10.0.19045.5247) on December 10, 2024 </p>
-<p>Succeeded by: Windows 11 (released 2021)</p>
-<p>Codename: Threshold</p>
-<p>Developed by: Microsoft Corporation</p>
-</div>
+      <p>
+        Windows 10 is the last version of Microsoft Windows that supports 32-bit
+        processors (IA-32 and ARMv7-based), the last non-IoT edition to
+        officially lack a CPU whitelist and support BIOS firmware, and the last
+        version to officially support systems with TPM 1.2 or without any TPM at
+        all. Support for Windows 10 editions which are not in the Long-Term
+        Servicing Channel (LTSC) is set to end on October 14, 2025.
+      </p>
+      <hr />
+      <details>
+        <summary>Development</summary>
+        <p>
+          At the Microsoft Worldwide Partner Conference in 2011, Andrew Lees,
+          the chief of Microsoft's mobile technologies, said that the company
+          intended to have a single software ecosystem for PCs, smartphones,
+          tablets, and other devices: "We won't have an ecosystem for PCs, and
+          one for phones, and one for tablets‍—‌they'll all come together."
+        </p>
 
-<p>Unlike the tablet-oriented approach of Windows 8, Microsoft provided the desktop-oriented interface in line with previous versions of Windows in Windows 10. Other features added include Xbox Live integration, the virtual assistant Cortana, virtual desktops and the improved Settings component. Windows 10 also replaced Internet Explorer with Microsoft Edge. Like previous versions, Windows 10 has been developed primarily for x86 processors; although a version of Windows 10 for ARM processors was released in 2018. Windows 10 received generally positive reviews upon its original release, and praise was given to the return of the desktop interface, improved bundled software compared to Windows 8.1, and other capabilities. However, media outlets were critical of behavioral changes of the system such as mandatory update installation, privacy concerns over data collection and the adware-like tactics used to promote the operating system on its release. Microsoft initially aimed to have Windows 10 installed on over one billion devices within three years of its release, but this goal was ultimately reached almost five years after release on March 16, 2020, and it surpassed Windows 7 as the most popular version of Windows worldwide by January 2018, which remains to be the case in 2024. Windows 10 is the most-used traditional PC operating system, with a 46% share of users.</p>
+        <p>
+          In December 2013, technology writer Mary Jo Foley reported that
+          Microsoft was working on an update to Windows 8 codenamed "Threshold",
+          after a planet in its Halo franchise. Similarly to "Blue" (which
+          became Windows 8.1), Foley described Threshold, not as a single
+          operating system, but as a "wave of operating systems" across multiple
+          Microsoft platforms and services, quoting Microsoft sources, scheduled
+          for the second quarter of 2015. She also stated that one of the goals
+          for Threshold was to create a unified application platform and
+          development toolkit for Windows, Windows Phone and Xbox One (which all
+          use a similar kernel based on Windows NT).
+        </p>
 
-<p>Windows 10 is the last version of Microsoft Windows that supports 32-bit processors (IA-32 and ARMv7-based), the last non-IoT edition to officially lack a CPU whitelist and support BIOS firmware, and the last version to officially support systems with TPM 1.2 or without any TPM at all. Support for Windows 10 editions which are not in the Long-Term Servicing Channel (LTSC) is set to end on October 14, 2025.</p>
-<hr>
-<details>
-<summary>Development</summary>
-<p>At the Microsoft Worldwide Partner Conference in 2011, Andrew Lees, the chief of Microsoft's mobile technologies, said that the company intended to have a single software ecosystem for PCs, smartphones, tablets, and other devices: "We won't have an ecosystem for PCs, and one for phones, and one for tablets‍—‌they'll all come together."</p>
+        <p>
+          At the Build Conference in April 2014, Microsoft's Terry Myerson
+          unveiled an early build of what would become Windows 10 (build 9697)
+          that added the ability to run Microsoft Store apps inside desktop
+          windows and a more traditional Start menu modeled after Windows 7's
+          design by using only a portion of the screen and including an
+          application listing in the left column, with the right column
+          displaying Windows 8-style app tiles. Myerson said that these changes
+          would occur in a future update, but did not elaborate. Microsoft also
+          unveiled the concept of a "universal Windows app", allowing Windows
+          Store apps created for Windows 8.1 to be ported to Windows Phone 8.1
+          and Xbox One while sharing a common codebase, with an interface
+          designed for different device form factors, and allowing user data and
+          licenses for an app to be shared between multiple platforms. Windows
+          Phone 8.1 would share nearly 90% of the common Windows Runtime APIs
+          with Windows 8.1 on PCs.
+        </p>
 
-<p>In December 2013, technology writer Mary Jo Foley reported that Microsoft was working on an update to Windows 8 codenamed "Threshold", after a planet in its Halo franchise. Similarly to "Blue" (which became Windows 8.1), Foley described Threshold, not as a single operating system, but as a "wave of operating systems" across multiple Microsoft platforms and services, quoting Microsoft sources, scheduled for the second quarter of 2015. She also stated that one of the goals for Threshold was to create a unified application platform and development toolkit for Windows, Windows Phone and Xbox One (which all use a similar kernel based on Windows NT).</p>
+        <p>
+          A screenshot of a build identifying itself as "Windows Technical
+          Preview" (numbered 9834) was leaked in September 2014, showing a new
+          virtual desktop system, a notification center, and a new File Explorer
+          icon.
+        </p>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">
+            Announcement
+          </summary>
+          <p>
+            On September 30, 2014, Microsoft officially announced that Threshold
+            would be unveiled during a media event as Windows 10. Myerson said
+            that Windows 10 would be Microsoft's "most comprehensive platform
+            ever", providing a single, unified platform for desktop and laptop
+            computers, tablets, smartphones, and all-in-one devices. He
+            emphasized that Windows 10 would take steps towards restoring user
+            interface mechanics from Windows 7 to improve the experience for
+            users on non-touch devices, noting criticism of Windows 8's
+            touch-oriented interface by keyboard and mouse users. Despite these
+            concessions, Myerson noted that the touch-optimized interface would
+            evolve as well on Windows 10.
+          </p>
 
-<p>At the Build Conference in April 2014, Microsoft's Terry Myerson unveiled an early build of what would become Windows 10 (build 9697) that added the ability to run Microsoft Store apps inside desktop windows and a more traditional Start menu modeled after Windows 7's design by using only a portion of the screen and including an application listing in the left column, with the right column displaying Windows 8-style app tiles. Myerson said that these changes would occur in a future update, but did not elaborate. Microsoft also unveiled the concept of a "universal Windows app", allowing Windows Store apps created for Windows 8.1 to be ported to Windows Phone 8.1 and Xbox One while sharing a common codebase, with an interface designed for different device form factors, and allowing user data and licenses for an app to be shared between multiple platforms. Windows Phone 8.1 would share nearly 90% of the common Windows Runtime APIs with Windows 8.1 on PCs.</p>
+          <p>
+            In regards to Microsoft naming the new operating system Windows 10
+            instead of Windows 9, Terry Myerson said that "based on the product
+            that's coming, and just how different our approach will be overall,
+            it wouldn't be right to call it Windows 9." He also joked that they
+            could not call it "Windows One" (referring to several recent
+            Microsoft products with a similar brand, such as OneDrive, OneNote,
+            and the Xbox One) because Windows 1.0 already existed. At a San
+            Francisco conference in October 2014, Tony Prophet, Microsoft's Vice
+            President of Windows Marketing, said that Windows 9 "came and went",
+            and that Windows 10 would not be "an incremental step from Windows
+            8.1", but "a material step. We're trying to create one platform, one
+            eco-system that unites as many of the devices from the small
+            embedded Internet of Things, through tablets, through phones,
+            through PCs and, ultimately, into the Xbox."
+          </p>
 
-<p>A screenshot of a build identifying itself as "Windows Technical Preview" (numbered 9834) was leaked in September 2014, showing a new virtual desktop system, a notification center, and a new File Explorer icon.</p>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">Announcement</summary>
-<p>On September 30, 2014, Microsoft officially announced that Threshold would be unveiled during a media event as Windows 10. Myerson said that Windows 10 would be Microsoft's "most comprehensive platform ever", providing a single, unified platform for desktop and laptop computers, tablets, smartphones, and all-in-one devices. He emphasized that Windows 10 would take steps towards restoring user interface mechanics from Windows 7 to improve the experience for users on non-touch devices, noting criticism of Windows 8's touch-oriented interface by keyboard and mouse users. Despite these concessions, Myerson noted that the touch-optimized interface would evolve as well on Windows 10.</p>
+          <p>
+            Further details surrounding Windows 10's consumer-oriented features
+            were presented during another media event held on January 21, 2015,
+            titled "Windows 10: The Next Chapter". The keynote featured the
+            unveiling of Cortana integration within the operating system, new
+            Xbox-oriented features, Windows 10 Mobile, an updated Office Mobile
+            suite, Surface Hub‍—‌a large-screened Windows 10 device for
+            enterprise collaboration based upon Perceptive Pixel technology,
+            along with HoloLens‑augmented reality eyewear and an associated
+            platform for building apps that can render holograms through
+            HoloLens.
+          </p>
 
-<p>In regards to Microsoft naming the new operating system Windows 10 instead of Windows 9, Terry Myerson said that "based on the product that's coming, and just how different our approach will be overall, it wouldn't be right to call it Windows 9." He also joked that they could not call it "Windows One" (referring to several recent Microsoft products with a similar brand, such as OneDrive, OneNote, and the Xbox One) because Windows 1.0 already existed. At a San Francisco conference in October 2014, Tony Prophet, Microsoft's Vice President of Windows Marketing, said that Windows 9 "came and went", and that Windows 10 would not be "an incremental step from Windows 8.1", but "a material step. We're trying to create one platform, one eco-system that unites as many of the devices from the small embedded Internet of Things, through tablets, through phones, through PCs and, ultimately, into the Xbox."</p>
+          <p>
+            Additional developer-oriented details surrounding the "Universal
+            Windows Platform" concept were revealed and discussed during
+            Microsoft's Build developers' conference. Among them were the
+            unveiling of "Islandwood", which provides a middleware toolchain for
+            compiling Objective-C-based software (particularly iOS) to run as
+            universal apps on Windows 10 and Windows 10 Mobile. A port of Candy
+            Crush Saga made using the toolkit, which shared much of its code
+            with the iOS version, was demonstrated, alongside the announcement
+            that the King-developed game would be bundled with Windows 10 at
+            launch.
+          </p>
 
-<p>Further details surrounding Windows 10's consumer-oriented features were presented during another media event held on January 21, 2015, titled "Windows 10: The Next Chapter". The keynote featured the unveiling of Cortana integration within the operating system, new Xbox-oriented features, Windows 10 Mobile, an updated Office Mobile suite, Surface Hub‍—‌a large-screened Windows 10 device for enterprise collaboration based upon Perceptive Pixel technology, along with HoloLens‑augmented reality eyewear and an associated platform for building apps that can render holograms through HoloLens.</p>
+          <p>
+            At the 2015 Ignite conference, Microsoft employee Jerry Nixon stated
+            that Windows 10 would be the "last version of Windows", a statement
+            reflecting the company's intent to apply the software as a service
+            business model to Windows, with new versions and updates to be
+            released over an indefinite period. In 2021, however, Microsoft
+            announced that Windows 10 would be succeeded on compatible hardware
+            by Windows 11 – and that Windows 10 support will end on October 14,
+            2025, marking a departure from what had been dubbed "Windows as a
+            service".
+          </p>
+        </details>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">
+            Marketing
+          </summary>
+          <p>
+            On July 20, 2015, Microsoft began "Upgrade Your World", an
+            advertising campaign centering on Windows 10, with the premiere of
+            television commercials in Australia, Canada, France, Germany, Japan,
+            the United Kingdom, and the United States. The commercials focused
+            on the tagline "A more human way to do", emphasizing new features
+            and technologies supported by Windows 10 that sought to provide a
+            more "personal" experience to users. The campaign culminated with
+            launch events in thirteen cities on July 29, 2015, which celebrated
+            "the unprecedented role our biggest fans played in the development
+            of Windows 10".
+          </p>
+        </details>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">Release</summary>
+          <p>
+            On July 29, 2015, Microsoft officially announced that Windows 10
+            would be released for retail purchase as a free upgrade from earlier
+            versions of Windows. In comparison to previous Windows releases,
+            which had a longer turnover between the release to manufacturing
+            (RTM) and general release to allow for testing by vendors (and in
+            some cases, the development of "upgrade kits" to prepare systems for
+            installation of the new version), an HP executive explained that
+            because it knew Microsoft targeted the operating system for a 2015
+            release, the company was able to optimize its then-current and
+            upcoming products for Windows 10 in advance of its release, negating
+            the need for such a milestone.
+          </p>
 
-<p>Additional developer-oriented details surrounding the "Universal Windows Platform" concept were revealed and discussed during Microsoft's Build developers' conference. Among them were the unveiling of "Islandwood", which provides a middleware toolchain for compiling Objective-C-based software (particularly iOS) to run as universal apps on Windows 10 and Windows 10 Mobile. A port of Candy Crush Saga made using the toolkit, which shared much of its code with the iOS version, was demonstrated, alongside the announcement that the King-developed game would be bundled with Windows 10 at launch.</p>
+          <p>
+            The general availability build of Windows 10, numbered 10240, was
+            first released to Windows Insider channels for pre-launch testing on
+            July 15, 2015, prior to its formal release. Although a Microsoft
+            official said there would be no specific RTM build of Windows 10,
+            10240 was described as an RTM build by media outlets because it was
+            released to all Windows Insider members at once (rather than to
+            users on the "Fast ring" first), it no longer carried pre-release
+            branding and desktop watermark text, and its build number had
+            mathematical connections to the number 10 in reference to the
+            operating system's naming. The Enterprise edition was released to
+            volume licensing on August 1, 2015.
+          </p>
 
-<p>At the 2015 Ignite conference, Microsoft employee Jerry Nixon stated that Windows 10 would be the "last version of Windows", a statement reflecting the company's intent to apply the software as a service business model to Windows, with new versions and updates to be released over an indefinite period. In 2021, however, Microsoft announced that Windows 10 would be succeeded on compatible hardware by Windows 11 – and that Windows 10 support will end on October 14, 2025, marking a departure from what had been dubbed "Windows as a service".</p>
-</details>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">Marketing</summary>
-<p>On July 20, 2015, Microsoft began "Upgrade Your World", an advertising campaign centering on Windows 10, with the premiere of television commercials in Australia, Canada, France, Germany, Japan, the United Kingdom, and the United States. The commercials focused on the tagline "A more human way to do", emphasizing new features and technologies supported by Windows 10 that sought to provide a more "personal" experience to users. The campaign culminated with launch events in thirteen cities on July 29, 2015, which celebrated "the unprecedented role our biggest fans played in the development of Windows 10".</p>
-</details>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">Release</summary>
-<p>On July 29, 2015, Microsoft officially announced that Windows 10 would be released for retail purchase as a free upgrade from earlier versions of Windows. In comparison to previous Windows releases, which had a longer turnover between the release to manufacturing (RTM) and general release to allow for testing by vendors (and in some cases, the development of "upgrade kits" to prepare systems for installation of the new version), an HP executive explained that because it knew Microsoft targeted the operating system for a 2015 release, the company was able to optimize its then-current and upcoming products for Windows 10 in advance of its release, negating the need for such a milestone.</p>
+          <p>
+            Windows 10 is distributed digitally through the "Media Creation
+            Tool", which is functionally identical to the Windows 8 online
+            installer, and can also be used to generate an ISO image or USB
+            install media. In-place upgrades are supported from most editions of
+            Windows 7 with Service Pack 1 and Windows 8.1 with Update 1, while
+            users with Windows 8 must first upgrade to Windows 8.1. Changing
+            between architectures (e.g., upgrading from 32-bit edition to a
+            64-bit editions) via in-place upgrades is not supported; a clean
+            installation is required. In-place upgrades may be rolled back to
+            the device's previous version of Windows, provided that 30 days have
+            not passed since installation, and backup files were not removed
+            using Disk Cleanup.
+          </p>
 
-<p>The general availability build of Windows 10, numbered 10240, was first released to Windows Insider channels for pre-launch testing on July 15, 2015, prior to its formal release. Although a Microsoft official said there would be no specific RTM build of Windows 10, 10240 was described as an RTM build by media outlets because it was released to all Windows Insider members at once (rather than to users on the "Fast ring" first), it no longer carried pre-release branding and desktop watermark text, and its build number had mathematical connections to the number 10 in reference to the operating system's naming. The Enterprise edition was released to volume licensing on August 1, 2015.</p>
+          <p>
+            Windows 10 was available in 190 countries and 111 languages upon its
+            launch, and as part of efforts to "re-engage" with users in China,
+            Microsoft also announced that it would partner with Qihoo and
+            Tencent to help promote and distribute Windows 10 in China, and that
+            Chinese PC maker Lenovo would provide assistance at its service
+            centers and retail outlets for helping users upgrade to Windows 10.
+            At retail, Windows 10 is priced similarly to editions of Windows
+            8.1, with U.S. prices set at $119 and $199 for Windows 10 Home and
+            Pro respectively. A Windows 10 Pro Pack license allows upgrades from
+            Windows 10 Home to Windows 10 Pro. Retail copies only ship on USB
+            flash drive media; however, system builder copies still ship as
+            DVD-ROM media. New devices shipping with Windows 10 were also
+            released during the operating system's launch window.
+          </p>
+        </details>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">
+            Free upgrade offer
+          </summary>
+          <p>
+            During its first year of availability, upgrade licenses for Windows
+            10 could be obtained at no charge for devices with a genuine license
+            for an eligible edition of Windows 7 or 8.1.
+          </p>
 
-<p>Windows 10 is distributed digitally through the "Media Creation Tool", which is functionally identical to the Windows 8 online installer, and can also be used to generate an ISO image or USB install media. In-place upgrades are supported from most editions of Windows 7 with Service Pack 1 and Windows 8.1 with Update 1, while users with Windows 8 must first upgrade to Windows 8.1. Changing between architectures (e.g., upgrading from 32-bit edition to a 64-bit editions) via in-place upgrades is not supported; a clean installation is required. In-place upgrades may be rolled back to the device's previous version of Windows, provided that 30 days have not passed since installation, and backup files were not removed using Disk Cleanup.</p>
+          <p>
+            This offer did not apply to Enterprise editions, as customers under
+            an active Software Assurance (SA) contract with upgrade rights are
+            entitled to obtain Windows 10 Enterprise under their existing terms.
+            All users running non-genuine copies of Windows, and those without
+            an existing Windows 7 or 8/8.1 license, were ineligible for this
+            promotion; although upgrades from a non-genuine version were
+            possible, they result in a non-genuine copy of 10.
+          </p>
 
-<p>Windows 10 was available in 190 countries and 111 languages upon its launch, and as part of efforts to "re-engage" with users in China, Microsoft also announced that it would partner with Qihoo and Tencent to help promote and distribute Windows 10 in China, and that Chinese PC maker Lenovo would provide assistance at its service centers and retail outlets for helping users upgrade to Windows 10. At retail, Windows 10 is priced similarly to editions of Windows 8.1, with U.S. prices set at $119 and $199 for Windows 10 Home and Pro respectively. A Windows 10 Pro Pack license allows upgrades from Windows 10 Home to Windows 10 Pro. Retail copies only ship on USB flash drive media; however, system builder copies still ship as DVD-ROM media. New devices shipping with Windows 10 were also released during the operating system's launch window.</p>
-</details>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">Free upgrade offer</summary>
-<p>During its first year of availability, upgrade licenses for Windows 10 could be obtained at no charge for devices with a genuine license for an eligible edition of Windows 7 or 8.1.</p>
+          <p>
+            On the general availability build of Windows 10 (the original
+            release), to activate and generate the "digital entitlement" for
+            Windows 10, the operating system must have first been installed as
+            an in-place upgrade. During the free upgrade, a "genuineticket.xml"
+            file is created in the background and the system's motherboard
+            details are registered with a Microsoft Product Activation server.
+            Once installed, the operating system can be reinstalled on that
+            particular system via normal means without a product key, and the
+            system's license will automatically be detected via online
+            activation – in essence, the Microsoft Product Activation Server
+            will remember the system's motherboard and give it the green light
+            for product re-activation. Because of installation issues with
+            Upgrade Only installs, the November Update (version 1511) included
+            additional activation mechanisms. This build treated Windows 7 and
+            Windows 8/8.1 product keys as Windows 10 product keys, meaning they
+            could be entered during installation to activate the free license,
+            without the need to upgrade first to "activate" the hardware with
+            Microsoft's activation servers. For major Original Equipment
+            Manufacturers (OEMs), Windows 8/8.1 and Windows 10 OEM product keys
+            are embedded in the firmware of the motherboard and if the correct
+            edition of Windows 10 is present on the installation media, they are
+            automatically inputted during installation. Since the release of the
+            Fall Creators Update (version 1709), Microsoft decided to release
+            multi-edition installation media, to alleviate installation and
+            product activation issues users experienced because of accidentally
+            installing the wrong edition of Windows 10.
+          </p>
 
-<p>This offer did not apply to Enterprise editions, as customers under an active Software Assurance (SA) contract with upgrade rights are entitled to obtain Windows 10 Enterprise under their existing terms. All users running non-genuine copies of Windows, and those without an existing Windows 7 or 8/8.1 license, were ineligible for this promotion; although upgrades from a non-genuine version were possible, they result in a non-genuine copy of 10.</p>
+          <p>
+            The Windows Insider Preview version of Windows 10 automatically
+            updated itself to the generally released version as part of the
+            version progression and continues to be updated to new beta builds,
+            as it had throughout the testing process. Microsoft explicitly
+            stated that Windows Insider was not a valid upgrade path for those
+            running a version of Windows that is ineligible for the upgrade
+            offer; although, if it was not installed with a license carried over
+            from an in-place upgrade to 10 Insider Preview from Windows 7 or
+            8.1, the Insider Preview does remain activated as long as the user
+            does not exit the Windows Insider program.
+          </p>
 
-<p>On the general availability build of Windows 10 (the original release), to activate and generate the "digital entitlement" for Windows 10, the operating system must have first been installed as an in-place upgrade. During the free upgrade, a "genuineticket.xml" file is created in the background and the system's motherboard details are registered with a Microsoft Product Activation server. Once installed, the operating system can be reinstalled on that particular system via normal means without a product key, and the system's license will automatically be detected via online activation – in essence, the Microsoft Product Activation Server will remember the system's motherboard and give it the green light for product re-activation. Because of installation issues with Upgrade Only installs, the November Update (version 1511) included additional activation mechanisms. This build treated Windows 7 and Windows 8/8.1 product keys as Windows 10 product keys, meaning they could be entered during installation to activate the free license, without the need to upgrade first to "activate" the hardware with Microsoft's activation servers. For major Original Equipment Manufacturers (OEMs), Windows 8/8.1 and Windows 10 OEM product keys are embedded in the firmware of the motherboard and if the correct edition of Windows 10 is present on the installation media, they are automatically inputted during installation. Since the release of the Fall Creators Update (version 1709), Microsoft decided to release multi-edition installation media, to alleviate installation and product activation issues users experienced because of accidentally installing the wrong edition of Windows 10.</p>
+          <p>
+            The offer was promoted and delivered via the "Get Windows 10"
+            application (also known as GWX), which was automatically installed
+            via Windows Update ahead of Windows 10's release, and activated on
+            systems deemed eligible for the upgrade offer. Via a notification
+            area icon, users could access an application that advertised Windows
+            10 and the free upgrade offer, check device compatibility, and
+            "reserve" an automatic download of the operating system upon its
+            release. On July 28, a pre-download process began in which Windows
+            10 installation files were downloaded to some computers that had
+            reserved it. Microsoft said that those who reserved Windows 10 would
+            be able to install it through GWX in a phased rollout process. The
+            operating system could alternatively be downloaded at any time using
+            a separate "Media Creation Tool" setup program, that allows for the
+            creation of DVD or USB installation media.
+          </p>
 
-<p>The Windows Insider Preview version of Windows 10 automatically updated itself to the generally released version as part of the version progression and continues to be updated to new beta builds, as it had throughout the testing process. Microsoft explicitly stated that Windows Insider was not a valid upgrade path for those running a version of Windows that is ineligible for the upgrade offer; although, if it was not installed with a license carried over from an in-place upgrade to 10 Insider Preview from Windows 7 or 8.1, the Insider Preview does remain activated as long as the user does not exit the Windows Insider program.</p>
+          <p>
+            In May 2016, Microsoft announced that the free upgrade offer would
+            be extended to users of assistive technologies; however, Microsoft
+            did not implement any means of certifying eligibility for this
+            offer, which some outlets thereby promoted as being a loophole to
+            fraudulently obtain a free Windows 10 upgrade. Microsoft said that
+            the offer is not intended to be used in this manner. In November
+            2017, Microsoft announced that this program would end on December
+            31, 2017.
+          </p>
 
-<p>The offer was promoted and delivered via the "Get Windows 10" application (also known as GWX), which was automatically installed via Windows Update ahead of Windows 10's release, and activated on systems deemed eligible for the upgrade offer. Via a notification area icon, users could access an application that advertised Windows 10 and the free upgrade offer, check device compatibility, and "reserve" an automatic download of the operating system upon its release. On July 28, a pre-download process began in which Windows 10 installation files were downloaded to some computers that had reserved it. Microsoft said that those who reserved Windows 10 would be able to install it through GWX in a phased rollout process. The operating system could alternatively be downloaded at any time using a separate "Media Creation Tool" setup program, that allows for the creation of DVD or USB installation media.</p>
+          <p>
+            However, another method was found that allowed Windows 7 and 8/8.1
+            users to upgrade to Windows 10 using existing licenses, even though
+            the free upgrade offers officially ended in 2017. Some outlets have
+            continued to promote it as a free method of upgrading from the
+            now-unsupported Windows 7. This free upgrade method was officially
+            closed by Microsoft on September 20, 2023. However, as of 2024,
+            there are some reports that it still works, under certain
+            conditions.
+          </p>
+        </details>
+      </details>
+      <hr />
+      <details>
+        <summary>Features</summary>
+        <p>
+          Windows 10 makes its user experience and functionality more consistent
+          between different classes of device, and addresses many shortcomings
+          of the user interface introduced in Windows 8. Windows 10 Mobile, the
+          successor to Windows Phone 8.1, shared some user interface elements
+          and apps with its PC counterpart.
+        </p>
 
-<p>In May 2016, Microsoft announced that the free upgrade offer would be extended to users of assistive technologies; however, Microsoft did not implement any means of certifying eligibility for this offer, which some outlets thereby promoted as being a loophole to fraudulently obtain a free Windows 10 upgrade. Microsoft said that the offer is not intended to be used in this manner. In November 2017, Microsoft announced that this program would end on December 31, 2017.</p>
+        <p>
+          Windows 10 supports universal apps, an expansion of the Metro-style
+          first introduced in Windows 8. Universal apps can be designed to run
+          across multiple Microsoft product families with nearly identical
+          code‍—‌including PCs, tablets, smartphones, embedded systems, Xbox
+          One, Surface Hub and Mixed Reality. The Windows user interface was
+          revised to handle transitions between a mouse-oriented interface and a
+          touchscreen-optimized interface based on available input
+          devices‍—‌particularly on 2-in-1 PCs. Both interfaces include an
+          updated Start menu which incorporates elements of Windows 7's
+          traditional Start menu with the tiles of Windows 8. Windows 10 also
+          introduced the Microsoft Edge web browser, a virtual desktop system, a
+          window and desktop management feature called Task View, support for
+          fingerprint and face recognition login, new security features for
+          enterprise environments, and DirectX 12.
+        </p>
 
-<p>However, another method was found that allowed Windows 7 and 8/8.1 users to upgrade to Windows 10 using existing licenses, even though the free upgrade offers officially ended in 2017. Some outlets have continued to promote it as a free method of upgrading from the now-unsupported Windows 7. This free upgrade method was officially closed by Microsoft on September 20, 2023. However, as of 2024, there are some reports that it still works, under certain conditions.</p>
-</details>
-</details>
-<hr>
-<details>
-<summary>Features</summary>
-<p>Windows 10 makes its user experience and functionality more consistent between different classes of device, and addresses many shortcomings of the user interface introduced in Windows 8. Windows 10 Mobile, the successor to Windows Phone 8.1, shared some user interface elements and apps with its PC counterpart.</p>
+        <p>
+          The Windows Runtime app ecosystem was revised into the Universal
+          Windows Platform (UWP). These universal apps are made to run across
+          multiple platforms and device classes, including smartphones, tablets,
+          Xbox One consoles, and other devices compatible with Windows 10.
+          Windows apps share code across platforms, have responsive designs that
+          adapt to the needs of the device and available inputs, can synchronize
+          data between Windows 10 devices (including notifications, credentials,
+          and allowing cross-platform multiplayer for games), and are
+          distributed through the Microsoft Store (rebranded from Windows Store
+          since September 2017). Developers can allow "cross-buys", where
+          purchased licenses for an app apply to all of the user's compatible
+          devices, rather than only the one they purchased on (e.g., a user
+          purchasing an app on PC is also entitled to use the smartphone version
+          at no extra cost).
+        </p>
 
-<p>Windows 10 supports universal apps, an expansion of the Metro-style first introduced in Windows 8. Universal apps can be designed to run across multiple Microsoft product families with nearly identical code‍—‌including PCs, tablets, smartphones, embedded systems, Xbox One, Surface Hub and Mixed Reality. The Windows user interface was revised to handle transitions between a mouse-oriented interface and a touchscreen-optimized interface based on available input devices‍—‌particularly on 2-in-1 PCs. Both interfaces include an updated Start menu which incorporates elements of Windows 7's traditional Start menu with the tiles of Windows 8. Windows 10 also introduced the Microsoft Edge web browser, a virtual desktop system, a window and desktop management feature called Task View, support for fingerprint and face recognition login, new security features for enterprise environments, and DirectX 12.</p>
+        <p>
+          The ARM version of Windows 10 allows running applications for x86
+          processors through 32-bit software emulation.
+        </p>
 
-<p>The Windows Runtime app ecosystem was revised into the Universal Windows Platform (UWP). These universal apps are made to run across multiple platforms and device classes, including smartphones, tablets, Xbox One consoles, and other devices compatible with Windows 10. Windows apps share code across platforms, have responsive designs that adapt to the needs of the device and available inputs, can synchronize data between Windows 10 devices (including notifications, credentials, and allowing cross-platform multiplayer for games), and are distributed through the Microsoft Store (rebranded from Windows Store since September 2017). Developers can allow "cross-buys", where purchased licenses for an app apply to all of the user's compatible devices, rather than only the one they purchased on (e.g., a user purchasing an app on PC is also entitled to use the smartphone version at no extra cost).</p>
+        <p>
+          On Windows 10, the Microsoft Store serves as a unified storefront for
+          apps, video content, and eBooks. Windows 10 also allows web apps and
+          desktop software (using either Win32 or .NET Framework) to be packaged
+          for distribution on the Microsoft Store. Desktop software distributed
+          through Windows Store is packaged using the App-V system to allow
+          sandboxing.
+        </p>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">
+            System security
+          </summary>
+          <p>
+            Windows 10 incorporates multi-factor authentication technology based
+            upon standards developed by the FIDO Alliance. The operating system
+            includes improved support for biometric authentication through the
+            Windows Hello platform. Devices with supported cameras (requiring
+            infrared illumination, such as Intel RealSense) allow users to log
+            in with iris or face recognition, similarly to Kinect. Devices with
+            supported readers allow users to log in through fingerprint
+            recognition. Support was also added for palm-vein scanning through a
+            partnership with Fujitsu in February 2018. Credentials are stored
+            locally and protected using asymmetric encryption.
+          </p>
 
-<p>The ARM version of Windows 10 allows running applications for x86 processors through 32-bit software emulation.</p>
+          <p>
+            In 2017, researchers demonstrated that Windows Hello could be
+            bypassed on fully-updated Windows 10 version 1703 with a color
+            printout of a person's picture taken with an IR camera. In 2021,
+            researchers were again able to bypass the Windows Hello
+            functionalities by using custom hardware disguised as a camera,
+            which presented an IR photo of the owner's face.
+          </p>
 
-<p>On Windows 10, the Microsoft Store serves as a unified storefront for apps, video content, and eBooks. Windows 10 also allows web apps and desktop software (using either Win32 or .NET Framework) to be packaged for distribution on the Microsoft Store. Desktop software distributed through Windows Store is packaged using the App-V system to allow sandboxing.</p>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">System security</summary>
-<p>Windows 10 incorporates multi-factor authentication technology based upon standards developed by the FIDO Alliance. The operating system includes improved support for biometric authentication through the Windows Hello platform. Devices with supported cameras (requiring infrared illumination, such as Intel RealSense) allow users to log in with iris or face recognition, similarly to Kinect. Devices with supported readers allow users to log in through fingerprint recognition. Support was also added for palm-vein scanning through a partnership with Fujitsu in February 2018. Credentials are stored locally and protected using asymmetric encryption.</p>
+          <p>
+            In addition to biometric authentication, Windows Hello supports
+            authentication with a PIN. By default, Windows requires a PIN to
+            consist of four digits, but can be configured to permit more complex
+            PINs. However, a PIN is not a simpler password. While passwords are
+            transmitted to domain controllers, PINs are not. They are tied to
+            one device, and if compromised, only one device is affected. Backed
+            by a Trusted Platform Module (TPM) chip, Windows uses PINs to create
+            strong asymmetric key pairs. As such, the authentication token
+            transmitted to the server is harder to crack. In addition, whereas
+            weak passwords may be broken via rainbow tables, TPM causes the
+            much-simpler Windows PINs to be resilient to brute-force attacks.
+          </p>
 
-<p>In 2017, researchers demonstrated that Windows Hello could be bypassed on fully-updated Windows 10 version 1703 with a color printout of a person's picture taken with an IR camera. In 2021, researchers were again able to bypass the Windows Hello functionalities by using custom hardware disguised as a camera, which presented an IR photo of the owner's face.</p>
+          <p>
+            When Windows 10 was first introduced, multi-factor authentication
+            was provided by two components: Windows Hello and Passport (not to
+            be confused with the Passport platform of 1998). Later, Passport was
+            merged into Windows Hello.
+          </p>
 
-<p>In addition to biometric authentication, Windows Hello supports authentication with a PIN. By default, Windows requires a PIN to consist of four digits, but can be configured to permit more complex PINs. However, a PIN is not a simpler password. While passwords are transmitted to domain controllers, PINs are not. They are tied to one device, and if compromised, only one device is affected. Backed by a Trusted Platform Module (TPM) chip, Windows uses PINs to create strong asymmetric key pairs. As such, the authentication token transmitted to the server is harder to crack. In addition, whereas weak passwords may be broken via rainbow tables, TPM causes the much-simpler Windows PINs to be resilient to brute-force attacks.</p>
+          <p>
+            The enterprise edition of Windows 10 offers additional security
+            features; administrators can set up policies for the automatic
+            encryption of sensitive data, selectively block applications from
+            accessing encrypted data, and enable Device Guard‍—‌a system which
+            allows administrators to enforce a high-security environment by
+            blocking the execution of software that is not digitally signed by a
+            trusted vendor or Microsoft. Device Guard is designed to protect
+            against zero-day exploits, and runs inside a hypervisor so that its
+            operation remains separated from the operating system itself.
+          </p>
+        </details>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">
+            Command line
+          </summary>
+          <p>
+            The console windows based on Windows Console (for any console app,
+            not just PowerShell and Windows Command Prompt) can now be resized
+            without any restrictions, can be made to cover the full screen by
+            pressing Alt + Enter, and can use standard keyboard shortcuts, such
+            as those for cut, copy, and paste. Other features such as word wrap
+            and transparency were also added. These functions can be disabled to
+            revert to the legacy console if needed.
+          </p>
 
-<p>When Windows 10 was first introduced, multi-factor authentication was provided by two components: Windows Hello and Passport (not to be confused with the Passport platform of 1998). Later, Passport was merged into Windows Hello.</p>
+          <p>
+            The Anniversary Update added Windows Subsystem for Linux (WSL),
+            which allows the installation of a user space environment from a
+            supported Linux distribution that runs natively on Windows. The
+            subsystem translates Linux system calls to those of the Windows NT
+            kernel (only claims full system call compatibility as of WSL 2,
+            included in a later Windows update). The environment can execute the
+            Bash shell and 64-bit command-line programs (WSL 2 also supports
+            32-bit Linux programs and graphics, assuming supporting software
+            installed, and GPUs support for other uses). Windows applications
+            cannot be executed from the Linux environment, and vice versa. Linux
+            distributions for Windows Subsystem for Linux are obtained through
+            Microsoft Store. The feature initially supported an Ubuntu-based
+            environment; Microsoft announced in May 2017 that it would add
+            Fedora and OpenSUSE
+          </p>
+          environment options as well.
+        </details>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">
+            Storage requirements
+          </summary>
+          <p>
+            To reduce the storage footprint of the operating system, Windows 10
+            automatically compresses system files. The system can reduce the
+            storage footprint of Windows by approximately 1.5 GB for 32-bit
+            systems and 2.6 GB for 64-bit systems. The level of compression used
+            is dependent on a performance assessment performed during
+            installations or by OEMs, which tests how much compression can be
+            used without harming operating system performance. Furthermore, the
+            Refresh and Reset functions use runtime system files instead, making
+            a separate recovery partition redundant, allowing patches and
+            updates to remain installed following the operation, and further
+            reducing the amount of space required for Windows 10 by up to 12 GB.
+            These functions replace the WIMBoot mode introduced on Windows 8.1
+            Update, which allowed OEMs to configure low-capacity devices with
+            flash-based storage to use Windows system files out of the
+            compressed WIM image typically used for installation and recovery.
+            Windows 10 also includes a function in its Settings app that allows
+            users to view a breakdown of how their device's storage capacity is
+            being used by different types of files, and determine whether
+            certain types of files are saved to internal storage or an SD card
+            by default.
+          </p>
+        </details>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">
+            Online services and functionality
+          </summary>
+          <p>
+            Windows 10 introduces Microsoft Edge, a new default web browser. It
+            initially featured a new standards-compliant rendering engine
+            derived from Trident, and also includes annotation tools and
+            integration with other Microsoft platforms present within Windows
+            10. Internet Explorer 11 is maintained on Windows 10 for
+            compatibility purposes, but is deprecated in favor of Edge and,
+            since mid-June 2022, is no longer supported on editions which follow
+            Microsoft's Modern Lifecycle Policy. The initial version of Edge was
+            later succeeded by a new iteration derived from the Chromium Project
+            and Blink layout engine, which replaced the previous EdgeHTML-based
+            version of Edge (renamed "Microsoft Edge Legacy"), and is bundled
+            with the OS by default from build 20H2 onwards.
+          </p>
 
-<p>The enterprise edition of Windows 10 offers additional security features; administrators can set up policies for the automatic encryption of sensitive data, selectively block applications from accessing encrypted data, and enable Device Guard‍—‌a system which allows administrators to enforce a high-security environment by blocking the execution of software that is not digitally signed by a trusted vendor or Microsoft. Device Guard is designed to protect against zero-day exploits, and runs inside a hypervisor so that its operation remains separated from the operating system itself.</p>
-</details>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">Command line</summary>
-<p>The console windows based on Windows Console (for any console app, not just PowerShell and Windows Command Prompt) can now be resized without any restrictions, can be made to cover the full screen by pressing Alt + Enter, and can use standard keyboard shortcuts, such as those for cut, copy, and paste. Other features such as word wrap and transparency were also added. These functions can be disabled to revert to the legacy console if needed.</p>
+          <p>
+            Windows 10 incorporates a universal search box located alongside the
+            Start and Task View buttons, which can be hidden or condensed into a
+            single button. Previous versions featured Microsoft's intelligent
+            personal assistant Cortana, which was first introduced with Windows
+            Phone 8.1 in 2014, and supports both text and voice input. Many of
+            its features are a direct carryover from Windows Phone, including
+            integration with Bing, setting reminders, a Notebook feature for
+            managing personal information, as well as searching for files,
+            playing music, launching applications and setting reminders or
+            sending emails. Since the November 2019 update, Microsoft has begun
+            to downplay Cortana as part of a repositioning of the product
+            towards enterprise use, with the May 2020 update removing its
+            Windows shell integration and consumer-oriented features.
+          </p>
 
-<p>The Anniversary Update added Windows Subsystem for Linux (WSL), which allows the installation of a user space environment from a supported Linux distribution that runs natively on Windows. The subsystem translates Linux system calls to those of the Windows NT kernel (only claims full system call compatibility as of WSL 2, included in a later Windows update). The environment can execute the Bash shell and 64-bit command-line programs (WSL 2 also supports 32-bit Linux programs and graphics, assuming supporting software installed, and GPUs support for other uses). Windows applications cannot be executed from the Linux environment, and vice versa. Linux distributions for Windows Subsystem for Linux are obtained through Microsoft Store. The feature initially supported an Ubuntu-based environment; Microsoft announced in May 2017 that it would add Fedora and OpenSUSE </p>environment options as well.
-</details>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">Storage requirements</summary>
-<p>To reduce the storage footprint of the operating system, Windows 10 automatically compresses system files. The system can reduce the storage footprint of Windows by approximately 1.5 GB for 32-bit systems and 2.6 GB for 64-bit systems. The level of compression used is dependent on a performance assessment performed during installations or by OEMs, which tests how much compression can be used without harming operating system performance. Furthermore, the Refresh and Reset functions use runtime system files instead, making a separate recovery partition redundant, allowing patches and updates to remain installed following the operation, and further reducing the amount of space required for Windows 10 by up to 12 GB. These functions replace the WIMBoot mode introduced on Windows 8.1 Update, which allowed OEMs to configure low-capacity devices with flash-based storage to use Windows system files out of the compressed WIM image typically used for installation and recovery. Windows 10 also includes a function in its Settings app that allows users to view a breakdown of how their device's storage capacity is being used by different types of files, and determine whether certain types of files are saved to internal storage or an SD card by default.</p>
-</details>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">Online services and functionality</summary>
-<p>Windows 10 introduces Microsoft Edge, a new default web browser. It initially featured a new standards-compliant rendering engine derived from Trident, and also includes annotation tools and integration with other Microsoft platforms present within Windows 10. Internet Explorer 11 is maintained on Windows 10 for compatibility purposes, but is deprecated in favor of Edge and, since mid-June 2022, is no longer supported on editions which follow Microsoft's Modern Lifecycle Policy. The initial version of Edge was later succeeded by a new iteration derived from the Chromium Project and Blink layout engine, which replaced the previous EdgeHTML-based version of Edge (renamed "Microsoft Edge Legacy"), and is bundled with the OS by default from build 20H2 onwards.</p>
+          <p>
+            Microsoft Family Safety is replaced by Microsoft Family, a parental
+            controls system that applies across Windows platforms and Microsoft
+            online services. Users can create a designated family, and monitor
+            and restrict the actions of users designated as children, such as
+            access to websites, enforcing age ratings on Microsoft Store
+            purchases, and other restrictions. The service can also send weekly
+            e-mail reports to parents detailing a child's computer usage. Unlike
+            previous versions of Windows, child accounts in a family must be
+            associated with a Microsoft account‍—‌which allows these settings to
+            apply across all Windows 10 devices that a particular child is
+            using.
+          </p>
 
-<p>Windows 10 incorporates a universal search box located alongside the Start and Task View buttons, which can be hidden or condensed into a single button. Previous versions featured Microsoft's intelligent personal assistant Cortana, which was first introduced with Windows Phone 8.1 in 2014, and supports both text and voice input. Many of its features are a direct carryover from Windows Phone, including integration with Bing, setting reminders, a Notebook feature for managing personal information, as well as searching for files, playing music, launching applications and setting reminders or sending emails. Since the November 2019 update, Microsoft has begun to downplay Cortana as part of a repositioning of the product towards enterprise use, with the May 2020 update removing its Windows shell integration and consumer-oriented features.</p>
+          <p>
+            Windows 10 also offers the Wi-Fi Sense feature originating from
+            Windows Phone 8.1; users can optionally have their device
+            automatically connect to suggested open hotspots, and share their
+            home network's password with contacts (either via Skype, People, or
+            Facebook) so they may automatically connect to the network on a
+            Windows 10 device without needing to manually enter its password.
+            Credentials are stored in an encrypted form on Microsoft servers and
+            sent to the devices of the selected contacts. Passwords are not
+            viewable by the guest user, and the guest user is not allowed to
+            access other computers or devices on the network. Wi-Fi Sense is not
+            usable on 802.1X-encrypted networks. Adding "_optout" at the end of
+            the SSID will also block the corresponding network from being used
+            for this feature.
+          </p>
 
-<p>Microsoft Family Safety is replaced by Microsoft Family, a parental controls system that applies across Windows platforms and Microsoft online services. Users can create a designated family, and monitor and restrict the actions of users designated as children, such as access to websites, enforcing age ratings on Microsoft Store purchases, and other restrictions. The service can also send weekly e-mail reports to parents detailing a child's computer usage. Unlike previous versions of Windows, child accounts in a family must be associated with a Microsoft account‍—‌which allows these settings to apply across all Windows 10 devices that a particular child is using.</p>
+          <p>
+            Universal calling and messaging apps for Windows 10 are built in as
+            of the November 2015 update: Messaging, Skype Video, and Phone.
+            These offer built-in alternatives to the Skype download and sync
+            with Windows 10 Mobile.
+          </p>
+        </details>
+        <details>
+          <summary style="font-weight: 600; font-size: 2.2vh">
+            Multimedia and gaming
+          </summary>
+          <p>
+            Windows 10 provides greater integration with the Xbox ecosystem.
+            Xbox SmartGlass is succeeded by the Xbox Console Companion (formerly
+            the Xbox app), which allows users to browse their game library
+            (including both PC and Xbox console games), and Game DVR is also
+            available using a keyboard shortcut, allowing users to save the last
+            30 seconds of gameplay as a video that can be shared to Xbox Live,
+            OneDrive, or elsewhere. Windows 10 also allows users to control and
+            play games from an Xbox One console over a local network. The Xbox
+            Live SDK allows application developers to incorporate Xbox Live
+            functionality into their apps, and future wireless Xbox One
+            accessories, such as controllers, are supported on Windows with an
+            adapter. Microsoft also intends to allow cross-purchases and save
+            synchronization between Xbox One and Windows 10 versions of games;
+            Microsoft Studios games such as ReCore and Quantum Break are
+            intended as being exclusive to Windows 10 and Xbox One.
+          </p>
 
-<p>Windows 10 also offers the Wi-Fi Sense feature originating from Windows Phone 8.1; users can optionally have their device automatically connect to suggested open hotspots, and share their home network's password with contacts (either via Skype, People, or Facebook) so they may automatically connect to the network on a Windows 10 device without needing to manually enter its password. Credentials are stored in an encrypted form on Microsoft servers and sent to the devices of the selected contacts. Passwords are not viewable by the guest user, and the guest user is not allowed to access other computers or devices on the network. Wi-Fi Sense is not usable on 802.1X-encrypted networks. Adding "_optout" at the end of the SSID will also block the corresponding network from being used for this feature.</p>
+          <p>
+            Candy Crush Saga and Microsoft Solitaire Collection are also
+            automatically installed upon installation of Windows 10.
+          </p>
 
-<p>Universal calling and messaging apps for Windows 10 are built in as of the November 2015 update: Messaging, Skype Video, and Phone. These offer built-in alternatives to the Skype download and sync with Windows 10 Mobile.</p>
-</details>
-<details>
-<summary style="font-weight: 600; font-size: 2.2vh;">Multimedia and gaming</summary>
-<p>Windows 10 provides greater integration with the Xbox ecosystem. Xbox SmartGlass is succeeded by the Xbox Console Companion (formerly the Xbox app), which allows users to browse their game library (including both PC and Xbox console games), and Game DVR is also available using a keyboard shortcut, allowing users to save the last 30 seconds of gameplay as a video that can be shared to Xbox Live, OneDrive, or elsewhere. Windows 10 also allows users to control and play games from an Xbox One console over a local network. The Xbox Live SDK allows application developers to incorporate Xbox Live functionality into their apps, and future wireless Xbox One accessories, such as controllers, are supported on Windows with an adapter. Microsoft also intends to allow cross-purchases and save synchronization between Xbox One and Windows 10 versions of games; Microsoft Studios games such as ReCore and Quantum Break are intended as being exclusive to Windows 10 and Xbox One.</p>
+          <p>
+            Windows 10 adds native game recording and screenshot capture ability
+            using the newly introduced Game Bar. Users can also have the OS
+            continuously record gameplay in the background, which then allows
+            the user to save the last few moments of gameplay to the storage
+            device.
+          </p>
 
-<p>Candy Crush Saga and Microsoft Solitaire Collection are also automatically installed upon installation of Windows 10.</p>
+          <p>
+            Windows 10 adds FLAC and HEVC codecs and support for the Matroska
+            media container, allowing these formats to be opened in Windows
+            Media Player and other applications. Windows Media Center is no
+            longer bundled.
+          </p>
 
-<p>Windows 10 adds native game recording and screenshot capture ability using the newly introduced Game Bar. Users can also have the OS continuously record gameplay in the background, which then allows the user to save the last few moments of gameplay to the storage device.</p>
+          <p>
+            Windows 10 includes DirectX 12, alongside WDDM 2.0. Unveiled March
+            2014 at GDC, DirectX 12 aims to provide "console-level efficiency"
+            with "closer to the metal" access to hardware resources, and reduced
+            CPU and graphics driver overhead. Most of the performance
+            improvements are achieved through low-level programming, which allow
+            developers to use resources more efficiently and reduce
+            single-threaded CPU bottlenecking caused by abstraction through
+            higher level APIs. DirectX 12 will also feature support for vendor
+            agnostic multi-GPU setups. WDDM 2.0 introduces a new virtual memory
+            management and allocation system to reduce workload on the
+            kernel-mode driver.
+          </p>
+        </details>
+      </details>
+      <hr />
+      <details>
+        <summary>Editions</summary>
+        <p>
+          Windows 10 is available in five main editions for personal computing
+          devices; the Home and Pro editions of which are sold at retail in most
+          countries, and as pre-loaded software on new computers. Home is aimed
+          at home users, while Pro is aimed at power users and small businesses.
+          Each edition of Windows 10 includes all of the capabilities and
+          features of the edition below it, and adds additional features
+          oriented towards its market segments; for example, Pro adds additional
+          networking and security features such as BitLocker, Device Guard,
+          Windows Update for Business, and the ability to join a domain.
+          Enterprise and Education, contain additional features aimed towards
+          business environments, and are only available through volume
+          licensing.
+        </p>
+        <p>
+          As part of Microsoft's unification strategies, Windows products that
+          are based on Windows 10's common platform but meant for specialized
+          platforms are marketed as editions of the operating system, rather
+          than as separate product lines. An updated version of Microsoft's
+          Windows Phone operating system for smartphones, and also tablets, was
+          branded as Windows 10 Mobile. Editions of Enterprise and Mobile will
+          also be produced for embedded systems, along with Windows 10 IoT Core,
+          which is designed specifically for use in small footprint, low-cost
+          devices and Internet of Things (IoT) scenarios and is similar in scope
+          to Windows Embedded Compact.
+        </p>
+        <p>
+          On May 2, 2017, Microsoft unveiled Windows 10 S (referred to in leaks
+          as Windows 10 Cloud), a feature-limited edition of Windows 10 which
+          was designed primarily for devices in the education market (competing,
+          in particular, with ChromeOS netbooks), such as the Surface Laptop
+          that Microsoft also unveiled at this time. The OS restricts software
+          installation to applications obtained from Microsoft Store; the device
+          may be upgraded to Windows 10 Pro for a fee to enable unrestricted
+          software installation. As a time-limited promotion, Microsoft stated
+          that this upgrade would be free on the Surface Laptop until March 31,
+          2018. Windows 10 S also contains a faster initial setup and login
+          process, and allows devices to be provisioned using a USB drive with
+          the Windows Intune for Education platform. In March 2018, Microsoft
+          announced that Windows 10 S would be deprecated because of market
+          confusion and would be replaced by "S Mode", an OEM option wherein
+          Windows defaults to only allowing applications to be installed from
+          Microsoft Store, but does not require payment in order to disable
+          these restrictions.
+        </p>
+      </details>
+      <hr />
+      <details>
+        <summary>User Interface</summary>
+        <p>
+          Windows 10 makes its user experience and functionality more consistent
+          between different classes of device, and addresses many shortcomings
+          of the user interface introduced in Windows 8. Windows 10 Mobile, the
+          successor to Windows Phone 8.1, shared some user interface elements
+          and apps with its PC counterpart. Windows 10 supports universal apps,
+          an expansion of the Metro-style first introduced in Windows 8.
+          Universal apps can be designed to run across multiple Microsoft
+          product families with nearly identical code‍ including PCs, tablets,
+          smartphones, embedded systems, Xbox One, Surface Hub and Mixed
+          Reality. The Windows user interface was revised to handle transitions
+          between a mouse-oriented interface and a touchscreen-optimized
+          interface based on available input devices‍—‌particularly on 2-in-1
+          PCs. Both interfaces include an updated Start menu which incorporates
+          elements of Windows 7's traditional Start menu with the tiles of
+          Windows 8. Windows 10 also introduced the Microsoft Edge web browser,
+          a virtual desktop system, a window and desktop management feature
+          called Task View, support for fingerprint and face recognition login,
+          new security features for enterprise environments, and DirectX 12. The
+          Windows Runtime app ecosystem was revised into the Universal Windows
+          Platform (UWP). These universal apps are made to run across multiple
+          platforms and device classes, including smartphones, tablets, Xbox One
+          consoles, and other devices compatible with Windows 10. Windows apps
+          share code across platforms, have responsive designs that adapt to the
+          needs of the device and available inputs, can synchronize data between
+          Windows 10 devices (including notifications, credentials, and allowing
+          cross-platform multiplayer for games), and are distributed through the
+          Microsoft Store (rebranded from Windows Store since September 2017).
+          Developers can allow "cross-buys", where purchased licenses for an app
+          apply to all of the user's compatible devices, rather than only the
+          device they purchased the app on (e.g., a user purchasing an app on PC
+          is also entitled to use the smartphone version at no extra cost). The
+          ARM version of Windows 10 allows running applications for x86
+          processors through 32-bit software emulation. On Windows 10, the
+          Microsoft Store serves as a unified storefront for apps, video
+          content, and eBooks. Windows 10 also allows web apps and desktop
+          software to be packaged for distribution on the Microsoft Store.
+          Desktop software distributed through Windows Store is packaged using
+          the App-V system to allow sandboxing.
+        </p>
 
-<p>Windows 10 adds FLAC and HEVC codecs and support for the Matroska media container, allowing these formats to be opened in Windows Media Player and other applications. Windows Media Center is no longer bundled.</p>
+        <p>
+          A new iteration of the Start menu is used on the Windows 10 desktop,
+          with a list of places and other options on the left side, and tiles
+          representing applications on the right. The menu can be resized, and
+          expanded into a full-screen display, which is the default option in
+          Tablet mode. A new virtual desktop system was added by a feature known
+          as Task View, which displays all open windows and allows users to
+          switch between them, or switch between multiple workspaces. Universal
+          apps, which previously could be used only in full screen mode, can now
+          be used in self-contained windows similarly to other programs. Program
+          windows can now be snapped to quadrants of the screen by dragging them
+          to the corner. When a window is snapped to one side of the screen,
+          Task View appears and the user is prompted to choose a second window
+          to fill the unused side of the screen (called "Snap Assist") The
+          Windows system icons have also been changed.
+        </p>
 
-<p>Windows 10 includes DirectX 12, alongside WDDM 2.0. Unveiled March 2014 at GDC, DirectX 12 aims to provide "console-level efficiency" with "closer to the metal" access to hardware resources, and reduced CPU and graphics driver overhead. Most of the performance improvements are achieved through low-level programming, which allow developers to use resources more efficiently and reduce single-threaded CPU bottlenecking caused by abstraction through higher level APIs. DirectX 12 will also feature support for vendor agnostic multi-GPU setups. WDDM 2.0 introduces a new virtual memory management and allocation system to reduce workload on the kernel-mode driver.</p>
-</details>
-</details>
-<hr>
-<details>
-<summary>Editions</summary>
-<p>Windows 10 is available in five main editions for personal computing devices; the Home and Pro editions of which are sold at retail in most countries, and as pre-loaded software on new computers. Home is aimed at home users, while Pro is aimed at power users and small businesses. Each edition of Windows 10 includes all of the capabilities and features of the edition below it, and adds additional features oriented towards its market segments; for example, Pro adds additional networking and security features such as BitLocker, Device Guard, Windows Update for Business, and the ability to join a domain. Enterprise and Education, contain additional features aimed towards business environments, and are only available through volume licensing.</p>
-<p>As part of Microsoft's unification strategies, Windows products that are based on Windows 10's common platform but meant for specialized platforms are marketed as editions of the operating system, rather than as separate product lines. An updated version of Microsoft's Windows Phone operating system for smartphones, and also tablets, was branded as Windows 10 Mobile. Editions of Enterprise and Mobile will also be produced for embedded systems, along with Windows 10 IoT Core, which is designed specifically for use in small footprint, low-cost devices and Internet of Things (IoT) scenarios and is similar in scope to Windows Embedded Compact.</p>
-<p>On May 2, 2017, Microsoft unveiled Windows 10 S (referred to in leaks as Windows 10 Cloud), a feature-limited edition of Windows 10 which was designed primarily for devices in the education market (competing, in particular, with ChromeOS netbooks), such as the Surface Laptop that Microsoft also unveiled at this time. The OS restricts software installation to applications obtained from Microsoft Store; the device may be upgraded to Windows 10 Pro for a fee to enable unrestricted software installation. As a time-limited promotion, Microsoft stated that this upgrade would be free on the Surface Laptop until March 31, 2018. Windows 10 S also contains a faster initial setup and login process, and allows devices to be provisioned using a USB drive with the Windows Intune for Education platform. In March 2018, Microsoft announced that Windows 10 S would be deprecated because of market confusion and would be replaced by "S Mode", an OEM option wherein Windows defaults to only allowing applications to be installed from Microsoft Store, but does not require payment in order to disable these restrictions.</p>
-</details>
-<hr>
-<details>
-<summary>User Interface</summary>
-<p>Windows 10 makes its user experience and functionality more consistent between different classes of device, and addresses many shortcomings of the user interface introduced in Windows 8.  Windows 10 Mobile, the successor to Windows Phone 8.1, shared some user interface elements and apps with its PC counterpart. Windows 10 supports universal apps, an expansion of the Metro-style first introduced in Windows 8. Universal apps can be designed to run across multiple Microsoft product families with nearly identical code‍ including PCs, tablets, smartphones, embedded systems, Xbox One, Surface Hub and Mixed Reality. The Windows user interface was revised to handle transitions between a mouse-oriented interface and a touchscreen-optimized interface based on available input devices‍—‌particularly on 2-in-1 PCs. Both interfaces include an updated Start menu which incorporates elements of Windows 7's traditional Start menu with the tiles of Windows 8. Windows 10 also introduced the Microsoft Edge web browser, a virtual desktop system, a window and desktop management feature called Task View, support for fingerprint and face recognition login, new security features for enterprise environments, and DirectX 12. The Windows Runtime app ecosystem was revised into the Universal Windows Platform (UWP). These universal apps are made to run across multiple platforms and device classes, including smartphones, tablets, Xbox One consoles, and other devices compatible with Windows 10. Windows apps share code across platforms, have responsive designs that adapt to the needs of the device and available inputs, can synchronize data between Windows 10 devices (including notifications, credentials, and allowing cross-platform multiplayer for games), and are distributed through the Microsoft Store (rebranded from Windows Store since September 2017). Developers can allow "cross-buys", where purchased licenses for an app apply to all of the user's compatible devices, rather than only the device they purchased the app on (e.g., a user purchasing an app on PC is also entitled to use the smartphone version at no extra cost). The ARM version of Windows 10 allows running applications for x86 processors through 32-bit software emulation. On Windows 10, the Microsoft Store serves as a unified storefront for apps, video content, and eBooks. Windows 10 also allows web apps and desktop software to be packaged for distribution on the Microsoft Store. Desktop software distributed through Windows Store is packaged using the App-V system to allow sandboxing.</p>
-
-<p>A new iteration of the Start menu is used on the Windows 10 desktop, with a list of places and other options on the left side, and tiles representing applications on the right. The menu can be resized, and expanded into a full-screen display, which is the default option in Tablet mode. A new virtual desktop system was added by a feature known as Task View, which displays all open windows and allows users to switch between them, or switch between multiple workspaces. Universal apps, which previously could be used only in full screen mode, can now be used in self-contained windows similarly to other programs. Program windows can now be snapped to quadrants of the screen by dragging them to the corner. When a window is snapped to one side of the screen, Task View appears and the user is prompted to choose a second window to fill the unused side of the screen (called "Snap Assist") The Windows system icons have also been changed. </p>
-
-<p>Windows 10 is designed to adapt its user interface based on the type of device being used and available input methods. It offers two separate user interface modes: a user interface optimized for mouse and keyboard, and a "Tablet mode" designed for touchscreens. Users can toggle between these two modes at any time, and Windows can prompt or automatically switch when certain events occur, such as disabling Tablet mode on a tablet if a keyboard or mouse is plugged in, or when a 2-in-1 PC is switched to its laptop state. In Tablet mode, programs default to a maximized view, and the taskbar contains a back button and hides buttons for opened or pinned programs by default; Task View is used instead to switch between programs. The full screen Start menu is used in this mode, similarly to Windows 8, but scrolls vertically instead of horizontally.
-</p>
-</details>
-<hr>
-</div>
-<footer>
-<div id="child-container-in-footer">
-<a href="./Win8_1.html"><button>Previous</button></a>
-<p>Windows 8.1</p>
-<p><b>Windows 10</b></p>
-<p>Windows 11</p>
-<a href="./Win11.html"><button>Next</button></a>
-</div>
-</footer>
-</body>
+        <p>
+          Windows 10 is designed to adapt its user interface based on the type
+          of device being used and available input methods. It offers two
+          separate user interface modes: a user interface optimized for mouse
+          and keyboard, and a "Tablet mode" designed for touchscreens. Users can
+          toggle between these two modes at any time, and Windows can prompt or
+          automatically switch when certain events occur, such as disabling
+          Tablet mode on a tablet if a keyboard or mouse is plugged in, or when
+          a 2-in-1 PC is switched to its laptop state. In Tablet mode, programs
+          default to a maximized view, and the taskbar contains a back button
+          and hides buttons for opened or pinned programs by default; Task View
+          is used instead to switch between programs. The full screen Start menu
+          is used in this mode, similarly to Windows 8, but scrolls vertically
+          instead of horizontally.
+        </p>
+      </details>
+      <hr />
+    </div>
+    <footer>
+      <div id="child-container-in-footer">
+        <a href="./Win8_1.html"><button>Previous</button></a>
+        <p>Windows 8.1</p>
+        <p><b>Windows 10</b></p>
+        <p>Windows 11</p>
+        <a href="./Win11.html"><button>Next</button></a>
+      </div>
+    </footer>
+  </body>
 </html>
