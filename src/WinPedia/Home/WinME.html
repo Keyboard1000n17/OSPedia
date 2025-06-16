@@ -3,181 +3,16 @@
   <head>
     <meta charset="Unicode" />
     <title>WinPedia - Windows ME</title>
+    <link href="./fluentUIstyling.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="icon"
-      href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg"
-    />
-    <style>
-      #ul,
-      .li,
-      .nav {
-        list-style: none;
-        margin-right: 20px;
-        text-decoration: none;
-        color: #3266fb;
-        display: inline-block;
-      }
-
-      .nav:hover {
-        color: #001fff;
-      }
-
-      nav {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        list-style: none;
-      }
-
-      footer {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        padding: 5px;
-        color: #000000;
-      }
-
-      button {
-        border-radius: 10px;
-        padding: 10px;
-        background-color: rgba(255, 255, 255, 0.5);
-        width: 100%;
-        height: 75%;
-        font-family: inherit;
-        font-size: inherit;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: box-shadow ease-out 0.3s;
-        border-style: none;
-      }
-
-      button:hover {
-        box-shadow: 0px 0px 15px 2px black;
-      }
-
-      #child-container-in-footer {
-        margin: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        width: 100%;
-        text-align: center;
-        align-items: center;
-      }
-
-      body {
-        margin: 10vh 0.5vw 10vh 0.5vw;
-        font-family: Segoe UI;
-        font-size: 2vh;
-        background-image: url(../Images/wallpaper/winME.png);
-        background-size: cover;
-        background-attachment: fixed;
-        background-position-x: 0px;
-        color: #ffffff;
-        overflow-x: hidden;
-      }
-
-      #container {
-        margin: 10px;
-        overflow: auto;
-      }
-
-      #heading {
-        font-size: 4vh;
-        font-weight: bold;
-      }
-
-      #info {
-        display: flow-root;
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(7.5px);
-        padding: 30px;
-        border: solid 1px black;
-        border-radius: 10px;
-        margin: 10px;
-        color: black;
-        height: auto;
-      }
-
-      img {
-        float: right;
-      }
-
-      li {
-        list-style: disc;
-        color: #ffffff;
-      }
-
-      summary {
-        font-weight: bold;
-        font-size: 2.5vh;
-      }
-
-      a {
-        color: #000000;
-        text-decoration: none;
-      }
-
-      @media (max-width: 1440px) {
-        #homeContainer {
-          display: block;
-        }
-        nav {
-          height: 9vh;
-        }
-        img {
-          float: none;
-        }
-        table {
-          float: none;
-          align-self: center;
-          width: 98%;
-        }
-        #info {
-          display: flex;
-          flex-direction: column;
-          align-content: center;
-          text-align: center;
-        }
-        body {
-          background-position: center;
-        }
-        #features {
-          line-height: 2.75vh;
-        }
-      }
-
-      .bolden {
-        font-weight: 600;
-      }
-    </style>
+    <link rel="icon" href="/src/WinPedia/Images/WinPedia-favicon.svg" />
   </head>
-  <body>
+  <body style="background-image: url(../Images/wallpaper/winME.png)">
     <header>
       <nav>
         <img src="../Images/WinPedia-logo.svg" alt="logo" height="60%" />
@@ -250,7 +85,7 @@
       </p>
       <hr />
       <details>
-        <summary>Development</summary>
+        <summary class="level-one">Development</summary>
         <p>
           At the 1998 Windows Hardware Engineering Conference, Microsoft CEO
           Bill Gates stated that Windows 98 would be the last iteration of
@@ -334,11 +169,9 @@
       </details>
       <hr />
       <details>
-        <summary>Features</summary>
+        <summary class="level-one">Features</summary>
         <details>
-          <summary style="font-size: 2.2vh; font-weight: 600">
-            Hardware support improvements
-          </summary>
+          <summary class="level-two">Hardware support improvements</summary>
 
           <p>
             Faster boot times: Windows Me features numerous improvements for
@@ -392,7 +225,7 @@
         </details>
 
         <details>
-          <summary style="font-size: 2.2vh; font-weight: 600">Media</summary>
+          <summary class="level-two">Media</summary>
           <ul>
             <li>
               Windows Movie Maker: This utility is based on DirectShow and
@@ -425,9 +258,7 @@
         </details>
 
         <details>
-          <summary style="font-size: 2.2vh; font-weight: 600">
-            Networking technologies
-          </summary>
+          <summary class="level-two">Networking technologies</summary>
           <ul>
             <li>
               Net Crawler: Windows Me introduced a net crawling feature which
@@ -479,9 +310,7 @@
           </ul>
         </details>
         <details>
-          <summary style="font-size: 2.2vh; font-weight: 600">
-            System utilities
-          </summary>
+          <summary class="level-two">System utilities</summary>
           <ul>
             <li>
               System Restore: Windows Me introduced the "System Restore" logging
@@ -570,9 +399,7 @@
           </ul>
         </details>
         <details>
-          <summary style="font-size: 2.2vh; font-weight: 600">
-            Accessibility features
-          </summary>
+          <summary class="level-two">Accessibility features</summary>
           <ul>
             <li>
               On-Screen Keyboard: Originally introduced with Windows 2000,
@@ -593,11 +420,9 @@
           </ul>
         </details>
         <details>
-          <summary style="font-size: 2.2vh; font-weight: 600">
-            Removed features
-          </summary>
+          <summary class="level-two">Removed features</summary>
 
-          <span style="font-size: 2.1vh; font-weight: 600">Real mode DOS</span>
+          <span class="level-two">Real mode DOS</span>
 
           <p>
             Windows Me restricted support for real mode MS-DOS. As a result,
@@ -644,9 +469,7 @@
             software, Windows Me cannot be booted to MS-DOS real mode.
           </p>
 
-          <span style="font-size: 2.1vh; font-weight: 600"
-            >Other components</span
-          >
+          <span class="level-two">Other components</span>
           <p>
             Unlike previous versions of Windows 9x, Windows Me was entirely
             aimed at home users, and thus had certain enterprise-oriented
@@ -689,7 +512,7 @@
       </details>
       <hr />
       <details>
-        <summary>User Interface</summary>
+        <summary class="level-one">User Interface</summary>
         <p>
           Windows Me featured the shell enhancements inherited from Windows 2000
           such as personalized menus, customizable Windows Explorer toolbars,

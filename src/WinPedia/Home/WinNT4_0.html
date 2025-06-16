@@ -2,191 +2,23 @@
 <html>
   <head>
     <meta charset="Unicode" />
-    <title>WinPedia - Windows NT 4.0</title>
+    <link href="./fluentUIstyling.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="../Images/WinPedia-favicon.svg" />
-    <style>
-      #ul,
-      .li,
-      .nav {
-        list-style: none;
-        margin-right: 20px;
-        text-decoration: none;
-        color: #3266fb;
-        display: inline-block;
-      }
-
-      .nav:hover {
-        color: #001fff;
-      }
-
-      nav {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        list-style: none;
-      }
-
-      footer {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        padding: 5px;
-        color: #000000;
-      }
-
-      button {
-        border-radius: 10px;
-        padding: 10px;
-        background-color: rgba(255, 255, 255, 0.5);
-        width: 100%;
-        height: 75%;
-        font-family: inherit;
-        font-size: inherit;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: box-shadow ease-out 0.3s;
-        border-style: none;
-      }
-
-      button:hover {
-        box-shadow: 0px 0px 15px 2px black;
-      }
-
-      #child-container-in-footer {
-        margin: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        width: 100%;
-        text-align: center;
-        align-items: center;
-      }
-
-      body {
-        margin: 10vh 0.5vw 10vh 0.5vw;
-        font-family: Segoe UI;
-        font-size: 2vh;
-        background-image: url(../Images/wallpaper/winNT4.0.png);
-        background-size: cover;
-        background-attachment: fixed;
-        background-position-x: -400px;
-        color: #ffffff;
-        overflow-x: hidden;
-      }
-
-      #container {
-        margin: 10px;
-        overflow: auto;
-      }
-
-      #heading {
-        font-size: 4vh;
-        font-weight: bold;
-      }
-
-      #info {
-        display: flow-root;
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(7.5px);
-        padding: 30px;
-        border: solid 1px black;
-        border-radius: 10px;
-        margin: 10px;
-        color: black;
-        height: auto;
-      }
-
-      img {
-        float: right;
-      }
-
-      li {
-        list-style: disc;
-        color: #ffffff;
-      }
-
-      summary {
-        font-weight: bold;
-        font-size: 2.5vh;
-      }
-
-      @media (max-width: 1440px) {
-        #homeContainer {
-          display: block;
-        }
-        nav {
-          height: 9vh;
-        }
-        img {
-          float: none;
-        }
-        table {
-          float: none;
-          align-self: center;
-          width: 98%;
-        }
-        #info {
-          display: flex;
-          flex-direction: column;
-          align-content: center;
-          text-align: center;
-        }
-      }
-
-      .bolden {
-        font-weight: 600;
-      }
-
-      a {
-        color: #000000;
-        text-decoration: none;
-      }
-
-      table {
-        border: solid 1px black;
-        border-radius: 10px;
-        background-color: rgba(255, 255, 255, 0.25);
-        margin: 10px;
-        backdrop-filter: blur(7.5px);
-        float: right;
-      }
-
-      th,
-      td {
-        border: solid 1px black;
-        padding: 10px;
-      }
-    </style>
+    <link rel="icon" href="/src/WinPedia/Images/WinPedia-favicon.svg" />
   </head>
-  <body>
+  <body style="background-image: url(../Images/wallpaper/winNT4.0.png)">
     <header>
       <nav>
-        <img src="../Images/WinPedia-logo.svg" alt="logo" height="60%" />
+        <img
+          src="/src/WinPedia/Images/WinPedia-logo.svg"
+          alt="logo"
+          height="70%"
+        />
         <ul>
           <li class="nav"><a href="./Homepage.html" class="nav">Home</a></li>
           <li class="nav">
@@ -245,7 +77,7 @@
     </p>
     <hr />
     <details>
-      <summary>Service Packs</summary>
+      <summary class="level-one">Service Packs</summary>
 
       <table cellspacing="0px">
         <thead>
@@ -320,7 +152,7 @@
     </details>
     <hr />
     <details>
-      <summary>Features</summary>
+      <summary class="level-one">Features</summary>
       <p>
         Although the chief enhancement has been the addition of the Windows 95
         shell, there are several major performance, scalability and feature
@@ -408,7 +240,7 @@
     </details>
     <hr />
     <details>
-      <summary>Editions</summary>
+      <summary class="level-one">Editions</summary>
       <p>
         There are numerous different editions of Windows NT 4.0. They include:
       </p>
@@ -472,7 +304,7 @@
     </details>
     <hr />
     <details>
-      <summary>User Interface</summary>
+      <summary class="level-one">User Interface</summary>
       <p>
         Microsoft's Windows NT 4.0 was the first version of the NT family to
         feature a GUI similar to that of Windows 95. Windows NT 4.0 introduced

@@ -2,176 +2,23 @@
 <html>
   <head>
     <meta charset="Unicode" />
-    <title>WinPedia - Windows 95</title>
+    <link href="./fluentUIstyling.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="icon"
-      href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg"
-    />
-    <style>
-      #ul,
-      .li,
-      .nav {
-        list-style: none;
-        margin-right: 20px;
-        text-decoration: none;
-        color: #3266fb;
-        display: inline-block;
-      }
-
-      .nav:hover {
-        color: #001fff;
-      }
-
-      nav {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        list-style: none;
-      }
-
-      footer {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        padding: 5px;
-        color: #000000;
-      }
-
-      button {
-        border-radius: 10px;
-        padding: 10px;
-        background-color: rgba(255, 255, 255, 0.5);
-        width: 100%;
-        height: 75%;
-        font-family: inherit;
-        font-size: inherit;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: box-shadow ease-out 0.3s;
-        border-style: none;
-      }
-
-      button:hover {
-        box-shadow: 0px 0px 15px 2px black;
-      }
-
-      #child-container-in-footer {
-        margin: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        width: 100%;
-        text-align: center;
-        align-items: center;
-      }
-
-      body {
-        margin: 10vh 0 10vh 0;
-        font-family: Segoe UI;
-        font-size: 2vh;
-        background-image: url(../Images/wallpaper/win95.png);
-        background-size: cover;
-        background-attachment: fixed;
-        color: #ffffff;
-      }
-
-      #container {
-        margin: 10px;
-        overflow: auto;
-      }
-
-      span {
-        font-size: 4vh;
-        font-weight: bold;
-      }
-
-      #info {
-        display: flow-root;
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(7.5px);
-        padding: 30px;
-        border: solid 1px black;
-        border-radius: 10px;
-        margin: 10px;
-        color: black;
-        height: auto;
-      }
-
-      img {
-        float: right;
-      }
-
-      li {
-        list-style: disc;
-        color: #ffffff;
-      }
-
-      summary {
-        font-weight: bold;
-        font-size: 2.5vh;
-      }
-
-      @media (max-width: 1440px) {
-        #homeContainer {
-          display: block;
-        }
-        nav {
-          height: 9vh;
-        }
-        img {
-          float: none;
-        }
-        #info {
-          display: flex;
-          flex-direction: column;
-          align-content: center;
-          text-align: center;
-        }
-        body {
-          background-position: center;
-        }
-      }
-
-      .bolden {
-        font-size: 2.375vh;
-        font-weight: 600;
-      }
-
-      a {
-        color: #000000;
-        text-decoration: none;
-      }
-    </style>
+    <link rel="icon" href="/src/WinPedia/Images/WinPedia-favicon.svg" />
   </head>
-  <body>
+  <body style="background-image: url(../Images/wallpaper/win95.png)">
     <header>
       <nav>
-        <img src="../Images/WinPedia-logo.svg" alt="logo" height="70%" />
+        <img
+          src="/src/WinPedia/Images/WinPedia-logo.svg"
+          alt="logo"
+          height="70%"
+        />
         <ul>
           <li class="nav"><a href="./Homepage.html" class="nav">Home</a></li>
           <li class="nav">
@@ -242,7 +89,7 @@
       </p>
       <hr />
       <details>
-        <summary>Development History</summary>
+        <summary class="level-one">Development History</summary>
         <p>
           The initial design and planning of Windows 95 can be traced back to
           around March 1992, just around the time before the release of Windows
@@ -292,7 +139,7 @@
       </details>
       <hr />
       <details>
-        <summary>Features</summary>
+        <summary class="level-one">Features</summary>
         <p>
           Windows 95 included support for 255-character mixed-case long
           filenames and preemptively multitasked protected-mode 32-bit
@@ -379,7 +226,7 @@
       </details>
       <hr />
       <details>
-        <summary>Editions</summary>
+        <summary class="level-one">Editions</summary>
         <p>
           Several Windows 95 editions have been released. Only the original
           release was sold as a shrink-wrapped product; later editions were
@@ -421,7 +268,7 @@
       </details>
       <hr />
       <details>
-        <summary>User Interface</summary>
+        <summary class="level-one">User Interface</summary>
         <p>
           Windows 95 introduced a redesigned shell based around a desktop
           metaphor; File shortcuts (also known as shell links) were introduced

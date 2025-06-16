@@ -3,181 +3,16 @@
   <head>
     <meta charset="Unicode" />
     <title>WinPedia - Windows Vista</title>
+    <link href="./fluentUIstyling.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="icon"
-      href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg"
-    />
-    <style>
-      #ul,
-      .li,
-      .nav {
-        list-style: none;
-        margin-right: 20px;
-        text-decoration: none;
-        color: #3266fb;
-        display: inline-block;
-      }
-
-      .nav:hover {
-        color: #001fff;
-      }
-
-      nav {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        list-style: none;
-      }
-
-      footer {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        padding: 5px;
-        color: #000000;
-      }
-
-      button {
-        border-radius: 10px;
-        padding: 10px;
-        background-color: rgba(255, 255, 255, 0.5);
-        width: 100%;
-        height: 75%;
-        font-family: inherit;
-        font-size: inherit;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: box-shadow ease-out 0.3s;
-        border-style: none;
-      }
-
-      button:hover {
-        box-shadow: 0px 0px 15px 2px black;
-      }
-
-      #child-container-in-footer {
-        margin: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        width: 100%;
-        text-align: center;
-        align-items: center;
-      }
-
-      body {
-        margin: 10vh 0.5vw 10vh 0.5vw;
-        font-family: Segoe UI;
-        font-size: 2vh;
-        background-image: url(../Images/wallpaper/winVista.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        background-position-x: 0px;
-        color: #ffffff;
-        overflow-x: hidden;
-      }
-
-      #container {
-        margin: 10px;
-        overflow: auto;
-      }
-
-      #heading {
-        font-size: 4vh;
-        font-weight: bold;
-      }
-
-      #info {
-        display: flow-root;
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(7.5px);
-        padding: 30px;
-        border: solid 1px black;
-        border-radius: 10px;
-        margin: 10px;
-        color: black;
-        height: auto;
-      }
-
-      img {
-        float: right;
-      }
-
-      li {
-        list-style: disc;
-        color: #ffffff;
-      }
-
-      summary {
-        font-weight: bold;
-        font-size: 2.5vh;
-      }
-
-      a {
-        color: #000000;
-        text-decoration: none;
-      }
-
-      @media (max-width: 1440px) {
-        #homeContainer {
-          display: block;
-        }
-        nav {
-          height: 9vh;
-        }
-        img {
-          float: none;
-        }
-        table {
-          float: none;
-          align-self: center;
-          width: 98%;
-        }
-        #info {
-          display: flex;
-          flex-direction: column;
-          align-content: center;
-          text-align: center;
-        }
-        body {
-          background-position-x: -530px;
-        }
-        #features {
-          line-height: 2.75vh;
-        }
-      }
-
-      .bolden {
-        font-weight: 600;
-      }
-    </style>
+    <link rel="icon" href="/src/WinPedia/Images/WinPedia-favicon.svg" />
   </head>
-  <body>
+  <body style="background-image: url(../Images/wallpaper/winVista.jpg)">
     <header>
       <nav>
         <img src="../Images/WinPedia-logo.svg" alt="logo" height="60%" />
@@ -278,7 +113,7 @@
       </p>
       <hr />
       <details>
-        <summary>Development</summary>
+        <summary class="level-one">Development</summary>
         <p>
           Microsoft began work on Windows Vista, known at the time by its
           codename "Longhorn", in May 2001, five months before the release of
@@ -305,7 +140,7 @@
         </p>
 
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">Longhorn</summary>
+          <summary class="level-two">Longhorn</summary>
           <p>
             The early development stages of Longhorn were generally
             characterized by incremental improvements and updates to Windows XP.
@@ -382,9 +217,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">
-            Development reset
-          </summary>
+          <summary class="level-two">Development reset</summary>
           <p>
             By 2004, it had become obvious to the Windows team at Microsoft that
             they were losing sight of what needed to be done to complete the
@@ -443,9 +276,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">
-            As Windows Vista
-          </summary>
+          <summary class="level-two">As Windows Vista</summary>
           <p>
             By approximately November 2004, the company had considered several
             names for the final release, ranging from simple to fanciful and
@@ -574,7 +405,7 @@
       </details>
       <hr />
       <details>
-        <summary>Features</summary>
+        <summary class="level-one">Features</summary>
         <p>
           New features introduced by Windows Vista are very numerous,
           encompassing significant functionality not available in its
@@ -653,7 +484,7 @@
           </li>
         </ul>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">End-user</summary>
+          <summary class="level-two">End-user</summary>
           <p>
             Windows Aero is the new graphical user interface, which Jim Allchin
             stated is an acronym for Authentic, Energetic, Reflective, and Open.
@@ -919,7 +750,7 @@
           </ul>
         </details>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">Core</summary>
+          <summary class="level-two">Core</summary>
           <p>
             Vista includes technologies such as ReadyBoost and ReadyDrive, which
             employ fast flash memory (located on USB flash drives and hybrid
@@ -979,9 +810,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">
-            Security-related
-          </summary>
+          <summary class="level-two">Security-related</summary>
           <p>
             Improved security was a primary design goal for Vista. Microsoft's
             Trustworthy Computing initiative, which aims to improve public trust
@@ -1094,9 +923,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">
-            System management
-          </summary>
+          <summary class="level-two">System management</summary>
           <p>
             While much of the focus of Vista's new capabilities highlighted the
             new user interface, security technologies, and improvements to the
@@ -1145,9 +972,7 @@
           </ul>
         </details>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">
-            Developer
-          </summary>
+          <summary class="level-two">Developer</summary>
           <p>
             Windows Vista includes a large number of new application programming
             interfaces. Chief among them is the inclusion of version 3.0 of the
@@ -1222,9 +1047,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">
-            Installation
-          </summary>
+          <summary class="level-two">Installation</summary>
           <p>Windows Vista is the first Microsoft operating system:</p>
           <ul>
             <li>To use DVD-ROM media for installation</li>
@@ -1255,9 +1078,7 @@
           </ul>
         </details>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">
-            Removed features
-          </summary>
+          <summary class="level-two">Removed features</summary>
           <p>
             Some notable Windows XP applications and features have been replaced
             or removed in Windows Vista, including Active Desktop, MSN Explorer,
@@ -1270,7 +1091,7 @@
       </details>
       <hr />
       <details>
-        <summary>Editions</summary>
+        <summary class="level-one">Editions</summary>
         <p>
           Windows Vista shipped in six different product editions. These were
           deviced across separate consumer and business target markets, with
@@ -1295,7 +1116,7 @@
       </details>
       <hr />
       <details>
-        <summary>User Interface</summary>
+        <summary class="level-one">User Interface</summary>
         <p>
           Windows Aero is the new graphical user interface, which Jim Allchin
           stated is an acronym for Authentic, Energetic, Reflective, and Open.

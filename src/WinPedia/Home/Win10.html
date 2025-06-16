@@ -3,181 +3,16 @@
   <head>
     <meta charset="Unicode" />
     <title>WinPedia - Windows 10</title>
+    <link href="./fluentUIstyling.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="icon"
-      href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg"
-    />
-    <style>
-      #ul,
-      .li,
-      .nav {
-        list-style: none;
-        margin-right: 20px;
-        text-decoration: none;
-        color: #3266fb;
-        display: inline-block;
-      }
-
-      .nav:hover {
-        color: #001fff;
-      }
-
-      nav {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        list-style: none;
-      }
-
-      footer {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        padding: 5px;
-        color: #000000;
-      }
-
-      button {
-        border-radius: 10px;
-        padding: 10px;
-        background-color: rgba(255, 255, 255, 0.5);
-        width: 100%;
-        height: 75%;
-        font-family: inherit;
-        font-size: inherit;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: box-shadow ease-out 0.3s;
-        border-style: none;
-      }
-
-      button:hover {
-        box-shadow: 0px 0px 15px 2px black;
-      }
-
-      #child-container-in-footer {
-        margin: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        width: 100%;
-        text-align: center;
-        align-items: center;
-      }
-
-      body {
-        margin: 10vh 0.5vw 10vh 0.5vw;
-        font-family: Segoe UI;
-        font-size: 2vh;
-        background-image: url(../Images/wallpaper/win10.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        background-position-x: 0px;
-        color: #ffffff;
-        overflow-x: hidden;
-      }
-
-      #container {
-        margin: 10px;
-        overflow: auto;
-      }
-
-      #heading {
-        font-size: 4vh;
-        font-weight: bold;
-      }
-
-      #info {
-        display: flow-root;
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(7.5px);
-        padding: 30px;
-        border: solid 1px black;
-        border-radius: 10px;
-        margin: 10px;
-        color: black;
-        height: auto;
-      }
-
-      img {
-        float: right;
-      }
-
-      li {
-        list-style: disc;
-        color: #ffffff;
-      }
-
-      summary {
-        font-weight: bold;
-        font-size: 2.5vh;
-      }
-
-      a {
-        color: #000000;
-        text-decoration: none;
-      }
-
-      @media (max-width: 1440px) {
-        #homeContainer {
-          display: block;
-        }
-        nav {
-          height: 9vh;
-        }
-        img {
-          float: none;
-        }
-        table {
-          float: none;
-          align-self: center;
-          width: 98%;
-        }
-        #info {
-          display: flex;
-          flex-direction: column;
-          align-content: center;
-          text-align: center;
-        }
-        body {
-          background-position-x: 1280px;
-        }
-        #features {
-          line-height: 2.75vh;
-        }
-      }
-
-      .bolden {
-        font-weight: 600;
-      }
-    </style>
+    <link rel="icon" href="/src/WinPedia/Images/WinPedia-favicon.svg" />
   </head>
-  <body>
+  <body style="background-image: url(../Images/wallpaper/win10.jpg)">
     <header>
       <nav>
         <img src="../Images/WinPedia-logo.svg" alt="logo" height="60%" />
@@ -253,7 +88,7 @@
       </p>
       <hr />
       <details>
-        <summary>Development</summary>
+        <summary class="level-one">Development</summary>
         <p>
           At the Microsoft Worldwide Partner Conference in 2011, Andrew Lees,
           the chief of Microsoft's mobile technologies, said that the company
@@ -300,9 +135,7 @@
           icon.
         </p>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">
-            Announcement
-          </summary>
+          <summary class="level-two">Announcement</summary>
           <p>
             On September 30, 2014, Microsoft officially announced that Threshold
             would be unveiled during a media event as Windows 10. Myerson said
@@ -373,9 +206,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">
-            Marketing
-          </summary>
+          <summary class="level-two">Marketing</summary>
           <p>
             On July 20, 2015, Microsoft began "Upgrade Your World", an
             advertising campaign centering on Windows 10, with the premiere of
@@ -390,7 +221,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">Release</summary>
+          <summary class="level-two">Release</summary>
           <p>
             On July 29, 2015, Microsoft officially announced that Windows 10
             would be released for retail purchase as a free upgrade from earlier
@@ -451,9 +282,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">
-            Free upgrade offer
-          </summary>
+          <summary class="level-two">Free upgrade offer</summary>
           <p>
             During its first year of availability, upgrade licenses for Windows
             10 could be obtained at no charge for devices with a genuine license
@@ -554,7 +383,7 @@
       </details>
       <hr />
       <details>
-        <summary>Features</summary>
+        <summary class="level-one">Features</summary>
         <p>
           Windows 10 makes its user experience and functionality more consistent
           between different classes of device, and addresses many shortcomings
@@ -611,9 +440,7 @@
           sandboxing.
         </p>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">
-            System security
-          </summary>
+          <summary class="level-two">System security</summary>
           <p>
             Windows 10 incorporates multi-factor authentication technology based
             upon standards developed by the FIDO Alliance. The operating system
@@ -670,9 +497,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">
-            Command line
-          </summary>
+          <summary class="level-two">Command line</summary>
           <p>
             The console windows based on Windows Console (for any console app,
             not just PowerShell and Windows Command Prompt) can now be resized
@@ -702,9 +527,7 @@
           environment options as well.
         </details>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">
-            Storage requirements
-          </summary>
+          <summary class="level-two">Storage requirements</summary>
           <p>
             To reduce the storage footprint of the operating system, Windows 10
             automatically compresses system files. The system can reduce the
@@ -729,9 +552,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">
-            Online services and functionality
-          </summary>
+          <summary class="level-two">Online services and functionality</summary>
           <p>
             Windows 10 introduces Microsoft Edge, a new default web browser. It
             initially featured a new standards-compliant rendering engine
@@ -801,9 +622,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">
-            Multimedia and gaming
-          </summary>
+          <summary class="level-two">Multimedia and gaming</summary>
           <p>
             Windows 10 provides greater integration with the Xbox ecosystem.
             Xbox SmartGlass is succeeded by the Xbox Console Companion (formerly
@@ -859,7 +678,7 @@
       </details>
       <hr />
       <details>
-        <summary>Editions</summary>
+        <summary class="level-one">Editions</summary>
         <p>
           Windows 10 is available in five main editions for personal computing
           devices; the Home and Pro editions of which are sold at retail in most
@@ -908,7 +727,7 @@
       </details>
       <hr />
       <details>
-        <summary>User Interface</summary>
+        <summary class="level-one">User Interface</summary>
         <p>
           Windows 10 makes its user experience and functionality more consistent
           between different classes of device, and addresses many shortcomings

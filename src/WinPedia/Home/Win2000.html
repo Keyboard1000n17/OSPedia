@@ -3,181 +3,16 @@
   <head>
     <meta charset="Unicode" />
     <title>WinPedia - Windows 2000</title>
+    <link href="./fluentUIstyling.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="icon"
-      href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg"
-    />
-    <style>
-      #ul,
-      .li,
-      .nav {
-        list-style: none;
-        margin-right: 20px;
-        text-decoration: none;
-        color: #3266fb;
-        display: inline-block;
-      }
-
-      .nav:hover {
-        color: #001fff;
-      }
-
-      nav {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        list-style: none;
-      }
-
-      footer {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        padding: 5px;
-        color: #000000;
-      }
-
-      button {
-        border-radius: 10px;
-        padding: 10px;
-        background-color: rgba(255, 255, 255, 0.5);
-        width: 100%;
-        height: 75%;
-        font-family: inherit;
-        font-size: inherit;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: box-shadow ease-out 0.3s;
-        border-style: none;
-      }
-
-      button:hover {
-        box-shadow: 0px 0px 15px 2px black;
-      }
-
-      #child-container-in-footer {
-        margin: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        width: 100%;
-        text-align: center;
-        align-items: center;
-      }
-
-      body {
-        margin: 10vh 0.5vw 10vh 0.5vw;
-        font-family: Segoe UI;
-        font-size: 2vh;
-        background-image: url(../Images/wallpaper/win2000.png);
-        background-size: cover;
-        background-attachment: fixed;
-        background-position-x: 0px;
-        color: #ffffff;
-        overflow-x: hidden;
-      }
-
-      #container {
-        margin: 10px;
-        overflow: auto;
-      }
-
-      #heading {
-        font-size: 4vh;
-        font-weight: bold;
-      }
-
-      #info {
-        display: flow-root;
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(7.5px);
-        padding: 30px;
-        border: solid 1px black;
-        border-radius: 10px;
-        margin: 10px;
-        color: black;
-        height: auto;
-      }
-
-      img {
-        float: right;
-      }
-
-      li {
-        list-style: disc;
-        color: #ffffff;
-      }
-
-      summary {
-        font-weight: bold;
-        font-size: 2.5vh;
-      }
-
-      a {
-        color: #000000;
-        text-decoration: none;
-      }
-
-      @media (max-width: 1440px) {
-        #homeContainer {
-          display: block;
-        }
-        nav {
-          height: 9vh;
-        }
-        img {
-          float: none;
-        }
-        table {
-          float: none;
-          align-self: center;
-          width: 98%;
-        }
-        #info {
-          display: flex;
-          flex-direction: column;
-          align-content: center;
-          text-align: center;
-        }
-        body {
-          background-position: center;
-        }
-        #features {
-          line-height: 2.75vh;
-        }
-      }
-
-      .bolden {
-        font-weight: 600;
-      }
-    </style>
+    <link rel="icon" href="/src/WinPedia/Images/WinPedia-favicon.svg" />
   </head>
-  <body>
+  <body style="background-image: url(../Images/wallpaper/win2000.png)">
     <header>
       <nav>
         <img src="../Images/WinPedia-logo.svg" alt="logo" height="60%" />
@@ -238,7 +73,7 @@
       </p>
       <hr />
       <details>
-        <summary>Development History</summary>
+        <summary class="level-one">Development History</summary>
         <p>
           Windows 2000 was originally named Windows NT 5.0. It is a continuation
           of the Microsoft Windows NT family of operating systems, replacing
@@ -293,7 +128,7 @@
       </details>
       <hr />
       <details>
-        <summary>Features</summary>
+        <summary class="level-one">Features</summary>
         <p>
           Windows 2000 introduced many of the new features of Windows 98 and 98
           SE into the NT line, such as the Windows Desktop Update, Internet
@@ -352,7 +187,7 @@
         </p>
 
         <details>
-          <summary style="font-size: 2.25vh; font-weight: 600">
+          <summary class="level-two">
             Plug and Play and hardware support improvements
           </summary>
 
@@ -377,7 +212,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-size: 2.25vh; font-weight: 600">Shell</summary>
+          <summary class="level-two">Shell</summary>
 
           <p>
             Windows 2000 introduces layered windows that allow for transparency,
@@ -454,9 +289,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-size: 2.25vh; font-weight: 600">
-            NTFS 3.0
-          </summary>
+          <summary class="level-two">NTFS 3.0</summary>
 
           <p>
             Microsoft released the version 3.0 of NTFS (sometimes incorrectly
@@ -486,9 +319,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-size: 2.25vh; font-weight: 600">
-            Encrypting File System
-          </summary>
+          <summary class="level-two">Encrypting File System</summary>
 
           <p>
             The Encrypting File System (EFS) introduced strong file system-level
@@ -523,9 +354,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-size: 2.25vh; font-weight: 600">
-            Basic and dynamic disk storage
-          </summary>
+          <summary class="level-two">Basic and dynamic disk storage</summary>
 
           <p>
             Windows 2000 introduced the Logical Disk Manager and the diskpart
@@ -572,9 +401,7 @@
           </ul>
         </details>
         <details>
-          <summary style="font-size: 2.5vh; font-weight: 600">
-            Accessibility
-          </summary>
+          <summary class="level-two">Accessibility</summary>
 
           <p>
             With Windows 2000, Microsoft introduced the Windows 9x accessibility
@@ -658,9 +485,7 @@
           </ul>
         </details>
         <details>
-          <summary style="font-size: 2.25vh; font-weight: 600">
-            Languages and locales
-          </summary>
+          <summary class="level-two">Languages and locales</summary>
 
           <p>
             Windows 2000 introduced the Multilingual User Interface (MUI).
@@ -672,7 +497,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-size: 2.25vh; font-weight: 600">Games</summary>
+          <summary class="level-two">Games</summary>
 
           <p>
             Windows 2000 included version 7.0 of the DirectX API, commonly used
@@ -693,9 +518,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-size: 2.25vh; font-weight: 600">
-            System utilities
-          </summary>
+          <summary class="level-two">System utilities</summary>
 
           <p>
             Windows 2000 introduced the Microsoft Management Console (MMC),
@@ -766,9 +589,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-size: 2.25vh; font-weight: 600">
-            Recovery Console
-          </summary>
+          <summary class="level-two">Recovery Console</summary>
 
           <p>
             The Recovery Console is run from outside the installed copy of
@@ -806,9 +627,7 @@
         </details>
 
         <details>
-          <summary style="font-size: 2.25vh; font-weight: 600">
-            Networking
-          </summary>
+          <summary class="level-two">Networking</summary>
 
           <p>
             Starting with Windows 2000, the Server Message Block (SMB) protocol
@@ -825,9 +644,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-size: 2.25vh; font-weight: 600">
-            Server family features
-          </summary>
+          <summary class="level-two">Server family features</summary>
 
           <p>
             The Windows 2000 Server family consists of Windows 2000 Server,
@@ -931,9 +748,7 @@
           </ul>
         </details>
         <details>
-          <summary style="font-size: 2.25vh; font-weight: 600">
-            Distributed File System
-          </summary>
+          <summary class="level-two">Distributed File System</summary>
 
           <p>
             The Distributed File System (DFS) allows shares in multiple
@@ -959,9 +774,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-size: 2.25vh; font-weight: 600">
-            Active Directory
-          </summary>
+          <summary class="level-two">Active Directory</summary>
 
           <p>
             A new way of organizing Windows network domains, or groups of
@@ -1001,9 +814,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-size: 2.25vh; font-weight: 600">
-            Volume fault tolerance
-          </summary>
+          <summary class="level-two">Volume fault tolerance</summary>
 
           <p>
             Along with support for simple, spanned and striped volumes, the
@@ -1029,7 +840,7 @@
       </details>
       <hr />
       <details>
-        <summary>Editions</summary>
+        <summary class="level-one">Editions</summary>
         <p>
           Microsoft released various editions of Windows 2000 for different
           markets and business needs: Professional, Server, Advanced Server and
@@ -1094,7 +905,7 @@
       </details>
       <hr />
       <details>
-        <summary>User interface</summary>
+        <summary class="level-one">User interface</summary>
         <p>
           The User Interface of Windows 2000 was similar to that of Windows 9x
           operating systems. There is not much difference between these two. The

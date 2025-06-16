@@ -2,182 +2,16 @@
 <html>
   <head>
     <meta charset="Unicode" />
-    <title>WinPedia - Windows 11</title>
+    <link href="./fluentUIstyling.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="icon"
-      href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg"
-    />
-    <style>
-      #ul,
-      .li,
-      .nav {
-        list-style: none;
-        margin-right: 20px;
-        text-decoration: none;
-        color: #3266fb;
-        display: inline-block;
-      }
-
-      .nav:hover {
-        color: #001fff;
-      }
-
-      nav {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        list-style: none;
-      }
-
-      footer {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        padding: 5px;
-        color: #000000;
-      }
-
-      button {
-        border-radius: 10px;
-        padding: 10px;
-        background-color: rgba(255, 255, 255, 0.5);
-        width: 100%;
-        height: 75%;
-        font-family: inherit;
-        font-size: inherit;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: box-shadow ease-out 0.3s;
-        border-style: none;
-      }
-
-      button:hover {
-        box-shadow: 0px 0px 15px 2px black;
-      }
-
-      #child-container-in-footer {
-        margin: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        width: 100%;
-        text-align: center;
-        align-items: center;
-      }
-
-      body {
-        margin: 10vh 0.5vw 10vh 0.5vw;
-        font-family: Segoe UI;
-        font-size: 2vh;
-        background-image: url(../Images/wallpaper/win11.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        background-position-x: 0px;
-        color: #ffffff;
-        overflow-x: hidden;
-      }
-
-      #container {
-        margin: 10px;
-        overflow: auto;
-      }
-
-      #heading {
-        font-size: 4vh;
-        font-weight: bold;
-      }
-
-      #info {
-        display: flow-root;
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(7.5px);
-        padding: 30px;
-        border: solid 1px black;
-        border-radius: 10px;
-        margin: 10px;
-        color: black;
-        height: auto;
-      }
-
-      img {
-        float: right;
-      }
-
-      li {
-        list-style: disc;
-        color: #ffffff;
-      }
-
-      summary {
-        font-weight: bold;
-        font-size: 2.5vh;
-      }
-
-      a {
-        color: #000000;
-        text-decoration: none;
-      }
-
-      @media (max-width: 1440px) {
-        #homeContainer {
-          display: block;
-        }
-        nav {
-          height: 9vh;
-        }
-        img {
-          float: none;
-        }
-        table {
-          float: none;
-          align-self: center;
-          width: 98%;
-        }
-        #info {
-          display: flex;
-          flex-direction: column;
-          align-content: center;
-          text-align: center;
-        }
-        body {
-          background-position: center;
-        }
-        #features {
-          line-height: 2.75vh;
-        }
-      }
-
-      .bolden {
-        font-weight: 600;
-      }
-    </style>
+    <link rel="icon" href="/src/WinPedia/Images/WinPedia-favicon.svg" />
   </head>
-  <body>
+  <body style="background-image: url(../Images/wallpaper/win11.jpg)">
     <header>
       <nav>
         <img src="../Images/WinPedia-logo.svg" alt="logo" height="60%" />
@@ -266,7 +100,7 @@
       </p>
       <hr />
       <details>
-        <summary>Development</summary>
+        <summary class="level-one">Development</summary>
         <p>
           In October 2019, Microsoft announced "Windows 10X", a future edition
           of Windows 10 designed exclusively for dual-touchscreen devices such
@@ -338,7 +172,7 @@
       </details>
       <hr />
       <details>
-        <summary>Features</summary>
+        <summary class="level-one">Features</summary>
         <p>
           Windows 11, the first major Windows release since 2015, builds upon
           its predecessor by revamping the user interface to follow Microsoft's
@@ -391,9 +225,7 @@
           supporting DirectX 12 and an NVMe solid-state drive.
         </p>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">
-            Windows Subsystem for Android
-          </summary>
+          <summary class="level-two">Windows Subsystem for Android</summary>
           <p>
             On October 21, 2021, Windows Subsystem for Android (WSA) became
             available to Beta channel builds of Windows 11 for users in the
@@ -414,7 +246,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">Setup</summary>
+          <summary class="level-two">Setup</summary>
           <p>
             Home and Pro (since version 22H2) edition installation requires
             internet connection and Microsoft account login (only if for
@@ -426,9 +258,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">
-            System security
-          </summary>
+          <summary class="level-two">System security</summary>
           <p>
             As part of the minimum system requirements, Windows 11 only runs on
             devices with a Trusted Platform Module 2.0 security coprocessor,
@@ -449,9 +279,7 @@
           </p>
         </details>
         <details>
-          <summary style="font-weight: 600; font-size: 2.2vh">
-            Artificial intelligence
-          </summary>
+          <summary class="level-two">Artificial intelligence</summary>
           <p>
             In subsequent updates, Microsoft added several features based on
             artificial intelligence (AI), like live captions, background noise
@@ -478,7 +306,7 @@
       </details>
       <hr />
       <details>
-        <summary>Editions</summary>
+        <summary class="level-one">Editions</summary>
         <p>
           Windows 11 is available in two main editions; the Home edition, which
           is intended for consumer users, and the Pro edition, which contains
@@ -517,7 +345,7 @@
       </details>
       <hr />
       <details>
-        <summary>User Interface</summary>
+        <summary class="level-one">User Interface</summary>
         <p>
           A redesigned user interface is present frequently throughout the
           operating system, building upon the Fluent Design System;

@@ -3,171 +3,23 @@
   <head>
     <meta charset="Unicode" />
     <title>WinPedia - Windows 3.1</title>
+    <link href="./fluentUIstyling.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="icon"
-      href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg"
-    />
-    <style>
-      #ul,
-      .li,
-      .nav {
-        list-style: none;
-        margin-right: 20px;
-        text-decoration: none;
-        color: #3266fb;
-        display: inline-block;
-      }
-
-      .nav:hover {
-        color: #001fff;
-      }
-
-      nav {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        list-style: none;
-      }
-
-      footer {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        padding: 5px;
-        color: #000000;
-      }
-
-      button {
-        border-radius: 10px;
-        padding: 10px;
-        background-color: rgba(255, 255, 255, 0.5);
-        width: 100%;
-        height: 75%;
-        font-family: inherit;
-        font-size: inherit;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: box-shadow ease-out 0.3s;
-        border-style: none;
-      }
-
-      button:hover {
-        box-shadow: 0px 0px 15px 2px black;
-      }
-
-      #child-container-in-footer {
-        margin: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        width: 100%;
-        text-align: center;
-        align-items: center;
-      }
-
-      body {
-        margin: 10vh 0 10vh 0;
-        font-family: Segoe UI;
-        font-size: 2vh;
-        background-image: url(../Images/wallpaper/win3_1.png);
-        background-size: cover;
-        background-attachment: fixed;
-        color: #ffffff;
-      }
-
-      #container {
-        margin: 10px;
-        overflow: auto;
-      }
-
-      span {
-        font-size: 4vh;
-        font-weight: bold;
-      }
-
-      #info {
-        display: flow-root;
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(7.5px);
-        padding: 30px;
-        border: solid 1px black;
-        border-radius: 10px;
-        margin: 10px;
-        color: black;
-        height: auto;
-      }
-
-      img {
-        float: right;
-      }
-
-      li {
-        list-style: disc;
-        color: #ffffff;
-      }
-
-      summary {
-        font-weight: bold;
-        font-size: 2.5vh;
-      }
-
-      a {
-        color: #000000;
-        text-decoration: none;
-      }
-
-      @media (max-width: 1440px) {
-        #homeContainer {
-          display: block;
-        }
-        nav {
-          height: 9vh;
-        }
-        img {
-          float: none;
-        }
-        #info {
-          display: flex;
-          flex-direction: column;
-          align-content: center;
-          text-align: center;
-        }
-      }
-
-      .bolden {
-        font-size: 2.375vh;
-        font-weight: 600;
-      }
-    </style>
+    <link rel="icon" href="/src/WinPedia/Images/WinPedia-favicon.svg" />
   </head>
-  <body>
+  <body style="background-image: url(../Images/wallpaper/win3_1.png)">
     <header>
       <nav>
+        <img
+          src="/src/WinPedia/Images/WinPedia-logo.svg"
+          alt="logo"
+          height="70%"
+        />
         <ul id="ul">
           <li class="li"><a href="./Homepage.html" class="nav">Home</a></li>
           <li class="li">
@@ -241,7 +93,7 @@
       <hr />
       <details>
         <hr />
-        <summary>Development History</summary>
+        <summary class="level-one">Development History</summary>
         <p>
           Windows 3.0, the predecessor of 3.1, was released in 1990, and is
           considered to be the first version of Windows to receive critical
@@ -265,7 +117,7 @@
       </details>
       <hr />
       <details>
-        <summary>Features</summary>
+        <summary class="level-one">Features</summary>
         <p>
           Further enhancements were introduced in Windows 3.1. The TrueType font
           system was introduced to provide scalable fonts to Windows
@@ -330,7 +182,6 @@
           to graphics and printer hardware, and allowed programs to have both
           read and write capabilities to the WinGDC.
         </p>
-        <!-- KEEP BLOCK ISOLATED: CODE IS TANGLED AND CANNOT BE EDITED IN NOTEPAD++-->
         <p>
           Unlike all previous versions, Windows 3.1 could not run in real mode
           and it insisted on the use of 80286 processors or above. Because of
@@ -341,15 +192,14 @@
           Windows 3.1 is also the last Windows to run in 16-bit mode. It is also
           the first Windows to be distributed on a CD-ROM. The setup interface
           was simplified; express mode was introduced to automatically set up
-          Windows.  Windows 3.1 also includes an online tutorial applet for
-          users regarding the use of the Windows 3.1 user interface.  In
-          addition it supported the Advanced Power Management standard.
+          Windows. Windows 3.1 also includes an online tutorial applet for users
+          regarding the use of the Windows 3.1 user interface. In addition it
+          supported the Advanced Power Management standard.
         </p>
-        <!-- KEEP BLOCK ISOLATED: CODE IS TANGLED AND CANNOT BE EDITED IN NOTEPAD++-->
       </details>
       <hr />
       <details>
-        <summary>Editions</summary>
+        <summary class="level-one">Editions</summary>
         <br />
         <span class="bolden">Windows 3.1 for Central and Eastern Europe</span>
         <p>
@@ -463,7 +313,7 @@
       </details>
       <hr />
       <details>
-        <summary>User Interface</summary>
+        <summary class="level-one">User Interface</summary>
         <p>
           Windows 3.1 changed some icons, of which the most notable change is
           the addition of color to icons. Some icons changed include the ones

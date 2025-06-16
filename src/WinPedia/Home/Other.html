@@ -2,182 +2,16 @@
 <html>
   <head>
     <meta charset="Unicode" />
-    <title>WinPedia - Other Notable Versions of Windows</title>
+    <link href="./fluentUIstyling.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="icon"
-      href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg"
-    />
-    <style>
-      #ul,
-      .li,
-      .nav {
-        list-style: none;
-        margin-right: 20px;
-        text-decoration: none;
-        color: #3266fb;
-        display: inline-block;
-      }
-
-      .nav:hover {
-        color: #001fff;
-      }
-
-      nav {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        list-style: none;
-      }
-
-      footer {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        padding: 5px;
-        color: #000000;
-      }
-
-      button {
-        border-radius: 10px;
-        padding: 10px;
-        background-color: rgba(255, 255, 255, 0.5);
-        width: 100%;
-        height: 75%;
-        font-family: inherit;
-        font-size: inherit;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: box-shadow ease-out 0.3s;
-        border-style: none;
-      }
-
-      button:hover {
-        box-shadow: 0px 0px 15px 2px black;
-      }
-
-      #child-container-in-footer {
-        margin: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        width: 100%;
-        text-align: center;
-        align-items: center;
-      }
-
-      body {
-        margin: 10vh 0.5vw 10vh 0.5vw;
-        font-family: Segoe UI;
-        font-size: 2vh;
-        background-image: url(../Images/wallpaper/win10x.png);
-        background-size: cover;
-        background-attachment: fixed;
-        background-position-x: 0px;
-        color: #ffffff;
-        overflow-x: hidden;
-      }
-
-      #container {
-        margin: 10px;
-        overflow: auto;
-      }
-
-      #heading {
-        font-size: 4vh;
-        font-weight: bold;
-      }
-
-      .info {
-        display: flow-root;
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(7.5px);
-        padding: 30px;
-        border: solid 1px black;
-        border-radius: 10px;
-        margin: 10px;
-        color: black;
-        height: auto;
-      }
-
-      img {
-        float: right;
-      }
-
-      li {
-        list-style: disc;
-        color: #ffffff;
-      }
-
-      summary {
-        font-weight: bold;
-        font-size: 2.5vh;
-      }
-
-      a {
-        color: #000000;
-        text-decoration: none;
-      }
-
-      @media (max-width: 1440px) {
-        #homeContainer {
-          display: block;
-        }
-        nav {
-          height: 9vh;
-        }
-        img {
-          float: none;
-        }
-        table {
-          float: none;
-          align-self: center;
-          width: 98%;
-        }
-        .info {
-          display: flex;
-          flex-direction: column;
-          align-content: center;
-          text-align: center;
-        }
-        body {
-          background-position: 1380px;
-        }
-        #features {
-          line-height: 2.75vh;
-        }
-      }
-
-      .bolden {
-        font-weight: 600;
-      }
-    </style>
+    <link rel="icon" href="/src/WinPedia/Images/WinPedia-favicon.svg" />
   </head>
-  <body>
+  <body style="background-image: url(../Images/wallpaper/win10x.png)">
     <header>
       <nav>
         <img
@@ -198,7 +32,7 @@
     <div class="container">
       <!--w10X-->
       <details>
-        <summary><span>Windows 10x</span></summary>
+        <summary class="level-one"><span>Windows 10x</span></summary>
         <p>
           Windows 10X was an edition of Windows 10, a major release of the
           Microsoft Windows series of operating systems. Announced by Microsoft
@@ -228,7 +62,7 @@
     <div class="container">
       <!--wCE-->
       <details>
-        <summary><span>Windows CE</span></summary>
+        <summary class="level-one"><span>Windows CE</span></summary>
         <p>
           Windows CE, later known as Windows Embedded CE and Windows Embedded
           Compact, is a discontinued operating system developed by Microsoft for
@@ -301,7 +135,7 @@
     <div class="container">
       <!--wServer-->
       <details>
-        <summary><span>Windows Server</span></summary>
+        <summary class="level-one"><span>Windows Server</span></summary>
         <p>
           Windows Server (formerly Windows NT Server) is a brand name for
           server-oriented releases of the Windows NT operating system (OS) that
@@ -336,7 +170,9 @@
     <div class="container">
       <!--wp8n8.1-->
       <details>
-        <summary><span>Windows Phone 8 and 8.1</span></summary>
+        <summary class="level-one">
+          <span>Windows Phone 8 and 8.1</span>
+        </summary>
         <p>
           Windows Phone 8 is the second generation of the Windows Phone mobile
           operating system from Microsoft. It was released on October 29, 2012,
@@ -384,7 +220,7 @@
     <div class="container">
       <!--wM10-->
       <details>
-        <summary><span>Windows Mobile 10</span></summary>
+        <summary class="level-one"><span>Windows Mobile 10</span></summary>
         <p>
           Windows 10 Mobile is a discontinued mobile operating system developed
           by Microsoft Mobile. It is the successor to Windows Phone 8.1, but was
@@ -443,7 +279,7 @@
     <div class="container">
       <!--MS-DOS-->
       <details>
-        <summary><span>MS-DOS</span></summary>
+        <summary class="level-one"><span>MS-DOS</span></summary>
         <p>
           MS-DOS (/ˌɛmˌɛsˈdɒs/ em-es-DOSS; acronym for Microsoft Disk Operating
           System, also known as Microsoft DOS) is an operating system for

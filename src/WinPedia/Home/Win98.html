@@ -3,181 +3,16 @@
   <head>
     <meta charset="Unicode" />
     <title>WinPedia - Windows 98</title>
+    <link href="./fluentUIstyling.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="icon"
-      href="/src-tauri/src/WinPedia/Images/WinPedia-favicon.svg"
-    />
-    <style>
-      #ul,
-      .li,
-      .nav {
-        list-style: none;
-        margin-right: 20px;
-        text-decoration: none;
-        color: #3266fb;
-        display: inline-block;
-      }
-
-      .nav:hover {
-        color: #001fff;
-      }
-
-      nav {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        list-style: none;
-      }
-
-      footer {
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 9vh;
-        padding: 5px;
-        color: #000000;
-      }
-
-      button {
-        border-radius: 10px;
-        padding: 10px;
-        background-color: rgba(255, 255, 255, 0.5);
-        width: 100%;
-        height: 75%;
-        font-family: inherit;
-        font-size: inherit;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: box-shadow ease-out 0.3s;
-        border-style: none;
-      }
-
-      button:hover {
-        box-shadow: 0px 0px 15px 2px black;
-      }
-
-      #child-container-in-footer {
-        margin: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        width: 100%;
-        text-align: center;
-        align-items: center;
-      }
-
-      body {
-        margin: 10vh 0.5vw 10vh 0.5vw;
-        font-family: Segoe UI;
-        font-size: 2vh;
-        background-image: url(../Images/wallpaper/win98.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        background-position-x: 0px;
-        color: #ffffff;
-        overflow-x: hidden;
-      }
-
-      #container {
-        margin: 10px;
-        overflow: auto;
-      }
-
-      #heading {
-        font-size: 4vh;
-        font-weight: bold;
-      }
-
-      #info {
-        display: flow-root;
-        background-color: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(7.5px);
-        padding: 30px;
-        border: solid 1px black;
-        border-radius: 10px;
-        margin: 10px;
-        color: black;
-        height: auto;
-      }
-
-      img {
-        float: right;
-      }
-
-      li {
-        list-style: disc;
-        color: #ffffff;
-      }
-
-      summary {
-        font-weight: bold;
-        font-size: 2.5vh;
-      }
-
-      a {
-        color: #000000;
-        text-decoration: none;
-      }
-
-      @media (max-width: 1440px) {
-        #homeContainer {
-          display: block;
-        }
-        nav {
-          height: 9vh;
-        }
-        img {
-          float: none;
-        }
-        table {
-          float: none;
-          align-self: center;
-          width: 98%;
-        }
-        #info {
-          display: flex;
-          flex-direction: column;
-          align-content: center;
-          text-align: center;
-        }
-        body {
-          background-position: center;
-        }
-        #features {
-          line-height: 2.75vh;
-        }
-      }
-
-      .bolden {
-        font-weight: 600;
-      }
-    </style>
+    <link rel="icon" href="/src/WinPedia/Images/WinPedia-favicon.svg" />
   </head>
-  <body>
+  <body style="background-image: url(../Images/wallpaper/win98.jpg)">
     <header>
       <nav>
         <img src="../Images/WinPedia-logo.svg" alt="logo" height="60%" />
@@ -246,7 +81,7 @@
       </p>
       <hr />
       <details>
-        <summary>Development History</summary>
+        <summary class="level-one">Development History</summary>
         <p>
           Following the success of Windows 95, the development of Windows 98
           began, initially under the development codename "Memphis". The first
@@ -305,7 +140,7 @@
       </details>
       <hr />
       <details>
-        <summary>Features</summary>
+        <summary class="level-one">Features</summary>
 
         <p>
           The first release of Windows 98 included Internet Explorer 4.01 SP1.
@@ -354,7 +189,7 @@
         </p>
         <div id="features">
           <details>
-            <summary style="font-size: 2.125vh; font-weight: 700">
+            <summary class="level-two">
               Improvements to hardware support
             </summary>
 
@@ -410,7 +245,7 @@
             </p>
           </details>
           <details>
-            <summary style="font-size: 2.125vh; font-weight: 700">
+            <summary class="level-two">
               Other device support improvements
             </summary>
 
@@ -453,9 +288,7 @@
             </p>
           </details>
           <details>
-            <summary style="font-size: 2.125vh; font-weight: 700">
-              Networking enhancements
-            </summary>
+            <summary class="level-two">Networking enhancements</summary>
 
             <p>
               Windows 98 networking enhancements to TCP/IP include built-in
@@ -525,7 +358,7 @@
             </p>
           </details>
           <details>
-            <summary style="font-size: 2.125vh; font-weight: 700">
+            <summary class="level-two">
               Improvements to the system and built-in utilities
             </summary>
 
@@ -584,9 +417,7 @@
             </p>
           </details>
           <details>
-            <summary style="font-size: 2.125vh; font-weight: 700">
-              Other system tools
-            </summary>
+            <summary class="level-two">Other system tools</summary>
 
             <p>
               A number of improvements are made to various other system tools
@@ -653,7 +484,7 @@
               submitted reports.
             </p>
 
-            <span style="font-size: 21px; font-weight: 600">Accessories</span>
+            <span style="font-size: 2.2vh; font-weight: 600">Accessories</span>
 
             <p>
               Windows 98 includes Microsoft Magnifier, Accessibility Wizard and
@@ -670,7 +501,7 @@
               of hardware and software—supports output to a log file.
             </p>
 
-            <span style="font-size: 21px; font-weight: 600"
+            <span style="font-size: 2.2vh; font-weight: 600"
               >Miscellaneous improvements</span
             >
             <ul>
@@ -711,7 +542,7 @@
       </details>
       <hr />
       <details>
-        <summary>Windows 98 Second Edition</summary>
+        <summary class="level-one">Windows 98 Second Edition</summary>
         <p>
           Windows 98 Second Edition (often shortened to Windows 98 SE and
           sometimes to Win98 SE or 98 SE) is an updated version of Windows 98
@@ -750,7 +581,7 @@
       </details>
       <hr />
       <details>
-        <summary>User Interface</summary>
+        <summary class="level-one">User Interface</summary>
         <p>
           Windows 98 was released to positive reviews, with praise directed to
           its improved graphical user interface and customizability, ease of
