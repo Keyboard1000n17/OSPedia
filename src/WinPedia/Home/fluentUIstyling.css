@@ -160,16 +160,6 @@ td {
   padding: 10px;
 }
 
-div.UI-Screenshots {
-  display: flex;
-  background-color: rgba(255, 255, 255, 0.75);
-  align-items: center;
-  border-radius: 10px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  color: black;
-}
-
 figure.UI-Screenshots {
   display: flex;
   padding: 10px;
@@ -182,11 +172,20 @@ figure.UI-Screenshots {
 
 img.UI-Screenshots {
   border-radius: 10px;
+  height: 60vh;
+  filter: brightness(80%);
+  transition: all ease 0.3s;
+}
+
+img.UI-Screenshots:hover {
+  height: 65vh;
+  filter: brightness(100%);
 }
 
 figcaption {
   color: black;
   padding-top: 15px;
+  text-align: center;
 }
 /* CONTENT STYLING */
 
