@@ -1,9 +1,9 @@
 User-agent: *
-Disallow: /WinHistory/Images/
-Disallow: /macHistory/Images/
-Disallow: /UbuntuHistory/Images/
-Disallow: /DebianHistory/Images/
-Disallow: /MintHistory/Images/
-Disallow: /FedoraHistory/Images/
-Disallow: /droidHistory/Images/
-Disallow: /iHistory/Images/
+Disallow: /WinPedia/Images/
+Disallow: /MacPedia/Images/
+Disallow: /UbuntuPedia/Images/
+Disallow: /DebianPedia/Images/
+Disallow: /MintPedia/Images/
+Disallow: /FedoraPedia/Images/
+Disallow: /AndroidPedia/Images/
+Disallow: /iPedia/Images/

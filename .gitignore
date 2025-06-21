@@ -7,13 +7,6 @@
 /src-tauri/.cargo/
 /src-tauri/Cargo.lock
 
-
-# Frontend (if using npm/yarn/pnpm)
-/node_modules/
-/dist/
-/build/
-/.vite/
-
 # Visual Studio
 .vs/
 *.suo
@@ -21,6 +14,3 @@
 *.userosscache
 *.sln.docstates
 *.code-workspace
-
-# WebView2 runtime installer (if downloaded)
-MicrosoftEdgeWebView2Setup.exe

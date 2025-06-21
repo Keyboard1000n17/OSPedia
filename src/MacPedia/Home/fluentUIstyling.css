@@ -167,7 +167,7 @@ td {
 }
 
 .right {
-  border: solid 2px black;
+  border-right: solid 2px black;
 }
 
 .bottom {
