@@ -369,8 +369,238 @@
         </ul>
       </details>
       <details>
-        <summary class="level-two"></summary>
+        <summary class="level-two">User interface changes</summary>
+        <ul>
+          <li>
+            Redesigned Aqua user interface elements, including new appearances
+            for buttons and progress bars. The red, yellow, and green buttons in
+            the window decorations have also been made smaller, with a slightly
+            changed design.
+          </li>
+          <li>
+            Flexible window resizing from any corner or edge of the window,
+            similar to window resizing in Microsoft Windows and many window
+            managers for X11.
+          </li>
+          <li>
+            The metal finish has also been slightly altered. It is a lighter
+            shade of grey and features a speckled texture.
+          </li>
+          <li>Scrollbar arrows have been removed.</li>
+          <li>
+            Scrolling is reversed by default, to act more like a touch screen
+            device, so that content moves in the direction of finger movement on
+            touch-pad or mouse (with the scrollbar moving in the opposite
+            direction), rather than the scrollbar moving in the direction of
+            finger movement (with the content moving in the opposite direction).
+            Also, like in iOS, scrolling "bounces" when the scroll bar hits the
+            top or bottom of the window.
+          </li>
+          <li>
+            When resizing a window by clicking on the green button (left-top), a
+            transform effect animates the enlargement.
+          </li>
+          <li>New windows fly to the front (like opening an app in iOS).</li>
+          <li>
+            The dashboard is its own space in Mission Control, rather than in
+            previous versions of OS X where the widgets simply flew in and the
+            background dimmed. As a result, there is no more "ripple effect" on
+            the background when adding a widget, as was seen on previous
+            versions of Mac OS X that had the previous dashboard. Users have the
+            option to return the dashboard to its previous configuration in
+            System Preferences.
+          </li>
+          <li>
+            Tabs, when selected, have a recessed and darkened appearance as
+            opposed to previous versions where selected tabs were highlighted in
+            aqua blue.
+          </li>
+        </ul>
       </details>
+      <details>
+        <summary class="level-two">Dropped features</summary>
+        <ul>
+          <li>
+            Save As – replaced by Duplicate and Revert functions due to the
+            introduction of Auto Save and Versions (only applies to applications
+            modified to support Auto Save, such as TextEdit; applications not
+            modified to support Auto Save, such as Microsoft Word, retain this
+            functionality).
+          </li>
+          <li>
+            Front Row, a media center application. The application has been
+            copied into Lion by third-party users, however its incompatibility
+            with iTunes 10.4 renders some features useless.
+          </li>
+          <li>
+            Rosetta, software that makes possible the execution of PowerPC
+            software on x86 hardware, is no longer available. This disables some
+            programs that ran on previous versions of Mac OS X. Programs
+            requiring Rosetta to operate are not allowed to be distributed via
+            the Mac App Store.
+          </li>
+          <li>
+            Adobe Flash Player and Apple's Java Runtime Environment (JRE) are
+            not included in new installations of Lion, but both can still be
+            downloaded and installed manually. Apple is no longer actively
+            maintaining its JRE, but Software Update offers to download Snow
+            Leopard's JRE when a user tries to run a Java program and the JRE is
+            not installed. Programs using Java are not allowed to be distributed
+            via the Mac App Store.
+          </li>
+          <li>
+            iSync, software used for syncing contacts and calendars to
+            third-party mobile phones, is no longer included; however, iSync
+            v3.1.2 from Snow Leopard continues to work.
+          </li>
+          <li>
+            Remote Install Mac OS X, software that allows OS X to be installed
+            using the Remote Disk feature. Using Target Disk Mode, users can
+            circumvent this omission. This is replaced by the Recovery
+            Partition, which does exactly the same thing but without needing an
+            external disk, as long as the hard disk is not damaged.
+          </li>
+          <li>Apple USB Modem is not compatible with Lion.</li>
+          <li>
+            QuickTime Streaming Server, software used to deliver video and audio
+            on request to users over a computer network, including the Internet.
+          </li>
+          <li>
+            WPA Enterprise configuration for wireless networks was replaced by
+            the requirement to obtain a configuration profile.
+          </li>
+          <li>The Post-Install Welcome Video was removed.</li>
+        </ul>
+      </details>
+      <details>
+        <summary class="level-two">Software incompatibilities</summary>
+        <ul>
+          <li>
+            Applications that depend on Rosetta, such as Office for Mac 2004,
+            AppleWorks, and early versions of Quicken for Mac 2007, are no
+            longer supported. This affects applications listed as Classic or
+            PowerPC in System Profiler.
+          </li>
+          <li>
+            Unix package managers for Mac OS X such as Fink and MacPorts require
+            reinstalling and then running Xcode.
+          </li>
+        </ul>
+      </details>
+    </details>
+    <details>
+      <summary class="level-one">Release History</summary>
+      <table>
+        <tbody>
+          <tr>
+            <th>Version</th>
+            <th>Build</th>
+            <th style="width: 128px">Date</th>
+            <th style="width: 86px">>Darwin version</th>
+            <th>Notes</th>
+          </tr>
+          <tr>
+            <td style="text-align: center" rowspan="4">10.7</td>
+            <td>11A511</td>
+            <td>July 20, 2011</td>
+            <td rowspan="2">11.0</td>
+            <td>
+              Original release on the
+              <a href="/wiki/Mac_App_Store" title="Mac App Store"
+                >Mac App Store</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>11A511s</td>
+            <td>August 16, 2011</td>
+            <td>Original retail <i>USB Thumb Drive</i> release</td>
+          </tr>
+          <tr>
+            <td>11A2061</td>
+            <td rowspan="2">July 20, 2011</td>
+            <td rowspan="2">11.0.2</td>
+            <td rowspan="2">
+              For the Mid-2011 Mac Mini (11A2061) and Mid-2011 MacBook Air
+              (11A2063). Available on Lion Internet Recovery (<kbd
+                class="keyboard-key nowrap"
+                >⌘ Cmd</kbd
+              >+<kbd class="keyboard-key nowrap">⌥ Opt</kbd>+<kbd
+                class="keyboard-key nowrap"
+                >R</kbd
+              >
+              upon reboot on Mid-2011 or later Macs)
+            </td>
+          </tr>
+          <tr>
+            <td>11A2063</td>
+          </tr>
+          <tr>
+            <td style="text-align: center" rowspan="2">10.7.1</td>
+            <td>11B26</td>
+            <td rowspan="2">August 16, 2011</td>
+            <td rowspan="2">11.1.0</td>
+            <td>General operating system fixes</td>
+          </tr>
+          <tr>
+            <td>11B2118</td>
+            <td>
+              For the Mid-2011 Mac mini and Mid-2011 MacBook Air. Same as
+              general 10.7.1, plus fixes for the MacBook Air display and power,
+              and a fix for the Mac mini SD card slot.
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: center">10.7.2</td>
+            <td>11C74</td>
+            <td>October 12, 2011</td>
+            <td>11.2</td>
+            <td>
+              Appends MobileMe with iCloud. Various operating system fixes,
+              minor user interface tweaks, Safari 5.1.1, and the ability to boot
+              into Lion Recovery from a Time Machine disk.
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: center">10.7.3</td>
+            <td>11D50</td>
+            <td>February 1, 2012</td>
+            <td>11.3</td>
+            <td>
+              General operating system fixes, Safari 5.1.3, adds Catalan,
+              Croatian, Greek, Hebrew, Romanian, Slovak, Thai, and Ukrainian
+              language support. Also, new High-DPI cursors were added in the
+              asset files, rumored to be for the rumored upcoming Retina
+              display.
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: center">10.7.4</td>
+            <td>11E53</td>
+            <td>May 9, 2012</td>
+            <td>11.4</td>
+            <td>
+              General operating system fixes, improved SMB file copying
+              reliability, Safari 5.1.6.
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: center" rowspan="2">10.7.5</td>
+            <td>11G56</td>
+            <td>September 19, 2012</td>
+            <td>11.4.2</td>
+            <td>
+              General operating system fixes, Safari 5.1.7, adds Gatekeeper.
+            </td>
+          </tr>
+          <tr>
+            <td>11G63</td>
+            <td>October 4, 2012</td>
+            <td>11.4.2<br /><small>xnu-1699.32.7~1</small></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
     </details>
   </body>
 </html>
