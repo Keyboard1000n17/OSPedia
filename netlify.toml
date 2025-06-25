@@ -2,3 +2,9 @@
   from = "/*"
   to = "/src/WinPedia/Home/Homepage.html"
   status = 301
+  
+[[redirects]]
+  from = "/.well-known/discord"
+  to = "/.well-known/discord"
+  status = 200
+
