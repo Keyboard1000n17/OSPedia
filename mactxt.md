@@ -22,6 +22,7 @@ Mac Mini (Early 2009 or later)
 Mac Pro (Early 2008 or later)
 Xserve (Early 2009)
 System features
+
 The menu bar and the Dock are available on each display. Additionally, AirPlay compatible displays such as the Apple TV can be used as an external display.[16][17] Mission Control has been updated to organize and switch between Desktop workspaces independently between multiple displays.[16]
 
 OS X Mavericks introduced App Nap, which sleeps apps that are not currently visible.[18][19][20][21][22] Any app running on Mavericks can be eligible for this feature by default.[20]
