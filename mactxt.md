@@ -1,71 +1,64 @@
-OS X Mavericks (version 10.9) is the 10th major release of macOS, Apple Inc.'s desktop and server operating system for Macintosh computers. OS X Mavericks was announced on June 10, 2013, at WWDC 2013, and was released on October 22, 2013, worldwide. It was also the last version to use a mostly skeuomorphic design; the next release, OS X Yosemite, featured a redesign of the user interface appearance.[6] It was also the first version of macOS to be offered only on the App Store, rather than on a physical disk.
+OS X Yosemite (/joʊˈsɛmɪti/ yoh-SEM-it-ee; version 10.10) is the eleventh major release of macOS, Apple Inc.'s desktop and server operating system for Macintosh computers.
 
-The update emphasized battery life, Finder improvements, other improvements for power users, and increased iCloud integration, as well as bringing more of Apple's iOS apps to OS X. Mavericks was named after the surfing location in Northern California.[7] It also removed some of the skeuomorphic designs from OS X Mountain Lion, and it is the final version of macOS that features the Lucida Grande typeface as the standard system font since Mac OS X Public Beta in 2000.
-
-Mavericks was the first OS X release to be named after a location in California, and the first to be a free upgrade since Mac OS X 10.1 Puma.[8][9][10]
-
-History
-Apple announced OS X Mavericks on June 10, 2013, during the company's Apple Worldwide Developers Conference (WWDC) keynote (which also introduced iOS 7, a revised MacBook Air, the sixth-generation AirPort Extreme, the fifth-generation AirPort Time Capsule, and a redesigned Mac Pro). During a keynote on October 22, 2013, Apple announced that the official release of 10.9 on the Mac App Store would be available immediately, and that unlike previous versions of OS X, 10.9 would be available at no charge to all users running Snow Leopard (10.6.8) or later.[11]
-
-On October 22, 2013, Apple offered free upgrades for life on OS X and iWork.[12]
+OS X Yosemite was announced and released to developers on June 2, 2014, at WWDC 2014 and released to public beta testers on July 24, 2014. Yosemite was released to consumers on October 16, 2014.[4] Following the Northern California landmark-based naming scheme introduced with OS X Mavericks, Yosemite is named after the national park.
 
 System requirements
-All the Macs supporting OS X Mountain Lion support OS X Mavericks. As with Mountain Lion, 2 GB of RAM, 8 GB of available storage, and Mac OS X Snow Leopard or later are required.[13] Mavericks and later versions are all available for free.[14]
+All Macintosh computers capable of running OS X Mountain Lion (v10.8.x) are able to run Yosemite as the two operating systems have the same requirements.[5] However, to take full advantage of the Handoff feature, additional minimum system requirements include a Mac with Bluetooth LE (Bluetooth 4.0). As with Mavericks and Mountain Lion, 2 GB of RAM, 8 GB of available storage, and Mac OS X Snow Leopard 10.6.8 or later are required.
 
-The full list of compatible models:[15]
+These are the models that are compatible with OS X Yosemite:
 
-iMac (Mid 2007 or later)
-MacBook (Aluminum, Late 2008 or later)
-MacBook Air (Late 2008 or later)
-MacBook Pro (Mid 2007 or later)
-Mac Mini (Early 2009 or later)
-Mac Pro (Early 2008 or later)
+iMac (Mid 2007 to Mid 2015)
+MacBook (Late 2008 to Mid 2010)
+12-inch MacBook (2015)
+MacBook Air (Late 2008 to Early 2015)
+MacBook Pro (Mid 2007 to Mid 2015)
+Mac Mini (Early 2009 to Late 2014)
+Mac Pro (Early 2008 to Late 2013)
 Xserve (Early 2009)
-System features
+These are the models that support new features such as Handoff, Instant Hotspot as well as AirDrop between Mac computers and iOS devices:[6]
 
-The menu bar and the Dock are available on each display. Additionally, AirPlay compatible displays such as the Apple TV can be used as an external display.[16][17] Mission Control has been updated to organize and switch between Desktop workspaces independently between multiple displays.[16]
+iMac (Late 2012 or later)
+MacBook (Early 2015 or later)
+MacBook Air (Mid 2012 or later)
+MacBook Pro (Mid 2012 or later)
+Mac Mini (Late 2012 or later)
+Mac Pro (Late 2013)
+Features
+Default wallpaper
+The default desktop wallpaper is an image of Half Dome.
 
-OS X Mavericks introduced App Nap, which sleeps apps that are not currently visible.[18][19][20][21][22] Any app running on Mavericks can be eligible for this feature by default.[20]
+Design
+Yosemite introduced a major overhaul of OS X's user interface, emphasizing flat graphic design over skeuomorphism, following the aesthetic introduced with iOS 7 and certain applications from OS X Mavericks. It is the first major redesign of the OS X user interface since 10.5 Leopard. Other changes include thinner fonts and blurred translucency effects. Some icons have been changed to correspond with those of iOS 7 and iOS 8. Yosemite maintains the OS X desktop metaphor.[7]
 
-Compressed Memory is a virtual memory compression system which automatically compresses data from inactive apps when approaching maximum memory capacity.[18][19][23][24]
+Other design changes include new icons, light and dark color schemes, and the replacement of Lucida Grande with Helvetica Neue as the default system typeface.[8][9][10] Yosemite is the only macOS version to use Helvetica Neue as the default typeface, as in El Capitan it was again changed, this time to Apple's own, newly-designed San Francisco typeface. In Yosemite, the Dock is a 2D translucent rectangular strip instead of a skeuomorphic glass shelf, reminiscent of the Dock design used in early versions of OS X through Tiger and in iOS since iOS 7.
 
-Timer coalescing is a feature that enhances energy efficiency by reducing CPU usage by up to 72 percent.[18][19][25][20][26] This allows MacBooks to run for longer periods of time and desktop Macs to run cooler.[27]
+Continuity
+See also: Ubiquitous computing
+Many of Yosemite's new features focus on the theme of "continuity", increasing its integration with other Apple platforms and services such as iOS and iCloud.[11] The Handoff functionality allows the operating system to integrate with iOS 8 devices over Bluetooth LE and Wi-Fi; users can place and answer phone calls using their iPhone as a conduit, send and receive text messages, activate personal hotspots, or load items being worked on in a mobile app (such as Mail drafts or Numbers spreadsheets) directly into their desktop equivalent.[11]
 
-Apple now supports OpenGL 4.1 Core Profile[28] and OpenCL 1.2.[27] Server Message Block version 2 (SMB2) is now the default protocol for sharing files, rather than AFP.[29][30] This is to increase performance and cross-platform compatibility.
+Notification Center
+Notification Center features a new "Today" view, similar to that in iOS. The Today view can display information and updates from various sources, along with widgets.[8][9] The widgets in the Today view are similar to those of iOS 8.
 
-Some skeuomorphs, such as the leather texture in Calendar, the legal pad theme of Notes, and the book-like appearance of Contacts, have been removed from the UI and replaced with flat design similar to iOS 7.[31][32]
+Photos
+As of OS X 10.10.3, Photos replaces both iPhoto and Aperture.[12] It uses iCloud Photo Library to upload all the user's photos across their devices.
 
-iCloud Keychain stores a user's usernames, passwords and Wi-Fi passwords to allow the user to fill this information into forms when needed.[33][34]
+Other
+Spotlight is a more prominent part of the operating system; it now displays its search box in the center of the screen and can include results from online sources, including Bing, Maps, and Wikipedia.[8] Stock applications such as Safari and Mail have been updated.[13] In particular, many security features have been added to Safari, such as a custom history clearing option that lets users clear history, cookies, and other data from the previous hour, day, or two days. In addition, Apple added DuckDuckGo to its search offerings, a non-tracking search engine that doesn’t store users’ data.[14] Safari allows you to remotely close tabs from an iOS device.[15] Safari now supports browsing in private browsing mode with certain windows (as opposed to all the windows having to be either in or out of private browsing).[16]
 
-The system has native LinkedIn sharing integration.[35][36]
+The green "zoom" button on windows now has a different function in applications that support full-screen mode. Instead of simply enlarging the window, the button now enters full-screen mode, eliminating the full-screen button at the top-right corner of windows that has been present since Mac OS X Lion. However, holding the Option key (⌥) while clicking the zoom button or double-clicking on the window chrome continues to invoke the original behavior.[17]: 123–124 
 
-IPoTB (Internet Protocol over Thunderbolt Bridge) Thunderbolt networking is supported in Mavericks.[37] This feature allows the user to quickly transfer a large amount of data between two Macs.[38]
+JavaScript for Automation (JXA) is the new system-wide support for scripting with JavaScript, built upon JavaScriptCore and the Open Scripting Architecture.[18] It features an Objective-C bridge which enables entire Cocoa applications to be programmed in JavaScript.[19]
 
-Notification Center allows the user to reply to notifications instantly,[39][40] allows websites to send notifications,[41] and, when the user wakes up a Mac that was in a sleep state, displays a summary of missed notifications before the machine is unlocked.[42] Some system alerts, such as low battery, removal of drives without ejecting, and a failed Time Machine backup have been moved to Notification Center.[40]
+Along with other framework changes, CloudKit was integrated in this release.[20] CloudKit functions as a Mobile Backend as a Service (MBaaS) and is one method for app developers to integrate access to Apple’s iCloud servers into their apps.[21]
 
-The "traffic light" close, minimize, and maximize window buttons have appeared somewhat brighter than OS X Lion and OS X Mountain Lion.
+There is a "dark mode" in System Preferences which makes the Dock and menu bar darker.[15]
 
-App features
-Finder gets enhancements such as tabs,[16][43] full-screen support, and document tags.[16][44][45][46] Pinch-to-zoom and swipe-to-navigate-history gestures have been removed, although both are supported anywhere else.
-
-The new iBooks application allows the user to read books purchased through the iBooks Store. The app also allows the user to purchase new content from the iBooks Store,[47] and a night mode to make it easier to read in dark environments.[48]
-
-The new Maps application adds the same functionalities that were featured in iOS Maps.[48][47] Among these new features is the capability to search directions for driving and walking,[43] report problems in the Maps application,[43] and viewing street addresses to Maps via the Contacts application.[43]
-
-The Calendar app has enhancements such as being able to add Facebook events,[49] view the map of a specified location,[43] and an estimate for the travel time to an event.[50][51][16]
-
-The Safari browser has a significantly enhanced JavaScript performance which Apple claims is faster than Chrome and Firefox.[52] A Top Sites view allows the user to quickly access the most viewed sites by default. However, the user can pin or remove websites from the view.[53] The sidebar now allows the user to view their bookmarks, reading list and shared links.[54] Safari can also auto-generate random passwords and remember them[55] through iCloud Keychain.[56]
-
-Additional changes were made to the messaging system. FaceTime is updated so that the user no longer needs to enable camera, in a similar manner to FaceTime in iOS 7.[43] OS X Mavericks 10.9.2 added the option to block users in iMessage.[43]
-
-Removed functionality
-The Open Transport API has been removed.[57] USB syncing of calendar, contacts and other information to iOS devices has been removed, instead requiring the use of iCloud.[58][59] QuickTime 10 no longer supports many older video codecs and converts them to the ProRes format when opened. Older video codecs cannot be viewed in Quick Look.[60] Apple also removed the ability to sync mobile iCloud Notes if iOS devices were upgraded from iOS 8 to iOS 9, effectively forcing all Mavericks users to update or upgrade their computers.
+Beta testing
+Apple initiated a new public beta program for OS X, a practice not seen with its operating systems since 2000's US$29.95 Mac OS X Public Beta, which had preceded the release of Mac OS X v10.0. Yosemite is part of the OS X Beta Seed Program, a public program that allows the first 1 million[22] users to download and test the Yosemite beta at no charge. Beta testers are required to acknowledge the potential risks involved with prerelease software, and sign a non-disclosure agreement (NDA).[23] The program began releasing Public Betas on July 24, 2014.[24] Six public betas of Yosemite were released.
 
 Reception
-OS X Mavericks has received mixed reviews.
+On release, Yosemite received positive reviews, with users praising the simplified user interface. Programmer John Siracusa, who had reviewed every OS release, wrote for Ars Technica that "Yosemite is an aesthetic one-way valve... switching back to Mavericks after a week or two in Yosemite is like returning to iOS 6. Everything looks embarrassingly chunky, glossy, and gaudy."[25] Macworld's review generally praised Yosemite for its design, but noted that it had found WiFi network issues and that Continuity had proved unreliable.[26]
 
-One complaint is that Apple removed the local sync services, which forces users to get iCloud to sync iOS devices with the desktop OS.[58][59] However, this feature has since returned in the 10.9.3 and iTunes 11.2 updates.
+Yosemite faced problems with network stability and the discoveryd DNS program. Because of this, Apple replaced discoveryd with the mDNSResponder system (used in Mavericks) in 10.10.4.[27] Another notable bug experienced on Yosemite was the 'Unicode of death' problem, following a similar bug in 2013, in which a meaningless Arabic text string could crash applications using the system text-display APIs.[28] Some users who upgraded to Yosemite complained that the Finder fails to show the contents of folders.[29]
 
-The Verge stated that OS X Mavericks was "a gentle evolution of the Mac operating system".[61]
-
-CNET generalized OS X Mavericks as a "solid foundation" to OS X, lacking new features but praised it as a free update that incorporates additional iOS features.[62] Criticism was brought to the insufficient updates to existing applications.[62]
+Spotlight on Yosemite by default reports the user's current location (at the city level) and all their search queries to Apple and third parties.[30][31][32][33] Reporting by Spotlight can be disabled by the user, although, even if this is done, the Safari web browser will continue to send search terms to Apple unless the function is separately disabled.
