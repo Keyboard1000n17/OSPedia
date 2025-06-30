@@ -43,13 +43,13 @@ Photos
 As of OS X 10.10.3, Photos replaces both iPhoto and Aperture.[12] It uses iCloud Photo Library to upload all the user's photos across their devices.
 
 Other
-Spotlight is a more prominent part of the operating system; it now displays its search box in the center of the screen and can include results from online sources, including Bing, Maps, and Wikipedia.[8] Stock applications such as Safari and Mail have been updated.[13] In particular, many security features have been added to Safari, such as a custom history clearing option that lets users clear history, cookies, and other data from the previous hour, day, or two days. In addition, Apple added DuckDuckGo to its search offerings, a non-tracking search engine that doesn’t store users’ data.[14] Safari allows you to remotely close tabs from an iOS device.[15] Safari now supports browsing in private browsing mode with certain windows (as opposed to all the windows having to be either in or out of private browsing).[16]
+Spotlight is a more prominent part of the operating system; it now displays its search box in the center of the screen and can include results from online sources, including Bing, Maps, and Wikipedia.[8] Stock applications such as Safari and Mail have been updated.[13] In particular, many security features have been added to Safari, such as a custom history clearing option that lets users clear history, cookies, and other data from the previous hour, day, or two days. In addition, Apple added DuckDuckGo to its search offerings, a non-tracking search engine that doesn't store users' data.[14] Safari allows you to remotely close tabs from an iOS device.[15] Safari now supports browsing in private browsing mode with certain windows (as opposed to all the windows having to be either in or out of private browsing).[16]
 
 The green "zoom" button on windows now has a different function in applications that support full-screen mode. Instead of simply enlarging the window, the button now enters full-screen mode, eliminating the full-screen button at the top-right corner of windows that has been present since Mac OS X Lion. However, holding the Option key (⌥) while clicking the zoom button or double-clicking on the window chrome continues to invoke the original behavior.[17]: 123–124
 
 JavaScript for Automation (JXA) is the new system-wide support for scripting with JavaScript, built upon JavaScriptCore and the Open Scripting Architecture.[18] It features an Objective-C bridge which enables entire Cocoa applications to be programmed in JavaScript.[19]
 
-Along with other framework changes, CloudKit was integrated in this release.[20] CloudKit functions as a Mobile Backend as a Service (MBaaS) and is one method for app developers to integrate access to Apple’s iCloud servers into their apps.[21]
+Along with other framework changes, CloudKit was integrated in this release.[20] CloudKit functions as a Mobile Backend as a Service (MBaaS) and is one method for app developers to integrate access to Apple's iCloud servers into their apps.[21]
 
 There is a "dark mode" in System Preferences which makes the Dock and menu bar darker.[15]
 
