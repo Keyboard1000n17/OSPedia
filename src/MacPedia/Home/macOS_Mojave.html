@@ -23,6 +23,462 @@
         </ul>
       </nav>
     </header>
+    <span id="heading">macOS Mojave</span>
+    <p>
+      <i
+        >macOS 10.14 refers to this version. For macOS 14, refer to macOS
+        Sonoma.</i
+      >
+    </p>
+    <p>
+      macOS Mojave (pronounced mo-HAH-vee) is the fifteenth major release of
+      macOS, Apple Inc.'s desktop operating system for Macintosh computers.
+      macOS Mojave was announced at Apple's Worldwide Developers Conference on
+      June 4, 2018, and was released to the public on September 24. The
+      operating system's name refers to the Mojave Desert, continuing the use of
+      California-themed names that began with OS X Mavericks. It succeeded macOS
+      High Sierra and was followed by macOS Catalina. macOS Mojave is the last
+      version of macOS that features the iTunes and Dashboard apps.
+    </p>
+    <div id="info">
+      <img
+        src="../Images/Icons/macOS_Mojave.png"
+        alt="macOS Mojave logo"
+        style="height: 35vh"
+      />
+      <p>Developed by: Apple Computer, Inc.</p>
+      <p>
+        General availability: September 24, 2018 (version 10.14 build 18A391 -
+        original Mac App Store release)
+      </p>
+      <p>
+        Last release: July 21, 2021 (version 10.14.6 build 18G9323 - final
+        security update; scroll down and click on "Release History" for all
+        builds)
+      </p>
+      <p>Preceded by: macOS Sierra (version 10.12)</p>
+      <p>Succeeded by: macOS Mojave (version 10.14)</p>
+      <p>Kernel type: Hybrid (XNU)</p>
+      <p>Support status: Historical and no longer supported</p>
+    </div>
+    <p>
+      macOS Mojave brings several iOS apps to the desktop operating system,
+      including Apple News, Voice Memos, and Home. It also includes a more
+      comprehensive "dark mode", is the final version of macOS to support 32-bit
+      application software, is the last version of the macOS capable of being
+      booted from an HFS+ partition without third-party patching, and is also
+      the last version of macOS to support the iPhoto app, which had already
+      been superseded in OS X Yosemite (10.10) by the newer Photos app.
+    </p>
+    <p>
+      macOS Mojave was well received and was supplemented by point releases
+      after launch.
+    </p>
+    <details>
+      <summary class="level-one">System requirements</summary>
+      <p>
+        macOS Mojave requires a GPU that supports Metal, and the list of
+        officially-compatible systems is more restrictive than the previous
+        version, macOS High Sierra. Mojave drops support for various Macs
+        released from late 2009 to 2011. Compatible models are the following
+        Macintosh computers running OS X Mountain Lion or later:
+      </p>
+      <ul>
+        <li>iMac (Late 2012 or later)</li>
+        <li>iMac Pro (2017)</li>
+        <li>MacBook (Early 2015 or later)</li>
+        <li>MacBook Air (Mid 2012 or later)</li>
+        <li>MacBook Pro (Mid 2012 or later)</li>
+        <li>Mac Mini (Late 2012 or later)</li>
+        <li>
+          Mac Pro (2013, 2010-2012 supported with a Metal-capable graphics
+          card)/li>
+        </li>
+      </ul>
+
+      <p>
+        macOS Mojave requires at least 2 GB of RAM as well as 12.5 GB of
+        available disk space to upgrade from OS X El Capitan, macOS Sierra, or
+        macOS High Sierra, or 18.5 GB of disk space to upgrade from OS X
+        Yosemite and earlier releases. Some features are not available on all
+        compatible models. Mojave installations convert the installation volume
+        to Apple File System (APFS), if the volume had not previously been
+        converted from HFS+.
+      </p>
+    </details>
+    <details>
+      <summary class="level-one">Features</summary>
+      <span class="level-two">System updates</span>
+      <p>
+        macOS Mojave deprecates support for several legacy features of the OS.
+        The graphics frameworks OpenGL and OpenCL are still supported by the
+        operating system, but will no longer be maintained; developers are
+        encouraged to use Apple's Metal library instead.
+      </p>
+      <p>
+        OpenGL is a cross-platform graphics framework designed to support a wide
+        range of processors. Apple chose OpenGL in the late 1990s to build
+        support for software graphics rendering into the Mac, after abandoning
+        QuickDraw 3D. At the time, moving to OpenGL allowed Apple to take
+        advantage of existing libraries that enabled hardware acceleration on a
+        variety of different GPUs. As time went on, Apple has shifted its
+        efforts towards building its hardware platforms for mobile and desktop
+        use. Metal makes use of the homogenized hardware by abandoning the
+        abstraction layer and running on the "bare metal". Metal reduces CPU
+        load, shifting more tasks to the GPU. It reduces driver overhead and
+        improves multithreading, allowing every CPU thread to send commands to
+        the GPU.
+      </p>
+      <p>
+        macOS does not natively support Vulkan, the Khronos group's official
+        successor to OpenGL. The MoltenVK library can be used as a bridge,
+        translating most of the Vulkan 1.0 API into the Metal API.
+      </p>
+      <p>
+        Continuing the process started in macOS High Sierra (10.13), which
+        issued warnings about compatibility with 32-bit applications, Mojave
+        issues warnings when opening 32-bit apps that they will not be supported
+        in future updates. In macOS Mojave 10.14, this alert appears once every
+        30 days when launching the app, as macOS 10.15 will not support 32-bit
+        applications.
+      </p>
+      <p>
+        When Mojave is installed, it will convert solid-state drives (SSDs),
+        hard disk drives (HDDs), and Fusion Drives, from HFS Plus to APFS. On
+        Fusion Drives using APFS, files will be moved to the SSD based on the
+        file's frequency of use and its SSD performance profile. APFS will also
+        store all metadata for a Fusion Drive's file system on the SSD.
+      </p>
+      <p>
+        New data protections require applications to get permission from the
+        user before using the Mac camera and microphone or accessing system data
+        like user Mail history and Messages database.
+      </p>
+      <span class="level-two">Removed features</span>
+      <ul>
+        <li>
+          Mojave removes integrations with Facebook, Twitter, LinkedIn, Vimeo,
+          and Flickr, which were added in OS X Mountain Lion and Mavericks.
+        </li>
+        <li>
+          Mojave also removes support for sub-pixel rendering of text. The
+          feature was previously used on non-Retina displays to improve the
+          appearance of text on screen.
+        </li>
+        <li>
+          The only supported Nvidia graphics cards are the Quadro K5000 and
+          GeForce GTX 680 Mac Edition.
+        </li>
+      </ul>
+      <span class="level-two">Applications</span>
+      <p>
+        Mojave features changes to existing applications as well as new ones.
+        Finder now has metadata preview accessed via View > Show Preview, and
+        many other updates, including a Gallery View (replacing Cover Flow) that
+        lets users browse through files visually. After a screenshot is taken,
+        the image appears in the corner of the display, as with iOS. The
+        screenshot software can now record video, choose where to save files,
+        and be opened via <kbd>⇧ Shift</kbd> + <kbd>⌘ Command</kbd> +
+        <kbd>5</kbd>.
+      </p>
+      <p>
+        Safari's Tracking Prevention features now prevent social media "Like" or
+        "Share" buttons and comment widgets from tracking users without
+        permission. The browser also sends less information to web servers about
+        the user's system, reducing the chance of being tracked based on system
+        configuration. It can also automatically create, autofill, and store
+        strong passwords when users create new online accounts; it also flags
+        reused passwords so users can change them.
+      </p>
+      <p>
+        A new Screenshot app was added to macOS Mojave to replace the Grab app.
+        Screenshot can capture a selected area, window or the entire screen as
+        well as screen record a selected area or the entire display. The
+        Screenshot app is located in the /Applications/Utilities/ folder, as was
+        the Grab app. Screenshot can also be accessed by pressing
+        <kbd>⇧ Shift</kbd> + <kbd>⌘ Command</kbd> + <kbd>3</kbd>.
+      </p>
+      <p>
+        macOS 10.14.1, released on October 30, 2018, adds Group FaceTime, which
+        lets users chat with up to 32 people at the same time, using video or
+        audio from an iPhone, iPad or Mac, or audio from Apple Watch.
+        Participants can join in mid-conversation.
+      </p>
+      <p>
+        The Mac App Store was rewritten from the ground up and features a new
+        interface and editorial content, similar to the iOS App Store. A new
+        'Discover' tab highlights new and updated apps; Create, Work, Play and
+        Develop tabs help users find apps for a specific project or purpose.
+      </p>
+      <p>
+        Four new apps (News, Stocks, Voice Memos and Home) are ported to macOS
+        Mojave from iOS, with Apple implementing a subset of UIKit on the
+        desktop OS. Third-party developers would be able to port iOS
+        applications to macOS in 2019.
+      </p>
+      <p>
+        With Home, Mac users can control their HomeKit-enabled accessories to do
+        things like turn lights off and on or adjust thermostat settings. Voice
+        Memos lets users record audio (e.g., personal notes, lectures, meetings,
+        interviews, or song ideas), and access them from iPhone, iPad or Mac.
+        Stocks delivers curated market news alongside a personalized watchlist,
+        with quotes and charts.
+      </p>
+      <p>A few security fixes were made.</p>
+    </details>
+    <details>
+      <summary class="level-one">Release History</summary>
+      <table>
+        <tr>
+          <th>Version</th>
+          <th>Build</th>
+          <th>Date</th>
+          <th>Darwin version</th>
+          <th>Notes</th>
+        </tr>
+        <tr>
+          <td>10.14</td>
+          <td>18A391</td>
+          <td>September 24, 2018</td>
+          <td>18.0.0</td>
+          <td>Original Mac App Store release</td>
+        </tr>
+        <tr>
+          <td rowspan="3">10.14.1</td>
+          <td>18B75</td>
+          <td rowspan="3">October 30, 2018</td>
+          <td>18.2.0<br /><small>xnu-4903.221.2~2</small></td>
+          <td>About the macOS Mojave 10.14.1 Update</td>
+        </tr>
+        <tr>
+          <td>18B2107</td>
+          <td rowspan="2"></td>
+          <td rowspan="2">
+            Added support for new Vega GPUs in MacBook Pro and MacBook Air.
+          </td>
+        </tr>
+        <tr>
+          <td>18B3094</td>
+        </tr>
+        <tr>
+          <td>10.14.2</td>
+          <td>18C54</td>
+          <td>December 5, 2018</td>
+          <td>18.2.0<br /><small>xnu-4903.231.4~2</small></td>
+          <td>About the macOS Mojave 10.14.2 Update</td>
+        </tr>
+        <tr>
+          <td rowspan="3">10.14.3</td>
+          <td>18D42</td>
+          <td rowspan="2">January 22, 2019</td>
+          <td rowspan="3">18.2.0<br /><small>xnu-4903.241.1~4</small></td>
+          <td rowspan="2">About the macOS Mojave 10.14.3 Update</td>
+        </tr>
+        <tr>
+          <td>18D43</td>
+        </tr>
+        <tr>
+          <td>18D109</td>
+          <td>February 7, 2019</td>
+          <td>
+            About the security content of macOS Mojave 10.14.3 Supplemental
+            Update
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">10.14.4</td>
+          <td>18E226</td>
+          <td rowspan="2">March 25, 2019</td>
+          <td rowspan="2">18.5.0<br /><small>xnu-4903.251.3~3</small></td>
+          <td rowspan="2">About the macOS Mojave 10.14.4 Update</td>
+        </tr>
+        <tr>
+          <td>18E227</td>
+        </tr>
+        <tr>
+          <td>10.14.5</td>
+          <td>18F132</td>
+          <td>May 13, 2019</td>
+          <td>18.6.0<br /><small>xnu-4903.261.4~2</small></td>
+          <td>About the macOS Mojave 10.14.5 Update</td>
+        </tr>
+        <tr>
+          <td rowspan="19">10.14.6</td>
+          <td>18G84</td>
+          <td>July 22, 2019</td>
+          <td rowspan="2">18.7.0 <br /><small>xnu-4903.270.47~4</small></td>
+          <td>About the macOS Mojave 10.14.6 Update</td>
+        </tr>
+        <tr>
+          <td>18G87</td>
+          <td>August 1, 2019</td>
+          <td>
+            Fixed a "Wake from Sleep" issue where Mac computers would not wake
+            from sleep properly.
+          </td>
+        </tr>
+        <tr>
+          <td>18G95</td>
+          <td>August 26, 2019</td>
+          <td rowspan="2">18.7.0<br /><small>xnu-4903.271.2~2</small></td>
+          <td>
+            Security updates and bug fixes
+            <ul>
+              <li>Solved: MacBook Shuts Down During Sleep</li>
+              <li>
+                Fixed: Performance degradation when processing large files.
+              </li>
+              <li>
+                Fixed: iLife apps (Pages, Keynote, Numbers, GarageBand, and
+                iMovie) not updating.
+              </li>
+              <li>
+                Re-fixed a vulnerability that was accidentally left unpatched in
+                a previous update, which could have led to hacking attempts
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>18G103</td>
+          <td>September 26, 2019</td>
+          <td>Security Updates and Bug Fixes</td>
+        </tr>
+        <tr>
+          <td>18G1012</td>
+          <td>October 29, 2019</td>
+          <td>18.7.0<br /><small>xnu-4903.278.12~4</small></td>
+          <td>About the security content of Security Update 2019-001</td>
+        </tr>
+        <tr>
+          <td>18G2022</td>
+          <td>December 10, 2019</td>
+          <td>18.7.0<br /><small>xnu-4903.278.19~1</small></td>
+          <td>About the security content of Security Update 2019-002</td>
+        </tr>
+        <tr>
+          <td>18G3020</td>
+          <td>January 28, 2020</td>
+          <td>18.7.0<br /><small>xnu-4903.278.25~1</small></td>
+          <td>About the security content of Security Update 2020-001</td>
+        </tr>
+        <tr>
+          <td>18G4032</td>
+          <td>March 24, 2020</td>
+          <td>18.7.0<br /><small>xnu-4903.278.28~1</small></td>
+          <td>About the security content of Security Update 2020-002</td>
+        </tr>
+        <tr>
+          <td>18G5033</td>
+          <td>May 25, 2020</td>
+          <td>18.7.0<br /><small>xnu-4903.278.35~1</small></td>
+          <td>About the security content of Security Update 2020-003</td>
+        </tr>
+        <tr>
+          <td>18G6020</td>
+          <td>July 15, 2020</td>
+          <td>18.7.0<br /><small>xnu-4903.278.43~1</small></td>
+          <td>About the security content of Security Update 2020-004</td>
+        </tr>
+        <tr>
+          <td>18G6032</td>
+          <td>September 24, 2020</td>
+          <td>
+            18.7.0<br /><small>xnu-4903.278.44~1<br />Pulled 2020-09-30</small>
+          </td>
+          <td>About the security content of Security Update 2020-005</td>
+        </tr>
+        <tr>
+          <td>18G6032</td>
+          <td>October 1, 2020</td>
+          <td>18.7.0<br /><small>xnu-4903.278.44~1</small></td>
+          <td>
+            About the security content of macOS 10.14.6 Supplemental Update
+          </td>
+        </tr>
+        <tr>
+          <td>18G6042</td>
+          <td>November 12, 2020</td>
+          <td>18.7.0<br /><small>xnu-4903.278.44.0.2~1</small></td>
+          <td>About the security content of Security Update 2020-006</td>
+        </tr>
+        <tr>
+          <td>18G7016</td>
+          <td>December 14, 2020</td>
+          <td>18.7.0<br /><small>xnu-4903.278.51~1</small></td>
+          <td>About the security content of Security Update 2020-007</td>
+        </tr>
+        <tr>
+          <td>18G8012</td>
+          <td>February 1, 2021</td>
+          <td rowspan="2">18.7.0<br /><small>xnu-4903.278.56~1</small></td>
+          <td>About the security content of Security Update 2021-001</td>
+        </tr>
+        <tr>
+          <td>18G8022</td>
+          <td>February 9, 2021</td>
+          <td>About the security content of Security Update 2021-002</td>
+        </tr>
+        <tr>
+          <td>18G9028</td>
+          <td>April 26, 2021</td>
+          <td>18.7.0<br /><small>xnu-4903.278.65~1</small></td>
+          <td>About the security content of Security Update 2021-003</td>
+        </tr>
+        <tr>
+          <td>18G9216</td>
+          <td>May 24, 2021</td>
+          <td>18.7.0<br /><small>xnu-4903.278.68~1</small></td>
+          <td>About the security content of Security Update 2021-004</td>
+        </tr>
+        <tr>
+          <td>18G9323</td>
+          <td>July 21, 2021</td>
+          <td>18.7.0<br /><small>xnu-4903.278.70~1</small></td>
+          <td>About the security content of Security Update 2021-005</td>
+        </tr>
+      </table>
+    </details>
+    <details>
+      <summary class="level-one">User interface</summary>
+      <p>
+        Mojave revamps Dark Mode. A light-on-dark color scheme, it initially
+        affected only the dock, menu bar, and drop-down menus, while here, it
+        darkens the entire user interface to make content stand out while the
+        interface recedes. Users can choose dark or light mode when installing
+        Mojave, or any time thereafter from System Preferences. All of the
+        built-in apps support the revamp. App developers can implement the
+        feature in their apps via a public API.
+      </p>
+      <p>
+        Stacks, a feature introduced in Mac OS X Leopard, now lets users group
+        desktop files into groups based on file attributes such as file kind,
+        date last opened, date modified, date created, name and tags. This is
+        accessed via View > Use Stacks.
+      </p>
+      <p>
+        macOS Mojave features a new Dynamic Desktop that automatically changes
+        specially made desktop backgrounds (two of which are included) to match
+        the time of day.
+      </p>
+      <p>
+        The Dock has a space for recently used apps that have not previously
+        been added to the Dock.
+      </p>
+      <p>
+        macOS update functionality has been moved back to System Preferences
+        from the Mac App Store. In OS X Mountain Lion (10.8), system and app
+        updates moved to the App Store from Software Update.
+      </p>
+      <figure class="UI-Screenshots">
+        <img
+          src="../Images/UI/macOS_Mojave.jpg"
+          class="UI-Screenshots"
+          alt="A screenshot of macOS Mojave"
+        />
+        <figcaption>A screenshot of macOS Mojave.</figcaption>
+      </figure>
+    </details>
     <footer></footer>
   </body>
 </html>
