@@ -23,6 +23,520 @@
         </ul>
       </nav>
     </header>
+    <span id="heading">macOS Catalina</span>
+    <p>
+      <i
+        >macOS 10.15 refers to this version. For macOS 15, refer to macOS
+        Seqouia.</i
+      >
+    </p>
+    <p>
+      macOS Catalina (version 10.15) is the sixteenth major release of macOS,
+      Apple Inc.'s desktop operating system for Macintosh computers. It is the
+      successor to macOS Mojave and was announced at WWDC 2019 on June 3, 2019
+      and released to the public on October 7, 2019. Catalina is the first
+      version of macOS to support only 64-bit applications and the first to
+      include Activation Lock. It is also the last version of macOS to have the
+      major version number be 10.x; its successor, Big Sur, released on November
+      12, 2020, is version 11. In order to increase web compatibility, Safari,
+      Chromium and Firefox have frozen the OS in the user agent running in
+      subsequent releases of macOS at 10.15.7 Catalina.
+    </p>
+        <div id="info">
+      <img
+        src="../Images/Icons/macOS_Catalina.png"
+        alt="macOS Catalina logo"
+        style="height: 35vh"
+      />
+      <p>Developed by: Apple Computer, Inc.</p>
+      <p>
+        General availability: October 7, 2019 (version 10.15 build 19A583 -
+        original Software Update release)
+      </p>
+      <p>
+        Last release: July 20, 2022 (version 10.15.7 build 19H2026 - final
+        security update; scroll down and click on "Release History" for all
+        builds)
+      </p>
+      <p>Preceded by: macOS Mojave (version 10.14)</p>
+      <p>Succeeded by: macOS Big Sur (version 11)</p>
+      <p>Kernel type: Hybrid (XNU)</p>
+      <p>Support status: Historical and no longer supported</p>
+    </div>
+    <p>
+      The operating system is named after Santa Catalina Island, which is
+      located off the coast of southern California.
+    </p>
+    <p>
+      macOS Catalina is the final version of macOS that supports the Unibody
+      MacBook Pro, as its successor, macOS Big Sur, drops support for its
+      mid-2012 and final model. The Unibody MacBook Pro was a design of the
+      MacBook Pro used from 2008-2012.
+    </p>
+    <details>
+      <summary class="level-one">System requirements</summary>
+      <p>
+        All standard configuration Macs that supported macOS Mojave support
+        macOS Catalina. 2010 to 2012 Mac Pros, which could run Mojave only with
+        a GPU upgrade, are no longer supported. Catalina requires 4 GB of
+        memory, an increase over the 2 GB required by Lion through Mojave.
+      </p>
+      <ul>
+        <li>iMac (Late 2012 or later)</li>
+        <li>iMac Pro (2017)</li>
+        <li>MacBook (Early 2015 or later)</li>
+        <li>MacBook Air (Mid 2012 or later)</li>
+        <li>MacBook Pro (Mid 2012 or later)</li>
+        <li>Mac Mini (Late 2012 or later)</li>
+        <li>Mac Pro (Late 2013 or later)</li>
+      </ul>
+      <p>
+        It is unofficially possible to install macOS Catalina on many older
+        Macintosh computers that are not officially supported by Apple. This
+        requires using a patch to modify the install image. "dosdude1"'s
+        Catalina Patcher is an example of those tools, which can be used to
+        Install Catalina on machines between 2008 and 2011.
+      </p>
+    </details>
+    <details>
+      <summary class="level-one">Features</summary>
+      <span class="level-two">System</span>
+      <div class="div-level-two">
+        <span class="level-three">Catalyst</span>
+        <p>
+          Catalyst is a new software-development tool that allows developers to
+          write apps that can run on macOS, iOS and iPadOS. Apple demonstrated
+          several ported apps, including Jira and Twitter (after the latter
+          discontinued its macOS app in February 2018).
+        </p>
+        <span class="level-three">System extensions</span>
+        <p>
+          An upgrade from Kexts. System extensions avoid the problems of Kexts
+          (kernel extensions). There are 3 kinds of System extensions: Network
+          Extensions, Endpoint Security Extensions, and Driver Extensions.
+          System extensions run in userspace, outside of the kernel. Catalina
+          will be the last version of macOS to support legacy system extensions.
+        </p>
+        <span class="level-three">DriverKit</span>
+        <p>
+          A replacement for IOKit device drivers, driver extensions are built
+          using DriverKit. DriverKit is a new SDK with all-new frameworks based
+          on IOKit, but updated and modernized. It is designed for building
+          device drivers in userspace, outside of the kernel.
+        </p>
+        <span class="level-three">Gatekeeper</span>
+        <p>
+          Mac apps, installer packages, and kernel extensions that are signed
+          with a Developer ID must be notarized by Apple to run on macOS
+          Catalina.
+        </p>
+        <span class="level-three">Activation Lock</span>
+        <p>
+          Activation Lock helps prevent the unauthorized use and drive erasure
+          of devices with an Apple T2 security chip (2018, 2019, and 2020
+          MacBook Pro; 2020 5K iMac; 2018 MacBook Air, iMac Pro; 2018 Mac Mini;
+          2019 Mac Pro).
+        </p>
+        <span class="level-three">Dedicated system volume</span>
+        <p>
+          The system runs on its own read-only volume, separate from all other
+          data on the Mac.
+        </p>
+        <span class="level-three">Voice control</span>
+        <p>
+          Users can give detailed voice commands to applications. On-device
+          machine processing is used to offer better navigation.
+        </p>
+        <span class="level-three">Sidecar</span>
+        <p>
+          Sidecar allows a Mac to use an iPad (running iPadOS) as a wireless
+          external display. With Apple Pencil, the device can also be used as a
+          graphics tablet for software running on the computer. Sidecar requires
+          a Mac with Intel Skylake CPUs and newer (such as the fourth-generation
+          MacBook Pro), and an iPad that supports Apple Pencil.
+        </p>
+        <span class="level-three">Support for wireless game controllers</span>
+        <p>
+          The Game Controller framework adds support for two major console game
+          controllers: the PlayStation 4's DualShock 4 and the Xbox One
+          controller.
+        </p>
+        <span class="level-three">Time Machine</span>
+        <p>
+          A number of under-the-hood changes were made to Time Machine, the
+          backup software. For example, the manner in which backup data is
+          stored on network-attached devices was changed, and this change is not
+          backwards-compatible with earlier versions of macOS. Apple declined to
+          document these changes, but some of them have been noted.
+        </p>
+      </div>
+      <span class="level-two">Applications</span>
+      <div class="div-level-two">
+        <span class="level-three">iTunes</span>
+        <p>
+          iTunes is replaced by separate Music, Podcasts, TV and Books apps, in
+          line with iOS. iOS device management is now conducted via Finder. The
+          TV app on Mac supports Dolby Atmos, Dolby Vision, and HDR10 on
+          MacBooks released in 2018 or later, while 4K HDR playback is supported
+          on Macs released in 2018 or later when connected to a compatible
+          display.
+        </p>
+        <span class="level-three">Find My</span>
+        <p>
+          Find My Mac and Find My Friends are merged into an application called
+          Find My.
+        </p>
+        <span class="level-three">Notes</span>
+        <p>
+          The Notes application was enhanced to allow better management of
+          checklists and the ability to share folders with other users. The
+          application version was incremented from 4.6 (in macOS 10.14 Mojave)
+          to 4.7.
+        </p>
+        <span class="level-three">Reminders</span>
+        <p>
+          Among other visual and functional overhauls, attachments can be added
+          to reminders and Siri can intelligently estimate when to remind the
+          user about an event.
+        </p>
+        <span class="level-three">Voice Memos</span>
+        <p>
+          The Voice Memos application, first ported from iOS to the Mac in macOS
+          10.14 Mojave as version 2.0, was incremented to version 2.1.
+        </p>
+      </div>
+      <span class="level-two">Removed or changed components</span>
+      <ul>
+        <li>
+          macOS Catalina exclusively supports 64-bit applications. 32-bit
+          applications no longer run (including all software that utilizes the
+          Carbon API as well as QuickTime 7 applications, image, audio and video
+          codecs). Apple has also removed all 32-bit-only apps from the Mac App
+          Store.
+        </li>
+        <li>
+          Z shell (executable "zsh") is the default login shell and interactive
+          shell in macOS Catalina, replacing Bash, the default shell since Mac
+          OS X Panther in 2003. Bash continues to be available in macOS
+          Catalina, along with other shells such as csh/tcsh and ksh.
+        </li>
+        <li>Dashboard has been removed in macOS Catalina.</li>
+        <li>
+          The ability to add Backgrounds in Photo Booth was removed in macOS
+          Catalina.
+        </li>
+        <li>
+          The command-line interface GNU Emacs application was removed in macOS
+          Catalina.
+        </li>
+        <li>
+          Built-in support for Perl, Python 2.7 and Ruby are included in macOS
+          for compatibility with legacy software. Future versions of macOS will
+          not include scripting language runtimes by default, possibly requiring
+          users to install additional packages.
+        </li>
+        <li>
+          Legacy AirDrop for connecting with Macs running Mac OS X Lion,
+          Mountain Lion and Mavericks, or 2011 and older Macs has been removed.
+        </li>
+        <li>
+          Support for legacy Safari extensions such as uBlock Origin, and WebSQL
+          has been removed in Safari 13.
+        </li>
+        <li>Circular app icons now have outlines matching their main color.</li>
+      </ul>
+      <span class="level-two">Security</span>
+      <p>
+        Ars Technica reported that macOS Catalina contained a critical privilege
+        escalation vulnerability, which resulted in a backdoor being installed
+        if users visited a Hong Kong pro-democracy website. The vulnerability
+        was reported to Apple in August 2021 and patched in a Catalina update in
+        September, but it had already been patched by Apple in macOS Big Sur
+        11.2, released 234 days earlier on February 1. Security experts have
+        criticized Apple for not patching critical known vulnerabilities in
+        older versions and for not being transparent about older versions only
+        receiving some, but not all, security patches. The latest major release
+        of Apple's operating systems (macOS, iOS, and others) receive all
+        security updates.
+      </p>
+    </details>
+    <details>
+      <summary class="level-one">Release History</summary>
+      <table>
+        <tbody>
+          <tr>
+            <th class="top-left">Version</th>
+            <th class="top">Build</th>
+            <th class="top">Date</th>
+            <th class="top">Darwin version</th>
+            <th class="top-right">Release Notes</th>
+          </tr>
+          <tr>
+            <td class="left" rowspan="3">10.15</th>
+            <td>19A583</td>
+            <td>October 7, 2019</td>
+            <td rowspan="3">19.0.0</td>
+            <td class="right">Original Software Update release</td>
+          </tr>
+          <tr>
+            <td>19A602</td>
+            <td>October 15, 2019</td>
+            <td class="right">Supplemental update</td>
+          </tr>
+          <tr>
+            <td>19A603</td>
+            <td>October 21, 2019</td>
+            <td class="right">Revised Supplemental update</td>
+          </tr>
+          <tr>
+            <td class="left">10.15.1</th>
+            <td>19B88</td>
+            <td>October 29, 2019</td>
+            <td>19.0.0<br /><small>xnu-6153.41.3~29</small></td>
+            <td class="right">About the macOS Catalina 10.15.1 Update</td>
+          </tr>
+          <tr>
+            <td class="left" rowspan="2">10.15.2</th>
+            <td>19C57</td>
+            <td rowspan="2">December 10, 2019</td>
+            <td rowspan="2">19.2.0<br /><small>xnu-6153.61.1~20</small></td>
+            <td class="right" rowspan="2">About the macOS Catalina 10.15.2 Update</td>
+          </tr>
+          <tr>
+            <td>19C58</td>
+          </tr>
+          <tr>
+            <td class="left">10.15.3</th>
+            <td>19D76</td>
+            <td>January 28, 2020</td>
+            <td>19.3.0<br /><small>xnu-6153.81.5~1</small></td>
+            <td class="right">About the macOS Catalina 10.15.3 Update</td>
+          </tr>
+          <tr>
+            <td class="left" rowspan="2">10.15.4</th>
+            <td>19E266</td>
+            <td>March 24, 2020</td>
+            <td rowspan="2">19.4.0<br /><small>xnu-6153.101.6~15</small></td>
+            <td class="right">About the macOS Catalina 10.15.4 Update</td>
+          </tr>
+          <tr>
+            <td>19E287</td>
+            <td>April 8, 2020</td>
+            <td class="right">Supplemental update</td>
+          </tr>
+          <tr>
+            <td class="left" rowspan="2">10.15.5</th>
+            <td>19F96</td>
+            <td>May 26, 2020</td>
+            <td>19.5.0<br /><small>xnu-6153.121.1~7</small></td>
+            <td class="right">About the macOS Catalina 10.15.5 Update</td>
+          </tr>
+          <tr>
+            <td>19F101</td>
+            <td>June 1, 2020</td>
+            <td>19.5.0<br /><small>xnu-6153.121.2~2</small></td>
+            <td class="right">Supplemental update</td>
+          </tr>
+          <tr>
+            <td class="left" rowspan="2">10.15.6</th>
+            <td>19G73</td>
+            <td>July 15, 2020</td>
+            <td>
+              19.6.0<br /><small>xnu-6153.141.1~9</small><br /><small
+                >Jul 5 00:43:10 PDT 2020</small
+              >
+            </td>
+            <td class="right">About the macOS Catalina 10.15.6 Update</td>
+          </tr>
+          <tr>
+            <td>19G2021</td>
+            <td>August 12, 2020</td>
+            <td>
+              19.6.0<br /><small>xnu-6153.141.1~1</small><br /><small
+                >Jun 18 20:49:00 PDT 2020</small
+              >
+            </td>
+            <td class="right">Supplemental update</td>
+          </tr>
+          <tr>
+            <td class="bottom-left" rowspan="18">10.15.7</th>
+            <td>19H2</td>
+            <td>September 24, 2020</td>
+            <td rowspan="2">
+              19.6.0<br /><small>xnu-6153.141.2~1</small><br /><small
+                >Mon Aug 31 22:12:52 PDT 2020</small
+              >
+            </td>
+            <td class="right" rowspan="2">About the macOS Catalina 10.15.7 Update</td>
+          </tr>
+          <tr>
+            <td>19H4</td>
+            <td>October 27, 2020</td>
+          </tr>
+          <tr>
+            <td>19H15</td>
+            <td>November 5, 2020</td>
+            <td>
+              19.6.0<br /><small>xnu-6153.141.2.2~1</small><br /><small
+                >Thu Oct 29 22:56:45 PDT 2020</small
+              >
+            </td>
+            <td class="right">Supplemental update</td>
+          </tr>
+          <tr>
+            <td>19H114</td>
+            <td>December 14, 2020</td>
+            <td>
+              19.6.0<br /><small>xnu-6153.141.10~1</small><br /><small
+                >Tue Nov 10 00:10:30 PST 2020</small
+              >
+            </td>
+            <td class="right">About the security content of Security Update 2020-001</td>
+          </tr>
+          <tr>
+            <td>19H512</td>
+            <td>February 1, 2021</td>
+            <td rowspan="2">
+              19.6.0<br /><small>xnu-6153.141.16~1</small><br /><small
+                >Tue Jan 12 22:13:05 PST 2021</small
+              >
+            </td>
+            <td class="right">About the security content of Security Update 2021-001</td>
+          </tr>
+          <tr>
+            <td>19H524</td>
+            <td>February 9, 2021</td>
+            <td class="right">Supplemental Update</td>
+          </tr>
+          <tr>
+            <td>19H1030</td>
+            <td>April 26, 2021</td>
+            <td>
+              19.6.0<br /><small>xnu-6153.141.28.1~1</small><br /><small
+                >Mon Apr 12 20:57:45 PDT 2021</small
+              >
+            </td>
+            <td class="right">About the security content of Security Update 2021-002</td>
+          </tr>
+          <tr>
+            <td>19H1217</td>
+            <td>May 24, 2021</td>
+            <td>
+              19.6.0<br /><small>xnu-6153.141.33~1</small><br /><small
+                >Thu May 6 00:48:39 PDT 2021</small
+              >
+            </td>
+            <td class="right">About the security content of Security Update 2021-003</td>
+          </tr>
+          <tr>
+            <td>19H1323</td>
+            <td>July 21, 2021</td>
+            <td>
+              19.6.0<br /><small>xnu-6153.141.35~1</small><br /><small
+                >Thu Jun 22 19:49:55 PDT 2021</small
+              >
+            </td>
+            <td class="right">About the security content of Security Update 2021-004</td>
+          </tr>
+          <tr>
+            <td>19H1417</td>
+            <td>September 13, 2021</td>
+            <td>
+              19.6.0<br /><small>xnu-6153.141.40~1</small><br /><small
+                >Tue Aug 24 20:28:00 PDT 2021</small
+              >
+            </td>
+            <td class="right">About the security content of Security Update 2021-005</td>
+          </tr>
+          <tr>
+            <td>19H1419</td>
+            <td>September 23, 2021</td>
+            <td>
+              19.6.0<br /><small>xnu-6153.141.40.1~1</small><br /><small
+                >Thu Sep 16 20:58:47 PDT 2021</small
+              >
+            </td>
+            <td class="right">About the security content of Security Update 2021-006</td>
+          </tr>
+          <tr>
+            <td>19H1519</td>
+            <td>October 25, 2021</td>
+            <td>
+              19.6.0<br /><small>xnu-6153.141.43~1</small><br /><small
+                >Tue Oct 12 18:34:05 PDT 2021</small
+              >
+            </td>
+            <td class="right">About the security content of Security Update 2021-007</td>
+          </tr>
+          <tr>
+            <td>19H1615</td>
+            <td>December 13, 2021</td>
+            <td>
+              19.6.0<br /><small>xnu-6153.141.50~1</small><br /><small
+                >Sun Nov 14 19:58:51 PST 2021</small
+              >
+            </td>
+            <td class="right">About the security content of Security Update 2021-008</td>
+          </tr>
+          <tr>
+            <td>19H1713</td>
+            <td>January 26, 2022</td>
+            <td rowspan="2">
+              19.6.0<br /><small>xnu-6153.141.51~3</small><br /><small
+                >Thu Jan 13 01:26:33 PST 2022</small
+              >
+            </td>
+            <td class="right">About the security content of Security Update 2022-001</td>
+          </tr>
+          <tr>
+            <td>19H1715</td>
+            <td>February 14, 2022</td>
+            <td>Security Update 2022-002</td>
+          </tr>
+          <tr>
+            <td>19H1824</td>
+            <td>March 14, 2022</td>
+            <td>
+              19.6.0<br /><small>xnu-6153.141.59~1</small><br /><small
+                >Tue Feb 15 21:39:11 PST 2022</small
+              >
+            </td>
+            <td class="right">About the security content of Security Update 2022-003</td>
+          </tr>
+          <tr>
+            <td>19H1922</td>
+            <td>May 16, 2022</td>
+            <td>
+              19.6.0<br /><small>xnu-6153.141.62~1</small><br /><small
+                >Mon Apr 18 21:50:40 PDT 2022</small
+              >
+            </td>
+            <td class="right">About the security content of Security Update 2022-004</td>
+          </tr>
+          <tr>
+            <td class="bottom">19H2026</td>
+            <td class="bottom">July 20, 2022</td>
+            <td class="bottom">
+              19.6.0<br /><small>xnu-6153.141.66~1</small><br /><small
+                >Tue Jun 21 21:18:39 PDT 2022</small
+              >
+            </td>
+            <td class="bottom-right">About the security content of Security Update 2022-005</td>
+          </tr>
+        </tbody>
+      </table>
+    </details>
+    <details>
+      <summary class="level-one">User Interface</summary>
+      <figure class="UI-Screenshots">
+        <img
+          src="../Images/UI/macOS_Catalina.png"
+          class="UI-Screenshots"
+          alt="A Screenshot of macOS Catalina"
+        />
+        <figcaption>A screenshot of macOS Catalina</figcaption>
+      </figure>
+    </details>
     <footer></footer>
   </body>
 </html>

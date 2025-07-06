@@ -56,8 +56,8 @@
         security update; scroll down and click on "Release History" for all
         builds)
       </p>
-      <p>Preceded by: macOS Sierra (version 10.12)</p>
-      <p>Succeeded by: macOS Mojave (version 10.14)</p>
+      <p>Preceded by: macOS High Sierra (version 10.13)</p>
+      <p>Succeeded by: macOS Catalina (version 10.15)</p>
       <p>Kernel type: Hybrid (XNU)</p>
       <p>Support status: Historical and no longer supported</p>
     </div>
@@ -230,30 +230,30 @@
       <summary class="level-one">Release History</summary>
       <table>
         <tr>
-          <th>Version</th>
-          <th>Build</th>
-          <th>Date</th>
-          <th>Darwin version</th>
-          <th>Notes</th>
+          <th class="top-left">Version</th>
+          <th class="top">Build</th>
+          <th class="top">Date</th>
+          <th class="top">Darwin version</th>
+          <th class="top-right">Notes</th>
         </tr>
         <tr>
-          <td>10.14</td>
+          <td class="left">10.14</td>
           <td>18A391</td>
           <td>September 24, 2018</td>
           <td>18.0.0</td>
-          <td>Original Mac App Store release</td>
+          <td class="right">Original Mac App Store release</td>
         </tr>
         <tr>
-          <td rowspan="3">10.14.1</td>
+          <td class="left" rowspan="3">10.14.1</td>
           <td>18B75</td>
           <td rowspan="3">October 30, 2018</td>
           <td>18.2.0<br /><small>xnu-4903.221.2~2</small></td>
-          <td>About the macOS Mojave 10.14.1 Update</td>
+          <td class="right">About the macOS Mojave 10.14.1 Update</td>
         </tr>
         <tr>
           <td>18B2107</td>
           <td rowspan="2"></td>
-          <td rowspan="2">
+          <td class="right" rowspan="2">
             Added support for new Vega GPUs in MacBook Pro and MacBook Air.
           </td>
         </tr>
@@ -261,18 +261,20 @@
           <td>18B3094</td>
         </tr>
         <tr>
-          <td>10.14.2</td>
+          <td class="left">10.14.2</td>
           <td>18C54</td>
           <td>December 5, 2018</td>
           <td>18.2.0<br /><small>xnu-4903.231.4~2</small></td>
-          <td>About the macOS Mojave 10.14.2 Update</td>
+          <td class="right">About the macOS Mojave 10.14.2 Update</td>
         </tr>
         <tr>
-          <td rowspan="3">10.14.3</td>
+          <td class="left" rowspan="3">10.14.3</td>
           <td>18D42</td>
           <td rowspan="2">January 22, 2019</td>
           <td rowspan="3">18.2.0<br /><small>xnu-4903.241.1~4</small></td>
-          <td rowspan="2">About the macOS Mojave 10.14.3 Update</td>
+          <td class="right" rowspan="2">
+            About the macOS Mojave 10.14.3 Update
+          </td>
         </tr>
         <tr>
           <td>18D43</td>
@@ -280,39 +282,41 @@
         <tr>
           <td>18D109</td>
           <td>February 7, 2019</td>
-          <td>
+          <td class="right">
             About the security content of macOS Mojave 10.14.3 Supplemental
             Update
           </td>
         </tr>
         <tr>
-          <td rowspan="2">10.14.4</td>
+          <td class="left" rowspan="2">10.14.4</td>
           <td>18E226</td>
           <td rowspan="2">March 25, 2019</td>
           <td rowspan="2">18.5.0<br /><small>xnu-4903.251.3~3</small></td>
-          <td rowspan="2">About the macOS Mojave 10.14.4 Update</td>
+          <td class="right" rowspan="2">
+            About the macOS Mojave 10.14.4 Update
+          </td>
         </tr>
         <tr>
           <td>18E227</td>
         </tr>
         <tr>
-          <td>10.14.5</td>
+          <td class="left">10.14.5</td>
           <td>18F132</td>
           <td>May 13, 2019</td>
           <td>18.6.0<br /><small>xnu-4903.261.4~2</small></td>
-          <td>About the macOS Mojave 10.14.5 Update</td>
+          <td class="right">About the macOS Mojave 10.14.5 Update</td>
         </tr>
         <tr>
-          <td rowspan="19">10.14.6</td>
+          <td class="bottom-left" rowspan="19">10.14.6</td>
           <td>18G84</td>
           <td>July 22, 2019</td>
           <td rowspan="2">18.7.0 <br /><small>xnu-4903.270.47~4</small></td>
-          <td>About the macOS Mojave 10.14.6 Update</td>
+          <td class="right">About the macOS Mojave 10.14.6 Update</td>
         </tr>
         <tr>
           <td>18G87</td>
           <td>August 1, 2019</td>
-          <td>
+          <td class="right">
             Fixed a "Wake from Sleep" issue where Mac computers would not wake
             from sleep properly.
           </td>
@@ -321,7 +325,7 @@
           <td>18G95</td>
           <td>August 26, 2019</td>
           <td rowspan="2">18.7.0<br /><small>xnu-4903.271.2~2</small></td>
-          <td>
+          <td class="right">
             Security updates and bug fixes
             <ul>
               <li>Solved: MacBook Shuts Down During Sleep</li>
@@ -342,43 +346,55 @@
         <tr>
           <td>18G103</td>
           <td>September 26, 2019</td>
-          <td>Security Updates and Bug Fixes</td>
+          <td class="right">Security Updates and Bug Fixes</td>
         </tr>
         <tr>
           <td>18G1012</td>
           <td>October 29, 2019</td>
           <td>18.7.0<br /><small>xnu-4903.278.12~4</small></td>
-          <td>About the security content of Security Update 2019-001</td>
+          <td class="right">
+            About the security content of Security Update 2019-001
+          </td>
         </tr>
         <tr>
           <td>18G2022</td>
           <td>December 10, 2019</td>
           <td>18.7.0<br /><small>xnu-4903.278.19~1</small></td>
-          <td>About the security content of Security Update 2019-002</td>
+          <td class="right">
+            About the security content of Security Update 2019-002
+          </td>
         </tr>
         <tr>
           <td>18G3020</td>
           <td>January 28, 2020</td>
           <td>18.7.0<br /><small>xnu-4903.278.25~1</small></td>
-          <td>About the security content of Security Update 2020-001</td>
+          <td class="right">
+            About the security content of Security Update 2020-001
+          </td>
         </tr>
         <tr>
           <td>18G4032</td>
           <td>March 24, 2020</td>
           <td>18.7.0<br /><small>xnu-4903.278.28~1</small></td>
-          <td>About the security content of Security Update 2020-002</td>
+          <td class="right">
+            About the security content of Security Update 2020-002
+          </td>
         </tr>
         <tr>
           <td>18G5033</td>
           <td>May 25, 2020</td>
           <td>18.7.0<br /><small>xnu-4903.278.35~1</small></td>
-          <td>About the security content of Security Update 2020-003</td>
+          <td class="right">
+            About the security content of Security Update 2020-003
+          </td>
         </tr>
         <tr>
           <td>18G6020</td>
           <td>July 15, 2020</td>
           <td>18.7.0<br /><small>xnu-4903.278.43~1</small></td>
-          <td>About the security content of Security Update 2020-004</td>
+          <td class="right">
+            About the security content of Security Update 2020-004
+          </td>
         </tr>
         <tr>
           <td>18G6032</td>
@@ -386,13 +402,15 @@
           <td>
             18.7.0<br /><small>xnu-4903.278.44~1<br />Pulled 2020-09-30</small>
           </td>
-          <td>About the security content of Security Update 2020-005</td>
+          <td class="right">
+            About the security content of Security Update 2020-005
+          </td>
         </tr>
         <tr>
           <td>18G6032</td>
           <td>October 1, 2020</td>
           <td>18.7.0<br /><small>xnu-4903.278.44~1</small></td>
-          <td>
+          <td class="right">
             About the security content of macOS 10.14.6 Supplemental Update
           </td>
         </tr>
@@ -406,36 +424,48 @@
           <td>18G7016</td>
           <td>December 14, 2020</td>
           <td>18.7.0<br /><small>xnu-4903.278.51~1</small></td>
-          <td>About the security content of Security Update 2020-007</td>
+          <td class="right">
+            About the security content of Security Update 2020-007
+          </td>
         </tr>
         <tr>
           <td>18G8012</td>
           <td>February 1, 2021</td>
           <td rowspan="2">18.7.0<br /><small>xnu-4903.278.56~1</small></td>
-          <td>About the security content of Security Update 2021-001</td>
+          <td class="right">
+            About the security content of Security Update 2021-001
+          </td>
         </tr>
         <tr>
           <td>18G8022</td>
           <td>February 9, 2021</td>
-          <td>About the security content of Security Update 2021-002</td>
+          <td class="right">
+            About the security content of Security Update 2021-002
+          </td>
         </tr>
         <tr>
           <td>18G9028</td>
           <td>April 26, 2021</td>
           <td>18.7.0<br /><small>xnu-4903.278.65~1</small></td>
-          <td>About the security content of Security Update 2021-003</td>
+          <td class="right">
+            About the security content of Security Update 2021-003
+          </td>
         </tr>
         <tr>
           <td>18G9216</td>
           <td>May 24, 2021</td>
           <td>18.7.0<br /><small>xnu-4903.278.68~1</small></td>
-          <td>About the security content of Security Update 2021-004</td>
+          <td class="right">
+            About the security content of Security Update 2021-004
+          </td>
         </tr>
         <tr>
-          <td>18G9323</td>
-          <td>July 21, 2021</td>
-          <td>18.7.0<br /><small>xnu-4903.278.70~1</small></td>
-          <td>About the security content of Security Update 2021-005</td>
+          <td class="bottom">18G9323</td>
+          <td class="bottom">July 21, 2021</td>
+          <td class="bottom">18.7.0<br /><small>xnu-4903.278.70~1</small></td>
+          <td class="bottom-right">
+            About the security content of Security Update 2021-005
+          </td>
         </tr>
       </table>
     </details>
