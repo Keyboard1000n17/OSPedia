@@ -23,6 +23,903 @@
         </ul>
       </nav>
     </header>
+    <span id="heading">macOS Big Sur</span>
+    <p>
+      macOS Big Sur (version 11) is the seventeenth major release of macOS,
+      Apple's operating system for Macintosh computers. It was announced at
+      Apple's Worldwide Developers Conference (WWDC) on June 22, 2020, and was
+      released to the public on November 12, 2020.
+    </p>
+    <div id="info">
+      <img
+        src="../Images/Icons/macOS_Big_Sur.webp"
+        alt="macOS Big Sur logo"
+        style="height: 35vh"
+      />
+      <p>Developed by: Apple Computer, Inc.</p>
+      <p>
+        General availability: November 12, 2020 (version 11 build 19A583 -
+        original Software Update release)
+      </p>
+      <p>
+        Last release: July 20, 2022 (version 10.15.7 build 19H2026 - final
+        security update; scroll down and click on "Release History" for all
+        builds)
+      </p>
+      <p>Preceded by: macOS Catalina (version 10.15)</p>
+      <p>Succeeded by: macOS Monterey (version 12)</p>
+      <p>Kernel type: Hybrid (XNU)</p>
+      <p>Support status: Historical and no longer supported</p>
+    </div>
+    <p>
+      Big Sur is the successor to macOS Catalina (macOS 10.15). The release of
+      Big Sur was the first time the major version number of the operating
+      system had been incremented since the Mac OS X Public Beta in 2000. After
+      sixteen distinct versions of macOS 10 ("Mac OS X"), macOS Big Sur was
+      presented as version 11 in 2020, and four subsequent versions incremented
+      the major version number, similarly to previous versions of Apple's other
+      OSes.
+    </p>
+    <p>
+      For the first time since OS X Yosemite (version 10.10) six years earlier,
+      macOS Big Sur features a user interface redesign. It features new blurs to
+      establish a visual hierarchy, along with making icons more square and UI
+      elements more consistent. Other changes include a revamp of the Time
+      Machine backup mechanism, and the addition of the Control Center (which
+      was previously introduced, exclusively for touch devices, with iOS 7). It
+      is also the first macOS version to support Macs with ARM-based processors.
+      To mark the transition, the operating system's major version number was
+      incremented, for the first time since 2001, from 10 to 11. The operating
+      system is named after the coastal region of Big Sur in the Central Coast
+      of California, continuing the naming trend of California locations that
+      began with OS X Mavericks.
+    </p>
+    <p>
+      macOS Big Sur is the final version of macOS that supports Macs with Nvidia
+      graphics cards, specifically the 15-inch dual graphics late 2013 and mid
+      2014 MacBook Pro models, as its successor, macOS Monterey, drops support
+      for those models.
+    </p>
+    <p>
+      Providing some indication as to how the pre-release operating system may
+      have been viewed internally at Apple during its development cycle,
+      documentation accompanying the initial beta release of macOS Big Sur
+      referred to its version as "10.16", and when upgrading from prior versions
+      of macOS using the Software Update mechanism to early beta releases, the
+      version referred to was "10.16". An exception to this was the Developer
+      Transition Kit, which always reported the system version as "11.0". macOS
+      Big Sur started reporting the system version as "11.0" on all Macs as of
+      the third beta release.
+    </p>
+
+    <p>
+      To maintain backwards compatibility, macOS Big Sur identified itself as
+      10.16 to legacy software and in the browser user agent.
+    </p>
+    <details>
+      <summary class="level-one">System requirements</summary>
+      <p>
+        Unlike macOS Catalina, which supported every standard configuration Mac
+        that Mojave supported, Big Sur drops support for various Macs released
+        in 2012 and early 2013. Big Sur runs on the following Macs:
+      </p>
+      <ul>
+        <li>iMac (Mid 2014 or later)</li>
+        <li>iMac Pro (2017)</li>
+        <li>MacBook (Early 2015 or later)</li>
+        <li>MacBook Air (Mid 2013 or later)</li>
+        <li>MacBook Pro (Late 2013 or later)</li>
+        <li>Mac Mini (Late 2014 or later)</li>
+        <li>Mac Pro (Late 2013 or later)</li>
+        <li>Developer Transition Kit (only up to Big Sur 11.3 beta 2)</li>
+      </ul>
+      <p>
+        By using patcher tools (such as OpenCore Legacy), macOS 11 Big Sur can
+        be installed on earlier computers that are officially unsupported, such
+        as the 2012 iMac and the 2012 MacBook Pro. Using these methods, it is
+        possible to install macOS Big Sur on computers as old as a 2008 MacBook
+        Pro and iMac and 2009 Mac Mini running smooth with non-metal graphics.
+      </p>
+    </details>
+    <details>
+      <summary class="level-one">Features and Changes</summary>
+
+      <details>
+        <summary class="level-two">System</summary>
+        <span class="level-three">Support for Apple silicon</span>
+        <p>
+          macOS Big Sur is the first release of macOS for Macs powered by
+          Apple-designed ARM64-based processors, a key part of the transition
+          from Intel x86-64-based processors. The chip mentioned in demo videos,
+          and used in the Developer Transition Kit, is the A12Z Bionic. On
+          November 10, 2020, Apple announced the first Mac Apple silicon chip,
+          the Apple M1, in the Late 2020 Mac Mini, MacBook Air, and MacBook Pro.
+          Apple has said that it will support Intel Macs "for years to come",
+          and most software that has not been ported to run on ARM Macs can use
+          Rosetta 2, an update of a compatibility mechanism originally developed
+          for the PowerPC-to-Intel x86 transition. Likewise, Apple also
+          introduced an updated universal binary format, Universal 2, which
+          allows developers to package their applications so that they can run
+          natively on both ARM64 and x86-64 processors.
+        </p>
+        <span class="level-three">Support for iOS and iPadOS applications</span>
+        <p>
+          On Macs based on Apple silicon, macOS Big Sur can run iOS and iPadOS
+          applications natively and without any modifications needed from
+          developers, aside from allowing the app to be available on the Mac App
+          Store. The first Macs with this capability are those that use the
+          Apple M1 SoC (system on a chip).
+        </p>
+        <span class="level-three">Time Machine overhaul</span>
+        <p>
+          Time Machine, the backup mechanism introduced back in Mac OS X 10.5
+          Leopard, has been overhauled to utilize the APFS file system
+          (introduced in MacOS High Sierra) instead of the outdated HFS+.
+          Specifically, the new version of Time Machine makes use of APFS's
+          snapshot technology. According to Apple, this enables "faster, more
+          compact, and more reliable backups" than were possible previously with
+          HFS+-formatted backup destinations. An independent evaluation of this
+          claim found that Time Machine on macOS 11 in conjunction with APFS was
+          2.75-fold faster upon initial local backup and 4-fold faster upon
+          subsequent backups relative to macOS 10.15's Time Machine
+          implementation using HFS+. A more modest yet nevertheless significant
+          advantage was noted as well for backups to network-attached disks.
+        </p>
+        <p>
+          New local (i.e. USB- or Thunderbolt-connected) and network-connected
+          Time Machine backup destinations are formatted as APFS by default,
+          though Time Machine can continue backing up to existing HFS+ backup
+          volumes. There is no option to convert existing, HFS+-based backups to
+          APFS; instead, users who want to benefit from the advantages of the
+          new, APFS-based implementation of Time Machine need to start with a
+          fresh volume.
+        </p>
+        <p>
+          In the new version of Time Machine, encryption appears to be required
+          (instead of merely optional) for local disks, but it remains elective
+          for networked volumes.
+        </p>
+        <p>
+          It is no longer possible to restore the whole system using a Time
+          Machine backup, as the signed system volume is not backed up. Non-core
+          applications and user data can be restored in full using Migration
+          Assistant, preceded by a system reinstall if necessary.
+        </p>
+        <span class="level-three">Spotlight</span>
+        <p>
+          Spotlight, the file system indexing-and-search mechanism introduced in
+          Mac OS X 10.4 Tiger, is faster and the interface has been refined.
+          Spotlight is now the default search mechanism in Safari, Pages, and
+          Keynote.
+        </p>
+        <span class="level-three">Signed system volume</span>
+        <p>
+          The system volume containing the core operating system is
+          cryptographically signed. Apple indicates this is a security measure
+          to prevent malicious tampering. This includes adding an SHA-256 hash
+          for every file on the system volume, preventing changes from
+          third-party entities and the end user.
+        </p>
+        <span class="level-three">Software updates</span>
+        <p>
+          Software updates can begin in the background before a restart, thus
+          requiring less downtime to complete. Because system files are
+          cryptographically signed, the update software can rely on them being
+          in precise locations, thus permitting them to be effectively updated
+          in place.
+        </p>
+        <span class="level-three">Encryption</span>
+        <p>
+          macOS Big Sur supports encryption at the file level. Earlier versions
+          of macOS (10.15 Catalina and older) supported encryption only at the
+          level of entire volumes. As of June 2020, this capability is known to
+          be compatible with Macs based on Apple silicon; it is unclear whether
+          it is compatible with Intel-based Macs.
+        </p>
+      </details>
+      <details>
+        <summary class="level-two">Application features</summary>
+        <span class="level-three">Safari</span>
+        <p>
+          Big Sur includes Safari 14, which was also released for macOS Catalina
+          and macOS Mojave on September 16, 2020. Safari 14 includes features
+          such as a new home page in which users can customize what features are
+          visible in addition to being able to set a custom wallpaper. It also
+          allows the viewer to preview a page and favicon before visiting it.
+        </p>
+        <p>
+          Safari 14 also includes built-in web page translations in English,
+          Spanish, German, French, Russian, Chinese and Portuguese as well as
+          support for 4K HDR content from Netflix on Macs with an Apple T2 chip,
+          although none of these were made available for macOS Catalina and
+          Mojave.
+        </p>
+        <p>
+          Privacy features such as iCloud Keychain (which notifies users of
+          compromised passwords), extension privacy management and Privacy
+          Report (which monitors privacy trackers and further increases Safari's
+          security) were added for Safari 14. Users were now also able to import
+          password from Google's Chrome browser in addition to being notified of
+          compromised passwords.
+        </p>
+        <p>
+          Safari 14 also supports WebExtensions API, the WebP image format as
+          well as VP9 decoding, the latter of which allows for the playback of
+          4K and HDR content from YouTube. In addition, it allowed for better
+          performance and power efficiency.
+        </p>
+        <p>
+          Safari 14 ended support for Adobe Flash Player in September, three
+          months prior to its end-of-life on December 31, 2020.
+        </p>
+        <span class="level-three">Messages</span>
+        <p>
+          The Messages app was rewritten to be based upon Apple's Catalyst
+          technology to enable it to have feature parity with its iOS
+          counterpart. The new version of the app included a refined design as
+          well as the ability to pin up to nine conversations that can sync
+          across iOS, iPadOS and macOS. Users were also now allowed to search
+          for messages and share their names and photos. Photo thumbnails could
+          now also be used for group chats on the app.
+        </p>
+        <p>
+          In addition, users could mention contacts by putting the @ symbol in
+          front of their name. They were also able to reply to specific
+          messages. Memojis, 3d avatars were also made available on Messages. On
+          Messages, users could now select photos based on parameters.
+        </p>
+        <p>
+          In India, text message effects were added when users sent certain
+          texts (e.g., texting "Happy Holi" will result in users seeing
+          effects).
+        </p>
+        <span class="level-three">Mac App Store</span>
+        <p>Refinements and new features of the Mac App Store include:</p>
+        <ul>
+          <li>
+            A new "nutrition label" section dedicated to the data and
+            information an app collects, also featured in the iOS App Store
+          </li>
+          <li>A new extensions category for Safari</li>
+          <li>
+            Third party Notification Center widgets, similar to those also added
+            in iOS and iPadOS 14.
+          </li>
+          <li>
+            The ability to share in-app purchases and subscriptions on the Mac
+            via iCloud Family Sharing
+          </li>
+        </ul>
+        <span class="level-three">Notes</span>
+        <p>Changes to the Notes app include:</p>
+        <ul>
+          <li>A collapsible pinned section</li>
+          <li>Quick text style and formatting options</li>
+          <li>Scanning enhancements</li>
+        </ul>
+        <span class="level-three">Photos</span>
+        <p>Changes to the Photos app:</p>
+        <ul>
+          <li>New editing capabilities</li>
+          <li>Improved Retouch tool</li>
+          <li>New zooming feature in views</li>
+        </ul>
+        <span class="level-three">Maps</span>
+        <p>New features and changes to the Maps app are as follows:</p>
+        <ul>
+          <li>
+            "Look Around" interactive street-level 360° panoramas, first
+            implemented in the iOS 13 version of Maps, have been incorporated
+            into the macOS version of Maps.
+          </li>
+          <li>Availability of directions for cyclists.</li>
+          <li>
+            Electric vehicle routing, based on proximity to charging stations
+            and monitoring of battery levels (on selected car models).
+          </li>
+          <li>Guides for exploring new places.</li>
+        </ul>
+        <span class="level-three">Voice Memos</span>
+        <p>These are the new features and changes made to Voice Memos:</p>
+        <ul>
+          <li>
+            A file structure has been implemented to allow organization of
+            recordings in folders
+          </li>
+          <li>
+            Recordings can be marked as Favorites for easier subsequent access
+          </li>
+          <li>
+            Smart Folders automatically group Apple Watch recordings, recently
+            deleted recordings, and Favorites
+          </li>
+          <li>
+            Audio can be enhanced to reduce background noise and room reverb
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary class="level-two">Removed functionality</summary>
+        <p>The following features were removed in this version:</p>
+        <ul>
+          <li>The Calculator Widget in the Notification Center</li>
+          <li>The option to toggle Font Smoothing in System Preferences</li>
+          <li>The option not to have a clock in the menu bar</li>
+        </ul>
+      </details>
+      <details>
+        <summary class="level-two">Other changes</summary>
+        <p>Other changes include:</p>
+        <ul>
+          <li>
+            Bilingual dictionaries in French-German, Indonesian-English,
+            Japanese-Simplified Chinese and Polish-English
+          </li>
+          <li>Better predictive input for Chinese and Japanese users</li>
+          <li>New fonts for Indian users</li>
+          <li>
+            The "Now Playing" widget has been moved from the Notification Center
+            to the Menu Bar
+          </li>
+          <li>Podcasts "Listen Now" feature</li>
+          <li>FaceTime sign language prominence</li>
+          <li>
+            Network Utility has been replaced with a message that it has been
+            deprecated
+          </li>
+          <li>
+            A new startup chime was added (it was absent on all machines
+            released from 2016 to 2020) and is now enabled by default; an option
+            was added in System Preferences to enable or disable this
+            functionality.
+          </li>
+        </ul>
+      </details>
+    </details>
+    <details>
+      <summary class="level-one">Release History</summary>
+      <table>
+        <tbody>
+          <tr>
+            <th class="top-left">Version</th>
+            <th class="top">Build</th>
+            <th class="top">Release date</th>
+            <th class="top">Darwin version</th>
+            <th class="top-right">Release notes</th>
+          </tr>
+          <tr>
+            <th class="left">11.0</th>
+            <td>20A2411</td>
+            <td>November 17, 2020</td>
+            <td>20.1.0<br /><small>xnu-7195.41.8~9</small></td>
+            <td rowspan="3">First releases</td>
+          </tr>
+          <tr>
+            <th rowspan="2">11.0.1</th>
+            <td>20B29</td>
+            <td>November 12, 2020</td>
+            <td rowspan="2">20.1.0<br /><small>xnu-7195.50.7~2</small></td>
+          </tr>
+          <tr>
+            <td>20B50</td>
+            <td>November 19, 2020</td>
+          </tr>
+          <tr>
+            <th>11.1</th>
+            <td>20C69</td>
+            <td>December 14, 2020</td>
+            <td>20.2.0<br /><small>xnu-7195.60.75~1</small></td>
+            <td>
+              Introduces support for AirPods Max, TV app enhancements, Apple
+              News widgets, and privacy information on the App Store. It also
+              includes bug fixes.
+            </td>
+          </tr>
+          <tr>
+            <th>11.2</th>
+            <td>20D64</td>
+            <td>February 1, 2021</td>
+            <td rowspan="5">20.3.0<br /><small>xnu-7195.81.3~1</small></td>
+            <td>
+              Improves Bluetooth reliability and fixes the following issues:
+              <ul>
+                <li>
+                  External displays may show a black screen when connected to a
+                  Mac mini (M1, 2020) using an HDMI to DVI converter
+                </li>
+                <li>
+                  Edits to Apple ProRAW photos in the Photos app may not save
+                </li>
+                <li>
+                  iCloud Drive could turn off after disabling the iCloud Drive
+                  Desktop & Documents Folders option
+                </li>
+                <li>
+                  System Preferences may not unlock when entering your
+                  administrator password
+                </li>
+                <li>
+                  Globe key may not display the Emoji & Symbols pane when
+                  pressed
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th rowspan="2">11.2.1</th>
+            <td>20D74</td>
+            <td>February 9, 2021</td>
+            <td rowspan="2">
+              Addresses an issue that may prevent the battery from charging in
+              some 2016 and 2017 MacBook Pro models.
+            </td>
+          </tr>
+          <tr>
+            <td>20D75</td>
+            <td>February 15, 2021</td>
+          </tr>
+          <tr>
+            <th>11.2.2</th>
+            <td>20D80</td>
+            <td>February 25, 2021</td>
+            <td>
+              Prevents models of MacBook Pro (2019 or later) and MacBook Air
+              (2020 or later) from incurring damage when they are connected to
+              certain third-party, non-compliant powered USB-C hubs and docks.
+            </td>
+          </tr>
+          <tr>
+            <th>11.2.3</th>
+            <td>20D91</td>
+            <td>March 8, 2021</td>
+            <td>
+              Provides important security updates and is recommended for all
+              users.
+            </td>
+          </tr>
+          <tr>
+            <th>11.3</th>
+            <td>20E232</td>
+            <td>April 26, 2021</td>
+            <td>20.4.0<br /><small>xnu-7195.101.1~3</small></td>
+            <td>
+              Consult Appple's webpage for this reelase:
+              <a
+                class="external-links"
+                href="https://support.apple.com/en-us/106338#macos113"
+                >About the macOS Big Sur 11.3 update</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>11.3.1</th>
+            <td>20E241</td>
+            <td>May 3, 2021</td>
+            <td>20.4.0<br /><small>xnu-7195.101.2~1</small></td>
+            <td>
+              Provides important security updates and is recommended for all
+              users.
+            </td>
+          </tr>
+          <tr>
+            <th>11.4</th>
+            <td>20F71</td>
+            <td>May 24, 2021</td>
+            <td>20.5.0<br /><small>xnu-7195.121.3~9</small></td>
+            <td>
+              Adds new features to Podcasts and fixes the following bugs:
+              <ul>
+                <li>
+                  Apple Podcasts subscriptions are available for purchase via
+                  monthly and annual subscriptions
+                </li>
+                <li>
+                  Channels group together collections of shows from podcast
+                  creators
+                </li>
+                <li>
+                  Bookmarks in Safari may get reordered or moved into a folder
+                  that can appear hidden
+                </li>
+                <li>
+                  Certain websites may not display correctly after your Mac
+                  wakes from sleep
+                </li>
+                <li>
+                  Keywords may not be included when exporting a photo from the
+                  Photos app
+                </li>
+                <li>
+                  Preview may become unresponsive when searching PDF documents
+                </li>
+                <li>
+                  16-inch MacBook may become unresponsive when playing
+                  Civilization VI
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>11.5</th>
+            <td>20G71</td>
+            <td>July 21, 2021</td>
+            <td rowspan="3">
+              20.6.0<br /><small
+                >xnu-7195.141.2~5<br />Wed Jun 23 00:26:31 PDT 2021</small
+              >
+            </td>
+            <td>
+              Includes improvements and fixes bugs which are as follows:
+              <ul>
+                <li>
+                  Podcasts Library tab allows you to choose to see all shows or
+                  only followed shows
+                </li>
+                <li>
+                  Music may not update play count and last played date in your
+                  library
+                </li>
+                <li>
+                  Smart cards may not work when logging into Mac computers with
+                  the M1 chip
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>11.5.1</th>
+            <td>20G80</td>
+            <td>July 26, 2021</td>
+            <td>
+              Consult Apple's webpage for this release:
+              <a
+                class="external-links"
+                href="https://support.apple.com/en-us/103144"
+                >About the security content of macOS 11.5.1</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>11.5.2</th>
+            <td>20G95</td>
+            <td>August 11, 2021</td>
+            <td>Includes bug fixes for Macs.</td>
+          </tr>
+          <tr>
+            <th>11.6</th>
+            <td>20G165</td>
+            <td>September 13, 2021</td>
+            <td>
+              20.6.0<br /><small
+                >xnu-7195.141.6~3<br />Mon Aug 30 06:12:21 PDT 2021</small
+              >
+            </td>
+            <td>
+              Consult Appple's webpage for this reelase: Consult Appple's
+              webpage for this reelase:
+              <a
+                class="external-links"
+                href="https://support.apple.com/en-us/103147"
+                >About the security content of macOS 11.6</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>11.6.1</th>
+            <td>20G224</td>
+            <td>October 25, 2021</td>
+            <td>
+              20.6.0<br /><small
+                >xnu-7195.141.8~1<br />Tue Oct 12 18:33:42 PDT 2021</small
+              >
+            </td>
+            <td>
+              Consult Apple's webpage for this release:
+              <a
+                class="external-links"
+                href="https://support.apple.com/en-us/103164"
+                >About the security content of macOS 11.6.1</a
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <th>11.6.2</th>
+            <td>20G314</td>
+            <td>December 13, 2021</td>
+            <td>
+              20.6.0<br /><small
+                >xnu-7195.141.14~1<br />Wed Nov 10 22:23:07 PST 2021</small
+              >
+            </td>
+            <td>
+              Consult Apple's webpage for this release:
+              <a
+                class="external-links"
+                href="https://support.apple.com/en-us/102876"
+                >About the security content of macOS 11.6.2</a
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <th>11.6.3</th>
+            <td>20G415</td>
+            <td>January 26, 2022</td>
+            <td rowspan="2">
+              20.6.0<br /><small
+                >xnu-7195.141.19~2<br />Wed Jan 12 22:22:42 PST 2022</small
+              >
+            </td>
+            <td>
+              Consult Appple's webpage for this reelase:
+              <a
+                class="external-links"
+                href="https://support.apple.com/en-us/103173"
+                >About the security content of macOS 11.6.3</a
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <th>11.6.4</th>
+            <td>20G417</td>
+            <td>February 14, 2022</td>
+            <td>
+              Recommended for all users and improves the security of macOS.
+            </td>
+          </tr>
+          <tr>
+            <th>11.6.5</th>
+            <td>20G527</td>
+            <td>March 14, 2022</td>
+            <td>
+              20.6.0<br /><small
+                >xnu-7195.141.26~1<br />Tue Feb 22 21:10:41 PST 2022</small
+              >
+            </td>
+            <td>
+              Consult Appple's webpage for this reelase:
+              <a
+                class="external-links"
+                href="https://support.apple.com/en-us/102847"
+                >About the security content of macOS 11.6.5</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>11.6.6</th>
+            <td>20G624</td>
+            <td>May 16, 2022</td>
+            <td rowspan="2">
+              20.6.0<br /><small
+                >xnu-7195.141.29~1<br />Tue Apr 19 21:04:45 PDT 2022</small
+              >
+            </td>
+            <td>
+              <a
+                class="external-links"
+                href="https://support.apple.com/HT213256"
+                >About the security content of macOS 11.6.6</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>11.6.7</th>
+            <td>20G630</td>
+            <td>June 9, 2022</td>
+            <td>
+              Recommended for all users and improves the security of macOS.
+            </td>
+          </tr>
+          <tr>
+            <th>11.6.8</th>
+            <td>20G730</td>
+            <td>July 20, 2022</td>
+            <td>
+              20.6.0<br /><small
+                >xnu-7195.141.32~1<br />Tue Jun 21 20:50:28 PDT 2022</small
+              >
+            </td>
+            <td>
+              <a
+                class="external-links"
+                href="https://support.apple.com/HT213344"
+                >About the security content of macOS 11.6.8</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>11.7</th>
+            <td>20G817</td>
+            <td>September 12, 2022</td>
+            <td>
+              20.6.0<br /><small
+                >xnu-7195.141.39~2<br />Mon Aug 29 04:31:06 PDT 2022</small
+              >
+            </td>
+            <td>
+              <a
+                class="external-links"
+                href="https://support.apple.com/HT213443"
+                >About the security content of macOS 11.7</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>11.7.1</th>
+            <td>20G918</td>
+            <td>October 24, 2022</td>
+            <td>
+              20.6.0<br /><small
+                >xnu-7195.141.42~1<br />Thu Sep 29 20:15:11 PDT 2022</small
+              >
+            </td>
+            <td>
+              <a
+                class="external-links"
+                href="https://support.apple.com/HT213493"
+                >About the security content of macOS 11.7.1</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>11.7.2</th>
+            <td>20G1020</td>
+            <td>December 13, 2022</td>
+            <td>
+              20.6.0<br /><small
+                >xnu-7195.141.46~1<br />Sun Nov 6 23:17:00 PST 2022</small
+              >
+            </td>
+            <td>
+              <a
+                class="external-links"
+                href="https://support.apple.com/HT213534"
+                >About the security content of macOS 11.7.2</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>11.7.3</th>
+            <td>20G1116</td>
+            <td>January 23, 2023</td>
+            <td rowspan="2">
+              20.6.0<br /><small
+                >xnu-7195.141.49~1<br />Fri Dec 16 00:35:00 PST 2022</small
+              >
+            </td>
+            <td>
+              Consult Appple's webpage for this reelase:
+              <a
+                class="external-links"
+                href="https://support.apple.com/en-us/102789"
+                >About the security content of macOS 11.7.3</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>11.7.4</th>
+            <td>20G1120</td>
+            <td>February 15, 2023</td>
+            <td>
+              <a
+                class="external-links"
+                href="https://support.apple.com/HT213534"
+                >About the security content of macOS 11.7.4</a
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <th>11.7.5</th>
+            <td>20G1225</td>
+            <td>March 27, 2023</td>
+            <td rowspan="2">
+              20.6.0<br /><small
+                >xnu-7195.141.49.700.6~1<br />Thu Mar 9 20:39:26 PST 2023</small
+              >
+            </td>
+            <td>
+              <a
+                class="external-links"
+                href="https://support.apple.com/HT213675"
+                >About the security content of macOS 11.7.5</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>11.7.6</th>
+            <td>20G1231</td>
+            <td>April 10, 2023</td>
+            <td>
+              <a
+                class="external-links"
+                href="https://support.apple.com/HT213725"
+                >About the security content of macOS 11.7.6</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>11.7.7</th>
+            <td>20G1345</td>
+            <td>May 18, 2023</td>
+            <td>
+              20.6.0<br /><small
+                >xnu-7195.141.49.701.3~1<br />Mon Apr 24 23:00:57 PDT
+                2023</small
+              >
+            </td>
+            <td>
+              <a
+                class="external-links"
+                href="https://support.apple.com/HT213760"
+                >About the security content of macOS 11.7.7</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>11.7.8</th>
+            <td>20G1351</td>
+            <td>June 21, 2023</td>
+            <td>
+              20.6.0<br /><small
+                >xnu-7195.141.49.701.4~1<br />Thu Jun 8 22:36:09 PDT 2023</small
+              >
+            </td>
+            <td>
+              <a
+                class="external-links"
+                href="https://support.apple.com/HT213809"
+                >About the security content of macOS 11.7.8
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th>11.7.9</th>
+            <td>20G1426</td>
+            <td>July 24, 2023</td>
+            <td rowspan="2">
+              20.6.0<br /><small
+                >xnu-7195.141.49.702.12~1<br />Thu Jul 6 22:12:47 PDT
+                2023</small
+              >
+            </td>
+            <td>
+              <a
+                class="external-links"
+                href="https://support.apple.com/HT213845"
+                >About the security content of macOS 11.7.9</a
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <th>11.7.10</th>
+            <td>20G1427</td>
+            <td>September 11, 2023</td>
+            <td>
+              <a
+                class="external-links"
+                href="https://support.apple.com/HT213915"
+                >About the security content of macOS 11.7.10</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </details>
+    <details>
+      <summary class="level-one">User Interface</summary>
+      <figure class="UI-Screenshots">
+        <img
+          src="../Images/UI/macOS_Big_Sur.jpg"
+          class="UI-Screenshots"
+          alt="A Screenshot of macOS Big Sur"
+        />
+        <figcaption>A screenshot of macOS Big Sur</figcaption>
+      </figure>
+    </details>
     <footer></footer>
   </body>
 </html>

@@ -108,7 +108,12 @@ img {
 
 li {
   list-style: disc;
-  color: #ffffff;
+  color: #000000; /*changed to black because macOS_Big_Sur.html:404 had an unordered list but for some reason was appearing as white*/
+}
+
+.external-links {
+  color: #0061c9;
+  text-decoration: none;
 }
 
 .level-one {
