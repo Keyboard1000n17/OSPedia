@@ -78,7 +78,7 @@ button:hover {
 body {
   margin: 10vh 1vw 10vh 1vw;
   font-family: Segoe UI, "Open Sans";
-  font-size: 2.1vh;
+  font-size: 18px;
   background-attachment: fixed;
   color: #ffffff;
   overflow-x: hidden;
@@ -106,11 +106,6 @@ img {
   float: right;
 }
 
-li {
-  list-style: disc;
-  color: #000000; /*changed to black because macOS_Big_Sur.html:404 had an unordered list but for some reason was appearing as white*/
-}
-
 .external-links {
   color: #0061c9;
   text-decoration: none;
@@ -118,17 +113,17 @@ li {
 
 .level-one {
   font-weight: 700;
-  font-size: 2.75vh;
+  font-size: 23.75px;
 }
 
 .level-two {
   font-weight: 600;
-  font-size: 2.5vh;
+  font-size: 21.5px;
 }
 
 .level-three {
   font-weight: 580;
-  font-size: 2.25vh;
+  font-size: 19.125vh;
 }
 
 .div-level-two {
