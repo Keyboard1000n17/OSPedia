@@ -1,7 +1,7 @@
 [[redirects]]
   from = "/.well-known/discord"
   to = "/.well-known/discord"
-  status = 200
+  status = 300
 
 [[redirects]]
   from = "/*"
