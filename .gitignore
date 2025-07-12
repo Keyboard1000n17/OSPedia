@@ -1,16 +1,2 @@
-# Rust
-/target/
-**/*.rs.bk
-
-# Tauri build artifacts
-/src-tauri/target/
-/src-tauri/.cargo/
-/src-tauri/Cargo.lock
-
 # Visual Studio
-.vs/
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-*.code-workspace
+/.vscode/

@@ -1,8 +1,6 @@
 [[redirects]]
-  from = "/.well-known/discord"
-  to = "/.well-known/discord"
-  status = 300
-
+  from = "/src/MacPedia/*"
+  to = "/src/MacPedia/Home/Homepage.html"
 [[redirects]]
   from = "/*"
   to = "/src/WinPedia/Home/Homepage.html"
