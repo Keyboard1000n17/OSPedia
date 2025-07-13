@@ -113,17 +113,17 @@ img {
 
 .level-one {
   font-weight: 700;
-  font-size: 23.75px;
+  font-size: 1.484375rem;
 }
 
 .level-two {
   font-weight: 600;
-  font-size: 21.5px;
+  font-size: 1.34375rem;
 }
 
 .level-three {
   font-weight: 580;
-  font-size: 19.125vh;
+  font-size: 1.1953125rem;
 }
 
 .div-level-two {
