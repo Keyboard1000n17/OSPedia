@@ -1,314 +1,179 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="Unicode">
-<title>WinPedia - About</title>
-<style>
-#ul, .li, .nav {
-list-style: none;
-margin-right: 20px;
-text-decoration: none;
-color: #3266fb;
-display: inline-block;
-}
+  <head>
+    <meta charset="Unicode" />
+    <title>WinPedia - About</title>
+    <link rel="stylesheet" href="../Home/fluentUIstyling.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../Images/WinPedia-favicon.svg" />
+  </head>
+  <body style="background-image: url(../Images/wallpaper/win11.jpg)">
+    <header>
+      <nav>
+        <img src="../Images/WinPedia-logo.svg" alt="logo" height="70%" />
+        <ul>
+          <li class="li">
+            <a href="../Home/Homepage.html" class="nav">Home</a>
+          </li>
+          <li class="li">
+            <a href="../AboutMe/AboutMe.html" class="nav">About Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <span id="heading">About</span>
+    <div id="about">
+      <p>
+        This website was made to expose individuals to the history of major
+        operating systems which have influenced our daily lives with the help of
+        web graphics. This webpage, WinPedia, was originally meant to be its own
+        website. However, imagination has transformed this into a larger
+        project, OSHistory. It is now a very large project in development since
+        December of 2024. Some graphics are created by me due to lack of
+        pictures on the internet, which notably include the given backgrounds
+        for Windows NT 4.0, Windows 2000 and Windows Me, as well as the logos
+        relating to this website such as the OSHistory logo and WinPedia logo.
+        There are no credits for the pictures as I forgot to document where the
+        images came from. However, all Windows logos are created and owned by
+        Microsoft and are used here for educational purposes.
+      </p>
+      <span class="level-one">Credits:</span>
 
-.nav:hover {
-color: #001fff;
-}
+      <details>
+        <summary class="level-two">Windows 1.0</summary>
+        <ul>
+          <li>Wikipedia - Windows 1.0</li>
+        </ul>
+      </details>
 
-nav {
-background-color: rgba(255, 255, 255, 0.75);
-backdrop-filter: blur(10px);
-position: fixed;
-top: 0;
-left: 0;
-z-index: 1;
-overflow: hidden;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 9vh;
-list-style: none;
-}
+      <details>
+        <summary class="level-two">Windows 2.0</summary>
+        <ul>
+          <li>Wikipedia - Windows 2.0</li>
+        </ul>
+      </details>
 
-footer {
-background-color: rgba(255, 255, 255, 0.75);
-backdrop-filter: blur(10px);
-position: fixed;
-bottom: 0;
-right: 0;
-z-index: 1;
-overflow: hidden;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 9vh;
-padding: 5px;
-color: #000000;
-}
+      <details>
+        <summary class="level-two">Windows 3.0</summary>
+        <ul>
+          <li>Wikipedia - Windows 3.0</li>
+        </ul>
+      </details>
 
-button {
-border-radius: 10px;
-padding: 10px;
-background-color: rgba(255, 255, 255, 0.5);
-width: 100%;
-height: 75%;
-font-family: inherit;
-font-size: inherit;
-display: flex;
-justify-content: center;
-align-items: center;
-transition: box-shadow ease-out 0.3s;
-border-style: none;
-}
+      <details>
+        <summary class="level-two">Windows 3.1</summary>
+        <ul>
+          <li>Wikipedia - Windows 3.1</li>
+          <li>Google Gemini (User Interface)</li>
+        </ul>
+      </details>
 
-button:hover {
-box-shadow: 0px 0px 15px 2px black;
-}
+      <details>
+        <summary class="level-two">Windows 95</summary>
+        <ul>
+          <li>Wikipedia - Windows 95</li>
+        </ul>
+      </details>
 
-#child-container-in-footer {
-margin: 10px;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: auto;
-width: 100%;
-text-align: center;
-align-items: center;
-}
+      <details>
+        <summary class="level-two">Windows NT 4.0</summary>
+        <ul>
+          <li>Wikipedia - Windows NT 4.0</li>
+        </ul>
+      </details>
 
-body {
-margin: 10vh 1vw 10vh 1vw;
-font-family: Segoe UI;
-font-size: 2vh;
-background-image: url(../Images/wallpaper/win11.jpg);
-background-size: cover;
-background-attachment: fixed;
-background-position-x: 0px;
-color: #FFFFFF;
-overflow-x: hidden;
+      <details>
+        <summary class="level-two">Windows 98</summary>
+        <ul>
+          <li>Wikipedia - Windows 98</li>
+        </ul>
+      </details>
 
-}
+      <details>
+        <summary class="level-two">Windows 2000</summary>
+        <ul>
+          <li>Wikipedia - Windows 2000</li>
+        </ul>
+      </details>
 
-#container {
-margin: 10px;
-overflow: auto;
-}
+      <details>
+        <summary class="level-two">Windows Me</summary>
+        <ul>
+          <li>Wikipedia - Windows Me</li>
+        </ul>
+      </details>
 
-#heading {
-font-size: 4vh;
-font-weight: bold;
-}
+      <details>
+        <summary class="level-two">Windows XP</summary>
+        <ul>
+          <li>Wikipedia - Windows XP</li>
+        </ul>
+      </details>
 
-.info {
-display: flow-root;
-background-color: rgba(255, 255, 255, 0.75);
-backdrop-filter: blur(7.5px);
-padding: 30px;
-border: solid 1px black;
-border-radius: 10px;
-margin: 10px;
-color: black;
-height: auto;
-}
+      <details>
+        <summary class="level-two">Windows Vista</summary>
+        <ul>
+          <li>Wikipedia - Windows Vista</li>
+        </ul>
+      </details>
 
-img {
-float: right;
-}
+      <details>
+        <summary class="level-two">Windows 7</summary>
+        <ul>
+          <li>Wikipedia - Windows 7</li>
+          <li>Personal Knowledge</li>
+        </ul>
+      </details>
 
-li {
-list-style: disc;
-color: #FFFFFF;
-}
+      <details>
+        <summary class="level-two">Windows 8</summary>
+        <ul>
+          <li>Wikipedia - Windows 8</li>
+        </ul>
+      </details>
 
-summary {
-font-weight: bold;
-font-size: 2.5vh;
-}
+      <details>
+        <summary class="level-two">Windows 8.1</summary>
+        <ul>
+          <li>Wikipedia - Windows 8.1</li>
+        </ul>
+      </details>
 
-a {
-color: #000000;
-text-decoration: none;
-}
+      <details>
+        <summary class="level-two">Windows 10</summary>
+        <ul>
+          <li>Wikipedia - Windows 10</li>
+        </ul>
+      </details>
 
-@media (max-width: 1440px){
-#homeContainer {
-display: block;
-}
-nav {
-height: 9vh;
-}
-img {
-float: none;
-}
-table {
-float: none;
-align-self: center;
-width: 98%;
-}
-.info {
-display: flex;
-flex-direction: column;
-align-content: center;
-text-align: center;
-}
-#features {
-line-height: 2.75vh;
-}
-}
+      <details>
+        <summary class="level-two">Windows 11</summary>
+        <ul>
+          <li>Wikipedia - Windows 11</li>
+        </ul>
+      </details>
 
-.bolden {
-font-weight: 600;
-}
-</style>
-</head>
-<body>
-<header>
-<nav>
-<img src="../Images/WinPedia-logo.svg" alt="logo" height="60%">
-<ul>
-<li class="li"><a href="../Home/Homepage.html" class="nav">Home</a></li>
-<li class="li"><a href="..\AboutMe\AboutMe.html" class="nav">About Me</a></li>
-</ul>
-</nav>
-</header>
-<div id="about">
-
-<p>
-This website was made to expose individuals to the history of major operating systems which have influenced our daily lives with the help of web graphics. This webpage, WinPedia, was originally meant to be its own website. However, imagination has transformed this into a larger project, OSHistory. It is now a very large project in development since December of 2024. Some graphics are created by me due to lack of pictures on the internet, which notably include the given backgrounds for Windows NT 4.0, Windows 2000 and Windows Me, as well as the logos relating to this website such as the OSHistory logo and WinPedia logo. There are no credits for the pictures as I forgot to document where the images came from. However, all Windows logos are created and owned by Microsoft and are used here for educational purposes.
-</p>
-<p>Credits: </p>
-
-<details>
-<summary>Windows 1.0</summary>
-<ul>
-<li>Wikipedia - Windows 1.0</li>
-</ul>
-</details>
-
-<details>
-<summary>Windows 2.0</summary>
-<ul>
-<li>Wikipedia - Windows 2.0</li>
-</ul>
-</details>
-
-<details>
-<summary>Windows 3.0</summary>
-<ul>
-<li>Wikipedia - Windows 3.0</li>
-</ul>
-</details>
-
-<details>
-<summary>Windows 3.1</summary>
-<ul>
-<li>Wikipedia - Windows 3.1</li>
-<li>Google Gemini (User Interface)</li>
-</ul>
-</details>
-
-<details>
-<summary>Windows 95</summary>
-<ul>
-<li>Wikipedia - Windows 95</li>
-</ul>
-</details>
-
-<details>
-<summary>Windows NT 4.0</summary>
-<ul>
-<li>Wikipedia - Windows NT 4.0</li>
-</ul>
-</details>
-
-<details>
-<summary>Windows 98</summary>
-<ul>
-<li>Wikipedia - Windows 98</li>
-</ul>
-</details>
-
-<details>
-<summary>Windows 2000</summary>
-<ul>
-<li>Wikipedia - Windows 2000</li>
-</ul>
-</details>
-
-<details>
-<summary>Windows Me</summary>
-<ul>
-<li>Wikipedia - Windows Me</li>
-</ul>
-</details>
-
-<details>
-<summary>Windows XP</summary>
-<ul>
-<li>Wikipedia - Windows XP</li>
-</ul>
-</details>
-
-<details>
-<summary>Windows Vista</summary>
-<ul>
-<li>Wikipedia - Windows Vista</li>
-</ul>
-</details>
-
-<details>
-<summary>Windows 7</summary>
-<ul>
-<li>Wikipedia - Windows 7</li>
-<li>Personal Knowledge</li>
-</ul>
-</details>
-
-<details>
-<summary>Windows 8</summary>
-<ul>
-<li>Wikipedia - Windows 8</li>
-</ul>
-</details>
-
-<details>
-<summary>Windows 8.1</summary>
-<ul>
-<li>Wikipedia - Windows 8.1</li>
-</ul>
-</details>
-
-<details>
-<summary>Windows 10</summary>
-<ul>
-<li>Wikipedia - Windows 10</li>
-</ul>
-</details>
-
-<details>
-<summary>Windows 11</summary>
-<ul>
-<li>Wikipedia - Windows 11</li>
-</ul>
-</details>
-
-<details>
-<summary>Other Notable Versions of Windows</summary>
-<ul>
-<li>Wikipedia - Windows 10X</li>
-<li>Wikipedia - Windows CE</li>
-<li>Wikipedia - Windows Server</li>
-<li>Wikipedia - Windows Phone 8</li>
-<li>Wikipedia - Windows Phone 8.1</li>
-<li>Wikipedia - Windows Mobile 10</li>
-<li>Wikipedia - MS-DOS</li>
-</ul>
-</details>
-<p>
-If you have any suggestions, contact me at <b>keyboard1000n17@gmail.com</b>.
-</p>
-
-</div>
-</body>
+      <details>
+        <summary class="level-two">Other Notable Versions of Windows</summary>
+        <ul>
+          <li>Wikipedia - Windows 10X</li>
+          <li>Wikipedia - Windows CE</li>
+          <li>Wikipedia - Windows Server</li>
+          <li>Wikipedia - Windows Phone 8</li>
+          <li>Wikipedia - Windows Phone 8.1</li>
+          <li>Wikipedia - Windows Mobile 10</li>
+          <li>Wikipedia - MS-DOS</li>
+        </ul>
+      </details>
+      <p>
+        If you have any suggestions, contact me at
+        <b>keyboard1000n17@gmail.com</b>.
+      </p>
+    </div>
+  </body>
 </html>
