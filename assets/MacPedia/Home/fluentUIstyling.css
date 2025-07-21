@@ -77,8 +77,10 @@ button:hover {
 /* CONTENT STYLING */
 body {
   margin: 10vh 1vw 10vh 1vw;
-  font-family: Segoe UI, "Open Sans";
-  font-size: 18px;
+  font-family:
+    Segoe UI,
+    "Open Sans";
+  font-size: 1.125rem;
   background-attachment: fixed;
   color: #ffffff;
   overflow-x: hidden;
@@ -87,7 +89,7 @@ body {
 }
 
 #heading {
-  font-size: 4vh;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -260,7 +262,10 @@ figcaption {
   height: 15vh;
   background-position: center center;
   display: grid;
-  transition: filter, box-shadow ease-out 0.3s, height ease 0.2s;
+  transition:
+    filter,
+    box-shadow ease-out 0.3s,
+    height ease 0.2s;
 }
 
 .macver:hover {

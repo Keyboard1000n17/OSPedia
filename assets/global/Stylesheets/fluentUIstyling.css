@@ -15,9 +15,8 @@ nav {
   list-style: none;
 }
 
-#ul,
-.li,
-.nav {
+ul > li.navigation,
+ul > li.navigation > a {
   list-style: none;
   margin-right: 20px;
   text-decoration: none;
@@ -25,7 +24,7 @@ nav {
   display: inline-block;
 }
 
-.nav:hover {
+ul > li.navigation > a:hover {
   color: #001fff;
 }
 
@@ -78,18 +77,28 @@ button:hover {
 /* CONTENT STYLING */
 body {
   margin: 10vh 1vw 10vh 1vw;
-  font-family: Segoe UI, "Open Sans";
-  font-size: 2.1vh;
+  font-family:
+    Segoe UI,
+    "Open Sans";
+  font-size: 1.125rem;
   background-attachment: fixed;
-  color: #ffffff;
   overflow-x: hidden;
   background-size: cover;
   background-position: center;
 }
 
 #heading {
-  font-size: 4vh;
+  font-size: 4rem;
   font-weight: bold;
+}
+
+div#top-banner {
+  background-color: grey;
+  text-align: center;
+  width: 100vw;
+  padding: 10px;
+  position: relative;
+  left: -1vw;
 }
 
 .info,
@@ -115,17 +124,17 @@ li {
 
 .level-one {
   font-weight: 700;
-  font-size: 2.75vh;
+  font-size: 1.5rem;
 }
 
 .level-two {
   font-weight: 600;
-  font-size: 2.5vh;
+  font-size: 1.4rem;
 }
 
 .level-three {
   font-weight: 400;
-  font-size: 2.25vh;
+  font-size: 1.2rem;
 }
 
 .div-level-two {
@@ -137,7 +146,6 @@ li {
 }
 
 a {
-  color: #000000;
   text-decoration: none;
 }
 
@@ -199,13 +207,48 @@ figcaption {
   height: 15vh;
   background-position: center center;
   display: grid;
-  transition: filter, box-shadow ease-out 0.3s, height ease 0.2s;
+  transition:
+    filter,
+    box-shadow ease-out 0.3s,
+    height ease 0.2s;
 }
 
 .winver:hover {
   filter: brightness(160%);
   box-shadow: 0px 0px 15px 5px black;
   height: 16vh;
+}
+
+div.home-os-cards {
+  border: solid 0.1px black;
+  border-radius: 10px;
+  position: relative;
+  margin: 1vh 2vw;
+}
+
+div.home-os-cards > img.wallpaper {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px 10px 0 0;
+  filter: blur(1px) brightness(0.8);
+}
+
+div.home-os-cards > div.bottom {
+  margin: 1vh 1vw;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+}
+
+img.logo {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  z-index: 1;
+  filter: drop-shadow(0px 0px 20px white);
 }
 
 .winref {
@@ -217,8 +260,7 @@ figcaption {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  margin: 10px;
-  height: 90%;
+  height: auto;
 }
 
 /* HOMEPAGE STYLING */

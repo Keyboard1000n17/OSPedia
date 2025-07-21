@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
   <head>
     <meta
@@ -5,7 +6,7 @@
       content="width=device-width, initial-scale=1.0"
       charset="Unicode"
     />
-    <title>WinPedia - Home</title>
+    <title>OSPedia - Home</title>
     <link
       href="./assets/global/Stylesheets/fluentUIstyling.css"
       rel="stylesheet"
@@ -18,9 +19,7 @@
     />
     <link rel="icon" href="./assets/global/OSPedia-favicon.svg" />
   </head>
-  <body
-    style="background-image: url(./assets/WinPedia/Images/wallpaper/win11.jpg)"
-  >
+  <body>
     <header>
       <nav>
         <img
@@ -29,10 +28,59 @@
           alt="OSPedia logo"
         />
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
+          <li class="navigation"><a href="./index.html">Home</a></li>
+          <li class="navigation"><a href="./about.html">About</a></li>
         </ul>
       </nav>
     </header>
+    <div id="top-banner">
+      <span id="heading">OSPedia</span>
+      <p>An encyclopedia of Operating Systems</p>
+    </div>
+    <p>
+      OSPedia aims to provide plenty of information on various operating systems
+      that have impacted our daily lives. From release dates to demonstrations
+      of these operating systems, this website covers them in great detail!
+    </p>
+    <span style="font-size: 2rem">Subsites:</span>
+    <div id="homeContainer">
+      <div class="home-os-cards">
+        <img
+          src="./assets/global/Images/Windows11.jpg"
+          alt="Windows 11 wallpaper"
+          class="wallpaper"
+        />
+        <img
+          src="./assets/WinPedia/Images/WinPedia-logo.svg"
+          alt="WinPedia logo"
+          class="logo"
+        />
+        <div class="bottom">
+          <h2>WinPedia</h2>
+        </div>
+      </div>
+      <div class="home-os-cards">
+        <img
+          src="./assets/MacPedia/Images/Wallpapers/homeBG.jpg"
+          alt="macOS Big Sur wallpaper"
+          class="wallpaper"
+        />
+        <img
+          src="./assets/MacPedia/Images/MacPedia-logo.svg"
+          alt="MacPedia logo"
+          class="logo"
+        />
+        <div class="bottom">
+          <h2>MacPedia</h2>
+        </div>
+      </div>
+    </div>
+    <span style="font-size: 2rem">Temporary Redirects:</span>
+    <p>
+      This is an incomplete page, so these lunks are gonna be here ultil
+      completion.
+    </p>
+    <a href="assets/WinPedia/Home/Homepage.html">WinPedia</a>
+    <a href="assets/MacPedia/Home/Homepage.html">MacPedia</a>
   </body>
 </html>

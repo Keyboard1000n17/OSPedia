@@ -15,8 +15,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-   xmlns:ns="&amp;#38;#38;#38;#38;ns_ai;"><sodipodi:namedview
+   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"><sodipodi:namedview
      id="namedview2"
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -27,8 +26,8 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="3.9136285"
-     inkscape:cx="120.09316"
-     inkscape:cy="51.742264"
+     inkscape:cx="151.52179"
+     inkscape:cy="97.990905"
      inkscape:window-width="1920"
      inkscape:window-height="944"
      inkscape:window-x="0"
@@ -129,7 +128,7 @@
 			
 		</foreignObject>
 		<g
-   ns:extraneous="self"
+   extraneous="self"
    id="g49">
 			<g
    id="Layer_1">
@@ -440,20 +439,10 @@
      xml:space="preserve"
      style="font-size:19.7556px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
      x="32.385559"
-     y="22.878918"
+     y="23.516966"
      id="text3"><tspan
        sodipodi:role="line"
        id="tspan3"
        style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:19.7556px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Light';stroke-width:0.264583"
        x="32.385559"
-       y="22.878918">OS</tspan></text><text
-     xml:space="preserve"
-     style="font-size:19.7556px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
-     x="56.721127"
-     y="23.163992"
-     id="text4"><tspan
-       sodipodi:role="line"
-       id="tspan4"
-       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:19.7556px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Light';stroke-width:0.264583"
-       x="56.721127"
-       y="23.163992">Pedia</tspan></text></svg>
+       y="23.516966">OSPedia</tspan></text></svg>
