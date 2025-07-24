@@ -1,8 +1,0 @@
-[[redirects]]
-  from = "/src/MacPedia/*"
-  to = "/src/MacPedia/Home/Homepage.html"
-[[redirects]]
-  from = "/*"
-  to = "/src/WinPedia/Home/Homepage.html"
-  status = 301
-
