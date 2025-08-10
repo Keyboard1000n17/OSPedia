@@ -1,0 +1,24 @@
+{
+  "name": "ospedia",
+  "version": "1.0.0",
+  "description": "<p align=\"center\"> \t<img src=\"./assets/global/OSPedia-favicon.svg\" width=\"210\" alt=\"Logo\"/><br/> </p> <h3 align=\"center\">OSPedia</h3> OSPedia aims to be a website that brings out the histories of the notable operating systems of the past and present. It appreciates how far we've come with today's technology, how far we're going with tomorrow's technology, and how these systems helped tremendously.",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keyboard1000n17/OSPedia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Keyboard1000n17/OSPedia/issues"
+  },
+  "homepage": "https://github.com/Keyboard1000n17/OSPedia#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
