@@ -36,6 +36,8 @@ module.exports = function(eleventyConfig) {
 
 
   eleventyConfig.addPassthroughCopy("assets/**/*.{jpg,png,gif,webp}");
+  eleventyConfig.addPassthroughCopy("assets/MacPedia/Home/Homepage.html");
+  eleventyConfig.addPassthroughCopy("assets/WinPedia/**/*.*");
 
   return {
     dir: {
