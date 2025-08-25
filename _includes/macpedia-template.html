@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -26,27 +26,32 @@
     </header>
     {{ content|safe }}
     <div class="article-nav">
-      { % set currentCollection = collections['macpedia-pages'] % }
-      { % set previousArticle = currentCollection | getPreviousCollectionItem (page) % }
+      { % set currentCollection = collections['macpedia-pages'] % } { % set
+      previousArticle = currentCollection | getPreviousCollectionItem (page) % }
       { % set nextArticle = currentCollection | getNextCollectionItem (page) % }
       { % if previousArticle % }
       <a href="{{ previousArticle.url}}" rel="prev" class="prxt">
         <div class="prxt">
           { % if previousArticle.data.logo % }
-          <img src="{{ previousArticle.data.logo }}" alt="{{ previousArticle.data.title }}" /> { % endif % }
-          {{ previousArticle.data.title }}
-          { % else % }{ % endif % }
+          <img
+            src="{{ previousArticle.data.logo }}"
+            alt="{{ previousArticle.data.title }}"
+          />
+          { % endif % } {{ previousArticle.data.title }} { % else % }{ % endif %
+          }
         </div>
       </a>
-  { % if nextArticle % }
+      { % if nextArticle % }
       <a href="{{ nextArticle.url}}" rel="prev" class="prxt">
         <div class="prxt">
           { % if nextArticle.data.logo % }
-          <img src="{{ nextArticle.data.logo }}" alt="{{ nextArticle.data.title }}" /> { % endif % }
-          {{ nextArticle.data.title }}
-          { % else % }{ % endif % }
+          <img
+            src="{{ nextArticle.data.logo }}"
+            alt="{{ nextArticle.data.title }}"
+          />
+          { % endif % } {{ nextArticle.data.title }} { % else % }{ % endif % }
         </div>
       </a>
     </div>
-    </body>
-  </html> 
+  </body>
+</html>
