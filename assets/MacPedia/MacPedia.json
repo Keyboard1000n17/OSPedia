@@ -1,4 +1,4 @@
 {
-  "layout": "macpedia-template.html",
+  "layout": "macpedia-template.njk",
   "tags": "macpedia-pages"
 }

@@ -17,7 +17,10 @@ module.exports = function (eleventyConfig) {
         return this.title;
       },
       get order() {
-        return this.order;
+        if ( this.page && this.page.data) {
+          return this.page.data.order;
+        }
+        return 0;
       },
     },
   });
@@ -36,7 +39,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("assets/**/*.{jpg,png,gif,webp}");
   eleventyConfig.addPassthroughCopy("assets/MacPedia/Home/Homepage.html");
-  eleventyConfig.addPassthroughCopy("assets/WinPedia/**/*.*");
+  eleventyConfig.addPassthroughCopy("assets/WinPedia/Home/Homepage.html");
 
   return {
     dir: {
