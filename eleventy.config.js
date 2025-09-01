@@ -1,10 +1,11 @@
 const eleventySass = require("eleventy-sass");
+const path = require("path");
 
 // So, I asked Gemini to generate this config
 // because I don't know bullshit, so,
 // very sorry to y'all who hate vibe coding.
 
-module.exports = function (eleventyConfig) {
+module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventySass, {
     sass: {
       loadPaths: ["node_modules"],
@@ -17,7 +18,7 @@ module.exports = function (eleventyConfig) {
         return this.title;
       },
       get order() {
-        if ( this.page && this.page.data) {
+        if (this.page && this.page.data) {
           return this.page.data.order;
         }
         return 0;
@@ -25,21 +26,26 @@ module.exports = function (eleventyConfig) {
     },
   });
 
-  eleventyConfig.addCollection("macpedia", function (collection) {
-    return collection.getFilteredByTag("macpedia").sort((a, b) => {
-      return a.data.order - b.data.order;
-    });
+  eleventyConfig.addCollection("winpedia-pages", function(collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("assets/WinPedia/*.html")
+      .sort((a, b) => {
+        return (a.data.order || 0) - (b.data.order || 0);
+      });
   });
 
-  eleventyConfig.addCollection("winpedia", function (collection) {
-    return collection.getFilteredByTag("winpedia").sort((a, b) => {
-      return a.data.order - b.data.order;
-    });
+  eleventyConfig.addCollection("macpedia-pages", function(collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("assets/MacPedia/*.html")
+      .sort((a, b) => {
+        return (a.data.order || 0) - (b.data.order || 0);
+      });
   });
 
-  eleventyConfig.addPassthroughCopy("assets/**/*.{jpg,png,gif,webp}");
-  eleventyConfig.addPassthroughCopy("assets/MacPedia/Home/Homepage.html");
-  eleventyConfig.addPassthroughCopy("assets/WinPedia/Home/Homepage.html");
+  eleventyConfig.addTemplateFormats("html");
+  eleventyConfig.addPassthroughCopy("assets/**/*.{jpg,png,gif,webp,svg,css}");
+  eleventyConfig.addPassthroughCopy("assets/MacPedia/Homepage.html");
+  eleventyConfig.addPassthroughCopy("assets/WinPedia/Homepage.html");
 
   return {
     dir: {
