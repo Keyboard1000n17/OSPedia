@@ -18,7 +18,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
   overflow: hidden;
   width: 100%;
   display: flex;
@@ -44,25 +44,25 @@ nav {
 
 div.article-nav {
   background-color: rgba(255, 255, 255, 0.75);
-  position: absolute;
-  overflow: hidden;
+  /* position: absolute; */
+  /* overflow: hidden; */
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
   align-items: center;
-  height: 4rem;
-  padding: 5px;
+  /* height: 4rem; */
+  column-gap: 20px;
+  /* padding: 20px; */
   color: #000;
 }
 
 div.prxt {
   border-radius: 15px;
   padding: 10px;
+  margin: 10px;
   background-color: rgba(255, 255, 255, 0.75);
-  width: 100%;
-  height: 100%;
-  /* font-family: inherit; */
-  /* font-size: inherit; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -70,15 +70,16 @@ div.prxt {
   align-items: center;
   transition: box-shadow ease-out 0.3s;
   border-style: none;
+  /* height: 4rem; */
 }
 
 div.prxt:hover {
-  box-shadow: 0px 0px 15px 2px #000;
+  box-shadow: 0px 0px 15px #000;
 }
 
 div.prxt img {
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: auto;
   /* object-fit: none; */
 }
 
@@ -285,7 +286,7 @@ div.UI-Screenshots {
   margin: 1vh;
   padding: 3vh;
   border-radius: 10px;
-  height: 15vh;
+  height: 5rem;
   background-position: center center;
   display: grid;
   transition:
@@ -298,13 +299,62 @@ div.UI-Screenshots {
 .macver:hover {
   filter: brightness(160%);
   box-shadow: 0px 0px 15px 5px #000;
-  height: 16vh;
+  height: 4.5rem;
 }
 
 .winref,
 .macref {
   text-decoration: none;
   color: #fff;
+}
+
+div.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  /* padding: 10px; */
+}
+
+div.home-os-cards {
+  border: solid 0.1px black;
+  border-radius: 10px;
+  position: relative;
+  margin: 1vh 2vw;
+}
+
+div.home-os-cards > img.wallpaper {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px 10px 0 0;
+  filter: blur(1px) brightness(0.8);
+}
+
+div.home-os-cards > div.bottom {
+  margin: 1vh 1vw;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+}
+
+img.logo {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  z-index: 1;
+  filter: drop-shadow(0px 0px 20px white);
+}
+
+div#top-banner {
+  background-color: grey;
+  text-align: center;
+  width: 100vw;
+  padding: 10px;
+  position: relative;
+  left: -1vw;
+  color: black;
 }
 
 @media (max-width: 768px) {

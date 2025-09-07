@@ -5,7 +5,7 @@ const path = require("path");
 // because I don't know bullshit, so,
 // very sorry to y'all who hate vibe coding.
 
-module.exports = function (eleventyConfig) {
+module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventySass, {
     sass: {
       loadPaths: ["node_modules"],
@@ -26,7 +26,7 @@ module.exports = function (eleventyConfig) {
     },
   });
 
-  eleventyConfig.addCollection("winpedia-pages", function (collectionApi) {
+  eleventyConfig.addCollection("winpedia-pages", function(collectionApi) {
     return collectionApi
       .getFilteredByGlob("assets/WinPedia/!(Homepage).html")
       .sort((a, b) => {
@@ -34,7 +34,7 @@ module.exports = function (eleventyConfig) {
       });
   });
 
-  eleventyConfig.addCollection("macpedia-pages", function (collectionApi) {
+  eleventyConfig.addCollection("macpedia-pages", function(collectionApi) {
     return collectionApi
       .getFilteredByGlob("assets/MacPedia/!(Homepage).html")
       .sort((a, b) => {
@@ -44,8 +44,8 @@ module.exports = function (eleventyConfig) {
 
   // eleventyConfig.addTemplateFormats("html");
   eleventyConfig.addPassthroughCopy("assets/**/*.{jpg,png,gif,webp,svg,css}");
-  eleventyConfig.addPassthroughCopy("assets/MacPedia/Homepage.html");
-  eleventyConfig.addPassthroughCopy("assets/WinPedia/Homepage.html");
+  eleventyConfig.addPassthroughCopy("assets/MacPedia/index.html");
+  eleventyConfig.addPassthroughCopy("assets/WinPedia/index.html");
 
   return {
     dir: {
