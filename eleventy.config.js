@@ -28,7 +28,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection("winpedia-pages", function(collectionApi) {
     return collectionApi
-      .getFilteredByGlob("assets/WinPedia/!(Homepage).html")
+      .getFilteredByGlob("assets/WinPedia/!(index).html")
       .sort((a, b) => {
         return (a.data.order || 0) - (b.data.order || 0);
       });
@@ -36,7 +36,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection("macpedia-pages", function(collectionApi) {
     return collectionApi
-      .getFilteredByGlob("assets/MacPedia/!(Homepage).html")
+      .getFilteredByGlob("assets/MacPedia/!(index).html")
       .sort((a, b) => {
         return (a.data.order || 0) - (b.data.order || 0);
       });
@@ -51,7 +51,6 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: "assets",
       output: "_site",
-      ignores: ["assets/WinPedia/index.html", "assets/MacPedia/index.html"],
     },
   };
 };

@@ -57,6 +57,10 @@ div.article-nav {
   color: #000;
 }
 
+div.article-nav a {
+  color: #000;
+}
+
 div.prxt {
   border-radius: 15px;
   padding: 10px;
@@ -146,7 +150,6 @@ li {
 }
 
 a {
-  color: #000;
   text-decoration: none;
 }
 
@@ -307,18 +310,18 @@ div.UI-Screenshots {
   color: #fff;
 }
 
-/* div.card-container { */
-/*   display: grid; */
-/*   grid-template-columns: 1fr 1fr 1fr; */
-/*   grid-template-rows: auto; */
-/*   /* padding: 10px; */
-/**/
-/* } */
+a.home-os-cards {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  height: 100%;
+}
 
 div.home-os-cards {
   border: solid 0.1px black;
   border-radius: 10px;
   position: relative;
+  height: 100%;
   margin: 1vh 2vw;
 }
 
@@ -328,7 +331,7 @@ div.home-os-cards>img.wallpaper {
   object-fit: cover;
   object-position: center;
   border-radius: 10px 10px 0 0;
-  filter: blur(1px) brightness(0.8);
+  filter: blur(1px) brightness(0.75);
 }
 
 div.home-os-cards>div.bottom {

@@ -32,7 +32,7 @@
       <div class="prxt">
         {% if previousArticle.data.favicon %}
         <img src="./Images/Icons/{{ previousArticle.data.favicon }}" alt="{{ previousArticle.data.title }}" />
-        {% endif %} {{ previousArticle.data.title }}
+        {% endif %} <p>{{ previousArticle.data.title }}</p>
       </div>
     </a>
     {% endif %}
@@ -40,7 +40,7 @@
     {% if nextArticle %}
     <a href="{{ nextArticle.url }}" rel="next" class="prxt">
       <div class="prxt">
-        {{ nextArticle.data.title }}
+        <p>{{ nextArticle.data.title }}</p>
         {% if nextArticle.data.favicon %}
         <img src="./Images/Icons/{{ nextArticle.data.favicon }}" alt="{{ nextArticle.data.title }}" />
         {% endif %}
