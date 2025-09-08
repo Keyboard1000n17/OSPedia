@@ -1,72 +1,101 @@
 <!doctype html>
 <html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      charset="Unicode"
+    />
+    <title>OSPedia - Home</title>
+    <link href="./global/Stylesheets/fluentUIstyling.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./global/OSPedia-favicon.svg" />
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="Unicode" />
-  <title>OSPedia - Home</title>
-  <link href="./global/Stylesheets/fluentUIstyling.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet" />
-  <link rel="icon" href="./global/OSPedia-favicon.svg" />
-</head>
+  <body style="color: black">
+    <nav>
+      <img src="./global/OSPedia-logo.svg" alt="logo" height="70%" />
+      <ul>
+        <li class="nav"><a href="./index.html" class="nav">Home</a></li>
+        <li class="nav">
+          <a href="./about.html" class="nav">About Me</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="top-banner">
+      <span id="heading" style="font-size: 4rem">OSPedia</span>
+      <p>An encyclopedia of Operating Systems</p>
+    </div>
+    <p>
+      OSPedia aims to provide plenty of information on various operating systems
+      that have impacted our daily lives. From release dates to demonstrations
+      of these operating systems, this website covers them in great detail!
+    </p>
+    <span style="font-size: 2rem">Subsites:</span>
+    <div id="homeContainer">
+      <div class="home-os-cards">
+        <img
+          src="./global/Images/Windows11.jpg"
+          alt="Windows 11 wallpaper"
+          class="wallpaper"
+        />
+        <img
+          src="./WinPedia/Images/WinPedia-logo.svg"
+          alt="WinPedia logo"
+          class="logo"
+        />
+        <div class="bottom">
+          <h2>WinPedia</h2>
+          <p>
+            Learn about Microsoft Windows and how it has impacted our lives.
+            Explore the evolution of one of the world’s most influential
+            operating systems, from its humble beginnings to the modern
+            experience we find today. Find out about how Windows shaped personal
+            computing, influenced software design, and became a core part of
+            everyday life.
+          </p>
+        </div>
+      </div>
+      <div class="home-os-cards">
+        <img
+          src="./MacPedia/Images/Wallpapers/homeBG.webp"
+          alt="macOS Big Sur wallpaper"
+          class="wallpaper"
+        />
+        <img
+          src="./MacPedia/Images/MacPedia-logo.svg"
+          alt="MacPedia logo"
+          class="logo"
+        />
+        <div class="bottom">
+          <h2>MacPedia</h2>
+          <p>
+            Appreciate macOS through MacPedia. Learn how much it innovated in
+            the field of desktops, from an OS with no terminal to a powerful
+            Unix-like operating system. Get to know how far it has come since
+            1984, more than 40 years ago.
+          </p>
+        </div>
+      </div>
 
-<body style="color: black">
-  <nav>
-    <img src="./global/OSPedia-logo.svg" alt="logo" height="70%" />
-    <ul>
-      <li class="nav"><a href="./index.html" class="nav">Home</a></li>
-      <li class="nav">
-        <a href="./about.html" class="nav">About Me</a>
-      </li>
-    </ul>
-  </nav>
-  <div id="top-banner">
-    <span id="heading">OSPedia</span>
-    <p>An encyclopedia of Operating Systems</p>
-  </div>
-  <p>
-    OSPedia aims to provide plenty of information on various operating systems
-    that have impacted our daily lives. From release dates to demonstrations
-    of these operating systems, this website covers them in great detail!
-  </p>
-  <span style="font-size: 2rem">Subsites:</span>
-  <div id="card-container">
-    <div class="home-os-cards">
-      <img src="./global/Images/Windows11.jpg" alt="Windows 11 wallpaper" class="wallpaper" />
-      <img src="./WinPedia/Images/WinPedia-logo.svg" alt="WinPedia logo" class="logo" />
-      <div class="bottom">
-        <h2>WinPedia</h2>
-        <p>
-          Learn about Microsoft Windows and how it has impacted our lives.
-          Explore the evolution of one of the world’s most influential
-          operating systems - from its humble beginnings to the modern
-          experience found today. Get to know how Windows shaped personal
-          computing, influenced software design, and became a core part of
-          everyday life.
-        </p>
+      <div
+        class="home-os-cards"
+        style="display: flex; align-content: center; justify-content: center"
+      >
+        <h2>And more to come.</h2>
       </div>
     </div>
-    <div class="home-os-cards">
-      <img src="./MacPedia/Images/Wallpapers/homeBG.webp" alt="macOS Big Sur wallpaper" class="wallpaper" />
-      <img src="./MacPedia/Images/MacPedia-logo.svg" alt="MacPedia logo" class="logo" />
-      <div class="bottom">
-        <h2>MacPedia</h2>
-      </div>
-    </div>
-
-    <div class="home-os-cards" style="display: flex; align-content: center; justify-content: center">
-      <h2>And more to come.</h2>
-    </div>
-  </div>
-  <span style="font-size: 2rem">Temporary Redirects:</span>
-  <p>
-    This is an incomplete page, so these links are gonna be here until
-    completion.
-  </p>
-  <a href="./WinPedia/index.html">WinPedia</a>
-  <a href="./MacPedia/index.html">MacPedia</a>
-</body>
-
+    <span style="font-size: 2rem">Temporary Redirects:</span>
+    <p>
+      This is an incomplete page, so these links are gonna be here until
+      completion.
+    </p>
+    <a href="./WinPedia/index.html">WinPedia</a>
+    <a href="./MacPedia/index.html">MacPedia</a>
+  </body>
 </html>

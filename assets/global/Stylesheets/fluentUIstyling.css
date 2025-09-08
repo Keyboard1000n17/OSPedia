@@ -28,9 +28,8 @@ nav {
   list-style: none;
 }
 
-#ul,
-.li,
-.nav {
+ul>li.nav,
+ul>li.nav a {
   list-style: none;
   margin-right: 20px;
   text-decoration: none;
@@ -308,12 +307,13 @@ div.UI-Screenshots {
   color: #fff;
 }
 
-div.card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  /* padding: 10px; */
-}
+/* div.card-container { */
+/*   display: grid; */
+/*   grid-template-columns: 1fr 1fr 1fr; */
+/*   grid-template-rows: auto; */
+/*   /* padding: 10px; */
+/**/
+/* } */
 
 div.home-os-cards {
   border: solid 0.1px black;
@@ -322,7 +322,7 @@ div.home-os-cards {
   margin: 1vh 2vw;
 }
 
-div.home-os-cards > img.wallpaper {
+div.home-os-cards>img.wallpaper {
   height: 50%;
   width: 100%;
   object-fit: cover;
@@ -331,8 +331,9 @@ div.home-os-cards > img.wallpaper {
   filter: blur(1px) brightness(0.8);
 }
 
-div.home-os-cards > div.bottom {
+div.home-os-cards>div.bottom {
   margin: 1vh 1vw;
+  border: none;
   border-radius: 0 0 10px 10px;
   text-align: center;
 }
