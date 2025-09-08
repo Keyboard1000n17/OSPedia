@@ -51,6 +51,7 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: "assets",
       output: "_site",
+      ignores: ["assets/WinPedia/index.html", "assets/MacPedia/index.html"],
     },
   };
 };
