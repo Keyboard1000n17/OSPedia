@@ -51,7 +51,7 @@ div.article-nav {
   grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
-  /* height: 4rem; */
+  /* height: 10rem; */
   column-gap: 20px;
   /* padding: 20px; */
   color: #000;
@@ -73,7 +73,7 @@ div.prxt {
   align-items: center;
   transition: box-shadow ease-out 0.3s;
   border-style: none;
-  /* height: 4rem; */
+  height: 10rem;
 }
 
 div.prxt:hover {
@@ -83,7 +83,16 @@ div.prxt:hover {
 div.prxt img {
   width: 80%;
   height: auto;
-  /* object-fit: none; */
+  max-height: 90%;
+  object-fit: contain;
+}
+
+div.article-nav>a.prev {
+  grid-column: 1;
+}
+
+div.article-nav>a.next {
+  grid-column: 2;
 }
 
 #heading {
@@ -208,6 +217,14 @@ figcaption {
   height: 90%;
 }
 
+div#card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 10px;
+  position: relative;
+}
+
 #info {
   display: flow-root;
   background-color: rgba(255, 255, 255, 0.75);
@@ -323,10 +340,12 @@ div.home-os-cards {
   position: relative;
   height: 100%;
   margin: 1vh 2vw;
+  display: flex;
+  flex-direction: column;
 }
 
-div.home-os-cards>img.wallpaper {
-  height: 50%;
+div.home-os-cards img.wallpaper {
+  height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -334,11 +353,20 @@ div.home-os-cards>img.wallpaper {
   filter: blur(1px) brightness(0.75);
 }
 
+div.home-os-cards>div.top {
+  display: flex;
+  flex: 0 0 50%;
+}
+
 div.home-os-cards>div.bottom {
   margin: 1vh 1vw;
   border: none;
   border-radius: 0 0 10px 10px;
   text-align: center;
+  overflow: scroll;
+  display: flex;
+  flex: 1 1 50%;
+  flex-direction: column;
 }
 
 img.logo {

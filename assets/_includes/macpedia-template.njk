@@ -28,7 +28,7 @@
     {% set previousArticle = currentCollection | getPreviousCollectionItem(page)%}
     {% set nextArticle = currentCollection | getNextCollectionItem(page)%}
     {% if previousArticle %}
-    <a href="{{ previousArticle.url }}" rel="prev" class="prxt">
+    <a href="{{ previousArticle.url }}" rel="prev" class="prxt prev">
       <div class="prxt">
         {% if previousArticle.data.favicon %}
         <img src="./Images/Icons/{{ previousArticle.data.favicon }}" alt="{{ previousArticle.data.title }}" />
@@ -38,7 +38,7 @@
     {% endif %}
 
     {% if nextArticle %}
-    <a href="{{ nextArticle.url }}" rel="next" class="prxt">
+    <a href="{{ nextArticle.url }}" rel="next" class="prxt next">
       <div class="prxt">
         <p>{{ nextArticle.data.title }}</p>
         {% if nextArticle.data.favicon %}
