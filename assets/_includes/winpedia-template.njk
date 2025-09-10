@@ -16,7 +16,7 @@
   <nav>
     <img src="./Images/WinPedia-logo.svg" alt="logo" height="70%" />
     <ul>
-      <li class="nav"><a href="index.html" class="nav">Home</a></li>
+      <li class="nav"><a href="./index.html" class="nav">Home</a></li>
       <li class="nav">
         <a href="../about.html" class="nav">About Me</a>
       </li>
@@ -28,8 +28,8 @@
     {% set previousArticle = currentCollection | getPreviousCollectionItem(page)%}
     {% set nextArticle = currentCollection | getNextCollectionItem(page)%}
     {% if previousArticle %}
-    <a href="{{ previousArticle.url}}" rel="prev" class="prxt">
-      <div class="prxt">
+    <a href="{{ previousArticle.url}}" rel="prev" class="prxt prev">
+      <div class="prxt prev">
         {% if previousArticle.data.favicon %}
         <img src="./Images/Icons/{{ previousArticle.data.favicon }}" alt="{{ previousArticle.data.title }}" />
         {% endif %} <p>{{ previousArticle.data.title }}</p>
@@ -38,7 +38,7 @@
     {% endif %}
 
     {% if nextArticle %}
-    <a href="{{ nextArticle.url }}" rel="next" class="prxt">
+    <a href="{{ nextArticle.url }}" rel="next" class="prxt next">
       <div class="prxt">
         <p>{{ nextArticle.data.title }}</p>
         {% if nextArticle.data.favicon %}
