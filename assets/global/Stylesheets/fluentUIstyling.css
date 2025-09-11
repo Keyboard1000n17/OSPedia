@@ -66,10 +66,12 @@ div.prxt {
   padding: 10px;
   margin: 10px;
   background-color: rgba(255, 255, 255, 0.75);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  justify-content: center;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-rows: 1fr; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
   transition: box-shadow ease-out 0.3s;
   border-style: none;
@@ -81,7 +83,7 @@ div.prxt:hover {
 }
 
 div.prxt img {
-  width: 80%;
+  width: 50%;
   height: auto;
   max-height: 90%;
   object-fit: contain;
@@ -112,22 +114,10 @@ div.article-nav>a.next {
   height: auto;
 }
 
-/* div.prxt { */
-/*   background-color: rgba(255, 255, 255, 0.75); */
-/*   backdrop-filter: blur(7.5px); */
-/*   padding: 10px; */
-/*   border-radius: 10px; */
-/*   margin: 10px; */
-/* } */
-
-/* div.article-nav { */
-/*   background-color: rgba(255, 255, 255, 0.75); */
-/*   padding: 10px; */
-/*   display: flex; */
-/* } */
-/**/
-img {
+#info img,
+.info img {
   float: right;
+  height: 100%;
 }
 
 li {
@@ -177,6 +167,7 @@ table {
 
 th,
 td {
+  visibility: hidden;
   border: solid 0.5px #000;
   padding: 10px;
 }
@@ -329,13 +320,15 @@ div.UI-Screenshots {
 
 a.home-os-cards {
   position: relative;
+  border: none;
   color: #000;
   text-decoration: none;
   height: 100%;
 }
 
 div.home-os-cards {
-  border: solid 0.1px black;
+  border: solid 0.05px black;
+  border-top: none;
   border-radius: 10px;
   position: relative;
   height: 100%;
@@ -356,10 +349,12 @@ div.home-os-cards img.wallpaper {
 div.home-os-cards>div.top {
   display: flex;
   flex: 0 0 50%;
+  border: none;
 }
 
 div.home-os-cards>div.bottom {
   margin: 1vh 1vw;
+  padding: 1vh 2vw;
   border: none;
   border-radius: 0 0 10px 10px;
   text-align: center;
