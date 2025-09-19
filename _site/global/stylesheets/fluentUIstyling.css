@@ -83,14 +83,6 @@ div.prxt:hover {
   box-shadow: 0px 0px 15px #000;
 }
 
-/**/
-/* div.prxt { */
-/*   width: 100%; */
-/*   display: flex; */
-/*   align-items: center; */
-/*   justify-content: center; */
-/* } */
-
 div.prxt img {
   /* width: 80%; */
   height: 9rem;
@@ -132,7 +124,6 @@ div.article-nav>a.next {
 
 li {
   list-style: disc;
-  /* color: #fff; */
 }
 
 .level-one {
@@ -192,11 +183,47 @@ figure.UI-Screenshots {
   color: #000;
 }
 
-img.UI-Screenshots {
+
+div.UI-Screenshots {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+  align-items: center;
+  border-radius: 10px;
+  color: #000;
+  gap: 10px;
+  text-align: center;
+}
+
+div.UI-Screenshots>img.UI-Screenshots {
+  grid-row: 1;
+  width: 100%;
+  max-height: 15rem;
+  filter: brightness(80%);
+  border-radius: 10px;
+  transition: all ease 0.3s;
+}
+
+div.UI-Screenshots>p {
+  grid-row: 2;
+  grid-column: span 4;
+}
+
+figure.UI-Screenshots>img.UI-Screenshots {
   width: 50vw;
   filter: brightness(80%);
   border-radius: 10px;
   transition: all ease 0.3s;
+}
+
+div.UI-Screenshots>img.UI-Screenshots:hover {
+  /*height: 15rem;*/
+  /*width: auto;*/
+  filter: brightness(100%);
+  z-index: 2;
+  transform: scale(1.1);
 }
 
 img.UI-Screenshots:hover {
@@ -287,16 +314,6 @@ th.top {
   border-bottom: 2px solid #000;
   border-right: 2px solid #000;
   border-bottom-right-radius: 10px;
-}
-
-div.UI-Screenshots {
-  display: flex;
-  background-color: rgba(255, 255, 255, 0.75);
-  align-items: center;
-  border-radius: 10px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  color: #000;
 }
 
 .winver,
