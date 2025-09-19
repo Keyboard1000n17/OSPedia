@@ -399,6 +399,7 @@ div.hamburger-menu {
   align-items: center;
   cursor: pointer;
   margin-right: 1rem;
+  z-index: 4;
 }
 
 div.hamburger-menu img {
@@ -447,7 +448,7 @@ div.hamburger-menu>.hamburger-menu-child li a {
 
 @media (max-width: 768px) {
   body {
-    margin-top: 3rem;
+    margin: 3rem 7.5px;
   }
 
   nav {
@@ -462,7 +463,8 @@ div.hamburger-menu>.hamburger-menu-child li a {
     display: flex;
   }
 
-  img {
+  #info>img,
+  .info>img {
     float: none;
   }
 
@@ -472,14 +474,39 @@ div.hamburger-menu>.hamburger-menu-child li a {
     width: 98%;
   }
 
-  #info {
+  #info,
+  .info {
     display: flex;
     flex-direction: column;
     align-content: center;
     text-align: center;
   }
 
+  #info>img,
+  .info>img {
+    align-self: center;
+  }
+
   div#card-container {
     display: block;
+  }
+
+  div.prxt {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+    text-align: center;
+  }
+
+  div.prxt>* {
+    margin: 5px;
+  }
+
+  div.prxt>p {
+    grid-row: 2;
+  }
+
+  div.prxt>img {
+    grid-row: 1;
   }
 }
