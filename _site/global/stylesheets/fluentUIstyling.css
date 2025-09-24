@@ -44,7 +44,9 @@ ul>li.nav a:visited {
 
 div.article-nav {
   background-color: rgba(255, 255, 255, 0.75);
-  /* position: absolute; */
+  position: absolute;
+  left: 0;
+  right: 0;
   /* overflow: hidden; */
   width: 100%;
   display: grid;

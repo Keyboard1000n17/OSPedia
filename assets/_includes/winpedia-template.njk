@@ -38,8 +38,11 @@
       </div>
     </div>
   </nav>
-
+  
+  <main>
   {{ content | safe }}
+  </main>
+
   <div class="article-nav">
     {% set currentCollection = collections['winpedia-pages'] %}
     {% set previousArticle = currentCollection | getPreviousCollectionItem(page)%}
