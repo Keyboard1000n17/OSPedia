@@ -408,8 +408,8 @@ div#top-banner {
   background-color: grey;
   text-align: center;
   padding: 10px;
-  position: absolute;
-  left: 0;
+  position: relative;
+  left: -1vw;
   right: 0;
   color: black;
 }
@@ -490,6 +490,11 @@ div.hamburger-menu>.hamburger-menu-child li a {
 
   div.hamburger-menu {
     display: flex;
+  }
+
+  div#top-banner {
+    left: -7.5px;
+    right: 7.5px;
   }
 
   table {
