@@ -85,6 +85,7 @@ div.prxt {
   transition: box-shadow ease-out 0.3s;
   border-style: none;
   height: 10rem;
+  justify-items: center;
 }
 
 div.prxt:hover {
@@ -93,7 +94,8 @@ div.prxt:hover {
 
 div.prxt img {
   height: 9rem;
-  max-width: 90%;
+  max-width: 100%;
+  max-height: 90%;
   object-fit: contain;
 }
 
@@ -126,6 +128,7 @@ div.article-nav>a.next {
 .info img {
   float: right;
   height: 100%;
+  max-width: 35vw;
 }
 
 li {
@@ -410,7 +413,7 @@ div#top-banner {
   padding: 10px;
   position: relative;
   left: -1vw;
-  right: 0;
+  width: 100vw;
   color: black;
 }
 
@@ -494,7 +497,7 @@ div.hamburger-menu>.hamburger-menu-child li a {
 
   div#top-banner {
     left: -7.5px;
-    right: 7.5px;
+    right: 0;
   }
 
   table {
@@ -514,7 +517,7 @@ div.hamburger-menu>.hamburger-menu-child li a {
   #info>img,
   .info>img {
     align-self: center;
-    height: 35vh;
+    width: 90%;
     float: none;
   }
 
