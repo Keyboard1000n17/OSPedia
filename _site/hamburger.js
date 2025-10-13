@@ -14,3 +14,13 @@ document.addEventListener("click", (e) => {
     menuChild.classList.remove("show");
   }
 });
+
+// PageFind search box
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  new PagefindUI({
+    element: "#search",
+    // showSubResults: true,
+    // autofocus: true
+  });
+});
