@@ -107,7 +107,7 @@ div.article-nav>a.next {
   grid-column: 2;
 }
 
-#heading {
+h1#heading {
   font-size: 2rem;
   font-weight: bold;
 }
