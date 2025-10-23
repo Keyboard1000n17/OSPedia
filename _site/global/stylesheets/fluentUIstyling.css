@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* Site-wide styling */
 body {
   margin: 10vh 1vw;
@@ -107,7 +112,7 @@ div.article-nav>a.next {
   grid-column: 2;
 }
 
-h1#heading {
+#heading {
   font-size: 2rem;
   font-weight: bold;
 }
@@ -408,13 +413,12 @@ img.logo {
 }
 
 div#top-banner {
-  background-color: grey;
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  left: -1vw;
   width: 100vw;
-  color: black;
+  height: 360px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: calc(-50vw + 50%);
 }
 
 div.hamburger-menu {
@@ -496,8 +500,12 @@ div.hamburger-menu>.hamburger-menu-child li a {
   }
 
   div#top-banner {
-    left: -7.5px;
-    right: 0;
+    width: 100vw;
+    height: 360px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: calc(-50vw + 50%);
   }
 
   table {
