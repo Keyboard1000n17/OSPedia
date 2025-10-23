@@ -20,7 +20,7 @@ document.addEventListener("click", (e) => {
 window.addEventListener("DOMContentLoaded", (event) => {
   new PagefindUI({
     element: "#search",
-    // showSubResults: true,
-    // autofocus: true
+    resetStyles: true,
+    resultsElement: "#search-results",
   });
 });

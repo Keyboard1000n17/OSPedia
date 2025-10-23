@@ -1,8 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
+/* * { */
+/*   margin: 0; */
+/*   padding: 0; */
+/* } */
+/**/
 /* Site-wide styling */
 body {
   margin: 10vh 1vw;
@@ -419,6 +419,16 @@ div#top-banner {
   background-size: cover;
   background-repeat: no-repeat;
   margin-left: calc(-50vw + 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#top-banner>img {
+  width: 90vw;
+  align-self: center;
+  max-height: 40%;
+  left: 50%;
 }
 
 div.hamburger-menu {
@@ -499,14 +509,20 @@ div.hamburger-menu>.hamburger-menu-child li a {
     display: flex;
   }
 
-  div#top-banner {
-    width: 100vw;
-    height: 360px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: calc(-50vw + 50%);
-  }
+  /* div#top-banner { */
+  /*   width: 100vw; */
+  /*   height: 360px; */
+  /*   background-position: center; */
+  /*   background-size: cover; */
+  /*   background-repeat: no-repeat; */
+  /*   margin-left: calc(-50vw + 50%); */
+  /* } */
+  /**/
+  /* div#top-banner>img { */
+  /*   width: 100%; */
+  /*   max-width: 100%; */
+  /*   transform: translateX(1px); */
+  /* } */
 
   table {
     float: none;

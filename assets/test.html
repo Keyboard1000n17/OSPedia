@@ -1,0 +1,83 @@
+<html>
+  <!doctype html>
+  <html lang="en-US">
+    <head>
+      <meta
+        name="viewport"
+        charset="utf-8"
+        content="width=device-width, initial-scale=1.0"
+      />
+      <meta
+        name="OSPedia"
+        content="OSPedia aims to provide plenty of information on various operating systems that have impacted our daily lives. From release dates to demonstrations of these operating systems, this website covers them in great detail!"
+      />
+      <title>OSPedia - Test</title>
+      <link href="./global/stylesheets/fluentUIstyling.css" rel="stylesheet" />
+      <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+      <script src="/pagefind/pagefind-ui.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="icon" href="./global/OSPedia-favicon.svg" />
+      <style>
+        div#search {
+          <!-- background-color: rgba(255, 255, 255, 0.7); -->
+          border-radius: 10px;
+          border: none;
+        }
+        .pagefind-ui.svelte-e9gkc3.pagefind-ui--reset:focus-visible,
+        .pagefind-ui.svelte-e9gkc3.pagefind-ui--reset > *:focus-visible {
+          border: none;
+        }
+        div#search .pagefind-ui__drawer {
+          background-color: rgba(255, 255, 255, 0.7);
+          position: absolute;
+          top: 10vh;
+          <!-- transform: translateY(10vh); -->
+        }
+      </style>
+    </head>
+
+    <body
+      style="
+        background-image: url(./WinPedia/Images/Wallpapers/Windows_11-wallpaper.webp);
+      "
+    >
+      <nav>
+        <img src="./global/OSPedia-logo.svg" alt="logo" height="70%" />
+        <img src="./global/OSPedia-favicon.svg" alt="logo" height="70%" />
+        <div id="search"></div>
+        <div id="search-results"></div>
+        <ul>
+          <li class="nav"><a href="./index.html" class="nav">Home</a></li>
+          <li class="nav"><a href="./WinPedia/index.html">WinPedia</a></li>
+          <li class="nav"><a href="./MacPedia/index.html">MacPedia</a></li>
+          <li class="nav">
+            <a href="./about.html" class="nav">About</a>
+          </li>
+        </ul>
+        <div class="hamburger-menu">
+          <img
+            src="./global/Images/hamburger.svg"
+            alt="Hamburger menu button"
+          />
+          <div class="hamburger-menu-child">
+            <ul>
+              <li class="nav"><a href="./index.html" class="nav">Home</a></li>
+              <li class="nav"><a href="./WinPedia/index.html">WinPedia</a></li>
+              <li class="nav"><a href="./MacPedia/index.html">MacPedia</a></li>
+              <li class="nav">
+                <a href="./about.html" class="nav">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <p>How'd you get here?</p>
+    </body>
+    <script src="./hamburger.js"></script>
+  </html>
+</html>
