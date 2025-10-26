@@ -70,16 +70,12 @@
   <script src="./hamburger.js"></script>
   <script src="/node_modules/eruda/eruda.js"></script>
   <script>
-    <!-- import eruda as 'eruda'; -->
-  < !--eruda.init(); -->
-    if (typeof window !== 'undefined') {
-      import('eruda').then(eruda => {
-        document.addEventListener('DOMContentLoaded', () => {
-          eruda.default.init();
-        });
-      });
+    if (location.search.includes("eruda=true")) {
+      var s = document.createElement('script');
+      s.src = "https://cdn.jsdelivr.net/npm/eruda";
+      s.onload = function () {eruda.init();};
+      document.body.appendChild(s);
     }
-
   </script>
 </body>
 
