@@ -14,6 +14,9 @@ importers:
       eleventy-sass:
         specifier: ^3.0.0-beta.0
         version: 3.0.0-beta.0(@11ty/eleventy@3.1.2)
+      eruda:
+        specifier: ^3.4.3
+        version: 3.4.3
       pagefind:
         specifier: ^1.4.0
         version: 1.4.0
@@ -340,6 +343,9 @@ packages:
   errno@1.0.0:
     resolution: {integrity: sha512-3zV5mFS1E8/1bPxt/B0xxzI1snsg3uSCIh6Zo1qKg6iMw93hzPANk9oBFzSFBFrwuVoQuE3rLoouAUfwOAj1wQ==}
     hasBin: true
+
+  eruda@3.4.3:
+    resolution: {integrity: sha512-J2TsF4dXSspOXev5bJ6mljv0dRrxj21wklrDzbvPmYaEmVoC+2psylyRi70nUPFh1mTQfIBsSusUtAMZtUN+/w==}
 
   escape-html@1.0.3:
     resolution: {integrity: sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==}
@@ -1044,6 +1050,8 @@ snapshots:
   errno@1.0.0:
     dependencies:
       prr: 1.0.1
+
+  eruda@3.4.3: {}
 
   escape-html@1.0.3: {}
 
