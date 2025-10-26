@@ -288,6 +288,8 @@ kbd {
   color: #000;
 }
 
+.pagefind-ui__drawer {}
+
 th.top {
   border-top: 2px solid #000;
 }
