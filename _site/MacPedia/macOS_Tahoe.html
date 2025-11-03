@@ -4,7 +4,7 @@
 <head>
   <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" />
   <title>macOS Tahoe - MacPedia</title>
-  <link href="./global/stylesheets/fluentUIstyling.css" rel="stylesheet" />
+  <link href="/global/stylesheets/fluentUIstyling.css" rel="stylesheet" />
   <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
   <script src="/pagefind/pagefind-ui.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,14 +16,15 @@
 
 <body style="background-image: url(./Images/Wallpapers/Tahoe-wallpaper.webp)">
   <nav>
-    <img src="./Images/MacPedia-logo.svg" alt="logo" height="70%" />
-    <img src="./Images/MacPedia-favicon.svg" alt="logo" height="70%" />
+    <img src="/MacPedia/Images/MacPedia-logo.svg" alt="logo" height="70%" />
+    <img src="/MacPedia/Images/MacPedia-favicon.svg" alt="logo" height="70%" />
+    <div id="search"></div>
     <ul>
-      <li class="nav"><a href="../index.html" class="nav">Home</a></li>
-      <li class="nav"><a href="../WinPedia/index.html">WinPedia</a></li>
-      <li class="nav"><a href="../MacPedia/index.html">MacPedia</a></li>
+      <li class="nav"><a href="/index.html" class="nav">Home</a></li>
+      <li class="nav"><a href="/WinPedia/index.html">WinPedia</a></li>
+      <li class="nav"><a href="/MacPedia/index.html">MacPedia</a></li>
       <li class="nav">
-        <a href="../about.html" class="nav">About</a>
+        <a href="/about.html" class="nav">About</a>
       </li>
     </ul>
     <div class="hamburger-menu">
@@ -53,10 +54,7 @@
   straddling the border between California and Nevada.
 </p>
 <div id="info">
-  <img
-    src="/MacPedia/Images/Icons/Tahoe-icon.webp"
-    alt="macOS Tahoe logo (I can't find it yet)"
-  />
+  <img src="/MacPedia/Images/Icons/Tahoe-icon.webp" />
   <p>Developed by: Apple Computer, Inc.</p>
   <p>
     General availability: September 15, 2025 (version 26.0 build 25A354 -
@@ -214,7 +212,7 @@
       <th class="top-right">Release Notes</th>
     </tr>
     <tr>
-      <td class="left" style="background-color: rgba(152, 221, 157, 0.7)">
+      <td class="left" style="background-color: rgba(255, 222, 173, 0.7)">
         26.0
       </td>
       <td class="bottom">25A354</td>
@@ -248,18 +246,51 @@
     </tr>
     <tr>
       <td
-        class="bottom-left"
-        style="background-color: rgba(176, 231, 255, 0.7)"
+        class="left"
+        style="background-color: rgba(152, 221, 157, 0.7)"
+        rowspan="2"
       >
-        26.1 beta 1
+        26.0.1
       </td>
-      <td class="bottom">25B5042k</td>
-      <td class="bottom">September 22, 2025</td>
-      <td class="bottom">
+      <td>25B5042k</td>
+      <td>September 22, 2025</td>
+      <td>
         25.1.0<br /><small
           >xnu-12377.40.77.505.1~4<br />Fri Sep 19 19:12:30 PDT 2025</small
         >
       </td>
+      <td class="right"></td>
+    </tr>
+    <tr>
+      <td>25A8364</td>
+      <td>October 16, 2025</td>
+      <td></td>
+      <td>
+        This update provides important bug fixes, security updates, and resolves
+        an issue that prevented some users from upgrading to macOS Tahoe on Mac
+        Studio (M3 Ultra, 2025).
+        <p>
+          For information on this update's security content, refer to Apple's
+          page:
+          <a
+            href="https://support.apple.com/en-us/125328"
+            rel="nofollow"
+            class="external-links"
+            >About the security content of macOS Tahoe 26.01</a
+          >
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td
+        class="bottom-left"
+        style="background-color: rgba(176, 231, 255, 0.7)"
+      >
+        26.1 Release Candidate
+      </td>
+      <td class="bottom">25B77</td>
+      <td class="bottom">October 28, 2025</td>
+      <td class="bottom"></td>
       <td class="bottom-right"></td>
     </tr>
   </table>
