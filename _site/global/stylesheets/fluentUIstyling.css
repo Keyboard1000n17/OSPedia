@@ -374,6 +374,13 @@ div#search {
   height: 100%;
 }
 
+.pagefind-ui__search-clear {
+  height: 100% !important;
+  top: 0 !important;
+  right: 0 !important;
+  padding: 0 2.5% !important;
+}
+
 td.top,
 th.top {
   border-top: 2px solid #000;
@@ -655,7 +662,18 @@ div.hamburger-menu>.hamburger-menu-child li a {
     grid-row: 1;
   }
 
+  .pagefind-ui__drawer {
+    position: fixed !important;
+    left: 10%;
+    right: 10%;
+  }
+
   .pagefind-ui__search-input.svelte-e9gkc3 {
     padding-left: calc(1.05rem + 15px) !important;
+  }
+
+  .pagefind-ui__form.svelte-e9gkc3:before {
+    height: calc(7 / 10 * 3rem * 6 / 10) !important;
+    top: 25% !important;
   }
 }
