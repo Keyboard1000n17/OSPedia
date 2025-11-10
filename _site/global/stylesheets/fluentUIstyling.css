@@ -334,7 +334,7 @@ div#search {
   background-color: #393939 !important;
   width: calc(7 / 10 * 8 / 10 * 5vh) !important;
   height: calc(7 / 10 * 8 / 10 * 5vh) !important;
-  /* top: 25% !important; */
+  top: 30% !important;
   left: calc(7 / 10 * 8 / 10 * 2.5vh) !important;
   content: "" !important;
   position: absolute !important;
@@ -673,7 +673,7 @@ div.hamburger-menu>.hamburger-menu-child li a {
   }
 
   .pagefind-ui__form.svelte-e9gkc3:before {
-    height: calc(7 / 10 * 3rem * 6 / 10) !important;
+    height: calc(7 / 10 * 3rem * 7 / 10) !important;
     top: 25% !important;
   }
 }
