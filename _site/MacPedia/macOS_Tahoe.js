@@ -1,32 +1,51 @@
 rows = [
-  ["26.0", "25A8353", "—", "Preinstalled on 14-inch M5 MacBook Pro", ""],
-  ["", "25A354", "September 15, 2025	", "", ""],
+  [
+    "26.0",
+    "25A8353",
+    "—",
+    "Preinstalled on 14-inch M5 MacBook Pro",
+    "",
+    "blue",
+  ],
+  ["", "25A354", "September 15, 2025", "", "", ""],
 ];
 
 function output(rn) {
   // rn means row number
-  let data = "";
-  for (let i = 0; i < rows[rn].length; i++) {
-    data += "<td>" + rows[rn][i] + "</td>";
+  const tr = document.createElement("tr");
+  for (let column = 0; column < rows[rn].length - 1; column++) {
+    const td = document.createElement("td");
+    td.textContent = rows[rn][column];
+    tr.appendChild(td);
   }
-  const tr = "<tr>" + data + "</tr>";
-  // tr.innerHTML = data;
-  document.querySelector("tbody").innerHTML += tr;
-  return data;
+  const firstCells = document.querySelectorAll("tbody > tr > td:first-child");
+  for (let i = 0; i < firstCells.length; i++) {
+    if (document.querySelectorAll("tbody>tr")[rn].length === rows[rn].length) {
+      firstCells[i].className = rows[rn][rows[rn].length - 1];
+    }
+  }
+  document.querySelector("tbody").appendChild(tr);
 }
 
 function span() {
-  const trs = document.querySelectorAll("tbody > tr");
-  for (let i = 1; i < rows.length; i++) {
-    const cellsAbove = trs[i - 1].querySelectorAll("td");
-    for (let j = 0; j < rows[i].length; j++) {
-      if (rows[i][j] === "" && cellsAbove[j]) {
-        const thisRow = trs[i].querySelectorAll("td");
-        const thisCell = thisRow[j];
-        let cellAbove = cellsAbove[j];
-        let currentRowspan = parseInt(cellAbove.getAttribute("rowspan")) || 1;
-        cellAbove.rowSpan = currentRowspan + 1;
-        thisCell.remove();
+  const tbody = document.querySelector("tbody");
+  const trs = Array.from(document.querySelectorAll("tbody > tr"));
+  if (!trs.length) return;
+  const cols = trs[0].querySelectorAll("tr").length;
+  for (let col = 0; col < trs.length; col++) {
+    let lastNonEmptyCell = null;
+    let currentRowspan = 1;
+    for (let row = 0; row < trs.length; row++) {
+      const cell = trs[row].querySelectorAll("td")[col];
+      if (!cell) continue;
+      if (cell.textContent.trim() === "") {
+        if (lastNonEmptyCell) {
+          currentRowspan++;
+          cell.remove();
+          lastNonEmptyCell.rowSpan = currentRowspan;
+        }
+      } else {
+        lastNonEmptyCell = cell;
       }
     }
   }
@@ -35,4 +54,5 @@ function span() {
 for (let i = 0; i < rows.length; i++) {
   output(i);
 }
+
 span();
