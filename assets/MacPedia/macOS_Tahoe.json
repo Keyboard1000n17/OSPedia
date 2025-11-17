@@ -4,15 +4,47 @@
     "build": "25A8353",
     "release": "—",
     "darwinVersion": "Preinstalled on 14-inch MacBook Pro",
-    "description": "",
-    "class": "hi"
+    "description": "-",
+    "class": "previous-release"
   },
   {
     "version": "",
     "build": "25A354",
     "release": "September 15, 2025",
     "darwinVersion": "25.0.0<br><small>xnu-12377.1.9~3<br>Mon August 25, 21:17:54 PDT 2025</small>",
-    "description": "",
-    "class": "hi"
+    "description": "-",
+    "class": "previous-release"
+  },
+  {
+    "version": "26.0.1",
+    "build": "25A362",
+    "release": "September 29, 2025",
+    "darwinVersion": "25.0.0<br><small>xnu-12377.1.9~141<br>Wed September 17, 21:42:08 PDT 2025</small>",
+    "description": "-",
+    "class": "previous-release"
+  },
+  {
+    "version": "",
+    "build": "25A8364",
+    "release": "October 15, 2025",
+    "darwinVersion": "14-inch M5 MacBook Pro only",
+    "description": "-",
+    "class": "previous-release"
+  },
+  {
+    "version": "26.1",
+    "build": "25B78",
+    "release": "November 3, 2025",
+    "darwinVersion": "25.1.0<br><small>xnu-12377.41.6~2<br>Mon October 20, 19:32:56 PDT 2025</small>",
+    "description": "-",
+    "class": "current-release"
+  },
+  {
+    "version": "26.2 beta 2",
+    "build": "25C5037j",
+    "release": "November 3, 2025",
+    "darwinVersion": "-",
+    "description": "-",
+    "class": "beta-release"
   }
 ]

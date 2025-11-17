@@ -191,6 +191,22 @@ table {
   width: 98%;
 }
 
+.previous-release {
+  background-color: rgba(255, 222, 173, 0.7);
+}
+
+.current-release {
+  background-color: rgba(152, 221, 157, 0.7);
+}
+
+.beta-release {
+  background-color: rgba(176, 231, 255, 0.7);
+}
+
+.security-response {
+  background-color: rgba(195, 156, 227, 0.7);
+}
+
 th,
 td {
   border: solid 0.5px #000;
