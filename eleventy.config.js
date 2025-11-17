@@ -31,7 +31,9 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy(
-    "assets/**/*.{js,jpg,png,gif,webp,svg,css}",
+    "assets/**/*.{js,json,jpg,png,gif,webp,svg,css}",
+    "!assets/WinPedia/WinPedia.json",
+    "!assets/MacPedia/MacPedia.json",
   );
   eleventyConfig.addPassthroughCopy({
     "assets/WinPedia/index.html": "WinPedia/index.html",
