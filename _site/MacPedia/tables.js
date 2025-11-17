@@ -49,7 +49,7 @@ function span(i) {
             lastNonEmptyCell.classList.add("bottom-left");
             lastNonEmptyCell.classList.remove("left");
             lastNonEmptyCell.classList.remove("bottom");
-          } else if (col === cols - 1) {
+          } else if (cols === 5 && col === cols - 1) {
             lastNonEmptyCell.classList.add("bottom-right");
             lastNonEmptyCell.classList.remove("right");
             lastNonEmptyCell.classList.remove("bottom");
