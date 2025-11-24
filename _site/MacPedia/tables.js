@@ -38,13 +38,20 @@ function span(i) {
     for (let col = 0; col < cols; col++) {
       let lastNonEmptyCell = null;
       let currentRowspan = 1;
-      for (let row = 0; row < trs.length; row++) {
+      for (let row = 1; row < trs.length; row++) {
         const cell = trs[row].querySelectorAll("td")[col];
         if (!cell) continue;
+        const prevCell = trs[row - 1].querySelectorAll("td")[col];
+        const cellClass =
+          cell.classList.length > 1 ? cell.classList[1] : cell.classList;
+        const prevCellClass =
+          prevCell.classList.length > 1
+            ? prevCell.classList[1]
+            : prevCell.classList;
         if (
           cell.textContent.trim() === "" &&
           lastNonEmptyCell &&
-          cell.className === lastNonEmptyCell.className
+          cellClass === prevCellClass
         ) {
           currentRowspan++;
           lastNonEmptyCell.rowSpan = currentRowspan;
