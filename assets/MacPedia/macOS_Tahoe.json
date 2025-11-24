@@ -4,7 +4,7 @@
     "build": "25A8353",
     "release": "—",
     "darwinVersion": "Preinstalled on 14-inch MacBook Pro",
-    "description": "-",
+    "description": "First release of macOS 26 Tahoe. <p>Refer to Apple's webpages for information about this release — there's too many new features to mention here!:<br /><a href=\"https://support.apple.com/en-us/122868\" rel=\"nofollow\" class=\"external-links\">macOS Tahoe 26.0 Release Notes</a><br /><a href=\"https://support.apple.com/en-us/125110\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS Tahoe</a></p>",
     "class": "previous-release"
   },
   {
@@ -12,7 +12,7 @@
     "build": "25A354",
     "release": "September 15, 2025",
     "darwinVersion": "25.0.0<br><small>xnu-12377.1.9~3<br>Mon August 25, 21:17:54 PDT 2025</small>",
-    "description": "-",
+    "description": "",
     "class": "previous-release"
   },
   {

@@ -174,125 +174,37 @@
 <details>
   <summary class="level-one">Release History</summary>
   <table>
+    <tr>
+      <td
+        class="top-left bottom-left"
+        style="background-color: rgba(255, 222, 173, 0.7)"
+      >
+        Previous release
+      </td>
+      <td class="top bottom" style="background-color: rgba(152, 221, 157, 0.7)">
+        Current release
+      </td>
+      <td class="top bottom" style="background-color: rgba(176, 231, 255, 0.7)">
+        Current beta release
+      </td>
+      <td
+        class="top-right bottom-right"
+        style="background-color: rgba(195, 156, 227, 0.7)"
+      >
+        Security response
+      </td>
+    </tr>
+  </table>
+  <table class="releases">
     <tbody>
       <tr>
-        <td
-          class="top-left bottom-left"
-          style="background-color: rgba(255, 222, 173, 0.7)"
-        >
-          Previous release
-        </td>
-        <td
-          class="top bottom"
-          style="background-color: rgba(152, 221, 157, 0.7)"
-        >
-          Current release
-        </td>
-        <td
-          class="top bottom"
-          style="background-color: rgba(176, 231, 255, 0.7)"
-        >
-          Current beta release
-        </td>
-        <td
-          class="top-right bottom-right"
-          style="background-color: rgba(195, 156, 227, 0.7)"
-        >
-          Security response
-        </td>
+        <th class="top-left">Version</th>
+        <th class="top">Build</th>
+        <th class="top">Release Date</th>
+        <th class="top">Darwin Version</th>
+        <th class="top-right">Release Notes</th>
       </tr>
     </tbody>
-  </table>
-  <table class="wikitable">
-    <tr>
-      <th class="top-left">Version</th>
-      <th class="top">Build</th>
-      <th class="top">Release Date</th>
-      <th class="top">Darwin Version</th>
-      <th class="top-right">Release Notes</th>
-    </tr>
-    <tr>
-      <td class="left" style="background-color: rgba(255, 222, 173, 0.7)">
-        26.0
-      </td>
-      <td class="bottom">25A354</td>
-      <td class="bottom">September 15, 2025</td>
-      <td class="bottom">
-        25.0.0<br /><small
-          >xnu-12377.1.9~3<br />Mon Aug 25 21:17:54 PDT 2025</small
-        >
-      </td>
-      <td class="right">
-        First release of macOS 26 Tahoe.
-        <p>
-          Refer to Apple's webpages for information about this release — there's
-          too many new features to mention here!:
-          <a
-            href="https://support.apple.com/en-us/122868"
-            rel="nofollow"
-            class="external-links"
-          >
-            macOS Tahoe 26.0 Release Notes
-          </a>
-
-          <a
-            href="https://support.apple.com/en-us/125110"
-            rel="nofollow"
-            class="external-links"
-            >About the security content of macOS Tahoe</a
-          >
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td
-        class="left"
-        style="background-color: rgba(152, 221, 157, 0.7)"
-        rowspan="2"
-      >
-        26.0.1
-      </td>
-      <td>25B5042k</td>
-      <td>September 22, 2025</td>
-      <td>
-        25.1.0<br /><small
-          >xnu-12377.40.77.505.1~4<br />Fri Sep 19 19:12:30 PDT 2025</small
-        >
-      </td>
-      <td class="right"></td>
-    </tr>
-    <tr>
-      <td>25A8364</td>
-      <td>October 16, 2025</td>
-      <td></td>
-      <td>
-        This update provides important bug fixes, security updates, and resolves
-        an issue that prevented some users from upgrading to macOS Tahoe on Mac
-        Studio (M3 Ultra, 2025).
-        <p>
-          For information on this update's security content, refer to Apple's
-          page:
-          <a
-            href="https://support.apple.com/en-us/125328"
-            rel="nofollow"
-            class="external-links"
-            >About the security content of macOS Tahoe 26.01</a
-          >
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td
-        class="bottom-left"
-        style="background-color: rgba(176, 231, 255, 0.7)"
-      >
-        26.1 Release Candidate
-      </td>
-      <td class="bottom">25B77</td>
-      <td class="bottom">October 28, 2025</td>
-      <td class="bottom"></td>
-      <td class="bottom-right"></td>
-    </tr>
   </table>
 </details>
 <details>
@@ -312,6 +224,10 @@
     </figcaption>
   </figure>
 </details>
+<script>
+  window.jsonData = "./macOS_Tahoe.json";
+</script>
+<script src="./tables.js"></script>
 
   </main>
 
@@ -331,6 +247,15 @@
 
     
   </div>
+  <template>
+    <tr>
+      <td class="left version"></td>
+      <td class="build"></td>
+      <td class="release-date"></td>
+      <td class="darwin-version"></td>
+      <td class="right release-notes"></td>
+    </tr>
+  </template>
   <script src="../hamburger.js"></script>
 </body>
 
