@@ -7,7 +7,7 @@ async function init() {
   }
 
   span();
-  const tbody = document.querySelector("tbody");
+  const tbody = document.querySelector(".releases tbody");
 }
 
 function output(i) {
@@ -19,12 +19,19 @@ function output(i) {
   tds[3].innerHTML = content[i].darwinVersion;
   tds[4].innerHTML = content[i].description;
   tds[0].classList.add(content[i].class);
-  document.querySelector("tbody").appendChild(template);
+  document.querySelector(".releases tbody").appendChild(template);
 }
 
 function span(i) {
-  const tbody = document.querySelector("tbody");
-  const trs = Array.from(document.querySelectorAll("tbody > tr"));
+  const tbody = document.querySelector(".releases tbody");
+  const trs = Array.from(document.querySelectorAll(".releases tbody > tr"));
+  const classes = [
+    "version",
+    "build",
+    "release-date",
+    "darwin-version",
+    "release-notes",
+  ];
   if (!trs.length) return;
   for (let i = 0; i < trs.length; i++) {
     const cols = trs[i].querySelectorAll("td").length;
@@ -34,12 +41,14 @@ function span(i) {
       for (let row = 0; row < trs.length; row++) {
         const cell = trs[row].querySelectorAll("td")[col];
         if (!cell) continue;
-        if (cell.textContent.trim() === "") {
-          if (lastNonEmptyCell) {
-            currentRowspan++;
-            lastNonEmptyCell.rowSpan = currentRowspan;
-            cell.remove();
-          }
+        if (
+          cell.textContent.trim() === "" &&
+          lastNonEmptyCell &&
+          cell.className === lastNonEmptyCell.className
+        ) {
+          currentRowspan++;
+          lastNonEmptyCell.rowSpan = currentRowspan;
+          cell.remove();
         } else {
           lastNonEmptyCell = cell;
           currentRowspan = 1;
