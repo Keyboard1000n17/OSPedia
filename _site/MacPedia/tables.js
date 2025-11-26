@@ -26,52 +26,38 @@ function span(i) {
   const tbody = document.querySelector(".releases tbody");
   const trs = Array.from(document.querySelectorAll(".releases tbody > tr"));
   const classes = [
-    "version",
-    "build",
-    "release-date",
-    "darwin-version",
-    "release-notes",
+    ".version",
+    ".build",
+    ".release-date",
+    ".darwin-version",
+    ".release-notes",
   ];
   if (!trs.length) return;
-  for (let i = 0; i < trs.length; i++) {
-    const cols = trs[i].querySelectorAll("td").length;
-    for (let col = 0; col < cols; col++) {
-      let lastNonEmptyCell = null;
-      let currentRowspan = 1;
-      for (let row = 1; row < trs.length; row++) {
-        const cell = trs[row].querySelectorAll("td")[col];
-        if (!cell) continue;
-        const prevCell = trs[row - 1].querySelectorAll("td")[col];
-        const cellClass =
-          cell.classList.length > 1 ? cell.classList[1] : cell.classList;
-        const prevCellClass =
-          prevCell.classList.length > 1
-            ? prevCell.classList[1]
-            : prevCell.classList;
-        if (
-          cell.textContent.trim() === "" &&
-          lastNonEmptyCell &&
-          cellClass === prevCellClass
-        ) {
-          currentRowspan++;
-          lastNonEmptyCell.rowSpan = currentRowspan;
-          cell.remove();
+  for (let i = 0; i < classes.length; i++) {
+    const cols = document.querySelectorAll(classes[i]);
+    let lastNonEmptyCell = null;
+    let currentRowspan = 1;
+    for (let j = 0; j < trs.length; j++) {
+      const cell = cols[j];
+      if (!cell) continue;
+      if (cell.textContent.trim() === "" && lastNonEmptyCell) {
+        currentRowspan++;
+        lastNonEmptyCell.rowSpan = currentRowspan;
+        cell.remove();
+      } else {
+        lastNonEmptyCell = cell;
+        currentRowspan = 1;
+      }
+      if (j === trs.length - 1) {
+        lastCell = cols[cols.length - 1];
+        if (cols === classes.length - 1) {
+          lastCell.classList.add("bottom-right");
+          lastCell.classList.remove("right");
+        } else if (col === 0) {
+          lastCell.classList.add("bottom-left");
+          lastCell.classList.remove("left");
         } else {
-          lastNonEmptyCell = cell;
-          currentRowspan = 1;
-        }
-        if (row === trs.length - 1 && lastNonEmptyCell) {
-          if (cols === 5 && col === 0) {
-            lastNonEmptyCell.classList.add("bottom-left");
-            lastNonEmptyCell.classList.remove("left");
-            lastNonEmptyCell.classList.remove("bottom");
-          } else if (cols === 5 && col === cols - 1) {
-            lastNonEmptyCell.classList.add("bottom-right");
-            lastNonEmptyCell.classList.remove("right");
-            lastNonEmptyCell.classList.remove("bottom");
-          } else {
-            lastNonEmptyCell.classList.add("bottom");
-          }
+          lastCell.classList.add("bottom");
         }
       }
     }
