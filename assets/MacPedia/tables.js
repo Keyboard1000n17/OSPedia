@@ -7,7 +7,7 @@ async function init() {
   }
 
   span();
-  const tbody = document.querySelector(".releases tbody");
+  assignClasses();
 }
 
 function output(i) {
@@ -22,16 +22,17 @@ function output(i) {
   document.querySelector(".releases tbody").appendChild(template);
 }
 
+const classes = [
+  ".version",
+  ".build",
+  ".release-date",
+  ".darwin-version",
+  ".release-notes",
+];
+
 function span(i) {
   const tbody = document.querySelector(".releases tbody");
   const trs = Array.from(document.querySelectorAll(".releases tbody > tr"));
-  const classes = [
-    ".version",
-    ".build",
-    ".release-date",
-    ".darwin-version",
-    ".release-notes",
-  ];
   if (!trs.length) return;
   for (let i = 0; i < classes.length; i++) {
     const cols = document.querySelectorAll(classes[i]);
@@ -48,20 +49,35 @@ function span(i) {
         lastNonEmptyCell = cell;
         currentRowspan = 1;
       }
-      if (j === trs.length - 1) {
-        lastCell = cols[cols.length - 1];
-        if (cols === classes.length - 1) {
-          lastCell.classList.add("bottom-right");
-          lastCell.classList.remove("right");
-        } else if (col === 0) {
-          lastCell.classList.add("bottom-left");
-          lastCell.classList.remove("left");
-        } else {
-          lastCell.classList.add("bottom");
-        }
-      }
+      // if (j === trs.length - 1) {
+      //   lastCell = cols[cols.length - 1];
+      //   if (cols === classes.length - 1) {
+      //     lastCell.classList.add("bottom-right");
+      //     lastCell.classList.remove("right");
+      //   } else if (col === 0) {
+      //     lastCell.classList.add("bottom-left");
+      //     lastCell.classList.remove("left");
+      //   } else {
+      //     lastCell.classList.add("bottom");
+      //   }
+      // }
     }
   }
 }
 
+function assignClasses() {
+  for (let i = 0; i < classes.length; i++) {
+    const cells = document.querySelectorAll(classes[i]);
+    const lastCell = cells[cells.length - 1];
+    if (i === 0) {
+      lastCell.classList.add("bottom-left");
+      lastCell.classList.remove("left");
+    } else if (i === classes.length - 1) {
+      lastCell.classList.add("bottom-right");
+      lastCell.classList.remove("right");
+    } else {
+      lastCell.classList.add("bottom");
+    }
+  }
+}
 init();

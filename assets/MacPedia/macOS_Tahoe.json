@@ -20,7 +20,7 @@
     "build": "25A362",
     "release": "September 29, 2025",
     "darwinVersion": "25.0.0<br><small>xnu-12377.1.9~141<br>Wed September 17, 21:42:08 PDT 2025</small>",
-    "description": "-",
+    "description": "This update provides important bug fixes, security updates, and resolves an issue that prevented some users from upgrading to macOS Tahoe on Mac Studio (M3 Ultra, 2025).",
     "class": "previous-release"
   },
   {
@@ -28,7 +28,7 @@
     "build": "25A8364",
     "release": "October 15, 2025",
     "darwinVersion": "14-inch M5 MacBook Pro only",
-    "description": "-",
+    "description": "",
     "class": "previous-release"
   },
   {
@@ -36,13 +36,13 @@
     "build": "25B78",
     "release": "November 3, 2025",
     "darwinVersion": "25.1.0<br><small>xnu-12377.41.6~2<br>Mon October 20, 19:32:56 PDT 2025</small>",
-    "description": "-",
+    "description": "This update includes the following features and enhancements:<ul><li>Liquid Glass setting gives you the option to choose between the default clear look or a new tinted look which increases opacity of the material in apps</li><li>Apple Music AutoMix support over AirPlay</li><li>Improved FaceTime audio quality in low-bandwidth conditions</li><li>Communication Safety and Web content filters to limit adult websites are enabled by default for existing child accounts for ages 13–17 (age varies by country or region)</li><ul>",
     "class": "current-release"
   },
   {
-    "version": "26.2 beta 2",
-    "build": "25C5037j",
-    "release": "November 3, 2025",
+    "version": "26.2 beta 3",
+    "build": "25C5048a",
+    "release": "November 17, 2025",
     "darwinVersion": "-",
     "description": "-",
     "class": "beta-release"
