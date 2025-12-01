@@ -1,0 +1,162 @@
+[
+  {
+    "version": "15.0",
+    "build": "24A335",
+    "release": "September 16, 2024",
+    "darwinVersion": "24.0.0<br><small>xnu-11215.1.10~2<br>Mon Aug 12 20:52:31 PDT 2024</small>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/120283\">macOS Sequoia 15.0 release notes</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/121238\">About the security content of macOS Sequoia 15.0</a></p>",
+    "class": "previous-release"
+  },
+  {
+    "version": "15.0.1",
+    "build": "24A348",
+    "release": "October 3, 2024",
+    "darwinVersion": "24.0.0<br><small>xnu-11215.1.12~1<br>Tue Sep 24 23:39:07 PDT 2024</small>",
+    "description": "This update provides important bug fixes, including:<ul><li>Messages may unexpectedly quit when replying to a message with a shared Apple Watch face.</li><li>Improves compatibility with third-party security software.</li></ul>",
+    "class": "previous-release"
+  },
+  {
+    "version": "15.1",
+    "build": "24B83",
+    "release": "October 28, 2024",
+    "darwinVersion": "24.1.0<br><small>xnu-11215.41.3~2<br>Thu Oct 10 21:00:32 PDT 2024</small>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/120283\">macOS Sequoia 15.1 release notes</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/121564\">About the security content of macOS Sequoia 15.1</a></p>",
+    "class": "previous-release"
+  },
+  {
+    "version": "",
+    "build": "24B2083",
+    "release": "",
+    "darwinVersion": "24.1.0<br><small>xnu-11215.41.3~3<br>Thu Oct 10 21:06:57 PDT 2024</small>",
+    "description": "",
+    "class": "previous-release"
+  },
+  {
+    "version": "15.1.1",
+    "build": "24B91",
+    "release": "November 19, 2024",
+    "darwinVersion": "24.1.0<br><small>xnu-11215.41.3~13<br>Thu Nov 14 18:15:21 PST 2024</small>",
+    "description": "This update provides important security fixes and is recommended for all users.<p>Refer to Apple's webpage for information about the security content of this update:</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/121753\">About the security content of macOS Sequoia 15.1.1</a></p>",
+    "class": "previous-release"
+  },
+  {
+    "version": "",
+    "build": "24B2091",
+    "release": "",
+    "darwinVersion": "",
+    "description": "",
+    "class": "previous-release"
+  },
+  {
+    "version": "15.2",
+    "build": "24C101",
+    "release": "December 11, 2024",
+    "darwinVersion": "24.2.0<br><small>xnu-11215.61.5~2<br>Fri Dec 6 19:01:59 PST 2024</small>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/120283\">macOS Sequoia 15.2 release notes</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/121839\">About the security content of macOS Sequoia 15.2</a></p>",
+    "class": "previous-release"
+  },
+  {
+    "version": "15.3",
+    "build": "24D60",
+    "release": "January 27, 2025",
+    "darwinVersion": "24.3.0<br><small>xnu-11215.81.4~3<br>Thu Jan 2 20:24:06 PST 2025</small>",
+    "description": "This update introduces Genmoji, powered by Apple Intelligence, and also includes other enhancements, bug fixes, and security updates. They include:<ul><li>Genmoji creation in Messages and other apps</li><li>Calculator repeats the last mathematical operation when you click the equal sign again</li><li>Easily manage settings for notification summaries from the Lock Screen (Mac with Apple silicon)</li><li>Updated style for summarized notifications better distinguishes them from other notifications by using italicized text as well as the glyph (Mac with Apple silicon)</li><li>Notification summaries for News &amp; Entertainment apps are temporarily unavailable, and users who opt-in will see them again when the feature becomes available (Mac with Apple silicon)</li></ul>Refer to Apple's webpage for information about the security content of this update:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/122068\">About the security content of macOS Sequoia 15.3</a></p>",
+    "class": "previous-release"
+  },
+  {
+    "version": "15.3.1",
+    "build": "24D70",
+    "release": "February 10, 2025",
+    "darwinVersion": "",
+    "description": "This update provides important security fixes and is recommended for all users.<p>Refer to Apple's webpage for information about the security content of this update:</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/122900\">About the security content of macOS Sequoia 15.3.1</a></p>",
+    "class": "previous-release"
+  },
+  {
+    "version": "15.3.2",
+    "build": "24D81",
+    "release": "March 11, 2025",
+    "darwinVersion": "",
+    "description": "This update provides important security fixes and is recommended for all users.<p>Refer to Apple's webpage for information about the security content of this update:</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/122283\">About the security content of macOS Sequoia 15.3.2</a></p>",
+    "class": "previous-release"
+  },
+  {
+    "version": "",
+    "build": "24D2082",
+    "release": "",
+    "darwinVersion": "24.3.0<br><small>xnu-11215.81.4~4<br>Thu Jan 2 20:31:12 PST 2025</small>",
+    "description": "",
+    "class": "previous-release"
+  },
+  {
+    "version": "15.4",
+    "build": "24E248",
+    "release": "March 31, 2025",
+    "darwinVersion": "24.4.0<br><small>xnu-11417.101.15~1<br>Wed Mar 19 21:16:31 PDT 2025</small>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/120283\">macOS Sequoia 15.4 release notes</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/122373\">About the security content of macOS Sequoia 15.4</a></p>",
+    "class": "previous-release"
+  },
+  {
+    "version": "15.4.1",
+    "build": "24E263",
+    "release": "April 16, 2025",
+    "darwinVersion": "24.4.0<br><small>xnu-11417.101.15~1<br>Wed Mar 19 21:16:31 PDT 2025</small>",
+    "description": "This update provides important bug fixes and security updates and is recommended for all users.<p>Refer to Apple's webpage for information about the security content of this update:</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/122400\">About the security content of macOS Sequoia 15.4.1</a></p>",
+    "class": "previous-release"
+  },
+  {
+    "version": "15.5",
+    "build": "24F74",
+    "release": "May 12, 2025",
+    "darwinVersion": "24.5.0<br><small>xnu-11417.121.6~2<br>Tue Apr 22 19:53:27 PDT 2025</small>",
+    "description": "This update includes enhancements, bug fixes, and security updates, including:<ul><li>Parents now receive a notification when the Screen Time passcode is used on a child's device</li></ul>",
+    "class": "previous-release"
+  },
+  {
+    "version": "15.6",
+    "build": "24G84",
+    "release": "July 29, 2025",
+    "darwinVersion": "24.6.0<br /><small>xnu-11417.140.69~1<br>Mon Jul 14 11:28:17 PDT 2025</small>",
+    "description": "This update provides important bug fixes and security updates and is recommended for all users.<p>Refer to Apple's webpage for more information about the security content of this update:</p><p><a href=\"https://support.apple.com/en-us/124149\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS 15.6</a></p>",
+    "class": "previous-release"
+  },
+  {
+    "version": "15.6.1",
+    "build": "24G90",
+    "release": "August 20, 2025",
+    "darwinVersion": "24.6.0<br><small>xnu-11417.140.69~1<br>Mon Jul 14 11:30:34 PDT 2025</small>",
+    "description": "This update provides important bug fixes and security updates and is recommended for all users. <p>Refer to Apple's webpage for more information about the security content of this update:</p><p><a href=\"https://support.apple.com/en-us/124927\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS 15.6.1</a>",
+    "class": "previous-release"
+  },
+  {
+    "version": "15.7",
+    "build": "24G207",
+    "release": "August 5, 2025",
+    "darwinVersion": "24.6.0<br><small>xnu-11417.140.69.701.11~1<br>Mon Aug 11 21:16:52 PDT 2025</small>",
+    "description": "This update provides important bug fixes and security updates and is recommended for all users.<p>Refer to Apple's webpage for more information about the security content of this update:<a href=\"https://support.apple.com/en-us/125111\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS 15.7</a></p>",
+    "class": "previous-release"
+  },
+  {
+    "version": "15.7.1",
+    "build": "24G231",
+    "release": "September 29, 2025",
+    "darwinVersion": "",
+    "description": "This update provides important bug fixes and security updates and is recommended for all users.<p>Refer to Apple's webpage for more information about the security content of this update:<a href=\"https://support.apple.com/en-us/125111\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS 15.6</a></p>",
+    "class": "previous-release"
+  },
+  {
+    "version": "15.7.2",
+    "build": "24G325",
+    "release": "November 3, 2025",
+    "darwinVersion": "24.6.0<br><small>xnu-11417.140.69.703.14~1<br>Wed Oct 15 21:12:21 PDT 2025</small>",
+    "description": "This update provides important security fixes and is recommended for all users.<p>Refer to Apple's webpage for information about the security content of this update:</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/125635\">About the security content of macOS Sequoia 15.7.2</a></p>",
+    "class": "current-release"
+  },
+  {
+    "version": "15.7.3 Release Candidate 3",
+    "build": "24G416",
+    "release": "November 17, 2025",
+    "darwinVersion": "—",
+    "description": "—",
+    "class": "beta-release"
+  }
+]
