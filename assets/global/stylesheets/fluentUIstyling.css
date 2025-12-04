@@ -191,6 +191,11 @@ table {
   width: 98%;
 }
 
+table.releases {
+  height: 400px !important;
+  overflow-y: scroll;
+}
+
 .previous-release {
   background-color: rgba(255, 222, 173, 0.7);
 }

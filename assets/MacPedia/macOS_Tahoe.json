@@ -40,9 +40,9 @@
     "class": "current-release"
   },
   {
-    "version": "26.2 beta 3",
-    "build": "25C5048a",
-    "release": "November 17, 2025",
+    "version": "26.2 Release Candidate",
+    "build": "25C56",
+    "release": "December 3, 2025",
     "darwinVersion": "-",
     "description": "-",
     "class": "beta-release"
