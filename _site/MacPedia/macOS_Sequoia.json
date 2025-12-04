@@ -132,7 +132,7 @@
     "build": "24G207",
     "release": "August 5, 2025",
     "darwinVersion": "24.6.0<br><small>xnu-11417.140.69.701.11~1<br>Mon Aug 11 21:16:52 PDT 2025</small>",
-    "description": "This update provides important bug fixes and security updates and is recommended for all users.<p>Refer to Apple's webpage for more information about the security content of this update:<a href=\"https://support.apple.com/en-us/125111\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS 15.7</a></p>",
+    "description": "This update provides important bug fixes and security updates and is recommended for all users.<p>Refer to Apple's webpage for more information about the security content of this update:</p><p><a href=\"https://support.apple.com/en-us/125111\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS 15.7</a></p>",
     "class": "previous-release"
   },
   {
@@ -140,7 +140,7 @@
     "build": "24G231",
     "release": "September 29, 2025",
     "darwinVersion": "",
-    "description": "This update provides important bug fixes and security updates and is recommended for all users.<p>Refer to Apple's webpage for more information about the security content of this update:<a href=\"https://support.apple.com/en-us/125111\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS 15.6</a></p>",
+    "description": "This update provides important bug fixes and security updates and is recommended for all users.<p>Refer to Apple's webpage for more information about the security content of this update:</p><p><a href=\"https://support.apple.com/en-us/125111\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS 15.6</a></p>",
     "class": "previous-release"
   },
   {
@@ -152,9 +152,9 @@
     "class": "current-release"
   },
   {
-    "version": "15.7.3 Release Candidate 3",
-    "build": "24G416",
-    "release": "November 17, 2025",
+    "version": "15.7.3 Release Candidate 4",
+    "build": "24G419",
+    "release": "December 3, 2025",
     "darwinVersion": "—",
     "description": "—",
     "class": "beta-release"
