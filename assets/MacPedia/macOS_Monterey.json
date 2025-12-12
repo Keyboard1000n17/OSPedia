@@ -1,0 +1,205 @@
+[
+  {
+    "version": "12.0",
+    "build": "21A344",
+    "release": "October 25, 2021",
+    "darwinVersion": "21.0.1<p><small>xnu-8019.30.61~4</p></small><p><small>Tue Sep 14 20:56:24 PDT 2021</p></small>",
+    "description": "Refer to Apple's webpage for information about these updates:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/106339#1201\">macOS Ventura 12.0.1 release notes</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/103271\">Release notes for enterprises</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://developer.apple.com/documentation/macos-release-notes/macos-12_0_1-release-notes\">Release notes for developers</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/106337\">About the security content of macOS Ventura 12.0.1</a></p>"
+  },
+  {
+    "version": "12.0.1",
+    "build": "21A559",
+    "release": "21.1.0<p><small>xnu-8019.41.5~1/<p></small><p><small>Wed Oct 13 17:33:23 PDT 2021</p></small>",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "12.1",
+    "build": "21C52",
+    "release": "December 13, 2021",
+    "darwinVersion": "21.2.0<p><small>xnu-8019.61.5~1</p></small><p><small>Sun Nov 28 20:28:54 PST 2021</p></small>",
+    "description": "Refer to Apple's webpage for information about these updates:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/106339#121\">macOS Ventura 12.1 release notes</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/103271\">Release notes for enterprises</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://developer.apple.com/documentation/macos-release-notes/macos-12_1-release-notes\">Release notes for developers</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/102874\">About the security content of macOS Ventura 12.1/a></p>"
+  },
+  {
+    "version": "12.2",
+    "build": "21D49",
+    "release": "January 26, 2022",
+    "darwinVersion": "21.3.0<p><small>xnu-8019.80.24~20</p></small><p><small>Wed Jan 5 21:37:58 PST 2022</p></small>",
+    "description": "This update includes bug fixes and security updates and is reccommended for all users.<p>Refer to Apple's webpage for information about these updates:</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/103271\">Release notes for enterprises</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://developer.apple.com/documentation/macos-release-notes/macos-12_2-release-notes\">Release notes for developers</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/102848\">About the security content of macOS Ventura 12.2</a></p>"
+  },
+  {
+    "version": "12.2.1",
+    "build": "21D62",
+    "release": "February 10, 2022",
+    "darwinVersion": "",
+    "description": "This update provides important security updates and fixes an issue for Intel-based Mac computers that may cause the battery to drain during sleep when connected to Bluetooth peripherals.<p>Refer to Apple's webpage for information about these updates:</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/103271\">Release notes for enterprises</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/103181\">About the security content of macOS Ventura 12.2.1</a></p>"
+  },
+  {
+    "version": "12.3",
+    "build": "21E230",
+    "release": "March 14, 2022",
+    "darwinVersion": "21.4.0<p><small>xnu-8020.101.4~2</p></small><p><small>Mon Feb 21 20:34:37 PST 2022</p></small>",
+    "description": "Refer to Apple's webpage for information about these updates:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/106339#123\">macOS Ventura 12.3 release notes</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/103271\">Release notes for enterprises</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes\">Release notes for developers</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/102882\">About the security content of macOS Ventura 12.3</a></p>"
+  },
+  {
+    "version": "12.3.1",
+    "build": "21E258",
+    "release": "March 31, 2022",
+    "darwinVersion": "21.4.0<p><small>xnu-8020.101.4~15</p></small><p><small>Fri Mar 18 00:45:05 PDT 2022</p></small>",
+    "description": "Refer to Apple's webpage for information about these updates:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/106339#1231\">macOS Ventura 12.3.1 release notes</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/103271\">Release notes for enterprises</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/103000\">About the security content of macOS Ventura 12.3.1</a></p>"
+  },
+  {
+    "version": "12.4",
+    "build": "21F79 (Public Release)",
+    "release": "May 16, 2022",
+    "darwinVersion": "21.5.0<p><small>xnu-8020.121.3~4</p></small><p><small>Tue Apr 26 21:08:22 PDT 2022<p><small>",
+    "description": "Refer to Apple's webpage for information about these updates:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/106339#124\">macOS Ventura 12.4 release notes</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/103271\">Release notes for enterprises</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://developer.apple.com/documentation/macos-release-notes/macos-12_4-release-notes\">Release notes for developers</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/102871\">About the security content of macOS Ventura 12.4</a></p>"
+  },
+  {
+    "version": "",
+    "build": "21F2081 (Preinstalled on 2022 M2 MacBook Air & 13″ Pro)",
+    "release": "June 14, 2022",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "21F2092 (Update for 2022 M2 MacBook Air & 13″ Pro)",
+    "release": "June 16, 2022",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "12.5",
+    "build": "21G72",
+    "release": "July 20, 2022",
+    "darwinVersion": "21.6.0<p><small>xnu-8020.140.41~1</p></small><p><small>Sat Jun 18 17:07:22 PDT 2022</p></small>",
+    "description": "Refer to Apple's webpage for information about these updates:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/106339#125\">macOS Ventura 12.5 release notes</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/103271\">Release notes for enterprises</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://developer.apple.com/documentation/macos-release-notes/macos-12_5-release-notes\">Release notes for developers</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/102891\">About the security content of macOS Ventura 12.5</a></p>"
+  },
+  {
+    "version": "12.5.1",
+    "build": "21G83",
+    "release": "August 17, 2022",
+    "darwinVersion": "21.6.0<p><small>xnu-8020.141.5~2</p></small><p><small>Wed Aug 10 14:25:27 PDT 2022</p></small>",
+    "description": "These updates are recommended for all users and improve the security of macOS.<p>Refer to Apple's webpage for information about these updates:</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/103271\">Release notes for enterprise</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/103006\">About the security content of macOS Ventura 12.5.1</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/102841\">About the security content of macOS Ventura 12.6</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/102788\">About the security content of macOS Ventura 12.6.1</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/102806\">About the security content of macOS Ventura 12.6.2</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/102786\">About the security content of macOS Ventura 12.6.3</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/102833\">About the security content of macOS Ventura 12.6.4</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/102791\">About the security content of macOS Ventura 12.6.5</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/102737\">About the security content of macOS Ventura 12.6.6</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/102059\">About the security content of macOS Ventura 12.6.7</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/120333\">About the security content of macOS Ventura 12.6.8</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/106364\">About the security content of macOS Ventura 12.6.9</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/120328\">About the security content of macOS Ventura 12.7</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/109055\">About the security content of macOS Ventura 12.7.1</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/120874\">About the security content of macOS Ventura 12.7.2</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/120305\">About the security content of macOS Ventura 12.7.3</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/120884\">About the security content of macOS Ventura 12.7.4</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/120899\">About the security content of macOS Ventura 12.7.5</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/120910\">About the security content of macOS Ventura 12.7.6</a></p>"
+  },
+  {
+    "version": "12.6",
+    "build": "21G115",
+    "release": "September 12, 2022",
+    "darwinVersion": "21.6.0<p><small>xnu-8020.140.49~2</p></small><p><small>Mon Aug 22 20:17:10 PDT 2022</p></small>",
+    "description": ""
+  },
+  {
+    "version": "12.6.1",
+    "build": "21G217",
+    "release": "October 24, 2022",
+    "darwinVersion": "21.6.0<p><small>xnu-8020.240.7~1</p></small><p><small>Thu Sep 29 20:12:57 PDT 2022</p></small>",
+    "description": ""
+  },
+  {
+    "version": "12.6.2",
+    "build": "21G320",
+    "release": "December 13, 2022",
+    "darwinVersion": "21.6.0<p><small>xnu-8020.240.14~1</p></small><p><small>Sun Nov 6 23:31:16 PST 2022</p></small>",
+    "description": ""
+  },
+  {
+    "version": "12.6.3",
+    "build": "21G419",
+    "release": "January 23, 2023",
+    "darwinVersion": "21.6.0<p><small>xnu-8020.240.18~2</p></small><p><small>Mon Dec 19 20:44:01 PST 2022</p></small>",
+    "description": ""
+  },
+  {
+    "version": "12.6.4",
+    "build": "21G526",
+    "release": "March 27, 2023",
+    "darwinVersion": "21.6.0<p><small>xnu-8020.240.18.700.8~1</p></small><p><small>Thu Mar 9 20:08:59 PST 2023</p></small>",
+    "description": ""
+  },
+  {
+    "version": "12.6.5",
+    "build": "21G531",
+    "release": "April 10, 2023",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "12.6.6",
+    "build": "21G646",
+    "release": "May 18, 2023",
+    "darwinVersion": "21.6.0<p><small>xnu-8020.240.18.701.5~1</p></small><p><small>Mon Apr 24 21:10:53 PDT 2023<p><small>",
+    "description": ""
+  },
+  {
+    "version": "12.6.7",
+    "build": "21G651",
+    "release": "June 21, 2023",
+    "darwinVersion": "21.6.0<p><small>xnu-8020.240.18.701.6~1</p></small><p><small>Thu Jun 8 23:57:12 PDT 2023</p></small>",
+    "description": ""
+  },
+  {
+    "version": "12.6.8",
+    "build": "21G725",
+    "release": "July 24, 2023",
+    "darwinVersion": "21.6.0<p><small>xnu-8020.240.18.702.13~1</p></small><p><small>Thu Jul 6 22:18:26 PDT 2023</p></small>",
+    "description": ""
+  },
+  {
+    "version": "12.6.9",
+    "build": "21G726",
+    "release": "September 11, 2023",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "12.7",
+    "build": "21G816",
+    "release": "September 21, 2023",
+    "darwinVersion": "21.6.0<p><small>xnu-8020.240.18.703.5~1</p></small><p><small>Fri Sep 15 16:17:23 PDT 2023</p></small>",
+    "description": ""
+  },
+  {
+    "version": "12.7.1",
+    "build": "21G920",
+    "release": "October 25, 2023",
+    "darwinVersion": "21.6.0<p><small>xnu-8020.240.18.704.15~1</p></small><p><small>Wed Oct 4 23:55:28 PDT 2023</p></small>",
+    "description": ""
+  },
+  {
+    "version": "12.7.2",
+    "build": "21G1974",
+    "release": "December 11, 2023",
+    "darwinVersion": "21.6.0<p><small>xnu-8020.240.18.705.10~1</p></small><p><small>Thu Nov 9 00:38:19 PST 2023</p></small>",
+    "description": ""
+  },
+  {
+    "version": "12.7.3",
+    "build": "21H1015",
+    "release": "January 22, 2024",
+    "darwinVersion": "21.6.0<p><small>xnu-8020.240.18.706.2~1</p></small><p><small>Sun Dec 17 22:55:27 PST 2023</p></small>",
+    "description": ""
+  },
+  {
+    "version": "12.7.4",
+    "build": "21H1123",
+    "release": "March 7, 2024",
+    "darwinVersion": "21.6.0<p><small>xnu-8020.240.18.707.4~1</p></small><p><small>Mon Feb 19 20:24:34 PST 2024</p></small>",
+    "description": ""
+  },
+  {
+    "version": "12.7.5",
+    "build": "21H1222",
+    "release": "May 13, 2024",
+    "darwinVersion": "21.6.0<p><small>xnu-8020.240.18.708.4~1</p></small><p><small>Wed Apr 24 06:02:02 PDT 2024</p></small>",
+    "description": ""
+  },
+  {
+    "version": "12.7.6",
+    "build": "21H1320",
+    "release": "July 29, 2024",
+    "darwinVersion": "21.6.0<p><small>xnu-8020.240.18.709.2~1</p></small><p><small>Mon Jun 24 00:56:10 PDT 2024</p></small>",
+    "description": ""
+  }
+]
