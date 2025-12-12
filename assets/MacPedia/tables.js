@@ -18,7 +18,7 @@ function output(i) {
   tds[2].innerHTML = content[i].release;
   tds[3].innerHTML = content[i].darwinVersion;
   tds[4].innerHTML = content[i].description;
-  tds[0].classList.add(content[i].class);
+  if (content[i].class) tds[0].classList.add(content[i].class);
   document.querySelector(".releases tbody").appendChild(template);
 }
 
@@ -49,18 +49,6 @@ function span(i) {
         lastNonEmptyCell = cell;
         currentRowspan = 1;
       }
-      // if (j === trs.length - 1) {
-      //   lastCell = cols[cols.length - 1];
-      //   if (cols === classes.length - 1) {
-      //     lastCell.classList.add("bottom-right");
-      //     lastCell.classList.remove("right");
-      //   } else if (col === 0) {
-      //     lastCell.classList.add("bottom-left");
-      //     lastCell.classList.remove("left");
-      //   } else {
-      //     lastCell.classList.add("bottom");
-      //   }
-      // }
     }
   }
 }
