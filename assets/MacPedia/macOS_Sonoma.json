@@ -4,7 +4,7 @@
     "build": "23A344",
     "release": "September 26, 2023",
     "darwinVersion": "23.0.0<br><small>xnu-10002.1.13~1<br>Fri Sep 15 14:41:34 PDT 2023</small>",
-    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/109035\">macOS Sequoia 14.0 release notes</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/120950\">About the security content of macOS Sequoia 14.0</a></p>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/109035\">macOS Sonoma 14.0 release notes</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/120950\">About the security content of macOS Sonoma 14.0</a></p>",
     "class": "previous-release"
   },
   {
@@ -12,7 +12,7 @@
     "build": "23B74",
     "release": "October 25, 2023",
     "darwinVersion": "23.1.0<br><small>xnu-10002.41.9~6<br>Mon Oct  9 21:27:27 PDT 2023</small>",
-    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/109035\">macOS Sequoia 14.1 release notes</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/109051\">About the security content of macOS Sequoia 14.1</a></p>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/109035\">macOS Sonoma 14.1 release notes</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/109051\">About the security content of macOS Sonoma 14.1</a></p>",
     "class": "previous-release"
   },
   {
@@ -52,7 +52,7 @@
     "build": "23C64",
     "release": "December 11, 2023",
     "darwinVersion": "23.2.0<br><small>xnu-10002.61.3~2<br>Wed Nov 15 21:54:10 PST 2023</small>",
-    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/109035\">macOS Sequoia 14.2 release notes</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/120879\">About the security content of macOS Sequoia 14.2</a></p>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/109035\">macOS Sonoma 14.2 release notes</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/120879\">About the security content of macOS Sonoma 14.2</a></p>",
     "class": "previous-release"
   },
   {
@@ -123,7 +123,7 @@
     "version": "14.7",
     "build": "23H124",
     "release": "September 16, 2024",
-    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/121247\">About the security content of macOS Sequoia 14.7</a></p>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/121247\">About the security content of macOS Sonoma 14.7</a></p>",
     "darwinVersion": "23.6.0<br><small>xnu-10063.141.1.700.5~1<br>Wed Jul 31 20:48:44 PDT 2024</small>",
     "class": "previous-release"
   },
@@ -132,7 +132,7 @@
     "build": "23H222",
     "release": "October 28, 2024",
     "darwinVersion": "23.6.0<br><small>xnu-10063.141.1.701.1~1<br>Thu Sep 12 23:34:49 PDT 2024</small>",
-    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/121570\">About the security content of macOS Sequoia 14.7.1</a></p>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/121570\">About the security content of macOS Sonoma 14.7.1</a></p>",
     "class": "previous-release"
   },
   {
@@ -140,7 +140,7 @@
     "build": "23H311",
     "release": "December 11, 2024",
     "darwinVersion": "23.6.0<br><small>xnu-10063.141.1.702.7~1<br>Fri Nov 15 15:12:37 PST 2024</small>",
-    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/121840\">About the security content of macOS Sequoia 14.7.2</a></p>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/121840\">About the security content of macOS Sonoma 14.7.2</a></p>",
     "class": "previous-release"
   },
   {
@@ -148,7 +148,7 @@
     "build": "23H417",
     "release": "January 27, 2025",
     "darwinVersion": "23.6.0<br><small>xnu-10063.141.1.703.2~1<br>Thu Dec 19 20:44:10 PST 2024</small>",
-    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/122069\">About the security content of macOS Sequoia 14.7.3</a></p>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/122069\">About the security content of macOS Sonoma 14.7.3</a></p>",
     "class": "previous-release"
   },
   {
@@ -156,7 +156,7 @@
     "build": "23H420",
     "release": "February 10, 2025",
     "darwinVersion": "23.6.0<br><small>xnu-10063.141.1.703.2~1<br>Thu Dec 19 20:44:50 PST 2024</small>",
-    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/122901\">About the security content of macOS Sequoia 14.7.4</a></p>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/122901\">About the security content of macOS Sonoma 14.7.4</a></p>",
     "class": "previous-release"
   },
   {
@@ -164,7 +164,7 @@
     "build": "23H527",
     "release": "March 31, 2025",
     "darwinVersion": "23.6.0<br><small>xnu-10063.141.1.704.6~1<br>Thu Mar 6 22:00:07 PST 2025</small>",
-    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/122374\">About the security content of macOS Sequoia 14.7.5</a></p>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/122374\">About the security content of macOS Sonoma 14.7.5</a></p>",
     "class": "previous-release"
   },
   {
@@ -172,7 +172,7 @@
     "build": "23H626",
     "release": "May 12, 2025",
     "darwinVersion": "23.6.0<br><small>xnu-10063.141.1.705.2~1<br>Thu Apr 24 20:29:27 PDT 2025</small>",
-    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/122717\">About the security content of macOS Sequoia 14.7.6</a></p>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/122717\">About the security content of macOS Sonoma 14.7.6</a></p>",
     "class": "previous-release"
   },
   {
@@ -180,7 +180,7 @@
     "build": "23H723",
     "release": "July 29, 2025",
     "darwinVersion": "23.6.0<br><small>xnu-10063.141.1.705.2~2<br>Wed May 14 13:52:32 PDT 2025</small>",
-    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/124150\">About the security content of macOS Sequoia 14.7.7</a></p>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/124150\">About the security content of macOS Sonoma 14.7.7</a></p>",
     "class": "previous-release"
   },
   {
@@ -188,7 +188,7 @@
     "build": "23H730",
     "release": "August 20, 2025",
     "darwinVersion": "",
-    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/124928\">About the security content of macOS Sequoia 14.7.8</a></p>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/124928\">About the security content of macOS Sonoma 14.7.8</a></p>",
     "class": "previous-release"
   },
   {
@@ -196,7 +196,7 @@
     "build": "23J21",
     "release": "September 15, 2025",
     "darwinVersion": "23.6.0<br><small>xnu-10063.141.1.706.13~1<br>Mon Aug 11 21:19:08 PDT 2025</small>",
-    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/125112\">About the security content of macOS Sequoia 14.8</a></p>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/125112\">About the security content of macOS Sonoma 14.8</a></p>",
     "class": "previous-release"
   },
   {
@@ -204,7 +204,7 @@
     "build": "23J30",
     "release": "September 29, 2025",
     "darwinVersion": "",
-    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/125330\">About the security content of macOS Sequoia 14.8.1</a></p>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/125330\">About the security content of macOS Sonoma 14.8.1</a></p>",
     "class": "previous-release"
   },
   {
@@ -212,15 +212,15 @@
     "build": "23J126",
     "release": "November 3, 2025",
     "darwinVersion": "23.6.0<br><small>xnu-10063.141.1.707.11~1<br>Wed Oct 15 21:14:01 PDT 2025</small>",
-    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/125636\">About the security content of macOS Sequoia 14.8.2</a></p>",
-    "class": "current-release"
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/125636\">About the security content of macOS Sonoma 14.8.2</a></p>",
+    "class": "previous-release"
   },
   {
-    "version": "14.8.3 RC 4",
+    "version": "14.8.3",
     "build": "23J220",
-    "release": "December 3, 2025",
-    "darwinVersion": "—",
-    "description": "—",
-    "class": "beta-release"
+    "release": "December 12, 2025",
+    "darwinVersion": "24.6.0<p><small>xnu-11417.140.69.705.2~1</small></p><p><small>Wed Nov 5 21:49:21 PST 2025</small></p>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/109035\">macOS Sonoma 14.2 release notes</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/125888\">About the security content of macOS Sonoma 14.8.3</a></p>",
+    "class": "current-release"
   }
 ]
