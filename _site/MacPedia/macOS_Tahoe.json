@@ -37,14 +37,14 @@
     "release": "November 3, 2025",
     "darwinVersion": "25.1.0<br><small>xnu-12377.41.6~2<br>Mon October 20, 19:32:56 PDT 2025</small>",
     "description": "This update includes the following features and enhancements:<ul><li>Liquid Glass setting gives you the option to choose between the default clear look or a new tinted look which increases opacity of the material in apps</li><li>Apple Music AutoMix support over AirPlay</li><li>Improved FaceTime audio quality in low-bandwidth conditions</li><li>Communication Safety and Web content filters to limit adult websites are enabled by default for existing child accounts for ages 13–17 (age varies by country or region)</li><ul>",
-    "class": "current-release"
+    "class": "previous-release"
   },
   {
-    "version": "26.2 Release Candidate",
+    "version": "26.2",
     "build": "25C56",
-    "release": "December 3, 2025",
+    "release": "December 12, 2025",
     "darwinVersion": "-",
-    "description": "-",
-    "class": "beta-release"
+    "description": "Refer to Apple's webpages for information about this release:<p><a href=\"https://support.apple.com/en-us/122868\" rel=\"nofollow\" class=\"external-links\">macOS Tahoe 26.2 Release Notes</a></p><p><a href=\"https://support.apple.com/en-us/125886\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS Tahoe 26.2</a></p>",
+    "class": "current-release"
   }
 ]

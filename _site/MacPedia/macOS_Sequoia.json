@@ -149,14 +149,14 @@
     "release": "November 3, 2025",
     "darwinVersion": "24.6.0<br><small>xnu-11417.140.69.703.14~1<br>Wed Oct 15 21:12:21 PDT 2025</small>",
     "description": "This update provides important security fixes and is recommended for all users.<p>Refer to Apple's webpage for information about the security content of this update:</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/125635\">About the security content of macOS Sequoia 15.7.2</a></p>",
-    "class": "current-release"
+    "class": "previous-release"
   },
   {
-    "version": "15.7.3 Release Candidate 4",
+    "version": "15.7.3",
     "build": "24G419",
-    "release": "December 3, 2025",
-    "darwinVersion": "—",
-    "description": "—",
-    "class": "beta-release"
+    "release": "December 12, 2025",
+    "darwinVersion": "24.6.0<p><small>xnu-11417.140.69.705.2~1</small></p><p><small>Wed Nov 5 21:30:23 PST 2025</small></p>",
+    "description": "This update provides important security fixes and is recommended for all users.<p>Refer to Apple's webpage for information about the security content of this update:</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/125887\">About the security content of macOS Sequoia 15.7.2</a></p>",
+    "class": "current-release"
   }
 ]
