@@ -114,7 +114,7 @@
   {
     "version": "14.6.1",
     "build": "23G93",
-    "release": "August 7, 2024<sup id=\"cite_ref-33\" class=\"reference\"><a href=\"#cite_note-33\"><span class=\"cite-bracket\">[</span>33<span class=\"cite-bracket\">]</span></a></sup>",
+    "release": "August 7, 2024",
     "darwinVersion": "23.6.0<br><small>xnu-10063.141.1~2<br>Mon Jul 29 21:13:04 PDT 2024</small>",
     "description": "This update includes important bug fixes and addresses an issue that prevents enabling or disabling Advanced Data Protection.",
     "class": "previous-release"
