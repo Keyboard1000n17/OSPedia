@@ -43,8 +43,16 @@
     "version": "26.2",
     "build": "25C56",
     "release": "December 12, 2025",
-    "darwinVersion": "-",
+    "darwinVersion": "Unavailable",
     "description": "Refer to Apple's webpages for information about this release:<p><a href=\"https://support.apple.com/en-us/122868\" rel=\"nofollow\" class=\"external-links\">macOS Tahoe 26.2 Release Notes</a></p><p><a href=\"https://support.apple.com/en-us/125886\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS Tahoe 26.2</a></p>",
     "class": "current-release"
+  },
+  {
+    "version": "26.3 beta 1",
+    "build": "25D5087f",
+    "release": "December 15, 2025",
+    "darwinVersion": "Unavailable",
+    "description": "Unavailable",
+    "class": "beta-release"
   }
 ]

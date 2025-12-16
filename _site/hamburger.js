@@ -8,12 +8,24 @@ hamburgerMenu.addEventListener("click", (e) => {
   menuChild.classList.toggle("show");
 });
 
+function setVh() {
+  const vh = window.visualViewport
+    ? window.visualViewport.height
+    : window.innerHeight;
+  document.documentElement.style.setProperty("--vh", `{vh - 15}px`);
+}
+
 // Close menu when clicking outside
 document.addEventListener("click", (e) => {
   if (!menuChild.contains(e.target)) {
     menuChild.classList.remove("show");
   }
 });
+
+// Listens for changes in viewport height
+if (window.matchMedia("(min-width: 768px)").matches) {
+  window.addEventListener("resize", setVh);
+}
 
 // PageFind search box
 
@@ -23,3 +35,20 @@ window.addEventListener("DOMContentLoaded", (event) => {
     resetStyles: false,
   });
 });
+
+// Blur for PageFind drawer
+
+const observer = new MutationObserver(() => {
+  blur = document.querySelector(".pagefind-ui__blur");
+  if (
+    !document.querySelector(
+      ".pagefind-ui__drawer.svelte-e9gkc3.pagefind-ui__hidden",
+    )
+  ) {
+    blur.style.opacity = "1";
+  } else {
+    blur.style.opacity = "0";
+  }
+});
+
+observer.observe(document.body, { childList: true, subtree: true });
