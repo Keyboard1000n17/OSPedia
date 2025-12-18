@@ -39,7 +39,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 // Blur for PageFind drawer
 
 const observer = new MutationObserver(() => {
-  blur = document.querySelector(".pagefind-ui__blur");
+  const blur = document.querySelector(".pagefind-ui__blur");
   if (
     !document.querySelector(
       ".pagefind-ui__drawer.svelte-e9gkc3.pagefind-ui__hidden",

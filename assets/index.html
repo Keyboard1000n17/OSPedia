@@ -1,25 +1,10 @@
-<!doctype html>
-<html lang="en-US">
-
-<head>
-  <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" />
-  <meta name="OSPedia"
-    content="OSPedia aims to provide plenty of information on various operating systems that have impacted our daily lives. From release dates to demonstrations of these operating systems, this website covers them in great detail!" />
-  <title>OSPedia - Home</title>
-  <link href="./global/stylesheets/fluentUIstyling.css" rel="stylesheet" />
-  <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
-  <script src="/pagefind/pagefind-ui.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet" />
-  <link rel="icon" href="./global/OSPedia-favicon.svg" />
-</head>
-
-<body style="color: black">
-  {% include "_nav.njk" %}
+---
+title: Home
+tags:
+- homepages
+layout: base.njk
+---
   <div id="top-banner" style="background-image: url(./global/OSPedia-artwork.png)">
-    <!-- <img src="./global/OSPedia-artwork.png" alt="OSPedia hero banner" /> -->
     <img src="./global/OSPedia-logo.svg" alt="OSPedia logo" />
   </div>
   <p>
@@ -79,8 +64,4 @@
   </p>
   <a href="./WinPedia/index.html">WinPedia</a>
   <a href="./MacPedia/index.html">MacPedia</a>
-  <div class="pagefind-ui__blur"></div>
-</body>
-<script src="./hamburger.js"></script>
 
-</html>

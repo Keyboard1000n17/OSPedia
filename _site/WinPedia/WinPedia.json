@@ -1,4 +1,4 @@
 {
-  "layout": "winpedia-template.njk",
+  "layout": "base.njk",
   "tags": "winpedia-pages"
 }
