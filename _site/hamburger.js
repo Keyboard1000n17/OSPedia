@@ -10,9 +10,10 @@ hamburgerMenu.addEventListener("click", (e) => {
 
 function setVh() {
   const vh = window.visualViewport
-    ? window.visualViewport.height
-    : window.innerHeight;
-  document.documentElement.style.setProperty("--vh", `{vh - 15}px`);
+    ? `${window.visualViewport.height - 15}px`
+    : `${window.innerHeight - 15}px`;
+  document.documentElement.style.setProperty("--vh", vh);
+  // document.querySelector("body").style.setProperty("--vh", vh);
 }
 
 // Close menu when clicking outside
@@ -23,7 +24,7 @@ document.addEventListener("click", (e) => {
 });
 
 // Listens for changes in viewport height
-if (window.matchMedia("(min-width: 768px)").matches) {
+if (window.matchMedia("(max-width: 768px)").matches) {
   window.addEventListener("resize", setVh);
 }
 
@@ -41,13 +42,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
 const observer = new MutationObserver(() => {
   const blur = document.querySelector(".pagefind-ui__blur");
   if (
-    !document.querySelector(
+    document.querySelector(
       ".pagefind-ui__drawer.svelte-e9gkc3.pagefind-ui__hidden",
     )
   ) {
-    blur.style.opacity = "1";
-  } else {
     blur.style.opacity = "0";
+  } else {
+    blur.style.opacity = "1";
   }
 });
 
