@@ -1,8 +1,6 @@
-/* * { */
-/*   margin: 0; */
-/*   padding: 0; */
-/* } */
-/**/
+:root {
+  --vh: 99dvh;
+}
 /* Site-wide styling */
 body {
   margin: 10vh 1vw;
@@ -297,6 +295,7 @@ div#card-container {
   grid-template-rows: auto;
   margin: 10px;
   position: relative;
+  /* height: 5rem; */
 }
 
 #info {
@@ -376,7 +375,6 @@ div#search {
   mask-repeat: no-repeat;
 }
 
-/* .pagefind-ui__drawer> ::-webkit-scrollbar-thumb { */
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
@@ -483,7 +481,7 @@ a.home-os-cards {
   border: none;
   color: #000;
   text-decoration: none;
-  height: 100%;
+  height: 50rem;
 }
 
 div.home-os-cards {
@@ -496,19 +494,15 @@ div.home-os-cards {
   flex-direction: column;
 }
 
-div.home-os-cards img.wallpaper {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 10px 10px 0 0;
-  filter: blur(1px) brightness(0.75);
-}
-
 div.home-os-cards > div.top {
   display: flex;
   flex: 0 0 50%;
-  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 50%;
+  background-position: center;
+  background-size: cover;
 }
 
 div.home-os-cards > div.bottom {
@@ -523,14 +517,10 @@ div.home-os-cards > div.bottom {
   flex-direction: column;
 }
 
-img.logo {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  z-index: 1;
-  filter: drop-shadow(0px 0px 20px white);
+div.home-os-cards img.logo {
+  max-width: 60%;
+  max-height: 60%;
+  filter: drop-shadow(0 0 120px black);
 }
 
 div#top-banner {
@@ -569,7 +559,7 @@ div.hamburger-menu img.hamburger-menu-icon {
 
 div.hamburger-menu > .hamburger-menu-child {
   position: fixed;
-  height: 100vh;
+  height: var(--vh);
   top: 0;
   right: 0;
   display: flex;
