@@ -43,7 +43,7 @@
     "version": "26.2",
     "build": "25C56",
     "release": "December 12, 2025",
-    "darwinVersion": "Unavailable",
+    "darwinVersion": "25.2.0<br><small>xnu-12377.61.12~1<br>Tue Nov 18 21:09:34 PST 2025</small>",
     "description": "Refer to Apple's webpages for information about this release:<p><a href=\"https://support.apple.com/en-us/122868\" rel=\"nofollow\" class=\"external-links\">macOS Tahoe 26.2 Release Notes</a></p><p><a href=\"https://support.apple.com/en-us/125886\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS Tahoe 26.2</a></p>",
     "class": "current-release"
   },
