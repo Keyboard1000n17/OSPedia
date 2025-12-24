@@ -12,7 +12,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy(
     "assets/**/*.{js,json,jpg,png,gif,webp,svg,css}",
   );
-  eleventyConfig.addPassthroughCopy({ "assets/global": "/" });
+  eleventyConfig.addPassthroughCopy({ "assets/global": "/global" });
 
   // Computed navigation data (optional)
   eleventyConfig.addGlobalData("eleventyComputed", {
