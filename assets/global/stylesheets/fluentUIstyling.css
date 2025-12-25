@@ -1,14 +1,12 @@
 :root {
   --vh: 99dvh;
 }
+
 /* Site-wide styling */
 body {
   margin: 10vh 1vw;
   font-size: 1.125rem;
-  font-family:
-    Segoe UI,
-    "Open Sans",
-    sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-attachment: fixed;
   background-position: center;
   color: #fff;
@@ -32,18 +30,18 @@ nav {
   list-style: none;
 }
 
-nav > * {
+nav>* {
   padding: 10px;
 }
 
-nav > ul {
+nav>ul {
   display: flex;
   flex-wrap: nowrap;
 }
 
-ul > li.nav,
-ul > li.nav a,
-ul > li.nav a:visited {
+ul>li.nav,
+ul>li.nav a,
+ul>li.nav a:visited {
   list-style: none;
   margin-right: 20px;
   text-decoration: none;
@@ -55,12 +53,11 @@ ul > li.nav a:visited {
   color: #001fff;
 }
 
-nav > img:nth-child(1) {
+nav>img:nth-child(1) {
   display: block;
-  /* filter: drop-shadow(0 0 20px black); */
 }
 
-nav > img:nth-child(2) {
+nav>img:nth-child(2) {
   display: none;
 }
 
@@ -113,11 +110,11 @@ div.prxt img {
   /* filter: drop-shadow(0 0 150px black); */
 }
 
-div.article-nav > a.prev {
+div.article-nav>a.prev {
   grid-column: 1;
 }
 
-div.article-nav > a.next {
+div.article-nav>a.next {
   grid-column: 2;
 }
 
@@ -241,7 +238,7 @@ div.UI-Screenshots {
   text-align: center;
 }
 
-div.UI-Screenshots > img.UI-Screenshots {
+div.UI-Screenshots>img.UI-Screenshots {
   grid-row: 1;
   width: 100%;
   max-height: 15rem;
@@ -250,19 +247,19 @@ div.UI-Screenshots > img.UI-Screenshots {
   transition: all ease 0.3s;
 }
 
-div.UI-Screenshots > p {
+div.UI-Screenshots>p {
   grid-row: 2;
   grid-column: span 4;
 }
 
-figure.UI-Screenshots > img.UI-Screenshots {
+figure.UI-Screenshots>img.UI-Screenshots {
   width: 50vw;
   filter: brightness(80%);
   border-radius: 10px;
   transition: all ease 0.3s;
 }
 
-div.UI-Screenshots > img.UI-Screenshots:hover {
+div.UI-Screenshots>img.UI-Screenshots:hover {
   /*height: 15rem;*/
   /*width: auto;*/
   filter: brightness(100%);
@@ -270,7 +267,7 @@ div.UI-Screenshots > img.UI-Screenshots:hover {
   transform: scale(1.1);
 }
 
-figure.UI-Screenshots > img.UI-Screenshots:hover {
+figure.UI-Screenshots>img.UI-Screenshots:hover {
   width: 55vw;
   filter: brightness(100%);
 }
@@ -494,7 +491,7 @@ div.home-os-cards {
   flex-direction: column;
 }
 
-div.home-os-cards > div.top {
+div.home-os-cards>div.top {
   display: flex;
   flex: 0 0 50%;
   align-items: center;
@@ -505,7 +502,7 @@ div.home-os-cards > div.top {
   background-size: cover;
 }
 
-div.home-os-cards > div.bottom {
+div.home-os-cards>div.bottom {
   margin: 1vh 1vw;
   padding: 1vh 2vw;
   border: none;
@@ -535,7 +532,7 @@ div#top-banner {
   align-items: center;
 }
 
-div#top-banner > img {
+div#top-banner>img {
   width: 90vw;
   align-self: center;
   max-height: 40%;
@@ -557,7 +554,7 @@ div.hamburger-menu img.hamburger-menu-icon {
   display: none;
 }
 
-div.hamburger-menu > .hamburger-menu-child {
+div.hamburger-menu>.hamburger-menu-child {
   position: fixed;
   height: var(--vh);
   top: 0;
@@ -578,13 +575,13 @@ div.hamburger-menu > .hamburger-menu-child {
   transition: transform 0.2s ease;
 }
 
-div.hamburger-menu > .hamburger-menu-child.show {
+div.hamburger-menu>.hamburger-menu-child.show {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
 }
 
-div.hamburger-menu-child > ul {
+div.hamburger-menu-child>ul {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -592,12 +589,12 @@ div.hamburger-menu-child > ul {
   justify-content: center;
 }
 
-div.hamburger-menu > .hamburger-menu-child li {
+div.hamburger-menu>.hamburger-menu-child li {
   padding: 20% 1vw;
   text-align: right;
 }
 
-div.hamburger-menu > .hamburger-menu-child li a {
+div.hamburger-menu>.hamburger-menu-child li a {
   color: #3266fb;
   text-decoration: none;
 }
@@ -617,15 +614,15 @@ div.hamburger-menu img.hamburger-menu-logo {
     height: 4rem;
   }
 
-  nav > ul {
+  nav>ul {
     display: none;
   }
 
-  nav > img:nth-child(1) {
+  nav>img:nth-child(1) {
     display: none;
   }
 
-  nav > img:nth-child(2) {
+  nav>img:nth-child(2) {
     display: block;
   }
 
@@ -652,8 +649,8 @@ div.hamburger-menu img.hamburger-menu-logo {
     text-align: center;
   }
 
-  #info > img,
-  .info > img {
+  #info>img,
+  .info>img {
     align-self: center;
     width: 90%;
     height: auto;
@@ -671,15 +668,15 @@ div.hamburger-menu img.hamburger-menu-logo {
     text-align: center;
   }
 
-  div.prxt > * {
+  div.prxt>* {
     margin: 5px;
   }
 
-  div.prxt > p {
+  div.prxt>p {
     grid-row: 2;
   }
 
-  div.prxt > img {
+  div.prxt>img {
     grid-row: 1;
   }
 

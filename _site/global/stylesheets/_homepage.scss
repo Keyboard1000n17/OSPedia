@@ -1,0 +1,75 @@
+.winver,
+.macver {
+  justify-content: center;
+  align-content: center;
+  margin: 1vh;
+  padding: 3vh;
+  border-radius: 10px;
+  height: 5rem;
+  background-position: center center;
+  display: grid;
+  transition:
+    filter,
+    box-shadow ease-out 0.3s,
+    height ease 0.2s;
+}
+
+.winver:hover,
+.macver:hover {
+  filter: brightness(160%);
+  box-shadow: 0px 0px 15px 5px #000;
+  height: 4.5rem;
+}
+
+.winref,
+.macref {
+  text-decoration: none;
+  color: #fff;
+}
+
+a.home-os-cards {
+  position: relative;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  height: 50rem;
+}
+
+div.home-os-cards {
+  border: solid 0.05px black;
+  border-radius: 10px;
+  position: relative;
+  height: 100%;
+  margin: 1vh 2vw;
+  display: flex;
+  flex-direction: column;
+}
+
+div.home-os-cards>div.top {
+  display: flex;
+  flex: 0 0 50%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+div.home-os-cards>div.bottom {
+  margin: 1vh 1vw;
+  padding: 1vh 2vw;
+  border: none;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  overflow-y: auto;
+  display: flex;
+  flex: 1 1 50%;
+  flex-direction: column;
+}
+
+div.home-os-cards img.logo {
+  max-width: 60%;
+  max-height: 60%;
+  filter: drop-shadow(0 0 120px black);
+}

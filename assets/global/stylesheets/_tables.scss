@@ -1,0 +1,80 @@
+table {
+  border-collapse: separate;
+  border-radius: 10px;
+  border: none;
+  border-spacing: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #000;
+  margin: 10px;
+  backdrop-filter: blur(2.5px);
+  float: none;
+  width: 98%;
+}
+
+table.releases {
+  height: 400px !important;
+  overflow-y: scroll;
+}
+
+.previous-release {
+  background-color: rgba(255, 222, 173, 0.7);
+}
+
+.current-release {
+  background-color: rgba(152, 221, 157, 0.7);
+}
+
+.beta-release {
+  background-color: rgba(176, 231, 255, 0.7);
+}
+
+.security-response {
+  background-color: rgba(195, 156, 227, 0.7);
+}
+
+th,
+td {
+  border: solid 0.5px #000;
+  padding: 10px;
+}
+
+td.top,
+th.top {
+  border-top: 2px solid #000;
+}
+
+.left {
+  border-left: 2px solid #000;
+}
+
+.right {
+  border-right: 2px solid #000;
+}
+
+.bottom {
+  border-bottom: 2px solid #000;
+}
+
+.top-left {
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  border-top-left-radius: 10px;
+}
+
+.top-right {
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  border-top-right-radius: 10px;
+}
+
+.bottom-left {
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #000;
+  border-bottom-left-radius: 10px;
+}
+
+.bottom-right {
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom-right-radius: 10px;
+}
