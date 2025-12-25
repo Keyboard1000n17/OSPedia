@@ -1,10 +1,6 @@
-// Variables
-
-// Mixins
 @use "global-styles";
 @use "nav";
 @use "pagefind-ui";
 @use "homepage";
 @use "tables";
-
-// Body content
+@use "./media-query-768px";
