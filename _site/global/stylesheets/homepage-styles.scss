@@ -1,0 +1,36 @@
+#homeContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 10px;
+  height: 90%;
+}
+
+.winver,
+.macver {
+  justify-content: center;
+  align-content: center;
+  margin: 1vh;
+  padding: 3vh;
+  border-radius: 10px;
+  height: 5rem;
+  background-position: center center;
+  display: grid;
+  transition:
+    filter,
+    box-shadow ease-out 0.3s,
+    height ease 0.2s;
+}
+
+.winver:hover,
+.macver:hover {
+  filter: brightness(160%);
+  box-shadow: 0px 0px 15px 5px #000;
+  height: 4.5rem;
+}
+
+.winref,
+.macref {
+  text-decoration: none;
+  color: #fff;
+}

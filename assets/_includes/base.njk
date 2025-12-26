@@ -1,11 +1,15 @@
-<!-- prettier-ignore -->
 <!doctype html>
 <html>
 
 <head>
   <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" />
   <title>{{ title }} - OSPedia</title>
-  <link href="/global/stylesheets/fluentUIstyling.css" rel="stylesheet" />
+  <link href="/global/stylesheets/fluentUI.css" rel="stylesheet" />
+  {% if page.url == "/" %}
+  <link rel="stylesheet" href="/global/stylesheets/index-page-styles.css" />
+  {% elif page.url == "/WinPedia/" or page.url == "/MacPedia/" %}
+  <link rel="stylesheet" href="/global/stylesheets/homepage-styles.css" />
+  {% endif %}
   <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
   <script src="/pagefind/pagefind-ui.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
