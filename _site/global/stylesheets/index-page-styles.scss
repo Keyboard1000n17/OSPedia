@@ -24,18 +24,25 @@ div.home-os-cards {
   flex-direction: column;
 }
 
-div.home-os-cards > div.top {
+div.home-os-cards>div.top {
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+}
+
+div.home-os-cards div.home-overlay {
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(5px);
+  height: 100%;
   display: flex;
   flex: 0 0 50%;
   align-items: center;
   justify-content: center;
   align-content: center;
-  height: 50%;
-  background-position: center;
-  background-size: cover;
 }
 
-div.home-os-cards > div.bottom {
+div.home-os-cards>div.bottom {
   margin: 1vh 1vw;
   padding: 1vh 2vw;
   border: none;
@@ -65,7 +72,7 @@ div#top-banner {
   align-items: center;
 }
 
-div#top-banner > img {
+div#top-banner>img {
   width: 90vw;
   align-self: center;
   max-height: 40%;
