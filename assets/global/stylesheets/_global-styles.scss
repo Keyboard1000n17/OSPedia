@@ -45,17 +45,17 @@ li {
   list-style: disc;
 }
 
-summary.level-one {
+.level-one {
   font-weight: 700;
   font-size: 1.484375rem;
 }
 
-summary.level-two {
+.level-two {
   font-weight: 600;
   font-size: 1.34375rem;
 }
 
-summary.level-three {
+.level-three {
   font-weight: 580;
   font-size: 1.1953125rem;
 }
@@ -66,4 +66,16 @@ summary.level-three {
 
 .bolden {
   font-weight: 600;
+}
+
+a {
+  color: #0061c9;
+  text-decoration: none;
+}
+
+kbd {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 10%;
+  padding: 1px 2.5px;
+  color: #000;
 }
