@@ -6,29 +6,21 @@ div#card-container {
   position: relative;
 }
 
-a.home-os-cards {
-  position: relative;
-  border: none;
-  color: #000;
-  text-decoration: none;
-  height: 50rem;
-}
-
 div.home-os-cards {
   border: solid 0.05px black;
   border-radius: 10px;
   position: relative;
-  height: 100%;
+  height: 50rem;
   margin: 1vh 2vw;
   display: flex;
   flex-direction: column;
 }
 
-div.home-os-cards>div.top {
+div.home-os-cards div.top {
   height: 50%;
   background-position: center;
   background-size: cover;
-  backdrop-filter: blur(2px);
+  border-radius: 10px 10px 0 0;
 }
 
 div.home-os-cards div.home-overlay {
@@ -43,6 +35,7 @@ div.home-os-cards div.home-overlay {
 }
 
 div.home-os-cards>div.bottom {
+  height: 50%;
   margin: 1vh 1vw;
   padding: 1vh 2vw;
   border: none;
@@ -50,7 +43,6 @@ div.home-os-cards>div.bottom {
   text-align: center;
   overflow-y: auto;
   display: flex;
-  flex: 1 1 50%;
   flex-direction: column;
 }
 
@@ -77,4 +69,10 @@ div#top-banner>img {
   align-self: center;
   max-height: 40%;
   left: 50%;
+}
+
+@media (max-width: 768px) {
+  div#card-container {
+    display: block;
+  }
 }

@@ -77,12 +77,12 @@
 @mixin pagefind-ui {
   .pagefind-ui__drawer {
     position: fixed !important;
-    top: calc(3rem + 10px);
-    bottom: calc(3rem + 10px);
-    left: 5vw;
-    right: 5vw;
+    top: calc(3rem * 1.2);
+    bottom: calc(3rem * 1.2);
+    left: 50%;
+    transform: translateX(-50%);
     width: 90vw;
-    height: calc(100vh - 3rem - 20px);
+    height: 80vh;
   }
 
   .pagefind-ui__search-input {
