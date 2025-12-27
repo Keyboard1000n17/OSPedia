@@ -17,13 +17,12 @@ div#search {
   position: fixed;
   top: 12vh;
   bottom: 2vh;
-  left: 2vw;
-  right: 2vw;
-  width: 96vw;
-  max-width: 1024px;
-  height: 80vh;
+  width: 96vw !important;
+  max-width: 1024px !important;
+  height: 80vh !important;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(2.5px) !important;
   padding: 15px;
   border: none;
   border-radius: 15px;
@@ -81,4 +80,17 @@ div#search {
   top: 0 !important;
   right: 0 !important;
   padding: 0 2.5% !important;
+}
+
+.pagefind-ui__blur {
+  position: fixed;
+  backdrop-filter: blur(5px);
+  top: 12vh;
+  bottom: 2vh;
+  width: 96vw !important;
+  max-width: 1024px !important;
+  height: 80vh !important;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
 }
