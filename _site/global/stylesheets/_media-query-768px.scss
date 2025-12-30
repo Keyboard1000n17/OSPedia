@@ -3,16 +3,16 @@
     height: 4rem;
   }
 
-  nav > ul {
+  nav>ul {
     display: none;
   }
 
-  nav > img:nth-child(1) {
+  nav>img:nth-child(1) {
     // hide logo
     display: none;
   }
 
-  nav > img:nth-child(2) {
+  nav>img:nth-child(2) {
     // show icon
     display: block;
   }
@@ -24,25 +24,21 @@
     text-align: center;
   }
 
-  div.prxt > * {
+  div.prxt>* {
     margin: 5px;
   }
 
-  div.prxt > p {
+  div.prxt>p {
     grid-row: 2;
   }
 
-  div.prxt > img {
+  div.prxt>img {
     grid-row: 1;
   }
 }
 
 @mixin hamburger-menu {
-  div.hamburger-menu {
-    display: flex;
-  }
-
-  div.hamburger-menu img.hamburger-menu-icon {
+  img.hamburger-menu-icon {
     display: block;
   }
 }
@@ -57,6 +53,10 @@
 }
 
 @mixin global {
+  body {
+    margin-top: 4rem;
+  }
+
   #info,
   .info {
     display: flex;
@@ -65,8 +65,8 @@
     text-align: center;
   }
 
-  #info > img,
-  .info > img {
+  #info>img,
+  .info>img {
     align-self: center;
     width: 90%;
     height: auto;

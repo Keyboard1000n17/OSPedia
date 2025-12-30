@@ -7,7 +7,7 @@
     "sass:watch": "sass assets/global/stylesheets:assets/global/stylesheets --watch --style=compressed",
     "eleventy": "pnpm exec eleventy",
     "dev": "pnpm run sass:watch & pnpm run eleventy --serve",
-    "build": "bash -c 'pnpm run sass && pnpm run eleventy && for file in $(find _site -type f | grep -E \"html|css|js\" | grep -E -v \"./pagefind|scss|fluentUI.css\"); do pnpm exec html-minifier-next \"${file}\" -o \"${file}\" --preset comprehensive --collapse-whitespace --remove-redundant-attributes --verbose; done'"
+    "build": "bash -c 'pnpm run sass && pnpm run eleventy && for file in $(find _site -type f | grep -E \"html\"); do pnpm exec html-minifier-next \"${file}\" -o \"${file}\" --preset comprehensive --collapse-whitespace --remove-redundant-attributes --verbose; done && for file in $(find _site -type f | grep -E \"js\"); do pnpm exec html-minifier-next \"${file}\" -o \"${file}\" --preset comprehensive --collapse-whitespace --remove-redundant-attributes --remove-comments --verbose; done'"
   },
   "repository": {
     "type": "git",

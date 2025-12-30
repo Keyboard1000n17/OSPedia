@@ -1,25 +1,28 @@
 //JavaScript for the hamburger menu
 
-const hamburgerMenu = document.querySelector(".hamburger-menu img");
-const menuChild = document.querySelector(".hamburger-menu-child");
+const menu = document.querySelector(".hamburger-menu");
+const menuIcon = document.querySelector(".hamburger-menu-icon");
+const menuBlur = document.querySelector(".hamburger-menu-blur");
+const menuClose = document.querySelector(".hamburger-menu-close");
 
-hamburgerMenu.addEventListener("click", (e) => {
+menuIcon.addEventListener("click", (e) => {
   e.stopPropagation(); // stop event from bubbling up
-  menuChild.classList.toggle("show");
+  menu.classList.toggle("show");
+  menuBlur.classList.toggle("show");
 });
 
 function setVh() {
   const vh = window.visualViewport
-    ? `${window.visualViewport.height - 15}px`
-    : `${window.innerHeight - 15}px`;
+    ? `${window.visualViewport.height - 25}px`
+    : `${window.innerHeight - 25}px`;
   document.documentElement.style.setProperty("--vh", vh);
-  // document.querySelector("body").style.setProperty("--vh", vh);
 }
 
 // Close menu when clicking outside
 document.addEventListener("click", (e) => {
-  if (!menuChild.contains(e.target)) {
-    menuChild.classList.remove("show");
+  if (!menu.contains(e.target) || e.target === menuClose) {
+    menu.classList.remove("show");
+    menuBlur.classList.remove("show");
   }
 });
 
