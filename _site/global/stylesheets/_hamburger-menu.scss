@@ -1,46 +1,72 @@
-div.hamburger-menu {
-  position: relative;
-  display: none;
-  align-items: center;
-  cursor: pointer;
-  margin-right: 1rem;
-  z-index: 4;
+:root {
+  --vh: 99dvh;
 }
 
-div.hamburger-menu img.hamburger-menu-icon {
+$border-radius: 15px 0 0 15px;
+
+img.hamburger-menu-icon {
   width: 32px;
   height: 32px;
   display: none;
 }
 
-div.hamburger-menu > .hamburger-menu-child {
+img.hamburger-menu-close {
+  position: fixed;
+  top: 1.5rem;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+div.hamburger-menu {
   position: fixed;
   height: var(--vh);
   top: 0;
   right: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: $border-radius;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 0.5rem 1rem;
   width: 10rem;
-  z-index: 9999;
-  opacity: 0;
-  transform: translateX(-10px);
+  display: none;
   pointer-events: none;
-  transition: transform 0.2s ease;
+  transition: transform 1s ease;
 }
 
-div.hamburger-menu > .hamburger-menu-child.show {
-  opacity: 1;
-  transform: translateY(0);
+div.hamburger-menu-blur {
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  height: var(--vh);
+  top: 0;
+  right: 0;
+  width: 10rem;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  display: none;
+  pointer-events: none;
+  transition: transform 1s ease;
+  border-radius: $border-radius;
+}
+
+div.hamburger-menu.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(0);
   pointer-events: auto;
+  z-index: 9999;
 }
 
-div.hamburger-menu-child > ul {
+div.hamburger-menu-blur.show {
+  display: block;
+  transform: translateX(0);
+  z-index: 90;
+}
+
+div.hamburger-menu ul {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -48,17 +74,18 @@ div.hamburger-menu-child > ul {
   justify-content: center;
 }
 
-div.hamburger-menu > .hamburger-menu-child li {
+div.hamburger-menu li {
   padding: 20% 1vw;
   text-align: right;
+  list-style: none;
 }
 
-div.hamburger-menu > .hamburger-menu-child li a {
+div.hamburger-menu a {
   color: #3266fb;
   text-decoration: none;
 }
 
-div.hamburger-menu img.hamburger-menu-logo {
+img.hamburger-menu-logo {
   position: absolute;
   width: 90% !important;
   bottom: 2%;
