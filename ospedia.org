@@ -1,9 +1,10 @@
 * OSPedia
 ** What is this?
-   This is an org file. It is said to be a powerful in-editor way to take notes. If you wish to contribute, this file might help (please contribute).
+   This is an org file. It is said to be a powerful in-editor way to take notes.
+   If you wish to contribute, this file might help you figure out how to help (please contribute).
 ** TODO:
    [ ] Add demos
    - Add demos of Windows and macOS using v86 and Inifinite Mac
-   [ ] Modify page styling
+   [X] Modify page styling
    - Add a max-width on the `main` element and navbar contents.
    - Also move the UI picture to the side instead of being inside a `details` element.

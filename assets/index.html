@@ -5,12 +5,104 @@ tags:
 layout: base.njk
 ---
 
-<div
-  id="top-banner"
-  style="background-image: url(./global/OSPedia-artwork.png)"
->
+<div class="marquee">
+  <div>
+    <img
+      src="/MacPedia/Images/Icons/Big_Sur-icon.webp"
+      alt="macOS Big Sur icon"
+    />
+    <img
+      src="/WinPedia/Images/Icons/Windows_11-icon.webp"
+      alt="Windows 11 icon"
+    />
+    <img src="/MacPedia/Images/Icons/Tahoe-icon.webp" alt="macOS Tahoe icon" />
+    <img
+      src="/WinPedia/Images/Icons/Windows_7-icon.webp"
+      alt="Windows 7 icon"
+    />
+    <img
+      src="/MacPedia/Images/Icons/Sequoia-icon.webp"
+      alt="macOS Sequoia icon"
+    />
+    <img
+      src="/WinPedia/Images/Icons/Windows_XP-icon.webp"
+      alt="Windows XP icon"
+    />
+    <img
+      src="/MacPedia/Images/Icons/Cheetah-icon.webp"
+      alt="macOS Sequoia icon"
+    />
+    <img
+      src="/WinPedia/Images/Icons/Windows_95-icon.webp"
+      alt="Windows 95 icon"
+    />
+  </div>
+</div>
+<div id="top-banner">
   <img src="./global/OSPedia-logo.svg" alt="OSPedia logo" />
 </div>
+<div class="marquee">
+  <div>
+    <img
+      src="/MacPedia/Images/Icons/Leopard-icon.webp"
+      alt="Mac OS X Leopard icon"
+    />
+    <img
+      src="/WinPedia/Images/Icons/Windows_1.0-icon.webp"
+      alt="Windows 1.0 icon"
+    />
+    <img
+      src="/MacPedia/Images/Icons/Yosemite-icon.webp"
+      alt="OS X Yosemite icon"
+    />
+    <img
+      src="/WinPedia/Images/Icons/Windows_Vista-icon.webp"
+      alt="Windows Vista icon"
+    />
+    <img
+      src="/MacPedia/Images/Icons/Sonoma-icon.webp"
+      alt="Mac OS X Jaguar icon"
+    />
+    <img
+      src="/WinPedia/Images/Icons/Windows_ME-icon.webp"
+      alt="Windows ME icon"
+    />
+    <img
+      src="/MacPedia/Images/Icons/High_Sierra-icon.webp"
+      alt="macOS High Sierra icon"
+    />
+    <img
+      src="/WinPedia/Images/Icons/Windows_3.1-icon.webp"
+      alt="Windows 3.1 icon"
+    />
+  </div>
+</div>
+<script>
+  marqueeDivs = document.querySelectorAll("div.marquee div");
+  [...marqueeDivs].forEach((marqueeDiv) => {
+    marqueeDiv.append(...marqueeDiv.cloneNode(true).children);
+    marqueeDiv.append(...marqueeDiv.cloneNode(true).children);
+    marqueeDiv.append(...marqueeDiv.cloneNode(true).children);
+    marqueeDiv.append(...marqueeDiv.cloneNode(true).children);
+    window.addEventListener("load", () => {
+      marqueeDiv.style.setProperty(
+        "--width",
+        `-${marqueeDiv.scrollWidth / 2}px`,
+      );
+      marqueeDiv.style.animationDuration = `${marqueeDiv.scrollWidth / 2 / 400}s`;
+      marqueeDiv.style.animationPlayState = "running";
+    });
+    window.addEventListener("resize", () => {
+      marqueeDiv.style.setProperty(
+        "--width",
+        `-${marqueeDiv.scrollWidth / 2}px`,
+      );
+      marqueeDiv.style.animationDuration = `${marqueeDiv.scrollWidth / 2 / 400}s`;
+      marqueeDiv.style.animationPlayState = "running";
+    });
+  });
+  marqueeDivs[1].style.animationDirection = "reverse";
+</script>
 <p>
   OSPedia aims to provide plenty of information on various operating systems
   that have impacted our daily lives. From release dates to demonstrations of
@@ -18,7 +110,6 @@ layout: base.njk
 </p>
 <span style="font-size: 2rem">Subsites:</span>
 <div id="card-container">
-  <!-- <a class="home-os-cards" href="./WinPedia/index.html"> -->
   <div class="home-os-cards">
     <div
       class="top"

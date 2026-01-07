@@ -19,7 +19,6 @@
   <link rel="icon" href="/global/OSPedia-favicon.svg" />
 </head>
 
-
 {% if background_image %}
 {% if tags and "homepages" in tags %}
 {% set style = "background-image: url(\"" ~ background_image ~ "\")" %}
@@ -30,46 +29,28 @@
 {% set style = "color: black" %}
 {% endif %}
 
-<body style="{{ style }}">
+<body>
 
   {% include "_nav.njk" %}
-  <main>
-    {{ content | safe }}
-  </main>
+  <div class="wrapper">
+    {% include "_aside.njk" %}
 
-  {% set currentCollection = null %}
-  {% if tags and "winpedia-pages" in tags %}
-  {% set currentCollection = collections['winpedia-pages'] %}
-  {% elif tags and "macpedia-pages" in tags %}
-  {% set currentCollection = collections['macpedia-pages'] %}
-  {% endif %}
-
-  {% if currentCollection %}
-  <div class="article-nav">
-    {% set previousArticle = currentCollection | getPreviousCollectionItem(page)%}
-    {% set nextArticle = currentCollection | getNextCollectionItem(page)%}
-    {% if previousArticle %}
-    <a href="{{ previousArticle.url}}" rel="prev" class="prxt prev">
-      <div class="prxt">
-        {% if previousArticle.data.favicon %}
-        <img src="./Images/Icons/{{ previousArticle.data.favicon }}" alt="{{ previousArticle.data.title }}" />
-        {% endif %} <p>{{ previousArticle.data.title }}</p>
-      </div>
-    </a>
-    {% endif %}
-
-    {% if nextArticle %}
-    <a href="{{ nextArticle.url }}" rel="next" class="prxt next">
-      <div class="prxt">
-        <p>{{ nextArticle.data.title }}</p>
-        {% if nextArticle.data.favicon %}
-        <img src="./Images/Icons/{{ nextArticle.data.favicon }}" alt="{{ nextArticle.data.title }}" />
+    <main style="{{ style }}">
+      <div class="content">
+        {% if tags and not "homepages" in tags %}
+        <h1 id="heading">{{ title }}</h1>
         {% endif %}
+        {% include "_page-nav.njk" %}
+        {{ content | safe }}
       </div>
-    </a>
-    {% endif %}
+    </main>
+    <div class="contents">
+      <h2 id="toc">Contents</h2>
+      <noscript>Enable JavaScript for the best experience!</noscript>
+    </div>
   </div>
-  {% if currentCollection == collections["macpedia-pages"] %}
+
+  {% if tags and "macpedia-pages" in tags %}
   <template>
     <tr>
       <td class="left version"></td>
@@ -81,9 +62,10 @@
   </template>
   <script src="/MacPedia/tables.js"></script>
   {% endif %}
-  {% endif %}
+
+  <div id="back-to-top">Back to top</div>
   <div class="pagefind-ui__blur"></div>
-  <script src="/hamburger.js"></script>
+  <script src="/script.js"></script>
 </body>
 
 </html>

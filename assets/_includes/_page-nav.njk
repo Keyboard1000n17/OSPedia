@@ -1,0 +1,42 @@
+{% set currentCollection = null %}
+{% if tags and "winpedia-pages" in tags %}
+  {% set currentCollection = collections['winpedia-pages'] %}
+{% elif tags and "macpedia-pages" in tags %}
+  {% set currentCollection = collections['macpedia-pages'] %}
+{% endif %}
+{% if tags and "homepages" in tags %}
+  {% set currentCollection = null %}
+{% endif %}
+
+{% if currentCollection %}
+  <div class="article-nav">
+     {% set previousArticle = currentCollection | getPreviousCollectionItem(page)%}
+     {% set nextArticle = currentCollection | getNextCollectionItem(page)%}
+     {% if previousArticle %}
+       <a href="{{ previousArticle.url}}" rel="prev" class="prxt prev">
+         <div class="prxt">
+           <p>< Previous</p>
+           <span>
+           {% if previousArticle.data.favicon %}
+             <img src="./Images/Icons/{{ previousArticle.data.favicon }}" alt="{{ previousArticle.data.title }}" />
+           {% endif %} <p>{{ previousArticle.data.title }}</p>
+           </span>
+         </div>
+       </a>
+       {% endif %}
+
+      {% if nextArticle %}
+        <a href="{{ nextArticle.url }}" rel="next" class="prxt next">
+          <div class="prxt">
+            <p>Next ></p>
+            <span>
+            {% if nextArticle.data.favicon %}
+            <img src="./Images/Icons/{{ nextArticle.data.favicon }}" alt="{{ nextArticle.data.title }}" />
+            {% endif %}
+            <p>{{ nextArticle.data.title }}</p>
+           </span>
+          </div>
+        </a>
+      {% endif %}
+  </div>
+{% endif %}

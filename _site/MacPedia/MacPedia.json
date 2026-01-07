@@ -1,1 +1,4 @@
-{ "layout": "base.njk", "tags": "macpedia-pages" }
+{
+  "layout": "base.njk",
+  "tags": "macpedia-pages"
+}

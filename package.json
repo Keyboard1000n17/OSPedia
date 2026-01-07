@@ -1,13 +1,16 @@
 {
   "name": "ospedia",
   "description": "OSPedia aims to be a website that brings out the histories of the notable operating systems of the past and present. It appreciates how far we've come with today's technology, how far we're going with tomorrow's technology, and how these systems helped tremendously.",
-  "main": ".eleventy.js",
+  "main": "eleventy.config.js",
   "scripts": {
-    "sass": "sass assets/global/stylesheets:assets/global/stylesheets --no-source-map --style=compressed",
-    "sass:watch": "sass assets/global/stylesheets:assets/global/stylesheets --watch --style=compressed",
+    "sass": "sass assets/global/scss:assets/global/stylesheets --no-source-map --style=compressed",
+    "sass:watch": "sass assets/global/scss:assets/global/stylesheets --watch --style=compressed",
     "eleventy": "pnpm exec eleventy",
     "dev": "pnpm run sass:watch & pnpm run eleventy --serve",
-    "build": "bash -c 'pnpm run sass && pnpm run eleventy && for file in $(find _site -type f | grep -E \"html\"); do pnpm exec html-minifier-next \"${file}\" -o \"${file}\" --preset comprehensive --collapse-whitespace --remove-redundant-attributes --verbose; done && for file in $(find _site -type f | grep -E \"js\"); do pnpm exec html-minifier-next \"${file}\" -o \"${file}\" --preset comprehensive --collapse-whitespace --remove-redundant-attributes --remove-comments --verbose; done'"
+    "html": "bash -c 'for file in $(find _site/ -type f | grep \"html\"); do pnpm exec html-minifier-terser $file --collapse-whitespace --remove-comments --conservative-collapse false --minify-css true --minify-js true -o $file; done'",
+    "css": "bash -c 'for file in $(find _site/ -type f | grep \"*.css\"); do pnpm exec cleancss $file -o $file; done'",
+    "js": "bash -c 'for file in $(find _site/ -type f | grep \"js\"); do pnpm exec terser $file --compress --mangle --output $file; done'",
+    "build": "bash -c 'rm ./_site/MacPedia/MacPedia.json && rm ./_site/WinPedia/WinPedia.json && pnpm run sass && pnpm run eleventy && pnpm run html && pnpm run css && pnpm run js'"
   },
   "repository": {
     "type": "git",
@@ -22,12 +25,14 @@
   "homepage": "https://github.com/Keyboard1000n17/OSPedia#readme",
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
+    "clean-css-cli": "^5.6.3",
     "eleventy-sass": "^3.0.0-beta.0",
     "eruda": "^3.4.3",
-    "pagefind": "^1.4.0"
+    "html-minifier-terser": "^7.2.0",
+    "pagefind": "^1.4.0",
+    "terser": "^5.44.1"
   },
   "devDependencies": {
-    "html-minifier-next": "^4.15.2",
     "sass": "^1.97.1"
   }
 }
