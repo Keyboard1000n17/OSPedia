@@ -1,1 +1,58 @@
-[ { "version": "26.0", "build": "25A8353", "release": "—", "darwinVersion": "Preinstalled on 14-inch MacBook Pro", "description": "First release of macOS 26 Tahoe.<p>Refer to Apple's webpages for information about this release — there's too many new features to mention here!:<p>&lt;a href=\"https://support.apple.com/en-us/122868\" rel=\"nofollow\" class=\"external-links\">macOS Tahoe 26.0 Release Notes<p>&lt;a href=\"https://support.apple.com/en-us/125110\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS Tahoe</p>", "class": "previous-release" }, { "version": "", "build": "25A354", "release": "September 15, 2025", "darwinVersion": "25.0.0<br><small>xnu-12377.1.9~3<br>Mon August 25, 21:17:54 PDT 2025</small>", "description": "", "class": "previous-release" }, { "version": "26.0.1", "build": "25A362", "release": "September 29, 2025", "darwinVersion": "25.0.0<br><small>xnu-12377.1.9~141<br>Wed September 17, 21:42:08 PDT 2025</small>", "description": "This update provides important bug fixes, security updates, and resolves an issue that prevented some users from upgrading to macOS Tahoe on Mac Studio (M3 Ultra, 2025).", "class": "previous-release" }, { "version": "", "build": "25A8364", "release": "October 15, 2025", "darwinVersion": "14-inch M5 MacBook Pro only", "description": "", "class": "previous-release" }, { "version": "26.1", "build": "25B78", "release": "November 3, 2025", "darwinVersion": "25.1.0<br><small>xnu-12377.41.6~2<br>Mon October 20, 19:32:56 PDT 2025</small>", "description": "This update includes the following features and enhancements:<ul><li>Liquid Glass setting gives you the option to choose between the default clear look or a new tinted look which increases opacity of the material in apps<li>Apple Music AutoMix support over AirPlay<li>Improved FaceTime audio quality in low-bandwidth conditions<li>Communication Safety and Web content filters to limit adult websites are enabled by default for existing child accounts for ages 13–17 (age varies by country or region)</li><ul>", "class": "previous-release" }, { "version": "26.2", "build": "25C56", "release": "December 12, 2025", "darwinVersion": "25.2.0<br><small>xnu-12377.61.12~1<br>Tue Nov 18 21:09:34 PST 2025</small>", "description": "Refer to Apple's webpages for information about this release:<p>&lt;a href=\"https://support.apple.com/en-us/122868\" rel=\"nofollow\" class=\"external-links\">macOS Tahoe 26.2 Release Notes<p>&lt;a href=\"https://support.apple.com/en-us/125886\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS Tahoe 26.2</p>", "class": "current-release" }, { "version": "26.3 beta 1", "build": "25D5087f", "release": "December 15, 2025", "darwinVersion": "Unavailable", "description": "Unavailable", "class": "beta-release" } ]</ul></ul>
+[
+  {
+    "version": "26.0",
+    "build": "25A8353",
+    "release": "—",
+    "darwinVersion": "Preinstalled on 14-inch MacBook Pro",
+    "description": "First release of macOS 26 Tahoe. <p>Refer to Apple's webpages for information about this release — there's too many new features to mention here!:<p><a href=\"https://support.apple.com/en-us/122868\" rel=\"nofollow\" class=\"external-links\">macOS Tahoe 26.0 Release Notes</a></p><p><a href=\"https://support.apple.com/en-us/125110\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS Tahoe</a></p>",
+    "class": "previous-release"
+  },
+  {
+    "version": "",
+    "build": "25A354",
+    "release": "September 15, 2025",
+    "darwinVersion": "25.0.0<br><small>xnu-12377.1.9~3<br>Mon August 25, 21:17:54 PDT 2025</small>",
+    "description": "",
+    "class": "previous-release"
+  },
+  {
+    "version": "26.0.1",
+    "build": "25A362",
+    "release": "September 29, 2025",
+    "darwinVersion": "25.0.0<br><small>xnu-12377.1.9~141<br>Wed September 17, 21:42:08 PDT 2025</small>",
+    "description": "This update provides important bug fixes, security updates, and resolves an issue that prevented some users from upgrading to macOS Tahoe on Mac Studio (M3 Ultra, 2025).",
+    "class": "previous-release"
+  },
+  {
+    "version": "",
+    "build": "25A8364",
+    "release": "October 15, 2025",
+    "darwinVersion": "14-inch M5 MacBook Pro only",
+    "description": "",
+    "class": "previous-release"
+  },
+  {
+    "version": "26.1",
+    "build": "25B78",
+    "release": "November 3, 2025",
+    "darwinVersion": "25.1.0<br><small>xnu-12377.41.6~2<br>Mon October 20, 19:32:56 PDT 2025</small>",
+    "description": "This update includes the following features and enhancements:<ul><li>Liquid Glass setting gives you the option to choose between the default clear look or a new tinted look which increases opacity of the material in apps</li><li>Apple Music AutoMix support over AirPlay</li><li>Improved FaceTime audio quality in low-bandwidth conditions</li><li>Communication Safety and Web content filters to limit adult websites are enabled by default for existing child accounts for ages 13–17 (age varies by country or region)</li><ul>",
+    "class": "previous-release"
+  },
+  {
+    "version": "26.2",
+    "build": "25C56",
+    "release": "December 12, 2025",
+    "darwinVersion": "25.2.0<br><small>xnu-12377.61.12~1<br>Tue Nov 18 21:09:34 PST 2025</small>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a href=\"https://support.apple.com/en-us/122868\" rel=\"nofollow\" class=\"external-links\">macOS Tahoe 26.2 Release Notes</a></p><p><a href=\"https://support.apple.com/en-us/125886\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS Tahoe 26.2</a></p>",
+    "class": "current-release"
+  },
+  {
+    "version": "26.3 beta 1 (a)",
+    "build": "25D770870b",
+    "release": "January 6, 2026",
+    "darwinVersion": "Unavailable",
+    "description": "Unavailable",
+    "class": "beta-release"
+  }
+]

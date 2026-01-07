@@ -1,0 +1,119 @@
+@use "./variables" as *;
+
+// Navbar styling
+nav {
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  list-style: none;
+
+  ul {
+    flex-wrap: nowrap;
+    display: none;
+  }
+
+  ul>li.nav,
+  ul>li.nav a,
+  ul>li.nav a:visited {
+    list-style: none;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #3266fb;
+    display: inline-block;
+  }
+
+  img:nth-child(1) {
+    display: none;
+  }
+
+  img:nth-child(2) {
+    display: block;
+  }
+
+  @media (min-width: 769px) {
+    img:nth-child(1) {
+      display: block;
+    }
+
+    img:nth-child(2) {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+    }
+  }
+}
+
+nav>* {
+  padding: 10px;
+}
+
+.nav:hover {
+  color: #001fff;
+}
+
+// Page navigation styling
+div.article-nav {
+  background-color: rgba(255, 255, 255, 0);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  color: #000;
+  margin: 1rem 0;
+
+  @media (max-width: 414px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: $padding;
+  }
+}
+
+div.prxt {
+  padding: calc(1 / 2 * $padding);
+  margin: calc(1 / 2 * $padding);
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color;
+  backdrop-filter: $blur;
+  border-radius: $border-radius;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  box-sizing: border-box;
+
+  span {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  img {
+    height: 3rem;
+    object-fit: contain;
+    padding-right: calc(1 / 2 * $padding);
+  }
+
+  @media (max-width: 414px) {
+    height: 100%;
+
+    span {
+      flex-direction: column;
+    }
+
+    img {
+      height: auto;
+      max-width: 6rem;
+    }
+  }
+}
