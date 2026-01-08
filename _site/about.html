@@ -4,9 +4,9 @@
 <head>
   <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" />
   <title>About - OSPedia</title>
-  <link href="/global/stylesheets/fluentUI.css" rel="stylesheet" />
-  
   <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+  <link href="/global/stylesheets/fluent-ui-light.css" rel="stylesheet" id="setSs" />
+  
   <script src="/pagefind/pagefind-ui.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,6 +25,7 @@
   <img src="/global/OSPedia-logo.svg" alt="logo" height="70%" />
   <img src="/global/OSPedia-favicon.svg" alt="logo" height="70%" />
   <div id="search"></div>
+  <img src="/global/Images/light-dark-mode-button.png" alt="toggle dark mode" class="dark-mode-toggle" />
   <ul>
     <li class="nav"><a href="/index.html" class="nav">Home</a></li>
     <li class="nav"><a href="/WinPedia/index.html">WinPedia</a></li>
@@ -36,7 +37,7 @@
   <img src="/global/Images/hamburger.svg" class="hamburger-menu-icon" alt="Open hamburger menu" />
 </nav>
 <div class="hamburger-menu">
-  <img src="/global/Images/close.png" class="hamburger-menu-close" alt="Close hamburger menu"
+  <img src="/global/Images/close.png" class="hamburger-menu-close" alt="Close hamburger menu">
   <ul>
     <li class="nav"><a href="/index.html" class="nav">Home</a></li>
     <li class="nav"><a href="/WinPedia/index.html">WinPedia</a></li>
@@ -100,6 +101,7 @@
 
     <main style="color: black">
       <div class="content">
+        <!-- <div class="wrapped"> -->
         
         <h1 id="heading">About</h1>
         
@@ -137,6 +139,7 @@
   </p>
 </div>
 
+        <!-- </div> -->
       </div>
     </main>
     <div class="contents">
@@ -150,6 +153,7 @@
   <div id="back-to-top">Back to top</div>
   <div class="pagefind-ui__blur"></div>
   <script src="/script.js"></script>
+  <script src="/themes.js"></script>
 </body>
 
 </html>
