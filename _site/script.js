@@ -37,7 +37,7 @@ if (window.innerWidth <= 768) {
 window.addEventListener("DOMContentLoaded", () => {
   new PagefindUI({
     element: "#search",
-    resetStyles: false,
+    resetStyles: true,
   });
 });
 
@@ -59,12 +59,18 @@ const observer = new MutationObserver(() => {
 observer.observe(document.body, { childList: true, subtree: true });
 
 // Contents quick links generator
-const headings = document.querySelectorAll("h2.level-one");
+const headings = document.querySelectorAll("main h2");
 let linkString = "";
 const links = document.createElement("div");
 links.classList = "links";
 for (let i = 0; i < headings.length; i++) {
-  linkString += `<a href="#${headings[i].id}">${headings[i].textContent}</a>`;
+  if (headings[i].matches("h2.level-three")) {
+    linkString += `<a href="" class="subsubheadings">${headings[i].textContent}</a>`;
+  } else if (headings[i].matches("h2.level-two")) {
+    linkString += `<a href="" class="subheadings">${headings[i].textContent}</a>`;
+  } else {
+    linkString += `<a href="">${headings[i].textContent}</a>`;
+  }
   links.innerHTML = linkString;
   document
     .querySelector(".contents h2")
@@ -74,12 +80,15 @@ for (let i = 0; i < headings.length; i++) {
 document.querySelectorAll("div.links a").forEach((link, index) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
-    let a = headings[index].offsetTop - 80;
+    let a = headings[index].offsetTop;
     let b =
-      document.querySelector("main").scrollHeight -
-      document.querySelector("main").clientHeight;
+      document.querySelector("main div.content").scrollHeight -
+      document.querySelector("main div.content").clientHeight;
     const c = a <= b ? a : b;
-    const d = window.innerWidth > 768 ? document.querySelector("main") : window;
+    const d =
+      window.innerWidth > 768
+        ? document.querySelector("main div.content")
+        : window;
     d.scrollTo({
       top: c,
       behavior: "smooth",

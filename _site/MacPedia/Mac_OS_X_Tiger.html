@@ -4,9 +4,9 @@
 <head>
   <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" />
   <title>Mac OS X Tiger - OSPedia</title>
-  <link href="/global/stylesheets/fluentUI.css" rel="stylesheet" />
-  
   <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+  <link href="/global/stylesheets/fluent-ui-light.css" rel="stylesheet" id="setSs" />
+  
   <script src="/pagefind/pagefind-ui.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,6 +27,7 @@
   <img src="/global/OSPedia-logo.svg" alt="logo" height="70%" />
   <img src="/global/OSPedia-favicon.svg" alt="logo" height="70%" />
   <div id="search"></div>
+  <img src="/global/Images/light-dark-mode-button.png" alt="toggle dark mode" class="dark-mode-toggle" />
   <ul>
     <li class="nav"><a href="/index.html" class="nav">Home</a></li>
     <li class="nav"><a href="/WinPedia/index.html">WinPedia</a></li>
@@ -38,7 +39,7 @@
   <img src="/global/Images/hamburger.svg" class="hamburger-menu-icon" alt="Open hamburger menu" />
 </nav>
 <div class="hamburger-menu">
-  <img src="/global/Images/close.png" class="hamburger-menu-close" alt="Close hamburger menu"
+  <img src="/global/Images/close.png" class="hamburger-menu-close" alt="Close hamburger menu">
   <ul>
     <li class="nav"><a href="/index.html" class="nav">Home</a></li>
     <li class="nav"><a href="/WinPedia/index.html">WinPedia</a></li>
@@ -102,6 +103,7 @@
 
     <main style="background-image: url(&quot;./Images/Wallpapers/Tiger-wallpaper.webp&quot;)">
       <div class="content">
+        <!-- <div class="wrapped"> -->
         
         <h1 id="heading">Mac OS X Tiger</h1>
         
@@ -267,250 +269,246 @@
 <h2 class="level-one" id="new-and-changed-features">
   New and changed features
 </h2>
-<div class="div-level-two">
-  <h2 class="level-two">End-user features</h2>
-  <p>
-    Apple advertised that Mac OS X 10.4 Tiger had over 150 new and improved
-    features, including:
-  </p>
-  <ul>
-    <li>
-      Spotlight — Spotlight is a full-text and metadata search engine that can
-      search everything on one's Mac, including Microsoft Word documents, iCal
-      calendars and Address Book contact cards. The feature is also used to
-      build the concept of 'smart folders' into the Finder. Spotlight will index
-      files as they are saved, so they can be quickly and easily found through a
-      search-as-you-type box in the menu bar. As a side-effect, it adds hidden
-      folders and indexing files to removable media like USB flash drives.
-    </li>
-    <li>
-      iChat AV — The new iChat AV 3.0 in Mac OS X 10.4 Tiger supports up to four
-      participants in a video conference and ten participants in an audio
-      conference. It also now supports communication using the XMPP protocol. An
-      XMPP server called iChat Server is included on Mac OS X 10.4 Tiger Server.
-    </li>
-    <li>
-      Safari RSS — The new Safari 2.0 web browser in Mac OS X 10.4 Tiger
-      featured a built-in reader for RSS and Atom web syndication that can be
-      accessed easily from an RSS button in the address bar of the web browser
-      window. An updated version of Safari, included as part of the free Mac OS
-      X 10.4.3 Tiger update, can also pass the Acid2 web standards test.
-    </li>
-    <li>
-      Mail 2 — The new version of Mail.app email client included in Mac OS X
-      10.4 Tiger featured an updated interface, "Smart Mailboxes", which
-      utilizes the Spotlight search system, parental controls, as well as
-      several other features.
-    </li>
-    <li>
-      Automator — A scripting tool to link applications together to form complex
-      automated workflows (written in AppleScript, Cocoa, or both). Automator
-      came with a complete library of actions for several applications that can
-      be used together to make a Workflow.
-    </li>
-    <li>
-      VoiceOver — screen reader interface similar to Jaws for Windows and other
-      Windows screen readers that offers the blind and visually impaired user
-      keyboard control and spoken English descriptions of what is happening on
-      screen. VoiceOver enables users with visual impairment to use applications
-      via keyboard commands. VoiceOver is capable of reading aloud the contents
-      of files including web pages, mail messages and word processing files.
-      Complete keyboard navigation lets the user control the computer with the
-      keyboard rather than the mouse, a menu is displayed in a window showing
-      all the available keyboard commands that can be used.
-    </li>
-    <li>
-      A complete built-in Dictionary/Thesaurus based on the New Oxford American
-      Dictionary, Second Edition, accessible through an application, Dictionary,
-      a Dashboard widget, and as a system-wide command (see below).
-    </li>
-    <li>
-      .Mac syncing — Though this was not a new feature, .Mac syncing in Tiger is
-      much improved over Panther. Syncing tasks in Tiger are now accomplished
-      through the .Mac system preferences pane rather than the iSync
-      application.
-    </li>
-    <li>
-      QuickTime 7 — A new version of Apple's multimedia software has support for
-      the new H.264/AVC codec, which offers better quality and scalability than
-      other video codecs. This new codec is used by iChat AV for clearer video
-      conferencing. New classes within Cocoa provide full access to QuickTime
-      for Cocoa application developers. The new QuickTime 7 player application
-      bundled with Tiger now includes more advanced audio and video controls as
-      well as a more detailed Information dialog, and the new player has been
-      rebuilt using Apple's Cocoa API to take advantage of the new technologies
-      more easily.
-    </li>
-    <li>
-      New Unix features — New versions of cp, mv, and rsync that support files
-      with resource forks. Command-line support for features such as the
-      above-mentioned Spotlight is also included.
-    </li>
-    <li>
-      Xcode 2.0 — Xcode 2.0, Apple's Cocoa development tool now includes visual
-      modelling, an integrated Apple Reference Library and graphical remote
-      debugging.
-    </li>
-  </ul>
 
-  <h2 class="level-two">New applications in Tiger</h2>
-  <ul>
-    <li>
-      Dashboard — The Dashboard is a new mini-applications layer based on HTML,
-      CSS, and JavaScript, which returns the desk accessories concept to Mac OS.
-      These accessories are known as widgets. It comes with several widgets such
-      as Weather, World Clock, Unit Converter, Dictionary/Thesaurus, and others
-      (full list). More are available to download for free online. Its
-      similarity to the Konfabulator application caused some criticism.
-    </li>
-    <li>
-      Automator — Automator uses workflows to process repetitive tasks
-      automatically
-    </li>
-    <li>
-      Grapher — Grapher is a new application capable of creating 2D and 3D
-      graphs similar to those of Graphing Calculator.
-    </li>
-    <li>
-      Dictionary — A dictionary and thesaurus program that uses the New Oxford
-      American Dictionary. It has a fast GUI for displaying the Dictionary, and
-      allows the user to search the dictionary with Spotlight, to print
-      definitions, and to copy and paste text into documents. Dictionary also
-      provides a Dictionary service in the Application menu, and Cocoa and
-      WebKit provide a global keyboard shortcut (ctrl-⌘-D by default) for all
-      applications that display text with them. Its use was furthered in Mac OS
-      X Leopard by providing definitions from Wikipedia. The Dictionary
-      application is a more feature-filled version of the Dictionary widget.
-    </li>
-    <li>
-      Quartz Composer — Quartz Composer is a development tool for processing and
-      rendering graphical data.
-    </li>
-    <li>
-      AU Lab — AU Lab is a developer application for testing and mixing Audio
-      Units.
-    </li>
-  </ul>
+<h2 class="level-two">End-user features</h2>
+<p>
+  Apple advertised that Mac OS X 10.4 Tiger had over 150 new and improved
+  features, including:
+</p>
+<ul>
+  <li>
+    Spotlight — Spotlight is a full-text and metadata search engine that can
+    search everything on one's Mac, including Microsoft Word documents, iCal
+    calendars and Address Book contact cards. The feature is also used to build
+    the concept of 'smart folders' into the Finder. Spotlight will index files
+    as they are saved, so they can be quickly and easily found through a
+    search-as-you-type box in the menu bar. As a side-effect, it adds hidden
+    folders and indexing files to removable media like USB flash drives.
+  </li>
+  <li>
+    iChat AV — The new iChat AV 3.0 in Mac OS X 10.4 Tiger supports up to four
+    participants in a video conference and ten participants in an audio
+    conference. It also now supports communication using the XMPP protocol. An
+    XMPP server called iChat Server is included on Mac OS X 10.4 Tiger Server.
+  </li>
+  <li>
+    Safari RSS — The new Safari 2.0 web browser in Mac OS X 10.4 Tiger featured
+    a built-in reader for RSS and Atom web syndication that can be accessed
+    easily from an RSS button in the address bar of the web browser window. An
+    updated version of Safari, included as part of the free Mac OS X 10.4.3
+    Tiger update, can also pass the Acid2 web standards test.
+  </li>
+  <li>
+    Mail 2 — The new version of Mail.app email client included in Mac OS X 10.4
+    Tiger featured an updated interface, "Smart Mailboxes", which utilizes the
+    Spotlight search system, parental controls, as well as several other
+    features.
+  </li>
+  <li>
+    Automator — A scripting tool to link applications together to form complex
+    automated workflows (written in AppleScript, Cocoa, or both). Automator came
+    with a complete library of actions for several applications that can be used
+    together to make a Workflow.
+  </li>
+  <li>
+    VoiceOver — screen reader interface similar to Jaws for Windows and other
+    Windows screen readers that offers the blind and visually impaired user
+    keyboard control and spoken English descriptions of what is happening on
+    screen. VoiceOver enables users with visual impairment to use applications
+    via keyboard commands. VoiceOver is capable of reading aloud the contents of
+    files including web pages, mail messages and word processing files. Complete
+    keyboard navigation lets the user control the computer with the keyboard
+    rather than the mouse, a menu is displayed in a window showing all the
+    available keyboard commands that can be used.
+  </li>
+  <li>
+    A complete built-in Dictionary/Thesaurus based on the New Oxford American
+    Dictionary, Second Edition, accessible through an application, Dictionary, a
+    Dashboard widget, and as a system-wide command (see below).
+  </li>
+  <li>
+    .Mac syncing — Though this was not a new feature, .Mac syncing in Tiger is
+    much improved over Panther. Syncing tasks in Tiger are now accomplished
+    through the .Mac system preferences pane rather than the iSync application.
+  </li>
+  <li>
+    QuickTime 7 — A new version of Apple's multimedia software has support for
+    the new H.264/AVC codec, which offers better quality and scalability than
+    other video codecs. This new codec is used by iChat AV for clearer video
+    conferencing. New classes within Cocoa provide full access to QuickTime for
+    Cocoa application developers. The new QuickTime 7 player application bundled
+    with Tiger now includes more advanced audio and video controls as well as a
+    more detailed Information dialog, and the new player has been rebuilt using
+    Apple's Cocoa API to take advantage of the new technologies more easily.
+  </li>
+  <li>
+    New Unix features — New versions of cp, mv, and rsync that support files
+    with resource forks. Command-line support for features such as the
+    above-mentioned Spotlight is also included.
+  </li>
+  <li>
+    Xcode 2.0 — Xcode 2.0, Apple's Cocoa development tool now includes visual
+    modelling, an integrated Apple Reference Library and graphical remote
+    debugging.
+  </li>
+</ul>
 
-  <h2 class="level-two">Improvements</h2>
-  <ul>
-    <li>
-      An upgraded kernel with optimized kernel resource locking and access
-      control lists, and with support for 64-bit userland address spaces on
-      machines with 64-bit processors.
-    </li>
-    <li>
-      An updated libSystem with both 32-bit and 64-bit versions; combined with
-      the aforementioned kernel change, this allows individual applications to
-      address more than 4 GB of memory when run on 64-bit processors, although
-      an application using Apple libraries or frameworks other than libSystem
-      would need to have two processes, one running the 64-bit code and one
-      running the code that requires other libraries and frameworks.
-    </li>
-    <li>A new startup daemon called launchd that allows for faster booting.</li>
-    <li>
-      The printing dialog in Tiger now features a drop down menu for creating
-      PDFs, sending PDFs to Mail, and other PDF related actions. However, the
-      user interface was criticized for creating a hybrid UI element that looks
-      like a plain button but acts like a pop-up menu. This is one of only three
-      places in the entire Mac OS X interface where such an element appears.
-    </li>
-    <li>
-      Dock menus now have menu items to open an application at login, or to
-      remove the icon from the dock.
-    </li>
-    <li>
-      The Window menu in the Finder now features a "Cycle Through Windows" menu
-      item.
-    </li>
-    <li>
-      The Get Info window for items in the Finder now includes a "More Info"
-      section that includes Spotlight information tags such as Image Height &amp
-      Width, when the file was last opened, and where the file originated.
-    </li>
-    <li>
-      Early development of resolution independence. Apple notes that this will
-      be a user-level feature in a future version of Mac OS X. Among the
-      changes, the maximum size of icons was increased to 256x256. However, the
-      Finder does not yet support this size.
-    </li>
-  </ul>
+<h2 class="level-two">New applications in Tiger</h2>
+<ul>
+  <li>
+    Dashboard — The Dashboard is a new mini-applications layer based on HTML,
+    CSS, and JavaScript, which returns the desk accessories concept to Mac OS.
+    These accessories are known as widgets. It comes with several widgets such
+    as Weather, World Clock, Unit Converter, Dictionary/Thesaurus, and others
+    (full list). More are available to download for free online. Its similarity
+    to the Konfabulator application caused some criticism.
+  </li>
+  <li>
+    Automator — Automator uses workflows to process repetitive tasks
+    automatically
+  </li>
+  <li>
+    Grapher — Grapher is a new application capable of creating 2D and 3D graphs
+    similar to those of Graphing Calculator.
+  </li>
+  <li>
+    Dictionary — A dictionary and thesaurus program that uses the New Oxford
+    American Dictionary. It has a fast GUI for displaying the Dictionary, and
+    allows the user to search the dictionary with Spotlight, to print
+    definitions, and to copy and paste text into documents. Dictionary also
+    provides a Dictionary service in the Application menu, and Cocoa and WebKit
+    provide a global keyboard shortcut (ctrl-⌘-D by default) for all
+    applications that display text with them. Its use was furthered in Mac OS X
+    Leopard by providing definitions from Wikipedia. The Dictionary application
+    is a more feature-filled version of the Dictionary widget.
+  </li>
+  <li>
+    Quartz Composer — Quartz Composer is a development tool for processing and
+    rendering graphical data.
+  </li>
+  <li>
+    AU Lab — AU Lab is a developer application for testing and mixing Audio
+    Units.
+  </li>
+</ul>
 
-  <h2 class="level-two">Technologies</h2>
-  <ul>
-    <li>
-      Core Image: A graphics processing API that allows programmers to leverage
-      programmable GPUs for fast image processing for special effects and image
-      correction tools. Some of the included Image Units are Blur, Color
-      Blending, Generator Filters, Distortion Filters, Geometry Filters, and
-      Halftone features.
-    </li>
-    <li>
-      Core Data: A data persistence API that makes it easier for developers to
-      handle structured data in their applications. Core Data provides undo,
-      redo, and save functions for developers without them having to write any
-      code.
-    </li>
-    <li>
-      Core Video: A video graphics API that leverages Core Image to provide
-      real-time video processing. Apple's Motion real-time video effects program
-      takes advantage of Core Video in Tiger. Core Video lets developers easily
-      integrate real-time video effects and processing into their applications.
-    </li>
-    <li>
-      Core Audio: Integrates a range of audio functionality directly into the
-      operating system.
-    </li>
-  </ul>
-  <p>
-    In addition to these APIs, Tiger introduces a new window theme, often
-    described as 'Unified'. A variation on the standard, non-brushed metal theme
-    used since the introduction of Mac OS X, this theme integrates the title bar
-    and the toolbar of a window. A prominent example of an application that
-    utilizes this theme is Mail.
-  </p>
-  <p>
-    Tiger is also the first version of Mac OS X to include the "Zoom" screen
-    magnifier functionality.
-  </p>
+<h2 class="level-two">Improvements</h2>
+<ul>
+  <li>
+    An upgraded kernel with optimized kernel resource locking and access control
+    lists, and with support for 64-bit userland address spaces on machines with
+    64-bit processors.
+  </li>
+  <li>
+    An updated libSystem with both 32-bit and 64-bit versions; combined with the
+    aforementioned kernel change, this allows individual applications to address
+    more than 4 GB of memory when run on 64-bit processors, although an
+    application using Apple libraries or frameworks other than libSystem would
+    need to have two processes, one running the 64-bit code and one running the
+    code that requires other libraries and frameworks.
+  </li>
+  <li>A new startup daemon called launchd that allows for faster booting.</li>
+  <li>
+    The printing dialog in Tiger now features a drop down menu for creating
+    PDFs, sending PDFs to Mail, and other PDF related actions. However, the user
+    interface was criticized for creating a hybrid UI element that looks like a
+    plain button but acts like a pop-up menu. This is one of only three places
+    in the entire Mac OS X interface where such an element appears.
+  </li>
+  <li>
+    Dock menus now have menu items to open an application at login, or to remove
+    the icon from the dock.
+  </li>
+  <li>
+    The Window menu in the Finder now features a "Cycle Through Windows" menu
+    item.
+  </li>
+  <li>
+    The Get Info window for items in the Finder now includes a "More Info"
+    section that includes Spotlight information tags such as Image Height &amp
+    Width, when the file was last opened, and where the file originated.
+  </li>
+  <li>
+    Early development of resolution independence. Apple notes that this will be
+    a user-level feature in a future version of Mac OS X. Among the changes, the
+    maximum size of icons was increased to 256x256. However, the Finder does not
+    yet support this size.
+  </li>
+</ul>
 
-  <h2 class="level-two">Support for Intel processors</h2>
-  <p>
-    At Apple's 2005 Worldwide Developers Conference, CEO Steve Jobs announced
-    that the company would begin selling Mac computers with Intel x86 processors
-    in 2006. To allow developers to begin producing software for these
-    Intel-based Macs, Apple made available a prototype Intel-based Mac
-    ("Developer Transition Kit") that included a version of Mac OS X v10.4.1
-    compiled to run on x86 processors.
-  </p>
-  <p>
-    This build included Apple's Rosetta compatibility layer — a translation
-    process that allows x86-based Macs to run software built only for PowerPC,
-    with a moderate performance penalty. This is contrasted with the
-    contemporary Mac OS 9 Classic mode, which used comparably larger amounts of
-    system resources.
-  </p>
-  <p>
-    Soon after the Developer Transition Kits began shipping, copies of Tiger x86
-    were leaked onto file sharing networks. Although Apple had implemented a
-    Trusted Computing digital rights management scheme in the transition
-    hardware and OS in an attempt to stop people installing Tiger x86 on
-    non-Apple PCs, the OSx86 project soon managed to remove this restriction. As
-    Apple released each update with newer safeguards to prevent its use on
-    non-Apple hardware, unofficially modified versions were released that
-    circumvented Apple's safeguards. However, with the release of 10.4.5,
-    10.4.6, and 10.4.7 the unofficially modified versions continued to use the
-    kernel from 10.4.4 because later kernels have hardware locks and depend
-    heavily on EFI. By late 2006, the 10.4.8 kernel had been cracked.
-  </p>
-  <p>
-    At MacWorld San Francisco 2006, Jobs announced the immediate availability of
-    Mac OS X v10.4.4, the first publicly available release of Tiger compiled for
-    both PowerPC- and Intel x86-based machines. This version was the first
-    version, other than the version provided with the Developer Transition Kits,
-    to include Rosetta.
-  </p>
-</div>
+<h2 class="level-two">Technologies</h2>
+<ul>
+  <li>
+    Core Image: A graphics processing API that allows programmers to leverage
+    programmable GPUs for fast image processing for special effects and image
+    correction tools. Some of the included Image Units are Blur, Color Blending,
+    Generator Filters, Distortion Filters, Geometry Filters, and Halftone
+    features.
+  </li>
+  <li>
+    Core Data: A data persistence API that makes it easier for developers to
+    handle structured data in their applications. Core Data provides undo, redo,
+    and save functions for developers without them having to write any code.
+  </li>
+  <li>
+    Core Video: A video graphics API that leverages Core Image to provide
+    real-time video processing. Apple's Motion real-time video effects program
+    takes advantage of Core Video in Tiger. Core Video lets developers easily
+    integrate real-time video effects and processing into their applications.
+  </li>
+  <li>
+    Core Audio: Integrates a range of audio functionality directly into the
+    operating system.
+  </li>
+</ul>
+<p>
+  In addition to these APIs, Tiger introduces a new window theme, often
+  described as 'Unified'. A variation on the standard, non-brushed metal theme
+  used since the introduction of Mac OS X, this theme integrates the title bar
+  and the toolbar of a window. A prominent example of an application that
+  utilizes this theme is Mail.
+</p>
+<p>
+  Tiger is also the first version of Mac OS X to include the "Zoom" screen
+  magnifier functionality.
+</p>
+
+<h2 class="level-two">Support for Intel processors</h2>
+<p>
+  At Apple's 2005 Worldwide Developers Conference, CEO Steve Jobs announced that
+  the company would begin selling Mac computers with Intel x86 processors in
+  2006. To allow developers to begin producing software for these Intel-based
+  Macs, Apple made available a prototype Intel-based Mac ("Developer Transition
+  Kit") that included a version of Mac OS X v10.4.1 compiled to run on x86
+  processors.
+</p>
+<p>
+  This build included Apple's Rosetta compatibility layer — a translation
+  process that allows x86-based Macs to run software built only for PowerPC,
+  with a moderate performance penalty. This is contrasted with the contemporary
+  Mac OS 9 Classic mode, which used comparably larger amounts of system
+  resources.
+</p>
+<p>
+  Soon after the Developer Transition Kits began shipping, copies of Tiger x86
+  were leaked onto file sharing networks. Although Apple had implemented a
+  Trusted Computing digital rights management scheme in the transition hardware
+  and OS in an attempt to stop people installing Tiger x86 on non-Apple PCs, the
+  OSx86 project soon managed to remove this restriction. As Apple released each
+  update with newer safeguards to prevent its use on non-Apple hardware,
+  unofficially modified versions were released that circumvented Apple's
+  safeguards. However, with the release of 10.4.5, 10.4.6, and 10.4.7 the
+  unofficially modified versions continued to use the kernel from 10.4.4 because
+  later kernels have hardware locks and depend heavily on EFI. By late 2006, the
+  10.4.8 kernel had been cracked.
+</p>
+<p>
+  At MacWorld San Francisco 2006, Jobs announced the immediate availability of
+  Mac OS X v10.4.4, the first publicly available release of Tiger compiled for
+  both PowerPC- and Intel x86-based machines. This version was the first
+  version, other than the version provided with the Developer Transition Kits,
+  to include Rosetta.
+</p>
 
 <h2 class="level-one" id="release-history">Release History</h2>
 <table style="float: none; width: 98%">
@@ -711,6 +709,7 @@
 
 <h2 class="level-one" id="user-interface">User Interface</h2>
 
+        <!-- </div> -->
       </div>
     </main>
     <div class="contents">
@@ -735,6 +734,7 @@
   <div id="back-to-top">Back to top</div>
   <div class="pagefind-ui__blur"></div>
   <script src="/script.js"></script>
+  <script src="/themes.js"></script>
 </body>
 
 </html>
