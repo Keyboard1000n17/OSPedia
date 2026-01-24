@@ -59,14 +59,14 @@ const observer = new MutationObserver(() => {
 observer.observe(document.body, { childList: true, subtree: true });
 
 // Contents quick links generator
-const headings = document.querySelectorAll("main h2");
+const headings = document.querySelectorAll("main h2, main h3, main h4");
 let linkString = "";
 const links = document.createElement("div");
 links.classList = "links";
 for (let i = 0; i < headings.length; i++) {
-  if (headings[i].matches("h2.level-three")) {
+  if (headings[i].matches("h2.level-three") || headings[i].matches("h4")) {
     linkString += `<a href="" class="subsubheadings">${headings[i].textContent}</a>`;
-  } else if (headings[i].matches("h2.level-two")) {
+  } else if (headings[i].matches("h2.level-two") || headings[i].matches("h3")) {
     linkString += `<a href="" class="subheadings">${headings[i].textContent}</a>`;
   } else {
     linkString += `<a href="">${headings[i].textContent}</a>`;

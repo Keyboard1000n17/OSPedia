@@ -65,6 +65,7 @@
     <main style="{{ style }}">
       <div class="content">
         {% if tags and not "homepages" in tags %}
+        {% include "_page-nav.njk" %}
         <h1 id="heading" data-pagefind-weight="10">{{ title }}</h1>
         {% endif %}
         {{ content | safe }}

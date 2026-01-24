@@ -19,8 +19,7 @@
   }
 }
 
-@mixin styles(
-  $background-color,
+@mixin styles($background-color,
   $blur,
   $border,
   $border-radius,
@@ -29,8 +28,8 @@
   $link,
   $search-mask,
   $background-color-2,
-  $color
-) {
+  $color) {
+
   // Global styles
   html {
     @media (min-width: 769px) {
@@ -226,6 +225,7 @@
 
   h2#toc {
     scroll-margin-top: 5rem;
+    color: $color;
   }
 
   div#back-to-top {
@@ -341,9 +341,9 @@
       display: none;
     }
 
-    ul > li.nav,
-    ul > li.nav a,
-    ul > li.nav a:visited {
+    ul>li.nav,
+    ul>li.nav a,
+    ul>li.nav a:visited {
       list-style: none;
       margin-right: 20px;
       text-decoration: none;
@@ -378,7 +378,7 @@
     }
   }
 
-  nav > * {
+  nav>* {
     padding: 10px;
   }
 
@@ -589,6 +589,10 @@
     padding-bottom: 0 !important;
     padding-right: 0 !important;
     height: 100% !important;
+
+    &::placeholder {
+      opacity: 0.7 !important;
+    }
   }
 
   .pagefind-ui__search-clear {
@@ -694,14 +698,17 @@
   }
 }
 
-@mixin index-styles(
-  $background-color,
+@mixin index-styles($background-color,
   $background-color-2,
   $blur,
-  $border-radius
-) {
+  $border-radius,
+  $color) {
   div.wrapper {
     background-color: rgba(0, 0, 0, 0);
+
+    main {
+      color: $color;
+    }
 
     div.content {
       background-color: rgba(0, 0, 0, 0);
@@ -771,7 +778,7 @@
     align-content: center;
   }
 
-  div.home-os-cards > div.bottom {
+  div.home-os-cards>div.bottom {
     height: 50%;
     margin: 1vh 1vw;
     padding: 1vh 2vw;
