@@ -1,2 +1,5 @@
 # Visual Studio
 .vscode/
+
+# Local Netlify folder
+.netlify

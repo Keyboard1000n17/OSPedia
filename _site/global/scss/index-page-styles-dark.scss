@@ -1,0 +1,9 @@
+@use "./variables-fluent-ui-dark" as *;
+@use "./mixins" as *;
+
+@include index-styles(
+  $background-color,
+  $background-color-2,
+  $blur,
+  $border-radius
+);

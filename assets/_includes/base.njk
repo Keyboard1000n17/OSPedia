@@ -2,14 +2,17 @@
 <html>
 
 <head>
-  <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ title }} - OSPedia</title>
   <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
   <link href="/global/stylesheets/fluent-ui-light.css" rel="stylesheet" id="setSs" />
-  {% if page.url == "/" %}
-  <link rel="stylesheet" href="/global/stylesheets/index-page-styles.css" />
-  {% elif page.url == "/WinPedia/" or page.url == "/MacPedia/" %}
+  {% if tags and "demo-pages" in tags %}
+  <link rel="stylesheet" href="/global/stylesheets/demos.css">
+  {% elif tags and "homepages" in tags and page.url != "/" %}
   <link rel="stylesheet" href="/global/stylesheets/homepage-styles.css" />
+  {% elif page.url == "/" %}
+  <link rel="stylesheet" href="/global/stylesheets/index-page-styles-light.css" id="setIndexSs" />
   {% endif %}
   <script src="/pagefind/pagefind-ui.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,8 +28,6 @@
 {% else %}
 {% set style = "background-image: url(\"./Images/Wallpapers/" ~ background_image ~ "\")" %}
 {% endif %}
-{% else %}
-{% set style = "color: black" %}
 {% endif %}
 
 <body>
@@ -34,18 +35,43 @@
   {% include "_nav.njk" %}
   <div class="wrapper">
     {% include "_aside.njk" %}
+    {% if tags and "win-demo-pages" in tags %}
+    <main data-pagefind-ignore>
+      <h1>{{ title }}</h1>
+      <div class="screen_container">
+        <div style="white-space: pre; font: 14px monospace; line-height: 18px"></div>
+        <canvas style="display: none; width: 100%; height: 100%"></canvas>
+      </div>
+      <button class="stop">Stop</button>
+      <button class="start">Start</button>
+      <script src="./libv86.js"></script>
+      <script>
+        window.disk = "{{ disk }}";
+        window.imagePath = "{{ url }}";
+      </script>
+      <script src="./demos.js"></script>
+      <div class="demo-info">{{ content | safe }}</div>
+    </main>
+
+    {% elif tags and "mac-demo-pages" in tags %}
+
+    <main data-pagefind-ignore>
+      <h1>{{ title }}</h1>
+      {{ content | safe }}
+    </main>
+
+    {% else %}
 
     <main style="{{ style }}">
       <div class="content">
-        <!-- <div class="wrapped"> -->
         {% if tags and not "homepages" in tags %}
-        <h1 id="heading">{{ title }}</h1>
+        <h1 id="heading" data-pagefind-weight="10">{{ title }}</h1>
         {% endif %}
-        {% include "_page-nav.njk" %}
         {{ content | safe }}
-        <!-- </div> -->
       </div>
     </main>
+
+    {% endif %}
     <div class="contents">
       <h2 id="toc">Contents</h2>
       <noscript>Enable JavaScript for the best experience!</noscript>
