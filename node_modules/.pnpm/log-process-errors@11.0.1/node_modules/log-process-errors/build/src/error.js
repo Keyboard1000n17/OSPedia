@@ -1,0 +1,21 @@
+import normalizeException from"normalize-exception";
+import setErrorMessage from"set-error-message";
+
+
+export const getError=(value,event)=>{
+const error=normalizeException(value);
+setErrorMessage(error,`${getMessage(error,event)}${MESSAGES[event]}`);
+return error
+};
+
+const getMessage=({message},event)=>
+event==="rejectionHandled"?
+message.replace(MESSAGES.unhandledRejection,""):
+message;
+
+const MESSAGES={
+uncaughtException:"\nThis exception was thrown but not caught.",
+unhandledRejection:"\nThis promise was rejected but not handled.",
+rejectionHandled:"\nThis promise was rejected and handled too late.",
+warning:""
+};

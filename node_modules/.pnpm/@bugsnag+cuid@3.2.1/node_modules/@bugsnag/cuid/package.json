@@ -1,0 +1,76 @@
+{
+  "name": "@bugsnag/cuid",
+  "version": "3.2.1",
+  "description": "Collision-resistant ids optimized for horizontal scaling and performance. For node and browsers.",
+  "author": {
+    "name": "Bugsnag",
+    "url": "https://bugsnag.com"
+  },
+  "main": "dist/index.js",
+  "types": "cuid.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.esm.mjs",
+      "require": "./dist/index.js"
+    },
+    "./lib/fingerprint": {
+      "browser": "./lib/fingerprint.browser.mjs",
+      "node": "./lib/fingerprint.mjs",
+      "default": "./lib/fingerprint.react-native.mjs"
+    }
+  },
+  "imports": {
+    "#fingerprint": {
+      "browser": "./lib/fingerprint.browser.mjs",
+      "node": "./lib/fingerprint.mjs",
+      "default": "./lib/fingerprint.react-native.mjs"
+    }
+  },
+  "browser": {
+    "./dist/lib/fingerprint.js": "./dist/lib/fingerprint.browser.js"
+  },
+  "react-native": {
+    "./dist/lib/fingerprint.js": "./dist/lib/fingerprint.react-native.js"
+  },
+  "keywords": [
+    "id",
+    "guid",
+    "uid",
+    "unique id",
+    "uuid"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bugsnag/cuid.git"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "cuid.d.ts",
+    "index.esm.mjs"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-alias": "^5.1.1",
+    "eslint": "^8.49",
+    "jasmine": "^2.5.0",
+    "jasmine-core": "^2.8.0",
+    "karma": "^6.4.3",
+    "karma-browserify": "^8.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.1",
+    "mkdirp": "^0.5.1",
+    "rollup": "^2.76.0",
+    "watchify": "^4.0.0",
+    "webworkify": "^1.4.0"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "rollup -c",
+    "lint": "eslint index.mjs index.esm.mjs lib test",
+    "test": "npm run lint && npm run test:server && npm run test:browser",
+    "test:browser": "karma start test/karma.conf.js",
+    "test:server": "jasmine test/**/*.js",
+    "prepublish": "npm run build"
+  }
+}

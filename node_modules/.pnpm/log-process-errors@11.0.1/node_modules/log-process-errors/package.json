@@ -1,0 +1,70 @@
+{
+  "name": "log-process-errors",
+  "version": "11.0.1",
+  "type": "module",
+  "exports": {
+    "types": "./build/src/main.d.ts",
+    "default": "./build/src/main.js"
+  },
+  "main": "./build/src/main.js",
+  "types": "./build/src/main.d.ts",
+  "files": [
+    "build/src/**/*.{js,json,d.ts}",
+    "!build/src/**/*.test.js",
+    "!build/src/{helpers,fixtures}"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "test": "gulp test"
+  },
+  "description": "Show some ❤️ to process errors",
+  "keywords": [
+    "code-quality",
+    "debugging",
+    "error",
+    "error-handler",
+    "error-handling",
+    "exception",
+    "handler",
+    "handling",
+    "javascript",
+    "library",
+    "logging",
+    "monitoring",
+    "nodejs",
+    "process",
+    "promise",
+    "test",
+    "testing",
+    "typescript",
+    "uncaught",
+    "uncaught-exceptions"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://www.github.com/ehmicky/log-process-errors",
+  "repository": "ehmicky/log-process-errors",
+  "bugs": {
+    "url": "https://github.com/ehmicky/log-process-errors/issues"
+  },
+  "author": "ehmicky <ehmicky@gmail.com> (https://github.com/ehmicky)",
+  "directories": {
+    "lib": "src"
+  },
+  "dependencies": {
+    "is-error-instance": "^2.0.0",
+    "is-plain-obj": "^4.1.0",
+    "normalize-exception": "^3.0.0",
+    "set-error-message": "^2.0.1"
+  },
+  "devDependencies": {
+    "@ehmicky/dev-tasks": "^2.0.80",
+    "@sinonjs/fake-timers": "^10.0.0",
+    "execa": "^7.1.1",
+    "semver": "^7.5.0",
+    "sinon": "^15.0.4",
+    "test-each": "^6.0.1"
+  },
+  "engines": {
+    "node": ">=16.17.0"
+  }
+}

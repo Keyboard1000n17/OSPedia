@@ -1,0 +1,114 @@
+import { promises as fs } from 'fs';
+import { join } from 'path';
+import { pathToFileURL } from 'url';
+import { SemVer } from 'semver';
+import tmp from 'tmp-promise';
+import { BundleError } from './bundle_error.js';
+import { getPackagePath } from './package_json.js';
+var ConfigExitCode;
+(function (ConfigExitCode) {
+    ConfigExitCode[ConfigExitCode["Success"] = 0] = "Success";
+    ConfigExitCode[ConfigExitCode["UnhandledError"] = 1] = "UnhandledError";
+    ConfigExitCode[ConfigExitCode["ImportError"] = 2] = "ImportError";
+    ConfigExitCode[ConfigExitCode["NoConfig"] = 3] = "NoConfig";
+    ConfigExitCode[ConfigExitCode["InvalidExport"] = 4] = "InvalidExport";
+    ConfigExitCode[ConfigExitCode["SerializationError"] = 5] = "SerializationError";
+    ConfigExitCode[ConfigExitCode["InvalidDefaultExport"] = 6] = "InvalidDefaultExport";
+})(ConfigExitCode || (ConfigExitCode = {}));
+export const isValidOnError = (value) => {
+    if (typeof value === 'undefined')
+        return true;
+    if (typeof value !== 'string')
+        return false;
+    return value === 'fail' || value === 'bypass' || value.startsWith('/');
+};
+const getConfigExtractor = () => {
+    const packagePath = getPackagePath();
+    const configExtractorPath = join(packagePath, 'deno', 'config.ts');
+    return configExtractorPath;
+};
+export const getFunctionConfig = async ({ deno, functionPath, importMap, log, }) => {
+    // The extractor is a Deno script that will import the function and run its
+    // `config` export, if one exists.
+    const extractorPath = getConfigExtractor();
+    // We need to collect the output of the config function, which should be a
+    // JSON object. Rather than printing it to stdout, the extractor will write
+    // it to a temporary file, which we then read in the Node side. This allows
+    // the config function to write to stdout and stderr without that interfering
+    // with the extractor.
+    const collector = await tmp.file();
+    // Retrieving the version of Deno.
+    const result = await deno.getBinaryVersion((await deno.getBinaryPath({ silent: true })).path);
+    const version = new SemVer(result.version || '');
+    // The extractor will use its exit code to signal different error scenarios,
+    // based on the list of exit codes we send as an argument. We then capture
+    // the exit code to know exactly what happened and guide people accordingly.
+    const { exitCode, stderr, stdout } = await deno.run([
+        'run',
+        '--allow-env',
+        version.major >= 2 ? '--allow-import' : '',
+        '--allow-net',
+        '--allow-read',
+        `--allow-write=${collector.path}`,
+        `--import-map=${importMap.toDataURL()}`,
+        '--no-config',
+        '--node-modules-dir=false',
+        '--quiet',
+        extractorPath,
+        pathToFileURL(functionPath).href,
+        pathToFileURL(collector.path).href,
+        JSON.stringify(ConfigExitCode),
+    ].filter(Boolean), { rejectOnExitCode: false });
+    if (exitCode !== ConfigExitCode.Success) {
+        handleConfigError(functionPath, exitCode, stderr, log);
+        return {};
+    }
+    if (stdout !== '') {
+        log.user(stdout);
+    }
+    let collectorData = {};
+    try {
+        const collectorDataJSON = await fs.readFile(collector.path, 'utf8');
+        collectorData = JSON.parse(collectorDataJSON);
+    }
+    catch {
+        handleConfigError(functionPath, ConfigExitCode.UnhandledError, stderr, log);
+    }
+    finally {
+        await collector.cleanup();
+    }
+    if (!isValidOnError(collectorData.onError)) {
+        throw new BundleError(new Error(`The 'onError' configuration property in edge function at '${functionPath}' must be one of 'fail', 'bypass', or a path starting with '/'. Got '${collectorData.onError}'. More on the Edge Functions API at https://ntl.fyi/edge-api.`));
+    }
+    return collectorData;
+};
+const handleConfigError = (functionPath, exitCode, stderr, log) => {
+    let cause;
+    if (stderr.includes('Import assertions are deprecated') ||
+        stderr.includes(`SyntaxError: Unexpected identifier 'assert'`)) {
+        log.system(`Edge function uses import assertions: ${functionPath}`);
+        cause = 'IMPORT_ASSERT';
+    }
+    if (stderr.includes('ReferenceError: window is not defined')) {
+        log.system(`Edge function uses the window global: ${functionPath}`);
+        cause = 'WINDOW_GLOBAL';
+    }
+    switch (exitCode) {
+        case ConfigExitCode.ImportError:
+            log.user(stderr);
+            throw new BundleError(new Error(`Could not load edge function at '${functionPath}'. More on the Edge Functions API at https://ntl.fyi/edge-api.`), { cause });
+        case ConfigExitCode.NoConfig:
+            log.system(`No in-source config found for edge function at '${functionPath}'`);
+            break;
+        case ConfigExitCode.InvalidExport:
+            throw new BundleError(new Error(`The 'config' export in edge function at '${functionPath}' must be an object. More on the Edge Functions API at https://ntl.fyi/edge-api.`));
+        case ConfigExitCode.SerializationError:
+            throw new BundleError(new Error(`The 'config' object in the edge function at '${functionPath}' must contain primitive values only. More on the Edge Functions API at https://ntl.fyi/edge-api.`));
+            break;
+        case ConfigExitCode.InvalidDefaultExport:
+            throw new BundleError(new Error(`Default export in '${functionPath}' must be a function. More on the Edge Functions API at https://ntl.fyi/edge-api.`));
+        default:
+            log.user(`Could not load configuration for edge function at '${functionPath}'`);
+            log.user(stderr);
+    }
+};

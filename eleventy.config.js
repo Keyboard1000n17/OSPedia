@@ -1,10 +1,10 @@
 const path = require("node:path");
 
-module.exports = function (eleventyConfig) {
+module.exports = function(eleventyConfig) {
   //
   // Passthrough copy for static assets
   eleventyConfig.addPassthroughCopy(
-    "assets/**/*.{js,json,jpg,png,gif,webp,svg,css}",
+    "assets/**/*.{js,json,wasm,bin,img,jpg,png,gif,webp,svg,css}",
   );
   eleventyConfig.addPassthroughCopy({ "assets/global": "/global/" });
 
@@ -21,14 +21,14 @@ module.exports = function (eleventyConfig) {
   });
 
   // WinPedia collection (excluding home.html)
-  eleventyConfig.addCollection("winpedia-pages", function (collectionApi) {
+  eleventyConfig.addCollection("winpedia-pages", function(collectionApi) {
     return collectionApi
       .getFilteredByGlob("assets/WinPedia/!(home).html")
       .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
   });
 
   // MacPedia collection (excluding home.html)
-  eleventyConfig.addCollection("macpedia-pages", function (collectionApi) {
+  eleventyConfig.addCollection("macpedia-pages", function(collectionApi) {
     return collectionApi
       .getFilteredByGlob("assets/MacPedia/!(home).html")
       .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));

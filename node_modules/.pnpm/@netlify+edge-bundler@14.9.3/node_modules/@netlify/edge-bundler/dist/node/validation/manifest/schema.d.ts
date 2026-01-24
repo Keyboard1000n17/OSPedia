@@ -1,0 +1,224 @@
+declare const edgeManifestSchema: {
+    type: string;
+    required: string[];
+    properties: {
+        bundles: {
+            type: string;
+            items: {
+                type: string;
+                required: string[];
+                properties: {
+                    asset: {
+                        type: string;
+                    };
+                    format: {
+                        type: string;
+                        enum: string[];
+                    };
+                };
+                additionalProperties: boolean;
+            };
+        };
+        routes: {
+            type: string;
+            items: {
+                type: string;
+                required: string[];
+                properties: {
+                    name: {
+                        type: string;
+                    };
+                    function: {
+                        type: string;
+                    };
+                    pattern: {
+                        type: string;
+                        format: string;
+                        errorMessage: string;
+                    };
+                    excluded_patterns: {
+                        type: string;
+                        items: {
+                            type: string;
+                            format: string;
+                            errorMessage: string;
+                        };
+                    };
+                    generator: {
+                        type: string;
+                    };
+                    path: {
+                        type: string;
+                    };
+                    methods: {
+                        type: string;
+                        items: {
+                            type: string;
+                            enum: string[];
+                        };
+                    };
+                    headers: {
+                        type: string;
+                        patternProperties: {
+                            '.*': {
+                                type: string;
+                                required: string[];
+                                properties: {
+                                    pattern: {
+                                        type: string;
+                                    };
+                                    matcher: {
+                                        type: string;
+                                        enum: string[];
+                                    };
+                                };
+                                additionalProperties: boolean;
+                                if: {
+                                    properties: {
+                                        matcher: {
+                                            const: string;
+                                        };
+                                    };
+                                };
+                                then: {
+                                    required: string[];
+                                };
+                            };
+                        };
+                        additionalProperties: boolean;
+                    };
+                };
+                additionalProperties: boolean;
+            };
+        };
+        post_cache_routes: {
+            type: string;
+            items: {
+                type: string;
+                required: string[];
+                properties: {
+                    name: {
+                        type: string;
+                    };
+                    function: {
+                        type: string;
+                    };
+                    pattern: {
+                        type: string;
+                        format: string;
+                        errorMessage: string;
+                    };
+                    excluded_patterns: {
+                        type: string;
+                        items: {
+                            type: string;
+                            format: string;
+                            errorMessage: string;
+                        };
+                    };
+                    generator: {
+                        type: string;
+                    };
+                    path: {
+                        type: string;
+                    };
+                    methods: {
+                        type: string;
+                        items: {
+                            type: string;
+                            enum: string[];
+                        };
+                    };
+                    headers: {
+                        type: string;
+                        patternProperties: {
+                            '.*': {
+                                type: string;
+                                required: string[];
+                                properties: {
+                                    pattern: {
+                                        type: string;
+                                    };
+                                    matcher: {
+                                        type: string;
+                                        enum: string[];
+                                    };
+                                };
+                                additionalProperties: boolean;
+                                if: {
+                                    properties: {
+                                        matcher: {
+                                            const: string;
+                                        };
+                                    };
+                                };
+                                then: {
+                                    required: string[];
+                                };
+                            };
+                        };
+                        additionalProperties: boolean;
+                    };
+                };
+                additionalProperties: boolean;
+            };
+        };
+        layers: {
+            type: string;
+            items: {
+                type: string;
+                required: string[];
+                properties: {
+                    flag: {
+                        type: string;
+                    };
+                    name: {
+                        type: string;
+                    };
+                    local: {
+                        type: string;
+                    };
+                };
+                additionalProperties: boolean;
+            };
+        };
+        import_map: {
+            type: string;
+        };
+        bundler_version: {
+            type: string;
+        };
+        bundling_timing: {
+            type: string;
+            properties: {
+                tarball_ms: {
+                    type: string;
+                    minimum: number;
+                };
+            };
+            additionalProperties: boolean;
+        };
+        function_config: {
+            type: string;
+            additionalProperties: {
+                type: string;
+                required: never[];
+                properties: {
+                    excluded_patterns: {
+                        type: string;
+                        items: {
+                            type: string;
+                            format: string;
+                            errorMessage: string;
+                        };
+                    };
+                    on_error: {
+                        type: string;
+                    };
+                };
+            };
+        };
+    };
+    additionalProperties: boolean;
+};
+export default edgeManifestSchema;

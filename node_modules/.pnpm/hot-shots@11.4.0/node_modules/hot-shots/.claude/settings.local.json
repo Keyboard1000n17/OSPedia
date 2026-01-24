@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(node test_prefix_bug3.js)",
+      "Bash(node:*)",
+      "Bash(git tag:*)",
+      "Bash(git stash:*)",
+      "Bash(git checkout:*)",
+      "Bash(npx mocha:*)",
+      "Bash(npm test:*)",
+      "Bash(timeout 90 npm test:*)",
+      "Bash(rm:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

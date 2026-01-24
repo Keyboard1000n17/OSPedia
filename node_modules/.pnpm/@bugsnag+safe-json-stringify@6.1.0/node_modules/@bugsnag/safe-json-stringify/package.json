@@ -1,0 +1,37 @@
+{
+  "name": "@bugsnag/safe-json-stringify",
+  "version": "6.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bugsnag/safe-json-stringify.git"
+  },
+  "files": [
+    "index.js",
+    "types"
+  ],
+  "bugs": {
+    "url": "https://github.com/bugsnag/safe-json-stringify/issues"
+  },
+  "homepage": "https://github.com/bugsnag/safe-json-stringify",
+  "description": "Prevent defined property getters from throwing errors",
+  "main": "index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "postversion": "git push && git push --tags",
+    "preversion": "npm test",
+    "test": "standard && karma start --single-run",
+    "test:basic": "standard && karma start --single-run --browsers ChromeHeadless"
+  },
+  "author": "Debitoor",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "jasmine-core": "^2.8.0",
+    "karma": "^6.4.3",
+    "karma-browserify": "^8.1.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^5.1.0",
+    "standard": "^11.0.1",
+    "watchify": "^4.0.0"
+  }
+}

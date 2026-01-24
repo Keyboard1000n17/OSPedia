@@ -1,0 +1,16 @@
+export declare const trackBuildComplete: ({ deployId, buildId, status, stepsCount, pluginsOptions, durationNs, siteInfo, telemetry, userNodeVersion, framework, testOpts: { telemetryOrigin, telemetryTimeout }, }: {
+    deployId: any;
+    buildId: any;
+    status: any;
+    stepsCount: any;
+    pluginsOptions: any;
+    durationNs: any;
+    siteInfo: any;
+    telemetry: any;
+    userNodeVersion: any;
+    framework: any;
+    testOpts: {
+        telemetryOrigin?: string | undefined;
+        telemetryTimeout?: number | undefined;
+    };
+}) => Promise<void>;

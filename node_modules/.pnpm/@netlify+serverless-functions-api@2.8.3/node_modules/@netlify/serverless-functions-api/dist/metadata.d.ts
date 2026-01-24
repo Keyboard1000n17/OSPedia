@@ -1,0 +1,20 @@
+interface TrackRequestOptions {
+    awsRequestID: string;
+    branch?: string;
+    accountTier?: string;
+    functionName?: string;
+    logToken?: string;
+    req: Request;
+}
+export declare const trackRequest: ({ awsRequestID, req, branch, functionName, accountTier, logToken, }: TrackRequestOptions) => void;
+interface TrackResponseOptions {
+    awsRequestID: string;
+    result: unknown;
+}
+export declare const trackResponse: ({ awsRequestID, result }: TrackResponseOptions) => void;
+export interface InvocationMetadata {
+    branch: string;
+    account_tier?: string;
+    function_name: string;
+}
+export {};

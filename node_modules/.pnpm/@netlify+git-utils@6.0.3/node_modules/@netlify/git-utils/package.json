@@ -1,0 +1,67 @@
+{
+  "name": "@netlify/git-utils",
+  "version": "6.0.3",
+  "description": "Utility for dealing with modified, created, deleted files since a git commit",
+  "type": "module",
+  "exports": "./lib/main.js",
+  "main": "./lib/main.js",
+  "types": "./lib/main.d.ts",
+  "files": [
+    "lib/**/*.js"
+  ],
+  "author": "Netlify Inc.",
+  "scripts": {
+    "prebuild": "rm -rf lib",
+    "build": "tsc",
+    "test": "vitest run",
+    "test:dev": "vitest",
+    "test:ci": "vitest run --reporter=default"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "windows",
+    "macos",
+    "linux",
+    "shell",
+    "bash",
+    "build",
+    "terminal",
+    "deployment",
+    "es6",
+    "serverless",
+    "continuous-integration",
+    "continuous-delivery",
+    "ci",
+    "continuous-deployment",
+    "plugins",
+    "continuous-testing",
+    "netlify-plugin",
+    "netlify"
+  ],
+  "homepage": "https://github.com/netlify/build",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/netlify/build.git",
+    "directory": "packages/git-utils"
+  },
+  "bugs": {
+    "url": "https://github.com/netlify/build/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "execa": "^8.0.0",
+    "map-obj": "^5.0.0",
+    "micro-memoize": "^5.1.1",
+    "micromatch": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.111",
+    "typescript": "^5.0.0",
+    "vitest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.14.0"
+  },
+  "gitHead": "5de08d50fe44b45a0f7b78c3b9a87af3455402ab"
+}

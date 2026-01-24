@@ -1,0 +1,4 @@
+# Netlify Edge Functions
+
+TypeScript types for
+[Netlify Edge Functions](https://docs.netlify.com/edge-functions/api/).
