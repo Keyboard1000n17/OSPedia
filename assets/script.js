@@ -5,6 +5,12 @@ const menuIcon = document.querySelector(".hamburger-menu-icon");
 const menuBlur = document.querySelector(".hamburger-menu-blur");
 const menuClose = document.querySelector(".hamburger-menu-close");
 
+// if (window.innerWidth > 768) {
+window.scrollContainer = document.querySelector("div.content");
+// } else {
+// window.scrollContainer = document.querySelector("main");
+// }
+
 menuIcon.addEventListener("click", (e) => {
   e.stopPropagation(); // stop event from bubbling up
   menu.classList.toggle("show");
@@ -65,11 +71,11 @@ const links = document.createElement("div");
 links.classList = "links";
 for (let i = 0; i < headings.length; i++) {
   if (headings[i].matches("h2.level-three") || headings[i].matches("h4")) {
-    linkString += `<a href="" class="subsubheadings">${headings[i].textContent}</a>`;
+    linkString += `<a href="#" class="subsubheadings">${headings[i].textContent}</a>`;
   } else if (headings[i].matches("h2.level-two") || headings[i].matches("h3")) {
-    linkString += `<a href="" class="subheadings">${headings[i].textContent}</a>`;
+    linkString += `<a href="#" class="subheadings">${headings[i].textContent}</a>`;
   } else {
-    linkString += `<a href="">${headings[i].textContent}</a>`;
+    linkString += `<a href="#">${headings[i].textContent}</a>`;
   }
   links.innerHTML = linkString;
   document
@@ -77,27 +83,8 @@ for (let i = 0; i < headings.length; i++) {
     .insertAdjacentElement("afterend", links);
 }
 
-document.querySelectorAll("div.links a").forEach((link, index) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    let a = headings[index].offsetTop;
-    let b =
-      document.querySelector("main div.content").scrollHeight -
-      document.querySelector("main div.content").clientHeight;
-    const c = a <= b ? a : b;
-    const d =
-      window.innerWidth > 768
-        ? document.querySelector("main div.content")
-        : window;
-    d.scrollTo({
-      top: c,
-      behavior: "smooth",
-    });
-  });
-});
-
 if (
-  window.innerWidth < 1366 &&
+  window.innerWidth < 1440 &&
   document.querySelector(".insertHere, #info, .info")
 ) {
   const contentsEl = document.querySelector("div.contents").cloneNode(true);
@@ -107,12 +94,28 @@ if (
     .insertAdjacentElement("beforebegin", contentsEl);
 }
 
+document.querySelectorAll("div.links a").forEach((link, index) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    let a =
+      headings[index].getBoundingClientRect().top +
+      scrollContainer.scrollTop -
+      scrollContainer.getBoundingClientRect().top;
+    let b = scrollContainer.scrollHeight - scrollContainer.clientHeight;
+    const c = Math.min(a, b);
+    scrollContainer.scrollTo({
+      top: c,
+      behavior: "smooth",
+    });
+  });
+});
+
 // Back to top button
 
-if (window.innerWidth < 1366 && window.innerWidth > 768) {
+if (window.innerWidth < 1440 && window.innerWidth > 768) {
   const backToTop = document.querySelector("div#back-to-top");
   backToTop.addEventListener("click", () => {
-    document.querySelector("main").scrollTo({
+    scrollContainer.scrollTo({
       top: 0,
       behavior: "smooth",
     });
@@ -122,7 +125,7 @@ if (window.innerWidth < 1366 && window.innerWidth > 768) {
 if (window.innerWidth < 768) {
   const backToTop = document.querySelector("div#back-to-top");
   backToTop.addEventListener("click", () => {
-    window.scrollTo({
+    scrollContainer.scrollTo({
       top: 0,
       behavior: "smooth",
     });

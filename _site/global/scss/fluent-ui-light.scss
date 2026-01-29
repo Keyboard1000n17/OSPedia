@@ -13,3 +13,16 @@
   $background-color-2,
   $color
 );
+
+h2#toc,
+div#back-to-top {
+  color: black;
+}
+
+div.content {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+div.version-list a {
+  filter: drop-shadow(0 0 10px black);
+}

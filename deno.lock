@@ -16,6 +16,7 @@
         "npm:eleventy-sass@^3.0.0-beta.0",
         "npm:eruda@^3.4.3",
         "npm:html-minifier-terser@^7.2.0",
+        "npm:netlify-cli@^23.13.5",
         "npm:pagefind@^1.4.0",
         "npm:sass@^1.97.1",
         "npm:terser@^5.44.1"
