@@ -89,6 +89,11 @@
       <td class="right release-notes"></td>
     </tr>
   </template>
+  {% if json_path %}
+  <script>
+    window.jsonData = {{json_path}};
+  </script>
+  {% endif %}
   <script src="/MacPedia/tables.js"></script>
   {% endif %}
 
