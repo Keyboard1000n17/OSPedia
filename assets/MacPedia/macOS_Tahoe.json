@@ -48,9 +48,9 @@
     "class": "current-release"
   },
   {
-    "version": "26.3 beta 1 (a)",
-    "build": "25D770870b",
-    "release": "January 6, 2026",
+    "version": "26.3 beta 3",
+    "build": "25D5112c",
+    "release": "January 26, 2026",
     "darwinVersion": "Unavailable",
     "description": "Unavailable",
     "class": "beta-release"
