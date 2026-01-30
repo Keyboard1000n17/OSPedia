@@ -19,8 +19,7 @@
   }
 }
 
-@mixin styles(
-  $background-color,
+@mixin styles($background-color,
   $blur,
   $border,
   $border-radius,
@@ -29,8 +28,8 @@
   $link,
   $search-mask,
   $background-color-2,
-  $color
-) {
+  $color) {
+
   // Global styles
   html {
     @media (min-width: 769px) {
@@ -164,6 +163,39 @@
     height: 100%;
     overflow: auto;
 
+    details {
+      margin: calc(1 / 3 * $padding);
+      transition: ease-out 0.3s;
+
+      &::details-content {
+        opacity: 0;
+        block-size: 0;
+        overflow: hidden;
+        content-visibility: hidden;
+        position: relative;
+        list-style-type: none;
+        transition: all ease-out 0.2s;
+      }
+    }
+
+    details[open]::details-content {
+      opacity: 1;
+      block-size: auto;
+      top: 0;
+      content-visibility: visible;
+      transition: all ease-out 0.2s;
+      list-style-type: none;
+    }
+
+    summary::marker {
+      transform: rotate(90deg);
+      transition: all ease-out 0.2s;
+    }
+
+    p {
+      margin: 10px;
+    }
+
     div.tree-os-name {
       position: sticky;
       top: 0;
@@ -183,7 +215,6 @@
     display: flex;
     flex-direction: column;
     background-color: $background-color;
-    backdrop-filter: $blur;
     padding: $padding;
     border-radius: $border-radius;
     margin-bottom: calc(2 * $padding);
@@ -351,9 +382,9 @@
       display: none;
     }
 
-    ul > li.nav,
-    ul > li.nav a,
-    ul > li.nav a:visited {
+    ul>li.nav,
+    ul>li.nav a,
+    ul>li.nav a:visited {
       list-style: none;
       margin-right: 20px;
       text-decoration: none;
@@ -388,7 +419,7 @@
     }
   }
 
-  nav > * {
+  nav>* {
     padding: 10px;
   }
 
@@ -709,13 +740,11 @@
   }
 }
 
-@mixin index-styles(
-  $background-color,
+@mixin index-styles($background-color,
   $background-color-2,
   $blur,
   $border-radius,
-  $color
-) {
+  $color) {
   div.wrapper {
     background-color: rgba(0, 0, 0, 0);
 
@@ -791,7 +820,7 @@
     align-content: center;
   }
 
-  div.home-os-cards > div.bottom {
+  div.home-os-cards>div.bottom {
     height: 50%;
     margin: 1vh 1vw;
     padding: 1vh 2vw;
