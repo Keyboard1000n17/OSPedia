@@ -161,7 +161,7 @@
   },
   {
     "version": "15.7.4 Release Candidate 3",
-    "build": "24G512".
+    "build": "24G512",
     "release": "January 28, 2026",
     "darwinVersion": "24.6.0<p><small>xnu-11417.140.69.708.3~1</small></p><p><small>Mon Jan 19 22:01:41 PST 2026</small>",
     "description": "Unavailable",
