@@ -3,3 +3,9 @@
 
 # Local Netlify folder
 .netlify
+
+# Node modules
+node_modules/
+
+# Output of Eleventy build
+_site/
