@@ -4,8 +4,8 @@
 # Local Netlify folder
 .netlify
 
-# Node modules
+# PNPM stuff
 node_modules/
 
-# Output of Eleventy build
+# Compiled site
 _site/

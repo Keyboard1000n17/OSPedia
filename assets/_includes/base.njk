@@ -68,7 +68,14 @@
         {% include "_page-nav.njk" %}
         <h1 id="heading" data-pagefind-weight="10">{{ title }}</h1>
         {% endif %}
-        {{ content | safe }}
+        {{ content | splitContent(0) | safe }}
+        <div class="info">
+          <img src="{{ page.filePathStem | parentFolder }}/Images/Icons/{{ favicon }}" alt="{{ info.icon[0].alt }}">
+          {% for para in info.paras %}
+          <p>{{ para }}</p>
+          {% endfor %}
+        </div>
+        {{ content | splitContent(1) | safe }}
       </div>
     </main>
 
@@ -91,7 +98,7 @@
   </template>
   {% if json_path %}
   <script>
-    window.jsonData = {{json_path}};
+    window.jsonData = "{{json_path}}";
   </script>
   {% endif %}
   <script src="/MacPedia/tables.js"></script>

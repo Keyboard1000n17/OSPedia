@@ -1,7 +1,25 @@
 const path = require("node:path");
 
 module.exports = function(eleventyConfig) {
-  //
+  // split function
+  eleventyConfig.addFilter("parentFolder", function(str) {
+    return str.split("/").slice(0, -1).join("/");
+  });
+
+  // split content at +++
+  eleventyConfig.addFilter("splitContent", function(content, index) {
+    if (typeof content !== "string") {
+      return content;
+    } else if (index > 1) {
+      throw new Error(
+        "splitContent: Index can only be 0 or 1, modify config to change this.",
+      );
+    } else {
+      const slices = content.split(/\+\+\+/, 2);
+      return index === 0 ? slices[0] : slices[1];
+    }
+  });
+
   // Passthrough copy for static assets
   eleventyConfig.addPassthroughCopy(
     "assets/**/*.{js,json,wasm,bin,img,jpg,png,gif,webp,svg,css}",
