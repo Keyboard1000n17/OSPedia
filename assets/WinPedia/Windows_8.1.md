@@ -13,6 +13,13 @@ info:
     - "Succeeded by: Windows 10 (released 2015)"
     - "Codename: Blue"
     - "Developed by: Microsoft Corporation"
+carousel_images:
+  - path: /WinPedia/Images/UI/Windows_8.1-UI.webp
+    alt: Windows 8.1 UI
+    desc: A screenshot of Windows 8.1
+  - path: /WinPedia/Images/Wallpapers/Windows_8.1-wallpaper.webp
+    alt: Windows 8.1 Wallpaper
+    desc: A screenshot of Windows 8.1
 ---
 
 This webpage does not have a section on editions as there is no
@@ -43,7 +50,7 @@ added support for then emerging technologies like high-resolution
 displays, 3D printing, Wi-Fi Direct, and Miracast streaming, as well as
 the ReFS file system.
 
-## Development 
+## Development
 
 In February 2013, ZDNet writer Mary Jo Foley disclosed potential rumors
 about \"Blue\", the codename for a wave of planned updates across
@@ -94,13 +101,13 @@ stated that these changes would occur in a future update, but did not
 elaborate further. A distinction is the removal of the tooltip with the
 preview thumbnail of the Start screen.
 
-## Features 
+## Features
 
 Many of the changes on Windows 8.1, particularly to the user interface,
 were made in response to criticisms from early adopters and other
 critics after the release of Windows 8.
 
-## Apps 
+## Apps
 
 The suite of pre-loaded apps bundled with Windows 8 were changed in
 Windows 8.1; PC Settings was expanded to include options that were
@@ -121,7 +128,7 @@ enabled by default within Windows To Go environments. On January 31,
 2020, Microsoft released the new Microsoft Edge web browser for Windows
 8.1.
 
-## Online services and functionality 
+## Online services and functionality
 
 Windows 8.1 adds tighter integration with several Microsoft-owned
 services. OneDrive (formerly SkyDrive) is integrated at the system level
@@ -152,7 +159,7 @@ tabs, and Reading List integration.
 Due to Facebook Connect service changes, Facebook support is disabled in
 all bundled apps effective June 8, 2015.
 
-## Security and hardware compatibility 
+## Security and hardware compatibility
 
 On compatible hardware, Windows 8.1 also features a transparent \"device
 encryption\" system based on BitLocker. Encryption begins as soon as a
@@ -194,7 +201,7 @@ Q9300 and a Q9550S despite their support for this instruction, because
 the associated Intel DP35DP motherboard did not. These changes do not
 affect the 32-bit variants of Windows 8.1.
 
-## Hardware functionality 
+## Hardware functionality
 
 Windows 8.1 adds support for 3D printing, pairing with printers using
 NFC tags, Wi-Fi Direct, Miracast media streaming, tethering, and NVMe.
@@ -203,7 +210,7 @@ scale text and GUI elements up to 200% (whereas Windows 8 supported only
 150%) and set scaling settings independently on each display in
 multi-monitor configurations.
 
-## Removed features 
+## Removed features
 
 Backup and Restore, the backup component of Windows that had been
 deprecated but was available in Windows 8 through a Control Panel applet
@@ -237,7 +244,7 @@ Users can only upgrade their previous version of Windows to Windows 8.1
 using the revised installer introduced in Windows 8: they can no longer
 use setup.exe in the sources folder to upgrade their system.
 
-## User Interface 
+## User Interface
 
 The Start screen received several enhancements on Windows 8.1, including
 an extended \"All Apps\" view with sort modes (accessed by clicking a

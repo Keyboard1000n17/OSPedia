@@ -13,6 +13,10 @@ info:
     - "Succeeded by: Windows XP (released 2001)"
     - "Codename: None"
     - "Developed by: Microsoft Corporation"
+carousel_images:
+  - path: /WinPedia/Images/UI/Windows_ME-UI.webp
+    alt: Windows ME UI
+    desc: A screenshot of Windows ME
 ---
 
 Windows Me (Millennium Edition) is an operating system developed by
@@ -46,7 +50,7 @@ Windows Me, while still being far more stable due to being based on the
 Windows NT kernel. Mainstream support for Windows Me ended on December
 31, 2003, followed by extended support on July 11, 2006.
 
-## Development 
+## Development
 
 At the 1998 Windows Hardware Engineering Conference, Microsoft CEO Bill
 Gates stated that Windows 98 would be the last iteration of Windows to
@@ -118,9 +122,9 @@ also included the ZIP folders, the Spider Solitaire game and Internet
 Explorer 6 by default, all while being based on the Windows NT kernel,
 which on XP was an evolution of the one in Windows 2000.
 
-## Features 
+## Features
 
-## Hardware support improvements 
+## Hardware support improvements
 
 Faster boot times: Windows Me features numerous improvements for
 improving cold boot time, pre and post-logon boot times and time
@@ -163,7 +167,7 @@ scanners and storage devices is also improved.
 The waveOut, DirectSound, and DirectShow APIs support non-PCM formats
 such as AC-3 or WMA over S/PDIF.
 
-## Media 
+## Media
 
 - Windows Movie Maker: This utility is based on DirectShow and Windows
   Media technologies to provide Microsoft Windows computer systems
@@ -187,7 +191,7 @@ such as AC-3 or WMA over S/PDIF.
   playback. Instead, it supports software decoding through a
   third-party decoder.
 
-## Networking technologies 
+## Networking technologies
 
 - Net Crawler: Windows Me introduced a net crawling feature which
   automatically searches out and creates shortcuts to network shares
@@ -223,7 +227,7 @@ such as AC-3 or WMA over S/PDIF.
   can also be installed on Windows 98 and Windows 98 SE by installing
   the Windows XP Network Setup Wizard.
 
-## System utilities 
+## System utilities
 
 - System Restore: Windows Me introduced the \"System Restore\" logging
   and reversion system, which was meant to simplify troubleshooting
@@ -291,7 +295,7 @@ such as AC-3 or WMA over S/PDIF.
   Print Preview feature. It also shipped with the MSN Messenger
   Service.
 
-## Accessibility features 
+## Accessibility features
 
 - On-Screen Keyboard: Originally introduced with Windows 2000,
   On-Screen Keyboard makes it possible to input characters using the
@@ -304,7 +308,7 @@ such as AC-3 or WMA over S/PDIF.
 - Increased Active Accessibility support in utilities such as
   Calculator and Magnifier.
 
-## Removed features 
+## Removed features
 
 #### Real mode DOS
 
@@ -371,7 +375,7 @@ API or RealPlayer 4.0, unlike the original release of Windows 98, due to
 both of these having been superseded by DirectX and Windows Media
 Player, respectively.
 
-## User interface 
+## User interface
 
 Windows Me featured the shell enhancements inherited from Windows 2000
 such as personalized menus, customizable Windows Explorer toolbars,

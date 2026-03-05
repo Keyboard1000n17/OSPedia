@@ -13,6 +13,13 @@ info:
     - "Succeeded by: Windows 8 (released 2012)"
     - "Codename: Blackcomb"
     - "Developed by: Microsoft Corporation"
+carousel_images:
+  - path: /WinPedia/Images/UI/Windows_7-UI.webp
+    alt: Windows 7 UI
+    desc: A screenshot of Windows 7
+  - path: /WinPedia/Images/Wallpapers/Windows_7-wallpaper.webp
+    alt: Windows 7 Wallpaper
+    desc: A screenshot of Windows 7
 ---
 
 Windows 7 is a major release of the Windows NT operating system
@@ -65,7 +72,7 @@ without SSE2 or NX (although an update released in 2018 dropped support
 for non-SSE2 processors). Its successor, Windows 8, requires a processor
 with SSE2 and NX (for any then-supported architecture).
 
-## Development 
+## Development
 
 Originally, a version of Windows codenamed \"Blackcomb\" was planned as
 the successor to Windows XP and Windows Server 2003 in 2000. Major
@@ -151,7 +158,7 @@ released to manufacturing in the United States and Canada on July 22, 2009. Wind
 13, 2009, was declared the final RTM build after passing all
 Microsoft\'s tests internally.
 
-## Features 
+## Features
 
 Among Windows 7\'s new features are advances in touch and handwriting
 recognition, support for virtual hard disks, improved performance on
@@ -281,7 +288,7 @@ Gallery, Windows Movie Maker, Windows Calendar and Windows Mail---are
 not included with Windows 7 and were replaced by Windows Live-branded
 versions as part of the Windows Live Essentials suite.
 
-## Editions 
+## Editions
 
 Windows 7 is available in six different editions, of which the Home
 Premium, Professional, and Ultimate were available at retail in most
@@ -329,7 +336,7 @@ allowed upgrades on up to three computers. In certain regions, copies of
 Windows 7 were only sold in, and could only be activated in a designated
 region.
 
-## User interface 
+## User interface
 
 Windows 7 kept the Windows Aero theme, albeit with a few changes. Some
 of the lower editions like Starter and Home Basic did not support

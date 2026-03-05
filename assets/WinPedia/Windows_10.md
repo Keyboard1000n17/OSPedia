@@ -13,6 +13,13 @@ info:
     - "Succeeded by: Windows 11 (released 2021)"
     - "Codename: Threshold"
     - "Developed by: Microsoft Corporation"
+carousel_images:
+  - path: /WinPedia/Images/UI/Windows_10-UI.webp
+    alt: Windows 10 UI
+    desc: A screenshot of Windows 10
+  - path: /WinPedia/Images/Wallpapers/Windows_10-wallpaper.webp
+    alt: Windows 10 wallpaper
+    desc: The default wallpaper for Windows 10.
 ---
 
 Windows 10 is a major release of Microsoft\'s Windows NT operating
@@ -56,7 +63,7 @@ version to officially support systems with TPM 1.2 or without any TPM at
 all. Support for Windows 10 editions which are not in the Long-Term
 Servicing Channel (LTSC) is set to end on October 14, 2025.
 
-## Development 
+## Development
 
 At the Microsoft Worldwide Partner Conference in 2011, Andrew Lees, the
 chief of Microsoft\'s mobile technologies, said that the company
@@ -96,7 +103,7 @@ Preview\" (numbered 9834) was leaked in September 2014, showing a new
 virtual desktop system, a notification center, and a new File Explorer
 icon.
 
-## Announcement 
+## Announcement
 
 On September 30, 2014, Microsoft officially announced that Threshold
 would be unveiled during a media event as Windows 10. Myerson said that
@@ -153,7 +160,7 @@ Windows 10 would be succeeded on compatible hardware by Windows 11 --
 and that Windows 10 support will end on October 14, 2025, marking a
 departure from what had been dubbed \"Windows as a service\".
 
-## Marketing 
+## Marketing
 
 On July 20, 2015, Microsoft began \"Upgrade Your World\", an advertising
 campaign centering on Windows 10, with the premiere of television
@@ -165,7 +172,7 @@ experience to users. The campaign culminated with launch events in
 thirteen cities on July 29, 2015, which celebrated \"the unprecedented
 role our biggest fans played in the development of Windows 10\".
 
-## Release 
+## Release
 
 On July 29, 2015, Microsoft officially announced that Windows 10 would
 be released for retail purchase as a free upgrade from earlier versions
@@ -215,7 +222,7 @@ builder copies still ship as DVD-ROM media. New devices shipping with
 Windows 10 were also released during the operating system\'s launch
 window.
 
-## Free upgrade offer 
+## Free upgrade offer
 
 During its first year of availability, upgrade licenses for Windows 10
 could be obtained at no charge for devices with a genuine license for an
@@ -295,7 +302,7 @@ Windows 7. This free upgrade method was officially closed by Microsoft
 on September 20, 2023. However, as of 2024, there are some reports that
 it still works, under certain conditions.
 
-## Features 
+## Features
 
 Windows 10 makes its user experience and functionality more consistent
 between different classes of device, and addresses many shortcomings of
@@ -342,7 +349,7 @@ for distribution on the Microsoft Store. Desktop software distributed
 through Windows Store is packaged using the App-V system to allow
 sandboxing.
 
-## System security 
+## System security
 
 Windows 10 incorporates multi-factor authentication technology based
 upon standards developed by the FIDO Alliance. The operating system
@@ -389,7 +396,7 @@ vendor or Microsoft. Device Guard is designed to protect against
 zero-day exploits, and runs inside a hypervisor so that its operation
 remains separated from the operating system itself.
 
-## Command line 
+## Command line
 
 The console windows based on Windows Console (for any console app, not
 just PowerShell and Windows Command Prompt) can now be resized without
@@ -415,7 +422,7 @@ that it would add Fedora and OpenSUSE
 
 environment options as well.
 
-## Storage requirements 
+## Storage requirements
 
 To reduce the storage footprint of the operating system, Windows 10
 automatically compresses system files. The system can reduce the storage
@@ -436,7 +443,7 @@ users to view a breakdown of how their device\'s storage capacity is
 being used by different types of files, and determine whether certain
 types of files are saved to internal storage or an SD card by default.
 
-## Online services and functionality 
+## Online services and functionality
 
 Windows 10 introduces Microsoft Edge, a new default web browser. It
 initially featured a new standards-compliant rendering engine derived
@@ -494,7 +501,7 @@ the November 2015 update: Messaging, Skype Video, and Phone. These offer
 built-in alternatives to the Skype download and sync with Windows 10
 Mobile.
 
-## Multimedia and gaming 
+## Multimedia and gaming
 
 Windows 10 provides greater integration with the Xbox ecosystem. Xbox
 SmartGlass is succeeded by the Xbox Console Companion (formerly the Xbox
@@ -534,7 +541,7 @@ feature support for vendor agnostic multi-GPU setups. WDDM 2.0
 introduces a new virtual memory management and allocation system to
 reduce workload on the kernel-mode driver.
 
-## Editions 
+## Editions
 
 Windows 10 is available in five main editions for personal computing
 devices; the Home and Pro editions of which are sold at retail in most
@@ -577,7 +584,7 @@ Microsoft Store, but does not require payment in
 order to disable these
 restrictions.
 
-## User interface 
+## User interface
 
 Windows 10 makes its user experience and functionality more consistent
 between different classes of device, and addresses many shortcomings of

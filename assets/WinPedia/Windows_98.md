@@ -13,17 +13,22 @@ info:
     - "Succeeded by: Windows ME (released 2000)"
     - "Codename: Memphis"
     - "Developed by: Microsoft Corporation"
+carousel_images:
+  - path: /WinPedia/Images/UI/Windows_98-UI.webp
+    alt: Windows 98 UI
+    desc: A screenshot of Windows 98
 ---
 
 Windows 98 was consumer-oriented operating system developed by Microsoft
 as part of its Windows 9x series of operating systems. It was the second
 operating system in the 9x line, as the successor to Windows 95. It was
-released to manufacturing on May 15, 1998, and to retail on June 25, 1998. Like its predecessor, it was a hybrid 16-bit and 32-bit monolithic
+released to manufacturing on May 15, 1998, and to retail on June 25, 1998.
+Like its predecessor, it was a hybrid 16-bit and 32-bit monolithic
 product with the boot stage based on MS-DOS.
 
 +++
 
-## Windows 98 Second Edition 
+## Windows 98 Second Edition
 
 Windows 98 Second Edition (often shortened to Windows 98 SE and
 sometimes to Win98 SE or 98 SE) is an updated version of Windows 98
@@ -56,7 +61,7 @@ therefore USB modems and virtual COM ports). However, Microsoft driver
 support for both USB printers and USB mass-storage device class is not
 available for Windows 98.
 
-## User interface 
+## User interface
 
 Windows 98 was released to positive reviews, with praise directed to its
 improved graphical user interface and customizability, ease of use, and

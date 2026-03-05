@@ -13,6 +13,10 @@ info:
     - "Succeeded by: Windows XP and Windows Server 2003"
     - "Codename: Asteroid (for SP1)"
     - "Developed by: Microsoft Corporation"
+carousel_images:
+  - path: /WinPedia/Images/UI/Windows_2000-UI.webp
+    alt: Windows 2000 UI
+    desc: A screenshot of Windows 2000
 ---
 
 Windows 2000 is a major release of the Windows NT operating system
@@ -40,7 +44,7 @@ July 13, 2010, on the same day support ended for Windows XP SP2. Windows
 2000 and Windows 2000 Server were succeeded by Windows XP and Windows
 Server 2003, released in 2001 and 2003, respectively.
 
-## Development 
+## Development
 
 Windows 2000 was originally named Windows NT 5.0. It is a continuation
 of the Microsoft Windows NT family of operating systems, replacing
@@ -93,7 +97,7 @@ codebase. These editions were released in 2002, were shortly available
 through the OEM channel and then were superseded by the final versions
 of Server 2003.
 
-## Features 
+## Features
 
 Windows 2000 introduced many of the new features of Windows 98 and 98 SE
 into the NT line, such as the Windows Desktop Update, Internet Explorer
@@ -145,7 +149,7 @@ introduced core system administration and management features, such as
 the Windows Installer, Windows Management Instrumentation and Event
 Tracing for Windows (ETW) into the operating system.
 
-## Plug and Play and hardware support improvements 
+## Plug and Play and hardware support improvements
 
 The most notable improvement from Windows NT 4.0 is the addition of Plug
 and Play with full ACPI and Windows Driver Model support. Similar to
@@ -163,7 +167,7 @@ reassigning the programmable buttons. Windows 98 lacked generic support.
 Driver Verifier was introduced to stress test and catch device driver
 bugs.
 
-## Shell 
+## Shell
 
 Windows 2000 introduces layered windows that allow for transparency,
 translucency and various transition effects like shadows, gradient fills
@@ -227,7 +231,7 @@ Indexing Service has also been integrated into the operating system and
 the search pane built into Explorer allows searching files indexed by
 its database.
 
-## NTFS 3.0 
+## NTFS 3.0
 
 Microsoft released the version 3.0 of NTFS (sometimes incorrectly called
 \"NTFS 5\" in relation to the kernel version number) as part of Windows
@@ -251,7 +255,7 @@ Tracking service for tracking the targets of shortcuts, so that the
 shortcut file may be silently updated if the target moves, even to
 another hard drive.
 
-## Encrypting File System 
+## Encrypting File System
 
 The Encrypting File System (EFS) introduced strong file system-level
 encryption to Windows. It allows any folder or drive on an NTFS volume
@@ -277,7 +281,7 @@ belonging to other users using a special private key. By default, local
 administrators are recovery agents however they can be customized using
 Group Policy.
 
-## Basic and dynamic disk storage 
+## Basic and dynamic disk storage
 
 Windows 2000 introduced the Logical Disk Manager and the diskpart
 command line tool for dynamic storage. All versions of Windows 2000
@@ -310,7 +314,7 @@ volumes and striped volumes with parity:
   data to be \"rebuilt\" in the event a disk in the array needs
   replacement.
 
-## Accessibility 
+## Accessibility
 
 With Windows 2000, Microsoft introduced the Windows 9x accessibility
 features for people with visual and auditory impairments and other
@@ -354,7 +358,7 @@ features:
 - Accessibility Wizard: a control panel applet that helps users set up
   their computer for people with disabilities.
 
-## Languages and locales 
+## Languages and locales
 
 Windows 2000 introduced the Multilingual User Interface (MUI). Besides
 English, Windows 2000 incorporates support for Arabic, Armenian, Baltic,
@@ -363,7 +367,7 @@ Korean, simplified Chinese, Thai, traditional Chinese, Turkic,
 Vietnamese and Western European languages. It also has support for many
 different locales.
 
-## Games 
+## Games
 
 Windows 2000 included version 7.0 of the DirectX API, commonly used by
 game developers on Windows 98. The last version of DirectX that was
@@ -379,7 +383,7 @@ can therefore run on Windows 2000.
 Windows 2000 included the same games as Windows NT 4.0 did: FreeCell,
 Minesweeper, Pinball, and Solitaire.
 
-## System utilities 
+## System utilities
 
 Windows 2000 introduced the Microsoft Management Console (MMC), which is
 used to create, save, and open administrative tools. Each of these is
@@ -439,7 +443,7 @@ were signed by Microsoft and works in conjunction with the Windows File
 Protection mechanism. It can also repopulate and repair all the files in
 the Dllcache folder.
 
-## Recovery Console 
+## Recovery Console
 
 The Recovery Console is run from outside the installed copy of Windows
 to perform maintenance tasks that can neither be run from within it nor
@@ -465,7 +469,7 @@ Preinstalling the Recovery Console on the hard disk as a startup option
 in Boot.ini, via WinNT32.exe, with the /cmdcons switch. In this case, it
 can only be started as long as NTLDR can boot from the system partition.
 
-## Networking 
+## Networking
 
 Starting with Windows 2000, the Server Message Block (SMB) protocol
 directly interfaces with TCP/IP. In Windows NT 4.0, SMB requires the
@@ -477,7 +481,7 @@ is added to a cache. When it queries the same resource record name again
 and it is found in the cache, then the resolver does not query the DNS
 server. This speeds up DNS query time and reduces network traffic.
 
-## Server family features 
+## Server family features
 
 The Windows 2000 Server family consists of Windows 2000 Server, Windows
 2000 Advanced Server, Windows 2000 Small Business Server, and Windows
@@ -567,7 +571,7 @@ features built in:
   the Microsoft Distributed File System (DFS), Active Directory
   support and fault-tolerant storage.
 
-## Distributed File System 
+## Distributed File System
 
 The Distributed File System (DFS) allows shares in multiple different
 locations to be logically grouped under one folder, or DFS root. When
@@ -587,7 +591,7 @@ to DFS. DFS roots that exist on a domain must be hosted on a domain
 controller or on a domain member server. The file and root information
 is replicated via the Microsoft File Replication Service (FRS).
 
-## Active Directory 
+## Active Directory
 
 A new way of organizing Windows network domains, or groups of resources,
 called Active Directory, is introduced with Windows 2000 to replace
@@ -618,7 +622,7 @@ upgraded to support this. There should be one or more domain controllers
 to hold the Active Directory database and provide Active Directory
 directory services.
 
-## Volume fault tolerance 
+## Volume fault tolerance
 
 Along with support for simple, spanned and striped volumes, the Windows
 2000 Server family also supports fault-tolerant volume types. The types
@@ -636,7 +640,7 @@ surviving disks are combined mathematically with the data blocks from
 the surviving disks to reconstruct the data on the failed drive
 \"on-the-fly.\"
 
-## Editions 
+## Editions
 
 Microsoft released various editions of Windows 2000 for different
 markets and business needs: Professional, Server, Advanced Server and
@@ -696,7 +700,7 @@ released to manufacturing on August 11, 2000 and launched on September
 26, 2000. This edition was based on Windows 2000 SP1 and was not
 available at retail.
 
-## User interface 
+## User interface
 
 The User Interface of Windows 2000 was similar to that of Windows 9x
 operating systems. There is not much difference between these two. The

@@ -13,6 +13,10 @@ info:
     - "Succeeded by: Windows ME (released 2000)"
     - "Codename: Shell Update Release"
     - "Developed by: Microsoft Corporation"
+carousel_images:
+  - path: /WinPedia/Images/UI/Windows_NT4.0-UI.webp
+    alt: Windows NT4.0 UI
+    desc: A screenshot of Windows NT4.0
 ---
 
 Windows NT 4.0 is a major release of the Windows NT operating system
@@ -42,7 +46,7 @@ Windows NT 4.0 Embedded mainstream support ended on June 30, 2003,
 followed by extended support on July 11, 2006; and was succeeded by
 Windows XP Embedded.
 
-## Service Packs 
+## Service Packs
 
 Service Pack Date Released
 
@@ -82,7 +86,7 @@ signing, Syskey, boot improvements, WINS improvements, Routing and
 Remote Access Service (RRAS), PPTP, DCOM/HTTP tunneling improvements,
 IGMPv2, WMI, Active Accessibility and NTFS 3.0 support among others.
 
-## Features 
+## Features
 
 Although the chief enhancement has been the addition of the Windows 95
 shell, there are several major performance, scalability and feature
@@ -154,7 +158,7 @@ Windows NT 4.0 upgraded NTVDM\'s x86 emulation in the RISC versions from
 x86 versions of Windows NT 4.0 require the BIOS firmware. RISC versions
 of Windows NT 4.0 require the ARC firmware.
 
-## Editions 
+## Editions
 
 There are numerous different editions of Windows NT 4.0. They include:
 
@@ -201,7 +205,7 @@ There are numerous different editions of Windows NT 4.0. They include:
   4.0 Embedded ended on the same day support for Windows 98 and
   Windows Me ended on July 11, 2006.
 
-## User Interface 
+## User Interface
 
 Microsoft\'s Windows NT 4.0 was the first version of the NT family to
 feature a GUI similar to that of Windows 95. Windows NT 4.0 introduced

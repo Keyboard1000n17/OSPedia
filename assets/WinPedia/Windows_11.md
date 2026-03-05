@@ -13,6 +13,13 @@ info:
     - "Succeeded by: Latest major release of Microsoft Windows"
     - "Codename: Sun Valley"
     - "Developed by: Microsoft Corporation"
+carousel_images:
+  - path: /WinPedia/Images/UI/Windows_11-UI.webp
+    alt: Windows 11 UI
+    desc: A screenshot of Windows 11
+  - path: /WinPedia/Images/Wallpapers/Windows_11-wallpaper.webp
+    alt: Windows 11 wallpaper
+    desc: The default wallpaper for Windows 11.
 ---
 
 Windows 11 is the latest major release of Microsoft\'s Windows NT
@@ -69,7 +76,7 @@ PCs (the rest being other Windows editions and other operating systems
 such as macOS and Linux), and an estimated 8.6% share of all devices
 (including mobile, tablet and console) are running Windows 11.
 
-## Development 
+## Development
 
 In October 2019, Microsoft announced \"Windows 10X\", a future edition
 of Windows 10 designed exclusively for dual-touchscreen devices such as
@@ -133,7 +140,7 @@ DirectStorage technologies introduced by the Xbox Series X and Series S,
 will be integrated into Windows 11; the latter requiring a graphics card
 supporting DirectX 12 and an NVMe solid-state drive.
 
-## Features 
+## Features
 
 Windows 11, the first major Windows release since 2015, builds upon its
 predecessor by revamping the user interface to follow Microsoft\'s new
@@ -175,7 +182,7 @@ technologies introduced by the Xbox Series X and Series S, will be
 integrated into Windows 11; the latter requiring a graphics card
 supporting DirectX 12 and an NVMe solid-state drive.
 
-## Windows Subsystem for Android 
+## Windows Subsystem for Android
 
 On October 21, 2021, Windows Subsystem for Android (WSA) became
 available to Beta channel builds of Windows 11 for users in the United
@@ -191,7 +198,7 @@ WSA is based on the Intel Bridge runtime compiler; Intel stated that the
 technology is not dependent on its CPUs, and will also be supported on
 x86-64 and ARM CPUs from other vendors.
 
-## Setup 
+## Setup
 
 Home and Pro (since version 22H2) edition installation requires internet
 connection and Microsoft account login (only if for personal use on Pro)
@@ -201,7 +208,7 @@ methods that allowed local account creation during initial setup,
 complicating the bypass process further. All other editions are excluded
 from this requirement.
 
-## System security 
+## System security
 
 As part of the minimum system requirements, Windows 11 only runs on
 devices with a Trusted Platform Module 2.0 security coprocessor, albeit
@@ -217,7 +224,7 @@ processors for protection against zero-day exploits.
 Like its predecessor, Windows 11 also supports multi-factor
 authentication and biometric authentication through Windows Hello.
 
-## Artificial intelligence 
+## Artificial intelligence
 
 In subsequent updates, Microsoft added several features based on
 artificial intelligence (AI), like live captions, background noise
@@ -236,7 +243,7 @@ from the cyber security community, Microsoft delayed the feature in June 2024. A
 at later date in
 order to test added security measures.
 
-## Editions 
+## Editions
 
 Windows 11 is available in two main editions; the Home edition, which is
 intended for consumer users, and the Pro edition, which contains
@@ -272,7 +279,7 @@ fundamentally the same as their Windows 10 edition counterparts. Two new
 editions called IoT Enterprise Subscription and IoT Enterprise
 Subscription LTSC have been introduced in version 24H2.
 
-## User interface 
+## User interface
 
 A redesigned user interface is present frequently throughout the
 operating system, building upon the Fluent Design System; translucency,

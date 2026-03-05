@@ -13,6 +13,13 @@ info:
     - "Succeeded by: Windows 7 (released 2009)"
     - "Codename: Longhorn"
     - "Developed by: Microsoft Corporation"
+carousel_images:
+  - path: /WinPedia/Images/UI/Windows_Vista-UI.webp
+    alt: Windows Vista UI
+    desc: A screenshot of Windows Vista
+  - path: /WinPedia/Images/Wallpapers/Windows_Vista-wallpaper.webp
+    alt: Windows Vista Wallpaper
+    desc: A screenshot of Windows Vista
 ---
 
 Windows Vista is a major release of the Windows NT series of operating
@@ -79,7 +86,7 @@ distribution of Windows Vista; OEM supply ceased a year later.
 Mainstream support for Windows Vista ended on April 10, 2012 and
 extended support ended on April 11, 2017.
 
-## Development 
+## Development
 
 Microsoft began work on Windows Vista, known at the time by its codename
 \"Longhorn\", in May 2001, five months before the release of Windows XP.
@@ -104,7 +111,7 @@ the security of the Windows codebase, which is programmed in C, C++ and
 assembly. Longhorn became known as Vista in 2005. Vista in Spanish means
 view.
 
-## Longhorn 
+## Longhorn
 
 The early development stages of Longhorn were generally characterized by
 incremental improvements and updates to Windows XP. During this period,
@@ -170,7 +177,7 @@ the system could be deemed \"trusted\". Also at this conference,
 Microsoft reiterated their roadmap for delivering Longhorn, pointing to
 an \"early 2005\" release date.
 
-## Development reset 
+## Development reset
 
 By 2004, it had become obvious to the Windows team at Microsoft that
 they were losing sight of what needed to be done to complete the next
@@ -221,7 +228,7 @@ used by all of the development teams. A number of complaints came from
 individual developers, and Bill Gates himself, that the new development
 process was going to be prohibitively difficult to work within.
 
-## As Windows Vista 
+## As Windows Vista
 
 By approximately November 2004, the company had considered several names
 for the final release, ranging from simple to fanciful and inventive. In
@@ -330,7 +337,7 @@ subscribers. A business-oriented Enterprise edition was made available
 to volume license customers on November 30, 2006. Windows Vista was
 launched for general customer availability on January 30, 2007.
 
-## Features 
+## Features
 
 New features introduced by Windows Vista are very numerous, encompassing
 significant functionality not available in its predecessors. Do not
@@ -390,7 +397,7 @@ A list of these features include:
   updates to (or complete replacements of) many core subsystems such
   as Winlogon and CAPI.
 
-## End-user 
+## End-user
 
 Windows Aero is the new graphical user interface, which Jim Allchin
 stated is an acronym for Authentic, Energetic, Reflective, and Open.
@@ -606,7 +613,7 @@ across compatible applications.
   Interface packages; and Windows Dreamscene, which allowed using MPEG
   and WMV videos as the desktop background.
 
-## Core 
+## Core
 
 Vista includes technologies such as ReadyBoost and ReadyDrive, which
 employ fast flash memory (located on USB flash drives and hybrid hard
@@ -655,7 +662,7 @@ compatibility with some legacy applications. A Kernel Transaction
 Manager has been implemented that enables applications to work with the
 file system and Registry using atomic transaction operations.
 
-## Security-related 
+## Security-related
 
 Improved security was a primary design goal for Vista. Microsoft\'s
 Trustworthy Computing initiative, which aims to improve public trust in
@@ -748,7 +755,7 @@ identified. This is also on par with one of the primary goals of Vista
 to move code out of kernel-mode into user-mode drivers, with another
 example being the new Windows Display Driver Model.
 
-## System management 
+## System management
 
 While much of the focus of Vista\'s new capabilities highlighted the new
 user interface, security technologies, and improvements to the core
@@ -783,7 +790,7 @@ features:
   on the logged-on user\'s preference.
 - Wireless Projector support
 
-## Developer 
+## Developer
 
 Windows Vista includes a large number of new application programming
 interfaces. Chief among them is the inclusion of version 3.0 of the .NET
@@ -839,7 +846,7 @@ hardware overlay is not supported, because it is considered as an
 obsolete feature in Vista. ATI and NVIDIA strongly recommend using
 compositing desktop/Framebuffer Objects for same functionality.
 
-## Installation 
+## Installation
 
 Windows Vista is the first Microsoft operating system:
 
@@ -866,7 +873,7 @@ input a manufacturer-supplied license).
 - That can be installed on and booted from systems with GPT disks and
   UEFI firmware.
 
-## Removed features 
+## Removed features
 
 Some notable Windows XP applications and features have been replaced or
 removed in Windows Vista, including Active Desktop, MSN Explorer,
@@ -875,7 +882,7 @@ Messenger. Several multimedia features, networking features, and Shell
 and Windows Explorer features such as the Luna visual style are no
 longer available.
 
-## Editions 
+## Editions
 
 Windows Vista shipped in six different product editions. These were
 deviced across separate consumer and business target markets, with
@@ -896,7 +903,7 @@ Home Basic N and Business N variants without Windows Media Player are
 also available due to sanctions brought against Microsoft for violating
 anti-monopoly laws; similar sanctions exist in South Korea.
 
-## User interface 
+## User interface
 
 Windows Aero is the new graphical user interface, which Jim Allchin
 stated is an acronym for Authentic, Energetic, Reflective, and Open.

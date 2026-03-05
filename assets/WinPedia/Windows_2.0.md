@@ -13,10 +13,15 @@ info:
     - "Succeeded by: Windows 3.0 (released 1990)"
     - "Codename: None"
     - "Developed by: Microsoft Corporation"
+carousel_images:
+  - path: /WinPedia/Images/UI/Windows_2.0-UI.webp
+    alt: Windows 2.0 UI
+    desc: A screenshot of Windows 2.0
 ---
 
 Windows 2.0 is the second major release of the Microsoft Windows series
-of Operating Systems. It was released to manufaturing on December 9, 1987. It refined the User Interface of Windows 1.0 and introduced
+of Operating Systems. It was released to manufaturing on December 9, 1987.
+It refined the User Interface of Windows 1.0 and introduced
 multiple improvments.
 
 +++
@@ -28,7 +33,7 @@ overlapping windows, desktop icons, keyboard shortcuts, support for
 16-color VGA graphics, and Microsoft Word and Excel. The OS was noted as
 an improvement over its predecessor.
 
-## Release Version/Editions 
+## Release Version/Editions
 
 The operating environment came in two different variants with different
 names and CPU support. The basic edition supported the virtual 8086 mode
@@ -58,7 +63,7 @@ is compatible with Virtual Control Program Interface (VCPI) in
 enhanced\" mode. Microsoft ended its support for Windows 2.0 on December
 31, 2001.
 
-## Features 
+## Features
 
 Unlike its predecessor, Windows 2.0 allows the user to overlap and
 resize application windows. It has also introduced desktop icons,
@@ -83,7 +88,7 @@ WINOLDAP.GRB are used to run MS-DOS programs.
 IBM licensed Windows\'s GUI for OS/2 as Presentation Manager, and the
 two companies stated that it and Windows 2.0 would be almost identical.
 
-## User Interface 
+## User Interface
 
 Windows 2.0 introduced dialogue boxes which provided a standard way for
 users to interact with applications. Drop-down menus were introduced in

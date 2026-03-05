@@ -13,6 +13,13 @@ info:
     - "Succeeded by: Windows 8.1 (released 2013)"
     - "Codename: Sun Valley"
     - "Developed by: Microsoft Corporation"
+carousel_images:
+  - path: /WinPedia/Images/UI/Windows_8-UI.webp
+    alt: Windows 8 UI
+    desc: A screenshot of Windows 8
+  - path: /WinPedia/Images/Wallpapers/Windows_8-wallpaper.webp
+    alt: Windows 8 Wallpaper
+    desc: A screenshot of Windows 8
 ---
 
 Windows 8 is a major release of the Windows NT operating system

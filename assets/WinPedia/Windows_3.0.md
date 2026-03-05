@@ -13,6 +13,10 @@ info:
     - "Succeeded by: Windows 3.1 (released 1987)"
     - "Codename: Janus"
     - "Developed by: Microsoft Corporation"
+carousel_images:
+  - path: /WinPedia/Images/UI/Windows_3.0-UI.webp
+    alt: Windows 3.0 UI
+    desc: A screenshot of Windows 3.0
 ---
 
 Windows 3.0 is the third major release of Microsoft Windows, launched on
@@ -39,7 +43,7 @@ adding the File Manager, using the MS-DOS Prompt during your Windows
 session and the Program Manager instead of MS-DOS Executive to launch
 programs.
 
-## Development 
+## Development
 
 Before Windows 3.0, a partnership bundled IBM\'s personal computers with
 Microsoft\'s MS-DOS since 1981. Microsoft had previous attempted to
@@ -112,7 +116,7 @@ On December 31, 2001, Microsoft dropped support for Windows 3.0, along
 with previous versions of Windows and Windows 95, Windows for
 Workgroups, and MS-DOS versions up to 6.22.
 
-## Updates / Editions 
+## Updates / Editions
 
 Windows 3.0 was the only version of Windows that could be run in three
 different memory modes:
@@ -180,7 +184,7 @@ features included additional applets such as an alarm clock and Media
 Player, used to run media files. MME supports stereo sound and 16-bit
 audio bit depth and sampling rates of up to 44.1 kHz.
 
-## Features 
+## Features
 
 Windows 3.0 features a significantly revamped graphical user interface
 (GUI), which was described as having a three-dimensional look similar to
@@ -243,7 +247,7 @@ DOS applications, which may have help functions as part of them, Windows
 Help is a separate and readily accessible application that accompanies
 all Windows programs that support it.
 
-## User Interface 
+## User Interface
 
 Windows 3.0 features a significantly revamped graphical user interface
 (GUI) that represents applications as clickable icons, instead of the

@@ -17,9 +17,6 @@ carousel_images:
   - path: "/WinPedia/Images/UI/Windows_1.0-UI.webp"
     alt: "Screenshot of Windows 1.0"
     desc: "A screenshot of Windows 1.0's UI."
-  - path: "/WinPedia/Images/UI/Windows_2.0-UI.webp"
-    alt: "Screenshot of Windows 2.0"
-    desc: "A screenshot of Windows 2.0's UI."
 ---
 
 Windows 1.0 was the first major version of the Microsoft Windows series

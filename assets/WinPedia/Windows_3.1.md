@@ -13,6 +13,10 @@ info:
     - "Succeeded by: Windows 95 (released 1995)"
     - "Codename: Janus"
     - "Developed by: Microsoft Corporation"
+carousel_images:
+  - path: /WinPedia/Images/UI/Windows_3.1-UI.webp
+    alt: Windows 3.1 UI
+    desc: A screenshot of Windows 3.1
 ---
 
 Windows 3.1 is a major release of Microsoft Windows. It was released to
@@ -49,7 +53,7 @@ amount of sold copies. It was succeeded by Windows 95, and Microsoft
 ended the support for Windows 3.1 series on December 31, 2001, except
 for the embedded version, which was retired in 2008.
 
-## Development 
+## Development
 
 Windows 3.0, the predecessor of 3.1, was released in 1990, and is
 considered to be the first version of Windows to receive critical
@@ -67,7 +71,7 @@ its operating environment on different types of PCs. Tandy Corporation
 was open to shipping Tandy Sensation PCs with the Windows 3.1 operating
 environment. IBM and its PCs were also provided with Windows 3.1.
 
-## Features 
+## Features
 
 Further enhancements were introduced in Windows 3.1. The TrueType font
 system was introduced to provide scalable fonts to Windows applications,
@@ -141,7 +145,7 @@ includes an online tutorial applet for users regarding the use of the
 Windows 3.1 user interface. In addition it supported the Advanced Power
 Management standard.
 
-## Editions 
+## Editions
 
 \
 [Windows 3.1 for Central and Eastern Europe]
@@ -234,7 +238,7 @@ towards businesses. The two vesion released are:
   redirectors. It was sold in two versions; the complete package cost
   \$219 while the \"Workgroup Add-on for Windows\" cost \$69.
 
-## User Interface 
+## User Interface
 
 Windows 3.1 changed some icons, of which the most notable change is the
 addition of color to icons. Some icons changed include the ones for File

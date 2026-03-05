@@ -13,6 +13,10 @@ info:
     - "Succeeded by: Windows NT 4.0 (released 1996); Windows 98 (released 1998)"
     - "Codename: Chicago"
     - "Developed by: Microsoft Corporation"
+carousel_images:
+  - path: /WinPedia/Images/UI/Windows_95-UI.webp
+    alt: Windows 95 UI
+    desc: A screenshot of Windows 95
 ---
 
 Windows 95 is a consumer-oriented operating system developed by
@@ -49,7 +53,7 @@ launch programs. The taskbar held the Start button, running and pinned
 applications, and the system tray, which consisted of the time, volume
 and other icons.
 
-## Development 
+## Development
 
 The initial design and planning of Windows 95 can be traced back to
 around March 1992, just around the time before the release of Windows
@@ -93,7 +97,7 @@ highlights. The preview versions expired in November 1995, after which
 the user would have to purchase their copy of the final version of
 Windows 95.
 
-## Features 
+## Features
 
 Windows 95 included support for 255-character mixed-case long filenames
 and preemptively multitasked protected-mode 32-bit applications. 16-bit
@@ -170,7 +174,7 @@ Windows 95 introduced computer accessibility features like Sticky keys,
 FilterKeys, ToggleKeys, Mouse keys. Microsoft Active Accessibility API
 was introduced as an add-on for Windows 95.
 
-## Editions 
+## Editions
 
 Several Windows 95 editions have been released. Only the original
 release was sold as a shrink-wrapped product; later editions were
@@ -200,7 +204,7 @@ notable for featuring several changes to the Windows Explorer,
 integrating it with Internet Explorer 4.0---this version of Internet
 Explorer looks very similar to the one featured in Windows 98.
 
-## User Interface 
+## User Interface
 
 Windows 95 introduced a redesigned shell based around a desktop
 metaphor; File shortcuts (also known as shell links) were introduced and

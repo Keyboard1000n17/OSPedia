@@ -13,6 +13,13 @@ info:
     - "Succeeded by: Windows Vista (released 2007)"
     - "Codename: Whistler"
     - "Developed by: Microsoft Corporation"
+carousel_images:
+  - path: /WinPedia/Images/UI/Windows_XP-UI.webp
+    alt: Windows XP UI
+    desc: A screenshot of Windows XP
+  - path: /WinPedia/Images/Wallpapers/Windows_XP-wallpaper.webp
+    alt: Windows XP Wallpaper
+    desc: A screenshot of Windows XP
 ---
 
 Windows XP is a major release of Microsoft\'s Windows NT operating
