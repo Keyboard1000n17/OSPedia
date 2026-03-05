@@ -628,7 +628,7 @@
 
     &.hidden {
       opacity: 0;
-      visibility: none;
+      visibility: hidden;
     }
 
     div.carousel {
@@ -638,6 +638,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      @include scrollbars();
     }
 
     figure {
@@ -683,10 +684,10 @@
       &::after {
         content: " ";
         position: absolute;
-        width: 2rem;
-        height: 2rem;
-        top: 50%;
-        left: 54%;
+        width: 1rem;
+        height: 1rem;
+        // top: 50%;
+        left: 80%;
         border-right: 2px solid black;
         border-bottom: 2px solid black;
         transform: translate(-50%, -50%) rotate(135deg);
@@ -701,7 +702,7 @@
       right: 0;
 
       &::after {
-        left: 47%;
+        left: 80%;
         transform: translate(-50%, -50%) rotate(-45deg);
       }
     }
