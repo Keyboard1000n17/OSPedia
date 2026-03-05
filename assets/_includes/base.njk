@@ -23,18 +23,23 @@
 </head>
 
 {% if background_image %}
-{% if tags and "homepages" in tags %}
+{% if page.url == "/" %}
+{% set style = "background-image: url(\"/global/OSPedia-background.svg\")" %}
+{% elseif tags and "homepages" in tags %}
 {% set style = "background-image: url(\"" ~ background_image ~ "\")" %}
-{% else %}
+{% elseif tags and "winpedia-pages" in tags or "macpedia-pages" in tags %}
 {% set style = "background-image: url(\"./Images/Wallpapers/" ~ background_image ~ "\")" %}
 {% endif %}
 {% endif %}
 
-<body>
+<body style="{{ style }}">
 
   {% include "_nav.njk" %}
   <div class="wrapper">
-    {% include "_aside.njk" %}
+    <div class="contents">
+      <h2 id="toc">Contents</h2>
+      <noscript>Enable JavaScript for the best experience!</noscript>
+    </div>
     {% if tags and "win-demo-pages" in tags %}
     <main data-pagefind-ignore>
       <h1>{{ title }}</h1>
@@ -62,7 +67,7 @@
 
     {% else %}
 
-    <main style="{{ style }}">
+    <main>
       <div class="content">
         {% if tags and not "homepages" in tags %}
         {% include "_page-nav.njk" %}
@@ -80,10 +85,28 @@
     </main>
 
     {% endif %}
-    <div class="contents">
-      <h2 id="toc">Contents</h2>
-      <noscript>Enable JavaScript for the best experience!</noscript>
+    <div class="extras">
+      {% if carousel_images %}
+      <h2>Carousel</h2>
+      <button class="carousel-open">Open Carousel</button>
+      {% endif %}
     </div>
+    {% if carousel_images %}
+    <section class="carousel-wrapper hidden">
+      <div class="carousel">
+        {% for image in carousel_images %}
+        <figure>
+          <img src="{{ image.path }}" alt="{{ image.alt }}" class="carousel-image">
+          <figcaption>{{ image.desc }}</figcaption>
+        </figure>
+        {% endfor %}
+      </div>
+      <img src="/global/Images/close.png" alt="Close button" class="carousel-close">
+      <div class="carousel-prev"></div>
+      <div class="carousel-next"></div>
+    </section>
+    <div class="carousel-backdrop hidden"></div>
+    {% endif %}
   </div>
 
   {% if tags and "macpedia-pages" in tags %}
@@ -98,7 +121,7 @@
   </template>
   {% if json_path %}
   <script>
-    window.jsonData = "{{json_path}}";
+    window.jsonData = "{{ json_path }}";
   </script>
   {% endif %}
   <script src="/MacPedia/tables.js"></script>
@@ -108,6 +131,7 @@
   <div class="pagefind-ui__blur"></div>
   <script src="/script.js"></script>
   <script src="/themes.js"></script>
+  <script src="/carousel.js"></script>
 </body>
 
 </html>

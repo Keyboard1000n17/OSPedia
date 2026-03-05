@@ -41,14 +41,14 @@ module.exports = function(eleventyConfig) {
   // WinPedia collection (excluding home.html)
   eleventyConfig.addCollection("winpedia-pages", function(collectionApi) {
     return collectionApi
-      .getFilteredByGlob("assets/WinPedia/!(home).html")
+      .getFilteredByGlob("assets/WinPedia/*.md")
       .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
   });
 
   // MacPedia collection (excluding home.html)
   eleventyConfig.addCollection("macpedia-pages", function(collectionApi) {
     return collectionApi
-      .getFilteredByGlob("assets/MacPedia/!(home).html")
+      .getFilteredByGlob("assets/MacPedia/*.md")
       .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
   });
 
@@ -61,7 +61,7 @@ module.exports = function(eleventyConfig) {
     },
     templateFormats: ["html", "njk", "md"], // allow processing of HTML with frontmatter
     htmlTemplateEngine: "njk", // treat HTML as Nunjucks
-    markdownTemplateEngine: "njk", // treat markdown with Nunjucks
+    // markdownTemplateEngine: "njk", // treat markdown with Nunjucks
     passthroughFileCopy: true, // enable passthrough copy
   };
 };

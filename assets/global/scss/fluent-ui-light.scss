@@ -1,8 +1,7 @@
 @use "./variables-fluent-ui-light" as *;
 @use "./mixins" as *;
 
-@include styles(
-  $background-color,
+@include styles($background-color,
   $blur,
   $border,
   $border-radius,
@@ -11,18 +10,9 @@
   $link,
   $search-mask,
   $background-color-2,
-  $color
-);
+  $color);
 
-h2#toc,
+// h2#toc,
 div#back-to-top {
   color: black;
-}
-
-div.content {
-  background-color: rgba(0, 0, 0, 0.1) !important;
-}
-
-div.version-list a {
-  filter: drop-shadow(0 0 10px black);
 }

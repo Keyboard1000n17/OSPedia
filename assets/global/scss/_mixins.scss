@@ -46,7 +46,6 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    background-image: url(/global/OSPedia-background.svg);
 
     @media (min-width: 769px) {
       overflow: hidden;
@@ -58,17 +57,17 @@
   div.wrapper {
     width: 100%;
     overflow-x: hidden;
-    background-color: $background-color-2;
+    background-color: $background-color;
 
     @media (min-width: 769px) {
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: min-content 2fr;
       grid-template-rows: 100dvh;
       backdrop-filter: $blur;
       height: 100dvh;
       overflow: hidden;
 
-      aside.tree {
+      div.contents {
         grid-column: 1;
       }
 
@@ -82,7 +81,7 @@
       grid-template-columns: 1fr 864px 1fr;
       grid-template-rows: 1fr;
 
-      aside.tree {
+      div.contents {
         grid-row: 1;
         grid-column: 1;
       }
@@ -92,7 +91,7 @@
         grid-column: 2;
       }
 
-      div.contents {
+      div.extras {
         grid-row: 1;
         grid-column: 3;
       }
@@ -100,8 +99,8 @@
   }
 
   main,
-  aside.tree,
-  div.contents {
+  div.contents,
+  div.extras {
     padding: $padding;
     min-height: 0;
     overflow: scroll;
@@ -126,7 +125,7 @@
     scroll-behavior: smooth;
     grid-row: 2;
 
-    h2.level-one {
+    h2 {
       scroll-margin-top: 5rem;
       padding-top: 1rem;
       border-top: solid 1px white;
@@ -134,16 +133,13 @@
 
     div.content {
       width: 100%;
-      height: 100dvh;
+      height: calc(100dvh - 5rem);
       overflow-y: auto;
       overflow-x: hidden;
       position: relative;
       padding: $padding;
-      padding-bottom: calc(6 * $padding);
       box-sizing: border-box;
       @include scrollbars;
-      backdrop-filter: $blur;
-      background-color: $background-color-2;
     }
 
     @media (min-width: 769px) {
@@ -151,55 +147,25 @@
     }
   }
 
-  aside.tree {
+  div.contents {
     width: max-content;
     padding: $padding;
     padding-top: 5rem;
     display: none;
-    color: $text;
+    color: $color;
     overflow-x: hidden;
     scrollbar-width: thin;
     grid-column: 1;
     height: 100%;
     overflow: auto;
 
-    details {
-      margin: calc(1 / 3 * $padding);
-      transition: ease-out 0.3s;
-
-      &::details-content {
-        opacity: 0;
-        block-size: 0;
-        overflow: hidden;
-        content-visibility: hidden;
-        position: relative;
-        list-style-type: none;
-        transition: all ease-out 0.2s;
-      }
+    div.links {
+      display: flex;
+      flex-direction: column;
     }
 
-    details[open]::details-content {
-      opacity: 1;
-      block-size: auto;
-      top: 0;
-      content-visibility: visible;
-      transition: all ease-out 0.2s;
-      list-style-type: none;
-    }
-
-    summary::marker {
-      transform: rotate(90deg);
-      transition: all ease-out 0.2s;
-    }
-
-    p {
-      margin: 10px;
-    }
-
-    div.tree-os-name {
-      position: sticky;
-      top: 0;
-      font-size: 2rem;
+    a {
+      padding: calc($padding / 3) 0;
     }
 
     @media (min-width: 769px) {
@@ -210,19 +176,16 @@
     }
   }
 
-  div.contents {
+  div.extras {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    background-color: $background-color;
+    background-color: $background-color-2;
     padding: $padding;
     border-radius: $border-radius;
     margin-bottom: calc(2 * $padding);
     width: 100%;
-
-    h2 {
-      color: black;
-    }
+    color: $color;
 
     div.links {
       display: flex;
@@ -232,7 +195,6 @@
 
       a {
         padding: calc(1 / 4 * $padding) 0;
-        z-index: 10;
       }
 
       a.subheadings {
@@ -259,7 +221,6 @@
 
   h2#toc {
     scroll-margin-top: 5rem;
-    color: $color;
   }
 
   div#back-to-top {
@@ -269,18 +230,11 @@
     right: $padding;
     text-align: center;
     background-color: $background-color;
-    color: $color;
+    color: #000;
     border-radius: $border-radius;
-    z-index: 10;
-    backdrop-filter: $blur;
-    transition: ease-out 0.3s;
 
     a {
-      color: $color;
-    }
-
-    &:hover {
-      filter: drop-shadow(0 0 1px $background-color);
+      color: #000;
     }
 
     @media (min-width: 1440px) {
@@ -630,10 +584,6 @@
     padding-bottom: 0 !important;
     padding-right: 0 !important;
     height: 100% !important;
-
-    &::placeholder {
-      opacity: 0.7 !important;
-    }
   }
 
   .pagefind-ui__search-clear {
@@ -641,7 +591,6 @@
     top: 0 !important;
     right: 0 !important;
     padding: 0 2.5% !important;
-    border: 2px solid black;
   }
 
   .pagefind-ui__blur {
@@ -655,6 +604,137 @@
     left: 50%;
     transform: translateX(-50%);
     pointer-events: none;
+  }
+
+  // Styles for the carousel
+
+  section.carousel-wrapper {
+    overflow: hidden;
+    width: 80vw;
+    max-width: 864px;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 10;
+    color: white;
+    visibility: visible;
+    transition: opacity 0.3s ease-out;
+
+    * {
+      box-sizing: border-box;
+    }
+
+    &.hidden {
+      opacity: 0;
+      visibility: none;
+    }
+
+    div.carousel {
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      overflow-x: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 0 0 100%;
+      scroll-snap-align: center;
+      width: 100%;
+      gap: 2rem;
+    }
+
+    img.carousel-image {
+      opacity: 1;
+      position: relative;
+      // width: 100%;
+      z-index: 20;
+      height: 25rem;
+      transition:
+        transform 0.3s ease-out,
+        opacity 0.3s ease-out,
+        z-index 0.3s ease-out;
+    }
+
+    img.carousel-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1.5rem;
+      filter: invert(1);
+    }
+
+    div.carousel-prev,
+    div.carousel-next {
+      position: absolute;
+      top: 50%;
+      width: 3rem;
+      height: 3rem;
+      transform: translateX(-50%);
+      cursor: pointer;
+      z-index: 1000;
+
+      &::after {
+        content: " ";
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        top: 50%;
+        left: 54%;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        transform: translate(-50%, -50%) rotate(135deg);
+      }
+    }
+
+    div.carousel-prev {
+      left: 0;
+    }
+
+    div.carousel-next {
+      right: 0;
+
+      &::after {
+        left: 47%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+  }
+
+  button.carousel-open {
+    background-color: $background-color;
+    color: $color;
+    padding: calc(1 * $padding);
+    border: none;
+    border-radius: calc(1 * $border-radius);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  div.carousel-backdrop {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    // inset: 0;
+    position: fixed;
+    display: block;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.625);
+    backdrop-filter: $blur;
+    z-index: 7;
+    pointer-events: none;
+
+    &.hidden {
+      display: none;
+    }
   }
 
   // Table styling
@@ -746,24 +826,10 @@
   $border-radius,
   $color) {
   div.wrapper {
-    background-color: rgba(0, 0, 0, 0);
-
-    main {
-      color: $color;
-    }
+    background-color: $background-color-2;
 
     div.content {
-      background-color: rgba(0, 0, 0, 0);
       backdrop-filter: none;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-      backdrop-filter: $blur;
-      background-color: $background-color-2;
     }
 
     * {
@@ -862,7 +928,7 @@
     align-content: center;
   }
 
-  div.contents {
+  div.extras {
     display: none;
   }
 
