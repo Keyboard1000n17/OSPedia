@@ -220,7 +220,15 @@
     "build": "23J220",
     "release": "December 12, 2025",
     "darwinVersion": "24.6.0<p><small>xnu-11417.140.69.705.2~1</small></p><p><small>Wed Nov 5 21:49:21 PST 2025</small></p>",
-    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/109035\">macOS Sonoma 14.2 release notes</a></p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/125888\">About the security content of macOS Sonoma 14.8.3</a></p>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/125888\">About the security content of macOS Sonoma 14.8.3</a></p>",
+    "class": "previous-release"
+  },
+  {
+    "version": "14.8.4",
+    "build": "23J319",
+    "release": "February 11, 2026",
+    "darwinVersion": "23.6.0<p><small>xnu-10063.141.1.710.3~1</p></small><p><small>Mon Jan 19 22:02:22 PST 2026</p></small>",
+    "description": "Refer to Apple's webpages for information about this release:<p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/126350\">About the security content of macOS Sonoma 14.8.4</a></p>",
     "class": "current-release"
   }
 ]

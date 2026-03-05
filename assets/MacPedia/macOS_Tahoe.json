@@ -48,11 +48,27 @@
     "class": "current-release"
   },
   {
-    "version": "26.3 beta 1 (a)",
-    "build": "25D770870b",
-    "release": "January 6, 2026",
-    "darwinVersion": "Unavailable",
+    "version": "26.3",
+    "build": "25D125",
+    "release": "February 11, 2026",
+    "darwinVersion": "25.3.0<p><small>xnu-12377.81.4~5</small></p><p><small>Wed Jan 28 21:54:22 PDT 2026</small></p>",
+    "description": "This update provides important bug fixes and security updates.<br>Refer to Apple's webpages for information about this release:<p><a href=\"https://support.apple.com/en-us/126348\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS Tahoe 26.3</a></p>",
+    "class": "previous-release"
+  },
+  {
+    "version": "26.3.1",
+    "build": "25D2128",
+    "release": "March 4, 2026",
+    "darwinVersion": "25.3.0<p><small>xnu-12377.81.4~5</small></p><p><small>Build timestamp currently unknown</small></p>",
     "description": "Unavailable",
-    "class": "beta-release"
+    "class": "current-release"
+  },
+  {
+    "version": "26.4 beta 3",
+    "build": "25E5223i",
+    "release": "March 3, 2026",
+    "darwinVersion": "25.4.0",
+    "description": "Unavailable",
+    "class": "current-release"
   }
 ]

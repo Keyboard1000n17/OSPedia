@@ -16,7 +16,8 @@ info:
     - "Succeeded by: macOS Sequoia (version 15)"
     - "Kernel type: Hybrid (XNU)"
     - >
-      Support status: Recieving security updates.
+      Receiving security updates for devices that cannot be upgraded and/or
+      users who deferred upgrades to macOS Sequoia or later.
 carousel_images:
   - path: /MacPedia/Images/UI/Sonoma-UI.webp
     alt: macOS Sonoma screenshot
