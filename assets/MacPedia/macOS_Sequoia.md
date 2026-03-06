@@ -3,6 +3,7 @@ title: macOS Sequoia
 favicon: Sequoia-icon.webp
 order: 220
 background_image: Sequoia-wallpaper.webp
+jsonData: ./macOS_Sequoia.json
 info:
   icon:
     - alt: macOS Sequoia logo
@@ -111,16 +112,16 @@ on productivity:
   such as an iPhone, Apple Watch or Apple TV. As an independent app, it can also
   be pinned to the Dock.
 
-[New Unicode characters font support] [macOS 15.0]
+### New Unicode characters font support (macOS 15.0)
 
 - Bengali Abbreviation Sign (U+09FD) (10.0)
 - CJK Unified Ideographs Extension G (U+30EDD-U+30EDE) (13.0)
 
-[macOS 15.1]
+### macOS 15.1
 
 - Mongolian Free Variation Selector (U+180F) (14.0)
 
-[macOS 15.2]
+### macOS 15.2
 
 - Arabic End of Text Mark (U+061D) (14.0)
 - Gujarati Marks (U+0AFA-U+0AFF) (10.0)
@@ -136,7 +137,7 @@ on productivity:
 - Malayalam Fractions (U+0D76-U+0D78) (9.0)
 - Sinhala Sign Candrabindu (U+0D81) (13.0)
 
-[Revived Unicode Characters Font Support]
+### Revived Unicode Characters Font Support
 
 - Mongolian Letter Cha with Two Dots (U+1878) (11.0)
 - Mongolian Supplement (U+11660-U+1166C) (9.0)
@@ -147,16 +148,37 @@ The first developer beta of macOS Sequoia was released on June 10, 2024. As with
 macOS Sonoma, the Sequoia developer betas are available to anyone with an Apple
 Developer account, without needing a developer subscription.
 
----
-
-Previous release Current release Current beta release Security response
-
----
-
----
-
-Version Build Release date Darwin version Release Notes
-
----
+<table>
+  <tr>
+    <td
+      class="top-left bottom-left previous-release"
+    >
+      Previous release
+    </td>
+    <td class="top bottom current-release">
+      Current release
+    </td>
+    <td class="top bottom beta-release">
+      Current beta release
+    </td>
+    <td
+      class="top-right bottom-right security-response"
+    >
+      Security response
+    </td>
+  </tr>
+</table>
+<table class="releases">
+  <caption class="top-left top-right">macOS Tahoe Releases</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+  </tbody>
+</table>
 
 ## User Interface

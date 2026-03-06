@@ -130,7 +130,7 @@ Monterey introduced several new features and changes, including the following:
 - Support for ProMotion in new 2021 MacBook Pro
 - New Object Capture API for creating 3D models using images
 
-[Applications]
+### Applications
 
 In the Notes application, users can now apply arbitrary tags to a note (e.g.,
 #cooking, #work); groups of notes with a given tag or tags can be viewed in
@@ -138,11 +138,11 @@ Smart Folders or a Tag Browser in the sidebar. The new Quick Notes function
 enables a user to create a note from within any app via system-wide keyboard
 shortcut or hot corner.
 
-[Maps]
+### Maps
 
 Apple Maps adds a 3D globe, with increased mountain, desert, and forest detail.
 
-[Messages]
+### Messages
 
 Messages supports new features, also introduced in iOS 15, such as \"Shared with
 You\" which provides shortcut links to content shared via Messages in other
@@ -154,10 +154,37 @@ photos simultaneously.
 
 ## Release History
 
----
-
-Version Build Release Date Darwin Version Release Notes
-
----
+<table>
+  <tr>
+    <td
+      class="top-left bottom-left previous-release"
+    >
+      Previous release
+    </td>
+    <td class="top bottom current-release">
+      Current release
+    </td>
+    <td class="top bottom beta-release">
+      Current beta release
+    </td>
+    <td
+      class="top-right bottom-right security-response"
+    >
+      Security response
+    </td>
+  </tr>
+</table>
+<table class="releases">
+  <caption class="top-left top-right">macOS Tahoe Releases</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+  </tbody>
+</table>
 
 ## User Interface

@@ -3,6 +3,7 @@ title: macOS Sierra
 favicon: Sierra-icon.webp
 order: 140
 background_image: Sierra-wallpaper.webp
+jsonData: ./macOS_Sierra.json
 info:
   icon:
     - alt: macOS Sierra logo
@@ -63,7 +64,7 @@ Sierra dropped support for various Macs released from mid 2007 to mid 2009, the
 first version of macOS since OS X Mountain Lion, released in 2012, to do so.
 Support for Xserve was also dropped in Sierra.
 
-[Workarounds for unsupported systems]
+### Workarounds for unsupported systems
 
 Some developers have created workarounds to install macOS Sierra on certain Mac
 computers that are no longer officially supported as long as they are packed
@@ -72,7 +73,7 @@ install image.
 
 ## Features
 
-[System features]
+### System features
 
 The user can access the Siri intelligent assistant via the Dock, the menu bar or
 a keyboard shortcut and results are shown in a window in the upper-right corner.
@@ -80,7 +81,7 @@ Siri can send messages, search the web, find files and adjust settings. Results
 can be dropped into other applications or pinned to Notification Center. For
 instance, pictures from search results can be dragged into a document.
 
-[iCloud Drive and Optimized Storage]
+### iCloud Drive and Optimized Storage
 
 iCloud Drive can upload the user\'s documents and desktop directories and sync
 them to other devices. The System Information application has a new section that
@@ -91,25 +92,25 @@ copies, keeping them available on-demand in Finder. It can also remove old files
 from trash automatically. iTunes can delete watched, purchased films and TV
 programs from its library.
 
-[Auto Unlock and Universal Clipboard]
+### Auto Unlock and Universal Clipboard
 
-Building upon Continuity, an \"umbrella term \[for\] features that facilitate
-the communication between \[Apple devices\]\" using Bluetooth and Wi-Fi, Sierra
-adds two features. With Auto Unlock, the user can unlock their user account by
-holding a paired Apple Watch close to the device. Time of flight is used to
-prevent relay attacks. Auto Unlock requires a Mac that was introduced in 2013 or
-later. With Universal Clipboard, the user can share the clipboard for cut, copy
-and paste between macOS Sierra and iOS 10 devices, including text and rich
-content, such as pictures or videos.
+Building upon Continuity, an \"umbrella term \### for\ features that facilitate
+the communication between \### Apple devices\\" using Bluetooth and Wi-Fi,
+Sierra adds two features. With Auto Unlock, the user can unlock their user
+account by holding a paired Apple Watch close to the device. Time of flight is
+used to prevent relay attacks. Auto Unlock requires a Mac that was introduced in
+2013 or later. With Universal Clipboard, the user can share the clipboard for
+cut, copy and paste between macOS Sierra and iOS 10 devices, including text and
+rich content, such as pictures or videos.
 
-[Tabs and Picture-in-Picture]
+### Tabs and Picture-in-Picture
 
 Applications that support multiple windows can support multiple tabs within a
 single window, allowing the user to keep windows organized similarly to Safari.
 With Picture-in-Picture, videos can be played in a window that follows the user
 across the system.
 
-[Apple File System]
+### Apple File System
 
 Apple released a preview of a new file system in Sierra, called Apple File
 System (APFS), to overcome the limitations of HFS Plus. APFS is intended for
@@ -119,7 +120,7 @@ features that Apple already provides in HFS Plus through supplementary software,
 such as file-system encryption and TRIM support. The file system was released in
 macOS High Sierra.
 
-[Night Shift]
+### Night Shift
 
 Night Shift is new in macOS 10.12.4, with the same functionality as its iOS
 counterpart. Night Shift reduces blue light at night to aid sleep. This can be
@@ -129,7 +130,7 @@ toggled on or off in the Notification Center or using Siri.
 Since this feature relies on the Metal framework, Night Shift is not available
 on all systems that support macOS Sierra.
 
-[Application features]
+### Application features
 
 Apple says it has improved the face recognition of the Photos application,
 adding object and scene recognition. It groups similar pictures together using
@@ -138,7 +139,7 @@ picture slideshows with transitions and music selected by the algorithm, which
 can be modified to the user\'s liking. The \"People\" album organizes photos by
 the people in them, and Places shows all photos on a world map.
 
-[Safari and Apple Pay]
+### Safari and Apple Pay
 
 Safari provides an \"extension point\" which enables developers to bundle Safari
 extensions within their Cocoa applications and communicate with them directly
@@ -153,7 +154,7 @@ purchase using an iPhone or Apple Watch. Apple Pay requires a Mac that supports
 Continuity (2012 or later models) and either an iPhone 6 or later with iOS 10,
 or an Apple Watch with watchOS 3.
 
-[Messages]
+### Messages
 
 The Messages app adds aesthetic effects to messages, such as three times bigger
 emojis and click back with hearts or thumbs-up on a message bubble. The ability
@@ -161,7 +162,7 @@ to play YouTube videos and preview links in a conversation was introduced. Users
 can view interactive content added to iMessage in iOS 10. The app also allows
 you to turn on or off read receipts on a conversation by conversation basis.
 
-[iTunes]
+### iTunes
 
 Apple Music within iTunes has been redesigned, making it simpler to find
 favorite songs and discover new ones. A new \"For You\" tab has been added,
@@ -169,12 +170,12 @@ which suggests new music the user might like (similar to the existing Genius). A
 refined MiniPlayer with the ability to view lyrics while listening has also been
 introduced.
 
-[Notes]
+### Notes
 
 The Notes app allows the user to share and collaborate on notes. This is done by
 clicking on a share button at the top of the window.
 
-[Other changes]
+### Other changes
 
 - Disk Utility regains the ability to format and manage RAID sets, after it was
   removed in El Capitan.
@@ -185,7 +186,7 @@ clicking on a share button at the top of the window.
 - 13 & 15-inch Retina MacBook Pros now default to integer scaled over
   nearest-neighbor scaled resolutions to fit more content.
 
-[Security improvements]
+### Security improvements
 
 macOS Sierra slightly changes the Gatekeeper user interface and adds two new
 mechanisms. A new default in System Preferences hides the \"Anywhere\" option
@@ -209,7 +210,7 @@ the application bundle and its external files on a signed disk image or in a
 signed installer package. The user can avoid this mechanism by moving the
 application bundle without its external files to a new location.
 
-[Directory permissions and sudo]
+### Directory permissions and sudo
 
 The Unix permissions for writing to the `/Volumes` directory are now restricted
 to root and no longer \"world-writable\". Apple expanded System Integrity
@@ -225,7 +226,7 @@ user, typically as root, is configured with the \"tty_tickets\" flag by default,
 restricting the session timeout to the terminal session (such as a window or
 tab) in which the user authenticated the program.
 
-[Removed functionality]
+### Removed functionality
 
 - Sierra removes support for garbage collection from the Objective-C runtime, a
   memory-management system that was added in Mac OS X Leopard (version 10.5) and
@@ -240,48 +241,37 @@ tab) in which the user authenticated the program.
 
 ## Release History
 
-Version Build Release date Darwin version Release notes
-
----
-
-10.12 16A323 September 20, 2016 16.0.0 Original Mac App Store release 10.12.1
-16B2555 October 24, 2016 16.1.0 About the macOS Sierra 10.12.1 Update 16B2657
-October 27, 2016  
- 10.12.2 16C67 December 13, 2016 16.3.0 About the macOS Sierra 10.12.2 Update
-16C68 December 14, 2016  
- 10.12.3 16D32 January 23, 2017 16.4.0 About the macOS Sierra 10.12.3 Update
-10.12.4 16E195 March 27, 2017 16.5.0 About the macOS Sierra 10.12.4 Update
-10.12.5 16F73 May 15, 2017 16.6.0 About the macOS Sierra 10.12.5 Update 10.12.6
-16G29  
- 16G1036 October 31, 2017 About the security content of Security Update 2017-001
-Sierra  
- 16G1114 December 6, 2017 About the security content of Security Update 2017-002
-Sierra  
- 16G1212 January 23, 2018 About the security content of Security Update 2018-001
-Sierra  
- 16G1314 March 29, 2018 About the security content of Security Update 2018-002
-Sierra  
- 16G1408 June 1, 2018 About the security content of Security Update 2018-003
-Sierra  
- 16G1510 July 9, 2018 About the security content of Security Update 2018-004
-Sierra  
- 16G1618 October 30, 2018 About the security content of Security Update 2018-005
-Sierra  
- 16G1710 December 5, 2018 About the security content of Security Update 2018-006
-Sierra  
- 16G1815 January 22, 2019 About the security content of Security Update 2019-001
-Sierra  
- 16G1917 March 25, 2019 About the security content of Security Update 2019-002
-Sierra  
- 16G1918 March 29, 2019 About the security content of Security Update 2019-002
-Sierra  
- 16G2016 May 14, 2019 About the security content of Security Update 2019-003
-Sierra  
- 16G2127 July 22, 2019 About the security content of Security Update 2019-004
-Sierra  
- 16G2128 July 29, 2019 About the security content of Security Update 2019-004
-Sierra  
- 16G2136 September 26, 2019 About the security content of Security Update
-2019-005 Sierra
+<table>
+  <tr>
+    <td
+      class="top-left bottom-left previous-release"
+    >
+      Previous release
+    </td>
+    <td class="top bottom current-release">
+      Current release
+    </td>
+    <td class="top bottom beta-release">
+      Current beta release
+    </td>
+    <td
+      class="top-right bottom-right security-response"
+    >
+      Security response
+    </td>
+  </tr>
+</table>
+<table class="releases">
+  <caption class="top-left top-right">macOS Tahoe Releases</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+  </tbody>
+</table>
 
 ## User Interface

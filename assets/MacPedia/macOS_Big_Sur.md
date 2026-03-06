@@ -95,7 +95,7 @@ Mini running smooth with non-metal graphics.
 
 ## System
 
-[Support for Apple silicon]
+### Support for Apple silicon
 
 macOS Big Sur is the first release of macOS for Macs powered by Apple-designed
 ARM64-based processors, a key part of the transition from Intel x86-64-based
@@ -109,14 +109,14 @@ PowerPC-to-Intel x86 transition. Likewise, Apple also introduced an updated
 universal binary format, Universal 2, which allows developers to package their
 applications so that they can run natively on both ARM64 and x86-64 processors.
 
-[Support for iOS and iPadOS applications]
+### Support for iOS and iPadOS applications
 
 On Macs based on Apple silicon, macOS Big Sur can run iOS and iPadOS
 applications natively and without any modifications needed from developers,
 aside from allowing the app to be available on the Mac App Store. The first Macs
 with this capability are those that use the Apple M1 SoC (system on a chip).
 
-[Time Machine overhaul]
+### Time Machine overhaul
 
 Time Machine, the backup mechanism introduced back in Mac OS X 10.5 Leopard, has
 been overhauled to utilize the APFS file system (introduced in MacOS High
@@ -146,27 +146,27 @@ backup, as the signed system volume is not backed up. Non-core applications and
 user data can be restored in full using Migration Assistant, preceded by a
 system reinstall if necessary.
 
-[Spotlight]
+### Spotlight
 
 Spotlight, the file system indexing-and-search mechanism introduced in Mac OS X
 10.4 Tiger, is faster and the interface has been refined. Spotlight is now the
 default search mechanism in Safari, Pages, and Keynote.
 
-[Signed system volume]
+### Signed system volume
 
 The system volume containing the core operating system is cryptographically
 signed. Apple indicates this is a security measure to prevent malicious
 tampering. This includes adding an SHA-256 hash for every file on the system
 volume, preventing changes from third-party entities and the end user.
 
-[Software updates]
+### Software updates
 
 Software updates can begin in the background before a restart, thus requiring
 less downtime to complete. Because system files are cryptographically signed,
 the update software can rely on them being in precise locations, thus permitting
 them to be effectively updated in place.
 
-[Encryption]
+### Encryption
 
 macOS Big Sur supports encryption at the file level. Earlier versions of macOS
 (10.15 Catalina and older) supported encryption only at the level of entire
@@ -176,7 +176,7 @@ Macs.
 
 ## Application features
 
-[Safari]
+### Safari
 
 Big Sur includes Safari 14, which was also released for macOS Catalina and macOS
 Mojave on September 16, 2020. Safari 14 includes features such as a new home
@@ -202,7 +202,7 @@ YouTube. In addition, it allowed for better performance and power efficiency.
 Safari 14 ended support for Adobe Flash Player in September, three months prior
 to its end-of-life on December 31, 2020.
 
-[Messages]
+### Messages
 
 The Messages app was rewritten to be based upon Apple\'s Catalyst technology to
 enable it to have feature parity with its iOS counterpart. The new version of
@@ -219,7 +219,7 @@ select photos based on parameters.
 In India, text message effects were added when users sent certain texts (e.g.,
 texting \"Happy Holi\" will result in users seeing effects).
 
-[Mac App Store]
+### Mac App Store
 
 Refinements and new features of the Mac App Store include:
 
@@ -231,7 +231,7 @@ Refinements and new features of the Mac App Store include:
 - The ability to share in-app purchases and subscriptions on the Mac via iCloud
   Family Sharing
 
-[Notes]
+### Notes
 
 Changes to the Notes app include:
 
@@ -239,7 +239,7 @@ Changes to the Notes app include:
 - Quick text style and formatting options
 - Scanning enhancements
 
-[Photos]
+### Photos
 
 Changes to the Photos app:
 
@@ -247,7 +247,7 @@ Changes to the Photos app:
 - Improved Retouch tool
 - New zooming feature in views
 
-[Maps]
+### Maps
 
 New features and changes to the Maps app are as follows:
 
@@ -259,7 +259,7 @@ New features and changes to the Maps app are as follows:
   monitoring of battery levels (on selected car models).
 - Guides for exploring new places.
 
-[Voice Memos]
+### Voice Memos
 
 These are the new features and changes made to Voice Memos:
 
@@ -297,249 +297,506 @@ Other changes include:
 
 ## Release History
 
-+-------------+-------------+-------------+-------------+-------------+ |
-Version | Build | Release | Darwin | Release | | | | date | version | notes |
-+-------------+-------------+-------------+-------------+-------------+ | 11.0 |
-20A2411 | November | 20.1.0\ | First | | | | 17, 2020 | [xnu | releases | | | |
-| -7195.41.8\ | | | | | | ~9] | |
-+-------------+-------------+-------------+-------------+-------------+ | 11.0.1
-| 20B29 | November | 20.1.0\ | | | | | 12, 2020 | [xnu | | | | | | -7195.50.7\ |
-| | | | | ~2] | |
-+-------------+-------------+-------------+-------------+-------------+ | |
-20B50 | November | | | | | | 19, 2020 | | |
-+-------------+-------------+-------------+-------------+-------------+ | 11.1 |
-20C69 | December | 20.2.0\ | Introduces | | | | 14, 2020 | [xnu- | support for |
-| | | | 7195.60.75\ | AirPods | | | | | ~1] | Max, TV app | | | | | | en | | | |
-| | hancements, | | | | | | Apple News | | | | | | widgets, | | | | | | and
-privacy | | | | | | information | | | | | | on the App | | | | | | Store. It | |
-| | | | also | | | | | | includes | | | | | | bug fixes. |
-+-------------+-------------+-------------+-------------+-------------+ | 11.2 |
-20D64 | February 1, | 20.3.0\ | Improves | | | | 2021 | [xnu | Bluetooth | | | |
-| -7195.81.3\ | reliability | | | | | ~1] | and fixes | | | | | | the | | | | |
-| following | | | | | | issues: | | | | | | | | | | | | - | | | | | | External |
-| | | | | | | | | | | displays | | | | | | may | | | | | | show a | | | | | |
-black | | | | | | screen | | | | | | when | | | | | | | | | | | | connected | |
-| | | | to a | | | | | | Mac | | | | | | mini | | | | | | | | | | | | (M1, 2020)
-| | | | | | using | | | | | | an HDMI | | | | | | to DVI | | | | | | | | | | | |
-converter | | | | | | - Edits | | | | | | to | | | | | | Apple | | | | | |
-ProRAW | | | | | | photos | | | | | | in the | | | | | | Photos | | | | | | app
-may | | | | | | not | | | | | | save | | | | | | - iCloud | | | | | | Drive | |
-| | | | could | | | | | | turn | | | | | | off | | | | | | after | | | | | | | |
-| | | | disabling | | | | | | the | | | | | | iCloud | | | | | | Drive | | | | |
-| Desktop | | | | | | & | | | | | | | | | | | | Documents | | | | | | Folders |
-| | | | | option | | | | | | - System | | | | | | | | | | | | Preferences | | |
-| | | may not | | | | | | unlock | | | | | | when | | | | | | | | | | | |
-entering | | | | | | your | | | | | | ad | | | | | | ministrator | | | | | | | |
-| | | | password | | | | | | - Globe | | | | | | key may | | | | | | not | | | |
-| | display | | | | | | the | | | | | | Emoji & | | | | | | Symbols | | | | | |
-pane | | | | | | when | | | | | | pressed |
-+-------------+-------------+-------------+-------------+-------------+ | 11.2.1
-| 20D74 | February 9, | | Addresses | | | | 2021 | | an issue | | | | | | that
-may | | | | | | prevent the | | | | | | battery | | | | | | from | | | | | |
-charging in | | | | | | some 2016 | | | | | | and 2017 | | | | | | MacBook Pro |
-| | | | | models. |
-+-------------+-------------+-------------+-------------+-------------+ | |
-20D75 | February | | | | | | 15, 2021 | | |
-+-------------+-------------+-------------+-------------+-------------+ | 11.2.2
-| 20D80 | February | | Prevents | | | | 25, 2021 | | models of | | | | | |
-MacBook Pro | | | | | | (2019 or | | | | | | later) and | | | | | | MacBook Air
-| | | | | | (2020 or | | | | | | later) from | | | | | | incurring | | | | | |
-damage when | | | | | | they are | | | | | | connected | | | | | | to certain |
-| | | | | t | | | | | | hird-party, | | | | | | no | | | | | | n-compliant | | |
-| | | powered | | | | | | USB-C hubs | | | | | | and docks. |
-+-------------+-------------+-------------+-------------+-------------+ | 11.2.3
-| 20D91 | March 8, | | Provides | | | | 2021 | | important | | | | | | security
-| | | | | | updates and | | | | | | is | | | | | | recommended | | | | | | for
-all | | | | | | users. |
-+-------------+-------------+-------------+-------------+-------------+ | 11.3 |
-20E232 | April 26, | 20.4.0\ | Consult | | | | 2021 | [xnu- | Apple\'s | | | | |
-7195.101.1\ | webpage for | | | | | ~3] | this | | | | | | release: | | | | | |
-| | | | | | [About the | | | | | | macOS Big | | | | | | Sur 11.3 | | | | | |
-update | | | | | | ](https://s | | | | | | upport.appl | | | | | | e.com/en-us |
-| | | | | /106338#mac | | | | | | os113){.ext | | | | | | ernal-links | | | | |
-| rel= | | | | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ | 11.3.1
-| 20E241 | May 3, 2021 | 20.4.0\ | Provides | | | | | [xnu- | important | | | |
-| 7195.101.2\ | security | | | | | ~1] | updates and | | | | | | is | | | | | |
-recommended | | | | | | for all | | | | | | users. |
-+-------------+-------------+-------------+-------------+-------------+ | 11.4 |
-20F71 | May 24, | 20.5.0\ | Adds new | | | | 2021 | [xnu- | features to | | | |
-| 7195.121.3\ | Podcasts | | | | | ~9] | and fixes | | | | | | the | | | | | |
-following | | | | | | bugs: | | | | | | | | | | | | - Apple | | | | | | | | | |
-| | Podcasts | | | | | | su | | | | | | bscriptions | | | | | | are | | | | | |
-| | | | | | available | | | | | | for | | | | | | | | | | | | purchase | | | | |
-| via | | | | | | monthly | | | | | | and | | | | | | annual | | | | | | su | |
-| | | | bscriptions | | | | | | - | | | | | | Channels | | | | | | group | | | |
-| | | | | | | | together | | | | | | | | | | | | collections | | | | | | of | |
-| | | | shows | | | | | | from | | | | | | podcast | | | | | | | | | | | |
-creators | | | | | | - | | | | | | Bookmarks | | | | | | in | | | | | | Safari |
-| | | | | may get | | | | | | | | | | | | reordered | | | | | | or | | | | | |
-moved | | | | | | into a | | | | | | folder | | | | | | that | | | | | | can | |
-| | | | appear | | | | | | hidden | | | | | | - Certain | | | | | | | | | | | |
-websites | | | | | | may not | | | | | | display | | | | | | | | | | | |
-correctly | | | | | | after | | | | | | your | | | | | | Mac | | | | | | wakes |
-| | | | | from | | | | | | sleep | | | | | | - | | | | | | Keywords | | | | | |
-may not | | | | | | be | | | | | | | | | | | | included | | | | | | when | | | |
-| | | | | | | | exporting | | | | | | a photo | | | | | | from | | | | | | the |
-| | | | | Photos | | | | | | app | | | | | | - Preview | | | | | | may | | | | |
-| become | | | | | | u | | | | | | nresponsive | | | | | | when | | | | | | | |
-| | | | searching | | | | | | PDF | | | | | | | | | | | | documents | | | | |
-| - 16-inch | | | | | | MacBook | | | | | | may | | | | | | become | | | | | | u
-| | | | | | nresponsive | | | | | | when | | | | | | playing | | | | | | C | | |
-| | | ivilization | | | | | | VI |
-+-------------+-------------+-------------+-------------+-------------+ | 11.5 |
-20G71 | July 21, | 20.6.0\ | Includes | | | | 2021 | [xnu-719 | i | | | | |
-5.141.2\~5\ | mprovements | | | | | Wed Jun 23 | and fixes | | | | | 00:26:31 |
-bugs which | | | | | PDT | are as | | | | | 20 | follows: | | | | | 21] | | | |
-| | | - | | | | | | Podcasts | | | | | | Library | | | | | | tab | | | | | |
-allows | | | | | | you to | | | | | | choose | | | | | | to see | | | | | | all
-| | | | | | shows | | | | | | or only | | | | | | | | | | | | followed | | | | |
-| shows | | | | | | - Music | | | | | | may not | | | | | | update | | | | | |
-play | | | | | | count | | | | | | and | | | | | | last | | | | | | played | | |
-| | | date in | | | | | | your | | | | | | library | | | | | | - Smart | | | | |
-| cards | | | | | | may not | | | | | | work | | | | | | when | | | | | |
-logging | | | | | | into | | | | | | Mac | | | | | | | | | | | | computers | | |
-| | | with | | | | | | the M1 | | | | | | chip |
-+-------------+-------------+-------------+-------------+-------------+ | 11.5.1
-| 20G80 | July 26, | | Consult | | | | 2021 | | Apple\'s | | | | | | webpage for
-| | | | | | this | | | | | | release: | | | | | | | | | | | | [About the | | | |
-| | security | | | | | | content of | | | | | | macOS | | | | | | 11.5.1]( | | |
-| | | https://sup | | | | | | port.apple. | | | | | | com/en-us/1 | | | | | |
-03144){.ext | | | | | | ernal-links | | | | | | rel= | | | | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ | 11.5.2
-| 20G95 | August 11, | | Includes | | | | 2021 | | bug fixes | | | | | | for
-Macs. | +-------------+-------------+-------------+-------------+-------------+
-| 11.6 | 20G165 | September | 20.6.0\ | Consult | | | | 13, 2021 | [xnu-719 |
-Apple\'s | | | | | 5.141.6\~3\ | webpage for | | | | | Mon Aug 30 | this | | | |
-| 06:12:21 | release: | | | | | PDT | | | | | | 20 | [About the | | | | | 21] |
-security | | | | | | content of | | | | | | macOS | | | | | | 11.6]( | | | | | |
-https://sup | | | | | | port.apple. | | | | | | com/en-us/1 | | | | | |
-03147){.ext | | | | | | ernal-links | | | | | | rel= | | | | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ | 11.6.1
-| 20G224 | October 25, | 20.6.0\ | Consult | | | | 2021 | [xnu-719 | Apple\'s |
-| | | | 5.141.8\~1\ | webpage for | | | | | Tue Oct 12 | this | | | | | 18:33:42
-| release: | | | | | PDT | | | | | | 20 | [About the | | | | | 21] | security |
-| | | | | content of | | | | | | macOS | | | | | | 11.6.1]( | | | | | |
-https://sup | | | | | | port.apple. | | | | | | com/en-us/1 | | | | | |
-03164){.ext | | | | | | ernal-links | | | | | | rel= | | | | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ | 11.6.2
-| 20G314 | December | 20.6.0\ | Consult | | | | 13, 2021 | [xnu-7195 | Apple\'s
-| | | | | .141.14\~1\ | webpage for | | | | | Wed Nov 10 | this | | | | |
-22:23:07 | release: | | | | | PST | | | | | | 20 | [About the | | | | | 21] |
-security | | | | | | content of | | | | | | macOS | | | | | | 11.6.2]( | | | | |
-| https://sup | | | | | | port.apple. | | | | | | com/en-us/1 | | | | | |
-02876){.ext | | | | | | ernal-links | | | | | | rel= | | | | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ | 11.6.3
-| 20G415 | January 26, | 20.6.0\ | Consult | | | | 2022 | [xnu-7195 | Apple\'s |
-| | | | .141.19\~2\ | webpage for | | | | | Wed Jan 12 | this | | | | | 22:22:42
-| release: | | | | | PST | | | | | | 20 | [About the | | | | | 22] | security |
-| | | | | content of | | | | | | macOS | | | | | | 11.6.3]( | | | | | |
-https://sup | | | | | | port.apple. | | | | | | com/en-us/1 | | | | | |
-03173){.ext | | | | | | ernal-links | | | | | | rel= | | | | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ | 11.6.4
-| 20G417 | February | | Recommended | | | | 14, 2022 | | for all | | | | | |
-users and | | | | | | improves | | | | | | the | | | | | | security of | | | | |
-| macOS. |
-+-------------+-------------+-------------+-------------+-------------+ | 11.6.5
-| 20G527 | March 14, | 20.6.0\ | Consult | | | | 2022 | [xnu-7195 | Apple\'s | |
-| | | .141.26\~1\ | webpage for | | | | | Tue Feb 22 | this | | | | | 21:10:41 |
-release: | | | | | PST | | | | | | 20 | [About the | | | | | 22] | security | |
-| | | | content of | | | | | | macOS | | | | | | 11.6.5]( | | | | | |
-https://sup | | | | | | port.apple. | | | | | | com/en-us/1 | | | | | |
-02847){.ext | | | | | | ernal-links | | | | | | rel= | | | | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ | 11.6.6
-| 20G624 | May 16, | 20.6.0\ | Consult | | | | 2022 | [xnu-7195 | Apple\'s | | |
-| | .141.29\~1\ | webpage for | | | | | Tue Apr 19 | this | | | | | 21:04:45 |
-release: | | | | | PDT | | | | | | 20 | [About the | | | | | 22] | security | |
-| | | | content of | | | | | | macOS | | | | | | 11.6 | | | | | | .6](https:/ |
-| | | | | /support.ap | | | | | | ple.com/HT2 | | | | | | 13256){.ext | | | | |
-| ernal-links | | | | | | rel= | | | | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ | 11.6.7
-| 20G630 | June 9, | | Recommended | | | | 2022 | | for all | | | | | | users
-and | | | | | | improves | | | | | | the | | | | | | security of | | | | | |
-macOS. | +-------------+-------------+-------------+-------------+-------------+
-| 11.6.8 | 20G730 | July 20, | 20.6.0\ | Consult | | | | 2022 | [xnu-7195 |
-Apple\'s | | | | | .141.32\~1\ | webpage for | | | | | Tue Jun 21 | this | | | |
-| 20:50:28 | release: | | | | | PDT | | | | | | 20 | [About the | | | | | 22] |
-security | | | | | | content of | | | | | | macOS | | | | | | 11.6 | | | | | |
-.8](https:/ | | | | | | /support.ap | | | | | | ple.com/HT2 | | | | | |
-13344){.ext | | | | | | ernal-links | | | | | | rel= | | | | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ | 11.7 |
-20G817 | September | 20.6.0\ | Consult | | | | 12, 2022 | [xnu-7195 | Apple\'s |
-| | | | .141.39\~2\ | webpage for | | | | | Mon Aug 29 | this | | | | | 04:31:06
-| release: | | | | | PDT | | | | | | 20 | [About the | | | | | 22] | security |
-| | | | | content of | | | | | | macOS | | | | | | 11 | | | | | | .7](https:/ |
-| | | | | /support.ap | | | | | | ple.com/HT2 | | | | | | 13443){.ext | | | | |
-| ernal-links | | | | | | rel= | | | | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ | 11.7.1
-| 20G918 | October 24, | 20.6.0\ | Consult | | | | 2022 | [xnu-7195 | Apple\'s |
-| | | | .141.42\~1\ | webpage for | | | | | Thu Sep 29 | this | | | | | 20:15:11
-| release: | | | | | PDT | | | | | | 20 | [About the | | | | | 22] | security |
-| | | | | content of | | | | | | macOS | | | | | | 11.7 | | | | | | .1](https:/
-| | | | | | /support.ap | | | | | | ple.com/HT2 | | | | | | 13493){.ext | | | |
-| | ernal-links | | | | | | rel= | | | | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ | 11.7.2
-| 20G1020 | December | 20.6.0\ | Consult | | | | 13, 2022 | [xnu-7195 | Apple\'s
-| | | | | .141.46\~1\ | webpage for | | | | | Sun Nov 6 | this | | | | |
-23:17:00 | release: | | | | | PST | | | | | | 20 | [About the | | | | | 22] |
-security | | | | | | content of | | | | | | macOS | | | | | | 11.7 | | | | | |
-.2](https:/ | | | | | | /support.ap | | | | | | ple.com/HT2 | | | | | |
-13534){.ext | | | | | | ernal-links | | | | | | rel= | | | | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ | 11.7.3
-| 20G1116 | January 23, | 20.6.0\ | Consult | | | | 2023 | [xnu-7195 | Apple\'s
-| | | | | .141.49\~1\ | webpage for | | | | | Fri Dec 16 | this | | | | |
-00:35:00 | release: | | | | | PST | | | | | | 20 | [About the | | | | | 22] |
-security | | | | | | content of | | | | | | macOS | | | | | | 11.7.3]( | | | | |
-| https://sup | | | | | | port.apple. | | | | | | com/en-us/1 | | | | | |
-02789){.ext | | | | | | ernal-links | | | | | | rel= | | | | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ | 11.7.4
-| 20G1120 | February | | Consult | | | | 15, 2023 | | Apple\'s | | | | | |
-webpage for | | | | | | this | | | | | | release: | | | | | | | | | | | | [About
-the | | | | | | security | | | | | | content of | | | | | | macOS | | | | | |
-11.7 | | | | | | .4](https:/ | | | | | | /support.ap | | | | | | ple.com/HT2 | |
-| | | | 13534){.ext | | | | | | ernal-links | | | | | | rel= | | | | | |
-"nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ | 11.7.5
-| 20G1225 | March 27, | 20.6.0\ | Consult | | | | 2023 | [xnu | Apple\'s | | | |
-| -7195.141.4 | webpage for | | | | | 9.700.6\~1\ | this | | | | | Thu Mar 9 |
-release: | | | | | 20:39:26 | | | | | | PST | [About the | | | | | 20 | security
-| | | | | 23] | content of | | | | | | macOS | | | | | | 11.7 | | | | | |
-.5](https:/ | | | | | | /support.ap | | | | | | ple.com/HT2 | | | | | |
-13675){.ext | | | | | | ernal-links | | | | | | rel= | | | | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ | 11.7.6
-| 20G1231 | April 10, | | Consult | | | | 2023 | | Apple\'s | | | | | | webpage
-for | | | | | | this | | | | | | release: | | | | | | | | | | | | [About the | |
-| | | | security | | | | | | content of | | | | | | macOS | | | | | | 11.7 | | |
-| | | .6](https:/ | | | | | | /support.ap | | | | | | ple.com/HT2 | | | | | |
-13725){.ext | | | | | | ernal-links | | | | | | rel= | | | | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ | 11.7.7
-| 20G1345 | May 18, | 20.6.0\ | Consult | | | | 2023 | [xnu | Apple\'s | | | | |
--7195.141.4 | webpage for | | | | | 9.701.3\~1\ | this | | | | | Mon Apr 24 |
-release: | | | | | 23:00:57 | | | | | | PDT | [About the | | | | | 20 | security
-| | | | | 23] | content of | | | | | | macOS | | | | | | 11.7 | | | | | |
-.7](https:/ | | | | | | /support.ap | | | | | | ple.com/HT2 | | | | | |
-13760){.ext | | | | | | ernal-links | | | | | | rel= | | | | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ | 11.7.8
-| 20G1351 | June 21, | 20.6.0\ | Consult | | | | 2023 | [xnu | Apple\'s | | | |
-| -7195.141.4 | webpage for | | | | | 9.701.4\~1\ | this | | | | | Thu Jun 8 |
-release: | | | | | 22:36:09 | | | | | | PDT | [About the | | | | | 20 | security
-| | | | | 23] | content of | | | | | | macOS | | | | | | 11.7 | | | | | |
-.8](https:/ | | | | | | /support.ap | | | | | | ple.com/HT2 | | | | | |
-13809){.ext | | | | | | ernal-links | | | | | | rel= | | | | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ | 11.7.9
-| 20G1426 | July 24, | 20.6.0\ | Consult | | | | 2023 | [xnu- | Apple\'s | | | |
-| 7195.141.49 | webpage for | | | | | .702.12\~1\ | this | | | | | Thu Jul 6 |
-release: | | | | | 22:12:47 | | | | | | PDT | [About the | | | | | 20 | security
-| | | | | 23] | content of | | | | | | macOS | | | | | | 11.7 | | | | | |
-.9](https:/ | | | | | | /support.ap | | | | | | ple.com/HT2 | | | | | |
-13845){.ext | | | | | | ernal-links | | | | | | rel= | | | | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+ |
-11.7.10 | 20G1427 | September | | Consult | | | | 11, 2023 | | Apple\'s | | | |
-| | webpage for | | | | | | this | | | | | | release: | | | | | | | | | | | |
-[About the | | | | | | security | | | | | | content of | | | | | | macOS | | | |
-| | 11.7. | | | | | | 10](https:/ | | | | | | /support.ap | | | | | |
-ple.com/HT2 | | | | | | 13915){.ext | | | | | | ernal-links | | | | | | rel= | |
-| | | | "nofollow"} |
-+-------------+-------------+-------------+-------------+-------------+
+<table>
+  <tr>
+    <td
+      class="top-left bottom-left previous-release"
+    >
+      Previous release
+    </td>
+    <td class="top bottom current-release">
+      Current release
+    </td>
+    <td class="top bottom beta-release">
+      Current beta release
+    </td>
+    <td
+      class="top-right bottom-right security-response"
+    >
+      Security response
+    </td>
+  </tr>
+</table>
+<table class="releases">
+  <caption class="top-left top-right">macOS Big Sur Releases</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+    </tr>
+    <tr>
+      <td class="left">11.0</td>
+      <td>20A2411</td>
+      <td>November 17, 2020</td>
+      <td>20.1.0<br /><small>xnu-7195.41.8~9</small></td>
+      <td class="right" rowspan="3">First releases</td>
+    </tr>
+    <tr>
+      <td class="left" rowspan="2">11.0.1</td>
+      <td>20B29</td>
+      <td>November 12, 2020</td>
+      <td rowspan="2">20.1.0<br /><small>xnu-7195.50.7~2</small></td>
+    </tr>
+    <tr>
+      <td>20B50</td>
+      <td>November 19, 2020</td>
+    </tr>
+    <tr>
+      <td class="left">11.1</td>
+      <td>20C69</td>
+      <td>December 14, 2020</td>
+      <td>20.2.0<br /><small>xnu-7195.60.75~1</small></td>
+      <td class="right">
+        Introduces support for AirPods Max, TV app enhancements, Apple News
+        widgets, and privacy information on the App Store. It also includes bug
+        fixes.
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.2</td>
+      <td>20D64</td>
+      <td>February 1, 2021</td>
+      <td rowspan="5">20.3.0<br /><small>xnu-7195.81.3~1</small></td>
+      <td class="right">
+        Improves Bluetooth reliability and fixes the following issues:
+        <ul>
+          <li>
+            External displays may show a black screen when connected to a Mac
+            mini (M1, 2020) using an HDMI to DVI converter
+          </li>
+          <li>Edits to Apple ProRAW photos in the Photos app may not save</li>
+          <li>
+            iCloud Drive could turn off after disabling the iCloud Drive Desktop
+            & Documents Folders option
+          </li>
+          <li>
+            System Preferences may not unlock when entering your administrator
+            password
+          </li>
+          <li>
+            Globe key may not display the Emoji & Symbols pane when pressed
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="left" rowspan="2">11.2.1</td>
+      <td>20D74</td>
+      <td>February 9, 2021</td>
+      <td class="right" rowspan="2">
+        Addresses an issue that may prevent the battery from charging in some
+        2016 and 2017 MacBook Pro models.
+      </td>
+    </tr>
+    <tr>
+      <td>20D75</td>
+      <td>February 15, 2021</td>
+    </tr>
+    <tr>
+      <td class="left">11.2.2</td>
+      <td>20D80</td>
+      <td>February 25, 2021</td>
+      <td class="right">
+        Prevents models of MacBook Pro (2019 or later) and MacBook Air (2020 or
+        later) from incurring damage when they are connected to certain
+        third-party, non-compliant powered USB-C hubs and docks.
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.2.3</td>
+      <td>20D91</td>
+      <td>March 8, 2021</td>
+      <td class="right">
+        Provides important security updates and is recommended for all users.
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.3</td>
+      <td>20E232</td>
+      <td>April 26, 2021</td>
+      <td>20.4.0<br /><small>xnu-7195.101.1~3</small></td>
+      <td class="right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/en-us/106338#macos113">About the
+            macOS Big Sur 11.3 update</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.3.1</td>
+      <td>20E241</td>
+      <td>May 3, 2021</td>
+      <td>20.4.0<br /><small>xnu-7195.101.2~1</small></td>
+      <td class="right">
+        Provides important security updates and is recommended for all users.
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.4</td>
+      <td>20F71</td>
+      <td>May 24, 2021</td>
+      <td>20.5.0<br /><small>xnu-7195.121.3~9</small></td>
+      <td class="right">
+        Adds new features to Podcasts and fixes the following bugs:
+        <ul>
+          <li>
+            Apple Podcasts subscriptions are available for purchase via monthly
+            and annual subscriptions
+          </li>
+          <li>
+            Channels group together collections of shows from podcast creators
+          </li>
+          <li>
+            Bookmarks in Safari may get reordered or moved into a folder that
+            can appear hidden
+          </li>
+          <li>
+            Certain websites may not display correctly after your Mac wakes from
+            sleep
+          </li>
+          <li>
+            Keywords may not be included when exporting a photo from the Photos
+            app
+          </li>
+          <li>Preview may become unresponsive when searching PDF documents</li>
+          <li>
+            16-inch MacBook may become unresponsive when playing Civilization VI
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.5</td>
+      <td>20G71</td>
+      <td>July 21, 2021</td>
+      <td rowspan="3">
+        20.6.0<br /><small>xnu-7195.141.2~5<br />Wed Jun 23 00:26:31 PDT 2021</small>
+      </td>
+      <td class="right">
+        Includes improvements and fixes bugs which are as follows:
+        <ul>
+          <li>
+            Podcasts Library tab allows you to choose to see all shows or only
+            followed shows
+          </li>
+          <li>
+            Music may not update play count and last played date in your library
+          </li>
+          <li>
+            Smart cards may not work when logging into Mac computers with the M1
+            chip
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.5.1</td>
+      <td>20G80</td>
+      <td>July 26, 2021</td>
+      <td class="right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/en-us/103144">About the security
+            content of macOS 11.5.1</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.5.2</td>
+      <td>20G95</td>
+      <td>August 11, 2021</td>
+      <td class="right">Includes bug fixes for Macs.</td>
+    </tr>
+    <tr>
+      <td class="left">11.6</td>
+      <td>20G165</td>
+      <td>September 13, 2021</td>
+      <td>
+        20.6.0<br /><small>xnu-7195.141.6~3<br />Mon Aug 30 06:12:21 PDT 2021</small>
+      </td>
+      <td class="right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/en-us/103147">About the security
+            content of macOS 11.6</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.6.1</td>
+      <td>20G224</td>
+      <td>October 25, 2021</td>
+      <td>
+        20.6.0<br /><small>xnu-7195.141.8~1<br />Tue Oct 12 18:33:42 PDT 2021</small>
+      </td>
+      <td class="right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/en-us/103164">About the security
+            content of macOS 11.6.1</a>
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="left">11.6.2</td>
+      <td>20G314</td>
+      <td>December 13, 2021</td>
+      <td>
+        20.6.0<br /><small>xnu-7195.141.14~1<br />Wed Nov 10 22:23:07 PST 2021</small>
+      </td>
+      <td class="right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/en-us/102876">About the security
+            content of macOS 11.6.2</a>
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="left">11.6.3</td>
+      <td>20G415</td>
+      <td>January 26, 2022</td>
+      <td rowspan="2">
+        20.6.0<br /><small>xnu-7195.141.19~2<br />Wed Jan 12 22:22:42 PST 2022</small>
+      </td>
+      <td class="right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/en-us/103173">About the security
+            content of macOS 11.6.3</a>
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="left">11.6.4</td>
+      <td>20G417</td>
+      <td>February 14, 2022</td>
+      <td class="right">
+        Recommended for all users and improves the security of macOS.
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.6.5</td>
+      <td>20G527</td>
+      <td>March 14, 2022</td>
+      <td>
+        20.6.0<br /><small>xnu-7195.141.26~1<br />Tue Feb 22 21:10:41 PST 2022</small>
+      </td>
+      <td class="right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/en-us/102847">About the security
+            content of macOS 11.6.5</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.6.6</td>
+      <td>20G624</td>
+      <td>May 16, 2022</td>
+      <td rowspan="2">
+        20.6.0<br /><small>xnu-7195.141.29~1<br />Tue Apr 19 21:04:45 PDT 2022</small>
+      </td>
+      <td class="right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/HT213256">About the security content
+            of macOS 11.6.6</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.6.7</td>
+      <td>20G630</td>
+      <td>June 9, 2022</td>
+      <td class="right">
+        Recommended for all users and improves the security of macOS.
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.6.8</td>
+      <td>20G730</td>
+      <td>July 20, 2022</td>
+      <td>
+        20.6.0<br /><small>xnu-7195.141.32~1<br />Tue Jun 21 20:50:28 PDT 2022</small>
+      </td>
+      <td class="right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/HT213344">About the security content
+            of macOS 11.6.8</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.7</td>
+      <td>20G817</td>
+      <td>September 12, 2022</td>
+      <td>
+        20.6.0<br /><small>xnu-7195.141.39~2<br />Mon Aug 29 04:31:06 PDT 2022</small>
+      </td>
+      <td class="right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/HT213443">About the security content
+            of macOS 11.7</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.7.1</td>
+      <td>20G918</td>
+      <td>October 24, 2022</td>
+      <td>
+        20.6.0<br /><small>xnu-7195.141.42~1<br />Thu Sep 29 20:15:11 PDT 2022</small>
+      </td>
+      <td>
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/HT213493">About the security content
+            of macOS 11.7.1</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.7.2</td>
+      <td>20G1020</td>
+      <td>December 13, 2022</td>
+      <td>
+        20.6.0<br /><small>xnu-7195.141.46~1<br />Sun Nov 6 23:17:00 PST 2022</small>
+      </td>
+      <td class="right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/HT213534">About the security content
+            of macOS 11.7.2</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.7.3</td>
+      <td>20G1116</td>
+      <td>January 23, 2023</td>
+      <td rowspan="2">
+        20.6.0<br /><small>xnu-7195.141.49~1<br />Fri Dec 16 00:35:00 PST 2022</small>
+      </td>
+      <td class="right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/en-us/102789">About the security
+            content of macOS 11.7.3</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.7.4</td>
+      <td>20G1120</td>
+      <td>February 15, 2023</td>
+      <td class="right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/HT213534">About the security content
+            of macOS 11.7.4</a>
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="left">11.7.5</td>
+      <td>20G1225</td>
+      <td>March 27, 2023</td>
+      <td rowspan="2">
+        20.6.0<br /><small>xnu-7195.141.49.700.6~1<br />Thu Mar 9 20:39:26 PST 2023</small>
+      </td>
+      <td class="right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/HT213675">About the security content
+            of macOS 11.7.5</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.7.6</td>
+      <td>20G1231</td>
+      <td>April 10, 2023</td>
+      <td class="right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/HT213725">About the security content
+            of macOS 11.7.6</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.7.7</td>
+      <td>20G1345</td>
+      <td>May 18, 2023</td>
+      <td>
+        20.6.0<br /><small>xnu-7195.141.49.701.3~1<br />Mon Apr 24 23:00:57 PDT 2023</small>
+      </td>
+      <td class="right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/HT213760">About the security content
+            of macOS 11.7.7</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.7.8</td>
+      <td>20G1351</td>
+      <td>June 21, 2023</td>
+      <td>
+        20.6.0<br /><small>xnu-7195.141.49.701.4~1<br />Thu Jun 8 22:36:09 PDT 2023</small>
+      </td>
+      <td class="right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/HT213809">About the security content
+            of macOS 11.7.8
+          </a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">11.7.9</td>
+      <td>20G1426</td>
+      <td>July 24, 2023</td>
+      <td class="bottom" rowspan="2">
+        20.6.0<br /><small>xnu-7195.141.49.702.12~1<br />Thu Jul 6 22:12:47 PDT 2023</small>
+      </td>
+      <td class="right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/HT213845">About the security content
+            of macOS 11.7.9</a>
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="bottom-left">11.7.10</td>
+      <td class="bottom">20G1427</td>
+      <td class="bottom">September 11, 2023</td>
+      <td class="bottom-right">
+        Consult Apple's webpage for this release:
+        <p>
+          <a rel="nofollow" class="external-links" href="https://support.apple.com/HT213915">About the security content
+            of macOS 11.7.10</a>
+        </p>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
 
 ## User Interface

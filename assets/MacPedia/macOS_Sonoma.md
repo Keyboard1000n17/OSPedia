@@ -3,7 +3,7 @@ title: macOS Sonoma
 favicon: Sonoma-icon.webp
 order: 210
 background_image: Sonoma-wallpaper.webp
-json_path: ./macOS_Sonoma.json
+jsonData: ./macOS_Sonoma.json
 info:
   icon:
     - alt: macOS Sonoma logo
@@ -63,7 +63,7 @@ Mac models that support macOS Sonoma are as follows.
 - Mac Pro (2019 and later)
 - Mac Studio (all models)
 
-[Unofficial support]
+### Unofficial support
 
 By using patch tools such as OpenCore Legacy Patcher, macOS Sonoma can be
 unofficially installed on earlier models that are officially unsupported. Such
@@ -136,7 +136,7 @@ on productivity and creativity:
   bottom being lowered to the bottom of the screen instead of immediately under
   the Apple logo.
 
-[Gaming]
+### Gaming
 
 Alongside macOS Sonoma, Apple announced developer tools for porting Windows
 games to macOS. The Game Porting Toolkit (GPTK), derived from Wine and Crossover
@@ -165,7 +165,7 @@ uncertain demand for Mac games when many Mac users also own consoles or gaming
 PCs. YouTuber Snazzy Labs issued similar criticisms, which journalist John
 Siracusa agreed with.
 
-[New Unicode Characters Font Support]
+### New Unicode Characters Font Support
 
 macOS 14.0 introduced support for the following Unicode characters:
 
@@ -173,7 +173,7 @@ macOS 14.0 introduced support for the following Unicode characters:
 - Tagalog Sign Pamudpod (U+1715) (14.0)
 - Tagalog Letter Archaic Ra (U+171F) (14.0)
 
-[Removed features]
+### Removed features
 
 - Support for legacy Mail plug-ins has been removed.
 - System API support for converting PostScript and Encapsulated PostScript files
@@ -183,8 +183,37 @@ macOS 14.0 introduced support for the following Unicode characters:
 
 ## Release History
 
-Version Build Release date Darwin version Release Notes
-
----
+<table>
+  <tr>
+    <td
+      class="top-left bottom-left previous-release"
+    >
+      Previous release
+    </td>
+    <td class="top bottom current-release">
+      Current release
+    </td>
+    <td class="top bottom beta-release">
+      Current beta release
+    </td>
+    <td
+      class="top-right bottom-right security-response"
+    >
+      Security response
+    </td>
+  </tr>
+</table>
+<table class="releases">
+  <caption class="top-left top-right">macOS Tahoe Releases</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+  </tbody>
+</table>
 
 ## User Interface

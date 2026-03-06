@@ -72,7 +72,7 @@ not supported on all models. Offline dictation, Live Captions, Portrait Mode in
 FaceTime, and \"Reference mode\" (which allows users to use an iPad as a
 secondary reference monitor) only work on Apple silicon Macs.
 
-[Unofficial support on older models (discontinued hardware)]
+### Unofficial support on older models (discontinued hardware)
 
 By using patch tools, macOS Ventura can be unofficially installed on earlier
 models that are officially unsupported, such as a 2017 MacBook Air and a 2015
@@ -86,12 +86,12 @@ macOS Ventura includes changes, many related to productivity, and adds two apps
 from iOS and iPadOS: Weather and Clock. Freeform was added in an update to all
 three operating systems.
 
-[New system features]
+### New system features
 
 - Stage Manager, which provides an alternative interface for multitasking, in
   addition to the previous Mission Control.
 
-[New apps]
+### New apps
 
 - Weather: shows detailed weather forecasts. Clicking on the Weather widget now
   opens this app, not The Weather Channel\'s website.
@@ -101,7 +101,7 @@ three operating systems.
 - Freeform: a whiteboard app that supports real-time collaboration. It was only
   added in version 13.1.
 
-[Changes]
+### Changes
 
 - Mail adds \"send later\" and \"undo send\" options and includes improvements
   to search, email organization, and formatting.
@@ -170,7 +170,7 @@ three operating systems.
   - Built-in apps cannot be moved from the cryptographically verified Signed
     System Volume to another location where they could be tampered with.
 
-[Removed features]
+### Removed features
 
 - The Preview app on Mac no longer supports PostScript (.ps) and Encapsulated
   PostScript (.eps) files. Printing of such files, to a printer natively
@@ -186,14 +186,35 @@ three operating systems.
 
 ## Release History
 
----
-
-Previous release Current release Security response
-
----
-
----
-
-Version Build Release date Darwin version Release Notes
-
----
+<table>
+  <tr>
+    <td
+      class="top-left bottom-left previous-release"
+    >
+      Previous release
+    </td>
+    <td class="top bottom current-release">
+      Current release
+    </td>
+    <td class="top bottom beta-release">
+      Current beta release
+    </td>
+    <td
+      class="top-right bottom-right security-response"
+    >
+      Security response
+    </td>
+  </tr>
+</table>
+<table class="releases">
+  <caption class="top-left top-right">macOS Tahoe Releases</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+  </tbody>
+</table>

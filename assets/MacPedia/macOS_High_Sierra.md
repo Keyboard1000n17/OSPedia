@@ -3,6 +3,7 @@ title: macOS High Sierra
 favicon: High_Sierra-icon.webp
 order: 150
 background_image: High_Sierra-wallpaper.webp
+jsonData: ./macOS_High_Sierra.json
 info:
   icon:
     - alt: macOS High Sierra logo
@@ -68,9 +69,9 @@ patch to modify the install image.
 
 ## Features
 
-## System
+### System
 
-## Apple File System
+#### Apple File System
 
 Apple File System (APFS) replaces HFS Plus as the default file system in macOS
 for the first time with High Sierra. It supports 64-bit inode numbers, is
@@ -79,13 +80,13 @@ duplicating a file and finding the size of a folder\'s contents. It also has
 built-in encryption, crash-safe protections, and simplified data backup on the
 go.
 
-## Metal 2
+#### Metal 2
 
 Metal, Apple\'s low-level graphics API, has been updated to Metal 2. It includes
 virtual reality and machine-learning features, as well as support for external
 GPUs. The system\'s windowing system, Quartz Compositor, supports Metal 2.
 
-## Media
+#### Media
 
 macOS High Sierra adds support for High Efficiency Video Coding (HEVC), with
 hardware acceleration where available, as well as support for High Efficiency
@@ -101,7 +102,7 @@ HEVC hardware acceleration requires a Mac with a sixth-generation Intel
 processor or newer (late 2015 27-inch iMac, mid 2017 21.5-inch iMac, early 2016
 MacBook, late 2016 MacBook Pro or iMac Pro).
 
-## Other
+#### Other
 
 - In High Sierra, kernel extensions (\"kexts\") require explicit approval by the
   user before being able to run.
@@ -124,26 +125,26 @@ MacBook, late 2016 MacBook Pro or iMac Pro).
 - Starting with 10.13.4, when a 32-bit app is opened, users get a one-time
   warning about its future incompatibility with the macOS operating system.
 
-## Applications
+### Applications
 
-## Final Cut Pro 7
+#### Final Cut Pro 7
 
 Apple announced the original Final Cut Studio suite of programs will not work on
 High Sierra. Media professionals that depend on any of those programs were
 advised to create a double boot drive to their computer.
 
-## Photos
+#### Photos
 
 macOS High Sierra gives Photos an updated sidebar and new editing tools. Photos
 synchronizes tagged People with iOS 11.
 
-## Mail
+#### Mail
 
 Mail has improved Spotlight search with Top Hits. Mail also uses 35% less
 storage space due to optimizations, and Mail\'s compose window can now be used
 in split-screen mode.
 
-## Safari
+#### Safari
 
 macOS High Sierra includes Safari 11. Safari 11 has a new \"Intelligent Tracking
 Prevention\" feature that uses machine learning to block third parties from
@@ -152,19 +153,19 @@ playing. The \"Reader Mode\" can be set to always-on. Safari 11 also supports
 WebAssembly. The last version of Safari that High Sierra supports is 13.1.2.
 This version has known security issues.
 
-## Notes
+#### Notes
 
 The Notes app includes the ability to add tables to notes, and notes can be
 pinned to the top of the list. The version number was incremented to 4.5.
 
-## Siri
+#### Siri
 
 In High Sierra, Siri uses a more natural and expressive voice. It also uses
 machine learning to understand the user better. Siri synchronizes information
 across iOS and Mac devices so the Siri experience is the same regardless of the
 product being used.
 
-## Messages
+#### Messages
 
 The release of macOS High Sierra 10.13.5 (and iOS 11.4) introduced support for
 Messages in iCloud. This feature allows messages to sync across all devices
@@ -193,223 +194,36 @@ working with Apple to resolve the issue.
 
 ## Release History
 
----
-
-Version Build Date Darwin version Release notes
-
----
-
-10.13 17A365 September 25, 17.0.0 Original Mac 2017 App Store release
-
-                 17A405         October 5,                                     About the
-                                2017                                           security
-                                                                               content of
-                                                                               macOS High
-                                                                               Sierra 10.13
-                                                                               Supplemental
-                                                                               Update
-
-10.13.1 17B48 October 31, 17.2.0 About the 2017 macOS High Sierra 10.13.1 Update
-
-                 17B1002        November 29,                                   About the
-                                2017                                           security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2017-001
-
-                 17B1003
-
-10.13.2 17C88 December 6, 17.3.0 About the 2017 macOS High Sierra 10.13.2 Update
-
-                 17C89
-
-                 17C205         January 8,                                     About the
-                                2018                                           security
-                                                                               content of
-                                                                               macOS High
-                                                                               Sierra 10.13.2
-                                                                               Supplemental
-                                                                               Update
-
-                 17C2205
-
-10.13.3 17D47 January 23, 17.4.0 About the 2018 macOS High Sierra 10.13.3 Update
-
-                 17D2047
-
-                 17D102         February 19,                                   About the
-                                2018                                           security
-                                                                               content of
-                                                                               macOS High
-                                                                               Sierra 10.13.3
-                                                                               Supplemental
-                                                                               Update
-
-                 17D2102
-
-10.13.4 17E199 March 29, 2018 17.5.0 About the macOS High Sierra 10.13.4 Update
-
-                 17E202         April 24, 2018                                 About the
-                                                                               security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2018-001
-
-10.13.5 17F77 June 1, 2018 17.6.0 About the macOS High Sierra 10.13.5 Update
-
-10.13.6 17G65 July 9, 2018 17.7.0 About the macOS High Sierra 10.13.6 Update
-
-                 17G2208        July 24, 2018
-
-                 17G2307        August 28,
-                                2018
-
-                 17G3025        October 30,    17.7.0                          About the
-                                2018                                           security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2018-002 High
-                                                                               Sierra
-
-                 17G4015        December 5,    17.7.0                          About the
-                                2018                                           security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2018-003 High
-                                                                               Sierra
-
-                 17G5019        January 22,    17.7.0\                         About the
-                                2019           [xnu-4570.71.22\~1]     security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2019-001 High
-                                                                               Sierra
-
-                 17G6029        March 25, 2019 17.7.0                          About the
-                                                                               security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2019-002 High
-                                                                               Sierra
-
-                 17G6030        March 29, 2019 17.7.0\                         About the
-                                               [xnu-4570.71.35\~1]     security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2019-002 High
-                                                                               Sierra
-
-                 17G7024        May 13, 2019   17.7.0\                         About the
-                                               [xnu-4570.71.45\~1]     security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2019-003 High
-                                                                               Sierra
-
-                 17G8029        July 22, 2019  17.7.0                          About the
-                                                                               security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2019-004 High
-                                                                               Sierra
-
-                 17G8030        July 29, 2019  17.7.0                          About the
-                                                                               security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2019-004 High
-                                                                               Sierra
-
-                 17G8037        September 26,  17.7.0\                         About the
-                                2019           [xnu-4570.71.46\~1]     security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2019-005 High
-                                                                               Sierra
-
-                 17G9016        October 29,    17.7.0\                         About the
-                                2019           [xnu-4570.71.57\~1]     security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2019-006 High
-                                                                               Sierra
-
-                 17G10021       December 10,   17.7.0\                         About the
-                                2019           [xnu-4570.71.63\~1]     security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2019-007 High
-                                                                               Sierra
-
-                 17G11023       January 28,    17.7.0\                         About the
-                                2020           [xnu-4570.71.69\~1]     security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2020-001 High
-                                                                               Sierra
-
-                 17G12034       March 24, 2020 17.7.0\                         About the
-                                               [xnu-4570.71.73\~1]     security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2020-002 High
-                                                                               Sierra
-
-                 17G13033       May 26, 2020   17.7.0\                         About the
-                                               [xnu-4570.71.80\~1]     security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2020-003 High
-                                                                               Sierra
-
-                 17G13035       June 1, 2020   17.7.0\                         About the
-                                               [xnu-4570.71.80.1\~1]   security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2020-003 High
-                                                                               Sierra
-
-                 17G14019       July 15, 2020  17.7.0\                         About the
-                                               [xnu-4570.71.82.5\~1]   security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2020-004 High
-                                                                               Sierra
-
-                 17G14033       September 24,  17.7.0\                         About the
-                                2020           [xnu-4570.71.82.6\~1]   security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2020-005 High
-                                                                               Sierra
-
-                 17G14042       November 12,   17.7.0\                         About the
-                                2020           [xnu-4570.71.82.8\~1]   security
-                                                                               content of
-                                                                               Security
-                                                                               Update
-                                                                               2020-006 High
-                                                                               Sierra
-
----
+<table>
+  <tr>
+    <td
+      class="top-left bottom-left previous-release"
+    >
+      Previous release
+    </td>
+    <td class="top bottom current-release">
+      Current release
+    </td>
+    <td class="top bottom beta-release">
+      Current beta release
+    </td>
+    <td
+      class="top-right bottom-right security-response"
+    >
+      Security response
+    </td>
+  </tr>
+</table>
+<table class="releases">
+  <caption class="top-left top-right">macOS High Sierra Releases</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+  </tr>
+</table>
 
 ## User Interface

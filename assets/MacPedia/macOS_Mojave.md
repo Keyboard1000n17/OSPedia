@@ -3,6 +3,7 @@ title: macOS Mojave
 favicon: Mojave-icon.webp
 order: 160
 background_image: Mojave-wallpaper.webp
+jsonData: ./macOS_Mojave.json
 info:
   icon:
     - alt: macOS Mojave logo
@@ -78,7 +79,7 @@ not previously been converted from HFS+.
 
 ## Features
 
-[System updates]
+### System updates
 
 macOS Mojave deprecates support for several legacy features of the OS. The
 graphics frameworks OpenGL and OpenCL are still supported by the operating
@@ -116,7 +117,7 @@ New data protections require applications to get permission from the user before
 using the Mac camera and microphone or accessing system data like user Mail
 history and Messages database.
 
-[Removed features]
+### Removed features
 
 - Mojave removes integrations with Facebook, Twitter, LinkedIn, Vimeo, and
   Flickr, which were added in OS X Mountain Lion and Mavericks.
@@ -126,14 +127,14 @@ history and Messages database.
 - The only supported Nvidia graphics cards are the Quadro K5000 and GeForce GTX
   680 Mac Edition.
 
-[Applications]
+### Applications
 
 Mojave features changes to existing applications as well as new ones. Finder now
 has metadata preview accessed via View \> Show Preview, and many other updates,
 including a Gallery View (replacing Cover Flow) that lets users browse through
 files visually. After a screenshot is taken, the image appears in the corner of
 the display, as with iOS. The screenshot software can now record video, choose
-where to save files, and be opened via [⇧ Shift].
+where to save files, and be opened via <kbd>⇧ Shift</kbd>.
 
 Safari\'s Tracking Prevention features now prevent social media \"Like\" or
 \"Share\" buttons and comment widgets from tracking users without permission.
@@ -146,7 +147,7 @@ A new Screenshot app was added to macOS Mojave to replace the Grab app.
 Screenshot can capture a selected area, window or the entire screen as well as
 screen record a selected area or the entire display. The Screenshot app is
 located in the /Applications/Utilities/ folder, as was the Grab app. Screenshot
-can also be accessed by pressing [⇧ Shift].
+can also be accessed by pressing <kbd>⇧ Shift</kbd>.
 
 macOS 10.14.1, released on October 30, 2018, adds Group FaceTime, which lets
 users chat with up to 32 people at the same time, using video or audio from an
@@ -172,123 +173,15 @@ A few security fixes were made.
 
 ## Release History
 
-+-------------+-------------+-------------+-------------+-------------+ |
-Version | Build | Date | Darwin | Notes | | | | | version | |
-+=============+=============+=============+=============+=============+ | 10.14
-| 18A391 | September | 18.0.0 | Original | | | | 24, 2018 | | Mac App | | | | |
-| Store | | | | | | release |
-+-------------+-------------+-------------+-------------+-------------+ |
-10.14.1 | 18B75 | October 30, | 18.2.0\ | About the | | | | 2018 | [xnu- | macOS
-| | | | | 4903.221.2\ | Mojave | | | | | ~2] | 10.14.1 | | | | | | Update |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18B2107 | | | Added | | | | | | support for | | | | | | new Vega | | | | | |
-GPUs in | | | | | | MacBook Pro | | | | | | and MacBook | | | | | | Air. |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18B3094 | | | |
-+-------------+-------------+-------------+-------------+-------------+ |
-10.14.2 | 18C54 | December 5, | 18.2.0\ | About the | | | | 2018 | [xnu- | macOS
-| | | | | 4903.231.4\ | Mojave | | | | | ~2] | 10.14.2 | | | | | | Update |
-+-------------+-------------+-------------+-------------+-------------+ |
-10.14.3 | 18D42 | January 22, | 18.2.0\ | About the | | | | 2019 | [xnu- | macOS
-| | | | | 4903.241.1\ | Mojave | | | | | ~4] | 10.14.3 | | | | | | Update |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18D43 | | | |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18D109 | February 7, | | About the | | | | 2019 | | security | | | | | | content
-of | | | | | | macOS | | | | | | Mojave | | | | | | 10.14.3 | | | | | | S | | |
-| | | upplemental | | | | | | Update |
-+-------------+-------------+-------------+-------------+-------------+ |
-10.14.4 | 18E226 | March 25, | 18.5.0\ | About the | | | | 2019 | [xnu- | macOS
-| | | | | 4903.251.3\ | Mojave | | | | | ~3] | 10.14.4 | | | | | | Update |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18E227 | | | |
-+-------------+-------------+-------------+-------------+-------------+ |
-10.14.5 | 18F132 | May 13, | 18.6.0\ | About the | | | | 2019 | [xnu- | macOS |
-| | | | 4903.261.4\ | Mojave | | | | | ~2] | 10.14.5 | | | | | | Update |
-+-------------+-------------+-------------+-------------+-------------+ |
-10.14.6 | 18G84 | July 22, | 18.7.0\ | About the | | | | 2019 | [xnu-4 | macOS |
-| | | | 903.270.47\ | Mojave | | | | | ~4] | 10.14.6 | | | | | | Update |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18G87 | August 1, | | Fixed a | | | | 2019 | | \"Wake from | | | | | | Sleep\" |
-| | | | | issue where | | | | | | Mac | | | | | | computers | | | | | | would
-not | | | | | | wake from | | | | | | sleep | | | | | | properly. |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18G95 | August 26, | 18.7.0\ | Security | | | | 2019 | [xnu- | updates and | | |
-| | 4903.271.2\ | bug fixes | | | | | ~2] | | | | | | | - Solved: | | | | | |
-MacBook | | | | | | Shuts | | | | | | Down | | | | | | During | | | | | | Sleep
-| | | | | | - Fixed: | | | | | | | | | | | | Performance | | | | | | | | | | | |
-degradation | | | | | | when | | | | | | | | | | | | processing | | | | | |
-large | | | | | | files. | | | | | | - Fixed: | | | | | | iLife | | | | | | apps
-| | | | | | (Pages, | | | | | | | | | | | | Keynote, | | | | | | | | | | | |
-Numbers, | | | | | | | | | | | | GarageBand, | | | | | | and | | | | | | iMovie)
-| | | | | | not | | | | | | | | | | | | updating. | | | | | | - | | | | | |
-Re-fixed | | | | | | a | | | | | | vu | | | | | | lnerability | | | | | | that |
-| | | | | was | | | | | | a | | | | | | ccidentally | | | | | | left | | | | | |
-| | | | | | unpatched | | | | | | in a | | | | | | | | | | | | previous | | | |
-| | update, | | | | | | which | | | | | | could | | | | | | have | | | | | | led
-to | | | | | | hacking | | | | | | | | | | | | attempts |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18G103 | September | | Security | | | | 26, 2019 | | Updates and | | | | | | Bug
-Fixes | +-------------+-------------+-------------+-------------+-------------+
-| | 18G1012 | October 29, | 18.7.0\ | About the | | | | 2019 | [xnu-4 | security
-| | | | | 903.278.12\ | content of | | | | | ~4] | Security | | | | | | Update |
-| | | | | 2019-001 |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18G2022 | December | 18.7.0\ | About the | | | | 10, 2019 | [xnu-4 | security |
-| | | | 903.278.19\ | content of | | | | | ~1] | Security | | | | | | Update | |
-| | | | 2019-002 |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18G3020 | January 28, | 18.7.0\ | About the | | | | 2020 | [xnu-4 | security | |
-| | | 903.278.25\ | content of | | | | | ~1] | Security | | | | | | Update | | |
-| | | 2020-001 |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18G4032 | March 24, | 18.7.0\ | About the | | | | 2020 | [xnu-4 | security | | |
-| | 903.278.28\ | content of | | | | | ~1] | Security | | | | | | Update | | | |
-| | 2020-002 |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18G5033 | May 25, | 18.7.0\ | About the | | | | 2020 | [xnu-4 | security | | | |
-| 903.278.35\ | content of | | | | | ~1] | Security | | | | | | Update | | | | |
-| 2020-003 |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18G6020 | July 15, | 18.7.0\ | About the | | | | 2020 | [xnu-4 | security | | |
-| | 903.278.43\ | content of | | | | | ~1] | Security | | | | | | Update | | | |
-| | 2020-004 |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18G6032 | September | 18.7.0\ | About the | | | | 24, 2020 | [xnu-4903 |
-security | | | | | .278.44\~1\ | content of | | | | | Pulled | Security | | | |
-| 2020-09- | Update | | | | | 30] | 2020-005 |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18G6032 | October 1, | 18.7.0\ | About the | | | | 2020 | [xnu-4 | security | |
-| | | 903.278.44\ | content of | | | | | ~1] | macOS | | | | | | 10.14.6 | | | |
-| | S | | | | | | upplemental | | | | | | Update |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18G6042 | November | 18.7.0\ | About the | | | | 12, 2020 | [xnu-4903. |
-security | | | | | 278.44.0.2\ | content of | | | | | ~1] | Security | | | | | |
-Update | | | | | | 2020-006 |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18G7016 | December | 18.7.0\ | About the | | | | 14, 2020 | [xnu-4 | security |
-| | | | 903.278.51\ | content of | | | | | ~1] | Security | | | | | | Update | |
-| | | | 2020-007 |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18G8012 | February 1, | 18.7.0\ | About the | | | | 2021 | [xnu-4 | security | |
-| | | 903.278.56\ | content of | | | | | ~1] | Security | | | | | | Update | | |
-| | | 2021-001 |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18G8022 | February 9, | | About the | | | | 2021 | | security | | | | | |
-content of | | | | | | Security | | | | | | Update | | | | | | 2021-002 |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18G9028 | April 26, | 18.7.0\ | About the | | | | 2021 | [xnu-4 | security | | |
-| | 903.278.65\ | content of | | | | | ~1] | Security | | | | | | Update | | | |
-| | 2021-003 |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18G9216 | May 24, | 18.7.0\ | About the | | | | 2021 | [xnu-4 | security | | | |
-| 903.278.68\ | content of | | | | | ~1] | Security | | | | | | Update | | | | |
-| 2021-004 |
-+-------------+-------------+-------------+-------------+-------------+ | |
-18G9323 | July 21, | 18.7.0\ | About the | | | | 2021 | [xnu-4 | security | | |
-| | 903.278.70\ | content of | | | | | ~1] | Security | | | | | | Update | | | |
-| | 2021-005 |
-+-------------+-------------+-------------+-------------+-------------+
+<table class="releases">
+  <caption class="top-left top-right">macOS Mojave Releases</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Release Date</th>
+      <th class="right">Release Notes</th>
+  </tr>
+  </table>
 
 ## User interface
 

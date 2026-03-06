@@ -148,7 +148,7 @@
   }
 
   div.contents {
-    width: max-content;
+    width: 100%;
     padding: $padding;
     padding-top: 5rem;
     display: none;
@@ -162,10 +162,20 @@
     div.links {
       display: flex;
       flex-direction: column;
-    }
+      justify-self: start;
+      align-items: start;
 
-    a {
-      padding: calc($padding / 3) 0;
+      a {
+        padding-left: calc(1 / 4 * $padding);
+      }
+
+      a.subheadings {
+        padding-left: $padding;
+      }
+
+      a.subsubheadings {
+        padding-left: calc(2 * $padding);
+      }
     }
 
     @media (min-width: 769px) {
@@ -186,25 +196,6 @@
     margin-bottom: calc(2 * $padding);
     width: 100%;
     color: $color;
-
-    div.links {
-      display: flex;
-      flex-direction: column;
-      justify-self: start;
-      align-items: start;
-
-      a {
-        padding: calc(1 / 4 * $padding) 0;
-      }
-
-      a.subheadings {
-        padding-left: $padding;
-      }
-
-      a.subsubheadings {
-        padding-left: calc(2 * $padding);
-      }
-    }
 
     @media (min-width: 1440px) {
       padding-top: 4rem;
@@ -741,20 +732,21 @@
   // Table styling
   table {
     border-collapse: separate;
-    border-radius: 10px;
+    border-radius: $border-radius;
     border: none;
     border-spacing: 0;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: $background-color;
     color: #000;
     margin: 10px;
-    backdrop-filter: blur(2.5px);
+    backdrop-filter: $blur;
     float: none;
     width: 98%;
   }
 
-  table.releases {
-    height: 400px !important;
-    overflow-y: scroll;
+  table caption {
+    padding: $padding;
+    background-color: inherit;
+    border: solid 0.5px #000;
   }
 
   .previous-release {
@@ -776,7 +768,11 @@
   th,
   td {
     border: solid 0.5px #000;
-    padding: 10px;
+    padding: $padding;
+
+    p {
+      margin: 0;
+    }
   }
 
   td.top,
@@ -799,25 +795,25 @@
   .top-left {
     border-top: 2px solid #000;
     border-left: 2px solid #000;
-    border-top-left-radius: 10px;
+    border-top-left-radius: $border-radius;
   }
 
   .top-right {
     border-top: 2px solid #000;
     border-right: 2px solid #000;
-    border-top-right-radius: 10px;
+    border-top-right-radius: $border-radius;
   }
 
   .bottom-left {
     border-bottom: 2px solid #000;
     border-left: 2px solid #000;
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: $border-radius;
   }
 
   .bottom-right {
     border-bottom: 2px solid #000;
     border-right: 2px solid #000;
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: $border-radius;
   }
 }
 
