@@ -1,0 +1,247 @@
+[
+  {
+    "version": "11.0",
+    "build": "20A2411",
+    "release": "November 17, 2020",
+    "darwinVersion": "20.1.0<br><small>xnu-7195.41.8~9</small>",
+    "description": "First releases"
+  },
+  {
+    "version": "11.0.1",
+    "build": "20B29",
+    "release": "November 12, 2020",
+    "darwinVersion": "20.1.0<br><small>xnu-7195.50.7~2</small>",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "20B50",
+    "release": "November 19, 2020",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "11.1",
+    "build": "20C69",
+    "release": "December 14, 2020",
+    "darwinVersion": "20.2.0<br><small>xnu-7195.60.75~1</small>",
+    "description": "Introduces support for AirPods Max, TV app enhancements, Apple News widgets, and privacy information on the App Store. It also includes bug fixes."
+  },
+  {
+    "version": "11.2",
+    "build": "20D64",
+    "release": "February 1, 2021",
+    "darwinVersion": "20.3.0<br><small>xnu-7195.81.3~1</small>",
+    "description": "Improves Bluetooth reliability and fixes the following issues:<ul><li>External displays may show a black screen when connected to a Mac mini (M1, 2020) using an HDMI to DVI converter </li><li>Edits to Apple ProRAW photos in the Photos app may not save</li><li>iCloud Drive could turn off after disabling the iCloud Drive Desktop &amp; Documents Folders option </li><li>System Preferences may not unlock when entering your administrator password </li><li>Globe key may not display the Emoji &amp; Symbols pane when pressed </li></ul>"
+  },
+  {
+    "version": "11.2.1",
+    "build": "20D74",
+    "release": "February 9, 2021",
+    "darwinVersion": "",
+    "description": "Addresses an issue that may prevent the battery from charging in some 2016 and 2017 MacBook Pro models."
+  },
+  {
+    "version": "",
+    "build": "20D75",
+    "release": "February 15, 2021",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "11.2.2",
+    "build": "20D80",
+    "release": "February 25, 2021",
+    "darwinVersion": "",
+    "description": "Prevents models of MacBook Pro (2019 or later) and MacBook Air (2020 or later) from incurring damage when they are connected to certain third-party, non-compliant powered USB-C hubs and docks."
+  },
+  {
+    "version": "11.2.3",
+    "build": "20D91",
+    "release": "March 8, 2021",
+    "darwinVersion": "",
+    "description": "Provides important security updates and is recommended for all users."
+  },
+  {
+    "version": "11.3",
+    "build": "20E232",
+    "release": "April 26, 2021",
+    "darwinVersion": "20.4.0<br><small>xnu-7195.101.1~3</small>",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/en-us/106338#macos113\">About the macOS Big Sur 11.3 update</a></p>"
+  },
+  {
+    "version": "11.3.1",
+    "build": "20E241",
+    "release": "May 3, 2021",
+    "darwinVersion": "20.4.0<br><small>xnu-7195.101.2~1</small>",
+    "description": "Provides important security updates and is recommended for all users."
+  },
+  {
+    "version": "11.4",
+    "build": "20F71",
+    "release": "May 24, 2021",
+    "darwinVersion": "20.5.0<br><small>xnu-7195.121.3~9</small>",
+    "description": "Adds new features to Podcasts and fixes the following bugs:<ul><li>Apple Podcasts subscriptions are available for purchase via monthly and annual subscriptions </li><li>Channels group together collections of shows from podcast creators </li><li>Bookmarks in Safari may get reordered or moved into a folder that can appear hidden </li><li>Certain websites may not display correctly after your Mac wakes from sleep </li><li>Keywords may not be included when exporting a photo from the Photos app </li><li>Preview may become unresponsive when searching PDF documents</li><li>16-inch MacBook may become unresponsive when playing Civilization VI </li></ul>"
+  },
+  {
+    "version": "11.5",
+    "build": "20G71",
+    "release": "July 21, 2021",
+    "darwinVersion": "20.6.0<br><small>xnu-7195.141.2~5<br>Wed Jun 23 00:26:31 PDT 2021</small>",
+    "description": "Includes improvements and fixes bugs which are as follows:<ul><li>Podcasts Library tab allows you to choose to see all shows or only followed shows </li><li>Music may not update play count and last played date in your library </li><li>Smart cards may not work when logging into Mac computers with the M1 chip </li></ul>"
+  },
+  {
+    "version": "11.5.1",
+    "build": "20G80",
+    "release": "July 26, 2021",
+    "darwinVersion": "",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/en-us/103144\">About the security content of macOS 11.5.1</a></p>"
+  },
+  {
+    "version": "11.5.2",
+    "build": "20G95",
+    "release": "August 11, 2021",
+    "darwinVersion": "",
+    "description": "Includes bug fixes for Macs."
+  },
+  {
+    "version": "11.6",
+    "build": "20G165",
+    "release": "September 13, 2021",
+    "darwinVersion": "20.6.0<br><small>xnu-7195.141.6~3<br>Mon Aug 30 06:12:21 PDT 2021</small>",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/en-us/103147\">About the security content of macOS 11.6</a></p>"
+  },
+  {
+    "version": "11.6.1",
+    "build": "20G224",
+    "release": "October 25, 2021",
+    "darwinVersion": "20.6.0<br><small>xnu-7195.141.8~1<br>Tue Oct 12 18:33:42 PDT 2021</small>",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/en-us/103164\">About the security content of macOS 11.6.1</a></p>"
+  },
+  {
+    "version": "11.6.2",
+    "build": "20G314",
+    "release": "December 13, 2021",
+    "darwinVersion": "20.6.0<br><small>xnu-7195.141.14~1<br>Wed Nov 10 22:23:07 PST 2021</small>",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/en-us/102876\">About the security content of macOS 11.6.2</a></p>"
+  },
+  {
+    "version": "11.6.3",
+    "build": "20G415",
+    "release": "January 26, 2022",
+    "darwinVersion": "20.6.0<br><small>xnu-7195.141.19~2<br>Wed Jan 12 22:22:42 PST 2022</small>",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/en-us/103173\">About the security content of macOS 11.6.3</a></p>"
+  },
+  {
+    "version": "11.6.4",
+    "build": "20G417",
+    "release": "February 14, 2022",
+    "darwinVersion": "",
+    "description": "Recommended for all users and improves the security of macOS."
+  },
+  {
+    "version": "11.6.5",
+    "build": "20G527",
+    "release": "March 14, 2022",
+    "darwinVersion": "20.6.0<br><small>xnu-7195.141.26~1<br>Tue Feb 22 21:10:41 PST 2022</small>",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/en-us/102847\">About the security content of macOS 11.6.5</a></p>"
+  },
+  {
+    "version": "11.6.6",
+    "build": "20G624",
+    "release": "May 16, 2022",
+    "darwinVersion": "20.6.0<br><small>xnu-7195.141.29~1<br>Tue Apr 19 21:04:45 PDT 2022</small>",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT213256\">About the security content of macOS 11.6.6</a></p>"
+  },
+  {
+    "version": "11.6.7",
+    "build": "20G630",
+    "release": "June 9, 2022",
+    "darwinVersion": "",
+    "description": "Recommended for all users and improves the security of macOS."
+  },
+  {
+    "version": "11.6.8",
+    "build": "20G730",
+    "release": "July 20, 2022",
+    "darwinVersion": "20.6.0<br><small>xnu-7195.141.32~1<br>Tue Jun 21 20:50:28 PDT 2022</small>",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT213344\">About the security content of macOS 11.6.8</a></p>"
+  },
+  {
+    "version": "11.7",
+    "build": "20G817",
+    "release": "September 12, 2022",
+    "darwinVersion": "20.6.0<br><small>xnu-7195.141.39~2<br>Mon Aug 29 04:31:06 PDT 2022</small>",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT213443\">About the security content of macOS 11.7</a></p>"
+  },
+  {
+    "version": "11.7.1",
+    "build": "20G918",
+    "release": "October 24, 2022",
+    "darwinVersion": "20.6.0<br><small>xnu-7195.141.42~1<br>Thu Sep 29 20:15:11 PDT 2022</small>",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT213493\">About the security content of macOS 11.7.1</a></p>"
+  },
+  {
+    "version": "11.7.2",
+    "build": "20G1020",
+    "release": "December 13, 2022",
+    "darwinVersion": "20.6.0<br><small>xnu-7195.141.46~1<br>Sun Nov 6 23:17:00 PST 2022</small>",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT213534\">About the security content of macOS 11.7.2</a></p>"
+  },
+  {
+    "version": "11.7.3",
+    "build": "20G1116",
+    "release": "January 23, 2023",
+    "darwinVersion": "20.6.0<br><small>xnu-7195.141.49~1<br>Fri Dec 16 00:35:00 PST 2022</small>",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/en-us/102789\">About the security content of macOS 11.7.3</a></p>"
+  },
+  {
+    "version": "11.7.4",
+    "build": "20G1120",
+    "release": "February 15, 2023",
+    "darwinVersion": "",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT213534\">About the security content of macOS 11.7.4</a></p>"
+  },
+  {
+    "version": "11.7.5",
+    "build": "20G1225",
+    "release": "March 27, 2023",
+    "darwinVersion": "20.6.0<br><small>xnu-7195.141.49.700.6~1<br>Thu Mar 9 20:39:26 PST 2023</small>",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT213675\">About the security content of macOS 11.7.5</a></p>"
+  },
+  {
+    "version": "11.7.6",
+    "build": "20G1231",
+    "release": "April 10, 2023",
+    "darwinVersion": "",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT213725\">About the security content of macOS 11.7.6</a></p>"
+  },
+  {
+    "version": "11.7.7",
+    "build": "20G1345",
+    "release": "May 18, 2023",
+    "darwinVersion": "20.6.0<br><small>xnu-7195.141.49.701.3~1<br>Mon Apr 24 23:00:57 PDT 2023</small>",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT213760\">About the security content of macOS 11.7.7</a></p>"
+  },
+  {
+    "version": "11.7.8",
+    "build": "20G1351",
+    "release": "June 21, 2023",
+    "darwinVersion": "20.6.0<br><small>xnu-7195.141.49.701.4~1<br>Thu Jun 8 22:36:09 PDT 2023</small>",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT213809\">About the security content of macOS 11.7.8</a></p>"
+  },
+  {
+    "version": "11.7.9",
+    "build": "20G1426",
+    "release": "July 24, 2023",
+    "darwinVersion": "20.6.0<br><small>xnu-7195.141.49.702.12~1<br>Thu Jul 6 22:12:47 PDT 2023</small>",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT213845\">About the security content of macOS 11.7.9</a></p>"
+  },
+  {
+    "version": "11.7.10",
+    "build": "20G1427",
+    "release": "September 11, 2023",
+    "darwinVersion": "",
+    "description": "Consult Apple's webpage for this release:<p><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT213915\">About the security content of macOS 11.7.10</a></p>"
+  }
+]

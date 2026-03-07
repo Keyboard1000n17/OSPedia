@@ -4,258 +4,258 @@
     "build": "17A365",
     "release": "September 25, 2017",
     "darwinVersion": "17.0.0",
-    "description": "Original Mac App Store release About the security content of macOS High Sierra 10.13"
+    "description": "Original Mac App Store release<br><a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT208144\">About the security content of macOS High Sierra 10.13</a>"
   },
   {
-    "version": "10.13",
+    "version": "",
     "build": "17A405",
     "release": "October 5, 2017",
-    "darwinVersion": "17.0.0",
-    "description": "About the security content of macOS High Sierra 10.13 Supplemental Update"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT208165\">About the security content of macOS High Sierra 10.13 Supplemental Update</a>"
   },
   {
     "version": "10.13.1",
     "build": "17B48",
     "release": "October 31, 2017",
     "darwinVersion": "17.2.0",
-    "description": "About the macOS High Sierra 10.13.1 Update About the security content of macOS High Sierra 10.13.1"
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT208177\">About the macOS High Sierra 10.13.1 Update</a><br><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT208221\">About the security content of macOS High Sierra 10.13.1</a>"
   },
   {
-    "version": "10.13.1",
+    "version": "",
     "build": "17B1002",
     "release": "November 29, 2017",
-    "darwinVersion": "17.2.0",
-    "description": "About the security content of Security Update 2017-001"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT208315\">About the security content of Security Update 2017-001</a>"
   },
   {
-    "version": "10.13.1",
+    "version": "",
     "build": "17B1003",
-    "release": "November 29, 2017",
-    "darwinVersion": "17.2.0",
-    "description": "About the security content of Security Update 2017-001"
+    "release": "",
+    "darwinVersion": "",
+    "description": ""
   },
   {
     "version": "10.13.2",
     "build": "17C88",
     "release": "December 6, 2017",
     "darwinVersion": "17.3.0",
-    "description": "About the macOS High Sierra 10.13.2 Update About the security content of macOS High Sierra 10.13.2"
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT208179\">About the macOS High Sierra 10.13.2 Update</a><br><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT208331\">About the security content of macOS High Sierra 10.13.2</a>"
   },
   {
-    "version": "10.13.2",
+    "version": "",
     "build": "17C89",
-    "release": "December 6, 2017",
-    "darwinVersion": "17.3.0",
-    "description": "About the macOS High Sierra 10.13.2 Update About the security content of macOS High Sierra 10.13.2"
+    "release": "",
+    "darwinVersion": "",
+    "description": ""
   },
   {
-    "version": "10.13.2",
+    "version": "",
     "build": "17C205",
     "release": "January 8, 2018",
-    "darwinVersion": "17.3.0",
-    "description": "About the security content of macOS High Sierra 10.13.2 Supplemental Update"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT208397\">About the security content of macOS High Sierra 10.13.2 Supplemental Update</a>"
   },
   {
-    "version": "10.13.2",
+    "version": "",
     "build": "17C2205",
-    "release": "January 8, 2018",
-    "darwinVersion": "17.3.0",
-    "description": "About the security content of macOS High Sierra 10.13.2 Supplemental Update"
+    "release": "",
+    "darwinVersion": "",
+    "description": ""
   },
   {
     "version": "10.13.3",
     "build": "17D47",
     "release": "January 23, 2018",
     "darwinVersion": "17.4.0",
-    "description": "About the macOS High Sierra 10.13.3 Update About the security content of macOS High Sierra 10.13.3"
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT208375\">About the macOS High Sierra 10.13.3 Update</a><br><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT208465\">About the security content of macOS High Sierra 10.13.3</a>"
   },
   {
-    "version": "10.13.3",
+    "version": "",
     "build": "17D2047",
-    "release": "January 23, 2018",
-    "darwinVersion": "17.4.0",
-    "description": "About the macOS High Sierra 10.13.3 Update About the security content of macOS High Sierra 10.13.3"
+    "release": "",
+    "darwinVersion": "",
+    "description": ""
   },
   {
-    "version": "10.13.3",
+    "version": "",
     "build": "17D102",
     "release": "February 19, 2018",
-    "darwinVersion": "17.4.0",
-    "description": "About the security content of macOS High Sierra 10.13.3 Supplemental Update"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT208535\">About the security content of macOS High Sierra 10.13.3 Supplemental Update</a>"
   },
   {
-    "version": "10.13.3",
+    "version": "",
     "build": "17D2102",
-    "release": "February 19, 2018",
-    "darwinVersion": "17.4.0",
-    "description": "About the security content of macOS High Sierra 10.13.3 Supplemental Update"
+    "release": "",
+    "darwinVersion": "",
+    "description": ""
   },
   {
     "version": "10.13.4",
     "build": "17E199",
     "release": "March 29, 2018",
     "darwinVersion": "17.5.0",
-    "description": "About the macOS High Sierra 10.13.4 Update About the security content of macOS High Sierra 10.13.4"
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT208533\">About the macOS High Sierra 10.13.4 Update</a><br><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT208692\">About the security content of macOS High Sierra 10.13.4</a>"
   },
   {
-    "version": "10.13.4",
+    "version": "",
     "build": "17E202",
     "release": "April 24, 2018",
-    "darwinVersion": "17.5.0",
-    "description": "About the security content of Security Update 2018-001"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT208742\">About the security content of Security Update 2018-001</a>"
   },
   {
     "version": "10.13.5",
     "build": "17F77",
     "release": "June 1, 2018",
     "darwinVersion": "17.6.0",
-    "description": "About the macOS High Sierra 10.13.5 Update About the security content of macOS High Sierra 10.13.5"
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT208723\">About the macOS High Sierra 10.13.5 Update</a><br><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT208849\">About the security content of macOS High Sierra 10.13.5</a>"
   },
   {
     "version": "10.13.6",
     "build": "17G65",
     "release": "July 9, 2018",
     "darwinVersion": "17.7.0",
-    "description": "About the macOS High Sierra 10.13.6 Update About the security content of macOS High Sierra 10.13.6"
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT208864\">About the macOS High Sierra 10.13.6 Update</a><br><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT208937\">About the security content of macOS High Sierra 10.13.6</a>"
   },
   {
-    "version": "10.13.6",
+    "version": "",
     "build": "17G2208",
     "release": "July 24, 2018",
-    "darwinVersion": "17.7.0",
-    "description": "About the macOS High Sierra 10.13.6 Update About the security content of macOS High Sierra 10.13.6"
+    "darwinVersion": "",
+    "description": ""
   },
   {
-    "version": "10.13.6",
+    "version": "",
     "build": "17G2307",
     "release": "August 28, 2018",
-    "darwinVersion": "17.7.0",
-    "description": "About the macOS High Sierra 10.13.6 Update About the security content of macOS High Sierra 10.13.6"
+    "darwinVersion": "",
+    "description": ""
   },
   {
-    "version": "10.13.6",
+    "version": "",
     "build": "17G3025",
     "release": "October 30, 2018",
-    "darwinVersion": "17.7.0",
-    "description": "About the security content of Security Update 2018-002 High Sierra"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT209193\">About the security content of Security Update 2018-002 High Sierra</a>"
   },
   {
-    "version": "10.13.6",
+    "version": "",
     "build": "17G4015",
     "release": "December 5, 2018",
-    "darwinVersion": "17.7.0",
-    "description": "About the security content of Security Update 2018-003 High Sierra"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT209341\">About the security content of Security Update 2018-003 High Sierra</a>"
   },
   {
-    "version": "10.13.6",
+    "version": "",
     "build": "17G5019",
     "release": "January 22, 2019",
-    "darwinVersion": "17.7.0 xnu-4570.71.22~1",
-    "description": "About the security content of Security Update 2019-001 High Sierra"
+    "darwinVersion": "17.7.0<br><small>xnu-4570.71.22~1</small>",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT209446\">About the security content of Security Update 2019-001 High Sierra</a>"
   },
   {
-    "version": "10.13.6",
-    "build": "17G6029",
+    "version": "",
+    "build": "<s>17G6029</s>",
     "release": "March 25, 2019",
     "darwinVersion": "17.7.0",
-    "description": "About the security content of Security Update 2019-002 High Sierra"
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT209600\">About the security content of Security Update 2019-002 High Sierra</a>"
   },
   {
-    "version": "10.13.6",
+    "version": "",
     "build": "17G6030",
     "release": "March 29, 2019",
-    "darwinVersion": "17.7.0 xnu-4570.71.35~1",
-    "description": "About the security content of Security Update 2019-002 High Sierra"
+    "darwinVersion": "17.7.0<br><small>xnu-4570.71.35~1</small>",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT209635\">About the security content of Security Update 2019-002 High Sierra</a>"
   },
   {
-    "version": "10.13.6",
+    "version": "",
     "build": "17G7024",
     "release": "May 13, 2019",
-    "darwinVersion": "17.7.0 xnu-4570.71.45~1",
-    "description": "About the security content of Security Update 2019-003 High Sierra"
+    "darwinVersion": "17.7.0<br><small>xnu-4570.71.45~1</small>",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT210119\">About the security content of Security Update 2019-003 High Sierra</a>"
   },
   {
-    "version": "10.13.6",
-    "build": "17G8029",
+    "version": "",
+    "build": "<s>17G8029</s>",
     "release": "July 22, 2019",
     "darwinVersion": "17.7.0",
-    "description": "About the security content of Security Update 2019-004 High Sierra"
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT210348\">About the security content of Security Update 2019-004 High Sierra</a>"
   },
   {
-    "version": "10.13.6",
+    "version": "",
     "build": "17G8030",
     "release": "July 29, 2019",
-    "darwinVersion": "17.7.0",
-    "description": "About the security content of Security Update 2019-004 High Sierra"
+    "darwinVersion": "",
+    "description": ""
   },
   {
-    "version": "10.13.6",
+    "version": "",
     "build": "17G8037",
     "release": "September 26, 2019",
-    "darwinVersion": "17.7.0 xnu-4570.71.46~1",
-    "description": "About the security content of Security Update 2019-005 High Sierra"
+    "darwinVersion": "17.7.0<br><small>xnu-4570.71.46~1</small>",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT210589\">About the security content of Security Update 2019-005 High Sierra</a>"
   },
   {
-    "version": "10.13.6",
+    "version": "",
     "build": "17G9016",
     "release": "October 29, 2019",
-    "darwinVersion": "17.7.0 xnu-4570.71.57~1",
-    "description": "About the security content of Security Update 2019-006 High Sierra"
+    "darwinVersion": "17.7.0<br><small>xnu-4570.71.57~1</small>",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT210722\">About the security content of Security Update 2019-006 High Sierra</a>"
   },
   {
-    "version": "10.13.6",
+    "version": "",
     "build": "17G10021",
     "release": "December 10, 2019",
-    "darwinVersion": "17.7.0 xnu-4570.71.63~1",
-    "description": "About the security content of Security Update 2019-007 High Sierra"
+    "darwinVersion": "17.7.0<br><small>xnu-4570.71.63~1</small>",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT210788\">About the security content of Security Update 2019-007 High Sierra</a>"
   },
   {
-    "version": "10.13.6",
+    "version": "",
     "build": "17G11023",
     "release": "January 28, 2020",
-    "darwinVersion": "17.7.0 xnu-4570.71.69~1",
-    "description": "About the security content of Security Update 2020-001 High Sierra"
+    "darwinVersion": "17.7.0<br><small>xnu-4570.71.69~1</small>",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT210919\">About the security content of Security Update 2020-001 High Sierra</a>"
   },
   {
-    "version": "10.13.6",
+    "version": "",
     "build": "17G12034",
     "release": "March 24, 2020",
-    "darwinVersion": "17.7.0 xnu-4570.71.73~1",
-    "description": "About the security content of Security Update 2020-002 High Sierra"
+    "darwinVersion": "17.7.0<br><small>xnu-4570.71.73~1</small>",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT211100\">About the security content of Security Update 2020-002 High Sierra</a>"
   },
   {
-    "version": "10.13.6",
-    "build": "17G13033",
+    "version": "",
+    "build": "<s>17G13033</s>",
     "release": "May 26, 2020",
-    "darwinVersion": "17.7.0 xnu-4570.71.80~1",
-    "description": "About the security content of Security Update 2020-003 High Sierra"
+    "darwinVersion": "17.7.0<br><small>xnu-4570.71.80~1</small>",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT211170\">About the security content of Security Update 2020-003 High Sierra</a>"
   },
   {
-    "version": "10.13.6",
+    "version": "",
     "build": "17G13035",
     "release": "June 1, 2020",
-    "darwinVersion": "17.7.0 xnu-4570.71.80.1~1",
-    "description": "About the security content of Security Update 2020-003 High Sierra"
+    "darwinVersion": "17.7.0<br><small>xnu-4570.71.80.1~1</small>",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT211215\">About the security content of Security Update 2020-003 High Sierra</a>"
   },
   {
-    "version": "10.13.6",
+    "version": "",
     "build": "17G14019",
     "release": "July 15, 2020",
-    "darwinVersion": "17.7.0 xnu-4570.71.82.5~1",
-    "description": "About the security content of Security Update 2020-004 High Sierra"
+    "darwinVersion": "17.7.0<br><small>xnu-4570.71.82.5~1</small>",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT211289\">About the security content of Security Update 2020-004 High Sierra</a>"
   },
   {
-    "version": "10.13.6",
+    "version": "",
     "build": "17G14033",
     "release": "September 24, 2020",
-    "darwinVersion": "17.7.0 xnu-4570.71.82.6~1",
-    "description": "About the security content of Security Update 2020-005 High Sierra"
+    "darwinVersion": "17.7.0<br><small>xnu-4570.71.82.6~1</small>",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT211849\">About the security content of Security Update 2020-005 High Sierra</a>"
   },
   {
-    "version": "10.13.6",
+    "version": "",
     "build": "17G14042",
     "release": "November 12, 2020",
-    "darwinVersion": "17.7.0 xnu-4570.71.82.8~1",
-    "description": "About the security content of Security Update 2020-006 High Sierra"
+    "darwinVersion": "17.7.0<br><small>xnu-4570.71.82.8~1</small>",
+    "description": "<a rel=\"nofollow\" class=\"external-links\" href=\"https://support.apple.com/HT211946\">About the security content of Security Update 2020-006 High Sierra</a>"
   }
 ]

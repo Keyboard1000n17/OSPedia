@@ -1,0 +1,226 @@
+[
+  {
+    "version": "10.15",
+    "build": "19A583",
+    "date": "October 7, 2019",
+    "darwinVersion": "19.0.0",
+    "description": "Original Software Update release <p><a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/HT210634\">Security content</a> </p>"
+  },
+  {
+    "version": "",
+    "build": "19A602",
+    "date": "October 15, 2019",
+    "darwinVersion": "",
+    "description": "Supplemental update"
+  },
+  {
+    "version": "",
+    "build": "19A603",
+    "date": "October 21, 2019",
+    "darwinVersion": "",
+    "description": "Revised Supplemental update"
+  },
+  {
+    "version": "10.15.1",
+    "build": "19B88",
+    "date": "October 29, 2019",
+    "darwinVersion": "19.0.0<br><small>xnu-6153.41.3~29</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/HT210642#macos10151\">About the macOS Catalina 10.15.1 Update</a> <p><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT210722\">Security content</a> </p>"
+  },
+  {
+    "version": "10.15.2",
+    "build": "19C57",
+    "date": "December 10, 2019",
+    "darwinVersion": "19.2.0<br><small>xnu-6153.61.1~20</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/HT210642#macos10152\">About the macOS Catalina 10.15.2 Update</a> <p><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT210788\">Security content</a> </p>"
+  },
+  {
+    "version": "",
+    "build": "19C58",
+    "date": "",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "10.15.3",
+    "build": "19D76",
+    "date": "January 28, 2020",
+    "darwinVersion": "19.3.0<br><small>xnu-6153.81.5~1</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/HT210642#macos10153\">About the macOS Catalina 10.15.3 Update</a> <p><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT210919\">Security content</a> </p>"
+  },
+  {
+    "version": "10.15.4",
+    "build": "19E266",
+    "date": "March 24, 2020",
+    "darwinVersion": "19.4.0<br><small>xnu-6153.101.6~15</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/HT210642#macos10154\">About the macOS Catalina 10.15.4 Update</a> <p><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT211100\">Security content</a> </p>"
+  },
+  {
+    "version": "",
+    "build": "19E287",
+    "date": "April 8, 2020",
+    "darwinVersion": "",
+    "description": "Supplemental update"
+  },
+  {
+    "version": "10.15.5",
+    "build": "19F96",
+    "date": "May 26, 2020",
+    "darwinVersion": "19.5.0<br><small>xnu-6153.121.1~7</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/HT210642#macos10155\">About the macOS Catalina 10.15.5 Update</a> <p><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT211170\">Security content</a> </p>"
+  },
+  {
+    "version": "",
+    "build": "19F101",
+    "date": "June 1, 2020",
+    "darwinVersion": "19.5.0<br><small>xnu-6153.121.2~2</small>",
+    "description": "Supplemental update <p><a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/HT211215\">Security content</a> </p>"
+  },
+  {
+    "version": "10.15.6",
+    "build": "19G73",
+    "date": "July 15, 2020",
+    "darwinVersion": "19.6.0<br><small>xnu-6153.141.1~9</small><br><small>Jul 5 00:43:10 PDT 2020</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/en-us/HT210642#macos10156\">About the macOS Catalina 10.15.6 Update</a> <p><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/en-us/HT211289\">Security content</a> </p>"
+  },
+  {
+    "version": "",
+    "build": "19G2021",
+    "date": "August 12, 2020",
+    "darwinVersion": "19.6.0<br><small>xnu-6153.141.1~1</small><br><small>Jun 18 20:49:00 PDT 2020</small>",
+    "description": "Supplemental update"
+  },
+  {
+    "version": "10.15.7",
+    "build": "19H2",
+    "date": "September 24, 2020",
+    "darwinVersion": "19.6.0<br><small>xnu-6153.141.2~1</small><br><small>Mon Aug 31 22:12:52 PDT 2020</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/HT210642#macos10157\">About the macOS Catalina 10.15.7 Update</a> <p><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT211849\">Security content</a> </p>"
+  },
+  {
+    "version": "",
+    "build": "19H4",
+    "date": "October 27, 2020",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "19H15",
+    "date": "November 5, 2020",
+    "darwinVersion": "19.6.0<br><small>xnu-6153.141.2.2~1</small><br><small>Thu Oct 29 22:56:45 PDT 2020</small>",
+    "description": "Supplemental update <p><a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/HT211947\">Security content</a> </p>"
+  },
+  {
+    "version": "",
+    "build": "19H114",
+    "date": "December 14, 2020",
+    "darwinVersion": "19.6.0<br><small>xnu-6153.141.10~1</small><br><small>Tue Nov 10 00:10:30 PST 2020</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/HT212011\">About the security content of Security Update 2020-001</a>"
+  },
+  {
+    "version": "",
+    "build": "19H512",
+    "date": "February 1, 2021",
+    "darwinVersion": "19.6.0<br><small>xnu-6153.141.16~1</small><br><small>Tue Jan 12 22:13:05 PST 2021</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/HT212147\">About the security content of Security Update 2021-001</a>"
+  },
+  {
+    "version": "",
+    "build": "19H524",
+    "date": "February 9, 2021",
+    "darwinVersion": "",
+    "description": "Supplemental Update <p><a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/HT212177\">Security content</a> </p>"
+  },
+  {
+    "version": "",
+    "build": "19H1030",
+    "date": "April 26, 2021",
+    "darwinVersion": "19.6.0<br><small>xnu-6153.141.28.1~1</small><br><small>Mon Apr 12 20:57:45 PDT 2021</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/HT212326\">About the security content of Security Update 2021-002</a>"
+  },
+  {
+    "version": "",
+    "build": "19H1217",
+    "date": "May 24, 2021",
+    "darwinVersion": "19.6.0<br><small>xnu-6153.141.33~1</small><br><small>Thu May 6 00:48:39 PDT 2021</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/HT212530\">About the security content of Security Update 2021-003</a>"
+  },
+  {
+    "version": "",
+    "build": "19H1323",
+    "date": "July 21, 2021",
+    "darwinVersion": "19.6.0<br><small>xnu-6153.141.35~1</small><br><small>Thu Jun 22 19:49:55 PDT 2021</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/HT212600\">About the security content of Security Update 2021-004</a>"
+  },
+  {
+    "version": "",
+    "build": "19H1417",
+    "date": "September 13, 2021",
+    "darwinVersion": "19.6.0<br><small>xnu-6153.141.40~1</small><br><small>Tue Aug 24 20:28:00 PDT 2021</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/kb/HT212805\">About the security content of Security Update 2021-005</a>"
+  },
+  {
+    "version": "",
+    "build": "19H1419",
+    "date": "September 23, 2021",
+    "darwinVersion": "19.6.0<br><small>xnu-6153.141.40.1~1</small><br><small>Thu Sep 16 20:58:47 PDT 2021</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/kb/HT212825\">About the security content of Security Update 2021-006</a>"
+  },
+  {
+    "version": "",
+    "build": "19H1519",
+    "date": "October 25, 2021",
+    "darwinVersion": "19.6.0<br><small>xnu-6153.141.43~1</small><br><small>Tue Oct 12 18:34:05 PDT 2021</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/kb/HT212871\">About the security content of Security Update 2021-007</a>"
+  },
+  {
+    "version": "",
+    "build": "19H1615",
+    "date": "December 13, 2021",
+    "darwinVersion": "19.6.0<br><small>xnu-6153.141.50~1</small><br><small>Sun Nov 14 19:58:51 PST 2021</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/kb/HT212981\">About the security content of Security Update 2021-008</a>"
+  },
+  {
+    "version": "",
+    "build": "19H1713",
+    "date": "January 26, 2022",
+    "darwinVersion": "19.6.0<br><small>xnu-6153.141.51~3</small><br><small>Thu Jan 13 01:26:33 PST 2022</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/kb/HT213056\">About the security content of Security Update 2022-001</a>"
+  },
+  {
+    "version": "",
+    "build": "19H1715",
+    "date": "February 14, 2022",
+    "darwinVersion": "",
+    "description": "Security Update 2022-002"
+  },
+  {
+    "version": "",
+    "build": "19H1824",
+    "date": "March 14, 2022",
+    "darwinVersion": "19.6.0<br><small>xnu-6153.141.59~1</small><br><small>Tue Feb 15 21:39:11 PST 2022</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/kb/HT213185\">About the security content of Security Update 2022-003</a>"
+  },
+  {
+    "version": "",
+    "build": "19H1922",
+    "date": "May 16, 2022",
+    "darwinVersion": "19.6.0<br><small>xnu-6153.141.62~1</small><br><small>Mon Apr 18 21:50:40 PDT 2022</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/kb/HT213255\">About the security content of Security Update 2022-004</a>"
+  },
+  {
+    "version": "",
+    "build": "19H2026",
+    "date": "July 20, 2022",
+    "darwinVersion": "19.6.0<br><small>xnu-6153.141.66~1</small><br><small>Tue Jun 21 21:18:39 PDT 2022</small>",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/HT213343\">About the security content of Security Update 2022-005</a>"
+  },
+  {
+    "version": "10.15.8",
+    "build": "19H2036",
+    "date": "February 2, 2026",
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"extenal-links\" href=\"https://support.apple.com/en-ca/100100\">Apple security releases</a>"
+  }
+]
