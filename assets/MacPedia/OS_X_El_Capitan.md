@@ -3,6 +3,7 @@ title: OS X El Capitan
 favicon: El_Capitan-icon.webp
 order: 130
 background_image: El_Capitan-wallpaper.webp
+jsonData: ./OS_X_El_Capitan.json
 info:
   icon:
     - alt: OS X El Capitan logo
@@ -205,31 +206,17 @@ default, but can be disabled.
 
 ## Release History
 
-Version Build Date Darwin version Release notes
-
----
-
-10.11 15A284 September 30, 2015 15.0.0 Original Mac App Store release 10.11.1
-15B42 October 21, 2015 About the OS X El Capitan v10.11.1 Update 10.11.2 15C50
-December 8, 2015 15.2.0 About the OS X El Capitan v10.11.2 Update 10.11.3 15D21
-January 19, 2016 15.3.0 About the OS X El Capitan v10.11.3 Update 10.11.4 15E65
-March 21, 2016 15.4.0 About the OS X El Capitan v10.11.4 Update 10.11.5 15F34
-May 16, 2016 15.5.0 About the OS X El Capitan v10.11.5 Update 10.11.6 15G31 July
-18, 2016 15.6.0 About the OS X El Capitan v10.11.6 Update 15G1004 September 1,
-2016 About the security content of Security Update 2016-001 El Capitan 15G1011  
- 15G1108 October 24, 2016 About the security content of Security Update 2016-002
-El Capitan 15G1212 December 13, 2016 About the security content of Security
-Update 2016-003 El Capitan 15G1217 January 17, 2017 About the security content
-of Security Update 2016-003 El Capitan 15G1421 March 27, 2017 About the security
-content of Security Update 2017-001 El Capitan 15G1510 May 15, 2017 About the
-security content of Security Update 2017-002 El Capitan 15G1611 July 19, 2017
-About the security content of Security Update 2017-003 El Capitan 15G17023
-October 31, 2017 About the security content of Security Update 2017-004 El
-Capitan 15G18013 December 6, 2017 About the security content of Security Update
-2017-005 El Capitan 15G19009 January 23, 2018 About the security content of
-Security Update 2018-001 El Capitan 15G20015 March 29, 2018 About the security
-content of Security Update 2018-002 El Capitan 15G21013 June 1, 2018 About the
-security content of Security Update 2018-003 El Capitan 15G22010 July 9, 2018
-About the security content of Security Update 2018-004 El Capitan
+<table class="releases">
+  <caption class="top-left top-right">OS X El Capitan releases</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+  </tbody>
+</table>
 
 ## User Interface

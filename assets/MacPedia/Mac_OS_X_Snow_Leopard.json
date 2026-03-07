@@ -1,0 +1,107 @@
+[
+  {
+    "version": "10.6",
+    "build": "10A432",
+    "release": "August 28, 2009",
+    "darwinVersion": "10.0",
+    "description": "Original retail DVD release"
+  },
+  {
+    "version": "",
+    "build": "10A433",
+    "release": "",
+    "darwinVersion": "",
+    "description": "Server edition; Original retail DVD release"
+  },
+  {
+    "version": "10.6.1",
+    "build": "10B504",
+    "release": "September 10, 2009",
+    "darwinVersion": "10.1",
+    "description": "Unavailable"
+  },
+  {
+    "version": "10.6.2",
+    "build": "10C540",
+    "release": "November 9, 2009",
+    "darwinVersion": "10.2",
+    "description": ""
+  },
+  {
+    "version": "10.6.3",
+    "build": "10D573",
+    "release": "March 29, 2010",
+    "darwinVersion": "10.3",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "10D575",
+    "release": "April 1, 2010",
+    "darwinVersion": "",
+    "description": "Second retail DVD release"
+  },
+  {
+    "version": "",
+    "build": "10D578",
+    "release": "April 13, 2010",
+    "darwinVersion": "",
+    "description": "Unavailable"
+  },
+  {
+    "version": "10.6.4",
+    "build": "10F569",
+    "release": "June 15, 2010",
+    "darwinVersion": "10.4",
+    "description": ""
+  },
+  {
+    "version": "10.6.5",
+    "build": "10H574",
+    "release": "November 10, 2010",
+    "darwinVersion": "10.5",
+    "description": ""
+  },
+  {
+    "version": "10.6.6",
+    "build": "10J567",
+    "release": "January 6, 2011",
+    "darwinVersion": "10.6",
+    "description": ""
+  },
+  {
+    "version": "10.6.7",
+    "build": "10J869",
+    "release": "March 21, 2011",
+    "darwinVersion": "10.7",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "10J3250",
+    "release": "",
+    "darwinVersion": "",
+    "description": "For the early 2011 Macbook Pro"
+  },
+  {
+    "version": "",
+    "build": "10J4138",
+    "release": "May 4, 2011",
+    "darwinVersion": "",
+    "description": "For the mid 2011 iMac 21.5\""
+  },
+  {
+    "version": "10.6.8",
+    "build": "10K540",
+    "release": "June 23, 2011",
+    "darwinVersion": "10.8",
+    "description": "Unavailable"
+  },
+  {
+    "version": "",
+    "build": "10K549",
+    "release": "July 25, 2011",
+    "darwinVersion": "",
+    "description": ""
+  }
+]

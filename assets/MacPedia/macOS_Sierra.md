@@ -241,28 +241,8 @@ tab) in which the user authenticated the program.
 
 ## Release History
 
-<table>
-  <tr>
-    <td
-      class="top-left bottom-left previous-release"
-    >
-      Previous release
-    </td>
-    <td class="top bottom current-release">
-      Current release
-    </td>
-    <td class="top bottom beta-release">
-      Current beta release
-    </td>
-    <td
-      class="top-right bottom-right security-response"
-    >
-      Security response
-    </td>
-  </tr>
-</table>
 <table class="releases">
-  <caption class="top-left top-right">macOS Tahoe Releases</caption>
+  <caption class="top-left top-right">macOS Sierra Releases</caption>
   <tbody>
     <tr>
       <th class="left">Version</th>

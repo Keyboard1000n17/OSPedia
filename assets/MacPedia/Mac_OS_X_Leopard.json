@@ -1,0 +1,93 @@
+[
+  {
+    "version": "10.5.1",
+    "build": "9B18",
+    "release": "November 15, 2007",
+    "darwinVersion": "9.1<br><small>xnu-1228.0.2~1</small>",
+    "description": "Second retail DVD release. Various bug fixes and security upreleases."
+  },
+  {
+    "version": "",
+    "build": "9B2117",
+    "release": "December 14, 2007",
+    "darwinVersion": "9.1.1",
+    "description": "Forked build for Early 2008 Mac Pro and Xserve"
+  },
+  {
+    "version": "10.5.2",
+    "build": "9C31",
+    "release": "February 11, 2008",
+    "darwinVersion": "9.2<br><small>xnu-1228.3.13~1</small>",
+    "description": "Unavailable"
+  },
+  {
+    "version": "",
+    "build": "9C7010",
+    "release": "",
+    "darwinVersion": "9.2",
+    "description": ""
+  },
+  {
+    "version": "10.5.3",
+    "build": "9D34",
+    "release": "May 28, 2008",
+    "darwinVersion": "9.3<br><small>xnu-1228.5.18~1</small>",
+    "description": ""
+  },
+  {
+    "version": "10.5.4",
+    "build": "9E17",
+    "release": "June 30, 2008",
+    "darwinVersion": "9.4<br><small>xnu-1228.5.20~1</small>",
+    "description": "Third retail DVD release"
+  },
+  {
+    "version": "10.5.5",
+    "build": "9F33",
+    "release": "September 15, 2008",
+    "darwinVersion": "9.5<br><small>1228.7.58~1</small>",
+    "description": "Unavailable"
+  },
+  {
+    "version": "10.5.6",
+    "build": "9G55",
+    "release": "December 15, 2008",
+    "darwinVersion": "9.6",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "9G66",
+    "release": "January 6, 2009",
+    "darwinVersion": "",
+    "description": "Fourth retail DVD release (part of Mac Box Set)"
+  },
+  {
+    "version": "",
+    "build": "9G71",
+    "release": "Unavailable",
+    "darwinVersion": "9.6<br><small>xnu-1228.9.59~1</small>",
+    "description": "Unavailable"
+  },
+  {
+    "version": "10.5.7",
+    "build": "9J61",
+    "release": "May 12, 2009",
+    "darwinVersion": "9.7<br><small>xnu-1228.12.14~1</small>",
+    "description": ""
+  },
+  {
+    "version": "10.5.8",
+    "build": "9L30",
+    "release": "August 5, 2009",
+    "darwinVersion": "9.8",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "9L34",
+    "release": "August 31, 2009",
+    "darwinVersion": "9.8<br><small>xnu-1228.15.4~1</small>",
+    "description": "Mac OS X Server 10.5.8 Update v.1.1"
+  }
+]

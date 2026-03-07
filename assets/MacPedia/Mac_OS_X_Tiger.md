@@ -3,6 +3,7 @@ title: Mac OS X Tiger
 favicon: Tiger-icon.webp
 order: 60
 background_image: Tiger-wallpaper.webp
+jsonData: ./Mac_OS_X_Tiger.json
 info:
   icon:
     - alt: Mac OS X Tiger logo
@@ -284,36 +285,17 @@ Rosetta.
 
 ## Release History
 
----
-
-Version Build Date Darwin version Notes 10.4 8A428 April 29, 2005 8.0
-Preinstalled on much of the new line of computer 8A432 Original retail release
-10.4.1 8B15 May 16, 2005 8.1 Improved reliability, particularly in networking;
-improved compatibility with software and hardware devices. Also addresses a
-widget auto-installation issue. 8B17 May 19, 2005 Server edition 10.4.2 8C46
-July 12, 2005 8.2 About the Mac OS X 10.4.2 Update (Delta) 8C47 Server edition
-8E102 October 12, 2005 Exclusively for Front Row iMac G5 released on same date
-8E45 October 19, 2005 Exclusively for PowerBook G4s released on same date 8E90
-Exclusively for Power Mac G5 Dual and Quad released on same date 10.4.3 8F46
-October 31, 2005 8.3 About the Mac OS X 10.4.3 Update (Delta) Updated retail
-release 10.4.4 8G32 January 10, 2006 8.4 About the Mac OS X 10.4.4 Update
-(Delta) PowerPC 8G1165 Shipped on initial Intel-based Macs 10.4.5 8H14 February
-14, 2006 8.5 About the Mac OS X 10.4.5 Update (delta) PowerPC 8G1454 About the
-Mac OS X 10.4.5 Update (delta) Intel 10.4.6 8I127 April 3, 2006 8.6 About the
-Mac OS X 10.4.6 Update (delta) PowerPC; Final retail release 8I1119 About the
-Mac OS X 10.4.6 Update (delta) Intel 10.4.7 8J135 June 27, 2006 8.7 About the
-Mac OS X 10.4.7 Update (delta) PowerPC 8J2135a About the Mac OS X 10.4.7 Update
-(delta) Intel 8K1079 August 7, 2006 Exclusively for Mac Pro released the same
-date 8N5107 Exclusively for Apple TV (formerly codenamed iTV) 10.4.8 8L127
-September 29, 2006 8.8 About the Mac OS X 10.4.8 Update (delta) PowerPC 8L2127
-Update (delta) Intel and Universal Server Edition 10.4.9 8P135 March 13, 2007
-8.9 About the Mac OS X 10.4.9 Update (delta) PowerPC 8P2137 About the Mac OS X
-10.4.9 Update (delta) Intel and Universal Server Edition 10.4.10 8R218 June 20,
-2007 8.10 About the Mac OS X 10.4.10 Update (delta) PowerPC 8R2218 About the Mac
-OS X 10.4.10 Update (delta) Intel and Universal Server Edition 8R2232  
- 10.4.11 8S165 November 14, 2007 8.11 About the Mac OS X 10.4.11 Update PowerPC
-8S2167 About the Mac OS X 10.4.11 Update Intel and Universal Server Edition
-
----
+<table class="releases">
+  <caption class="top-left top-right">Mac OS X Tiger</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+  </tbody>
+</table>
 
 ## User Interface

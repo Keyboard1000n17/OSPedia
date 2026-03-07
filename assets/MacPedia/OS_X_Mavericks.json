@@ -1,0 +1,135 @@
+[
+  {
+    "version": "10.9",
+    "build": "13A603",
+    "release": "October 22, 2013",
+    "darwinVersion": "13.0",
+    "description": "Original Mac App Store release (GM2)"
+  },
+  {
+    "version": "10.9.1",
+    "build": "13B42",
+    "release": "December 16, 2013",
+    "darwinVersion": "",
+    "description": "Unavailable"
+  },
+  {
+    "version": "10.9.2",
+    "build": "13C64",
+    "release": "February 25, 2014",
+    "darwinVersion": "13.1",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "13C1021",
+    "release": "April 22, 2014",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "10.9.3",
+    "build": "13D65",
+    "release": "May 15, 2014",
+    "darwinVersion": "13.2",
+    "description": ""
+  },
+  {
+    "version": "10.9.4",
+    "build": "13E28",
+    "release": "June 30, 2014",
+    "darwinVersion": "13.3",
+    "description": ""
+  },
+  {
+    "version": "10.9.5",
+    "build": "13F34",
+    "release": "September 17, 2014",
+    "darwinVersion": "13.4",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "",
+    "release": "October 16, 2014",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "",
+    "release": "January 27, 2015",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "13F1066",
+    "release": "March 9, 2015",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "13F1077",
+    "release": "April 8, 2015",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "13F1096",
+    "release": "June 30, 2015",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "13F1112",
+    "release": "August 13, 2015",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "13F1134",
+    "release": "October 21, 2015",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "13F1507",
+    "release": "December 8, 2015",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "13F1603",
+    "release": "January 19, 2016",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "13F1712",
+    "release": "March 21, 2016",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "13F1808",
+    "release": "May 16, 2016",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "13F1911",
+    "release": "July 18, 2016",
+    "darwinVersion": "",
+    "description": ""
+  }
+]

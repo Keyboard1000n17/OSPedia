@@ -1,0 +1,212 @@
+[
+  {
+    "version": "10.4",
+    "build": "8A428",
+    "release": "April 29, 2005",
+    "darwinVersion": "8.0",
+    "description": "Preinstalled on much of the new line of computers"
+  },
+  {
+    "version": "",
+    "build": "8A432",
+    "release": "",
+    "darwinVersion": "",
+    "description": "Original retail release"
+  },
+  {
+    "version": "10.4.1",
+    "build": "8B15",
+    "release": "May 16, 2005",
+    "darwinVersion": "8.1",
+    "description": "Improved reliability, particularly in networking; improved compatibility with software and hardware devices."
+  },
+  {
+    "version": "",
+    "build": "8B17",
+    "release": "May 19, 2005",
+    "darwinVersion": "",
+    "description": "Server edition"
+  },
+  {
+    "version": "10.4.2",
+    "build": "8C46",
+    "release": "July 12, 2005",
+    "darwinVersion": "8.2",
+    "description": "Unavailable"
+  },
+  {
+    "version": "",
+    "build": "8C47",
+    "release": "",
+    "darwinVersion": "",
+    "description": "Server edition"
+  },
+  {
+    "version": "",
+    "build": "8E102",
+    "release": "October 12, 2005",
+    "darwinVersion": "Unavailable",
+    "description": "Exclusively for Front Row iMac G5 released on same release"
+  },
+  {
+    "version": "",
+    "build": "8E45",
+    "release": "October 19, 2005",
+    "darwinVersion": "",
+    "description": "Exclusively for PowerBook G4s released on same release"
+  },
+  {
+    "version": "",
+    "build": "8E90",
+    "release": "",
+    "darwinVersion": "",
+    "description": "Exclusively for Power Mac G5 Dual and Quad released on same release"
+  },
+  {
+    "version": "10.4.3",
+    "build": "8F46",
+    "release": "October 31, 2005",
+    "darwinVersion": "8.3",
+    "description": "Unavailable"
+  },
+  {
+    "version": "",
+    "build": "8F1111",
+    "release": "November, 2005",
+    "darwinVersion": "Unavailable",
+    "description": "Intel"
+  },
+  {
+    "version": "10.4.4",
+    "build": "8G32",
+    "release": "January 10, 2006",
+    "darwinVersion": "8.4",
+    "description": "PowerPC"
+  },
+  {
+    "version": "",
+    "build": "8G1165",
+    "release": "",
+    "darwinVersion": "",
+    "description": "Shipped on initial Intel-based Macs"
+  },
+  {
+    "version": "10.4.5",
+    "build": "8H14",
+    "release": "February 14, 2006",
+    "darwinVersion": "8.5",
+    "description": "PowerPC"
+  },
+  {
+    "version": "",
+    "build": "8G1454",
+    "release": "",
+    "darwinVersion": "",
+    "description": "Intel"
+  },
+  {
+    "version": "10.4.6",
+    "build": "8I127",
+    "release": "April 3, 2006",
+    "darwinVersion": "8.6",
+    "description": "PowerPC; Final <i>retail</i> release"
+  },
+  {
+    "version": "",
+    "build": "8I1119",
+    "release": "",
+    "darwinVersion": "",
+    "description": "Intel"
+  },
+  {
+    "version": "10.4.7",
+    "build": "8J135",
+    "release": "June 27, 2006",
+    "darwinVersion": "8.7",
+    "description": "PowerPC"
+  },
+  {
+    "version": "",
+    "build": "8J2135a",
+    "release": "",
+    "darwinVersion": "",
+    "description": "Intel"
+  },
+  {
+    "version": "",
+    "build": "8K1079",
+    "release": "August 7, 2006",
+    "darwinVersion": "",
+    "description": "Exclusively for Mac Pro released the same release"
+  },
+  {
+    "version": "",
+    "build": "8N5107",
+    "release": "",
+    "darwinVersion": "",
+    "description": "Exclusively for Apple TV (formerly codenamed iTV)"
+  },
+  {
+    "version": "10.4.8",
+    "build": "8L127",
+    "release": "September 29, 2006",
+    "darwinVersion": "8.8",
+    "description": "PowerPC"
+  },
+  {
+    "version": "",
+    "build": "8L2127",
+    "release": "",
+    "darwinVersion": "",
+    "description": "Intel and Universal Server Edition"
+  },
+  {
+    "version": "10.4.9",
+    "build": "8P135",
+    "release": "March 13, 2007",
+    "darwinVersion": "8.9",
+    "description": "PowerPC"
+  },
+  {
+    "version": "",
+    "build": "8P2137",
+    "release": "",
+    "darwinVersion": "",
+    "description": "Intel and Universal Server Edition"
+  },
+  {
+    "version": "10.4.10",
+    "build": "8R218",
+    "release": "June 20, 2007",
+    "darwinVersion": "8.10",
+    "description": "PowerPC"
+  },
+  {
+    "version": "",
+    "build": "8R2218",
+    "release": "",
+    "darwinVersion": "",
+    "description": "Intel and Universal Server Edition"
+  },
+  {
+    "version": "",
+    "build": "8R2232",
+    "release": "",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "10.4.11",
+    "build": "8S165",
+    "release": "November 14, 2007",
+    "darwinVersion": "8.11",
+    "description": "PowerPC"
+  },
+  {
+    "version": "",
+    "build": "8S2167",
+    "release": "",
+    "darwinVersion": "",
+    "description": "Intel and Universal Server Edition"
+  }
+]

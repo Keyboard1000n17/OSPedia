@@ -1,0 +1,170 @@
+[
+  {
+    "version": "10.10",
+    "build": "14A389",
+    "release": "October 16, 2014",
+    "darwinVersion": "14.0",
+    "description": "Original Mac App Store release"
+  },
+  {
+    "version": "10.10.1",
+    "build": "14B25",
+    "release": "November 17, 2014",
+    "darwinVersion": "",
+    "description": "Unavailable"
+  },
+  {
+    "version": "10.10.2",
+    "build": "14C109",
+    "release": "January 27, 2015",
+    "darwinVersion": "14.1",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "14C1510",
+    "release": "March 9, 2015",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "14C2043",
+    "release": "",
+    "darwinVersion": "",
+    "description": "Forked build for the Early 2015 MacBook Air"
+  },
+  {
+    "version": "",
+    "build": "14C1514",
+    "release": "March 19, 2015",
+    "darwinVersion": "",
+    "description": "Unavailable"
+  },
+  {
+    "version": "",
+    "build": "14C2513",
+    "release": "",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "10.10.3",
+    "build": "14D131",
+    "release": "April 8, 2015",
+    "darwinVersion": "14.3",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "14D136",
+    "release": "April 16, 2015",
+    "darwinVersion": "",
+    "description": "<b>Supplemental Update</b><br>Fixes issue with video driver issue that may prevent Mac from starting up when running certain apps that capture video"
+  },
+  {
+    "version": "10.10.4",
+    "build": "14E46",
+    "release": "June 30, 2015",
+    "darwinVersion": "14.4",
+    "description": "Unavailable"
+  },
+  {
+    "version": "10.10.5",
+    "build": "14F27",
+    "release": "August 13, 2015",
+    "darwinVersion": "14.5",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "14F1021",
+    "release": "October 21, 2015",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "14F1505",
+    "release": "November 12, 2015",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "14F1509",
+    "release": "December 11, 2015",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "14F1605",
+    "release": "January 19, 2016",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "14F1713",
+    "release": "March 21, 2016",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "14F1808",
+    "release": "May 18, 2016",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "14F1909",
+    "release": "July 18, 2016",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "14F1912",
+    "release": "September 1, 2016",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "14F2009",
+    "release": "October 24, 2016",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "14F2109",
+    "release": "December 13, 2016",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "14F2315",
+    "release": "March 27, 2017",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "14F2411",
+    "release": "May 15, 2017",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "14F2511",
+    "release": "July 19, 2017",
+    "darwinVersion": "",
+    "description": ""
+  }
+]

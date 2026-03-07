@@ -11,167 +11,167 @@
     "build": "16B2555",
     "release": "October 24, 2016",
     "darwinVersion": "16.1.0",
-    "description": "About the macOS Sierra 10.12.1 Update"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT206174\">About the macOS Sierra 10.12.1 Update</a>"
   },
   {
-    "version": "10.12.1",
+    "version": "",
     "build": "16B2657",
     "release": "October 27, 2016",
-    "darwinVersion": "16.1.0",
-    "description": "About the macOS Sierra 10.12.1 Update"
+    "darwinVersion": "",
+    "description": ""
   },
   {
     "version": "10.12.2",
     "build": "16C67",
     "release": "December 13, 2016",
     "darwinVersion": "16.3.0",
-    "description": "About the macOS Sierra 10.12.2 Update"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT207307\">About the macOS Sierra 10.12.2 Update</a>"
   },
   {
-    "version": "10.12.2",
+    "version": "",
     "build": "16C68",
     "release": "December 14, 2016",
-    "darwinVersion": "16.3.0",
-    "description": "About the macOS Sierra 10.12.2 Update"
+    "darwinVersion": "",
+    "description": ""
   },
   {
     "version": "10.12.3",
     "build": "16D32",
     "release": "January 23, 2017",
     "darwinVersion": "16.4.0",
-    "description": "About the macOS Sierra 10.12.3 Update"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT207462\">About the macOS Sierra 10.12.3 Update</a>"
   },
   {
     "version": "10.12.4",
     "build": "16E195",
     "release": "March 27, 2017",
     "darwinVersion": "16.5.0",
-    "description": "About the macOS Sierra 10.12.4 Update"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT207536\">About the macOS Sierra 10.12.4 Update</a>"
   },
   {
     "version": "10.12.5",
     "build": "16F73",
     "release": "May 15, 2017",
     "darwinVersion": "16.6.0",
-    "description": "About the macOS Sierra 10.12.5 Update"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT207706\">About the macOS Sierra 10.12.5 Update</a>"
   },
   {
-    "version": "10.12.5",
+    "version": "",
     "build": "16F2073",
     "release": "June 5, 2017",
-    "darwinVersion": "16.6.0",
-    "description": "About the macOS Sierra 10.12.5 Update"
+    "darwinVersion": "",
+    "description": ""
   },
   {
     "version": "10.12.6",
     "build": "16G29",
     "release": "July 19, 2017",
     "darwinVersion": "16.7.0",
-    "description": "About the macOS Sierra 10.12.6 Update"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT207835\">About the macOS Sierra 10.12.6 Update</a>"
   },
   {
-    "version": "10.12.6",
+    "version": "",
     "build": "16G1036",
     "release": "October 31, 2017",
-    "darwinVersion": "16.7.0",
-    "description": "About the security content of Security Update 2017-001 Sierra"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT208221\">About the security content of Security Update 2017-001 Sierra</a>"
   },
   {
-    "version": "10.12.6",
+    "version": "",
     "build": "16G1114",
     "release": "December 6, 2017",
-    "darwinVersion": "16.7.0",
-    "description": "About the security content of Security Update 2017-002 Sierra"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT208331\">About the security content of Security Update 2017-002 Sierra</a>"
   },
   {
-    "version": "10.12.6",
+    "version": "",
     "build": "16G1212",
     "release": "January 23, 2018",
-    "darwinVersion": "16.7.0",
-    "description": "About the security content of Security Update 2018-001 Sierra"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT208465\">About the security content of Security Update 2018-001 Sierra</a>"
   },
   {
-    "version": "10.12.6",
+    "version": "",
     "build": "16G1314",
     "release": "March 29, 2018",
-    "darwinVersion": "16.7.0",
-    "description": "About the security content of Security Update 2018-002 Sierra"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT208692\">About the security content of Security Update 2018-002 Sierra</a>"
   },
   {
-    "version": "10.12.6",
+    "version": "",
     "build": "16G1408",
     "release": "June 1, 2018",
-    "darwinVersion": "16.7.0",
-    "description": "About the security content of Security Update 2018-003 Sierra"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT208849\">About the security content of Security Update 2018-003 Sierra</a>"
   },
   {
-    "version": "10.12.6",
+    "version": "",
     "build": "16G1510",
     "release": "July 9, 2018",
-    "darwinVersion": "16.7.0",
-    "description": "About the security content of Security Update 2018-004 Sierra"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT208937\">About the security content of Security Update 2018-004 Sierra</a>"
   },
   {
-    "version": "10.12.6",
+    "version": "",
     "build": "16G1618",
     "release": "October 30, 2018",
-    "darwinVersion": "16.7.0",
-    "description": "About the security content of Security Update 2018-005 Sierra"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT209193\">About the security content of Security Update 2018-005 Sierra</a>"
   },
   {
-    "version": "10.12.6",
+    "version": "",
     "build": "16G1710",
     "release": "December 5, 2018",
-    "darwinVersion": "16.7.0",
-    "description": "About the security content of Security Update 2018-006 Sierra"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT209341\">About the security content of Security Update 2018-006 Sierra</a>"
   },
   {
-    "version": "10.12.6",
+    "version": "",
     "build": "16G1815",
     "release": "January 22, 2019",
-    "darwinVersion": "16.7.0",
-    "description": "About the security content of Security Update 2019-001 Sierra"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT209446\">About the security content of Security Update 2019-001 Sierra</a>"
   },
   {
-    "version": "10.12.6",
+    "version": "",
     "build": "16G1917",
     "release": "March 25, 2019",
-    "darwinVersion": "16.7.0",
-    "description": "About the security content of Security Update 2019-002 Sierra"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT209600\">About the security content of Security Update 2019-002 Sierra</a>"
   },
   {
-    "version": "10.12.6",
+    "version": "",
     "build": "16G1918",
     "release": "March 29, 2019",
-    "darwinVersion": "16.7.0",
-    "description": "About the security content of Security Update 2019-002 Sierra"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT209635\">About the security content of Security Update 2019-002 Sierra</a>"
   },
   {
-    "version": "10.12.6",
+    "version": "",
     "build": "16G2016",
     "release": "May 14, 2019",
-    "darwinVersion": "16.7.0",
-    "description": "About the security content of Security Update 2019-003 Sierra"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT210119\">About the security content of Security Update 2019-003 Sierra</a>"
   },
   {
-    "version": "10.12.6",
-    "build": "16G2127",
+    "version": "",
+    "build": "<s>16G2127</s>",
     "release": "July 22, 2019",
-    "darwinVersion": "16.7.0",
-    "description": "About the security content of Security Update 2019-004 Sierra"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT210348\">About the security content of Security Update 2019-004 Sierra</a>"
   },
   {
-    "version": "10.12.6",
+    "version": "",
     "build": "16G2128",
     "release": "July 29, 2019",
-    "darwinVersion": "16.7.0",
-    "description": "About the security content of Security Update 2019-004 Sierra"
+    "darwinVersion": "",
+    "description": ""
   },
   {
-    "version": "10.12.6",
+    "version": "",
     "build": "16G2136",
     "release": "September 26, 2019",
-    "darwinVersion": "16.7.0",
-    "description": "About the security content of Security Update 2019-005 Sierra"
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT210589\">About the security content of Security Update 2019-005 Sierra</a>"
   }
 ]

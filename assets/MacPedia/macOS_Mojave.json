@@ -2,131 +2,131 @@
   {
     "version": "10.14",
     "release": "September 24, 2018",
-    "description": "Original Mac App Store release About the security content of macOS Mojave 10.14"
+    "description": "Original Mac App Store release<br><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT209139\">About the security content of macOS Mojave 10.14</a>"
   },
   {
     "version": "10.14.1",
     "release": "October 30, 2018",
-    "description": "About the macOS Mojave 10.14.1 Update About the security content of macOS Mojave 10.14.1"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT209149#macos10141\">About the macOS Mojave 10.14.1 Update</a><br><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT209193\">About the security content of macOS Mojave 10.14.1</a>"
   },
   {
     "version": "10.14.2",
     "release": "December 5, 2018",
-    "description": "About the macOS Mojave 10.14.2 Update About the security content of macOS Mojave 10.14.2"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT209149#macos10142\">About the macOS Mojave 10.14.2 Update</a><br><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT209341\">About the security content of macOS Mojave 10.14.2</a>"
   },
   {
     "version": "10.14.3",
     "release": "January 22, 2019",
-    "description": "About the macOS Mojave 10.14.3 Update About the security content of macOS Mojave 10.14.3"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT209149#macos10143\">About the macOS Mojave 10.14.3 Update</a><br><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT209446\">About the security content of macOS Mojave 10.14.3</a>"
   },
   {
     "version": "",
     "release": "February 7, 2019",
-    "description": "About the security content of macOS Mojave 10.14.3 Supplemental Update"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT209521\">About the security content of macOS Mojave 10.14.3 Supplemental Update</a>"
   },
   {
     "version": "10.14.4",
     "release": "March 25, 2019",
-    "description": "About the macOS Mojave 10.14.4 Update About the security content of macOS Mojave 10.14.4"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT209149#macos10144\">About the macOS Mojave 10.14.4 Update</a><br><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT209600\">About the security content of macOS Mojave 10.14.4</a>"
   },
   {
     "version": "10.14.5",
     "release": "May 13, 2019",
-    "description": "About the macOS Mojave 10.14.5 Update About the security content of macOS Mojave 10.14.5"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT209149#macos10145\">About the macOS Mojave 10.14.5 Update</a><br><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT210119\">About the security content of macOS Mojave 10.14.5</a>"
   },
   {
     "version": "10.14.6",
     "release": "July 22, 2019",
-    "description": "About the macOS Mojave 10.14.6 Update About the security content of macOS Mojave "
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT209149#macos10146\">About the macOS Mojave 10.14.6 Update</a><br><a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT210348\">About the security content of macOS Mojave 10.14.6</a>"
   },
   {
     "version": "",
     "release": "August 1, 2019",
-    "description": "Addressed the Wake from Sleep bug, which caused Macs not waking from sleep properly.[49]"
+    "description": "Addressed the Wake from Sleep bug, which caused Macs not waking from sleep properly."
   },
   {
     "version": "",
     "release": "August 26, 2019",
-    "description": "Security updates and bug fixes[50] Addressed: MacBooks shutting down during sleep Addressed: Performance throttling when handling large files Addressed: iLife applications (Pages, Keynote, Numbers, GarageBand, and iMovie) not updating Re-patched a vulnerability that was accidentally unpatched in the previous update, which could lead to hacking attempts[51][52]"
+    "description": "Security updates and bug fixes"
   },
   {
     "version": "",
     "release": "September 26, 2019",
-    "description": "Security updates and bug fixes[53]"
+    "description": ""
   },
   {
     "version": "",
     "release": "October 29, 2019",
-    "description": "About the security content of Security Update 2019-001"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT210722\">About the security content of Security Update 2019-001</a>"
   },
   {
     "version": "",
     "release": "December 10, 2019",
-    "description": "About the security content of Security Update 2019-002"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT210788\">About the security content of Security Update 2019-002</a>"
   },
   {
     "version": "",
     "release": "January 28, 2020",
-    "description": "About the security content of Security Update 2020-001"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT210919\">About the security content of Security Update 2020-001</a>"
   },
   {
     "version": "",
     "release": "March 24, 2020",
-    "description": "About the security content of Security Update 2020-002"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT211100\">About the security content of Security Update 2020-002</a>"
   },
   {
     "version": "",
     "release": "May 26, 2020",
-    "description": "About the security content of Security Update 2020-003"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT211170\">About the security content of Security Update 2020-003</a>"
   },
   {
     "version": "",
     "release": "July 15, 2020",
-    "description": "About the security content of Security Update 2020-004"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT211289\">About the security content of Security Update 2020-004</a>"
   },
   {
     "version": "",
     "release": "September 24, 2020",
-    "description": "About the security content of Security Update 2020-005"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT211849\">About the security content of Security Update 2020-005</a>"
   },
   {
     "version": "",
     "release": "October 1, 2020",
-    "description": "About the security content of macOS 10.14.6 Supplemental Update"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT211872\">About the security content of macOS 10.14.6 Supplemental Update</a>"
   },
   {
     "version": "",
     "release": "November 12, 2020",
-    "description": "About the security content of Security Update 2020-006"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT211946\">About the security content of Security Update 2020-006</a>"
   },
   {
     "version": "",
     "release": "December 14, 2020",
-    "description": "About the security content of Security Update 2020-007"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT212011\">About the security content of Security Update 2020-007</a>"
   },
   {
     "version": "",
     "release": "February 1, 2021",
-    "description": "About the security content of Security Update 2021-001"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT212147\">About the security content of Security Update 2021-001</a>"
   },
   {
     "version": "",
     "release": "February 9, 2021",
-    "description": "About the security content of Security Update 2021-002"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT212177\">About the security content of Security Update 2021-002</a>"
   },
   {
     "version": "",
     "release": "April 26, 2021",
-    "description": "About the security content of Security Update 2021-003"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT212327\">About the security content of Security Update 2021-003</a>"
   },
   {
     "version": "",
     "release": "May 24, 2021",
-    "description": "About the security content of Security Update 2021-004"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT212531\">About the security content of Security Update 2021-004</a>"
   },
   {
     "version": "",
     "release": "July 21, 2021",
-    "description": "About the security content of Security Update 2021-005"
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT212603\">About the security content of Security Update 2021-005</a>"
   }
 ]

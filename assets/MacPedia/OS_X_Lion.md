@@ -3,6 +3,7 @@ title: OS X Lion
 favicon: Lion-icon.webp
 order: 90
 background_image: Lion-wallpaper.webp
+jsonData: ./OS_X_Lion.json
 info:
   icon:
     - alt: OS X Lion logo
@@ -312,66 +313,18 @@ interest.
 
 ## Release History
 
----
-
-Version Build Date \>Darwin version Notes
-
-10.7 11A511 July 20, 2011 11.0 Original release on the Mac App Store
-
-                 11A511s        August 16,                                  Original retail
-                                2011                                        *USB Thumb Drive*
-                                                                            release
-
-                 11A2061        July 20, 2011  11.0.2                       For the Mid-2011
-                                                                            Mac Mini (11A2061)
-                                                                            and Mid-2011
-                                                                            MacBook Air
-                                                                            (11A2063).
-                                                                            Available on Lion
-                                                                            Internet Recovery
-                                                                            ([⌘ Cmd]{.kbd
-                                                                            .keyboard-key
-                                                                            .nowrap}+[⌥
-                                                                            Opt]{.kbd
-                                                                            .keyboard-key
-                                                                            .nowrap}+[R]{.kbd
-                                                                            .keyboard-key
-                                                                            .nowrap} upon
-                                                                            reboot on Mid-2011
-                                                                            or later Macs)
-
-                 11A2063
-
-10.7.1 11B26 August 16, 11.1.0 General operating 2011 system fixes
-
-                 11B2118                                                    For the Mid-2011
-                                                                            Mac mini and
-                                                                            Mid-2011 MacBook
-                                                                            Air. Same as
-                                                                            general 10.7.1,
-                                                                            plus fixes for the
-                                                                            MacBook Air display
-                                                                            and power, and a
-                                                                            fix for the Mac
-                                                                            mini SD card slot.
-
-10.7.2 11C74 October 12, 11.2 Appends MobileMe 2011 with iCloud. Various
-operating system fixes, minor user interface tweaks, Safari 5.1.1, and the
-ability to boot into Lion Recovery from a Time Machine disk.
-
-10.7.3 11D50 February 1, 11.3 General operating 2012 system fixes, Safari 5.1.3,
-adds Catalan, Croatian, Greek, Hebrew, Romanian, Slovak, Thai, and Ukrainian
-language support. Also, new High-DPI cursors were added in the asset files,
-rumored to be for the rumored upcoming Retina display.
-
-10.7.4 11E53 May 9, 2012 11.4 General operating system fixes, improved SMB file
-copying reliability, Safari 5.1.6.
-
-10.7.5 11G56 September 19, 11.4.2 General operating 2012 system fixes, Safari
-5.1.7, adds Gatekeeper.
-
-                 11G63          October 4,     11.4.2\
-                                2012           [xnu-1699.32.7\~1]
+<table class="releases">
+  <caption class="top-left top-right">OS X Lion</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+  </tbody>
+</table>
 
 ---
 

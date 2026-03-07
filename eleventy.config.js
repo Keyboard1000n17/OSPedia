@@ -61,7 +61,7 @@ module.exports = function(eleventyConfig) {
     },
     templateFormats: ["html", "njk", "md"], // allow processing of HTML with frontmatter
     htmlTemplateEngine: "njk", // treat HTML as Nunjucks
-    // markdownTemplateEngine: "njk", // treat markdown with Nunjucks
+    markdownTemplateEngine: "njk", // treat markdown with Nunjucks
     passthroughFileCopy: true, // enable passthrough copy
   };
 };

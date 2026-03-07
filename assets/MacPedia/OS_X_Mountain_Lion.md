@@ -3,6 +3,7 @@ title: OS X Mountain Lion
 favicon: Mountain_Lion-icon.webp
 order: 100
 background_image: Mountain_Lion-wallpaper.webp
+jsonData: ./OS_X_Mountain_Lion.json
 info:
   icon:
     - alt: OS X Mountain Lion logo
@@ -336,99 +337,22 @@ of release, and 10% penetration in the first month.
 
 ## Release History
 
----
+<table class="releases">
+  <caption class="top-left top-right">OS X Mountain Lion</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+  </tbody>
+</table>
 
-Version Build Release Date Darwin Version Notes
-
----
-
-10.8 12A269 July 25, 2012 12.0 Original retail Mac App Store release (GM)
-
-10.8.1 12B19 August 23, 12.1 About OS X 2012 Mountain Lion v10.8.1 Update
-
-10.8.2 12C54 September 19, 12.2 About OS X 2012 Mountain Lion v10.8.2 Update
-
-                 12C60          October 4,                                   About OS X
-                                2012                                         Mountain Lion
-                                                                             v10.8.2 Update
-                                                                             (supplementary
-                                                                             update described
-                                                                             at the end)
-
-                 12C2034        October 23,                                  For Mac Mini
-                                2012                                         (Late 2012)
-                                                                             (Pulled)
-
-                 12C3104        November 29,                                 For Mac Mini
-                                2012                                         (Late 2012)
-
-10.8.3 12D78 March 14, 2013 12.3 About OS X Mountain Lion v10.8.3 Update
-
-10.8.4 12E55 June 4, 2013 12.4 About OS X Mountain Lion v10.8.4 Update
-
-                 12E3067        June 10, 2013                                For MacBook Air
-                                                                             (Mid 2013)
-
-                 12E4022        September 25,                                FOr iMac (Late
-                                2013                                         2013)
-
-10.8.5 12F37 September 12, 12.5 About OS X 2013 Mountain Lion v10.8.5 Update
-
-                 12F45          October 3,     12.5\                         About the OS X
-                                2013           [xnu-2050.48.12\~1]   Mountain Lion
-                                                                             v10.8.5
-                                                                             Supplemental
-                                                                             Update
-
-                                January 27,    12.6\                         About the
-                                2015           [xnu-2050.48.15\~1]   security content
-                                                                             of OS X Yosemite
-                                                                             v10.10.2 and
-                                                                             Security Update
-                                                                             2015-001
-
-                 12F2501        March 9, 2015                                About Security
-                                                                             Update 2015-002
-
-                 12F2518        April 8, 2015  12.6\                         About the
-                                               [xnu-2050.48.19\~1]   security content
-                                                                             of Security
-                                                                             Update 2015-004
-
-                 12F2542        June 30, 2015                                About the
-                                                                             security content
-                                                                             of Security
-                                                                             Update 2015-005
-
-                 12F2560        August 13,                                   About the
-                                2015                                         security content
-                                                                             of Security
-                                                                             Update 2015-006
-
-Note: Combo  
- updates are  
- updates that  
- ship all  
- previous  
- releases along  
- with new  
- features (ex:  
- 10.8 to  
- 10.8.3).  
- Individual  
- updates are a  
- smaller  
- package size  
- and can only  
- be used if a  
- user is  
- currently  
- using the  
- previous  
- release (ex:  
- 10.8.2 to  
- 10.8.3).
-
----
+Note: Combo updates are updates that ship all previous releases along with new
+features (ex: 10.8 to 10.8.3). Individual updates are a smaller package size and
+can only be used if a user is currently using the previous release (ex: 10.8.2
+to 10.8.3).
 
 ## User Interface

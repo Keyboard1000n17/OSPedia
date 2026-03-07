@@ -3,6 +3,7 @@ title: Mac OS X Snow Leopard
 favicon: Snow_Leopard-icon.webp
 order: 80
 background_image: Snow_Leopard-wallpaper.webp
+jsonData: ./Mac_OS_X_Snow_Leopard.json
 info:
   icon:
     - alt: Mac OS X Snow Leopard logo
@@ -277,23 +278,18 @@ sends the necessary special wake-up-packet to the sleeping computer.
 
 ## Release History
 
----
-
-Version Build Date Darwin Version Notes 10.6 10A432 August 28, 2009 10.0
-Original retail DVD release 10A433 Server edition; Original retail DVD release
-10.6.1 10B504 September 10, 2009 10.1 About the Mac OS X v10.6.1 Update 10.6.2
-10C540 November 9, 2009 10.2 About the Mac OS X v10.6.2 Update 10.6.3 10D573
-March 29, 2010 10.3 About the Mac OS X v10.6.3 Update 10D575 April 1, 2010
-Second retail DVD release 10D578 April 13, 2010 About the Mac OS X v10.6.3
-Update; v1.1 10.6.4 10F569 June 15, 2010 10.4 About the Mac OS X v10.6.4 Update
-10.6.5 10H574 November 10, 2010 10.5 About the Mac OS X v10.6.5 Update 10.6.6
-10J567 January 6, 2011 10.6 About the Mac OS X v10.6.6 Update 10.6.7 10J869
-March 21, 2011 10.7 About the Mac OS X v10.6.7 Update 10J3250 For the early 2011
-Macbook Pro 10J4138 May 4, 2011 For the mid 2011 iMac 21.5\" 10.6.8 10K540 June
-23, 2011 10.8 About the Mac OS X v10.6.8 Update 10K549 July 25, 2011 About the
-Mac OS X v10.6.8 Update; v1.1
-
----
+<table class="releases">
+  <caption class="top-left top-right">Mac OS X Snow Leopard</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+  </tbody>
+</table>
 
 ## User Interface
 

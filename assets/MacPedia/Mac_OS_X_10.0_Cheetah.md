@@ -3,6 +3,7 @@ title: Mac OS X 10.0
 favicon: Cheetah-icon.webp
 order: 20
 background_image: CheetahnPuma-wallpaper.webp
+jsonData: ./Mac_OS_X_10.0_Cheetah.json
 info:
   icon:
     - alt: Mac OS X 10.0 logo
@@ -100,15 +101,17 @@ APIs.
 
 ## Release History
 
----
-
-Version Build Date Darwin version 10.0 4K78 March 24, 2001 1.3 10.0.1 4L13 April
-14, 2001 1.3.1 10.0.2 4P12 May 1, 2001  
- 10.0.3 4P13 May 9, 2001  
- 10.0.4 4Q12 June 21, 2001  
- 4R14 July 18, 2001  
- 4S10 August 20, 2001
-
----
+<table class="releases">
+  <caption class="top-left top-right">Mac OS X Leopard</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+  </tbody>
+</table>
 
 ## User Interface

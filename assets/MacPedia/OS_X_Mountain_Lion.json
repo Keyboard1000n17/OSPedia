@@ -1,0 +1,122 @@
+
+[
+  {
+    "version": "10.8",
+    "build": "12A269",
+    "date": "July 25, 2012",
+    "darwinVersion": "12.0",
+    "description": "Original retail <i>Mac App Store</i> release (GM)"
+  },
+  {
+    "version": "10.8.1",
+    "build": "12B19",
+    "date": "August 23, 2012",
+    "darwinVersion": "12.1",
+    "description": ""
+  },
+  {
+    "version": "10.8.2",
+    "build": "12C54",
+    "date": "September 19, 2012",
+    "darwinVersion": "12.2",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "12C60",
+    "date": "October 4, 2012",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "12C2034",
+    "date": "October 23, 2012",
+    "darwinVersion": "",
+    "description": "For Mac Mini (Late 2012) (Pulled)"
+  },
+  {
+    "version": "",
+    "build": "12C3104",
+    "date": "November 29, 2012",
+    "darwinVersion": "",
+    "description": "For Mac Mini (Late 2012)"
+  },
+  {
+    "version": "10.8.3",
+    "build": "12D78",
+    "date": "March 14, 2013",
+    "darwinVersion": "12.3",
+    "description": ""
+  },
+  {
+    "version": "10.8.4",
+    "build": "12E55",
+    "date": "June 4, 2013",
+    "darwinVersion": "12.4",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "12E3067",
+    "date": "June 10, 2013",
+    "darwinVersion": "",
+    "description": "For MacBook Air (Mid 2013)"
+  },
+  {
+    "version": "",
+    "build": "12E4022",
+    "date": "September 25, 2013",
+    "darwinVersion": "",
+    "description": "For iMac (Late 2013)"
+  },
+  {
+    "version": "10.8.5",
+    "build": "12F37",
+    "date": "September 12, 2013",
+    "darwinVersion": "12.5",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "12F45",
+    "date": "October 3, 2013",
+    "darwinVersion": "12.5<br><small>xnu-2050.48.12~1</small>",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "",
+    "date": "January 27, 2015",
+    "darwinVersion": "12.6<br><small>xnu-2050.48.15~1</small>",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "12F2501",
+    "date": "March 9, 2015",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "12F2518",
+    "date": "April 8, 2015",
+    "darwinVersion": "12.6<br><small>xnu-2050.48.19~1</small>",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "12F2542",
+    "date": "June 30, 2015",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "12F2560",
+    "date": "August 13, 2015",
+    "darwinVersion": "",
+    "description": ""
+  }
+]

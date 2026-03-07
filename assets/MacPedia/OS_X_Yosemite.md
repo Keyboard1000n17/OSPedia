@@ -3,6 +3,7 @@ title: OS X Yosemite
 favicon: Yosemite-icon.webp
 order: 120
 background_image: Yosemite-wallpaper.webp
+jsonData: ./OS_X_Yosemite.json
 info:
   icon:
     - alt: OS X Yosemite logo
@@ -149,31 +150,18 @@ Version Build Date Darwin Version Notes
 
 ---
 
-10.10 14A389 October 16, 2014 14.0 Original Mac App Store release 10.10.1 14B25
-November 17, 2014 About the OS X Yosemite v10.10.1 Update 10.10.2 14C109 January
-27, 2015 14.1 About the OS X Yosemite v10.10.2 Update 14C1510 March 9, 2015
-About Security Update 2015-002 Yosemite 14C2043 Forked build for the Early 2015
-MacBook Air 14C1514 March 19, 2015 About Security Update 2015-003 Yosemite
-14C2513  
- 10.10.3 14D131 April 8, 2015 14.3 About the OS X Yosemite v10.10.3 Update
-14D136 April 16, 2015 Supplemental Update: Fixes issue with video driver issue
-that may prevent Mac from starting up when running certain apps that capture
-video 10.10.4 14E46 June 30, 2015 14.4 About the OS X Yosemite v10.10.4 Update
-10.10.5 14F27 August 13, 2015 14.5 About the OS X Yosemite v10.10.5 Update
-14F1021 October 21, 2015 About the security content of Security Update 2015-005
-Yosemite 14F1509 December 11, 2015 About the security content of Security Update
-2015-006 Yosemite 14F1605 January 19, 2016 About the security content of
-Security Update 2016-001 Yosemite 14F1713 March 21, 2016 About the security
-content of Security Update 2016-002 Yosemite 14F1808 May 18, 2016 About the
-security content of Security Update 2016-003 Yosemite 14F1909 July 18, 2016
-About the security content of Security Update 2016-004 Yosemite 14F1912
-September 1, 2016 About the security content of Security Update 2016-005
-Yosemite 14F2009 October 24, 2016 About the security content of Security Update
-2016-006 Yosemite 14F2109 December 13, 2016 About the security content of
-Security Update 2016-007 Yosemite 14F2315 March 27, 2017 About the security
-content of Security Update 2017-001 Yosemite 14F2411 May 15, 2017 About the
-security content of Security Update 2017-002 Yosemite 14F2511 July 19, 2017
-About the security content of Security Update 2017-003 Yosemite
+<table class="releases">
+  <caption class="top-left top-right">OS X El Capitan releases</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+  </tbody>
+</table>
 
 ## User Interface
 

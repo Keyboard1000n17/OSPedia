@@ -3,6 +3,7 @@ title: OS X Mavericks
 favicon: Mavericks-icon.webp
 order: 110
 background_image: Mavericks-wallpaper.webp
+jsonData: ./OS_X_Mavericks.json
 info:
   icon:
     - alt: OS X Mavericks logo
@@ -151,29 +152,17 @@ users to update or upgrade their computers.
 
 ## Release History
 
-Version Build Date Darwin Version Notes
-
----
-
-10.9 13A603 October 22, 2013 13.0 Original release 10.9.1 13B42 December 16,
-2013 About the OS X Mavericks v10.9.1 Update 10.9.2 13C64 February 19, 2014 13.1
-About the OS X Mavericks v10.9.2 Update 13C1021 March 14, 2014 About the OS X
-Mavericks v10.9.2 Supplemental Update 10.9.3 13D65 May 14, 2014 13.2 About the
-OS X Mavericks v10.9.3 Update 10.9.4 13E28 June 30, 2014 13.3 About the OS X
-Mavericks v10.9.4 Update 10.9.5 13F34 September 19, 2014 13.4 About the OS X
-Mavericks v10.9.5 Update October 16, 2014 About the security content of Security
-Update 2014-005 Mavericks January 27, 2015 About the security content of
-Security Update 2015-001 Mavericks 13F1066 March 9, 2015 About the security
-content of Security Update 2015-002 Mavericks 13F1077 April 8, 2015 About the
-security content of Security Update 2015-004 Mavericks 13F1096 June 30, 2015
-About the security content of Security Update 2015-005 Mavericks 13F1112 August
-13, 2015 About the security content of Security Update 2015-006 Mavericks
-13F1134 October 21, 2015 About the security content of Security Update 2015-007
-Mavericks 13F1507 December 8, 2015 About the security content of Security Update
-2015-008 Mavericks 13F1603 January 19, 2016 About the security content of
-Security Update 2016-001 Mavericks 13F1712 March 21, 2016 About the security
-content of Security Update 2016-002 Mavericks 13F1808 May 16, 2016 About the
-security content of Security Update 2016-003 Mavericks 13F1911 July 18, 2016
-About the security content of Security Update 2016-004 Mavericks
+<table class="releases">
+  <caption class="top-left top-right">OS X Mavericks</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+  </tbody>
+</table>
 
 ## User Interface

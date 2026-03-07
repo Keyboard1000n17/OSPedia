@@ -3,6 +3,7 @@ title: Mac OS X Leopard
 favicon: Leopard-icon.webp
 order: 70
 background_image: Leopard-wallpaper.webp
+jsonData: ./Mac_OS_X_Leopard.json
 info:
   icon:
     - alt: Mac OS X 10.0 logo
@@ -86,7 +87,7 @@ if insufficient; however, Leopard will run on slower G4 processor machines
 Mac and its hard drive then moved to a slower/unsupported one (the drive may
 either be an internal mechanism or a Firewire external).
 
-## Supported machines
+### Supported machines
 
 Mac OS X Leopard can run on the later flat-panel iMac G4s, the iMac G5, iMac
 Intel Core Duo and iMac Intel Core 2 Duo, PowerBook G4, Power Mac G4, Power Mac
@@ -105,7 +106,7 @@ These computers only allow installation of Mac OS X Snow Leopard. However, some
 computers (such as the 2011 model of the Mac mini) can have Leopard installed on
 them without hacking.
 
-## Usage on unsupported hardware
+### Usage on unsupported hardware
 
 Some ways of running Leopard on certain unsupported hardware, primarily PowerPC
 G4 computers with CPU speeds lower than the official requirement of 867 MHz,
@@ -151,76 +152,77 @@ violation of Apple\'s licensing agreement for Mac OS X.
 
 ## New and changed features
 
-## End-user features
+### End-user features
 
 Apple advertised that Mac OS X Leopard has 300+ new features, including:
 
-- A new and improved Automator, with easy starting points to easily start a
+- A new and improved **Automator**, with easy starting points to easily start a
   workflow. It also can quickly create or edit workflows with new interface
   improvements. Now it can use a new action called \"Watch Me Do\" that lets
   users record a user action (like pressing a button or controlling an
   application without built-in Automator support) and replay as an action in a
   workflow. It can create more useful Automator workflows with actions for RSS
   feeds, iSight camera video snapshots, PDF manipulation, and much more.
-- Back to My Mac, a feature for MobileMe users that allows users to access files
-  on their home computer while away from home via the internet.
+- **Back to My Mac**, a feature for MobileMe users that allows users to access
+  files on their home computer while away from home via the internet.
 - Boot Camp, a software assistant allowing for the installation of other
   operating systems, such as Windows XP (SP2 or later) or Windows Vista, on a
   separate partition (or separate internal drive) on Intel-based Macs.
-- Dashboard enhancements, including Web Clip, a feature that allows users to
+- **Dashboard enhancements**, including Web Clip, a feature that allows users to
   turn a part of any Web page displayed in Safari into a live Dashboard widget,
   and Dashcode to help developers code widgets.
-- New Desktop, comprises a redesigned 3-D dock with a new grouping feature
-  called Stacks, which displays files in either a \"fan\" style, \"grid\" style,
-  or (since 10.5.2) a \"list\" style. Rory Prior, on the ThinkMac blog,
-  criticized the shelf-like Dock along with a number of other changes to the
-  user interface.
-- Dictionary can now search Wikipedia, and a dictionary of Apple terminology as
-  well. Also included is the Japanese-language dictionary Daijisen, Progressive
-  E-J and Progressive J-E dictionaries, and the 25,000-word thesaurus Tsukaikata
-  no Wakaru Ruigo Reikai Jiten, all of which are provided by the Japanese
+- A new **desktop**, which comprises a redesigned 3D dock with a new grouping
+  feature called stacks, which displays files in either a \"fan\" style,
+  \"grid\" style, or (since 10.5.2) a \"list\" style. rory prior, on the
+  thinkmac blog, criticized the shelf-like dock along with a number of other
+  changes to the user interface.
+- **Dictionary** can now search Wikipedia, and a dictionary of Apple terminology
+  as well. Also included is the Japanese-language dictionary Daijisen,
+  Progressive E-J and Progressive J-E dictionaries, and the 25,000-word
+  thesaurus _Tsukaikata no Wakaru Ruigo Reikai Jiten_
+  (使い方の分かる類語例解辞典), all of which are provided by the Japanese
   publisher Shogakukan.
-- A redesigned Finder, with features similar to those seen in iTunes 7,
+- A redesigned **Finder**, with features similar to those seen in iTunes 7,
   including Cover Flow and a Source list-like sidebar.
-- Front Row has been reworked to closely resemble the interface of the original
-  Apple TV.
-- iCal calendar sharing and group scheduling as well as syncing event
+- **Front Row** has been reworked to closely resemble the interface of the
+  original Apple TV.
+- **iCal** calendar sharing and group scheduling as well as syncing event
   invitations from Mail. The icon also reflects the current date even when the
   application is not running. In previous versions of Mac OS X, the icon would
   show July 17 in the icon any time the application was not running but the
   current date when the application was running.
-- iChat enhancements, including multiple logins, invisibility, animated icons,
-  and tabbed chats, similar to features present in Pidgin, Adium and the iChat
-  plugin Chax; iChat Theater, allowing users to incorporate images from iPhoto,
-  presentations from Keynote, videos from QuickTime, and other Quick Look
-  features into video chats; and Backdrops, which are similar to chroma keys,
-  but use a real-time difference matte technique which does not require a green
-  or blue screen. iChat also implements screen sharing, a feature previously
-  available with Apple Remote Desktop.
-- Mail enhancements including the additions of RSS feeds, Stationery, Notes, and
-  to-dos. To-dos use a system-wide service that is available to all
+- **iChat** enhancements, including multiple logins, invisibility, animated
+  icons, and tabbed chats, similar to features present in Pidgin, Adium and the
+  iChat plugin Chax; iChat Theater, allowing users to incorporate images from
+  iPhoto, presentations from Keynote, videos from QuickTime, and other Quick
+  Look features into video chats; and Backdrops, which are similar to chroma
+  keys, but use a real-time difference matte technique which does not require a
+  green or blue screen. iChat also implements screen sharing, a feature
+  previously available with Apple Remote Desktop.
+- **Mail** enhancements including the additions of RSS feeds, Stationery, Notes,
+  and to-dos. To-dos use a system-wide service that is available to all
   applications.
-- Network file sharing improvements include more granular control over
+- **Network file sharing** improvements include more granular control over
   permissions, consolidation of AFP, FTP and SMB sharing into one control panel,
   and the ability to share individual folders, a feature that had not been
   available since Mac OS 9.
-- Parental controls now include the ability to place restrictions on use of the
-  Internet and to set parental controls from anywhere using remote setup.
-- Photo Booth enhancements, including video recording with real-time filters and
-  blue/green-screen technology.
-- Podcast Capture, an application allowing users to record and distribute
+- **Parental controls** now include the ability to place restrictions on use of
+  the Internet and to set parental controls from anywhere using remote setup.
+- **Photo Booth** enhancements, including video recording with real-time filters
+  and blue/green-screen technology.
+- **Podcast Capture**, an application allowing users to record and distribute
   podcasts. It requires access to a computer running Mac OS X Server with
   Podcast Producer.
-- Preview adds support for annotation, graphics, extraction, search, markup,
+- **Preview** adds support for annotation, graphics, extraction, search, markup,
   Instant Alpha and size adjustment tools.
-- Quick Look, a framework allowing documents to be viewed without opening them
-  in an external application and can preview it in full screen. Plug-ins are
-  available for Quick Look so that users can also view other files, such as
+- **Quick Look**, a framework allowing documents to be viewed without opening
+  them in an external application and can preview it in full screen. Plug-ins
+  are available for Quick Look so that users can also view other files, such as
   Installer Packages.
 - The Finder, showing files in Cover Flow View and viewing a file using Quick
   Look
-- Safari 3, which includes Web Clip.
-- Spaces, an implementation of virtual desktops (individually called
+- **Safari** 3, which includes Web Clip.
+- **Spaces**, an implementation of virtual desktops (individually called
   \"Spaces\"), allows multiple desktops per user, with certain applications and
   windows in each desktop. Users can organize certain Spaces for certain
   applications (e.g., one for work-related tasks and one for entertainment) and
@@ -231,10 +233,10 @@ Apple advertised that Mac OS X Leopard has 300+ new features, including:
   users. Apple added a new preference in 10.5.2 which disabled this feature, but
   there were still bugs found while switching windows. In 10.5.3, this problem
   was addressed and was no longer an issue.
-- Spotlight incorporates additional search capabilities such as Boolean
+- **Spotlight** incorporates additional search capabilities such as Boolean
   operators, as well as the ability to search other computers (with appropriate
   permissions).
-- Time Machine, an automated backup utility which allows the user to restore
+- **Time Machine**, an automated backup utility which allows the user to restore
   files that have been deleted or replaced by another version of a file. Though
   generally lauded in the press as a step forward for data recovery, Time
   Machine has been criticized in multiple publications for lacking the
@@ -247,14 +249,14 @@ Apple advertised that Mac OS X Leopard has 300+ new features, including:
   been resolved, however; On March 19, 2008, updates were released for AirPort
   and Time Machine, allowing for Time Machine to use a USB hard disk which has
   been connected to an AirPort Extreme Base Station.
-- Universal Access enhancements: significant improvements to applications
+- **Universal Access** enhancements: significant improvements to applications
   including VoiceOver, along with increased support for Braille, closed
   captioning and a new high‐quality Speech synthesis voice.
 - Russian language support, bringing the total to 18 languages.
 - Leopard removes support for Classic applications.
-- Introduced the Alex voice to VoiceOver.
+- Introduced the Alex voice to **VoiceOver**.
 
-## Developer technologies
+### Developer technologies
 
 - Native support by many libraries and frameworks for 64-bit applications,
   allowing 64-bit Cocoa applications. Existing 32-bit applications using those
@@ -304,7 +306,7 @@ Apple advertised that Mac OS X Leopard has 300+ new features, including:
   run on Intel processors.
 - Leopard includes J2SE 5.0.
 
-## Security enhancements
+### Security enhancements
 
 New security features intend to provide better internal resiliency to successful
 attacks, in addition to preventing attacks from being successful in the first
@@ -317,41 +319,41 @@ processes or change files. Library randomization is presumably a stepping-stone
 to a more complete implementation of address space layout randomization at a
 later date.
 
-- [Application Layer Firewall]
+#### Application Layer Firewall
 
-  Leopard ships with two firewall engines: the original BSD IPFW, which was
-  present in earlier releases of Mac OS X, and the new Leopard Application Layer
-  Firewall. Unlike IPFW, which intercepts and filters IP datagrams before the
-  kernel performs significant processing, the Application Layer Firewall
-  operates at the socket layer, bound to individual processes. The Application
-  Layer Firewall can therefore make filtering decisions on a per-application
-  basis. Of the two firewall engines, only the Application Layer Firewall is
-  fully exposed in the Leopard user interface. The new firewall offers less
-  control over individual packet decisions (users can decide to allow or deny
-  connections system-wide or to individual applications, but must use IPFW to
-  set fine-grained TCP/IP header-level policies). It also makes several policy
-  exceptions for system processes: neither mDNSResponder nor programs running
-  with superuser privileges are filtered.
+Leopard ships with two firewall engines: the original BSD IPFW, which was
+present in earlier releases of Mac OS X, and the new Leopard Application Layer
+Firewall. Unlike IPFW, which intercepts and filters IP datagrams before the
+kernel performs significant processing, the Application Layer Firewall operates
+at the socket layer, bound to individual processes. The Application Layer
+Firewall can therefore make filtering decisions on a per-application basis. Of
+the two firewall engines, only the Application Layer Firewall is fully exposed
+in the Leopard user interface. The new firewall offers less control over
+individual packet decisions (users can decide to allow or deny connections
+system-wide or to individual applications, but must use IPFW to set fine-grained
+TCP/IP header-level policies). It also makes several policy exceptions for
+system processes: neither mDNSResponder nor programs running with superuser
+privileges are filtered.
 
-- [Sandboxes]
+#### Sandboxes
 
-  Leopard includes kernel-level support for role-based access control (RBAC).
-  RBAC is intended to prevent, for example, an application like Mail from
-  editing the password database.
+Leopard includes kernel-level support for role-based access control (RBAC). RBAC
+is intended to prevent, for example, an application like Mail from editing the
+password database.
 
-- [Application Signing]
+#### Application Signing
 
-  Leopard provides a framework to use public key signatures for code signing to
-  verify, in some circumstances, that code has not been tampered with.
-  Signatures can also be used to ensure that one program replacing another is
-  truly an \"update\", and carry any special security privileges across to the
-  new version. This reduces the number of user security prompts, and the
-  likelihood of the user being trained to simply clicking \"OK\" to everything.
+Leopard provides a framework to use public key signatures for code signing to
+verify, in some circumstances, that code has not been tampered with. Signatures
+can also be used to ensure that one program replacing another is truly an
+\"update\", and carry any special security privileges across to the new version.
+This reduces the number of user security prompts, and the likelihood of the user
+being trained to simply clicking \"OK\" to everything.
 
-- [Secure Guest Account]
+#### Secure Guest Account
 
-  Guests can be given access to a Leopard system with an account that the system
-  erases and resets at logout.
+Guests can be given access to a Leopard system with an account that the system
+erases and resets at logout.
 
 Security features in Leopard have been criticized as weak or ineffective, with
 the publisher Heise Security documenting that the Leopard installer downgraded
@@ -364,54 +366,18 @@ their home directory.
 
 ## Release History
 
----
-
-Version Build Date Darwin version Notes
-
-10.5 9A581 October 26, 9.0\ Original 2007 [xnu-1228\~1] retail DVD release
-
-10.5.1 9B18 November 15, 9.1\ Second retail 2007 [xnu-1228.0.2\~1] DVD release.
-Various bug fixes and security updates.
-
-                 9B2117         December 14,   9.1.1                         Forked build
-                                2007                                         for Early 2008
-                                                                             Mac Pro and
-                                                                             Xserve
-
-10.5.2 9C31 February 11, 9.2\ About the Mac 2008 [xnu-1228.3.13\~1] OS X 10.5.2
-Update
-
-                 9C7010                        9.2
-
-10.5.3 9D34 May 28, 2008 9.3\ About the Mac [xnu-1228.5.18\~1] OS X 10.5.3
-Update
-
-10.5.4 9E17 June 30, 2008 9.4\ About the Mac [xnu-1228.5.20\~1] OS X 10.5.4
-update; Third retail DVD release
-
-10.5.5 9F33 September 15, 9.5\ About the Mac 2008 [1228.7.58\~1] OS X 10.5.5
-Update
-
-10.5.6 9G55 December 15, 9.6 About the Mac 2008 OS X 10.5.6 Update
-
-                 9G66           January 6,                                   Fourth retail
-                                2009                                         DVD release
-                                                                             (part of Mac
-                                                                             Box Set)
-
-                 9G71           ---            9.6\                          ---
-                                               [xnu-1228.9.59\~1]
-
-10.5.7 9J61 May 12, 2009 9.7\ About the Mac [xnu-1228.12.14\~1] OS X 10.5.7
-Update
-
-10.5.8 9L30 August 5, 2009 9.8 About the Mac OS X 10.5.8 Update
-
-                 9L34           August 31,     9.8\                          Mac OS X
-                                2009           [xnu-1228.15.4\~1]    Server 10.5.8
-                                                                             Update v.1.1
-
----
+<table class="releases">
+  <caption class="top-left top-right">Mac OS X Leopard</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+  </tbody>
+</table>
 
 ## User interface
 

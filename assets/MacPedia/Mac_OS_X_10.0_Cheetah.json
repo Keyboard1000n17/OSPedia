@@ -1,0 +1,52 @@
+[
+  {
+    "version": "10.0",
+    "build": "4K78",
+    "date": "March 24, 2001",
+    "darwin version": "1.3",
+    "notes": "Original retail CD-ROM release"
+  },
+  {
+    "version": "10.0.1",
+    "build": "4L13",
+    "date": "April 14, 2001",
+    "darwin version": "1.3.1",
+    "notes": "Apple: Mac OS X 10.0: Software Update 1.3.1, 10.0.1 Update, and Epson Printer Driver Update Provide Feature Enhancement, Address Issues"
+  },
+  {
+    "version": "10.0.2",
+    "build": "4P12",
+    "date": "May 1, 2001",
+    "darwin version": "",
+    "notes": ""
+  },
+  {
+    "version": "10.0.3",
+    "build": "4P13",
+    "date": "May 9, 2001",
+    "darwin version": "",
+    "notes": "Update and Before You Install Information"
+  },
+  {
+    "version": "10.0.4",
+    "build": "4Q12",
+    "date": "June 21, 2001",
+    "darwin version": "",
+    "notes": "Apple: 10.0.4 Update and Before You Install Information"
+  },
+  {
+    "version": "",
+    "build": "4R14",
+    "date": "July 18, 2001",
+    "darwin version": "",
+    "notes": "For Quicksilver Power Mac G4"
+  },
+  {
+    "version": "",
+    "build": "4S10",
+    "date": "August 20, 2001",
+    "darwin version": "",
+    "notes": "For Quicksilver Power Mac G4 (Dual 800&nbsp;MHz)"
+  }
+]
+undefined

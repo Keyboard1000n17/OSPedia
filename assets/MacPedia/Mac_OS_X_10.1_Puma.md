@@ -3,6 +3,7 @@ title: Mac OS X 10.1
 favicon: Puma-icon.webp
 order: 30
 background_image: CheetahnPuma-wallpaper.webp
+jsonData: ./Mac_OS_X_10.1_Puma.json
 info:
   icon:
     - alt: Mac OS X 10.1 logo
@@ -95,12 +96,17 @@ This system release brought some major new features to the Mac OS X platform:
 
 ## Release History
 
----
-
-Version Build Date Darwin Version 10.1 5G64 September 25, 2001 1.4.1 10.1.1 5M28
-November 12, 2001 5.1 10.1.2 5P48 Decmber 21, 2001 5.2 10.1.3 5Q45 May 9, 2001
-5.3 10.1.4 5Q125 April 17, 2002 5.4 10.1.5 5S60 June 5, 2002 5.5
-
----
+<table class="releases">
+  <caption class="top-left top-right">Mac OS X Tiger</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+  </tbody>
+</table>
 
 ## User Interface

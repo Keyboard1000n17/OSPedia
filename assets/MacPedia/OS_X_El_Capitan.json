@@ -1,0 +1,149 @@
+[
+  {
+    "version": "10.11",
+    "build": "15A284",
+    "release": "September 30, 2015",
+    "darwinVersion": "15.0.0",
+    "description": "Original Mac App Store release"
+  },
+  {
+    "version": "10.11.1",
+    "build": "15B42",
+    "release": "October 21, 2015",
+    "darwinVersion": "",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT205360\">About the OS X El Capitan v10.11.1 Update</a>"
+  },
+  {
+    "version": "10.11.2",
+    "build": "15C50",
+    "release": "December 8, 2015",
+    "darwinVersion": "15.2.0",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT205579\">About the OS X El Capitan v10.11.2 Update</a>"
+  },
+  {
+    "version": "10.11.3",
+    "build": "15D21",
+    "release": "January 19, 2016",
+    "darwinVersion": "15.3.0",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT205356\">About the OS X El Capitan v10.11.3 Update</a>"
+  },
+  {
+    "version": "10.11.4",
+    "build": "15E65",
+    "release": "March 21, 2016",
+    "darwinVersion": "15.4.0",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/kb/DL1868\">About the OS X El Capitan v10.11.4 Update</a>"
+  },
+  {
+    "version": "10.11.5",
+    "build": "15F34",
+    "release": "May 16, 2016",
+    "darwinVersion": "15.5.0",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT206230\">About the OS X El Capitan v10.11.5 Update</a>"
+  },
+  {
+    "version": "10.11.6",
+    "build": "15G31",
+    "release": "July 18, 2016",
+    "darwinVersion": "15.6.0",
+    "description": "<a rel=\"nofollow\" class=\"external text\" href=\"https://support.apple.com/HT206770\">About the OS X El Capitan v10.11.6 Update</a>"
+  },
+  {
+    "version": "",
+    "build": "15G1004",
+    "release": "September 1, 2016",
+    "darwinVersion": "",
+    "description": "About the security content of Security Update 2016-001 El Capitan"
+  },
+  {
+    "version": "",
+    "build": "15G1011",
+    "release": "Unavailable",
+    "darwinVersion": "",
+    "description": "Unavailable"
+  },
+  {
+    "version": "",
+    "build": "15G1108",
+    "release": "October 24, 2016",
+    "darwinVersion": "",
+    "description": "About the security content of Security Update 2016-002 El Capitan"
+  },
+  {
+    "version": "",
+    "build": "15G1212",
+    "release": "December 13, 2016",
+    "darwinVersion": "",
+    "description": "About the security content of Security Update 2016-003 El Capitan"
+  },
+  {
+    "version": "",
+    "build": "15G1217",
+    "release": "January 17, 2017",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "15G1421",
+    "release": "March 27, 2017",
+    "darwinVersion": "",
+    "description": "About the security content of Security Update 2017-001 El Capitan"
+  },
+  {
+    "version": "",
+    "build": "15G1510",
+    "release": "May 15, 2017",
+    "darwinVersion": "",
+    "description": "About the security content of Security Update 2017-002 El Capitan"
+  },
+  {
+    "version": "",
+    "build": "15G1611",
+    "release": "July 19, 2017",
+    "darwinVersion": "",
+    "description": "About the security content of Security Update 2017-003 El Capitan"
+  },
+  {
+    "version": "",
+    "build": "15G17023",
+    "release": "October 31, 2017",
+    "darwinVersion": "",
+    "description": "About the security content of Security Update 2017-004 El Capitan"
+  },
+  {
+    "version": "",
+    "build": "15G18013",
+    "release": "December 6, 2017",
+    "darwinVersion": "",
+    "description": "About the security content of Security Update 2017-005 El Capitan"
+  },
+  {
+    "version": "",
+    "build": "15G19009",
+    "release": "January 23, 2018",
+    "darwinVersion": "",
+    "description": "About the security content of Security Update 2018-001 El Capitan"
+  },
+  {
+    "version": "",
+    "build": "15G20015",
+    "release": "March 29, 2018",
+    "darwinVersion": "",
+    "description": "About the security content of Security Update 2018-002 El Capitan"
+  },
+  {
+    "version": "",
+    "build": "15G21013",
+    "release": "June 1, 2018",
+    "darwinVersion": "",
+    "description": "About the security content of Security Update 2018-003 El Capitan"
+  },
+  {
+    "version": "",
+    "build": "15G22010",
+    "release": "July 9, 2018",
+    "darwinVersion": "",
+    "description": "About the security content of Security Update 2018-004 El Capitan"
+  }
+]

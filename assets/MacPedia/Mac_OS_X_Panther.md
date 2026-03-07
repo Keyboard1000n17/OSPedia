@@ -3,6 +3,7 @@ title: Mac OS X Panther
 favicon: Panther-icon.webp
 order: 50
 background_image: Panther-wallpaper.webp
+jsonData: ./Mac_OS_X_Panther.json
 info:
   icon:
     - alt: Mac OS X Panther logo
@@ -69,7 +70,7 @@ with some applications written to draw directly to screen.
 
 ## New and changed features
 
-[End-user features]
+### End-user features
 
 Apple advertised that Mac OS X Panther had over 150 new features, including:
 
@@ -86,7 +87,7 @@ Apple advertised that Mac OS X Panther had over 150 new features, including:
 - Preview: Increased speed of PDF rendering.
 - QuickTime: Now supports the Pixlet high-definition video codec.
 
-[New applications in Panther]
+### New applications in Panther
 
 - Font Book: A font manager which simplifies viewing character maps, and adding
   new fonts that can be used systemwide. The app also allows the user to
@@ -104,7 +105,7 @@ Apple advertised that Mac OS X Panther had over 150 new features, including:
   Explorer for Mac was still available. Safari 1.0 was included in an update in
   Jaguar but was used as the default browser in Panther.
 
-[Other]
+### Other
 
 - Microsoft Windows interoperability improvements, including out-of-the-box
   support for Active Directory and SecurID-based VPNs.
@@ -118,21 +119,24 @@ Apple advertised that Mac OS X Panther had over 150 new features, including:
   that are deleted cannot be recovered, through the use of data erasure
   techniques.
 
-[Additional]
+### Additional
 
 Panther was Apple\'s earliest version of Mac OS X that supported WPA and WPA2
 security for wireless networks (with the AirPort 4.2 software update).
 
 ## Release History
 
----
-
-Version Build Date Darwin Version 10.3 7B85 October 24, 2003 7.0 7B86  
- 10.3.1 7C107 November 10, 2003 7.1 10.3.2 7D24 December 17, 2003 7.2 7D28  
- 10.3.3 7F44 March 15, 2004 7.3 10.3.4 7H63 May 26, 2004 7.4 10.3.5 7M3 August
-9, 2004 7.5 10.3.6 7R28 November 5, 2004 7.6 10.3.7 7S215 December 15, 2004 7.7
-10.3.8 7U16 February 9, 2005 7.8 10.3.9 7W98 April 15, 2005 7.9
-
----
+<table class="releases">
+  <caption class="top-left top-right">Mac OS X Panther</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+  </tbody>
+</table>
 
 ## User Interface

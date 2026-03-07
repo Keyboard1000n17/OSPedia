@@ -3,6 +3,7 @@ title: Mac OS X Jaguar
 favicon: Jaguar-icon.webp
 order: 40
 background_image: Jaguar-wallpaper.webp
+jsonData: ./Mac_OS_X_Jaguar.json
 info:
   icon:
     - alt: Mac OS X Jaguar logo
@@ -77,22 +78,17 @@ Yosemite.
 
 ## Release History
 
----
-
-Version Build Date Darwin Version Notes 10.2 6C115 August 24, 2002 6.0 Original
-retail release 6C115a  
- 10.2.1 6D52 September 18, 2002 6.1 About the Mac OS X 10.2.1 Update, codename
-Jaguar Red 10.2.2 6F21 November 11, 2002 6.2 About the Mac OS X 10.2.2 Update,
-codename Jaguar Blue or Merlot 10.2.3 6G30 December 19, 2002 6.3 About the Mac
-OS X 10.2.3 Update, codename Jaguar Green 6G37 Updated retail release 6G50
-Server edition; retail release 10.2.4 6I32 February 13, 2003 6.4 About the Mac
-OS X 10.2.4 Update, codename Jaguar Pink 10.2.5 6L29 April 10, 2003 6.5 About
-the Mac OS X 10.2.5 Update, codename Jaguar Plaid 10.2.6 6L60 May 6, 2003 6.6
-About the Mac OS X 10.2.6 Update, codename Jaguar Black 10.2.7 6R65 September
-22, 2003 6.7 Removed from distribution due to defects 10.2.8 6R73 October 3,
-2003 6.8 About the Mac OS X 10.2.8 Update; released as 6R50 for one day 6S90
-About the Mac OS X 10.2.8 (G5) Update
-
----
+<table class="releases">
+  <caption class="top-left top-right">Mac OS X Leopard</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+  </tbody>
+</table>
 
 ## User Interface

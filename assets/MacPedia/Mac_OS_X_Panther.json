@@ -1,0 +1,87 @@
+
+[
+  {
+    "version": "10.3",
+    "build": "7B85",
+    "release": "October 24, 2003",
+    "darwinVersion": "7.0",
+    "description": "Original <i>retail</i> release set"
+  },
+  {
+    "version": "",
+    "build": "7B86",
+    "release": "",
+    "darwinVersion": "",
+    "description": "Server Edition"
+  },
+  {
+    "version": "10.3.1",
+    "build": "7C107",
+    "release": "November 10, 2003",
+    "darwinVersion": "7.1",
+    "description": "Unavailable"
+  },
+  {
+    "version": "10.3.2",
+    "build": "7D24",
+    "release": "December 17, 2003",
+    "darwinVersion": "7.2",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "7D28",
+    "release": "",
+    "darwinVersion": "",
+    "description": "Updated <i>retail</i> release"
+  },
+  {
+    "version": "10.3.3",
+    "build": "7F44",
+    "release": "March 15, 2004",
+    "darwinVersion": "7.3",
+    "description": "Added network volumes available on the finder sidebar and the desktop; updated applications."
+  },
+  {
+    "version": "10.3.4",
+    "build": "7H63",
+    "release": "May 26, 2004",
+    "darwinVersion": "7.4",
+    "description": "Unavailable"
+  },
+  {
+    "version": "10.3.5",
+    "build": "7M34",
+    "release": "August 9, 2004",
+    "darwinVersion": "7.5",
+    "description": "Updated <i>retail</i> release set"
+  },
+  {
+    "version": "10.3.6",
+    "build": "7R28",
+    "release": "November 5, 2004",
+    "darwinVersion": "7.6",
+    "description": "Unavailable"
+  },
+  {
+    "version": "10.3.7",
+    "build": "7S215",
+    "release": "December 15, 2004",
+    "darwinVersion": "7.7",
+    "description": ""
+  },
+  {
+    "version": "10.3.8",
+    "build": "7U16",
+    "release": "February 9, 2005",
+    "darwinVersion": "7.8",
+    "description": ""
+  },
+  {
+    "version": "10.3.9",
+    "build": "7W98",
+    "release": "April 15, 2005",
+    "darwinVersion": "7.9",
+    "description": ""
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "version": "10.2",
+    "build": "6C115",
+    "release": "August 24, 2002",
+    "darwinVersion": "6.0",
+    "description": "Original retail release"
+  },
+  {
+    "version": "",
+    "build": "6C115a",
+    "release": "",
+    "darwinVersion": "",
+    "description": ""
+  },
+  {
+    "version": "10.2.1",
+    "build": "6D52",
+    "release": "September 18, 2002",
+    "darwinVersion": "6.1",
+    "description": "Unavailable"
+  },
+  {
+    "version": "10.2.2",
+    "build": "6F21",
+    "release": "November 11, 2002",
+    "darwinVersion": "6.2",
+    "description": ""
+  },
+  {
+    "version": "10.2.3",
+    "build": "6G30",
+    "release": "December 19, 2002",
+    "darwinVersion": "6.3",
+    "description": ""
+  },
+  {
+    "version": "",
+    "build": "6G37",
+    "release": "Unavailable",
+    "darwinVersion": "",
+    "description": "Updated retail release"
+  },
+  {
+    "version": "",
+    "build": "6G50",
+    "release": "",
+    "darwinVersion": "",
+    "description": "Server edition; retail release"
+  },
+  {
+    "version": "10.2.4",
+    "build": "6I32",
+    "release": "February 13, 2003",
+    "darwinVersion": "6.4",
+    "description": "Unavailable"
+  },
+  {
+    "version": "10.2.5",
+    "build": "6L29",
+    "release": "April 10, 2003",
+    "darwinVersion": "6.5",
+    "description": ""
+  },
+  {
+    "version": "10.2.6",
+    "build": "6L60",
+    "release": "May 6, 2003",
+    "darwinVersion": "6.6",
+    "description": ""
+  },
+  {
+    "version": "10.2.7",
+    "build": "6R65",
+    "release": "September 22, 2003",
+    "darwinVersion": "6.7",
+    "description": "Removed from distribution due to defects"
+  },
+  {
+    "version": "10.2.8",
+    "build": "6R73",
+    "release": "October 3, 2003",
+    "darwinVersion": "6.8",
+    "description": "Unavailable"
+  },
+  {
+    "version": "",
+    "build": "6S90",
+    "release": "",
+    "darwinVersion": "",
+    "description": "G5 only"
+  }
+]
