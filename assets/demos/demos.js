@@ -20,16 +20,14 @@ function createEmulator(diskType, diskUrl) {
 
 window.addEventListener("load", () => {
   window.emulator = createEmulator(window.disk, window.imagePath);
-  if (screen) {
-    screen.addEventListener("click", () => {
-      screen.requestPointerLock();
-    });
-  }
 
   document.querySelector("button.stop").addEventListener("click", (e) => {
     e.preventDefault();
     emulator.stop();
     emulator.destroy();
+    let temp = "";
+    [screen.innerHTML, temp] = ["", screen.innerHTML];
+    screen.innerHTML = temp;
   });
 
   document.querySelector("button.start").addEventListener("click", (e) => {
@@ -38,6 +36,9 @@ window.addEventListener("load", () => {
     console.log(emulator);
     emulator.add_listener("emulator-ready", () => {
       emulator.run();
+      screen.addEventListener("click", () => {
+        screen.requestPointerLock();
+      });
     });
   });
 });
