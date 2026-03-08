@@ -100,10 +100,9 @@ layout: base.njk
     }
     marqueeDivs = document.querySelectorAll("div.marquee div");
     [...marqueeDivs].forEach((marqueeDiv) => {
-      marqueeDiv.append(...marqueeDiv.cloneNode(true).children);
-      marqueeDiv.append(...marqueeDiv.cloneNode(true).children);
-      marqueeDiv.append(...marqueeDiv.cloneNode(true).children);
-      marqueeDiv.append(...marqueeDiv.cloneNode(true).children);
+      for (let i = 0; i <= 4; i++) {
+        marqueeDiv.append(...marqueeDiv.cloneNode(true).children);
+      }
       window.addEventListener("load", () => {
         marqueeDiv.style.setProperty(
           "--width",
