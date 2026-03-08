@@ -1,5 +1,14 @@
 {
   "printWidth": 80,
   "proseWrap": "always",
-  "htmlWhitespaceSensitivity": "css"
+  "htmlWhitespaceSensitivity": "css",
+  "plugins": ["prettier-plugin-jinja-template"],
+  "overrides": [
+    {
+      "files": ["*.njk"],
+      "options": {
+        "parser": "jinja-template"
+      }
+    }
+  ]
 }

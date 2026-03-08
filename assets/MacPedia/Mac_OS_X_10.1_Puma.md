@@ -40,7 +40,7 @@ Mac OS X 10.1 was codenamed \"Puma\" because the internal team thought it was
 
 ## System requirements
 
-[Supported computers:]
+### Supported computers
 
 - Power Mac G3
 - Power Mac G4
@@ -52,11 +52,11 @@ Mac OS X 10.1 was codenamed \"Puma\" because the internal team thought it was
 - PowerBook G4
 - iBook
 
-[RAM:]
+### RAM
 
 - 128 megabytes (MB) (unofficially 64 MB minimum)
 
-[Hard Drive Space:]
+### Hard Drive Space
 
 - 1.5 gigabytes (GB)
 
@@ -67,19 +67,19 @@ well as improving overall system performance.
 
 This system release brought some major new features to the Mac OS X platform:
 
-- Performance enhancements --- Mac OS X 10.1 introduced large performance
-  increases throughout the system.
-- Easier CD and DVD burning --- better support in Finder as well as in iTunes
-- DVD playback support --- DVDs can be played in Apple DVD Player
-- More printer support (200 printers supported out of the box) --- One of the
-  main complaints of version 10.0 users was the lack of printer drivers, and
-  Apple attempted to remedy the situation by including more drivers, although
-  many critics complained that there were still not enough.
-- Faster 3D (OpenGL performs 20% faster) --- The OpenGL drivers and handling
-  were vastly improved in this version of Mac OS X, which created a large
-  performance gap for 3D elements in the interface, and 3D applications.
-- Improved AppleScript --- The scripting interface now allows scripting access
-  to many more system components, such as the Printer Center, and Terminal, thus
+- Performance enhancements: Mac OS X 10.1 introduced large performance increases
+  throughout the system.
+- Easier CD and DVD burning: better support in Finder as well as in iTunes
+- DVD playback support: DVDs can be played in Apple DVD Player
+- More printer support (200 printers supported out of the box): One of the main
+  complaints of version 10.0 users was the lack of printer drivers, and Apple
+  attempted to remedy the situation by including more drivers, although many
+  critics complained that there were still not enough.
+- Faster 3D (OpenGL performs 20% faster): The OpenGL drivers and handling were
+  vastly improved in this version of Mac OS X, which created a large performance
+  gap for 3D elements in the interface, and 3D applications.
+- Improved AppleScript: The scripting interface now allows scripting access to
+  many more system components, such as the Printer Center, and Terminal, thus
   improving the customizability of the interface. As well, Apple introduced
   AppleScript Studio, which allows a user to create full AppleScript
   applications in a simple graphical interface.

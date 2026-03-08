@@ -76,12 +76,12 @@ named Puma.
 
 ## Removed features
 
-- File-sharing client --- The system can only use TCP/IP, not AppleTalk, to
-  connect to servers sharing the Apple Filing Protocol. It cannot use SMB to
-  connect to Windows or Samba servers.
-- File-sharing server --- As a server, the system can share files using only the
+- File-sharing client: The system can only use TCP/IP, not AppleTalk, to connect
+  to servers sharing the Apple Filing Protocol. It cannot use SMB to connect to
+  Windows or Samba servers.
+- File-sharing server: As a server, the system can share files using only the
   Apple Filing Protocol (over TCP/IP), HTTP, SSH, and FTP.
-- Optical media --- Neither DVD playback nor burning CDs or DVDs is supported.
+- Optical media: Neither DVD playback nor burning CDs or DVDs is supported.
   However, audio CD burning was added in the Mac OS X 10.0.2 update, roughly two
   months after initial release.
 

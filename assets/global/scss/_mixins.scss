@@ -822,23 +822,35 @@
   $blur,
   $border-radius,
   $color) {
-  div.wrapper {
-    background-color: $background-color-2;
-
-    div.content {
-      backdrop-filter: none;
-    }
-
-    * {
-      z-index: 1;
-    }
+  body {
+    background-image: url(/global/OSPedia-background.svg);
   }
+
+  // div.wrapper {
+  //   background-color: $background-color-2;
+  //
+  //   div.content {
+  //     backdrop-filter: none;
+  //   }
+  //
+  //   * {
+  //     z-index: 1;
+  //   }
+  // }
 
   div#card-container {
     display: flex;
     flex-direction: column;
     margin: 10px;
     position: relative;
+  }
+
+  main h2 {
+    border-top: 0;
+  }
+
+  div.info {
+    display: none !important;
   }
 
   div.home-os-cards {

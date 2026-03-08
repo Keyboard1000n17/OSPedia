@@ -33,6 +33,9 @@ importers:
         specifier: ^5.44.1
         version: 5.44.1
     devDependencies:
+      prettier-plugin-jinja-template:
+        specifier: ^2.1.0
+        version: 2.1.0(prettier@3.8.1)
       sass:
         specifier: ^1.97.1
         version: 1.97.1
@@ -3450,6 +3453,16 @@ packages:
   precond@0.2.3:
     resolution: {integrity: sha512-QCYG84SgGyGzqJ/vlMsxeXd/pgL/I94ixdNFyh1PusWmTCyVfPJjZ1K1jvHtsbfnXQs2TSkEP2fR7QiMZAnKFQ==}
     engines: {node: '>= 0.6'}
+
+  prettier-plugin-jinja-template@2.1.0:
+    resolution: {integrity: sha512-mzoCp2Oy9BDSug80fw3B3J4n4KQj1hRvoQOL1akqcDKBb5nvYxrik9zUEDs4AEJ6nK7QDTGoH0y9rx7AlnQ78Q==}
+    peerDependencies:
+      prettier: ^3.0.0
+
+  prettier@3.8.1:
+    resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
+    engines: {node: '>=14'}
+    hasBin: true
 
   pretty-ms@9.3.0:
     resolution: {integrity: sha512-gjVS5hOP+M3wMm5nmNOucbIrqudzs9v/57bWRHQWLYklXqoXKrVfYW2W9+glfGsqtPgpiz5WwyEEB+ksXIx3gQ==}
@@ -8188,6 +8201,12 @@ snapshots:
       - supports-color
 
   precond@0.2.3: {}
+
+  prettier-plugin-jinja-template@2.1.0(prettier@3.8.1):
+    dependencies:
+      prettier: 3.8.1
+
+  prettier@3.8.1: {}
 
   pretty-ms@9.3.0:
     dependencies:
