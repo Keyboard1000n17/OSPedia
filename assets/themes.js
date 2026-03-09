@@ -1,7 +1,24 @@
+const themes = [
+  {
+    name: "light",
+    path: {
+      sitewide: "/global/stylesheets/fluent-ui-light.css",
+    },
+  },
+  {
+    name: "dark",
+    path: {
+      sitewide: "/global/stylesheets/fluent-ui-dark.css",
+    },
+  },
+];
+
 if (document.cookie) {
-  document.querySelector("#setSs").href = document.cookie
-    .split(";")[0]
-    .split("=")[1];
+  if (document.cookie.split(";")[0].split("=")[1] === "dark") {
+    document.querySelector("#setSs").href = themes[1].path.sitewide;
+  } else {
+    document.querySelector("#setSs").href = themes[0].path.sitewide;
+  }
 
   document.querySelector("nav img").src = document
     .querySelector("#setSs")
@@ -9,13 +26,6 @@ if (document.cookie) {
     ? "/global/OSPedia-logo.svg"
     : "/global/OSPedia-logo-dark.svg";
 }
-
-const themes = [
-  {
-    name: "fluent-ui",
-    path: "/stylesheets/fluentUI.css",
-  },
-];
 
 const themeToggle = document.querySelector(".dark-mode-toggle");
 let theme = "";
@@ -26,10 +36,10 @@ themeToggle.addEventListener("click", () => {
       .querySelector("#setSs")
       .href.includes("/global/stylesheets/fluent-ui-light.css")
   ) {
-    theme = "/global/stylesheets/fluent-ui-dark.css";
+    theme = "dark";
     document.querySelector("nav img").src = "/global/OSPedia-logo-dark.svg";
   } else {
-    theme = "/global/stylesheets/fluent-ui-light.css";
+    theme = "light";
     document.querySelector("nav img").src = "/global/OSPedia-logo.svg";
   }
   document.querySelector("#setSs").href = theme;
