@@ -3,10 +3,13 @@
    This is an org file. It is said to be a powerful in-editor way to take notes.
    If you wish to contribute, this file might help you figure out how to help (please contribute).
 ** TODO:
-   [X] Add demos
-   - Add demos of Windows and macOS using v86 and Infinite Mac
-   [X] Modify page styling
-   - Add a max-width on the `main` element and navbar contents.
-   - Also move the UI picture to the side instead of being inside a `details` element.
+   [ ] Add better images
+   - Find appropiate quality images for better UX.
    [ ] Add Ubuntu articles
-   - Add pages for Ubuntu
+   - Add pages for Ubuntu.
+   [ ] Add responsiveness to the site
+   - Make the extra features under `div.extras` accessible to mobile users.
+   [ ] Improve dark mode
+   - Make the dark mode experience better
+   [ ] Refactor SCSS
+   - It's a nightmare dealing with the SCSS I wrote.

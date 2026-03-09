@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "sass:meta";
+@use "sass:color";
 
 @mixin scrollbars {
   scrollbar-width: thin;
@@ -202,7 +203,6 @@
       justify-self: start;
       align-items: flex-start;
       background-color: rgba(255, 255, 255, 0);
-      width: max-content;
 
       div.links {
         align-items: flex-start;
@@ -726,6 +726,28 @@
 
     &.hidden {
       display: none;
+    }
+  }
+
+  // Styles for the fun fact section
+  section.fun-fact {
+    background-color: color.change($background-color, $alpha: 0.2);
+    backdrop-filter: $blur;
+    padding: $padding;
+    border-radius: $border-radius;
+    margin: $padding 0;
+
+    h2 {
+      margin: 2.5px;
+    }
+
+    &::before {
+      inset: 0;
+      content: "";
+      position: absolute;
+      background-color: rgba(255, 247, 0, 0.3);
+      z-index: -1;
+      border-radius: 15px;
     }
   }
 
