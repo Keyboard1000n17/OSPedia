@@ -2,13 +2,13 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ title }} - OSPedia</title>
   <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
   <link href="/global/stylesheets/fluent-ui-light.css" rel="stylesheet" id="setSs" />
   {% if tags and "demo-pages" in tags %}
-  <link rel="stylesheet" href="/global/stylesheets/demos.css">
+  <link rel="stylesheet" href="/global/stylesheets/demos-light.css" id="setDemoSs" />
   {% elif tags and "homepages" in tags and page.url != "/" %}
   <link rel="stylesheet" href="/global/stylesheets/homepage-styles.css" />
   {% elif page.url == "/" %}
@@ -33,7 +33,6 @@
 {% endif %}
 
 <body style="{{ style }}">
-
   {% include "_nav.njk" %}
   <div class="wrapper">
     <div class="contents">
@@ -55,16 +54,12 @@
       </div>
       <div class="demo-info">{{ content | safe }}</div>
     </main>
-
     {% elif tags and "mac-demo-pages" in tags %}
-
     <main data-pagefind-ignore>
       <h1>{{ title }}</h1>
       {{ content | safe }}
     </main>
-
     {% else %}
-
     <main>
       <div class="content">
         {% if tags and not "homepages" in tags %}
@@ -74,16 +69,15 @@
         {{ content | splitContent(0) | safe }}
         {% if favicon %}
         <div class="info">
-          <img src="{{ page.filePathStem | parentFolder }}/Images/Icons/{{ favicon }}" alt="{{ info.icon[0].alt }}">
+          <img src="{{ page.filePathStem | parentFolder }}/Images/Icons/{{ favicon }}" alt="{{ info.icon[0].alt }}" />
           {% for para in info.paras %}
           <p>{{ para }}</p>
           {% endfor %}
-          {% endif %}
         </div>
+        {% endif %}
         {{ content | splitContent(1) | safe }}
       </div>
     </main>
-
     {% endif %}
     <div class="extras">
       {% if carousel_images %}
@@ -95,17 +89,18 @@
         <p class="fun-fact"></p>
       </section>
     </div>
+
     {% if carousel_images %}
     <section class="carousel-wrapper hidden">
       <div class="carousel">
         {% for image in carousel_images %}
         <figure>
-          <img src="{{ image.path }}" alt="{{ image.alt }}" class="carousel-image">
+          <img src="{{ image.path }}" alt="{{ image.alt }}" class="carousel-image" />
           <figcaption>{{ image.desc }}</figcaption>
         </figure>
         {% endfor %}
       </div>
-      <img src="/global/Images/close.png" alt="Close button" class="carousel-close">
+      <img src="/global/Images/close.png" alt="Close button" class="carousel-close" />
       <div class="carousel-prev"></div>
       <div class="carousel-next"></div>
     </section>
@@ -135,10 +130,18 @@
   <div class="pagefind-ui__blur"></div>
 
   <script src="/script.js"></script>
+  <script src="/fun-fact.js"></script>
+
+  {% if page.url | parentFolder == "/demos" %}
+  <script src="/demo-themes.js"></script>
+  {% else %}
   <script src="/themes.js"></script>
+  {% endif %}
+
   {% if carousel_images %}
   <script src="/carousel.js"></script>
   {% endif %}
+
   {% if tags and "win-demo-pages" in tags %}
   <script src="./libv86.js"></script>
   <script>
@@ -147,7 +150,6 @@
   </script>
   <script src="./demos.js"></script>
   {% endif %}
-  <script src="/fun-fact.js"></script>
 </body>
 
 </html>

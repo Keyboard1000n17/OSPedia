@@ -8,8 +8,7 @@
   --pagefind-ui-border: gray;
 }
 
-@include styles(
-  $background-color,
+@include styles($background-color,
   $blur,
   $border,
   $border-radius,
@@ -18,8 +17,7 @@
   $link,
   $search-mask,
   $background-color-2,
-  $color
-);
+  $color);
 
 nav img.dark-mode-toggle {
   filter: invert(1);
