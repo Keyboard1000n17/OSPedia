@@ -101,25 +101,27 @@ You should have a way to use Git. It can be:
 * the Git CLI.
 
 If you are unfamilliar with Git, it is much easier to use a
-GUI. If you are using VS Code as your editor, there is a built-in Git interface.
+GUI. If you are using VS Code as your editor, there is abuilt-in
+Git interface.
 
 To actually start working on the project:
-1. You need to clone the repository. You can do this from GitHub Desktop or run:
+1. You need to fork the repository and then clone the forked repository. You can
+   do this from GitHub Desktop or run:
    ```git clone https://github.com/Keyboard1000n17/OSPedia --depth 10```
    A depth of 10 means you'll copy the last 10 commits. You don't want the whole
    history!
-2. You need to run:
+3. You need to run:
    ```pnpm i```
    For this, you need to install PNPM. Once you install PNPM, open the terminal,
    either in VS Code or the terminal program, and run the command. Make sure to
    navigate to the cloned folder with the `cd` command if you open the real
    terminal.
-3. In the terminal, run:
+4. In the terminal, run:
    ```pnpm dev```
    This starts the Eleventy and Sass watch servers.
-4. Now, you can actually start coding. If you use a terminal editor like Vim, Emacs,
+5. Now, you can actually start coding. If you use a terminal editor like Vim, Emacs,
    Neovim, Helix, etc., look into `tmux`. It will make your experience better!
-5. Once you're done making changes, commit them. There is no standard for commits here,
+6. Once you're done making changes, commit them. There is no standard for commits here,
    just make your commits are as short as possible. If you use the CLI, run:
    ```
    git add .
@@ -134,9 +136,9 @@ these steps, you only need to do steps 2-7!
 
 ## Code of Conduct
 
-### Our Pledge
-
-To abide by Hack Club's Code of Conduct
+This project adopts Hack Club's system. Professionalism is not required, or encouraged for that
+matter. However, you **should**, and really, ***should***, use friendly language and simple
+words. Avoid being cold in your conversation! THe formal conduct is given below:
 
 ### Our Standards
 
