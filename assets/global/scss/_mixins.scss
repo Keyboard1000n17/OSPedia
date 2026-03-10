@@ -758,7 +758,6 @@
     border: none;
     border-spacing: 0;
     background-color: $background-color;
-    color: #000;
     margin: 10px;
     backdrop-filter: $blur;
     float: none;
@@ -768,7 +767,7 @@
   table caption {
     padding: $padding;
     background-color: inherit;
-    border: solid 0.5px #000;
+    border: solid 0.5px $color;
   }
 
   .previous-release {
@@ -789,7 +788,7 @@
 
   th,
   td {
-    border: solid 0.5px #000;
+    border: solid 0.5px $color;
     padding: $padding;
 
     p {
@@ -799,42 +798,42 @@
 
   td.top,
   th.top {
-    border-top: 2px solid #000;
+    border-top: 2px solid $color;
   }
 
   .left {
-    border-left: 2px solid #000;
+    border-left: 2px solid $color;
   }
 
   .right {
-    border-right: 2px solid #000;
+    border-right: 2px solid $color;
   }
 
   .bottom {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid $color;
   }
 
   .top-left {
-    border-top: 2px solid #000;
-    border-left: 2px solid #000;
+    border-top: 2px solid $color;
+    border-left: 2px solid $color;
     border-top-left-radius: $border-radius;
   }
 
   .top-right {
-    border-top: 2px solid #000;
-    border-right: 2px solid #000;
+    border-top: 2px solid $color;
+    border-right: 2px solid $color;
     border-top-right-radius: $border-radius;
   }
 
   .bottom-left {
-    border-bottom: 2px solid #000;
-    border-left: 2px solid #000;
+    border-bottom: 2px solid $color;
+    border-left: 2px solid $color;
     border-bottom-left-radius: $border-radius;
   }
 
   .bottom-right {
-    border-bottom: 2px solid #000;
-    border-right: 2px solid #000;
+    border-bottom: 2px solid $color;
+    border-right: 2px solid $color;
     border-bottom-right-radius: $border-radius;
   }
 }
