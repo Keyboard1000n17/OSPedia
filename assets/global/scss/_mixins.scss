@@ -168,6 +168,8 @@
 
       a {
         padding-left: calc(1 / 4 * $padding);
+        padding-top: calc(1 / 5 * $padding);
+        padding-bottom: calc(1 / 5 * $padding);
       }
 
       a.subheadings {

@@ -5,9 +5,9 @@
   "plugins": ["prettier-plugin-jinja-template"],
   "overrides": [
     {
-      "files": ["*.njk"],
+      "files": ["**/*.njk"],
       "options": {
-        "parser": "jinja-template"
+        "parser": "jinja"
       }
     }
   ]

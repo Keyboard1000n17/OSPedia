@@ -13,3 +13,5 @@
    - Make the dark mode experience better
    [ ] Refactor SCSS
    - It's a nightmare dealing with the SCSS I wrote.
+   [ ] Do something about the tables for Windows 10 and 11
+   There are TODO comments in the markdown files for Windows 10 and 11 that explain the problem (hopefully)
