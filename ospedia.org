@@ -15,3 +15,14 @@
    - It's a nightmare dealing with the SCSS I wrote.
    [ ] Do something about the tables for Windows 10 and 11
    There are TODO comments in the markdown files for Windows 10 and 11 that explain the problem (hopefully)
+   [ ] Get dark mode images for macOS Big Sur, Sonoma, Sequoia and Tahoe.
+   - Self-explanatory
+
+** Get new images
+   Get new images for these:
+   - ~Macintosh System 6.0.8~
+   - ~Mac OS X 10.0~
+   - ~Mac OS X 10.1~
+   - ~Mac OS X Snow Leopard~
+   - Windows 10
+   - ~macOS Tahoe~

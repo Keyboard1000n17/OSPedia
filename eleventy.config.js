@@ -38,17 +38,17 @@ module.exports = function(eleventyConfig) {
     },
   });
 
-  // WinPedia collection (excluding home.html)
-  eleventyConfig.addCollection("winpedia-pages", function(collectionApi) {
+  // windows collection (excluding home.html)
+  eleventyConfig.addCollection("windows-pages", function(collectionApi) {
     return collectionApi
-      .getFilteredByGlob("assets/WinPedia/*.md")
+      .getFilteredByGlob("assets/windows/**/*.md")
       .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
   });
 
-  // MacPedia collection (excluding home.html)
-  eleventyConfig.addCollection("macpedia-pages", function(collectionApi) {
+  // macOS collection (excluding home.html)
+  eleventyConfig.addCollection("macos-pages", function(collectionApi) {
     return collectionApi
-      .getFilteredByGlob("assets/MacPedia/*.md")
+      .getFilteredByGlob("assets/macos/**/*.md")
       .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
   });
 
@@ -57,7 +57,7 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: "assets",
       output: "_site",
-      includes: "_includes", // _includes folder is at root, outside assets
+      includes: "_includes"
     },
     templateFormats: ["html", "njk", "md"], // allow processing of HTML with frontmatter
     htmlTemplateEngine: "njk", // treat HTML as Nunjucks

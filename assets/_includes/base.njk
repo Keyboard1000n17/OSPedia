@@ -27,8 +27,8 @@
 {% set style = "background-image: url(\"/global/OSPedia-background.svg\")" %}
 {% elseif tags and "homepages" in tags %}
 {% set style = "background-image: url(\"" ~ background_image ~ "\")" %}
-{% elseif tags and "winpedia-pages" in tags or "macpedia-pages" in tags %}
-{% set style = "background-image: url(\"./Images/Wallpapers/" ~ background_image ~ "\")" %}
+{% elseif tags and "windows-pages" in tags or "macos-pages" in tags %}
+{% set style = "background-image: url(\"./" ~ background_image ~ "\")" %}
 {% endif %}
 {% endif %}
 
@@ -69,7 +69,7 @@
         {{ content | splitContent(0) | safe }}
         {% if favicon %}
         <div class="info">
-          <img src="{{ page.filePathStem | parentFolder }}/Images/Icons/{{ favicon }}" alt="{{ info.icon[0].alt }}" />
+          <img src="./{{ favicon }}" alt="{{ info.icon[0].alt }}" />
           {% for para in info.paras %}
           <p>{{ para }}</p>
           {% endfor %}
@@ -108,7 +108,7 @@
     {% endif %}
   </div>
 
-  {% if tags and "macpedia-pages" in tags %}
+  {% if tags and "macos-pages" in tags %}
   <template>
     <tr>
       <td class="left version"></td>
@@ -123,7 +123,7 @@
     window.jsonData = "{{ jsonData }}";
   </script>
   {% endif %}
-  <script src="/MacPedia/tables.js"></script>
+  <script src="/macos/tables.js"></script>
   {% endif %}
 
   <div id="back-to-top">Back to top</div>

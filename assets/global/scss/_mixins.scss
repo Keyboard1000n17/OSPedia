@@ -223,11 +223,11 @@
     right: $padding;
     text-align: center;
     background-color: $background-color;
-    color: #000;
+    color: $color;
     border-radius: $border-radius;
 
     a {
-      color: #000;
+      color: $color;
     }
 
     @media (min-width: 1440px) {
@@ -642,6 +642,10 @@
       scroll-snap-align: center;
       width: 100%;
       gap: 2rem;
+
+      figcaption {
+        text-align: center;
+      }
     }
 
     img.carousel-image {
@@ -908,7 +912,7 @@
     flex: 0 0 100%;
     align-items: center;
     justify-content: center;
-    align-content: center;
+    border-radius: $border-radius $border-radius 0 0;
   }
 
   div.home-os-cards>div.bottom {

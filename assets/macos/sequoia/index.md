@@ -1,0 +1,192 @@
+---
+title: macOS Sequoia
+favicon: sequoia-icon.webp
+order: 220
+background_image: sequoia-light-wallpaper.webp
+info:
+  icon:
+    - alt: macOS Sequoia logo
+  paras:
+    - "Developed by: Apple Computer"
+    - "General availability: September 16, 2024 (version 15.0 build 24A335 -
+      original release)"
+    - "Latest release: July 29, 2025 (version 15.6 build 24G5054d)"
+    - "Preceded by: macOS Sonoma (version 14)"
+    - "Succeeded by: macOS Tahoe (version 26)"
+    - "Kernel type: Hybrid (XNU)"
+    - >
+      Support status: Supported.
+carousel_images:
+  - path: /macos/sequoia/sequoia-light-ui.webp
+    alt: macOS Sequoia screenshot
+    desc: A screenshot of macOS Sequoia.
+  - path: /macos/sequoia/sequoia-dark-ui.webp
+    alt: Dark mode macOS Sequoia screenshot
+    desc: A screenshot of macOS Sequoia but in dark mode.
+  - path: /macos/sequoia/sequoia-light-wallpaper.webp
+    alt: macOS Sequoia wallpaper
+    desc: The default wallpaper for macOS Sequoia.
+  - path: /macos/sequoia/sequoia-dark-wallpaper.webp
+    alt: macOS Sequoia dark mode wallpaper
+    desc: The default dark mode wallpaper for macOS Sequoia.
+  - path: /macos/sequoia/sequoia-sunrise-wallpaper.webp
+    alt: macOS Sequoia sunrise wallpaper
+    desc: The Sequoia landscape at sunrise, used as a wallpaper.
+---
+
+_macOS 15 refers to this version. For macOS 10.15, refer to macOS Catalina._
+
+macOS Sequoia (version 15) is the twenty-first and current major release of
+Apple\'s macOS operating system, the successor to macOS Sonoma. It was announced
+at WWDC 2024 on June 10, 2024. In line with Apple\'s practice of naming macOS
+releases after landmarks in California, it is named after Sequoia National Park,
+located in the Sierra Nevada mountain range.
+
++++
+
+The first developer beta was released on June 10, 2024. The first public beta
+was released on July 15, 2024. It was released on September 16, 2024. Sequoia
+was the first macOS version released on the same day as a new iOS and iPadOS
+version.
+
+It will be succeeded by macOS Tahoe, which will release in September 2025.
+
+Sequoia will be the final version of macOS that supports the iMac Pro,
+Intel-based Mac Mini, 2018 MacBook Pro, 2019 13 and 15" MacBook Pro, 2020 2 port
+13" MacBook Pro, 2019 iMac, and Intel-based MacBook Air, as its successor, macOS
+Tahoe, drops support for those models.
+
+## Supported hardware
+
+macOS Sequoia supports Macs with Apple silicon and those with Intel\'s
+Skylake-based Xeon W and 8th-generation Coffee Lake chips or later. A Mac with
+an M1 chip or later is required to use Apple Intelligence. macOS Sequoia
+supports every Mac that supports macOS Sonoma, with the exception of the
+2018-2019 MacBook Air models with Amber Lake chips. Similar to Sonoma, the 2019
+iMac is the only supported Intel Mac that lacks a T2 security chip. macOS
+Sequoia is the first version of macOS to drop support for a Mac with a T2
+security chip.
+
+The following devices are compatible with macOS Sequoia:
+
+- iMac (2019 and later)
+- iMac Pro (2017)
+- MacBook Air (2020 and later)
+- MacBook Pro (2018 and later)
+- Mac mini (2018 and later)
+- Mac Pro (2019 and later)
+- Mac Studio (all models)
+
+## Features
+
+macOS Sequoia introduced several new features and improvements, mainly focused
+on productivity:
+
+- iPhone Mirroring, a feature to mirror and interact with content from an iPhone
+  running iOS 18 as a macOS window, has been introduced. It is supported on all
+  Macs that run Sequoia except the 2019 iMac, which lacks a T2 chip. This
+  function is not available in the European Union due to the lack of conformity
+  to the Digital Markets Act (DMA).
+- The Calculator app has been redesigned to be more similar to that of iOS and
+  iPadOS, including rounded buttons, departing from the design that has been
+  used since OS X Yosemite.
+- Notes has been updated with the Math Notes feature, which can be used to
+  calculate simple equations, evaluate expressions, and assign variables within
+  the app.
+- Passwords, a cross-platform password manager application, was introduced,
+  which replaces Keychain.
+- In System Settings, individual menus have been rearranged and slightly
+  redesigned to quickly access frequently used menus.
+- Safari has been revamped, including revamped reader mode (now called Reader),
+  faster page load times, a new start page, a new option to hide a singular
+  element on a webpage, and a new unified menu; these had previously been
+  exclusive to compact mode on iOS/iPadOS.
+- macOS Sequoia includes the second iteration of Game Porting Toolkit, a Windows
+  API compatibility layer derived from Wine and Crossover, allowing developers
+  to more easily port Windows games to macOS.
+- Apple Intelligence is available on all Apple silicon Macs and includes
+  artificial intelligence features such as a redesigned Siri, Writing Tools with
+  which selected text can be proofread or have its tone changed, Smart Reply in
+  Mail to quickly draft email responses, and a system-wide integration with
+  ChatGPT.
+- Window tiling is now automatically suggested by macOS when dragging a window
+  to the edges of the display, similar to the Aero Snap feature included in
+  Microsoft Windows.
+- The Tips app is now an independent app from the rest of the operating system.
+  The user interface (UI) has also been redesigned, and has replaced the
+  previous Help system included in earlier versions of macOS. The app surfaces
+  individual user guides for apps such as Freeform, Pages, Keynote, Notes, and
+  Apple TV, and also surfaces user guides for any other devices a user may own,
+  such as an iPhone, Apple Watch or Apple TV. As an independent app, it can also
+  be pinned to the Dock.
+
+### New Unicode characters font support (macOS 15.0)
+
+- Bengali Abbreviation Sign (U+09FD) (10.0)
+- CJK Unified Ideographs Extension G (U+30EDD-U+30EDE) (13.0)
+
+### macOS 15.1
+
+- Mongolian Free Variation Selector (U+180F) (14.0)
+
+### macOS 15.2
+
+- Arabic End of Text Mark (U+061D) (14.0)
+- Gujarati Marks (U+0AFA-U+0AFF) (10.0)
+- Oriya Sign Overline (U+0B55) (13.0)
+- Telugu Letter Nakaara Pollu (U+0C5D) (14.0)
+- Telugu Sign Siddham (U+0C77) (12.0)
+- Kannada Sign Siddham (U+0C84) (11.0)
+- Kannada Letter Nakaara Pollu (U+0C5D) (14.0)
+- Malayalam Sign Combining Anusvara Above (U+0D00) (10.0)
+- Malayalam Letter Vedic Anusvara (U+0D04) (13.0)
+- Malayalam Chillu Letters (U+0D54-U+0D56) (9.0)
+- Malayalam Fractions (U+0D58-U+0D5E) (9.0)
+- Malayalam Fractions (U+0D76-U+0D78) (9.0)
+- Sinhala Sign Candrabindu (U+0D81) (13.0)
+
+### Revived Unicode Characters Font Support
+
+- Mongolian Letter Cha with Two Dots (U+1878) (11.0)
+- Mongolian Supplement (U+11660-U+1166C) (9.0)
+
+## Release History
+
+The first developer beta of macOS Sequoia was released on June 10, 2024. As with
+macOS Sonoma, the Sequoia developer betas are available to anyone with an Apple
+Developer account, without needing a developer subscription.
+
+<table>
+  <tr>
+    <td
+      class="top-left bottom-left previous-release"
+    >
+      Previous release
+    </td>
+    <td class="top bottom current-release">
+      Current release
+    </td>
+    <td class="top bottom beta-release">
+      Current beta release
+    </td>
+    <td
+      class="top-right bottom-right security-response"
+    >
+      Security response
+    </td>
+  </tr>
+</table>
+<table class="releases">
+  <caption class="top-left top-right">macOS Tahoe Releases</caption>
+  <tbody>
+    <tr>
+      <th class="left">Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Darwin Version</th>
+      <th class="right">Release Notes</th>
+    </tr>
+  </tbody>
+</table>
+
+## User Interface
