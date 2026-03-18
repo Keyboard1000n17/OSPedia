@@ -1,11 +1,11 @@
 ---
 title: Classic Mac OS
 order: 10
-favicon: system-software.png
+favicon: mac-os-9-finder.webp
 background_image: mac-os-9.webp
 info:
   icon:
-    - alt: System Software logo
+    - alt: Mac OS 9 Finder icon
   paras:
     - "Developed by: Apple Computer"
     - "Initial release: January 24, 1984 - System 1"
@@ -14,28 +14,28 @@ info:
     - "Kernel type: 68k - Monolithic; PowerPC - Nanokernel"
     - "Working state: Historical and no longer supported"
 carousel_images:
-  - path: /macos/classic-mac-os/system-1.jpg
+  - path: /macos/classic-mac-os/system-1-ui.webp
     alt: System 1 screenshot
     desc: A screenshot of System 1.0.
-  - path: /macos/classic-mac-os/system-2.gif
+  - path: /macos/classic-mac-os/system-2-ui.webp
     alt: System 2.0 screenshot
     desc: A screenshot of System 2.0.
-  - path: /macos/classic-mac-os/system-3.png
+  - path: /macos/classic-mac-os/system-3-ui.webp
     alt: System 3.0 screenshot
     desc: A screenshot of System 3.0.
-  - path: /macos/classic-mac-os/system-4.png
+  - path: /macos/classic-mac-os/system-4-ui.webp
     alt: System 4.0 screenshot
     desc: A screenshot of System 4.0.
-  - path: /macos/classic-mac-os/system-6.0.8.png
+  - path: /macos/classic-mac-os/system-6.0.8-ui.webp
     alt: System 6.0.8 screenshot
     desc: A screenshot of System 6.0.8.
-  - path: /macos/classic-mac-os/mac-os-7.6.1.png
+  - path: /macos/classic-mac-os/mac-os-7.6.1-ui.webp
     alt: Mac OS 7.6.1 screenshot
     desc: A screenshot of Mac OS 7.6.1
-  - path: /macos/classic-mac-os/mac-os-8.1.png
+  - path: /macos/classic-mac-os/mac-os-8.1-ui.webp
     alt: Mac OS 8.1 screenshot
     desc: A screenshot of Mac OS 8.1.
-  - path: /macos/classic-mac-os/mac-os-9.0.4.png
+  - path: /macos/classic-mac-os/mac-os-9.0.4-ui.webp
     alt: Mac OS 9.0.4 screenshot
     desc: A screenshot of Mac OS 9.0.4.
   - path: /macos/classic-mac-os/mac-os-9.webp

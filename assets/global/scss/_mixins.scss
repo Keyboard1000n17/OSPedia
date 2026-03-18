@@ -20,7 +20,8 @@
   }
 }
 
-@mixin styles($background-color,
+@mixin styles(
+  $background-color,
   $blur,
   $border,
   $border-radius,
@@ -29,8 +30,8 @@
   $link,
   $search-mask,
   $background-color-2,
-  $color) {
-
+  $color
+) {
   // Global styles
   html {
     @media (min-width: 769px) {
@@ -62,7 +63,7 @@
 
     @media (min-width: 769px) {
       display: grid;
-      grid-template-columns: min-content 2fr;
+      grid-template-columns: 3fr 10fr;
       grid-template-rows: 100dvh;
       backdrop-filter: $blur;
       height: 100dvh;
@@ -100,11 +101,11 @@
   }
 
   main,
-  div.contents,
+  div.content,
   div.extras {
     padding: $padding;
     min-height: 0;
-    overflow: scroll;
+    overflow: auto;
     box-sizing: border-box;
     @include scrollbars;
 
@@ -129,7 +130,7 @@
     h2 {
       scroll-margin-top: 5rem;
       padding-top: 1rem;
-      border-top: solid 1px white;
+      border-top: solid 1px rgba($color: #fff, $alpha: 0.5);
     }
 
     div.content {
@@ -150,15 +151,13 @@
 
   div.contents {
     width: 100%;
-    padding: $padding;
-    padding-top: 5rem;
-    display: none;
     color: $color;
     overflow-x: hidden;
     scrollbar-width: thin;
     grid-column: 1;
-    height: 100%;
     overflow: auto;
+    padding: $padding 0;
+    padding-bottom: calc(3 * $padding);
 
     div.links {
       display: flex;
@@ -186,6 +185,11 @@
       display: flex;
       flex-direction: column;
       justify-self: end;
+      padding: $padding;
+      padding-top: 5rem;
+      height: 100%;
+      box-sizing: border-box;
+      @include scrollbars();
     }
   }
 
@@ -193,10 +197,9 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    background-color: $background-color-2;
+    background-color: $background-color;
     padding: $padding;
-    border-radius: $border-radius;
-    margin-bottom: calc(2 * $padding);
+    padding-top: 5rem;
     width: 100%;
     color: $color;
 
@@ -329,9 +332,9 @@
       display: none;
     }
 
-    ul>li.nav,
-    ul>li.nav a,
-    ul>li.nav a:visited {
+    ul > li.nav,
+    ul > li.nav a,
+    ul > li.nav a:visited {
       list-style: none;
       margin-right: 20px;
       text-decoration: none;
@@ -366,7 +369,7 @@
     }
   }
 
-  nav>* {
+  nav > * {
     padding: 10px;
   }
 
@@ -844,11 +847,13 @@
   }
 }
 
-@mixin index-styles($background-color,
+@mixin index-styles(
+  $background-color,
   $background-color-2,
   $blur,
   $border-radius,
-  $color) {
+  $color
+) {
   body {
     background-image: url(/global/OSPedia-background.svg);
   }
@@ -915,7 +920,7 @@
     border-radius: $border-radius $border-radius 0 0;
   }
 
-  div.home-os-cards>div.bottom {
+  div.home-os-cards > div.bottom {
     height: 50%;
     margin: 1vh 1vw;
     padding: 1vh 2vw;
@@ -1043,6 +1048,7 @@
       background-color: $background-color;
       border-radius: $border-radius;
       border: none;
+      color: inherit;
     }
   }
 

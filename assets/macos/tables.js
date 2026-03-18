@@ -1,8 +1,8 @@
 let content = [];
-if (window.jsonData) {
+if (document.querySelector("table.releases")) {
   async function init() {
     // Get the data to fill the table with.
-    const response = await fetch(window.jsonData);
+    const response = await fetch("./releases.json");
     content = await response.json();
 
     // Map the JSON keys to the appropiate CSS classes

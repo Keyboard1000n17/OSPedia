@@ -17,6 +17,8 @@
    There are TODO comments in the markdown files for Windows 10 and 11 that explain the problem (hopefully)
    [ ] Get dark mode images for macOS Big Sur, Sonoma, Sequoia and Tahoe.
    - Self-explanatory
+   [ ] Get the pictures for Classic Mac OS
+   - Also self-explanatory
 
 ** Get new images
    Get new images for these:
@@ -26,3 +28,9 @@
    - ~Mac OS X Snow Leopard~
    - Windows 10
    - ~macOS Tahoe~
+
+** References for Ubuntu pages
+- Wikipedia: main
+- Ubuntu Wiki: next main (more info for each page)
+- DistroWatch: summaries
+- Ubuntu Fridge: ___

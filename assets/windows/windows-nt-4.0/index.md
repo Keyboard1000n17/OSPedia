@@ -1,22 +1,22 @@
 ---
 title: Windows NT 4.0
-favicon: windows-nt4.0-icon.webp
+favicon: windows-nt-4.0-icon.webp
 order: 60
-background_image: windows-nt4.0-wallpaper.webp
+background_image: windows-nt-4.0-wallpaper.webp
 info:
   icon:
     - alt: Windows NT icon
   paras:
     - "Date released: November 20, 1996"
-    - "End of Support: multiple, [click to see](#support)"
+    - "End of Support: August 24, 1996 (Workstation); September 1996 (Server)"
     - "Last release: Post SP6a Security Rollup on July 26, 2001"
-    - "Succeeded by: Windows ME (released 2000)"
+    - "Succeeded by: Windows 2000 (released 2000)"
     - "Codename: Shell Update Release"
     - "Developed by: Microsoft Corporation"
 carousel_images:
-  - path: /windows/windows-nt4.0/windows-nt4.0-ui.webp
-    alt: Windows NT4.0 UI
-    desc: A screenshot of Windows NT4.0
+  - path: /windows/windows-nt-4.0/windows-nt-4.0-ui.webp
+    alt: Windows NT 4.0 UI
+    desc: A screenshot of Windows NT 4.0
 ---
 
 Windows NT 4.0 is a major release of the Windows NT operating system developed

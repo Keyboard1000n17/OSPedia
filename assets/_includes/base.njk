@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="/global/stylesheets/index-page-styles-light.css" id="setIndexSs" />
   {% endif %}
   <script src="/pagefind/pagefind-ui.js"></script>
+  <script src="/themes.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -69,7 +70,7 @@
         {{ content | splitContent(0) | safe }}
         {% if favicon %}
         <div class="info">
-          <img src="./{{ favicon }}" alt="{{ info.icon[0].alt }}" />
+          <img src="{{ page.url | parentFolder }}/{{ favicon }}" alt="{{ info.icon[0].alt }}" />
           {% for para in info.paras %}
           <p>{{ para }}</p>
           {% endfor %}
@@ -118,11 +119,6 @@
       <td class="right release-notes"></td>
     </tr>
   </template>
-  {% if jsonData %}
-  <script>
-    window.jsonData = "{{ jsonData }}";
-  </script>
-  {% endif %}
   <script src="/macos/tables.js"></script>
   {% endif %}
 
@@ -132,11 +128,6 @@
   <script src="/script.js"></script>
   <script src="/fun-fact.js"></script>
 
-  {% if page.url | parentFolder == "/demos" %}
-  <script src="/demo-themes.js"></script>
-  {% else %}
-  <script src="/themes.js"></script>
-  {% endif %}
 
   {% if carousel_images %}
   <script src="/carousel.js"></script>
