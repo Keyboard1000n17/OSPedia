@@ -72,7 +72,7 @@
         <div class="info">
           <img src="{{ page.url | parentFolder }}/{{ favicon }}" alt="{{ info.icon[0].alt }}" />
           {% for para in info.paras %}
-          <p>{{ para }}</p>
+          <p>{{ para | safe}}</p>
           {% endfor %}
         </div>
         {% endif %}
