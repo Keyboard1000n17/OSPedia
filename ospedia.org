@@ -17,7 +17,7 @@
    There are TODO comments in the markdown files for Windows 10 and 11 that explain the problem (hopefully)
    [ ] Get dark mode images for macOS Big Sur, Sonoma, Sequoia and Tahoe.
    - Self-explanatory
-   [ ] Get the pictures for Classic Mac OS
+   [X] Get the pictures for Classic Mac OS
    - Also self-explanatory
 
 ** Get new images
