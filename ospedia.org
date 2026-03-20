@@ -19,6 +19,8 @@
    - Self-explanatory
    [X] Get the pictures for Classic Mac OS
    - Also self-explanatory
+   [ ] Get Ubuntu VMs running in v86 OR switch to QEMU-WASM
+   - Even the first version of Ubuntu, 4.10, isn't working in the browser. Get it running in v86 or switch to QEMU-WASM PLEASE PLEASE PLEASE.
 
 ** Get new images
    Get new images for these:
