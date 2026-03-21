@@ -6,7 +6,7 @@
     "sass": "sass assets/global/scss:assets/global/stylesheets --no-source-map --style=compressed",
     "sass:watch": "sass assets/global/scss:assets/global/stylesheets --watch --style=compressed",
     "eleventy": "pnpm exec eleventy",
-    "dev": "pnpm run sass:watch & pnpm run eleventy --serve --incremental",
+    "dev": "pnpm run sass:watch & pnpm run eleventy --serve",
     "html": "bash -c 'for file in $(find _site/ -type f | grep \"html\"); do pnpm exec html-minifier-terser $file --collapse-whitespace --remove-comments --conservative-collapse false --minify-css true --minify-js true -o $file; done'",
     "css": "bash -c 'for file in $(find _site/ -type f | grep \"*.css\"); do pnpm exec cleancss $file -o $file; done'",
     "js": "bash -c 'for file in $(find _site/ -type f | grep \"js\"); do pnpm exec terser $file --compress --mangle --output $file; done'",

@@ -20,8 +20,7 @@
   }
 }
 
-@mixin styles(
-  $background-color,
+@mixin styles($background-color,
   $blur,
   $border,
   $border-radius,
@@ -30,8 +29,8 @@
   $link,
   $search-mask,
   $background-color-2,
-  $color
-) {
+  $color) {
+
   // Global styles
   html {
     @media (min-width: 769px) {
@@ -59,7 +58,7 @@
   div.wrapper {
     width: 100%;
     overflow-x: hidden;
-    background-color: $background-color;
+    background-color: rgba($color: $background-color, $alpha: 0.5);
 
     @media (min-width: 769px) {
       display: grid;
@@ -332,9 +331,9 @@
       display: none;
     }
 
-    ul > li.nav,
-    ul > li.nav a,
-    ul > li.nav a:visited {
+    ul>li.nav,
+    ul>li.nav a,
+    ul>li.nav a:visited {
       list-style: none;
       margin-right: 20px;
       text-decoration: none;
@@ -369,7 +368,7 @@
     }
   }
 
-  nav > * {
+  nav>* {
     padding: 10px;
   }
 
@@ -847,13 +846,11 @@
   }
 }
 
-@mixin index-styles(
-  $background-color,
+@mixin index-styles($background-color,
   $background-color-2,
   $blur,
   $border-radius,
-  $color
-) {
+  $color) {
   body {
     background-image: url(/global/OSPedia-background.svg);
   }
@@ -920,7 +917,7 @@
     border-radius: $border-radius $border-radius 0 0;
   }
 
-  div.home-os-cards > div.bottom {
+  div.home-os-cards>div.bottom {
     height: 50%;
     margin: 1vh 1vw;
     padding: 1vh 2vw;

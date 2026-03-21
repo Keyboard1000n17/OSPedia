@@ -33,6 +33,9 @@
 
 ** References for Ubuntu pages
 - Wikipedia: main
-- Ubuntu Wiki: next main (more info for each page)
+- Ubuntu Wiki/BetaWiki: next main (more info for each page)
 - DistroWatch: summaries
 - Ubuntu Fridge: ___
+
+** Ubuntu page structure
+- Features

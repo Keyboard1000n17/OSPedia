@@ -26,9 +26,9 @@
 {% if background_image %}
 {% if page.url == "/" %}
 {% set style = "background-image: url(\"/global/OSPedia-background.svg\")" %}
-{% elseif tags and "homepages" in tags %}
+{% elif tags and "homepages" in tags %}
 {% set style = "background-image: url(\"" ~ background_image ~ "\")" %}
-{% elseif tags and "windows-pages" in tags or "macos-pages" in tags %}
+{% elif tags and "windows-pages" in tags or "macos-pages" in tags or "ubuntu-pages" in tags %}
 {% set style = "background-image: url(\"./" ~ background_image ~ "\")" %}
 {% endif %}
 {% endif %}
@@ -68,7 +68,7 @@
         <h1 id="heading" data-pagefind-weight="10">{{ title }}</h1>
         {% endif %}
         {{ content | splitContent(0) | safe }}
-        {% if favicon %}
+        {% if favicon and paras %}
         <div class="info">
           <img src="{{ page.url | parentFolder }}/{{ favicon }}" alt="{{ info.icon[0].alt }}" />
           {% for para in info.paras %}
