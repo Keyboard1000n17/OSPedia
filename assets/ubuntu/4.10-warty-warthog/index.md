@@ -14,6 +14,8 @@ installation from the disc itself without needing to install it first, though
 only for 32-bit x86. Installer CDs were provided for x86, PowerPC, and
 (relatively new for the time) x86-64.
 
++++
+
 Warty is the only desktop version of Ubuntu to exclusively use GNOME as its
 desktop environment, as newer releases introduced other default desktop
 environments in the form of "flavors" starting with Kubuntu in 5.04 (Hoary),
@@ -26,22 +28,22 @@ instead of three. It used kernel 2.6.8.
 According to the announcement for Ubuntu 4.10, these were features of Ubuntu
 4.10:
 
-- Simple installation: Ubuntu came on a single CD and its installer was
+- **Simple installation**: Ubuntu came on a single CD and its installer was
   TUI-based (see screenshots). Ubuntu also had good support for laptops and had
   CDs for i386 for (32-bit PCs), amd64 (also known as x86_64) and PowerPC (used
   by [Apple Macintosh](/macos/) computers like the iMac, iBook and PowerBook)
   architectures.
-- GNOME 2.8: Ubuntu shipped with GNOME 2.8 on the day of its release. GNOME is a
-  desktop environment that provides a complete GUI for a Linux system by
+- **GNOME 2.8**: Ubuntu shipped with GNOME 2.8 on the day of its release. GNOME
+  is a desktop environment that provides a complete GUI for a Linux system by
   bundling a set of packages including a window manager to manage the running
   graphical programs, a file manager, panels and more.
-- Firefox 0.9: Ubuntu also came with a version of Firefox 0.9 patched for
+- **Firefox 0.9**: Ubuntu also came with a version of Firefox 0.9 patched for
   security.
-- Productivity software: Some productivity software was also bundled with
+- **Productivity software**: Some productivity software was also bundled with
   Ubuntu, including Evolution 2.0, an integrated email, calendar, address book
   and task management, and OpenOffice 1.1.2, an office suite with a word
   processor, a presentation software, a spreadsheet editor, and more.
-- XFree86 4.3 with improved hardware support: Ubuntu came with XFree86, an
+- **XFree86 4.3 with improved hardware support**: Ubuntu came with XFree86, an
   implementation of the X Window System. The X Window System is a windowing
   system that draws the application windows on the desktop based on calls by
   window managers.
@@ -171,11 +173,7 @@ expertise. See you at #ubuntu on irc.freenode.net.
 
 ## Reception
 
-Despite the name "Warty", indicating it was unpolished, the release was praised
-as quite stable for a first release. Canonical's ShipIt program, which shipped
-**free** CDs to interested users, was a major factor in the positive reception
-of Ubuntu.
-
-```
-
-```
+While the name "Warty" was chosen to signify the release's experimental status,
+the release was praised as quite stable for a first release. Canonical's ShipIt
+program, which shipped **free** CDs to interested users, was a major factor in
+the positive reception of Ubuntu.
