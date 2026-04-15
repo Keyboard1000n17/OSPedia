@@ -7,8 +7,8 @@ background_image: 5.04-hoary-hedgehog-wallpaper.webp
 
 Ubuntu 5.04 (Hoary Hedgehog) is the second release of Ubuntu, launched by
 Canonical Ltd. on 8 April 2005. It was available as a digital download or on
-physical media, including CD and DVD. Unlike its predecessor, 5.04 expanded live
-CD support to AMD64 and PowerPC architectures. A combined install/live DVD was
+physical media, including CD and DVD. Unlike its predecessor, 5.04 had live CD
+support for AMD64 and PowerPC architectures. A combined install/live DVD was
 also offered, which contained both the installer and a live environment on a
 single disc.
 
