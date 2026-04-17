@@ -6,7 +6,7 @@ background_image: 5.10-breezy-badger-wallpaper.webp
 ---
 
 Ubuntu 5.10 (Breezy Badger) is the third release of Ubuntu developed by
-Canonical Ltd. and released on 12th or 13th of October, 2005. It introduced a
+Canonical Ltd, and released on 12th or 13th of October, 2005. It introduced a
 graphical splash screen with a progress bar, new documentation like the Quick
 Tour and FAQ Guide and updates to GNOME. The release also saw the introduction
 of Edubuntu, an official flavor of Ubuntu designed for educational/academic
