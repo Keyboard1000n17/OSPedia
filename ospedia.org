@@ -25,9 +25,9 @@
    - Include stuff like license, links to all OS homepages, request to contribute, etc.
    [ ] More stuff in the sidebar
    - For example, a link to edit, donate (set this up later) or something
-   [ ] Make a directory page
+   [X] Make a directory page
    - Just make a file at `/directory/` that lists all the available pages
-   [ ] Set up redirects
+   [X] Set up redirects
    - For example, a user can type `https://ospedia.site/macos/12` and it will redirect them to macOS Tahoe.
 
 ** Get new images

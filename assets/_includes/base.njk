@@ -23,14 +23,14 @@
   <link rel="icon" href="/global/OSPedia-favicon.svg" />
 </head>
 
-{% if background_image %}
 {% if page.url == "/" %}
 {% set style = "background-image: url(\"/global/OSPedia-background.svg\")" %}
 {% elif tags and "homepages" in tags %}
 {% set style = "background-image: url(\"" ~ background_image ~ "\")" %}
 {% elif tags and "windows-pages" in tags or "macos-pages" in tags or "ubuntu-pages" in tags %}
 {% set style = "background-image: url(\"./" ~ background_image ~ "\")" %}
-{% endif %}
+{% elif background_image %}
+{% set style = "background-image: url(\"" ~ background_image ~ "\")" %}
 {% endif %}
 
 <body style="{{ style }}">

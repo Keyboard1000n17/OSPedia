@@ -2,8 +2,6 @@ export default function router(request) {
   const url = new URL(request.url);
   const path = url.pathname.split("/");
 
-  console.log("path:", path);
-
   if (path[1] === "macos") {
     // prettier-ignore
 
