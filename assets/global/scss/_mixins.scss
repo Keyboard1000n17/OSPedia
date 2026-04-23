@@ -58,12 +58,19 @@
   div.wrapper {
     width: 100%;
     overflow-x: hidden;
-    background-color: rgba($color: $background-color, $alpha: 0.5);
+
+    @if $background-color ==rgba(255, 255, 255, 0.7) {
+      background-color: rgba($color: $background-color, $alpha: 0.5);
+    }
+
+    @else {
+      background-color: rgba($color: $background-color, $alpha: 0.8);
+    }
 
     @media (min-width: 769px) {
       display: grid;
       grid-template-columns: 3fr 10fr;
-      grid-template-rows: 100dvh;
+      grid-template-rows: 1fr;
       backdrop-filter: $blur;
       height: 100dvh;
       overflow: hidden;
@@ -72,9 +79,8 @@
         grid-column: 1;
       }
 
-      main {
+      div.content-wrapper {
         grid-column: 2;
-        grid-row: 1;
       }
     }
 
@@ -83,24 +89,35 @@
       grid-template-rows: 1fr;
 
       div.contents {
-        grid-row: 1;
         grid-column: 1;
       }
 
-      main {
-        grid-row: 1;
+      div.content-wrapper {
         grid-column: 2;
       }
 
       div.extras {
-        grid-row: 1;
         grid-column: 3;
       }
     }
   }
 
+  div.content-wrapper {
+    height: calc(100dvh - 5rem);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    box-sizing: border-box;
+    // @include scrollbars();
+
+    main {
+      flex: 1 0 100%;
+    }
+  }
+
   main,
-  div.content,
+  footer,
   div.extras {
     padding: $padding;
     min-height: 0;
@@ -115,32 +132,23 @@
 
   main {
     width: 100%;
-    padding: 0;
-    padding-top: 5rem;
     background-attachment: fixed;
     background-position: center;
     color: $color;
     background-size: cover;
-    overflow-x: hidden;
-    overflow-y: hidden;
     scroll-behavior: smooth;
-    grid-row: 2;
+    height: calc(100dvh - 5rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    padding: $padding;
+    padding-top: 5rem;
+    box-sizing: border-box;
 
     h2 {
       scroll-margin-top: 5rem;
       padding-top: 1rem;
       border-top: solid 1px rgba($color: #fff, $alpha: 0.5);
-    }
-
-    div.content {
-      width: 100%;
-      height: calc(100dvh - 5rem);
-      overflow-y: auto;
-      overflow-x: hidden;
-      position: relative;
-      padding: $padding;
-      box-sizing: border-box;
-      @include scrollbars;
     }
 
     @media (min-width: 769px) {
@@ -299,7 +307,7 @@
   }
 
   a {
-    color: #0061c9;
+    color: $link;
     text-decoration: none;
   }
 
@@ -968,7 +976,7 @@
       grid-column: span 2;
       max-width: 1034px;
 
-      div.content {
+      main {
         max-width: 100%;
       }
     }
