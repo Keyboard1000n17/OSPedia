@@ -40,29 +40,16 @@
       <h2 id="toc">Contents</h2>
       <noscript>Enable JavaScript for the best experience!</noscript>
     </div>
-    {% if tags and "win-demo-pages" in tags %}
-    <main data-pagefind-ignore>
-      <h1>{{ title }}</h1>
-      <div class="demo-wrapper">
-        <div class="screen-container">
-          <div style="white-space: pre; font: 14px monospace; line-height: 18px"></div>
-          <canvas style="display: none; width: 100%; height: 100%"></canvas>
-        </div>
-        <div class="demo-controls">
-          <button class="stop">Stop</button>
-          <button class="start">Start</button>
-        </div>
-      </div>
-      <div class="demo-info">{{ content | safe }}</div>
-    </main>
-    {% elif tags and "mac-demo-pages" in tags %}
-    <main data-pagefind-ignore>
-      <h1>{{ title }}</h1>
-      {{ content | safe }}
-    </main>
-    {% else %}
-    <main>
-      <div class="content">
+    <div class="content-wrapper">
+      {% if tags and "win-demo-pages" in tags %}
+      {% include "_windows-demo-partial.njk" %}
+      {% elif tags and "mac-demo-pages" in tags %}
+      <main data-pagefind-ignore>
+        <h1>{{ title }}</h1>
+        {{ content | safe }}
+      </main>
+      {% else %}
+      <main>
         {% if tags and not "homepages" in tags %}
         {% include "_page-nav.njk" %}
         <h1 id="heading" data-pagefind-weight="10">{{ title }}</h1>
@@ -77,9 +64,10 @@
         </div>
         {% endif %}
         {{ content | splitContent(1) | safe }}
-      </div>
-    </main>
-    {% endif %}
+      </main>
+      {% endif %}
+      {% include "_footer.njk" %}
+    </div>
     <div class="extras">
       {% if carousel_images %}
       <h2>Carousel</h2>
