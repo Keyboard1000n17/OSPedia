@@ -79,7 +79,7 @@
         grid-column: 1;
       }
 
-      div.content-wrapper {
+      main {
         grid-column: 2;
       }
     }
@@ -92,7 +92,7 @@
         grid-column: 1;
       }
 
-      div.content-wrapper {
+      main {
         grid-column: 2;
       }
 
@@ -102,22 +102,8 @@
     }
   }
 
-  div.content-wrapper {
-    height: calc(100dvh - 5rem);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    overflow: scroll;
-    box-sizing: border-box;
-    // @include scrollbars();
-
-    main {
-      flex: 1 0 100%;
-    }
-  }
-
   main,
-  footer,
+  div.contents,
   div.extras {
     padding: $padding;
     min-height: 0;
@@ -141,14 +127,49 @@
     overflow-y: auto;
     overflow-x: hidden;
     position: relative;
+    top: 5rem;
     padding: $padding;
-    padding-top: 5rem;
     box-sizing: border-box;
 
     h2 {
       scroll-margin-top: 5rem;
       padding-top: 1rem;
       border-top: solid 1px rgba($color: #fff, $alpha: 0.5);
+    }
+
+    footer {
+      padding: $padding 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: calc(1 / 3 * $padding);
+
+      div:nth-child(1) {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+          padding: 0 $padding;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        text-align: center;
+        margin: 0;
+
+        // prettier-ignore
+        @if $color ==black {
+          color: rgb(40, 40, 40);
+        }
+
+        @else {
+          color: rgb(200, 200, 200);
+        }
+      }
     }
 
     @media (min-width: 769px) {

@@ -40,7 +40,6 @@
       <h2 id="toc">Contents</h2>
       <noscript>Enable JavaScript for the best experience!</noscript>
     </div>
-    <div class="content-wrapper">
       {% if tags and "win-demo-pages" in tags %}
       {% include "_windows-demo-partial.njk" %}
       {% elif tags and "mac-demo-pages" in tags %}
@@ -64,10 +63,9 @@
         </div>
         {% endif %}
         {{ content | splitContent(1) | safe }}
+      {% include "_footer.njk" %}
       </main>
       {% endif %}
-      {% include "_footer.njk" %}
-    </div>
     <div class="extras">
       {% if carousel_images %}
       <h2>Carousel</h2>
