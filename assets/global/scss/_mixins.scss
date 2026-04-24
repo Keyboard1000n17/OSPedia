@@ -54,6 +54,16 @@
     }
   }
 
+  .twelve-k-plus {
+    display: none !important;
+  }
+
+  @media (min-width: 1200px) {
+    .twelve-k-plus {
+      display: block !important;
+    }
+  }
+
   // Define grid-related styles here
   div.wrapper {
     width: 100%;
