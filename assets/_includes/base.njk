@@ -40,36 +40,38 @@
       <h2 id="toc">Contents</h2>
       <noscript>Enable JavaScript for the best experience!</noscript>
     </div>
-      {% if tags and "win-demo-pages" in tags %}
-      {% include "_windows-demo-partial.njk" %}
-      {% elif tags and "mac-demo-pages" in tags %}
-      <main data-pagefind-ignore>
-        <h1>{{ title }}</h1>
-        {{ content | safe }}
-      </main>
-      {% else %}
-      <main>
-        {% if tags and not "homepages" in tags %}
-        {% include "_page-nav.njk" %}
-        <h1 id="heading" data-pagefind-weight="10">{{ title }}</h1>
-        {% endif %}
-        {{ content | splitContent(0) | safe }}
-        {% if favicon and paras %}
-        <div class="info">
-          <img src="{{ page.url | parentFolder }}/{{ favicon }}" alt="{{ info.icon[0].alt }}" />
-          {% for para in info.paras %}
-          <p>{{ para | safe}}</p>
-          {% endfor %}
-        </div>
-        {% endif %}
-        {{ content | splitContent(1) | safe }}
-      {% include "_footer.njk" %}
-      </main>
+    {% if tags and "win-demo-pages" in tags %}
+    {% include "_windows-demo-partial.njk" %}
+    {% elif tags and "mac-demo-pages" in tags %}
+    <main data-pagefind-ignore>
+      <h1>{{ title }}</h1>
+      {{ content | safe }}
+    </main>
+    {% else %}
+    <main>
+      {% if tags and not "homepages" in tags %}
+      <h1 id="heading" data-pagefind-weight="10">{{ title }}</h1>
       {% endif %}
+      {{ content | splitContent(0) | safe }}
+      {% if favicon and paras %}
+      <div class="info">
+        <img src="{{ page.url | parentFolder }}/{{ favicon }}" alt="{{ info.icon[0].alt }}" />
+        {% for para in info.paras %}
+        <p>{{ para | safe}}</p>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {{ content | splitContent(1) | safe }}
+      {% include "_footer.njk" %}
+    </main>
+    {% endif %}
     <div class="extras">
       {% if carousel_images %}
       <h2>Carousel</h2>
       <button class="carousel-open">Open Carousel</button>
+      {% endif %}
+      {% if tags and not "homepages" in tags %}
+      {% include "_page-nav.njk" %}
       {% endif %}
       <section class="fun-fact">
         <h2>Did you know?</h2>

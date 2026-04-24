@@ -15,15 +15,13 @@
   {% if previousArticle %}
   <a href="{{ previousArticle.url}}" rel="prev" class="prxt prev">
     <div class="prxt">
-      <p>
+      <p class="dir">
         &lt; Previous
       </p>
-      <span>
-        {% if previousArticle.data.favicon %}
-        <img src="../{{ previousArticle.fileSlug }}/{{ previousArticle.data.favicon }}"
-          alt="{{ previousArticle.data.title }}" />
-        {% endif %} <p>{{ previousArticle.data.title }}</p>
-      </span>
+      {% if previousArticle.data.favicon %}
+      <img src="../{{ previousArticle.fileSlug }}/{{ previousArticle.data.favicon }}"
+        alt="{{ previousArticle.data.title }}" />
+      {% endif %} <p>{{ previousArticle.data.title }}</p>
     </div>
   </a>
   {% endif %}
@@ -31,15 +29,13 @@
   {% if nextArticle %}
   <a href="{{ nextArticle.url }}" rel="next" class="prxt next">
     <div class="prxt">
-      <p>
+      <p class="dir">
         Next &gt;
       </p>
-      <span>
-        {% if nextArticle.data.favicon %}
-        <img src="../{{ nextArticle.fileSlug }}/{{ nextArticle.data.favicon }}" alt="{{ nextArticle.data.title }}" />
-        {% endif %}
-        <p>{{ nextArticle.data.title }}</p>
-      </span>
+      {% if nextArticle.data.favicon %}
+      <img src="../{{ nextArticle.fileSlug }}/{{ nextArticle.data.favicon }}" alt="{{ nextArticle.data.title }}" />
+      {% endif %}
+      <p>{{ nextArticle.data.title }}</p>
     </div>
   </a>
   {% endif %}
