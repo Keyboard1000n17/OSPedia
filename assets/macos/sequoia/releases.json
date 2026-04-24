@@ -156,7 +156,7 @@
     "build": "24G419",
     "release": "December 12, 2025",
     "darwinVersion": "24.6.0<p><small>xnu-11417.140.69.705.2~1</small></p><p><small>Wed Nov 5 21:30:23 PST 2025</small></p>",
-    "description": "This update provides important security fixes and is recommended for all users.<p>Refer to Apple's webpage for information about the security content of this update:</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/125887\">About the security content of macOS Sequoia 15.7.2</a></p>",
+    "description": "This update provides important security fixes and is recommended for all users.<p>Refer to Apple's webpage for information about the security content of this update:</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/125887\">About the security content of macOS Sequoia 15.7.3</a></p>",
     "class": "previous-release"
   },
   {
@@ -164,15 +164,15 @@
     "build": "24G419",
     "release": "December 12, 2025",
     "darwinVersion": "24.6.0<p><small>xnu-11417.140.69.708.3~1</small></p><p><small>Mon Jan 19 22:00:10 PST 2026</small></p>",
-    "description": "This update provides important security fixes and is recommended for all users.<p>Refer to Apple's webpage for information about the security content of this update:</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/126349\">About the security content of macOS Sequoia 15.7.2</a></p>",
-    "class": "current-release"
+    "description": "This update provides important security fixes and is recommended for all users.<p>Refer to Apple's webpage for information about the security content of this update:</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/126349\">About the security content of macOS Sequoia 15.7.4</a></p>",
+    "class": "previous-release"
   },
   {
-    "version": "15.7.5 RC",
-    "build": "24G607",
-    "release": "February 17, 2026",
+    "version": "15.7.5",
+    "build": "24G624",
+    "release": "March 24, 2026",
     "darwinVersion": "24.6.0<p><small>xnu-11417.140.69.708.3~1</small></p><p><small>Mon Jan 19 22:00:10 PST 2026</small></p>",
-    "description": "Unavailable",
-    "class": "beta-release"
+    "description": "This update provides important security fixes and is recommended for all users.<p>Refer to Apple's webpage for information about the security content of this update:</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/126795\">About the security content of macOS Sequoia 15.7.5</a></p>",
+    "class": "current-release"
   }
 ]

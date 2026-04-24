@@ -61,14 +61,54 @@
     "release": "March 4, 2026",
     "darwinVersion": "25.3.0<p><small>xnu-12377.81.4~5</small></p><p><small>Build timestamp currently unknown</small></p>",
     "description": "Unavailable",
+    "class": "previous-release"
+  },
+  {
+    "version": "26.3.1 (a)",
+    "build": "25D771280a",
+    "release": "March 17, 2026",
+    "darwinVersion": "—",
+    "description": "Background Security Improvement",
+    "class": "previous-release"
+  },
+  {
+    "version": "26.3.2",
+    "build": "25D2140",
+    "release": "March 10, 2026",
+    "darwinVersion": "—",
+    "description": "OTA on MacBook Neo only, available as IPSW/InstallAssistant.pkg for other Macs",
+    "class": "previous-release"
+  },
+  {
+    "version": "26.3.2 (a)",
+    "build": "25D771400a",
+    "release": "March 17, 2026",
+    "darwinVersion": "—",
+    "description": "Unavailable",
+    "class": "previous-release"
+  },
+  {
+    "version": "26.4",
+    "build": "25E246",
+    "release": "March 24, 2026",
+    "darwinVersion": "25.4.0<p><small>xnu-12377.101.15~1</small></p><p><small>Thu Mar 19 19:33:09 PDT 2026</small></p>",
+    "description": "—",
+    "class": "previous-release"
+  },
+  {
+    "version": "26.4.1",
+    "build": "25E253",
+    "release": "April 9, 2026",
+    "darwinVersion": "—",
+    "description": "Bug fixes",
     "class": "current-release"
   },
   {
-    "version": "26.4 beta 3",
-    "build": "25E5223i",
-    "release": "March 3, 2026",
-    "darwinVersion": "25.4.0",
-    "description": "Unavailable",
+    "version": "26.5 beta 3",
+    "build": "23F5058e",
+    "release": "April 20, 2026",
+    "darwinVersion": "—",
+    "description": "—",
     "class": "beta-release"
   }
 ]
