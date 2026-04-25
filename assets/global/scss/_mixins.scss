@@ -68,7 +68,11 @@
   // Define grid-related styles here
   div.wrapper {
     width: 100%;
+    height: 100dvh;
     overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 
     @if $background-color ==rgba(255, 255, 255, 0.7) {
       background-color: rgba($color: $background-color, $alpha: 0.5);
@@ -78,8 +82,20 @@
       background-color: rgba($color: $background-color, $alpha: 0.8);
     }
 
+    div.contents {
+      position: fixed;
+      display: none;
+    }
+
+    div.extras {
+      display: none;
+
+      &.open {
+        bottom: 50%;
+      }
+    }
+
     @media (min-width: 769px) {
-      display: grid;
       grid-template-columns: 3fr 10fr;
       grid-template-rows: 1fr;
       backdrop-filter: $blur;
@@ -88,6 +104,7 @@
 
       div.contents {
         grid-column: 1;
+        display: block;
       }
 
       main {
@@ -109,6 +126,7 @@
 
       div.extras {
         grid-column: 3;
+        display: block;
       }
     }
   }
@@ -236,17 +254,14 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    background-color: $background-color;
     padding: $padding;
-    padding-top: 5rem;
     width: 100%;
     color: $color;
 
     @media (min-width: 1440px) {
-      padding-top: 4rem;
+      padding-top: 5rem;
       justify-self: start;
       align-items: flex-start;
-      background-color: rgba(255, 255, 255, 0);
 
       div.links {
         align-items: flex-start;
@@ -415,6 +430,36 @@
   .nav:hover,
   li.twelve-k-plus a:hover {
     color: color.adjust($link, $lightness: 20%);
+  }
+
+  // Bottom bar styling
+
+  div.bar {
+    display: none;
+
+    @media (max-width: 768px) {
+      position: fixed;
+      bottom: 0;
+      background-color: $background-color;
+      height: 5rem;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      align-items: center;
+      align-content: center;
+
+      div {
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      img {
+        width: 80%;
+      }
+    }
   }
 
   // Page navigation styling

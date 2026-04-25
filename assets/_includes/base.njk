@@ -97,6 +97,21 @@
     {% endif %}
   </div>
 
+  <div class="bar">
+    <div></div>
+    <div></div>
+    <div></div>
+      {% set current_collection = page | getCollection(collections) %}
+      {% if current_collection != null %}
+      {% set prev_page = current_collection | getPrev(page) %}
+      {% if prev_page %}
+      {% set prev_page_favicon = prev_page | getArticleProperty('favicon') %}
+      <div><img src="{{ prev_page_favicon }}" alt=""></div>
+      {% endif %}
+      {% endif %}
+    <div></div>
+  </div>
+
   {% if tags and "macos-pages" in tags %}
   <template>
     <tr>
