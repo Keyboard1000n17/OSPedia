@@ -34,52 +34,6 @@ module.exports = function (eleventyConfig) {
     }
   });
 
-  // Get tags of page
-
-  eleventyConfig.addFilter("getCollection", function (page, collections) {
-    console.log("RUNNING: getCollection");
-    if (collections) {
-      if (collections["windows-pages"].some((item) => item.url === page.url)) {
-        console.log("\033[1;32mWINDOWS\033[0m");
-        return collections["windows-pages"];
-      } else if (
-        collections["macos-pages"].some((item) => item.url === page.url)
-      ) {
-        return collections["macos-pages"];
-      }
-    } else {
-      return null;
-    }
-  });
-
-  // Get next article
-
-  eleventyConfig.addFilter("getNext", function (collection, page) {
-    const index = collection.findIndex((item) => item.url === page.url);
-    return index !== -1 && index < collection.length - 1
-      ? collection[index + 1]
-      : null;
-  });
-
-  // Get previous article
-
-  eleventyConfig.addFilter("getPrev", function (collection, page) {
-    const index = collection.findIndex((item) => item.url === page.url);
-    return index !== -1 && index < collection.length - 1
-      ? collection[index - 1]
-      : null;
-  });
-
-  // Get a property of previous or next article
-
-  eleventyConfig.addFilter("getArticleProperty", function (page, property) {
-    if (property === "favicon") {
-      return `../${page.fileSlug}/${page.data.favicon}`;
-    } else {
-      return page.data[property];
-    }
-  });
-
   // Passthrough copy for static assets
   eleventyConfig.addPassthroughCopy(
     "assets/**/*.{js,json,wasm,bin,img,jpg,png,gif,webp,svg,css}",

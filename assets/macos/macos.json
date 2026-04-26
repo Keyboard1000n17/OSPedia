@@ -1,4 +1,4 @@
 {
   "layout": "base.njk",
-  "tags": "macos-pages"
+  "tags": ["macos-pages"]
 }

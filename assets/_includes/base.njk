@@ -101,15 +101,34 @@
     <div></div>
     <div></div>
     <div></div>
-      {% set current_collection = page | getCollection(collections) %}
-      {% if current_collection != null %}
-      {% set prev_page = current_collection | getPrev(page) %}
-      {% if prev_page %}
-      {% set prev_page_favicon = prev_page | getArticleProperty('favicon') %}
-      <div><img src="{{ prev_page_favicon }}" alt=""></div>
-      {% endif %}
-      {% endif %}
-    <div></div>
+    {% set current_collection = null %}
+    {% if tags and "windows-pages" in tags %}
+    {% set current_collection = collections['windows-pages'] %}
+    {% elif tags and "macos-pages" in tags %}
+    {% set current_collection = collections['macos-pages'] %}
+    {% endif %}
+
+    {% if current_collection != null %}
+    {% set prev_page = current_collection | getPreviousCollectionItem(page) %}
+    {% set next_page = current_collection | getNextCollectionItem(page) %}
+
+    {% if prev_page %}
+    <div>
+      <a href="{{ prev_page.url }}">
+        <img src="../{{ prev_page.fileSlug }}/{{ prev_page.data.favicon }}" alt="Previous page">
+      </a>
+    </div>
+    {% endif %}
+
+    {% if next_page %}
+    <div>
+      <a href="{{ next_page.url }}">
+        <img src="../{{ next_page.fileSlug }}/{{ next_page.data.favicon }}" alt="Next page">
+      </a>
+    </div>
+    {% endif %}
+
+    {% endif %}
   </div>
 
   {% if tags and "macos-pages" in tags %}

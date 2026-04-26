@@ -1,4 +1,4 @@
 {
-  "tags": "ubuntu-pages",
-  "layout": "base.njk"
+  "layout": "base.njk",
+  "tags": "ubuntu-pages"
 }
