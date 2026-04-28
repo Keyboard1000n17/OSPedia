@@ -29,6 +29,8 @@
    - Just make a file at `/directory/` that lists all the available pages
    [X] Set up redirects
    - For example, a user can type `https://ospedia.site/macos/12` and it will redirect them to macOS Tahoe.
+   [ ] Fix scrolling with TOC
+   - Scrolling doesn't work when you click on a link in the table of contents grr
 
 ** Get new images
    Get new images for these:

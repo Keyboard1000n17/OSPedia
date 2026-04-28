@@ -85,6 +85,17 @@
     div.contents {
       position: fixed;
       display: none;
+
+      img.contents-close {
+        position: absolute;
+        top: $padding;
+        right: $padding;
+        width: 1.5rem;
+
+        @media (min-width: 769px) {
+          display: none;
+        }
+      }
     }
 
     div.extras {
@@ -100,7 +111,7 @@
       grid-template-rows: 1fr;
       backdrop-filter: $blur;
       height: 100dvh;
-      overflow: hidden;
+      overflow: visible;
 
       div.contents {
         grid-column: 1;
@@ -214,7 +225,17 @@
     grid-column: 1;
     overflow: auto;
     padding: $padding 0;
-    padding-bottom: calc(3 * $padding);
+
+    &.show {
+      position: fixed;
+      padding: $padding;
+      height: calc(100% - 10rem);
+      top: 5rem;
+      display: block !important;
+      background-color: $background-color;
+      backdrop-filter: $blur;
+      z-index: 10;
+    }
 
     div.links {
       display: flex;
@@ -238,7 +259,6 @@
     }
 
     @media (min-width: 769px) {
-      display: block;
       display: flex;
       flex-direction: column;
       justify-self: end;
@@ -271,6 +291,7 @@
 
   h2#toc {
     scroll-margin-top: 5rem;
+    margin: $padding 0;
   }
 
   div#back-to-top {
@@ -435,36 +456,40 @@
   // Bottom bar styling
 
   div.bar {
-    display: none;
+    position: fixed;
+    bottom: 0;
+    background-color: $background-color;
+    height: 5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    align-content: center;
 
-    @media (max-width: 768px) {
-      position: fixed;
-      bottom: 0;
-      background-color: $background-color;
-      height: 5rem;
+    div {
       width: 100%;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      height: 5rem;
+      display: flex;
       align-items: center;
-      align-content: center;
+      justify-content: center;
 
-      div {
-        width: 100%;
-        height: 5rem;
+      a {
         display: flex;
         align-items: center;
         justify-content: center;
-
-        a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
       }
+    }
 
-      img {
-        width: 60%;
-      }
+    div.bottom-bar {
+      grid-column: 1 / span 3;
+    }
+
+    img {
+      width: 60%;
+    }
+
+    @media (min-width: 1200px) {
+      display: none;
     }
 
     div.carousel-button {
@@ -877,6 +902,9 @@
     padding: $padding;
     border-radius: $border-radius;
     margin: $padding 0;
+    display: block;
+    opacity: 0;
+    position: relative;
 
     h2 {
       margin: 2.5px;
@@ -889,6 +917,20 @@
       background-color: rgba(255, 247, 0, 0.3);
       z-index: -1;
       border-radius: 15px;
+    }
+
+    &.show {
+      opacity: 1;
+      position: fixed;
+      bottom: 5.25rem;
+      width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: opacity 0.3s ease-out;
+    }
+
+    @media (min-width: 1440px) {
+      opacity: 1;
     }
   }
 

@@ -39,6 +39,7 @@
     <div class="contents">
       <h2 id="toc">Contents</h2>
       <noscript>Enable JavaScript for the best experience!</noscript>
+      <img src="/global/Images/close.png" alt="Close button" class="contents-close" />
     </div>
     {% if tags and "win-demo-pages" in tags %}
     {% include "_windows-demo-partial.njk" %}
@@ -98,9 +99,12 @@
   </div>
 
   <div class="bar">
-    <div class="carousel-button"></div>
-    <div class="contents-button"></div>
-    <div class="did-you-know-button"></div>
+    <div class="bottom-bar">
+      <div class="carousel-button" data-opens-element="carousel"></div>
+      <div class="contents-button" data-opens-element="div.contents"></div>
+      <div class="did-you-know-button" data-opens-element="section.fun-fact"></div>
+    </div>
+
     {% set current_collection = null %}
     {% if tags and "windows-pages" in tags %}
     {% set current_collection = collections['windows-pages'] %}
@@ -163,6 +167,7 @@
   </script>
   <script src="./demos.js"></script>
   {% endif %}
+  <script src="/bottom-bar.js"></script>
 </body>
 
 </html>
