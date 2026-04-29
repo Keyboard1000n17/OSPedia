@@ -4,16 +4,28 @@
 <h3 align="center">OSPedia</h3>
 OSPedia aims to be a website that brings out the histories of the notable operating systems of the past and present. It appreciates how far we've come with today's technology, how far we're going with tomorrow's technology, and how these systems helped tremendously.
 
-### Subsites currently in development:
+## Operating systems
 
-<img src="./assets/WinPedia/Images/WinPedia-logo.svg" height="250" alt="WinPedia logo"/>
-WinPedia is the subsite for information about Windows. It aims to educate people on the impact of Windows.
-<img src="./assets/MacPedia/Images/MacPedia-logo.svg" height="250" alt="MacPedia logo">
-MacPedia is the subsite to know macOS. It also aims to educate people about macOS's impact.
+The following operating systems are available on our site:
 
-### Special mentions:
+- Windows
+- macOS
+- Ubuntu
 
-- The people who voluntarily provide information on Wikipedia are some great humans!
-- Thanks drew for refactoring my code!
+Feel free to add to this list!
 
-**Keyboard1000n17**
+## Contributors
+
+## Contributing
+
+Please do help us in the making of this page! See
+[CONTRIBUTING.md](./CONTRIBUTING.md) for more details. This site is not a simple
+task. We accumulate information from multiple pages and the information we put
+in the articles are carefully chosen and written. Even with pages that use
+Wikipedia as the main source, we still modify the content and simplify it. You
+don't even need to know HTML to help! The articles are written in Markdown!
+
+## License
+
+This website uses the Creative Commons CC BY-SA 4.0 license. See more in the
+[LICENSE](./LICENSE) file.

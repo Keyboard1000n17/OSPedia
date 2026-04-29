@@ -54,27 +54,73 @@
     }
   }
 
+  .twelve-k-plus {
+    display: none !important;
+  }
+
+  @media (min-width: 1200px) {
+    .twelve-k-plus {
+      display: block !important;
+      color: $link;
+    }
+  }
+
   // Define grid-related styles here
   div.wrapper {
     width: 100%;
+    height: 100dvh;
     overflow-x: hidden;
-    background-color: $background-color;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    @if $background-color ==rgba(255, 255, 255, 0.7) {
+      background-color: rgba($color: $background-color, $alpha: 0.5);
+    }
+
+    @else {
+      background-color: rgba($color: $background-color, $alpha: 0.8);
+    }
+
+    div.contents {
+      position: fixed;
+      display: none;
+
+      img.contents-close {
+        position: absolute;
+        top: $padding;
+        right: $padding;
+        width: 1.5rem;
+
+        @media (min-width: 769px) {
+          display: none;
+        }
+      }
+    }
+
+    div.extras {
+      display: none;
+
+      &.open {
+        bottom: 50%;
+      }
+    }
 
     @media (min-width: 769px) {
-      display: grid;
-      grid-template-columns: min-content 2fr;
-      grid-template-rows: 100dvh;
+      grid-template-columns: 3fr 10fr;
+      grid-template-rows: 1fr;
       backdrop-filter: $blur;
       height: 100dvh;
-      overflow: hidden;
+      overflow: visible;
 
       div.contents {
         grid-column: 1;
+        display: block;
+        position: relative;
       }
 
       main {
         grid-column: 2;
-        grid-row: 1;
       }
     }
 
@@ -83,18 +129,16 @@
       grid-template-rows: 1fr;
 
       div.contents {
-        grid-row: 1;
         grid-column: 1;
       }
 
       main {
-        grid-row: 1;
         grid-column: 2;
       }
 
       div.extras {
-        grid-row: 1;
         grid-column: 3;
+        display: block;
       }
     }
   }
@@ -104,7 +148,7 @@
   div.extras {
     padding: $padding;
     min-height: 0;
-    overflow: scroll;
+    overflow: auto;
     box-sizing: border-box;
     @include scrollbars;
 
@@ -115,32 +159,61 @@
 
   main {
     width: 100%;
-    padding: 0;
-    padding-top: 5rem;
     background-attachment: fixed;
     background-position: center;
     color: $color;
     background-size: cover;
-    overflow-x: hidden;
-    overflow-y: hidden;
     scroll-behavior: smooth;
-    grid-row: 2;
+    height: calc(100dvh - 5rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    top: 5rem;
+    padding: $padding;
+    box-sizing: border-box;
 
     h2 {
       scroll-margin-top: 5rem;
       padding-top: 1rem;
-      border-top: solid 1px white;
+      border-top: solid 1px rgba($color: #fff, $alpha: 0.5);
     }
 
-    div.content {
-      width: 100%;
-      height: calc(100dvh - 5rem);
-      overflow-y: auto;
-      overflow-x: hidden;
-      position: relative;
-      padding: $padding;
-      box-sizing: border-box;
-      @include scrollbars;
+    footer {
+      padding: $padding 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: calc(1 / 3 * $padding);
+
+      div:nth-child(1) {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+          padding: 0 $padding;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        text-align: center;
+        margin: 0;
+
+        @if $color ==black {
+          color: rgb(40, 40, 40);
+        }
+
+        @else {
+          color: rgb(200, 200, 200);
+        }
+      }
+
+      @media (max-width: 768px) {
+        padding-bottom: 5rem;
+      }
     }
 
     @media (min-width: 769px) {
@@ -150,15 +223,23 @@
 
   div.contents {
     width: 100%;
-    padding: $padding;
-    padding-top: 5rem;
-    display: none;
     color: $color;
     overflow-x: hidden;
     scrollbar-width: thin;
     grid-column: 1;
-    height: 100%;
     overflow: auto;
+    padding: $padding 0;
+
+    &.show {
+      position: fixed;
+      padding: $padding;
+      height: calc(100% - 10rem);
+      top: 5rem;
+      display: block !important;
+      background-color: $background-color;
+      backdrop-filter: $blur;
+      z-index: 10;
+    }
 
     div.links {
       display: flex;
@@ -182,10 +263,13 @@
     }
 
     @media (min-width: 769px) {
-      display: block;
       display: flex;
-      flex-direction: column;
       justify-self: end;
+      padding: $padding;
+      padding-top: 5rem;
+      height: 100%;
+      box-sizing: border-box;
+      @include scrollbars();
     }
   }
 
@@ -193,18 +277,14 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    background-color: $background-color-2;
     padding: $padding;
-    border-radius: $border-radius;
-    margin-bottom: calc(2 * $padding);
     width: 100%;
     color: $color;
 
     @media (min-width: 1440px) {
-      padding-top: 4rem;
+      padding-top: 5rem;
       justify-self: start;
       align-items: flex-start;
-      background-color: rgba(255, 255, 255, 0);
 
       div.links {
         align-items: flex-start;
@@ -214,6 +294,7 @@
 
   h2#toc {
     scroll-margin-top: 5rem;
+    margin: $padding 0;
   }
 
   div#back-to-top {
@@ -223,11 +304,11 @@
     right: $padding;
     text-align: center;
     background-color: $background-color;
-    color: #000;
+    color: $color;
     border-radius: $border-radius;
 
     a {
-      color: #000;
+      color: $color;
     }
 
     @media (min-width: 1440px) {
@@ -297,7 +378,7 @@
   }
 
   a {
-    color: #0061c9;
+    color: $link;
     text-decoration: none;
   }
 
@@ -335,7 +416,7 @@
       list-style: none;
       margin-right: 20px;
       text-decoration: none;
-      color: #3266fb;
+      color: $link;
       display: inline-block;
     }
 
@@ -367,20 +448,121 @@
   }
 
   nav>* {
-    padding: 10px;
+    padding: calc(2 / 3 * $padding);
   }
 
-  .nav:hover {
-    color: #001fff;
+  .nav:hover,
+  li.twelve-k-plus a:hover {
+    color: color.adjust($link, $lightness: 20%);
+  }
+
+  // Bottom bar styling
+
+  div.bar {
+    position: fixed;
+    bottom: 0;
+    background-color: $background-color;
+    backdrop-filter: $blur;
+    height: 5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    align-content: center;
+
+    div {
+      width: 100%;
+      height: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    div.bottom-bar {
+      grid-column: 1 / span 3;
+    }
+
+    img {
+      width: 70%;
+      height: 70%;
+      object-fit: contain;
+    }
+
+    @media (min-width: 1200px) {
+      display: none;
+    }
+
+    div.carousel-button {
+      background-color: $color;
+      opacity: 70%;
+      mask-image: url("/global/Images/carousel-fluent-ui.svg");
+      mask-size: 70% 80%;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      -webkit-mask-image: url("/global/Images/carousel-fluent-ui.svg");
+      -webkit-mask-size: 70% 80%;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+    }
+
+    div.contents-button {
+      background-color: $color;
+      opacity: 70%;
+      mask-image: url("/global/Images/contents-fluent-ui.svg");
+      mask-size: 50% 80%;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      -webkit-mask-image: url("/global/Images/contents-fluent-ui.svg");
+      -webkit-mask-size: 50% 80%;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+
+      @media (min-width: 769px) {
+        display: none;
+      }
+    }
+
+    div.did-you-know-button {
+      background-color: $color;
+      opacity: 70%;
+      mask-image: url("/global/Images/did-you-know-fluent-ui.svg");
+      mask-size: 60% 80%;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      -webkit-mask-image: url("/global/Images/did-you-know-fluent-ui.svg");
+      -webkit-mask-size: 60% 80%;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+    }
+
+    div.back-to-top {
+      background-color: $color;
+      opacity: 70%;
+      mask-image: url("/global/Images/back-to-top-fluent-ui.svg");
+      mask-size: 60% 80%;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      -webkit-mask-image: url("/global/Images/back-to-top-fluent-ui.svg");
+      -webkit-mask-size: 60% 80%;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+    }
   }
 
   // Page navigation styling
   div.article-nav {
     background-color: rgba(255, 255, 255, 0);
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     color: #000;
     margin: 1rem 0;
@@ -393,36 +575,39 @@
   }
 
   div.prxt {
-    padding: calc(1 / 2 * $padding);
-    margin: calc(1 / 2 * $padding);
-    display: flex;
-    flex-direction: column;
-    background-color: $background-color;
-    backdrop-filter: $blur;
-    border-radius: $border-radius;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1rem 1fr;
     font-weight: 600;
     box-sizing: border-box;
-
-    span {
-      display: flex;
-      align-items: center;
-      text-align: center;
-    }
+    margin-top: $padding;
 
     img {
       height: 3rem;
       object-fit: contain;
-      padding-right: calc(1 / 2 * $padding);
+      padding-left: calc(1 / 2 * $padding);
+      grid-column: 2;
+      grid-row: 1 / span 2;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    p.dir {
+      font-size: 1rem;
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    p:nth-child(2) {
+      grid-column: 1;
+      grid-row: 2;
+      font-size: 3rem;
     }
 
     @media (max-width: 414px) {
       height: 100%;
-
-      span {
-        flex-direction: column;
-      }
 
       img {
         height: auto;
@@ -479,6 +664,7 @@
       height: 100%;
       align-items: center;
       justify-content: center;
+      padding: $padding;
     }
 
     li {
@@ -641,19 +827,28 @@
       flex: 0 0 100%;
       scroll-snap-align: center;
       width: 100%;
+      height: auto;
       gap: 2rem;
+
+      figcaption {
+        text-align: center;
+      }
     }
 
     img.carousel-image {
       opacity: 1;
       position: relative;
-      // width: 100%;
+      width: 60vw;
+      object-fit: contain;
       z-index: 20;
-      height: 25rem;
       transition:
         transform 0.3s ease-out,
         opacity 0.3s ease-out,
         z-index 0.3s ease-out;
+
+      @media (min-width: 769px) {
+        height: 25rem;
+      }
     }
 
     img.carousel-close {
@@ -738,6 +933,11 @@
     padding: $padding;
     border-radius: $border-radius;
     margin: $padding 0;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    transition: opacity 0.3s ease-out;
 
     h2 {
       margin: 2.5px;
@@ -750,6 +950,21 @@
       background-color: rgba(255, 247, 0, 0.3);
       z-index: -1;
       border-radius: 15px;
+    }
+
+    &.show {
+      visibility: visible;
+      opacity: 1;
+      position: fixed;
+      bottom: 5.25rem;
+      width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media (min-width: 1440px) {
+      opacity: 1;
+      display: block;
     }
   }
 
@@ -908,7 +1123,7 @@
     flex: 0 0 100%;
     align-items: center;
     justify-content: center;
-    align-content: center;
+    border-radius: $border-radius $border-radius 0 0;
   }
 
   div.home-os-cards>div.bottom {
@@ -962,7 +1177,7 @@
       grid-column: span 2;
       max-width: 1034px;
 
-      div.content {
+      main {
         max-width: 100%;
       }
     }
@@ -1006,11 +1221,20 @@
   }
 
   div.wrapper {
+    h1 {
+      align-self: center;
+    }
+
     main {
       display: flex;
       flex-direction: column;
-      align-items: center;
     }
+  }
+
+  div.demo-wrapper {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
   }
 
   div.screen-container {
@@ -1039,6 +1263,7 @@
       background-color: $background-color;
       border-radius: $border-radius;
       border: none;
+      color: inherit;
     }
   }
 

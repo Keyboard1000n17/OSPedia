@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="/global/stylesheets/index-page-styles-light.css" id="setIndexSs" />
   {% endif %}
   <script src="/pagefind/pagefind-ui.js"></script>
+  <script src="/themes.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -22,14 +23,14 @@
   <link rel="icon" href="/global/OSPedia-favicon.svg" />
 </head>
 
-{% if background_image %}
 {% if page.url == "/" %}
 {% set style = "background-image: url(\"/global/OSPedia-background.svg\")" %}
-{% elseif tags and "homepages" in tags %}
+{% elif tags and "homepages" in tags %}
 {% set style = "background-image: url(\"" ~ background_image ~ "\")" %}
-{% elseif tags and "winpedia-pages" in tags or "macpedia-pages" in tags %}
-{% set style = "background-image: url(\"./Images/Wallpapers/" ~ background_image ~ "\")" %}
-{% endif %}
+{% elif tags and "windows-pages" in tags or "macos-pages" in tags or "ubuntu-pages" in tags %}
+{% set style = "background-image: url(\"./" ~ background_image ~ "\")" %}
+{% elif background_image %}
+{% set style = "background-image: url(\"" ~ background_image ~ "\")" %}
 {% endif %}
 
 <body style="{{ style }}">
@@ -38,22 +39,10 @@
     <div class="contents">
       <h2 id="toc">Contents</h2>
       <noscript>Enable JavaScript for the best experience!</noscript>
+      <img src="/global/Images/close.png" alt="Close button" class="contents-close" />
     </div>
     {% if tags and "win-demo-pages" in tags %}
-    <main data-pagefind-ignore>
-      <h1>{{ title }}</h1>
-      <div class="demo-wrapper">
-        <div class="screen-container">
-          <div style="white-space: pre; font: 14px monospace; line-height: 18px"></div>
-          <canvas style="display: none; width: 100%; height: 100%"></canvas>
-        </div>
-        <div class="demo-controls">
-          <button class="stop">Stop</button>
-          <button class="start">Start</button>
-        </div>
-      </div>
-      <div class="demo-info">{{ content | safe }}</div>
-    </main>
+    {% include "_windows-demo-partial.njk" %}
     {% elif tags and "mac-demo-pages" in tags %}
     <main data-pagefind-ignore>
       <h1>{{ title }}</h1>
@@ -61,28 +50,29 @@
     </main>
     {% else %}
     <main>
-      <div class="content">
-        {% if tags and not "homepages" in tags %}
-        {% include "_page-nav.njk" %}
-        <h1 id="heading" data-pagefind-weight="10">{{ title }}</h1>
-        {% endif %}
-        {{ content | splitContent(0) | safe }}
-        {% if favicon %}
-        <div class="info">
-          <img src="{{ page.filePathStem | parentFolder }}/Images/Icons/{{ favicon }}" alt="{{ info.icon[0].alt }}" />
-          {% for para in info.paras %}
-          <p>{{ para }}</p>
-          {% endfor %}
-        </div>
-        {% endif %}
-        {{ content | splitContent(1) | safe }}
+      {% if tags and not "homepages" in tags %}
+      <h1 id="heading" data-pagefind-weight="10">{{ title }}</h1>
+      {% endif %}
+      {{ content | splitContent(0) | safe }}
+      {% if favicon and paras %}
+      <div class="info">
+        <img src="{{ page.url | parentFolder }}/{{ favicon }}" alt="{{ info.icon[0].alt }}" />
+        {% for para in info.paras %}
+        <p>{{ para | safe}}</p>
+        {% endfor %}
       </div>
+      {% endif %}
+      {{ content | splitContent(1) | safe }}
+      {% include "_footer.njk" %}
     </main>
     {% endif %}
     <div class="extras">
       {% if carousel_images %}
       <h2>Carousel</h2>
       <button class="carousel-open">Open Carousel</button>
+      {% endif %}
+      {% if tags and not "homepages" in tags %}
+      {% include "_page-nav.njk" %}
       {% endif %}
       <section class="fun-fact">
         <h2>Did you know?</h2>
@@ -108,7 +98,45 @@
     {% endif %}
   </div>
 
-  {% if tags and "macpedia-pages" in tags %}
+  <div class="bar">
+    <div class="bottom-bar">
+      <div class="back-to-top"></div>
+      <div class="carousel-button" data-opens-element="carousel"></div>
+      <div class="contents-button" data-opens-element="div.contents"></div>
+      <div class="did-you-know-button" data-opens-element="section.fun-fact"></div>
+    </div>
+
+    {% set current_collection = null %}
+    {% if tags and "windows-pages" in tags %}
+    {% set current_collection = collections['windows-pages'] %}
+    {% elif tags and "macos-pages" in tags %}
+    {% set current_collection = collections['macos-pages'] %}
+    {% endif %}
+
+    {% if current_collection != null %}
+    {% set prev_page = current_collection | getPreviousCollectionItem(page) %}
+    {% set next_page = current_collection | getNextCollectionItem(page) %}
+
+    {% if prev_page %}
+    <div>
+      <a href="{{ prev_page.url }}">
+        <img src="../{{ prev_page.fileSlug }}/{{ prev_page.data.favicon }}" alt="Previous page">
+      </a>
+    </div>
+    {% endif %}
+
+    {% if next_page %}
+    <div>
+      <a href="{{ next_page.url }}">
+        <img src="../{{ next_page.fileSlug }}/{{ next_page.data.favicon }}" alt="Next page">
+      </a>
+    </div>
+    {% endif %}
+
+    {% endif %}
+  </div>
+
+  {% if tags and "macos-pages" in tags %}
   <template>
     <tr>
       <td class="left version"></td>
@@ -118,25 +146,14 @@
       <td class="right release-notes"></td>
     </tr>
   </template>
-  {% if jsonData %}
-  <script>
-    window.jsonData = "{{ jsonData }}";
-  </script>
-  {% endif %}
-  <script src="/MacPedia/tables.js"></script>
+  <script src="/macos/tables.js"></script>
   {% endif %}
 
-  <div id="back-to-top">Back to top</div>
   <div class="pagefind-ui__blur"></div>
 
   <script src="/script.js"></script>
   <script src="/fun-fact.js"></script>
 
-  {% if page.url | parentFolder == "/demos" %}
-  <script src="/demo-themes.js"></script>
-  {% else %}
-  <script src="/themes.js"></script>
-  {% endif %}
 
   {% if carousel_images %}
   <script src="/carousel.js"></script>
@@ -150,6 +167,7 @@
   </script>
   <script src="./demos.js"></script>
   {% endif %}
+  <script src="/bottom-bar.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 8.4666665 8.4666666"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="contents-fluent-ui.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="24.536748"
+     inkscape:cx="14.284697"
+     inkscape:cy="18.136063"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid2"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="0.26458333"
+       spacingy="0.26458333"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#dddddd;stroke-width:0.273387"
+       id="rect1"
+       width="7.4083328"
+       height="1.0583333"
+       x="0.52916664"
+       y="0.26458332"
+       ry="0.13029136" />
+    <rect
+       style="fill:#dddddd;stroke-width:0.273389"
+       id="rect1-6"
+       width="7.4083328"
+       height="1.0583332"
+       x="0.5291667"
+       y="1.8520832"
+       ry="0.13029134" />
+    <rect
+       style="fill:#dddddd;stroke-width:0.186282"
+       id="rect1-1"
+       width="3.4395833"
+       height="1.0583334"
+       x="4.3656249"
+       y="3.4395831"
+       ry="0.13029137" />
+    <rect
+       style="fill:#dddddd;stroke-width:0.186282"
+       id="rect1-1-60"
+       width="3.4395833"
+       height="1.0583332"
+       x="4.3656249"
+       y="5.0270834"
+       ry="0.13029134" />
+    <rect
+       style="fill:#dddddd;stroke-width:0.122624"
+       id="rect1-4"
+       width="3.3535142"
+       height="0.47037038"
+       x="0.61523563"
+       y="4.3803239"
+       ry="0.057907268" />
+    <rect
+       style="fill:#dddddd;stroke-width:0.122624"
+       id="rect1-4-1"
+       width="3.3535142"
+       height="0.47037038"
+       x="0.61523563"
+       y="6.2618051"
+       ry="0.057907268" />
+    <rect
+       style="fill:#dddddd;stroke-width:0.146131"
+       id="rect1-4-4"
+       width="4.2333331"
+       height="0.52916664"
+       x="3.4395831"
+       y="-1.852083"
+       ry="0.065145671"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#dddddd;stroke-width:0.146131"
+       id="rect1-4-4-6"
+       width="4.2333326"
+       height="0.52916664"
+       x="3.4395833"
+       y="-3.1749997"
+       ry="0.065145671"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#dddddd;stroke-width:0.186282"
+       id="rect1-1-8"
+       width="3.4395831"
+       height="1.0583336"
+       x="4.3656249"
+       y="6.614583"
+       ry="0.1302914" />
+  </g>
+</svg>

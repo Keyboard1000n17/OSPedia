@@ -1,13 +1,27 @@
 const path = require("node:path");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
+  // windows collection (excluding home.html)
+  eleventyConfig.addCollection("windows-pages", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("assets/windows/**/*.md")
+      .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
+  });
+
+  // macOS collection (excluding home.html)
+  eleventyConfig.addCollection("macos-pages", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("assets/macos/**/*.md")
+      .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
+  });
+
   // split function
-  eleventyConfig.addFilter("parentFolder", function(str) {
+  eleventyConfig.addFilter("parentFolder", function (str) {
     return str.split("/").slice(0, -1).join("/");
   });
 
   // split content at +++
-  eleventyConfig.addFilter("splitContent", function(content, index) {
+  eleventyConfig.addFilter("splitContent", function (content, index) {
     if (typeof content !== "string") {
       return content;
     } else if (index > 1) {
@@ -38,26 +52,12 @@ module.exports = function(eleventyConfig) {
     },
   });
 
-  // WinPedia collection (excluding home.html)
-  eleventyConfig.addCollection("winpedia-pages", function(collectionApi) {
-    return collectionApi
-      .getFilteredByGlob("assets/WinPedia/*.md")
-      .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
-  });
-
-  // MacPedia collection (excluding home.html)
-  eleventyConfig.addCollection("macpedia-pages", function(collectionApi) {
-    return collectionApi
-      .getFilteredByGlob("assets/MacPedia/*.md")
-      .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
-  });
-
   return {
     // Input/output directories
     dir: {
       input: "assets",
       output: "_site",
-      includes: "_includes", // _includes folder is at root, outside assets
+      includes: "_includes",
     },
     templateFormats: ["html", "njk", "md"], // allow processing of HTML with frontmatter
     htmlTemplateEngine: "njk", // treat HTML as Nunjucks

@@ -15,3 +15,39 @@
    - It's a nightmare dealing with the SCSS I wrote.
    [ ] Do something about the tables for Windows 10 and 11
    There are TODO comments in the markdown files for Windows 10 and 11 that explain the problem (hopefully)
+   [ ] Get dark mode images for macOS Big Sur, Sonoma, Sequoia and Tahoe.
+   - Self-explanatory
+   [X] Get the pictures for Classic Mac OS
+   - Also self-explanatory
+   [ ] Get Ubuntu VMs running in v86 OR switch to QEMU-WASM
+   - The first version of Ubuntu, 4.10, ~isn't~ is working in the browser. Get it running in v86 ~or switch to QEMU-WASM PLEASE PLEASE PLEASE~.
+   [X] Add a footer
+   - Include stuff like license, links to all OS homepages, request to contribute, etc.
+   [ ] More stuff in the sidebar
+   - For example, a link to edit, donate (set this up later) or something
+   [X] Make a directory page
+   - Just make a file at `/directory/` that lists all the available pages
+   [X] Set up redirects
+   - For example, a user can type `https://ospedia.site/macos/12` and it will redirect them to macOS Tahoe.
+   [ ] Fix scrolling with TOC
+   - Scrolling doesn't work when you click on a link in the table of contents grr
+
+** Get new images
+   Get new images for these:
+   - ~Macintosh System 6.0.8~
+   - ~Mac OS X 10.0~
+   - ~Mac OS X 10.1~
+   - ~Mac OS X Snow Leopard~
+   - Windows 10
+   - ~macOS Tahoe~
+
+** References for Ubuntu pages
+- Wikipedia: main (nevermind)
+- Ubuntu Wiki/BetaWiki: next main (more info for each page)
+- DistroWatch: summaries
+- Ubuntu Fridge: ___
+
+** Ubuntu page structure
+- Features
+- Release announcement
+- System requirements

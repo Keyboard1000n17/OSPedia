@@ -42,3 +42,10 @@ carouselNext.addEventListener("click", () => {
 carousel.addEventListener("scroll", () => {
   index = Math.round(carousel.scrollLeft / carouselSlides[0].offsetWidth);
 });
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    carouselWrapper.classList.add("hidden");
+    carouselBackdrop.classList.add("hidden");
+  }
+});

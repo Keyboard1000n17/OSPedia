@@ -1,9 +1,3 @@
 [build]
   functions = "netlify/functions"
   publish = "_site/"
-
-[[ redirects ]]
-from = "/archive-proxy/*"
-to = "https://images-ospedia.netlify.app/:splat"
-status = 200
-force = true
