@@ -180,7 +180,6 @@
 
     footer {
       padding: $padding 0;
-      padding-bottom: 5rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -210,6 +209,10 @@
         @else {
           color: rgb(200, 200, 200);
         }
+      }
+
+      @media (max-width: 768px) {
+        padding-bottom: 5rem;
       }
     }
 
@@ -1218,11 +1221,20 @@
   }
 
   div.wrapper {
+    h1 {
+      align-self: center;
+    }
+
     main {
       display: flex;
       flex-direction: column;
-      align-items: center;
     }
+  }
+
+  div.demo-wrapper {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
   }
 
   div.screen-container {
