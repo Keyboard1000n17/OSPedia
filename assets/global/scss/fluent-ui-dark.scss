@@ -19,6 +19,9 @@
   $background-color-2,
   $color);
 
-nav img.dark-mode-toggle {
+nav img.dark-mode-toggle,
+img.hamburger-menu-icon,
+div.carousel-prev::after,
+div.carousel-next::after {
   filter: invert(1);
 }

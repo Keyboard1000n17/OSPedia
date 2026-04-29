@@ -180,6 +180,7 @@
 
     footer {
       padding: $padding 0;
+      padding-bottom: 5rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -202,7 +203,6 @@
         text-align: center;
         margin: 0;
 
-        // prettier-ignore
         @if $color ==black {
           color: rgb(40, 40, 40);
         }
@@ -459,6 +459,7 @@
     position: fixed;
     bottom: 0;
     background-color: $background-color;
+    backdrop-filter: $blur;
     height: 5rem;
     width: 100%;
     display: grid;
@@ -520,6 +521,10 @@
       -webkit-mask-size: 50% 80%;
       -webkit-mask-repeat: no-repeat;
       -webkit-mask-position: center;
+
+      @media (min-width: 769px) {
+        display: none;
+      }
     }
 
     div.did-you-know-button {
@@ -656,6 +661,7 @@
       height: 100%;
       align-items: center;
       justify-content: center;
+      padding: $padding;
     }
 
     li {
@@ -818,6 +824,7 @@
       flex: 0 0 100%;
       scroll-snap-align: center;
       width: 100%;
+      height: auto;
       gap: 2rem;
 
       figcaption {
@@ -828,13 +835,17 @@
     img.carousel-image {
       opacity: 1;
       position: relative;
-      // width: 100%;
+      width: 60vw;
+      object-fit: contain;
       z-index: 20;
-      height: 25rem;
       transition:
         transform 0.3s ease-out,
         opacity 0.3s ease-out,
         z-index 0.3s ease-out;
+
+      @media (min-width: 769px) {
+        height: 25rem;
+      }
     }
 
     img.carousel-close {
@@ -920,8 +931,10 @@
     border-radius: $border-radius;
     margin: $padding 0;
     display: block;
+    visibility: hidden;
     opacity: 0;
     position: relative;
+    transition: opacity 0.3s ease-out;
 
     h2 {
       margin: 2.5px;
@@ -937,17 +950,18 @@
     }
 
     &.show {
+      visibility: visible;
       opacity: 1;
       position: fixed;
       bottom: 5.25rem;
       width: 90%;
       left: 50%;
       transform: translateX(-50%);
-      transition: opacity 0.3s ease-out;
     }
 
     @media (min-width: 1440px) {
       opacity: 1;
+      display: block;
     }
   }
 
