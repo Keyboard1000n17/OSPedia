@@ -116,6 +116,7 @@
       div.contents {
         grid-column: 1;
         display: block;
+        position: relative;
       }
 
       main {
@@ -260,7 +261,6 @@
 
     @media (min-width: 769px) {
       display: flex;
-      flex-direction: column;
       justify-self: end;
       padding: $padding;
       padding-top: 5rem;

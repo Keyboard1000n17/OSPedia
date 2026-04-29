@@ -25,7 +25,7 @@
      inkscape:document-units="px"
      inkscape:zoom="23.455281"
      inkscape:cx="11.362047"
-     inkscape:cy="15.817333"
+     inkscape:cy="16.243676"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -40,27 +40,27 @@
      id="layer1">
     <g
        id="g1"
-       transform="translate(0.26632303,0.13696875)">
+       transform="rotate(14.997849,2.6430494,4.2331067)">
       <rect
          style="fill:#7c7272;fill-opacity:1;stroke-width:0.264583"
          id="rect1"
-         width="5.2904749"
-         height="0.50761485"
-         x="-3.9324198"
-         y="4.2521443"
-         transform="rotate(-45)"
-         rx="0.13229166"
-         ry="0.13229166" />
+         width="5.2916665"
+         height="0.79374999"
+         x="-4.9904675"
+         y="4.0087657"
+         rx="0.26458332"
+         ry="0.26458332"
+         transform="rotate(-60)" />
       <rect
-         style="fill:#7d7373;fill-opacity:1;stroke-width:0.264583"
-         id="rect1-1"
-         width="5.2904749"
-         height="0.50761485"
-         x="-9.5426197"
-         y="0.85044032"
-         transform="rotate(-135)"
-         rx="0.13229166"
-         ry="0.13229166" />
+         style="fill:#7c7272;fill-opacity:1;stroke-width:0.264583"
+         id="rect1-6"
+         width="5.2916665"
+         height="0.79374999"
+         x="-9.3004322"
+         y="-0.49255109"
+         rx="0.26458332"
+         ry="0.26458332"
+         transform="rotate(-150)" />
     </g>
   </g>
 </svg>
