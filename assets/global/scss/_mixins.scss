@@ -477,6 +477,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        height: 100%;
       }
     }
 
@@ -485,7 +487,9 @@
     }
 
     img {
-      width: 60%;
+      width: 70%;
+      height: 70%;
+      object-fit: contain;
     }
 
     @media (min-width: 1200px) {
@@ -496,11 +500,11 @@
       background-color: $color;
       opacity: 70%;
       mask-image: url("/global/Images/carousel-fluent-ui.svg");
-      mask-size: 70%;
+      mask-size: 70% 80%;
       mask-repeat: no-repeat;
       mask-position: center;
       -webkit-mask-image: url("/global/Images/carousel-fluent-ui.svg");
-      -webkit-mask-size: 70%;
+      -webkit-mask-size: 70% 80%;
       -webkit-mask-repeat: no-repeat;
       -webkit-mask-position: center;
     }
@@ -509,11 +513,11 @@
       background-color: $color;
       opacity: 70%;
       mask-image: url("/global/Images/contents-fluent-ui.svg");
-      mask-size: 50%;
+      mask-size: 50% 80%;
       mask-repeat: no-repeat;
       mask-position: center;
       -webkit-mask-image: url("/global/Images/contents-fluent-ui.svg");
-      -webkit-mask-size: 50%;
+      -webkit-mask-size: 50% 80%;
       -webkit-mask-repeat: no-repeat;
       -webkit-mask-position: center;
     }
@@ -522,11 +526,24 @@
       background-color: $color;
       opacity: 70%;
       mask-image: url("/global/Images/did-you-know-fluent-ui.svg");
-      mask-size: 60%;
+      mask-size: 60% 80%;
       mask-repeat: no-repeat;
       mask-position: center;
       -webkit-mask-image: url("/global/Images/did-you-know-fluent-ui.svg");
-      -webkit-mask-size: 60%;
+      -webkit-mask-size: 60% 80%;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+    }
+
+    div.back-to-top {
+      background-color: $color;
+      opacity: 70%;
+      mask-image: url("/global/Images/back-to-top-fluent-ui.svg");
+      mask-size: 60% 80%;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      -webkit-mask-image: url("/global/Images/back-to-top-fluent-ui.svg");
+      -webkit-mask-size: 60% 80%;
       -webkit-mask-repeat: no-repeat;
       -webkit-mask-position: center;
     }

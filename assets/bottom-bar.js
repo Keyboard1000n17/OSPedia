@@ -16,7 +16,7 @@ if (window.innerWidth < 1200) {
         .classList.toggle("hidden");
     } else if (getsOpened === "section.fun-fact") {
       newEl.classList.toggle("show");
-    } else {
+    } else if (getsOpened) {
       document.querySelector(getsOpened).classList.toggle("show");
     }
   });

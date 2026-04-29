@@ -5,7 +5,7 @@ const menuIcon = document.querySelector(".hamburger-menu-icon");
 const menuBlur = document.querySelector(".hamburger-menu-blur");
 const menuClose = document.querySelector(".hamburger-menu-close");
 
-window.scrollContainer = document.querySelector("div.content");
+window.scrollContainer = document.querySelector("main");
 
 menuIcon.addEventListener("click", (e) => {
   e.stopPropagation(); // stop event from bubbling up
@@ -50,7 +50,8 @@ const observer = new MutationObserver(() => {
   if (
     document.querySelector(
       ".pagefind-ui__drawer.svelte-e9gkc3.pagefind-ui__hidden",
-    ) && document.querySelector(".pagefind-ui")
+    ) &&
+    document.querySelector(".pagefind-ui")
   ) {
     blur.style.display = "none";
   } else {
@@ -79,10 +80,7 @@ for (let i = 0; i < headings.length; i++) {
     .insertAdjacentElement("afterend", links);
 }
 
-if (
-  window.innerWidth < 768 &&
-  document.querySelector(".info")
-) {
+if (window.innerWidth < 768 && document.querySelector(".info")) {
   const contentsEl = document.querySelector("div.contents").cloneNode(true);
   document.querySelector("div.contents").remove();
   document
@@ -109,7 +107,7 @@ document.querySelectorAll("div.links a").forEach((link, index) => {
 // Back to top button
 
 if (window.innerWidth < 1440) {
-  const backToTop = document.querySelector("div#back-to-top");
+  const backToTop = document.querySelector("div.back-to-top");
   backToTop.addEventListener("click", () => {
     scrollContainer.scrollTo({
       top: 0,
