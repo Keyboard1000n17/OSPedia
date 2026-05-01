@@ -7,6 +7,9 @@ on:
       - master
       - unstable
 
+permissions:
+  contents: write
+
 jobs:
   add-contributors:
     runs-on: ubuntu-latest
