@@ -3,50 +3,78 @@ const themes = {
     path: {
       sitewide: "/global/stylesheets/fluent-ui-light.css",
       demos: "/global/stylesheets/demos-light.css",
+      home: "/global/stylesheets/index-page-styles-light.css",
     },
   },
   dark: {
     path: {
       sitewide: "/global/stylesheets/fluent-ui-dark.css",
       demos: "/global/stylesheets/demos-dark.css",
+      home: "/global/stylesheets/index-page-styles-dark.css",
     },
   },
 };
 
-function setTheme(theme) {
+function changeImage() {
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => {
+      for (const img of document.querySelectorAll(
+        `img[src="/global/OSPedia-logo.svg"], img[src="/global/OSPedia-logo-dark.svg"]`,
+      )) {
+        img.src =
+          window.theme === "light"
+            ? "/global/OSPedia-logo.svg"
+            : "/global/OSPedia-logo-dark.svg";
+      }
+    });
+  } else {
+    for (const img of document.querySelectorAll(
+      `img[src="/global/OSPedia-logo.svg"], img[src="/global/OSPedia-logo-dark.svg"]`,
+    )) {
+      img.src =
+        window.theme === "light"
+          ? "/global/OSPedia-logo-dark.svg"
+          : "/global/OSPedia-logo.svg";
+    }
+  }
+}
+
+function setTheme(theme, maxAge = 0) {
   document.querySelector("#setSs").href = themes[theme].path.sitewide;
   if (document.querySelector("#setDemoSs"))
     document.querySelector("#setDemoSs").href = themes[theme].path.demos;
-  document.cookie = `theme=${theme};max-age=${60 * 60 * 24 * 7};path=/;SameSite=Lax`;
+  if (document.querySelector("#setIndexSs"))
+    document.querySelector("#setIndexSs").href = themes[theme].path.home;
+  document.cookie =
+    maxAge != 0
+      ? `theme=${theme};max-age=${maxAge};path=/;SameSite=Lax`
+      : `theme=${theme};path=/;SameSite=Lax`;
 
-  document.addEventListener("DOMContentLoaded", () => {
-    for (const img of document.querySelectorAll(
-      'img[src="/global/OSPedia-logo.svg"], img[src="/global/OSPedia-logo-dark.svg"]',
-    )) {
-      img.src =
-        theme === "light"
-          ? "/global/OSPedia-logo.svg"
-          : "/global/OSPedia-logo-dark.svg";
-    }
-  });
+  document.addEventListener("DOMContentLoaded", changeImage());
+  changeImage();
+  window.theme = theme;
 }
 
-if (document.cookie) {
+if (!document.cookie) {
+  const query = window.matchMedia("(prefers-color-scheme: light)");
+  setTheme(query.matches ? "light" : "dark");
+  query.addEventListener("change", (e) => {
+    console.log(e.matches);
+    window.theme = e.matches ? "light" : "dark";
+    setTheme(window.theme);
+  });
+} else {
   setTheme(document.cookie.split(";")[0].split("=")[1]);
-  window.theme = document.cookie.split(";")[0].split("=")[1];
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   const themeToggle = document.querySelector(".dark-mode-toggle");
 
   themeToggle.addEventListener("click", () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    setTheme(
+      !document.cookie || window.theme === "light" || !window.theme
+        ? "dark"
+        : "light",
+    );
   });
 });
-
-window
-  .matchMedia("(prefers-color-scheme: light)")
-  .addEventListener("change", (e) => {
-    window.theme = e.matches ? "light" : "dark";
-    setTheme(window.theme);
-  });
