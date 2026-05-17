@@ -15,7 +15,7 @@ const themes = {
   },
 };
 
-function changeImage() {
+function changeAttributes() {
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", () => {
       for (const img of document.querySelectorAll(
@@ -26,6 +26,8 @@ function changeImage() {
             ? "/global/OSPedia-logo.svg"
             : "/global/OSPedia-logo-dark.svg";
       }
+      if (window.theme === "dark")
+        document.querySelector("body").dataset.pfTheme = "dark";
     });
   } else {
     for (const img of document.querySelectorAll(
@@ -36,6 +38,8 @@ function changeImage() {
           ? "/global/OSPedia-logo-dark.svg"
           : "/global/OSPedia-logo.svg";
     }
+    if (window.theme === "dark")
+      document.querySelector("body").dataset.pfTheme = "dark";
   }
 }
 
@@ -50,8 +54,8 @@ function setTheme(theme, maxAge = 0) {
       ? `theme=${theme};max-age=${maxAge};path=/;SameSite=Lax`
       : `theme=${theme};path=/;SameSite=Lax`;
 
-  document.addEventListener("DOMContentLoaded", changeImage());
-  changeImage();
+  document.addEventListener("DOMContentLoaded", changeAttributes());
+  changeAttributes();
   window.theme = theme;
 }
 
