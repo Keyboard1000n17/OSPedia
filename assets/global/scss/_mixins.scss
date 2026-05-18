@@ -700,9 +700,22 @@
     --pf-input-height: 100%;
     --pf-searchbox-max-width: 100%;
     height: 100% !important;
+    width: 100%;
 
     search {
       height: 100% !important;
+    }
+
+    search::before {
+      aspect-ratio: 1/1;
+      height: 30% !important;
+      width: auto !important;
+      top: calc((var(--pf-input-height) - 30%) / 2) !important;
+      left: 12px !important;
+    }
+
+    input {
+      padding-inline-start: calc(18px * 16 / 7) !important;
     }
   }
 

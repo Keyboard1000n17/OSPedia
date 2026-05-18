@@ -26,8 +26,8 @@ function changeAttributes() {
             ? "/global/OSPedia-logo.svg"
             : "/global/OSPedia-logo-dark.svg";
       }
-      if (window.theme === "dark")
-        document.querySelector("body").dataset.pfTheme = "dark";
+      document.querySelector("body").dataset.pfTheme =
+        window.theme === "dark" ? "dark" : "light";
     });
   } else {
     for (const img of document.querySelectorAll(
@@ -38,8 +38,8 @@ function changeAttributes() {
           ? "/global/OSPedia-logo-dark.svg"
           : "/global/OSPedia-logo.svg";
     }
-    if (window.theme === "dark")
-      document.querySelector("body").dataset.pfTheme = "dark";
+    document.querySelector("body").dataset.pfTheme =
+      window.theme === "dark" ? "light" : "dark";
   }
 }
 
