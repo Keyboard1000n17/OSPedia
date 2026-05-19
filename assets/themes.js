@@ -16,34 +16,30 @@ const themes = {
 };
 
 function changeAttributes() {
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", () => {
-      for (const img of document.querySelectorAll(
+  function actuallyChangeAttributes() {
+    document
+      .querySelectorAll(
         `img[src="/global/OSPedia-logo.svg"], img[src="/global/OSPedia-logo-dark.svg"]`,
-      )) {
-        img.src =
+      )
+      .forEach((el) => {
+        el.src =
           window.theme === "light"
             ? "/global/OSPedia-logo.svg"
             : "/global/OSPedia-logo-dark.svg";
-      }
-      document.querySelector("body").dataset.pfTheme =
-        window.theme === "dark" ? "dark" : "light";
-    });
-  } else {
-    for (const img of document.querySelectorAll(
-      `img[src="/global/OSPedia-logo.svg"], img[src="/global/OSPedia-logo-dark.svg"]`,
-    )) {
-      img.src =
-        window.theme === "light"
-          ? "/global/OSPedia-logo-dark.svg"
-          : "/global/OSPedia-logo.svg";
-    }
-    document.querySelector("body").dataset.pfTheme =
-      window.theme === "dark" ? "light" : "dark";
+        document.querySelector("body").dataset.pfTheme =
+          window.theme === "light" ? "light" : "dark";
+        console.log(`attrs changed for ${el}! theme was ${window.theme}`);
+        console.log(el);
+      });
   }
+
+  if (document.readyState === "loading")
+    document.addEventListener("DOMContentLoaded", actuallyChangeAttributes);
+  else actuallyChangeAttributes();
 }
 
 function setTheme(theme, maxAge = 0) {
+  window.theme = theme;
   document.querySelector("#setSs").href = themes[theme].path.sitewide;
   if (document.querySelector("#setDemoSs"))
     document.querySelector("#setDemoSs").href = themes[theme].path.demos;
@@ -53,10 +49,7 @@ function setTheme(theme, maxAge = 0) {
     maxAge != 0
       ? `theme=${theme};max-age=${maxAge};path=/;SameSite=Lax`
       : `theme=${theme};path=/;SameSite=Lax`;
-
-  document.addEventListener("DOMContentLoaded", changeAttributes());
   changeAttributes();
-  window.theme = theme;
 }
 
 if (!document.cookie) {

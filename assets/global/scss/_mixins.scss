@@ -1027,11 +1027,9 @@
 
   div#card-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 10px;
     position: relative;
-    scroll-snap-type: x mandatory;
-    overflow-x: scroll;
   }
 
   main h2 {
@@ -1045,12 +1043,10 @@
   div.home-os-cards {
     border-radius: 10px;
     position: relative;
-    height: 50rem;
-    margin: 1vh 2vw;
+    margin: 15px 0;
     display: flex;
     flex-direction: column;
     flex: 0 0 95%;
-    scroll-snap-align: center;
 
     &::after {
       // backdrop-filter: $blur;
@@ -1069,7 +1065,7 @@
   }
 
   div.home-os-cards div.top {
-    height: 50%;
+    height: 20rem;
     background-position: center;
     background-size: cover;
     border-radius: 10px 10px 0 0;
@@ -1088,7 +1084,7 @@
   }
 
   div.home-os-cards>div.bottom {
-    height: 50%;
+    height: 20rem;
     margin: 1vh 1vw;
     padding: 1vh 2vw;
     border: none;
@@ -1141,37 +1137,6 @@
       main {
         max-width: 100%;
       }
-    }
-  }
-
-  .marquee {
-    --width: -100%;
-    width: 100%;
-    height: 4rem;
-    white-space: nowrap;
-    box-sizing: border-box;
-
-    div {
-      display: inline-flex;
-      height: 100%;
-      width: max-content;
-      animation: marquee 1s linear infinite;
-      animation-play-state: paused;
-      gap: 2rem;
-    }
-
-    img {
-      height: 100%;
-    }
-  }
-
-  @keyframes marquee {
-    0% {
-      transform: translate(0, 0);
-    }
-
-    100% {
-      transform: translate(0, 0);
     }
   }
 }
