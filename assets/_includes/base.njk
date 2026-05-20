@@ -1,12 +1,13 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ title }} - OSPedia</title>
-  <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+  <link href="/pagefind/pagefind-component-ui.css" rel="stylesheet">
   <link href="/global/stylesheets/fluent-ui-light.css" rel="stylesheet" id="setSs" />
+
   {% if tags and "demo-pages" in tags %}
   <link rel="stylesheet" href="/global/stylesheets/demos-light.css" id="setDemoSs" />
   {% elif tags and "homepages" in tags and page.url != "/" %}
@@ -14,7 +15,8 @@
   {% elif page.url == "/" %}
   <link rel="stylesheet" href="/global/stylesheets/index-page-styles-light.css" id="setIndexSs" />
   {% endif %}
-  <script src="/pagefind/pagefind-ui.js"></script>
+
+  <script src="/pagefind/pagefind-component-ui.js" type="module"></script>
   <script src="/themes.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,6 +37,40 @@
 
 <body style="{{ style }}">
   {% include "_nav.njk" %}
+  {% raw %}
+  <div class="pagefind-container">
+    <pagefind-results show-images hide-sub-results>
+      <script type="text/pagefind-template">
+    <li class="pf-result">
+      <div class="pf-result-card">
+        {{#if and(options.show_images, meta.image)}}
+        <img class="pf-result-image" src="{{ meta.image | resolveUrl(meta.url | default(url)) }}" alt="{{ meta.image_alt | default(meta.title) }}">
+        {{/if}}
+        <div class="pf-result-content">
+          <p class="pf-result-title">
+            <a class="pf-result-link" href="{{ meta.url | default(url) | safeUrl }}"{{#if options.link_target}} target="{{ options.link_target }}"{{/if}}{{#if eq(options.link_target, "_blank")}} rel="noopener"{{/if}}>{{ meta.title }}</a>
+          </p>
+          {{#if excerpt}}
+          <p class="pf-result-excerpt">{{+ excerpt +}}</p>
+          {{/if}}
+        </div>
+      </div>
+    </li>
+  </script>
+      <script type="text/pagefind-template" data-template="placeholder">
+    <li class="pf-result" aria-hidden="true">
+      <div class="pf-result-card">
+        <div class="pf-skeleton pf-skeleton-image"></div>
+        <div class="pf-result-content">
+          <p class="pf-result-title pf-skeleton pf-skeleton-title"></p>
+          <p class="pf-result-excerpt pf-skeleton pf-skeleton-excerpt"></p>
+        </div>
+      </div>
+    </li>
+  </script>
+    </pagefind-results>
+  </div>
+  {% endraw %}
   <div class="wrapper">
     <div class="contents">
       <h2 id="toc">Contents</h2>
@@ -85,7 +121,9 @@
       <div class="carousel">
         {% for image in carousel_images %}
         <figure>
-          <img src="{{ image.path }}" alt="{{ image.alt }}" class="carousel-image" />
+          <a href="{{ image.path }}" target="_blank">
+            <img src="{{ image.path }}" alt="{{ image.alt }}" class="carousel-image" />
+          </a>
           <figcaption>{{ image.desc }}</figcaption>
         </figure>
         {% endfor %}
@@ -105,6 +143,8 @@
       <div class="contents-button" data-opens-element="div.contents"></div>
       <div class="did-you-know-button" data-opens-element="section.fun-fact"></div>
     </div>
+
+    <div class="pagefind-blur"></div>
 
     {% set current_collection = null %}
     {% if tags and "windows-pages" in tags %}
@@ -149,11 +189,8 @@
   <script src="/macos/tables.js"></script>
   {% endif %}
 
-  <div class="pagefind-ui__blur"></div>
-
   <script src="/script.js"></script>
   <script src="/fun-fact.js"></script>
-
 
   {% if carousel_images %}
   <script src="/carousel.js"></script>

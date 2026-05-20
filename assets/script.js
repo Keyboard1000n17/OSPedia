@@ -34,32 +34,21 @@ if (window.innerWidth <= 768) {
   window.addEventListener("resize", setVh);
 }
 
-// PageFind search box
+// Background and blur for PageFind drawer
 
-window.addEventListener("DOMContentLoaded", () => {
-  new PagefindUI({
-    element: "#search",
-    resetStyles: true,
+document.addEventListener("DOMContentLoaded", () => {
+  const pagefindResultsList = document.querySelector(
+    "div.pagefind-container ul.pf-results",
+  );
+  const pagefindContainer = document.querySelector("div.pagefind-container");
+  console.log(pagefindResultsList);
+  const observer = new MutationObserver(() => {
+    pagefindResultsList.children.length > 0
+      ? pagefindContainer.classList.add("active")
+      : pagefindContainer.classList.remove("active");
   });
+  observer.observe(pagefindResultsList, { childList: true, subtree: true });
 });
-
-// Blur for PageFind drawer
-
-const observer = new MutationObserver(() => {
-  const blur = document.querySelector(".pagefind-ui__blur");
-  if (
-    document.querySelector(
-      ".pagefind-ui__drawer.svelte-e9gkc3.pagefind-ui__hidden",
-    ) &&
-    document.querySelector(".pagefind-ui")
-  ) {
-    blur.style.display = "none";
-  } else {
-    blur.style.display = "block";
-  }
-});
-
-observer.observe(document.body, { childList: true, subtree: true });
 
 // Contents quick links generator
 const headings = document.querySelectorAll("main h2, main h3, main h4");
