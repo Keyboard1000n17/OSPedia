@@ -31,7 +31,9 @@ There are a few things you can do:
 
 - Change the file structure
 - Change the styles/Making new themes
-- Write or update content The process of contributing for these are given below.
+- Write or update content
+
+The process of contributing for these are given below.
 
 ### Changing the file structure
 
@@ -68,9 +70,117 @@ You do not need much technical understanding to write content. In fact, you
 don't even need to know how to code at all! The content is written in Markdown,
 which is quite simple. You don't need to worry about the fact that websites are
 written in HTML, but if you are really curious, the site uses Eleventy, as
-mentioned before. Read up there! You should also add front matter, and if you
-don't know what to do about the front matter, create an issue and we will guide
-you!
+mentioned before. Read up there! You should also add front matter.
+
+#### But what is front matter?
+
+Well, front matter is a block of information, or _metadata_, about a page. It
+sets things like the title, background image, the order in which pages appear,
+images for the carousel, etc. Here's everything you need to know about front
+matter!
+
+##### Title
+
+Straightforward enough, the value you give this is what appears as the heading
+of the page and as the title of the tab where a page is open.
+
+Use it like this:
+
+```yaml
+title: Title of the page
+```
+
+##### Background image
+
+This sets the background of the page. No background if not specified.
+
+Type it out this way:
+
+```yaml
+background_image: /absolute/link/to/the/image
+```
+
+##### Order
+
+This is set as a number. It is set on all pages in a folder that contains
+content for the site. What it does is specify the order in which pages appear.
+If in a folder there is only one page, set order as `10`. If you start a new
+folder with content for the site, for example, if you make a folder for Debian,
+you should make the pages have an order that is a multiple of 10. In that way,
+if you forget something in between a bunch of pages, for example you have
+forgotten Debian 6 but have done the rest, it would be too much work to change
+the order of so many pages. So if Debian 5 is order `50` and Debian 7 is order
+`60`, you can set the order of Debian 6 to `55`.
+
+This is how it's written:
+
+```yaml
+order: <some_number>
+```
+
+##### Images for the carousel
+
+Self-explanatory? It just lists images for the carousel. The carousel is
+automatically generated if this is present, and if it is not present, well there
+won't be a carousel.
+
+This is its structure:
+
+```yaml
+carousel_images:
+  - path: /absolute/path/to/some/image.webp
+    alt: alt text for the image if it doesn't load
+    desc: The description that appears for the image
+  - path: /absolute/path/to/another/image.webp
+    alt: alt text for this other image
+    desc: The description for this specfic image
+```
+
+There can be any number of images. For each image, you need to specify the
+`path`, `alt` and `desc` like this:
+
+```yaml
+- path: /absolute/path/to/some/image.webp
+  alt: alt text for the image if it doesn't load
+  desc: The description that appears for the image
+```
+
+##### Info
+
+Sounds confusing because it's called info in a block of information about a page
+full of information? Well it is actually the information that gets passed to the
+infobox, or the white/black box after the first paragraph after (almost) every
+page. It contains things like the logo of the operating system, release date,
+etc.
+
+This is how it's used:
+
+```yaml
+info:
+  icon:
+    - alt: alt for the icon
+  paras:
+    - "Developed by: Some organisation"
+    - "Release date: Some date"
+```
+
+You can put any number of paras under the `paras` key. It doesn't matter how
+many you put, it will all appear in the page. Just don't put _everything_ in
+there.
+
+##### Favicon
+
+You might be wondering how you get the icon to show up in the infobox since only
+alt is given under `icon` in the `info` key. Well, this is how. You specify it
+seperately. Annoying, I know, but I'm too lazy to change that.
+
+To set the icon to show in the infobox:
+
+```yaml
+favicon: /absolute/path/of/icon.webp
+```
+
+#### Folder structure
 
 If you're adding new content, you should make a new folder with the name of the
 operating system you are writing for. Under the folder, you should make a file
@@ -82,13 +192,13 @@ ubuntu/
 - ubuntu-4.10-warty-warthog.md
 - ubuntu-5.04-hoary-hedgehog.md
 - ubuntu-5.10-breezy-badger.md
-- ubuntu-6.06-dapper-drake.md
+- ubuntu-6.06-lts-dapper-drake.md
 ```
 
 You can find the content for operating systems online, especially on Wikipedia.
 They are in fact the main source of information on the website!
 
-## Work on the project
+## Workflow
 
 Your workflow will look something like this:
 
@@ -106,7 +216,7 @@ You should have a way to use Git. It can be:
 - the Git CLI.
 
 If you are unfamilliar with Git, it is much easier to use a GUI. If you are
-using VS Code as your editor, there is abuilt-in Git interface.
+using VS Code as your editor, there is a built-in Git interface.
 
 To actually start working on the project:
 

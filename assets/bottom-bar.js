@@ -1,4 +1,4 @@
-const bottomBar = document.querySelector("div.bottom-bar");
+const bottomBar = document.querySelector("div.bar");
 
 if (window.innerWidth < 1200) {
   const newEl = document.querySelector("section.fun-fact").cloneNode(true);
