@@ -23,6 +23,7 @@ Feel free to add to this list!
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://scriptos.carrd.co/"><img src="https://avatars.githubusercontent.com/u/145180067?v=4?s=100" width="100px;" alt="Ananta"/><br /><sub><b>Ananta</b></sub></a><br /><a href="#doc-dev-ananta" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/CopticFelo"><img src="https://avatars.githubusercontent.com/u/68559765?v=4?s=100" width="100px;" alt="CopticFelo"/><br /><sub><b>CopticFelo</b></sub></a><br /><a href="#doc-CopticFelo" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
