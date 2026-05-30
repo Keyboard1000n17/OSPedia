@@ -90,37 +90,42 @@ export.
 
 ### GNOME 2.16
 
+GNOME is a free and open-source desktop environment for Linux and other
+Unix-like operating systems. It is the default desktop environment for multiple
+distributions, including Ubuntu, Fedora, and even Oracle Solaris, a Unix
+variant.
+
 GNOME 2.16 was released in September 2006, and it was the release Ubuntu shipped
 with. The release notes for it can be found
 [here](https://release.gnome.org/2-16/).
 
 A summary can be found here:
 
-- Advanced 3D effects: Numerous extensions to the compositor of the default
+- **Advanced 3D effects**: Numerous extensions to the compositor of the default
   GNOME window manager, Metacity, enabled 3D effects on windows, making them
   wobble, shrink, explode, fade in and out and other interesting and/or funny
   effects.
-- Cleaner icon theme, Cairo, and Wanda: GNOME 2.16 improves the icon theme
+- **Cleaner icon theme, Cairo, and Wanda**: GNOME 2.16 improves the icon theme
   system; many icons were shipped with their applications, icons were redesigned
   to follow the Tango project artwork guidelines and renamed to follow the
   Freedesktop icon naming specification.
-- Better battery life for laptops: 2.16 brought integrated power management
+- **Better battery life for laptops**: 2.16 brought integrated power management
   support, allowing the user to manage their battery, UPS, and wireless
   peripherals and offering graphs that show the amount of power being used. It
   is typically accessed through a panel icon.
-- Easier disk management: GNOME added Baobab to allow the user to easily analyze
-  their disk usage, scan any local or remote directory, requested folders or the
-  complete filesystem, and the program displays an image of all the directories
-  found.
-- New screen reader: Orca was the new screen reader introduced by GNOME in 2.16,
-  using the Assistive Technology Service Provider Interface (AT-SPI) to query
-  the display and output he content using various combinations of speech
+- **Easier disk management**: GNOME added Baobab to allow the user to easily
+  analyze their disk usage, scan any local or remote directory, requested
+  folders or the complete filesystem, and the program displays an image of all
+  the directories found.
+- **New screen reader**: Orca was the new screen reader introduced by GNOME in
+  2.16, using the Assistive Technology Service Provider Interface (AT-SPI) to
+  query the display and output he content using various combinations of speech
   synthesis, braille, and magnification, thus supporting all applications and
   toolkits that support AT-SPI.
-- Easier file permission manager: Nautilus gained the ability to change the
+- **Easier file permission manager**: Nautilus gained the ability to change the
   permissions of all files in a folder by right-clicking the folder and
   selecting Properties Permissions.
-- Simpler bug reporting: The Bug-Buddy utility is now automatically launched
+- **Simpler bug reporting**: The Bug-Buddy utility is now automatically launched
   when app crashes, asks fewer questions to save time and displays everything in
   a single window.
 
@@ -315,7 +320,8 @@ changes:
   program across multiple functions and files.
 - GCC can now do a form of Partial Dead Code Elimination, or PDCE. PDCE is a
   compiler optimization technique that removes code on some, but not all,
-  execution paths.
+  execution paths. However, it is not always useful, so GCC considers only
+  profitable cases.
 - GCC now has a value range propagation pass. This allows the compiler to
   eliminate bounds checks and branches. The results of the pass can also be used
   to accurately compute branch probabilities. This means that GCC will try to
@@ -369,7 +375,7 @@ changes:
     and software pipelining.
   - Generic parts of data reference analysis have been externalized to make this
     analysis available to other passes. This means that the compiler has moved
-    its memory-access analysis outside of the vectoizer into a shared module
+    its memory-access analysis outside of the vectorizer into a shared module
     accessible to multiple optimization passes, giving the benefit of not having
     to compute and recompute muliple memory-access analyses, improving the
     performance of the compiler.
@@ -383,3 +389,731 @@ changes:
     runnning SIMD (Single Instruction, Muliple Data) instructions to compute
     multiple partial reductions and combining the partial reductions to get the
     final result.
+- GCC now separates the "hot" and "cold" sections of code in a function rather
+  than considering them as one. A "hot" section of code is that code which is
+  run frequently, while a "cold" section of code is one that is rarely run. The
+  feature works best with profile feedback driven optimization. Profile feedback
+  driven optimization is when the compiler compiles a program with
+  "instrumentation" to collect execution statistics, that is, the profile, and
+  recompile the program with the profile. The profile gives GCC information
+  about the program, such as frequently-called functions, hot paths and cold
+  branches. This improves performance as the processor cache has more hot blocks
+  of code grouped together instead of those blocks being scattered around in the
+  cache due to cold branches that are rarely run. In other words, it increases
+  instruction cache locality and allows frequently-executed instructions to be
+  closer together instead of being scattered among rarely-executed paths.
+- GCC now avoids saving unnecessary arguments to the stack in `vararg` functions
+  if it can prove that they are unnecessary. `vararg` functions are those
+  functions that can take a variable (theoretically infinite) number of
+  arguments. If the pass is able to prove that those variable arguments are
+  never actually accessed, GCC will not save those arguments to the stack. This
+  improves performance as stack operations and memory writes occur less often
+  (eliminating memory traffic).
+- The release marks the completion of the transition of block-level profiling
+  from occuring at the RTL stage (RTL: Register Transfer Language) to occuring
+  at the GIMPLE/Tree-SSA stage. This is a significant change because GIMPLE
+  preserves high-level structures, so optimizations are more significant in that
+  stage. This makes profiling at the GIMPLE stage more consistent. Better
+  profiling drives smarter and more effective decisions regarding higher-level
+  optimizations by the compiler. The new implementation is much more reliable,
+  (hopefully, according to the changelog) avoiding profile mismatch errors when
+  using the `-fprofile-use` or `-fbranch-probabilities` options.
+- `-fprofile-use` now implies disabling the old RTL level loop optimizer
+  (`-fno-loop-optimize`) and speculative prefetching optimization
+  (`-fspeculative-prefetching`) and the `-ftree-based-profiling` were removed.
+- GCC can now emit code for protecting applications from stack-smashing attacks.
+  The protection is realized by buffer overflow detection and reordering of
+  stack variables to avoid pointer corruption.
+- Some built-in functions have been fortified to protect them against various
+  buffer overflow (and format string) vulnerabilities. Compared to the mudflap
+  bounds checking feature, the safe builtins have far smaller overhead. This
+  means that programs built using safe builtins should not experience any
+  measurable slowdown.
+
+The full list of changes can be found at
+[https://gcc.gnu.org/gcc-4.1/changes.html](https://gcc.gnu.org/gcc-4.1/changes.html).
+
+## Kubuntu 6.10
+
+Kubuntu 6.10 is the 4th major release of the Kubuntu flavor of the Ubuntu
+distribution of Linux. It features improvements for accessibility and laptop
+users.
+
+### Features
+
+These features are specific to Kubuntu. The default Ubuntu uses GNOME, so these
+features are mentioned separately under this heading.
+
+#### KDE 3.5.5
+
+KDE is an open-source graphical desktop environment composed of a bundle of
+programs like the window manager, the compositor, and tools that the user may
+want to use, like a productivity suite or browser. KDE features a Windows-like
+interface by default, with a taskbar at the bottom and the "Application
+Launcher" that resembles the Windows start menu. However, it is customizable and
+can be made to look drastically customizable.
+
+Kubuntu 6.10 came with KDE 3.5.5, which was mostly a bugfix release and did not
+introduce much. It has little significance and mostly removes some slight
+problems.
+
+The changelog for the release can be found at
+[https://kde.org/announcements/changelogs/pre5/changelog3_5_4to3_5_5/](https://kde.org/announcements/changelogs/pre5/changelog3_5_4to3_5_5/).
+
+#### Digikam
+
+Digikam is a free and open-source program for organizing images and editing tags
+and is developed by the KDE community.
+
+Kubuntu 6.10 is the first release of Kubuntu to come with Digikam and shipped
+version 0.8.2 of the program.
+
+#### Power management
+
+The release introduced a new power management applet that uses HAL (Hardware
+Abstraction Layer) to ensure reliable hibernation and long battery life.
+
+The applet in question is the KDE Guidance Power Manager and in this release its
+version is 0.7.0. KDE Guidance is a set of graphical tools built for system
+administration.
+
+#### Laptop buttons
+
+Most laptop buttons are now automatically supported without any extra
+configuration. This allowed for more functional keys on the laptop and thus a
+better experience for laptop users.
+
+#### Zeroconf and print sharing
+
+Zeroconf and print sharing allow users to browse their local network for devices
+to connect to.
+
+<!--Wikipedia: https://en.wikipedia.org/wiki/Zero-configuration_networking-->
+
+Zeroconf (zero-configuration networking) is a set of technologies that
+automatically configures an existing computer network based on the Internet
+Protocol Suite (TCP/IP) when network peripherals and/or computers are
+interconnected. It does not require manual operator intervention or special
+configuration servers. Without zeroconf, a network administrator must set up
+network services, such as Dynamic Host Configuration Protocol (DHCP) and Domain
+Name System (DNS), or configure each computer's network settings manually.
+Zeroconf is built on three core technologies: automatic assignment of numeric
+network addresses for networked devices, automatic distribution and resolution
+of computer hostnames, and automatic location of network services, such as
+printing devices. This automatically-configured network allows an application to
+query the network for connected devices so the user can browse through them.
+This also applies for print sharing.
+
+#### Accessibilty profiles
+
+A feature was added to the Install CD that allows selecting accessibility
+profiles. These can be accessed by pressing F5 in the boot options when booted
+from the Install CD. The available accessibility profiles are `None`,
+`High Contrast`, `Magnifier` and `Keyboard Modifiers`.
+
+### Upgrading from Kubuntu 6.06
+
+To upgrade from Kubuntu 6.06 LTS, users had to follow a specific set of steps as
+there was no GUI to simply upgrade during that time.
+
+Without an install CD, the user had to:
+
+1. Open `/etc/apt` in Konqueror, right-click on `sources.list` and choose
+   `Actions` → `Edit as Root`
+2. Change all instances of `dapper` to `edgy`
+3. Launch a console with K-Menu → System → Konsole
+4. Run:
+   ```
+   sudo apt-get update
+   sudo apt-get dist-upgrade
+   ```
+   and follow the prompts to upgrade.
+5. Run
+   `sudo apt-get install kubuntu-desktop python-qt3 python-kde3 ubuntu-minimal`
+   and follow the prompts to install.
+6. Reboot
+
+If the user had the Install CD for Kubuntu 6.10, they could put it in the drive
+and run `apt-cdrom` from the command line and follow the above steps.
+
+Although it appears complicated, it was a result of the absence of a one-click
+GUI for upgrades in Kubuntu.
+
+## Xubuntu 6.10
+
+Xubuntu 6.10 is the second release of the Xubuntu flavor of Ubuntu. It features
+the Xfce desktop environment and more lightweight applications.
+
+### Features
+
+Like Kubuntu, these features are specific to Xubuntu 6.10.
+
+#### Xfce 4.4RC1
+
+Xfce is free and open-source desktop environment for Linux and other Unix-like
+systems, aiming to be fast and lightweight while being appealing and easy to use
+at the same time. It was first released in 1997 and the name was originally XFce
+(with a capital F). It stood for XForms Common Environment, which referred to
+the XForms library, but no longer relies on it. However, the name was kept with
+a lowercase F.
+
+Xubuntu 6.06 LTS featured the first beta of Xfce 4.4, and 6.10 updates it to
+Xfce4.4RC1 (RC: Release Candidate). The release candidate fixes various bugs
+found in the betas leading up to the first release candidate. The
+[changelog](https://www.xfce.org/download/changelogs/4.4.1) also shows various
+improvements to `xfwm4` (Xfce Window Manager) and translation updates in other
+parts of the desktop environment.
+
+#### Accessibilty improvements
+
+Xfce also improves accessibility with better support for people with motor
+disabilities through configurable sticky keys, mouse keys and an on-screen
+keyboard to allow users to type with their mouse.
+
+#### Other
+
+These features are not major enough for separate headings.
+
+- **New artwork**: The release introduces new, fresh artwork for the boot
+  splash, login screen and wallpaper.
+- **New media player**: The `gxine` media player replaces `xfmedia`.
+- **New printer GUI**: A new printer GUI, `system-config-printer`, has been
+  brought over from Fedora Core 6 for a simpler printing experience.
+- **Easier app installation**: Packages can now be installed using
+  `gnome-app-install`.
+- **New programs**: A calculator and dictionary plugin for the panel is now
+  installed by default.
+- **Updated programs**: Programs like Firefox, `abiword` and `gnumeric` have
+  been updated.
+
+## Edubuntu 6.10
+
+Edubuntu is the official flavor of Ubuntu tailored for education. 6.10 is its
+third release, and features various improvements.
+
+Improvements in the Ubuntu base also benefits Edubuntu, such as an updated
+Firefox, GNOME 2.16, faster system startup and shutdown, and more.
+
+### Educational software
+
+Edubuntu features various free and open-source applications developed for
+education, such as:
+
+- The KDEEDu suite, version 3.5.5
+- Gcompris, another educational suite, version 7.4
+- Schooltool, a student information system, version 0.11
+- `tux4kids` applications
+- and many more
+
+### Server-side improvements
+
+Quoting the release announcement,
+
+> The Edubuntu classroom server install builds on the functionality from the
+> previous release simplifying common Linux classroom server deployment
+> processes. It is the first distribution that ships with a deeply integrated
+> out of the box working pre-release of the upcoming LTSP-5 (Linux Terminal
+> Server Project). LTSP-5 offers clients a lower TCO (total cost of ownership),
+> simpler installation and easier maintenance than typical IT deployments. With
+> all data stored on the server, administrators have substantially eliminated
+> the cost of updating individual workstations to ensure their security.
+>
+> Installing from the CD will provide you with an out of the box working thin
+> client environment, including sound and thin client block device support.
+>
+> Features of the integration work for LTSP-5 in Edubuntu include:
+>
+> - Automatic network configuration with DHCP service for servers with two or
+>   more network cards attached
+> - Language and session selection from the LTSP login manager – allowing a user
+>   to choose from any of the languages and desktop sessions installed on the
+>   server
+> - Student Control Panel Control LTSP connections in a school environment
+>   Additional features added in edgy to make it more effective
+> - Support for locally attached devices on thin clients – allowing users to
+>   access cameras, ipods, USB sticks or CDRoms on the thin client
+> - Printing support - enabling printing on a local printer from the thin client
+> - Full support for Etherboot
+> - Network swap memory by default which drops the minimal requirements for Thin
+>   Clients to 32Mb
+> - Centralized logging by default
+> - Sound support switched on by default
+> - 16bit colors by default for Thin clients to save network bandwith
+
+## Announcement
+
+### Base Ubuntu
+
+The base Ubuntu announcement can be found
+[here](https://lists.ubuntu.com/archives/ubuntu-announce/2006-October/000093.html).
+It reads:
+
+> The Ubuntu team is proud to announce the release of Ubuntu 6.10, codenamed
+> "Edgy Eft". This release includes both installable Desktop CDs and alternate
+> text-mode installation CDs for several architectures.
+>
+> Ubuntu is a Linux distribution for your desktop or server, with a fast and
+> easy install, regular releases, a tight selection of excellent packages
+> installed by default, every other package you can imagine available with a few
+> clicks, and professional technical support from Canonical Limited and hundreds
+> of other companies around the world.
+>
+> Ubuntu 6.10 will be supported for 18 months on both desktops and servers. Note
+> that the previous stable release (6.06 LTS) is a long-term support release,
+> and so users requiring a longer support lifetime may choose to continue using
+> that version rather than upgrade to or install 6.10.
+>
+> ## To Get Ubuntu 6.10
+>
+> Download Ubuntu 6.10 here:
+>
+> Europe: http://se.releases.ubuntu.com/6.10/
+> http://nl2.releases.ubuntu.com/6.10/
+>
+> New Zealand: http://nz.releases.ubuntu.com/ubuntu-releases/6.10/
+>
+> Australia: http://au.releases.ubuntu.com/6.10/
+>
+> France:  
+>  http://fr.releases.ubuntu.com/6.10/
+>
+> The Netherlands: http://nl.releases.ubuntu.com/6.10/
+>
+> Poland: http://pl.releases.ubuntu.com/6.10/
+>
+> Germany http://de.releases.ubuntu.com/6.10/
+>
+> United Kingdom and the rest of the world: http://releases.ubuntu.com/6.10/
+>
+> To burn these CD images, you will need 700MB media.
+>
+> Ubuntu 6.10 media can also be purchased from a number of retailers. For more
+> information, visit:
+>
+> http://www.ubuntu.com/products/GetUbuntu
+>
+> ## About Ubuntu 6.10
+>
+> Highlights of this release include:
+>
+> On the desktop
+>
+> This version introduces a host of new features, an improved interface and a
+> wide variety of new applications and desktop tools making Ubuntu 6.10 flexible
+> and user-friendly. Enhancements include:
+>
+> - Tomboy, an easy-to-use and efficient note-taking tool
+> - F-Spot, a photo management tool that enables tagging, photo editing and
+>   automatic uploading to on-line web management sites such as Flickr
+> - GNOME 2.16, which in addition to new features such as enhanced power
+>   management, makes the GNOME desktop more secure, faster and more stable
+> - Substantially faster startup and shutdown with eye-catching high-resolution
+>   graphics
+> - The latest Firefox web browser, version 2.0, which offers inline spell check
+>   support in web forms, easy recovery of crashed sessions, built-in phishing
+>   detectors, enhanced search engine management with built in OpenSearch
+>   support, and better support for previewing and subscribing to web feeds
+> - Proactive security features, preventing many common security vulnerabilities
+>   even before they are discovered
+> - Evolution 2.8.0, which brings new features such as vertical message panes
+>
+> On the Server
+>
+> The Ubuntu server edition builds on the functionality from the previous
+> release simplifying common Linux server deployment processes. It also includes
+> a pre-release of the upcoming LTSP-5 (Linux Terminal Server Project). LTSP-5
+> offers clients a lower TCO (total cost of ownership), simpler installation and
+> easier maintenance than typical IT deployments. With all data stored on the
+> server, administrators have substantially eliminated the cost of updating
+> individual workstations to ensure their security.
+>
+> Enhancements to LTSP-5 include:
+>
+> - Automatic network configuration with DHCP service for servers with two or
+>   more network cards attached -- available with the alternate CD installer
+> - Language and session selection from the LTSP login manager -- allowing a
+>   user to choose from any of the languages and desktop sessions installed on
+>   the server
+> - Support for locally attached devices on thin clients -- allowing users to
+>   access cameras, iPods or USB sticks on the thin client
+> - Printing support - enabling printing on a local printer from the thin client
+> - Full support for Etherboot
+>
+> Localization
+>
+> - Automatic setup of non-Latin input methods
+> - Menu item translations included in language packs, for faster integration of
+>   new and updated translations provided through Rosetta
+> - Ongoing translation updates from the Rosetta web service:
+>
+>   https://launchpad.net/distros/ubuntu/edgy/+translations
+>
+> Installation and Upgrades
+>
+> Under the hood
+>
+> - GCC 4.1
+> - Glibc 2.4
+> - Linux 2.6.17
+>
+> As always, Ubuntu includes the very best of the 100% Free / Libre application
+> software world, and each new release incorporates countless new features and
+> bug fixes from the global development community. More detailed release notes
+> are at
+>
+> http://wiki.ubuntu.com/EdgyReleaseNotes
+>
+> ## Helping Shape Ubuntu
+>
+> If you would like to help shape Ubuntu, take a look at the list of ways you
+> can participate at
+>
+> http://www.ubuntu.com/community/participate/
+>
+> If you have a question, or if you think you may have found a bug but aren't
+> sure, try asking on the #ubuntu channel on IRC.FreeNode.net, on the Ubuntu
+> Users mailing list, or on the Ubuntu forums:
+>
+> http://lists.ubuntu.com/mailman/listinfo/ubuntu-users
+> http://www.ubuntuforums.org/
+>
+> ## More Information
+>
+> You can find out more about Ubuntu and about this release on our website:
+>
+> http://www.ubuntu.com/
+>
+> To sign up for future Ubuntu announcements, please subscribe to Ubuntu's very
+> low volume announcement list at:
+>
+> http://lists.ubuntu.com/mailman/listinfo/ubuntu-announce
+
+### Edubuntu
+
+The release announcement for Edubntu 6.10 can be found
+[here](https://lists.ubuntu.com/archives/ubuntu-announce/2006-October/000095.html),
+and it reads:
+
+> The Edubuntu team is proud to announce the release of Edubuntu 6.10, codenamed
+> "Edgy Eft". This release includes both Installation CDs and installable Live
+> CDs for several architectures.
+>
+> ## About Edubuntu
+>
+> Edubuntu is the education-focused variant of Ubuntu, with a fast and easy
+> install, regular releases, and a tight selection of excellent packages
+> installed by default, including education and productivity applications.
+> Almost every other package you can imagine is available with a few clicks from
+> a global network of mirrors, and professional commercial technical support
+> from Canonical Ltd and hundreds of other companies around the world.
+>
+> Edubuntu 6.10 will be supported for 18 months on both desktops and servers.
+> Note that the previous stable release (6.06 LTS) is a long-term support
+> release, and so users requiring a longer support lifetime may choose to
+> continue using that version rather than upgrade to or install 6.10.
+>
+> ## To Get Edubuntu 6.10
+>
+> Download Edubuntu 6.10 here: http://www.edubuntu.org/Download
+>
+> To burn these CD images, you will need 700MB media.
+>
+> ## About Edubuntu 6.10
+>
+> Highlights of this release include:
+>
+> ## On the Desktop
+>
+> Edubuntu includes the very recent versions of well known free educational
+> software like:
+>
+> - The KDEedu suite in version 3.5.5
+> - Gcompris 7.4
+> - Schooltool 0.11
+> - The tux4kids applications
+>
+> and many many more.
+>
+> This version introduces a host of new features, an improved interface and a
+> wide variety of new applications and desktop tools making Edubuntu 6.10
+> flexible and user-friendly.
+>
+> Enhancements in our Ubuntu base provide these benefits for Edubuntu:
+>
+> - GNOME 2.16, which in addition to new features such as enhanced power
+>   management, makes the GNOME desktop more secure, faster and more stable
+> - Substantially faster startup and shutdown with eye-catching high-resolution
+>   graphics
+> - The latest Firefox web browser, which offers inline spell check support in
+>   web forms, easy recovery of crashed sessions, built-in phishing detectors,
+>   enhanced search engine management with built in OpenSearch support, and
+>   better support for previewing and subscribing to web feeds
+> - Proactive security features, preventing many common security vulnerabilities
+>   even before they are discovered
+> - Evolution 2.8.0, which brings new features such as vertical message panes
+>
+> ## On the Server
+>
+> The Edubuntu classroom server install builds on the functionality from the
+> previous release simplifying common Linux classroom server deployment
+> processes. It is the first distribution that ships with a deeply integrated
+> out of the box working pre-release of the upcoming LTSP-5 (Linux Terminal
+> Server Project). LTSP-5 offers clients a lower TCO (total cost of ownership),
+> simpler installation and easier maintenance than typical IT deployments. With
+> all data stored on the server, administrators have substantially eliminated
+> the cost of updating individual workstations to ensure their security.
+>
+> Installing from the CD will provide you with an out of the box working thin
+> client environment, including sound and thin client block device support.
+>
+> Features of the integration work for LTSP-5 in Edubuntu include:
+>
+> - Automatic network configuration with DHCP service for servers with two or
+>   more network cards attached
+> - Language and session selection from the LTSP login manager – allowing a user
+>   to choose from any of the languages and desktop sessions installed on the
+>   server
+> - Student Control Panel Control LTSP connections in a school environment
+>   Additional features added in edgy to make it more effective
+> - Support for locally attached devices on thin clients – allowing users to
+>   access cameras, ipods, USB sticks or CDRoms on the thin client
+> - Printing support - enabling printing on a local printer from the thin client
+> - Full support for Etherboot
+> - Network swap memory by default which drops the minimal requirements for Thin
+>   Clients to 32Mb
+> - Centralized logging by default
+> - Sound support switched on by default
+> - 16bit colors by default for Thin clients to save network bandwith
+>
+> ## Localization
+>
+> - Automatic setup of non-Latin input methods
+> - Menu item translations included in language packs, for faster integration of
+>   new and updated translations provided through Rosetta
+> - Ongoing translation updates from the Rosetta web service:
+>   https://launchpad.net/distros/ubuntu/edgy/+translations
+>
+> ## Under the hood
+>
+> - GCC 4.1
+> - Glibc 2.4
+> - Linux 2.6.17
+>
+> As always, Edubuntu includes the very best of the 100% Free / Libre
+> application software world, and each new release incorporates countless new
+> features and bugfixes from the global development community. More detailed
+> release notes are at
+>
+> http://wiki.edubuntu.org/EdgyReleaseNotes
+>
+> ## Helping Shape Edubuntu
+>
+> If you would like to help shape Ubuntu, take a look at the list of ways you
+> can participate at
+>
+> http://www.edubuntu.org/Community
+>
+> If you have a question, or if you think you may have found a bug but aren't
+> sure, try asking on:
+>
+> - The #edubuntu channel on IRC.FreeNode.net
+> - The Edubuntu Users or Edubuntu Developers mailing list:
+>   http://lists.ubuntu.com/mailman/listinfo/edubuntu-users
+> - The Edubuntu Developers mailing list:
+>   http://lists.ubuntu.com/mailman/listinfo/edubuntu-devel
+> - Or on the Ubuntu forums: http://www.ubuntuforums.org
+>
+> ## More Information
+>
+> You can find out more about Edubuntu and about this release on our website:
+>
+> http://www.edubuntu.org/
+>
+> To sign up for future Edubuntu related announcements, please subscribe to
+> Ubuntu's very low volume announcement list at:
+>
+> http://lists.ubuntu.com/mailman/listinfo/ubuntu-announce
+>
+> -- Richard Weideman richard at ubuntu.com
+>
+> Ubuntu Education Programme Manager http://www.edubuntu.org
+> http://www.ubuntu.com
+
+### Kubuntu
+
+The announcement for Kubuntu 6.10 can be found
+[here](https://lists.ubuntu.com/archives/ubuntu-announce/2006-October/000094.html).
+It reads:
+
+> Kubuntu 6.10 brings a bit of edgyness to this release, including a new and
+> improved desktop, artwork, applications and much more. The goal for Kubuntu
+> 6.10 is to create a secure and stable environment featuring some of today's
+> leading applications and technology in order to be the foundation for future
+> releases of Kubuntu. The development team is very happy to bring you this new
+> release, we hope you enjoy your Kubuntu 6.10 system.
+>
+> Kubuntu 6.10 will be supported for 18 months on both desktops and servers.
+> Note that the previous stable release (6.06 LTS) is a long-term support
+> release, and so users requiring a longer support lifetime may choose to
+> continue using that version rather than upgrade to or install 6.10.
+>
+> To download Kubuntu 6.10, go to:
+>
+> http://www.kubuntu.org/download.php
+>
+> ## New in Kubuntu 6.10
+>
+> - K Desktop Environment 3.5.5: Kubuntu 6.10 is the first distribution to
+>   include this new KDE release.
+> - Digikam: now included by default this advanced digital photo management
+>   application provides you with the tools necessary to view, manage, edit,
+>   enhance, organise, tag and share photographs.
+> - Power Management: Kubuntu received a new power management applet which uses
+>   HAL to ensure reliable hibernation and long battery life.
+> - Hardware Database Client: profile your system from a basic set of questions
+>   and upload the details to the Ubuntu Hardware Database, making it easier to
+>   report bugs and allowing the developers to better understand the hardware
+>   requirements.
+> - Laptop Buttons: whether it is controlling your volume, your multimedia
+>   applications or your email and Internet access, Kubuntu now supports most
+>   laptop buttons without setup.
+> - Zeroconf and print sharing: let you browse the local network for available
+>   services.
+> - Accessibility Profiles: Kubuntu now offers users the ability to use a
+>   preconfigured accessibility profile depending on the type of disability
+>   right from the initial point of setup. Press F5 at the CD boot screen to
+>   choose a profile.
+> - Free Software for Windows: you also have some popular Free and Open Source
+>   Software (FOSS) available to install on your Microsoft Windows operating
+>   system to preview great Kubuntu applications and ease the path to freedom.
+>
+> ## Under the Hood
+>
+> GCC 4.1 Glibc 2.4 Linux 2.6.17 LTSP 5 available for thin clients
+>
+> ## Upgrading from Kubuntu 6.06 LTS
+>
+> - In Konqueror go to /etc/apt, right click on sources.list and choose Actions
+>   -> Edit as Root
+> - Change all instances of dapper to edgy
+> - Launch a console with K-Menu -> System -> Konsole
+> - In the console run: sudo apt-get update
+> - In the console run: sudo apt-get dist-upgrade and follow the prompts to
+>   upgrade
+> - In the console run: sudo apt-get install kubuntu-desktop python-qt3
+>   python-kde3 ubuntu-minimal and follow the prompts to install
+> - Reboot your computer
+>
+> If you have a Kubuntu 6.10 CD, put it in the drive, and run apt-cdrom from the
+> command line. Then follow the instructions above.
+>
+> ## Feedback and Helping
+>
+> We welcome feedback and help with making the next version of Kubuntu.
+>
+> Comments can be left on https://wiki.kubuntu.org/KubuntuEdgyReleaseComments
+>
+> Any known problems can be found at
+> https://wiki.kubuntu.org/KubuntuEdgyKnownProblems
+>
+> For support and/or bug issues, report them on Launchpad:
+>
+> Bugs - http://launchpad.net/distros/ubuntu/+bugs Support -
+> https://launchpad.net/distros/ubuntu/+tickets
+>
+> If you have questions, please try asking on one of the following:
+>
+> IRC - Server irc.ubuntu.com, Channel #kubuntu Kubuntu Users Mailing List -
+> http://lists.ubuntu.com/mailman/listinfo/kubuntu-users Kubuntu Forums -
+> http://www.kubuntuforums.net
+>
+> Visit https://wiki.kubuntu.org/HelpingKubuntu if you are interested in helping
+> the Kubuntu team.
+>
+> ## Contact
+>
+> For more information about Kubuntu, visit our website at
+> http://www.kubuntu.org
+>
+> Press contact:
+>
+> Jonathan Riddell <jriddell @ubuntu.com> +44 (0)7941 938912 (Scotland)
+
+### Xubuntu
+
+The release announcement for Xubuntu 6.10 can be found
+[here](https://lists.ubuntu.com/archives/ubuntu-announce/2006-October/000096.html).
+It reads:
+
+> The Xubuntu community is happy to announce the release of Xubuntu 6.10,
+> codenamed "Edgy Eft". This release includes both installable Desktop CDs and
+> alternate text-mode installation CDs for several architectures.
+>
+> Xubuntu is a Linux distribution for your desktop or server, with a fast and
+> easy install, regular releases, a tight selection of excellent packages
+> installed by default, every other package you can imagine available with a few
+> clicks.
+>
+> ## Upgrading from Xubuntu 6.06
+>
+> NOTE: There is a recently discovered bug which makes upgrading via the
+> graphical update-manager crash and leave the upgrade process in a state that
+> can only be recovered from by dropping to the command line.
+>
+> Therefore, it is recommended that instead of upgrade-manager, the command line
+> upgrade method is used by invoking apt-get dist-upgrade.
+>
+> Neither a clean install from the CD nor the other Ubuntu variants are affected
+> by this bug.
+>
+> ## Download
+>
+> Get the desktop or alternate images for your architecture here and use
+> torrents if you can
+>
+> http://cdimage.ubuntu.com/xubuntu/releases/6.10/release/
+>
+> ## Visible changes since Xubuntu 6.06
+>
+> - Newer Xfce Desktop Environment (4.4 RC1) which brings trashcan support in
+>   Thunar and the panel, accessibility settings for the keyboard, and other
+>   improvements and fixes.
+> - New artwork for the boot splash, login screen and wallpaper.
+> - The more mature gxine media player replaces xfmedia.
+> - New printer GUI: system-config-printer from Fedora Core 6.
+> - Easier installation of packages with gnome-app-install.
+> - A calculator application and a dictionary panel plugin.
+> - Better support for users with motor disabilities via configurable sticky
+>   keys, mouse keys and an on-screen-keyboard application.
+> - Newer versions of firefox, abiword and gnumeric.
+> - New LTSP version on the alternate CD for setting up thin client networks.
+> - Other changes common to all Ubuntu variants such as the new 2.6.17 kernel,
+>   Xorg 7.1 and the upstart init system.
+>
+> The http://xubuntu.org website has just relaunched and is now actively
+> maintained by the community.
+>
+> ## System requirements
+>
+> To run the liveCD at least 128M of RAM is recommended For installation 1.5G of
+> free hard drive space is needed besides swap space.
+>
+> ## Feedback
+>
+> Get in touch with the user and developer community
+>
+> http://xubuntu.org/help
+>
+> Report bugs you find in Launchpad
+>
+> https://launchpad.net/distros/ubuntu/+bugs
+
+## System requirements
+
+### Ubuntu
+
+### Edubuntu
+
+### Kubuntu
+
+### Xubuntu
