@@ -66,7 +66,14 @@
   }
 
   blockquote {
-    border-left: solid color.change($color, $blackness: 20%) 5px;
+    @if color.channel($color, "lightness", $space: hsl)>50% {
+      border-left: solid color.change($color, $blackness: 50%) 5px;
+    }
+
+    @else {
+      border-left: solid color.change($color, $whiteness: 50%) 5px;
+    }
+
     margin: 0;
     padding-left: 18px;
   }
