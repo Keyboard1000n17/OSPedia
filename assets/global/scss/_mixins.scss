@@ -65,6 +65,12 @@
     }
   }
 
+  blockquote {
+    border-left: solid color.change($color, $blackness: 20%) 5px;
+    margin: 0;
+    padding-left: 18px;
+  }
+
   // Define grid-related styles here
   div.wrapper {
     position: absolute;
