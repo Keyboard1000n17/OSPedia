@@ -648,6 +648,7 @@ The base Ubuntu announcement can be found
 [here](https://lists.ubuntu.com/archives/ubuntu-announce/2006-October/000093.html).
 It reads:
 
+<!--prettier-ignore-->
 > The Ubuntu team is proud to announce the release of Ubuntu 6.10, codenamed
 > "Edgy Eft". This release includes both installable Desktop CDs and alternate
 > text-mode installation CDs for several architectures.
@@ -663,7 +664,8 @@ It reads:
 > and so users requiring a longer support lifetime may choose to continue using
 > that version rather than upgrade to or install 6.10.
 >
-> ## To Get Ubuntu 6.10
+> To Get Ubuntu 6.10  
+> \------------------
 >
 > Download Ubuntu 6.10 here:
 >
@@ -674,7 +676,7 @@ It reads:
 >
 > Australia: http://au.releases.ubuntu.com/6.10/
 >
-> France:  
+> France:
 >  http://fr.releases.ubuntu.com/6.10/
 >
 > The Netherlands: http://nl.releases.ubuntu.com/6.10/
@@ -692,7 +694,8 @@ It reads:
 >
 > http://www.ubuntu.com/products/GetUbuntu
 >
-> ## About Ubuntu 6.10
+> About Ubuntu 6.10  
+> \-----------------
 >
 > Highlights of this release include:
 >
@@ -763,7 +766,8 @@ It reads:
 >
 > http://wiki.ubuntu.com/EdgyReleaseNotes
 >
-> ## Helping Shape Ubuntu
+> Helping Shape Ubuntu  
+> \--------------------
 >
 > If you would like to help shape Ubuntu, take a look at the list of ways you
 > can participate at
@@ -777,7 +781,8 @@ It reads:
 > http://lists.ubuntu.com/mailman/listinfo/ubuntu-users
 > http://www.ubuntuforums.org/
 >
-> ## More Information
+> More Information  
+> \-------------------
 >
 > You can find out more about Ubuntu and about this release on our website:
 >
@@ -794,11 +799,13 @@ The release announcement for Edubntu 6.10 can be found
 [here](https://lists.ubuntu.com/archives/ubuntu-announce/2006-October/000095.html),
 and it reads:
 
+<!--prettier-ignore-->
 > The Edubuntu team is proud to announce the release of Edubuntu 6.10, codenamed
 > "Edgy Eft". This release includes both Installation CDs and installable Live
 > CDs for several architectures.
 >
-> ## About Edubuntu
+> About Edubuntu  
+> \--------------
 >
 > Edubuntu is the education-focused variant of Ubuntu, with a fast and easy
 > install, regular releases, and a tight selection of excellent packages
@@ -812,17 +819,20 @@ and it reads:
 > release, and so users requiring a longer support lifetime may choose to
 > continue using that version rather than upgrade to or install 6.10.
 >
-> ## To Get Edubuntu 6.10
+> To Get Edubuntu 6.10  
+> \--------------------
 >
 > Download Edubuntu 6.10 here: http://www.edubuntu.org/Download
 >
 > To burn these CD images, you will need 700MB media.
 >
-> ## About Edubuntu 6.10
+> About Edubuntu 6.10  
+> \-------------------
 >
 > Highlights of this release include:
 >
-> ## On the Desktop
+> On the Desktop  
+> \--------------
 >
 > Edubuntu includes the very recent versions of well known free educational
 > software like:
@@ -852,7 +862,8 @@ and it reads:
 >   even before they are discovered
 > - Evolution 2.8.0, which brings new features such as vertical message panes
 >
-> ## On the Server
+> On the Server  
+> \-------------
 >
 > The Edubuntu classroom server install builds on the functionality from the
 > previous release simplifying common Linux classroom server deployment
@@ -885,7 +896,8 @@ and it reads:
 > - Sound support switched on by default
 > - 16bit colors by default for Thin clients to save network bandwith
 >
-> ## Localization
+> Localization  
+> \------------
 >
 > - Automatic setup of non-Latin input methods
 > - Menu item translations included in language packs, for faster integration of
@@ -893,7 +905,8 @@ and it reads:
 > - Ongoing translation updates from the Rosetta web service:
 >   https://launchpad.net/distros/ubuntu/edgy/+translations
 >
-> ## Under the hood
+> Under the hood  
+> \--------------
 >
 > - GCC 4.1
 > - Glibc 2.4
@@ -906,7 +919,8 @@ and it reads:
 >
 > http://wiki.edubuntu.org/EdgyReleaseNotes
 >
-> ## Helping Shape Edubuntu
+> Helping Shape Edubuntu  
+> \----------------------
 >
 > If you would like to help shape Ubuntu, take a look at the list of ways you
 > can participate at
@@ -923,7 +937,8 @@ and it reads:
 >   http://lists.ubuntu.com/mailman/listinfo/edubuntu-devel
 > - Or on the Ubuntu forums: http://www.ubuntuforums.org
 >
-> ## More Information
+> More Information  
+> \----------------
 >
 > You can find out more about Edubuntu and about this release on our website:
 >
@@ -945,92 +960,113 @@ The announcement for Kubuntu 6.10 can be found
 [here](https://lists.ubuntu.com/archives/ubuntu-announce/2006-October/000094.html).
 It reads:
 
-> Kubuntu 6.10 brings a bit of edgyness to this release, including a new and
-> improved desktop, artwork, applications and much more. The goal for Kubuntu
-> 6.10 is to create a secure and stable environment featuring some of today's
-> leading applications and technology in order to be the foundation for future
-> releases of Kubuntu. The development team is very happy to bring you this new
-> release, we hope you enjoy your Kubuntu 6.10 system.
+<!--prettier-ignore-->
+> Kubuntu 6.10 brings a bit of edgyness to this release, including a new
+> and improved desktop, artwork, applications and much more. The goal
+> for Kubuntu 6.10 is to create a secure and stable environment
+> featuring some of today's leading applications and technology in order
+> to be the foundation for future releases of Kubuntu. The development
+> team is very happy to bring you this new release, we hope you enjoy
+> your Kubuntu 6.10 system.
 >
-> Kubuntu 6.10 will be supported for 18 months on both desktops and servers.
-> Note that the previous stable release (6.06 LTS) is a long-term support
-> release, and so users requiring a longer support lifetime may choose to
-> continue using that version rather than upgrade to or install 6.10.
+> Kubuntu 6.10 will be supported for 18 months on both desktops and
+> servers. Note that the previous stable release (6.06 LTS) is a
+> long-term support release, and so users requiring a longer support
+> lifetime may choose to continue using that version rather than upgrade
+> to or install 6.10.
 >
 > To download Kubuntu 6.10, go to:
 >
 > http://www.kubuntu.org/download.php
 >
-> ## New in Kubuntu 6.10
+> New in Kubuntu 6.10  
+> \-------------------
 >
-> - K Desktop Environment 3.5.5: Kubuntu 6.10 is the first distribution to
->   include this new KDE release.
-> - Digikam: now included by default this advanced digital photo management
->   application provides you with the tools necessary to view, manage, edit,
->   enhance, organise, tag and share photographs.
-> - Power Management: Kubuntu received a new power management applet which uses
->   HAL to ensure reliable hibernation and long battery life.
-> - Hardware Database Client: profile your system from a basic set of questions
->   and upload the details to the Ubuntu Hardware Database, making it easier to
->   report bugs and allowing the developers to better understand the hardware
->   requirements.
-> - Laptop Buttons: whether it is controlling your volume, your multimedia
->   applications or your email and Internet access, Kubuntu now supports most
->   laptop buttons without setup.
-> - Zeroconf and print sharing: let you browse the local network for available
->   services.
-> - Accessibility Profiles: Kubuntu now offers users the ability to use a
->   preconfigured accessibility profile depending on the type of disability
->   right from the initial point of setup. Press F5 at the CD boot screen to
->   choose a profile.
-> - Free Software for Windows: you also have some popular Free and Open Source
->   Software (FOSS) available to install on your Microsoft Windows operating
->   system to preview great Kubuntu applications and ease the path to freedom.
+> * K Desktop Environment 3.5.5: Kubuntu 6.10 is the first distribution
+>   to include this new KDE release.
 >
-> ## Under the Hood
+> * Digikam: now included by default this advanced digital photo
+>   management application provides you with the tools necessary to
+>   view, manage, edit, enhance, organise, tag and share photographs.
 >
-> GCC 4.1 Glibc 2.4 Linux 2.6.17 LTSP 5 available for thin clients
+> * Power Management: Kubuntu received a new power management applet
+>   which uses HAL to ensure reliable hibernation and long battery life.
 >
-> ## Upgrading from Kubuntu 6.06 LTS
+> * Hardware Database Client: profile your system from a basic set of
+>   questions and upload the details to the Ubuntu Hardware Database,
+>   making it easier to report bugs and allowing the developers to
+>   better understand the hardware requirements.
 >
-> - In Konqueror go to /etc/apt, right click on sources.list and choose Actions
->   -> Edit as Root
-> - Change all instances of dapper to edgy
-> - Launch a console with K-Menu -> System -> Konsole
-> - In the console run: sudo apt-get update
-> - In the console run: sudo apt-get dist-upgrade and follow the prompts to
->   upgrade
-> - In the console run: sudo apt-get install kubuntu-desktop python-qt3
+> * Laptop Buttons: whether it is controlling your volume, your
+>   multimedia applications or your email and Internet access, Kubuntu
+>   now supports most laptop buttons without setup.
+>
+> * Zeroconf and print sharing: let you browse the local network for
+>   available services.
+>
+> * Accessibility Profiles: Kubuntu now offers users the ability to use
+>   a preconfigured accessibility profile depending on the type of
+>   disability right from the initial point of setup.  Press F5 at the
+>   CD boot screen to choose a profile.
+>
+> * Free Software for Windows: you also have some popular Free and Open
+>   Source Software (FOSS) available to install on your Microsoft
+>   Windows operating system to preview great Kubuntu applications and
+>   ease the path to freedom.
+>
+> Under the Hood  
+> \--------------
+>
+> GCC 4.1
+> Glibc 2.4
+> Linux 2.6.17
+> LTSP 5 available for thin clients
+>
+> Upgrading from Kubuntu 6.06 LTS  
+> \-------------------------------
+>
+> * In Konqueror go to /etc/apt, right click on sources.list and choose
+>   Actions -> Edit as Root
+> * Change all instances of dapper to edgy
+> * Launch a console with K-Menu -> System -> Konsole
+> * In the console run: sudo apt-get update
+> * In the console run: sudo apt-get dist-upgrade and follow the prompts
+>   to upgrade
+> * In the console run: sudo apt-get install kubuntu-desktop python-qt3
 >   python-kde3 ubuntu-minimal and follow the prompts to install
-> - Reboot your computer
+> * Reboot your computer
 >
-> If you have a Kubuntu 6.10 CD, put it in the drive, and run apt-cdrom from the
-> command line. Then follow the instructions above.
+> If you have a Kubuntu 6.10 CD, put it in the drive, and run apt-cdrom
+> from the command line. Then follow the instructions above.
 >
-> ## Feedback and Helping
+> Feedback and Helping  
+> \--------------------
 >
 > We welcome feedback and help with making the next version of Kubuntu.
 >
-> Comments can be left on https://wiki.kubuntu.org/KubuntuEdgyReleaseComments
+> Comments can be left on
+>  https://wiki.kubuntu.org/KubuntuEdgyReleaseComments
 >
 > Any known problems can be found at
-> https://wiki.kubuntu.org/KubuntuEdgyKnownProblems
+>  https://wiki.kubuntu.org/KubuntuEdgyKnownProblems
 >
 > For support and/or bug issues, report them on Launchpad:
 >
-> Bugs - http://launchpad.net/distros/ubuntu/+bugs Support -
-> https://launchpad.net/distros/ubuntu/+tickets
+> Bugs - http://launchpad.net/distros/ubuntu/+bugs
+> Support - https://launchpad.net/distros/ubuntu/+tickets
 >
 > If you have questions, please try asking on one of the following:
 >
-> IRC - Server irc.ubuntu.com, Channel #kubuntu Kubuntu Users Mailing List -
-> http://lists.ubuntu.com/mailman/listinfo/kubuntu-users Kubuntu Forums -
-> http://www.kubuntuforums.net
+> IRC - Server irc.ubuntu.com, Channel #kubuntu
+> Kubuntu Users Mailing List -
+> http://lists.ubuntu.com/mailman/listinfo/kubuntu-users
+> Kubuntu Forums - http://www.kubuntuforums.net
 >
-> Visit https://wiki.kubuntu.org/HelpingKubuntu if you are interested in helping
-> the Kubuntu team.
+> Visit https://wiki.kubuntu.org/HelpingKubuntu if you are interested in
+> helping the Kubuntu team.
 >
-> ## Contact
+> Contact  
+> \-------
 >
 > For more information about Kubuntu, visit our website at
 > http://www.kubuntu.org
@@ -1045,60 +1081,68 @@ The release announcement for Xubuntu 6.10 can be found
 [here](https://lists.ubuntu.com/archives/ubuntu-announce/2006-October/000096.html).
 It reads:
 
+<!--prettier-ignore-->
 > The Xubuntu community is happy to announce the release of Xubuntu 6.10,
-> codenamed "Edgy Eft". This release includes both installable Desktop CDs and
-> alternate text-mode installation CDs for several architectures.
+> codenamed "Edgy Eft". This release includes both installable Desktop CDs
+> and alternate text-mode installation CDs for several architectures.
 >
-> Xubuntu is a Linux distribution for your desktop or server, with a fast and
-> easy install, regular releases, a tight selection of excellent packages
-> installed by default, every other package you can imagine available with a few
-> clicks.
+> Xubuntu is a Linux distribution for your desktop or server, with a fast
+> and easy install, regular releases, a tight selection of excellent
+> packages installed by default, every other package you can imagine
+> available with a few clicks.
 >
-> ## Upgrading from Xubuntu 6.06
+> Upgrading from Xubuntu 6.06  
+> \--------------------------------------------
 >
 > NOTE: There is a recently discovered bug which makes upgrading via the
-> graphical update-manager crash and leave the upgrade process in a state that
-> can only be recovered from by dropping to the command line.
+> graphical update-manager crash and leave the upgrade process in a state
+> that can only be recovered from by dropping to the command line.
 >
-> Therefore, it is recommended that instead of upgrade-manager, the command line
-> upgrade method is used by invoking apt-get dist-upgrade.
+> Therefore, it is recommended that instead of upgrade-manager, the
+> command line upgrade method is used by invoking apt-get dist-upgrade.
 >
-> Neither a clean install from the CD nor the other Ubuntu variants are affected
-> by this bug.
+> Neither a clean install from the CD nor the other Ubuntu variants are
+> affected by this bug.
 >
-> ## Download
 >
+> Download  
+> \-------------------
 > Get the desktop or alternate images for your architecture here and use
 > torrents if you can
 >
 > http://cdimage.ubuntu.com/xubuntu/releases/6.10/release/
 >
-> ## Visible changes since Xubuntu 6.06
 >
-> - Newer Xfce Desktop Environment (4.4 RC1) which brings trashcan support in
->   Thunar and the panel, accessibility settings for the keyboard, and other
->   improvements and fixes.
-> - New artwork for the boot splash, login screen and wallpaper.
-> - The more mature gxine media player replaces xfmedia.
-> - New printer GUI: system-config-printer from Fedora Core 6.
-> - Easier installation of packages with gnome-app-install.
-> - A calculator application and a dictionary panel plugin.
-> - Better support for users with motor disabilities via configurable sticky
->   keys, mouse keys and an on-screen-keyboard application.
-> - Newer versions of firefox, abiword and gnumeric.
-> - New LTSP version on the alternate CD for setting up thin client networks.
-> - Other changes common to all Ubuntu variants such as the new 2.6.17 kernel,
->   Xorg 7.1 and the upstart init system.
+> Visible changes since Xubuntu 6.06  
+> \----------------------------------------------------
 >
-> The http://xubuntu.org website has just relaunched and is now actively
+> * Newer Xfce Desktop Environment  (4.4 RC1) which brings trashcan
+>   support in Thunar and the panel, accessibility settings for the
+>   keyboard, and other improvements and fixes.
+> * New artwork for the boot splash, login screen and wallpaper.
+> * The more mature gxine media player replaces xfmedia.
+> * New printer GUI: system-config-printer from Fedora Core 6.
+> * Easier installation of packages with gnome-app-install.
+> * A calculator application and a dictionary panel plugin.
+> * Better support for users with motor disabilities via configurable
+>   sticky keys, mouse keys and an on-screen-keyboard application.
+> * Newer versions of firefox, abiword and gnumeric.
+> * New LTSP version on the alternate CD for setting up thin client
+>   networks.
+> * Other changes common to all Ubuntu variants such as the new 2.6.17
+>   kernel, Xorg 7.1 and the upstart init system.
+>
+> The  http://xubuntu.org website has just relaunched and is now actively
 > maintained by the community.
 >
-> ## System requirements
+> System requirements  
+> \---------------------------------
 >
-> To run the liveCD at least 128M of RAM is recommended For installation 1.5G of
-> free hard drive space is needed besides swap space.
+> To run the liveCD at least 128M of RAM is recommended
+> For installation 1.5G of free hard drive space is needed besides swap space.
 >
-> ## Feedback
+> Feedback  
+> \------------------
 >
 > Get in touch with the user and developer community
 >
@@ -1110,10 +1154,5 @@ It reads:
 
 ## System requirements
 
-### Ubuntu
-
-### Edubuntu
-
-### Kubuntu
-
-### Xubuntu
+_We can't find any reliable information on this! Please help us by adding
+content to this section! See the [About](/about) page for more details._
