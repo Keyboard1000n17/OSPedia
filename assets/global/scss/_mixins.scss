@@ -65,6 +65,19 @@
     }
   }
 
+  blockquote {
+    @if color.channel($color, "lightness", $space: hsl)>50% {
+      border-left: solid color.change($color, $blackness: 50%) 5px;
+    }
+
+    @else {
+      border-left: solid color.change($color, $whiteness: 50%) 5px;
+    }
+
+    margin: 0;
+    padding-left: 18px;
+  }
+
   // Define grid-related styles here
   div.wrapper {
     position: absolute;
