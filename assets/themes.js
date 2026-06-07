@@ -26,33 +26,31 @@ function changeAttributes() {
           window.theme === "light"
             ? "/global/OSPedia-logo.svg"
             : "/global/OSPedia-logo-dark.svg";
-        document.querySelector("body").dataset.pfTheme =
-          window.theme === "light" ? "light" : "dark";
         console.log(`attrs changed for ${el}! theme was ${window.theme}`);
         console.log(el);
       });
+    document.body.dataset.pfTheme = window.theme === "light" ? "light" : "dark";
   }
 
-  if (document.readyState === "loading")
+  if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", actuallyChangeAttributes);
-  else actuallyChangeAttributes();
+  } else actuallyChangeAttributes();
 }
 
-function setTheme(theme, maxAge = 0) {
+const mainStylesheet = document.querySelector("#setSs");
+const demoStylesheet = document.querySelector("#setDemoSs");
+const indexStylesheet = document.querySelector("#setIndexSs");
+
+function setTheme(theme) {
   window.theme = theme;
-  document.querySelector("#setSs").href = themes[theme].path.sitewide;
-  if (document.querySelector("#setDemoSs"))
-    document.querySelector("#setDemoSs").href = themes[theme].path.demos;
-  if (document.querySelector("#setIndexSs"))
-    document.querySelector("#setIndexSs").href = themes[theme].path.home;
-  document.cookie =
-    maxAge != 0
-      ? `theme=${theme};max-age=${maxAge};path=/;SameSite=Lax`
-      : `theme=${theme};path=/;SameSite=Lax`;
+  mainStylesheet.href = themes[theme].path.sitewide;
+  if (demoStylesheet) demoStylesheet.href = themes[theme].path.demos;
+  if (indexStylesheet) indexStylesheet.href = themes[theme].path.home;
+  sessionStorage.setItem("theme", theme);
   changeAttributes();
 }
 
-if (!document.cookie) {
+if (!sessionStorage.getItem("theme")) {
   const query = window.matchMedia("(prefers-color-scheme: light)");
   setTheme(query.matches ? "light" : "dark");
   query.addEventListener("change", (e) => {
@@ -61,17 +59,13 @@ if (!document.cookie) {
     setTheme(window.theme);
   });
 } else {
-  setTheme(document.cookie.split(";")[0].split("=")[1]);
+  setTheme(sessionStorage.getItem("theme"));
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   const themeToggle = document.querySelector(".dark-mode-toggle");
 
   themeToggle.addEventListener("click", () => {
-    setTheme(
-      !document.cookie || window.theme === "light" || !window.theme
-        ? "dark"
-        : "light",
-    );
+    setTheme(window.theme === "light" ? "dark" : "light");
   });
 });
