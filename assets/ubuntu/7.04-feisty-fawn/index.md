@@ -201,5 +201,109 @@ behavior is returned (until there are 5 consecutive switches again). The reason
 for this is to give the lazy behavior back to applications that use the FPU in
 bursts.
 
+##### Use `regparm` in x86-32
+
+This feature was also mostly irrelevant to users, and had been optional for some
+time. However, it became the default in 2.6.20. Since the beginning, the x86
+architecture had stored the function parameters in the stack. On the contrary,
+modern architectures (PowerPC, SPARC, etc) use registers, which are much faster
+because there is no need to do anything to bring the parameters back; the
+parameters are just there, in the register. The x86 world (including Linux)
+continued using stacks for parameter passing, for compatibility reasons with
+software, compilers, etc; they only added extensions to compilers to optionally
+tell the compiler to use registers for parameter passing in a given function
+(usually involving the `fastcall` keyword) for performance-critical paths.
+
+Thanks to a GCC extension, the Linux kernel uses the `-mregparm=3` compile
+option, which means that if a function uses 3 or less arguments, GCC will
+automatically use registers to pass its parameters. In the case of x86-64,
+however, using the registers has always been the default.
+
+##### New drivers
+
+A number of frivers were added to Linux, including these:
+
+- **Networking**:
+  - Driver for the Atmel MACB on-chip Ethernet module
+  - Tsi108/9 On Chip Ethernet device driver
+  - Netxen 1G/10G Ethernet driver
+
+- **Hwmon**
+  - New Winbond W83793 hardware monitoring driver
+  - New PC87427 hardware monitoring driver
+  - New AMS hardware monitoring driver
+
+- **I2C**
+  - New ARM Versatile/Realview bus driver
+  - New Atmel AT91 bus driver
+  - New Philips PNX bus driver
+
+- **Watchdog:**
+  - NS pc87413-wdt Watchdog driver
+  - MIPS RM9000 on-chip watchdog device driver
+
+- **Input**
+  - Add Philips UCB1400 touchscreen driver
+  - Add driver for keyboard on AAED-2000 development board (ARM)
+
+- **Graphics**: Fbdev driver for IBM GXT4500P videocards
+
+- **RTC**: rtc-omap driver
+
+##### Core changes
+
+The 2.6.20 also introduced multple changes to the core. Changes include:
+
+- Enhanced memory management, block layer, etc
+- Revamped work queue
+- Changes to the TTY (Teletypewriter: it is a console for commands)
+- Generic BUG implementation
+- Addition of an API for internal notification of bus eventa, initiialization of
+  the module and display of the drivers in `/sys/module/`
+- Addition of a new `sysrq` feature to show blocked tasks
+- Creation of CONFIG_SYSFS_DEPRECATED to provide backwards-compatible `sysfs`
+  tree layouts for older user-space tools to mitigate the effects of a major
+  `sysfs` reorganization.
+- Addition of a child reaper to clean up orphaned child processes to
+  `pid_namespace`
+- And a few more
+
 More information can be found in the
 [release notes](https://kernelnewbies.org/Linux_2_6_20#Short_overview_.28for_news_sites.2C_etc.29).
+
+#### GCC 4.1.2
+
+GCC, or the GNU Compiler Collection (formerly GNU C Compiler), is a collection
+of compilers by GNU for various languages such as C, C++, Objective-C, and more.
+
+This is the
+[list of problem reports (PRs)](https://gcc.gnu.org/bugzilla/buglist.cgi?bug_status=RESOLVED&resolution=FIXED&target_milestone=4.1.2)
+from GCC's bug tracking system that are known to be fixed in the 4.1.2 release.
+This list might not be complete, that is, it is possible that some PRs that have
+been fixed are not listed here.
+
+When generating code for a shared library, GCC now recognizes that global
+functions may be replaced when the program runs. Therefore, it is now more
+conservative in deducing information from the bodies of functions. For example,
+in this example:
+
+```
+void f() {}
+
+void g() {
+  try { f(); }
+  catch (...) {
+    cout << "Exception";
+  }
+}
+```
+
+G++ would previously have optimized away the catch clause, since it would have
+concluded that `f` cannot throw exceptions. Because users may replace `f` with
+another function in the main body of the program, this optimization is unsafe,
+and is no longer performed. If you wish G++ to continue to optimize as before,
+you must add a `throw()` clause to the declaration of `f` to make clear that it
+does not throw exceptions.
+
+The details of the GCC 4.1.2 update can be found on the
+[GNU GCC](https://gcc.gnu.org/gcc-4.1/changes.html#4.1.2) website.

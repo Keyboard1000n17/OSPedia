@@ -269,6 +269,14 @@
       a.subsubheadings {
         padding-left: calc(2 * $padding);
       }
+
+      a.subsubsubheadings {
+        padding-left: calc(3 * $padding);
+      }
+
+      a.subsubsubsubheadings {
+        padding-left: calc(4 * $padding);
+      }
     }
 
     @media (min-width: 769px) {
