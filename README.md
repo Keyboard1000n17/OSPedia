@@ -2,6 +2,9 @@
 	<img src="./assets/global/OSPedia-favicon.svg" width="210" alt="Logo"/><br/>
 </p>
 <h3 align="center">OSPedia</h3>
+<p align="center">
+  <img src="https://hackatime.hackclub.com/api/v1/badge/U092X590XUG/Keyboard1000n17/OSPedia">
+</p>
 OSPedia aims to be a website that brings out the histories of the notable operating systems of the past and present. It appreciates how far we've come with today's technology, how far we're going with tomorrow's technology, and how these systems helped tremendously.
 
 ## Operating systems
