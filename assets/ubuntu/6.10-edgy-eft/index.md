@@ -451,7 +451,7 @@ programs like the window manager, the compositor, and tools that the user may
 want to use, like a productivity suite or browser. KDE features a Windows-like
 interface by default, with a taskbar at the bottom and the "Application
 Launcher" that resembles the Windows start menu. However, it is customizable and
-can be made to look drastically customizable.
+can be made to look drastically different
 
 Kubuntu 6.10 came with KDE 3.5.5, which was mostly a bugfix release and did not
 introduce much. It has little significance and mostly removes some slight

@@ -16,7 +16,7 @@ settings and data, making it easier for users installing the system to
 immediately start using Ubuntu. The release also adds a wizard for automatic
 installation of multimedia codecs that do not ship with Ubuntu by default. Along
 with that, Feisty includes the ability to automatically join a network to share
-multimediaa and find printers using Avahi, among other things.
+multimedia and find printers using Avahi, among other things.
 
 ## Features
 
@@ -307,3 +307,158 @@ does not throw exceptions.
 
 The details of the GCC 4.1.2 update can be found on the
 [GNU GCC](https://gcc.gnu.org/gcc-4.1/changes.html#4.1.2) website.
+
+## Kubuntu 7.04
+
+Kubuntu 7.04 is the 4th major release of the Kubuntu flavor of the Ubuntu
+distribution of Linux. It features a new upgrade tool to make upgrades easier
+for users with existing installations, alongside KDE 3.5.6, which comes with
+speed improvements to the browser and translations in 65 languages. It also
+comes with K3b 1.0, a CD burning program that was popular at the time.
+
+### KDE 3.5.6
+
+KDE is an open-source graphical desktop environment composed of a bundle of
+programs like the window manager, the compositor, and tools that the user may
+want to use, like a productivity suite or browser. KDE features a Windows-like
+interface by default, with a taskbar at the bottom and the "Application
+Launcher" that resembles the Windows start menu. However, it is customizable and
+can be made to look drastically different.
+
+This release includes a number of bugfixes for KHTML, Kate, the kicker,
+ksysguard and lots of other applications. Significant features include
+additional support for compiz as a window manager with kicker, session
+management browser tabs for Akregator, templating for KMail messages, and new
+summary menus for Kontact making it easier to work with your appointments and
+to-do's. Translations continue as well, with Galician translations nearly
+doubling to 78%.
+
+The full list of changes can be found at
+[https://kde.org/announcements/changelogs/changelog3_5_5to3_5_6](https://kde.org/announcements/changelogs/changelog3_5_5to3_5_6).
+
+## Xubuntu 7.04
+
+Xubuntu 7.04 is the third release of the Xubuntu flavor of Ubuntu. It features
+the Xfce 4.4 desktop environment and more lightweight applications.
+
+### Xfce 4.4
+
+Xfce 4.4 was a major release of the Xfce desktop environment, and these were
+some additions to the release:
+
+- **Desktop icons**: Desktop icons were an often requested feature that was
+  finally added to the desktop manager `Xfdesktop` in Xfce 4.4.
+- **Thunar**: Thunar was the new file manager that replaced `Xffm`. It was
+  written from scratch to provide a light yet simple UI for users.
+- **MousePad**: MousePad was a new, extremely light text editor, starting in
+  less than one second. The reason for this was because it provided only the
+  basic functionality, like NotePad on Windows.
+- **Enhanced compositor**: The compositor was updated to support transparency,
+  shadows, and window frame transparency, among other things.
+- **Panel**: The `Xfce4.4-panel` was completely rewritten to support multiple
+  panels at once which could be configured using the new Panel Manager.
+- **Orage**: Orage was a time management application that replaced `Xfcalendar`.
+  It was compatible with other calendars as it used the `ical` calendar format
+  as opposed to Xfcalendar's custom `dbh` format.
+- **Terminal**: The terminal emulator was moved into the core desktop after
+  reaching maturity.
+- **Xfprint**: `Xfprint` is the printing management application. It saw several
+  improvements internally while the UI remained unchanged.
+- **Autostart**: The release implemented the autostart specification, which was
+  new at the time. In fact, it was the first desktop to do so, but other
+  desktops were quicker in their release cycles.
+- **Settings**: New options were added to the settings, such as the preferred
+  applications.
+
+A tour of the release can be found on
+[https://www.xfce.org/about/tour44](https://www.xfce.org/about/tour44).
+
+## Edubuntu 7.04
+
+help pls (https://github.com/Keyboard1000n17/OSPedia?tab=contributing-ov-file)
+
+## Release announcements
+
+In this release, the announcements for all flavors of Ubuntu were merged into
+one. The contents of it can be found here:
+
+> ```
+> The Ubuntu team is proud to announce version 7.04 of the Ubuntu family
+> of distributions.
+>
+> Ubuntu is a Linux distribution for your desktop or server, with a fast
+> and easy install, regular releases, a tight selection of excellent
+> software installed by default, an incredible variety of add-on
+> software available with a few clicks, and professional technical
+> support from Canonical Limited and hundreds of other companies around
+> the world.
+>
+> Ubuntu 7.04 is also the basis for new 7.04 releases of Kubuntu and Edubuntu:
+>
+>   Kubuntu announcement  http://www.kubuntu.org/announcements/7.04-release.php
+>   Edubuntu announcement http://www.edubuntu.org/news/7.04-release
+>
+> Ubuntu 7.04 will be supported for 18 months on both desktops and
+> servers. Note that 6.06 LTS is a long-term support release, and so
+> users requiring a longer support lifetime may choose to continue using
+> that version rather than upgrade to or install 7.04.
+>
+> Read more in the following press releases:
+>
+>   Ubuntu 7.04           http://www.ubuntu.com/news/ubuntu704
+>   Desktop edition       http://www.ubuntu.com/news/ubuntudesktop704
+>   Server edition        http://www.ubuntu.com/news/ubuntuserver704
+>   Ubuntu flavours       http://www.ubuntu.com/news/ubuntuflavours704
+>
+> To Get Ubuntu 7.04
+> ------------------
+>
+> To download Ubuntu 7.04, or obtain CDs, visit:
+>   http://www.ubuntu.com/getubuntu
+>
+> Users of Ubuntu 6.10 will be offered an automatic upgrade to 7.04 via
+> Update Manager.  As always, upgrades to the latest version of Ubuntu
+> are entirely free of charge.  For further information about upgrading,
+> see: http://www.ubuntu.com/getubuntu/upgrading
+>
+> We recommend that everyone, especially those upgrading an existing
+> Ubuntu system, read the release notes available at:
+>
+> http://www.ubuntu.com/getubuntu/releasenotes/704
+>
+> Find out what's new in this release with a graphical tour:
+>
+> http://www.ubuntu.com/getubuntu/releasenotes/704tour
+>
+> Helping Shape Ubuntu
+> --------------------
+>
+> If you would like to help shape Ubuntu, take a look at the list of
+> ways you can participate at
+>
+>   http://www.ubuntu.com/community/participate/
+>
+> If you have a question, or if you think you may have found a bug but
+> aren't sure, try asking on the #ubuntu channel on IRC.FreeNode.net,
+> on the Ubuntu Users mailing list, or on the Ubuntu forums:
+>
+>   http://lists.ubuntu.com/mailman/listinfo/ubuntu-users
+>   http://www.ubuntuforums.org/
+>
+> More Information
+> ----------------
+>
+> You can find out more about Ubuntu and about this release on our
+> website:
+>
+>   http://www.ubuntu.com/
+>
+> To sign up for future Ubuntu announcements, please subscribe to Ubuntu's
+> very low volume announcement list at:
+>
+>   http://lists.ubuntu.com/mailman/listinfo/ubuntu-announce
+> ```
+
+## System requirements
+
+help pls (https://github.com/Keyboard1000n17/OSPedia?tab=contributing-ov-file)
