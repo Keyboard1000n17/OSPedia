@@ -6,18 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ title }} - OSPedia</title>
   <link href="/pagefind/pagefind-component-ui.css" rel="stylesheet">
-  <link href="/global/stylesheets/fluent-ui-light.css" rel="stylesheet" id="setSs" />
+  <link href="/global/stylesheets/base.css" rel="stylesheet" id="setSs" />
 
   {% if tags and "demo-pages" in tags %}
-  <link rel="stylesheet" href="/global/stylesheets/demos-light.css" id="setDemoSs" />
-  {% elif tags and "homepages" in tags and page.url != "/" %}
-  <link rel="stylesheet" href="/global/stylesheets/homepage-styles.css" />
+  <link rel="stylesheet" href="/global/stylesheets/demos.css" id="setDemoSs" />
   {% elif page.url == "/" %}
-  <link rel="stylesheet" href="/global/stylesheets/index-page-styles-light.css" id="setIndexSs" />
+  <link rel="stylesheet" href="/global/stylesheets/index-page.css" id="setIndexSs" />
   {% endif %}
 
   <script src="/pagefind/pagefind-component-ui.js" type="module"></script>
-  <script src="/themes.js"></script>
+  <!-- <script src="/themes.js"></script> -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
