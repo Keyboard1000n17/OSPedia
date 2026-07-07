@@ -1,0 +1,26 @@
+[
+  {
+    "version": "27.0 beta 1",
+    "build": "26A5353q",
+    "release": "June 8, 2026",
+    "darwinVersion": "27.0.0 <p><small>xnu-13361.0.0.501.1~2</small><p> <p><small>Wed May 27 02:13:13 PDT 2026</small><p>",
+    "description": "The first beta release",
+    "class": "previous-release"
+  },
+  {
+    "version": "27.0 beta 2",
+    "build": "26A5368g",
+    "release": "June 22, 2026",
+    "darwinVersion": "27.0.0<p><small>xnu-13432.0.5.501.1~2</p></small><p><small>Mon Jun 15 22:59:39 PDT 2026</p></small>    ",
+    "description": "The second beta release",
+    "class": "previous-release"
+  },
+  {
+    "version": "27.0 beta 3",
+    "build": "26A5378j",
+    "release": "July 6, 2026",
+    "darwinVersion": "27.0.0<p><small>xnu-13432.0.50.501.3~1</p></small><p><small>Mon Jun 29 21:25:23 PDT 2026</p></small>    ",
+    "description": "The third beta release",
+    "class": "current-release"
+  }
+]
