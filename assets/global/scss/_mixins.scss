@@ -126,9 +126,9 @@
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 864px) {
     div.wrapper {
-      grid-template-columns: 1fr 864px 1fr;
+      grid-template-columns: 1fr 768px 1fr;
       grid-template-rows: 1fr;
 
       div.contents {
@@ -689,12 +689,12 @@ div#back-to-top {
       height: 100%;
       background-color: var(--text-color);
       opacity: 70%;
-      mask-image: url("/global/Images/carousel-fluent-ui.svg");
-      mask-size: 80% 80%;
+      mask-image: url("/global/images/carousel.svg");
+      mask-size: 50% 50%;
       mask-repeat: no-repeat;
       mask-position: center;
-      -webkit-mask-image: url("/global/Images/carousel-fluent-ui.svg");
-      -webkit-mask-size: 80% 80%;
+      -webkit-mask-image: url("/global/images/carousel.svg");
+      -webkit-mask-size: 50% 50%;
       -webkit-mask-repeat: no-repeat;
       -webkit-mask-position: center;
     }
@@ -704,11 +704,11 @@ div#back-to-top {
       height: 100%;
       background-color: var(--text-color);
       opacity: 70%;
-      mask-image: url("/global/Images/contents-fluent-ui.svg");
+      mask-image: url("/global/images/contents.svg");
       mask-size: 50% 50%;
       mask-repeat: no-repeat;
       mask-position: center;
-      -webkit-mask-image: url("/global/Images/contents-fluent-ui.svg");
+      -webkit-mask-image: url("/global/images/contents.svg");
       -webkit-mask-size: 50% 50%;
       -webkit-mask-repeat: no-repeat;
       -webkit-mask-position: center;
@@ -723,11 +723,11 @@ div#back-to-top {
       height: 100%;
       background-color: var(--text-color);
       opacity: 70%;
-      mask-image: url("/global/Images/did-you-know-fluent-ui.svg");
+      mask-image: url("/global/images/did-you-know.svg");
       mask-size: 50% 50%;
       mask-repeat: no-repeat;
       mask-position: center;
-      -webkit-mask-image: url("/global/Images/did-you-know-fluent-ui.svg");
+      -webkit-mask-image: url("/global/images/did-you-know.svg");
       -webkit-mask-size: 50% 50%;
       -webkit-mask-repeat: no-repeat;
       -webkit-mask-position: center;
@@ -738,11 +738,11 @@ div#back-to-top {
       height: 100%;
       background-color: var(--text-color);
       opacity: 70%;
-      mask-image: url("/global/Images/back-to-top-fluent-ui.svg");
+      mask-image: url("/global/images/back-to-top.svg");
       mask-size: 50% 50%;
       mask-repeat: no-repeat;
       mask-position: center;
-      -webkit-mask-image: url("/global/Images/back-to-top-fluent-ui.svg");
+      -webkit-mask-image: url("/global/images/back-to-top.svg");
       -webkit-mask-size: 50% 50%;
       -webkit-mask-repeat: no-repeat;
       -webkit-mask-position: center;
@@ -1147,7 +1147,7 @@ div#back-to-top {
     display: none;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 768px) {
     div.wrapper main {
       grid-column: 2 / span 1;
     }
