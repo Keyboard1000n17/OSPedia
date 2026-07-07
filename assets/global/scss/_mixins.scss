@@ -19,6 +19,7 @@
     --border-radius: 15px;
     --border: none;
     --backdrop-filter: blur(5px);
+    --logo: url("/global/OSPedia-logo.svg");
     --vh: 99dvh;
 
     @media (prefers-color-scheme: dark) {
@@ -27,6 +28,7 @@
       --text-color: white;
       --link-color: #1e99ff;
       --link-hover-color: #85c8ff;
+      --logo: url("/global/OSPedia-logo-dark.svg");
     }
   }
 
@@ -44,6 +46,12 @@
     border-left: solid var(--text-color) 5px;
     margin: 0;
     padding-left: 18px;
+  }
+
+  div.ospedia-logo {
+    background-image: var(--logo);
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: 769px) {
@@ -142,6 +150,7 @@
 // Article styles
 
 @mixin article() {
+
   main,
   div.contents,
   div.extras {
@@ -215,6 +224,7 @@
   }
 
   @media (min-width: 1440px) {
+
     main,
     div.contents,
     div.extras {
@@ -597,19 +607,25 @@ div#back-to-top {
     height: 5rem;
     list-style: none;
 
+    .ospedia-logo {
+      width: 8rem;
+      height: 70%;
+      background-size: auto 90%;
+    }
+
     ul {
       flex-wrap: nowrap;
       display: none;
     }
 
-    ul > li.nav {
+    ul>li.nav {
       list-style: none;
       margin-right: 20px;
       display: inline-block;
     }
 
-    ul > li.nav a,
-    ul > li.nav a:visited {
+    ul>li.nav a,
+    ul>li.nav a:visited {
       text-decoration: none;
       color: var(--link-color);
 
@@ -623,12 +639,12 @@ div#back-to-top {
     }
 
     // full logo
-    img:nth-child(1) {
+    div.ospedia-logo {
       display: none;
     }
 
     // icon
-    img:nth-child(2) {
+    img:nth-child(1) {
       display: block;
     }
 
@@ -637,7 +653,7 @@ div#back-to-top {
     }
   }
 
-  nav > * {
+  nav>* {
     padding: calc(2 / 3 * var(--padding));
   }
 
@@ -760,6 +776,7 @@ div#back-to-top {
       color: var(--text-color);
     }
   }
+
   img.hamburger-menu-icon {
     width: 2rem;
     height: 2rem;
@@ -812,10 +829,13 @@ div#back-to-top {
       text-decoration: none;
     }
 
-    img.hamburger-menu-logo {
+    div.hamburger-menu-logo {
       position: absolute;
       width: 90%;
+      height: 4rem;
       bottom: 2%;
+      background-position: center;
+      background-size: 100% auto;
     }
 
     &.show {
@@ -830,11 +850,11 @@ div#back-to-top {
 
     @media (min-width: 769px) {
       nav {
-        img:nth-child(1) {
+        div.ospedia-logo {
           display: block;
         }
 
-        img:nth-child(2) {
+        img:nth-child(1) {
           display: none;
         }
 
@@ -863,13 +883,10 @@ div#back-to-top {
 
 @mixin searchbar() {
   pagefind-input {
-    --pf-outline-focus: color.change(
-      var(--background-color),
-      $blue: 100,
-      $alpha: 1
-    );
+    --pf-outline-focus: var(--link-color);
     --pf-input-height: 100%;
     --pf-searchbox-max-width: 100%;
+    --pf-font: "Open Sans", sans-serif;
     height: 100% !important;
     width: 100%;
 
@@ -891,24 +908,25 @@ div#back-to-top {
   }
 
   div.pagefind-container {
-    --pf-skeleton: rgba(0, 0, 0, 0);
-    --pf-border-radius: #{var(--border-radius)};
+    --pf-skeleton: var(--background-color);
+    --pf-border-radius: var(--border-radius);
+    --pf-modal-backdrop: var(--background-color);
+    --pf-background: var(--background-color);
+    --pf-text: var(--text-color);
     padding: var(--padding);
     position: fixed;
     z-index: 2;
     height: auto;
+    max-width: 768px;
     max-height: 70vh;
     top: 6rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 80vw;
-    max-width: 768px;
     overflow: auto;
     pointer-events: none;
     @include scrollbars();
 
     &.active {
-      background-color: var(--background-color);
       backdrop-filter: var(--backdrop-filter);
       pointer-events: all;
       border-radius: var(--border-radius);
@@ -1017,9 +1035,8 @@ div#back-to-top {
     --padding: 15px;
     --link-color: #89b4fa;
     --link-hover-color: #74c7ec;
-    --border-radius: 15px;
-    --border: none;
     --backdrop-filter: none;
+    --logo: url("/global/OSPedia-logo-dark.svg");
   }
 }
 
@@ -1085,7 +1102,7 @@ div#back-to-top {
     border-radius: var(--border-radius) var(--border-radius) 0 0;
   }
 
-  div.home-os-cards > div.bottom {
+  div.home-os-cards>div.bottom {
     height: 20rem;
     margin: 1vh 1vw;
     padding: 1vh 2vw;
@@ -1113,11 +1130,12 @@ div#back-to-top {
     justify-content: center;
     align-items: center;
 
-    img {
+    div.ospedia-logo {
       width: 90%;
       align-self: center;
-      max-height: 40%;
-      left: 50%;
+      height: 8rem;
+      background-position: center;
+      background-size: auto 100%;
     }
   }
 
