@@ -3,7 +3,6 @@
 @use "sass:color";
 
 @mixin scrollbars {
-  scrollbar-width: thin;
   scrollbar-color: gray rgba(0, 0, 0, 0);
 }
 
@@ -666,14 +665,21 @@ div#back-to-top {
 
   div.bar {
     position: fixed;
-    bottom: 0;
+    bottom: calc(1 / 3 * var(--padding));
     background-color: var(--background-color);
     backdrop-filter: var(--backdrop-filter);
     height: 5rem;
-    width: 100%;
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+    grid-auto-columns: 5rem;
+    gap: var(--padding);
+    border-radius: var(--border-radius);
+    left: 50%;
+    transform: translateX(-50%);
+
+    div {
+      min-height: 0;
+    }
 
     a {
       display: flex;
@@ -683,11 +689,22 @@ div#back-to-top {
       width: 100%;
     }
 
-    img {
+    a img {
       max-width: 70%;
       height: 70%;
       object-fit: contain;
-      flex: 1;
+    }
+
+    div.carousel-button,
+    div.contents-button,
+    div.did-you-know-button,
+    div.back-to-top {
+      mask-size: 50% 50%;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      -webkit-mask-size: 50% 50%;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
     }
 
     div.carousel-button {
@@ -695,13 +712,7 @@ div#back-to-top {
       background-color: var(--text-color);
       opacity: 70%;
       mask-image: url("/global/images/carousel.svg");
-      mask-size: 50% 50%;
-      mask-repeat: no-repeat;
-      mask-position: center;
       -webkit-mask-image: url("/global/images/carousel.svg");
-      -webkit-mask-size: 50% 50%;
-      -webkit-mask-repeat: no-repeat;
-      -webkit-mask-position: center;
     }
 
     div.contents-button {
@@ -710,13 +721,7 @@ div#back-to-top {
       background-color: var(--text-color);
       opacity: 70%;
       mask-image: url("/global/images/contents.svg");
-      mask-size: 50% 50%;
-      mask-repeat: no-repeat;
-      mask-position: center;
       -webkit-mask-image: url("/global/images/contents.svg");
-      -webkit-mask-size: 50% 50%;
-      -webkit-mask-repeat: no-repeat;
-      -webkit-mask-position: center;
 
       @media (min-width: 769px) {
         display: none;
@@ -729,13 +734,7 @@ div#back-to-top {
       background-color: var(--text-color);
       opacity: 70%;
       mask-image: url("/global/images/did-you-know.svg");
-      mask-size: 50% 50%;
-      mask-repeat: no-repeat;
-      mask-position: center;
       -webkit-mask-image: url("/global/images/did-you-know.svg");
-      -webkit-mask-size: 50% 50%;
-      -webkit-mask-repeat: no-repeat;
-      -webkit-mask-position: center;
     }
 
     div.back-to-top {
@@ -744,13 +743,7 @@ div#back-to-top {
       background-color: var(--text-color);
       opacity: 70%;
       mask-image: url("/global/images/back-to-top.svg");
-      mask-size: 50% 50%;
-      mask-repeat: no-repeat;
-      mask-position: center;
       -webkit-mask-image: url("/global/images/back-to-top.svg");
-      -webkit-mask-size: 50% 50%;
-      -webkit-mask-repeat: no-repeat;
-      -webkit-mask-position: center;
     }
   }
 
@@ -843,15 +836,6 @@ div#back-to-top {
       padding: 20% 1vw;
       text-align: right;
       list-style: none;
-    }
-
-    div.hamburger-menu-logo {
-      position: absolute;
-      width: 90%;
-      height: 4rem;
-      bottom: 2%;
-      background-position: center;
-      background-size: 100% auto;
     }
 
     &.show {
