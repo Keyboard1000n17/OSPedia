@@ -13,6 +13,7 @@
     --doc-bg-color: rgba(255, 255, 255, 0.75);
     --background-color: rgba(255, 255, 255, 0.75);
     --text-color: black;
+    --subtext-color: #666;
     --padding: 15px;
     --link-color: #002dc9;
     --link-hover-color: #665cc9;
@@ -26,9 +27,14 @@
       --doc-bg-color: rgba(0, 0, 0, 0.75);
       --background-color: rgba(0, 0, 0, 0.75);
       --text-color: white;
+      --subtext-color: #aaa;
       --link-color: #1e99ff;
       --link-hover-color: #85c8ff;
       --logo: url("/global/OSPedia-logo-dark.svg");
+
+      img[src="/global/OSPedia-logo.svg"] {
+        content: url("/global/OSPedia-logo-dark.svg");
+      }
     }
   }
 
@@ -46,12 +52,6 @@
     border-left: solid var(--text-color) 5px;
     margin: 0;
     padding-left: 18px;
-  }
-
-  div.ospedia-logo {
-    background-image: var(--logo);
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   @media (min-width: 769px) {
@@ -104,7 +104,7 @@
 
   @media (min-width: 769px) {
     div.wrapper {
-      grid-template-columns: 3fr 10fr;
+      grid-template-columns: 2fr 6fr;
       grid-template-rows: 1fr;
       backdrop-filter: var(--backdrop-filter);
       height: 100dvh;
@@ -126,9 +126,9 @@
     }
   }
 
-  @media (min-width: 864px) {
+  @media (min-width: 1024px) {
     div.wrapper {
-      grid-template-columns: 1fr 768px 1fr;
+      grid-template-columns: 1fr 640px 1fr;
       grid-template-rows: 1fr;
 
       div.contents {
@@ -180,6 +180,11 @@
       scroll-margin-top: 5rem;
       padding-top: 1rem;
       border-top: solid 1px rgba($color: var(--text-color), $alpha: 0.5);
+    }
+
+    h2 img {
+      height: 1.5rem;
+      padding-right: 5px;
     }
   }
 
@@ -639,12 +644,12 @@ div#back-to-top {
     }
 
     // full logo
-    div.ospedia-logo {
+    img:nth-child(1) {
       display: none;
     }
 
     // icon
-    img:nth-child(1) {
+    img:nth-child(2) {
       display: block;
     }
 
@@ -773,21 +778,36 @@ div#back-to-top {
       font-size: 1rem;
       text-align: center;
       margin: 0;
-      color: var(--text-color);
+      color: var(--subtext-color);
     }
   }
 
-  img.hamburger-menu-icon {
-    width: 2rem;
-    height: 2rem;
+  button.hamburger-menu-icon {
+    width: auto;
+    height: 100%;
+    aspect-ratio: 1/1;
+    mask: url("/global/images/hamburger.svg") center/50% 50% no-repeat;
+    border: var(--border);
+    background-color: var(--text-color);
+
+    &:hover {
+      filter: invert(0.2);
+    }
   }
 
-  img.hamburger-menu-close {
+  button.hamburger-menu-close {
     position: absolute;
     top: 1.5rem;
     right: 1.25rem;
-    width: 24px;
-    height: 24px;
+    width: 2rem;
+    height: 2rem;
+    border: var(--border);
+    mask: url("/global/images/close.svg") center/100% 100% no-repeat;
+    background-color: var(--text-color);
+
+    &:hover {
+      filter: invert(0.2);
+    }
   }
 
   div.hamburger-menu {
@@ -825,10 +845,6 @@ div#back-to-top {
       list-style: none;
     }
 
-    a {
-      text-decoration: none;
-    }
-
     div.hamburger-menu-logo {
       position: absolute;
       width: 90%;
@@ -850,11 +866,11 @@ div#back-to-top {
 
     @media (min-width: 769px) {
       nav {
-        div.ospedia-logo {
+        img:nth-child(1) {
           display: block;
         }
 
-        img:nth-child(1) {
+        img:nth-child(2) {
           display: none;
         }
 
@@ -1032,6 +1048,7 @@ div#back-to-top {
     --doc-bg-color: rgb(30, 30, 46);
     --background-color: rgb(24, 24, 37);
     --text-color: #cdd6f4;
+    --subtext-color: #bac2de;
     --padding: 15px;
     --link-color: #89b4fa;
     --link-hover-color: #74c7ec;
@@ -1129,14 +1146,6 @@ div#back-to-top {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    div.ospedia-logo {
-      width: 90%;
-      align-self: center;
-      height: 8rem;
-      background-position: center;
-      background-size: auto 100%;
-    }
   }
 
   body {
