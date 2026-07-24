@@ -1,6 +1,6 @@
 ---
 title: Ubuntu 7.04 Feisty Fawn
-favicon: 7.10-feisty-fawn-icon.webp
+favicon: 7.04-feisty-fawn-icon.webp
 order: 60
 background_image: 7.04-feisty-fawn-wallpaper.webp
 ---

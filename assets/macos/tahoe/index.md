@@ -36,13 +36,18 @@ carousel_images:
     desc: The Tahoe beach at dawn, used as a part of the dynamic wallpapers.
   - path: /macos/tahoe/tahoe-beach-day-wallpaper.webp
     alt: Tahoe beach in daytime
-    desc: A picture of the scenic Tahoe beach, also part of the dynamic wallpapers.
+    desc:
+      A picture of the scenic Tahoe beach, also part of the dynamic wallpapers.
   - path: /macos/tahoe/tahoe-beach-dusk-wallpaper.webp
     alt: Tahoe beach at dusk
-    desc: The famous Tahoe beach in California at dusk, chosen by Apple to be one of the wallpapers for macOS Tahoe.
+    desc:
+      The famous Tahoe beach in California at dusk, chosen by Apple to be one of
+      the wallpapers for macOS Tahoe.
   - path: /macos/tahoe/tahoe-beach-night-wallpaper.webp
     alt: Nighttime Tahoe beach
-    desc: The night-time Tahoe beach, used as a wallpaper during the night if dynamic wallpapers are enabled.
+    desc:
+      The night-time Tahoe beach, used as a wallpaper during the night if
+      dynamic wallpapers are enabled.
 ---
 
 macOS Tahoe (version 26) is the twenty-second major release of Apple's macOS
@@ -51,6 +56,8 @@ on June 9, 2025, and its first developer beta was released the same day. It was
 released on September 15, 2025.
 
 +++
+
+macOS Tahoe will be succeeded by macOS 27 Golden Gate in late 2026.
 
 Tahoe is the final version of macOS that supports Macs with Intel processors;
 the 2020 iMac, the 2019 16-inch MacBook Pro, the 2020 4-port 13-inch MacBook
