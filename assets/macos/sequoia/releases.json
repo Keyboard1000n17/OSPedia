@@ -180,7 +180,7 @@
     "build": "24G720",
     "release": "May 11, 2026",
     "darwinVersion": "24.6.0<p><small>xnu-11417.140.69.710.16~1</small></p><p><small>Tue Apr 21 20:17:54 PDT 2026</small></p>",
-    "description": :"This update provides important security fixes and is recommended for all users.<p>Refer to Apple's webpage for information about the securiy content of this update:</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/127116\">About the security content of macOS Sequoia 15.7.7</a></p>",
+    "description": "This update provides important security fixes and is recommended for all users.<p>Refer to Apple's webpage for information about the securiy content of this update:</p><p><a class=\"external-links\" rel=\"nofollow\" href=\"https://support.apple.com/en-us/127116\">About the security content of macOS Sequoia 15.7.7</a></p>",
     "class": "current-release"
   }
 ]

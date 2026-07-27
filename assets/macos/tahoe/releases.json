@@ -101,7 +101,7 @@
     "release": "April 9, 2026",
     "darwinVersion": "—",
     "description": "Bug fixes",
-    "class": "current-release"
+    "class": "previous-release"
   },
   {
     "version": "26.5",
@@ -117,13 +117,21 @@
     "release": "June 1, 2026",
     "darwinVersion": "—",
     "description": "This update addresses an issue for enterprise users where Mac computers with an M5 chip could unexpectedly shut down when using certain content-filtering network extensions.",
+    "class": "previous-release"
+  },
+  {
+    "version": "26.5.2",
+    "build": "25F84",
+    "release": "June 29, 2026",
+    "darwinVersion": "25.5.0<p><small>xnu-12377.121.10~1</small></p><p><small>Tue Jun 9 22:26:22 PDT 2026</small></p>",
+    "description": "This update provides bug fixes and security updates for macOS.<p><a href=\"https://support.apple.com/en-us/127595\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS Tahoe 26.5.2</a></p>",
     "class": "current-release"
   },
   {
-    "version": "26.6 beta 1",
-    "build": "25G5028f",
+    "version": "26.6 beta 5",
+    "build": "25G5065a",
     "release": "May 26, 2026",
-    "darwinVersion": "—",
+    "darwinVersion": "25.6.0",
     "description": "—",
     "class": "beta-release"
   }

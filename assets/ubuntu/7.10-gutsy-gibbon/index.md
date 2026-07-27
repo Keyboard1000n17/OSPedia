@@ -1,6 +1,6 @@
 ---
 title: Ubuntu 7.10 Gutsy Gibbon
-favicon: 7.10-feisty-fawn-icon.webp
+favicon: 7.10-gutsy-gibbon-icon.webp
 order: 70
 background_image: 7.10-gutsy-gibbon-wallpaper.webp
 ---
@@ -215,6 +215,7 @@ distribution through the "Install free software only" option in the installer.
 ## Release announcement
 
 <!--prettier-ignore-start-->
+> ```
 > The Ubuntu team is proud to announce version 7.10 of the Ubuntu family of
 > distributions.
 > 
@@ -226,14 +227,14 @@ distribution through the "Install free software only" option in the installer.
 > Read more about the features of Ubuntu 7.10 in the following press
 > releases:
 > 
->   Ubuntu 7.10           [http://www.ubuntu.com/news/ubuntu710](https://web.archive.org/web/20071029004759/http://www.ubuntu.com/news/ubuntu-desktop710)
->   Desktop edition       [http://www.ubuntu.com/news/ubuntu-desktop710](https://web.archive.org/web/20071029004759/http://www.ubuntu.com/news/ubuntu-desktop710)
->   Server edition        [http://www.ubuntu.com/news/ubuntu-server710](https://web.archive.org/web/20071029004759/http://www.ubuntu.com/news/ubuntu-server710)
->   Ubuntu family         [http://www.ubuntu.com/news/ubuntu-family710](https://web.archive.org/web/20071029004759/http://www.ubuntu.com/news/ubuntu-family710)
+>   Ubuntu 7.10           http://www.ubuntu.com/news/ubuntu710  
+>   Desktop edition       http://www.ubuntu.com/news/ubuntu-desktop710  
+>   Server edition        http://www.ubuntu.com/news/ubuntu-server710  
+>   Ubuntu family         http://www.ubuntu.com/news/ubuntu-family710  
 > 
 > Professional technical support is available from Canonical Limited and
 > hundreds of other companies around the world.  For more information about
-> support, visit [http://www.ubuntu.com/support](https://web.archive.org/web/20071029004759/http://www.ubuntu.com/news/ubuntu-desktop710)
+> support, visit http://www.ubuntu.com/support
 > 
 > Ubuntu 7.10 will be supported for 18 months on both desktops and servers.
 > Users requiring a longer support lifetime on servers may choose to
@@ -243,30 +244,30 @@ distribution through the "Install free software only" option in the installer.
 > Ubuntu 7.10 is also the basis for new 7.10 releases of Kubuntu and
 > Edubuntu:
 > 
->   Kubuntu announcement [http://kubuntu.org/announcements/7.10-release.php](https://web.archive.org/web/20071029004759/http://kubuntu.org/announcements/7.10-release.php)
->   Edubuntu announcement [http://www.edubuntu.org/news/7.10-release](https://web.archive.org/web/20071020071029004759/http://www.edubuntu.org/news/7.10-release)
+>   Kubuntu announcement http://kubuntu.org/announcements/7.10-release.php
+>   Edubuntu announcement http://www.edubuntu.org/news/7.10-release
 > 
 > To Get Ubuntu 7.10
 > ------------------
 > 
 > To download Ubuntu 7.10, or obtain CDs, visit:
 > 
->   [http://www.ubuntu.com/getubuntu](https://web.archive.org/web/20071029004759/http://www.ubuntu.com/getubuntu)
+>   http://www.ubuntu.com/getubuntu
 > 
 > Users of Ubuntu 7.04 will be offered an automatic upgrade to 7.10 via
 > Update Manager.  As always, upgrades to the latest version of Ubuntu are
 > entirely free of charge.  For further information about upgrading, see
 > 
->   [http://www.ubuntu.com/getubuntu/upgrading](https://web.archive.org/web/20071029004759/http://www.ubuntu.com/getubuntu/upgrading)
+>   http://www.ubuntu.com/getubuntu/upgrading
 > 
 > We recommend that all users read the release notes, which document
 > caveats and workarounds for known issues.  They are available at:
 > 
->   [http://www.ubuntu.com/getubuntu/releasenotes/710](https://web.archive.org/web/20071029004759/http://www.ubuntu.com/getubuntu/releasenotes/710)
+>   http://www.ubuntu.com/getubuntu/releasenotes/710
 > 
 > Find out what's new in this release with a graphical tour:
 > 
->   [http://www.ubuntu.com/getubuntu/releasenotes/710tour](https://web.archive.org/web/20071029004759/http://www.ubuntu.com/getubuntu/releasenotes/710tour)
+>   http://www.ubuntu.com/getubuntu/releasenotes/710tour
 > 
 > If you have a question, or if you think you may have found a bug but
 > aren't sure, try asking on the #ubuntu IRC channel, on the Ubuntu Users
@@ -275,33 +276,33 @@ distribution through the "Install free software only" option in the installer.
 >   #ubuntu on irc.freenode.net
 >   http://www.ubuntuforums.org/
 >   http://lists.ubuntu.com/mailman/listinfo/ubuntu-users
-> 
 > Helping Shape Ubuntu
 > --------------------
 > 
 > If you would like to help shape Ubuntu, take a look at the list of ways
 > you can participate at
 > 
->   [http://www.ubuntu.com/community/participate/](https://web.archive.org/web/20071029004759/http://www.ubuntu.com/community/participate/)
+>   http://www.ubuntu.com/community/participate/
 > 
 > Developers should consider attending the upcoming Ubuntu Developer Summit
 > in Cambridge, Massachusetts (US) starting 29 October.  More information
 > is available at
 > 
->   [https://wiki.ubuntu.com/UDS-Boston](https://web.archive.org/web/20071029004759/http://wiki.ubuntu.com/UDS-Boston)
+>   https://wiki.ubuntu.com/UDS-Boston
 > 
 > More Information
 > ----------------
 > 
 > You can find out more about Ubuntu and about this release on our website:
 > 
->   [http://www.ubuntu.com/](https://web.archive.org/web/20071029004759/http://www.ubuntu.com/)
+>   http://www.ubuntu.com/
 > 
 > To sign up for future Ubuntu announcements, please subscribe to Ubuntu's
 > very low volume announcement list at:
 > 
->   [http://lists.ubuntu.com/mailman/listinfo/ubuntu-announce](https://web.archive.org/web/20071029004759/http://lists.ubuntu.com/mailman/listinfo/ubuntu-announce)
+>   http://lists.ubuntu.com/mailman/listinfo/ubuntu-announce
 > 
+> ```
 <!--prettier-ignore-end-->
 
 ## System requirements
