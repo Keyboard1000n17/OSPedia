@@ -42,6 +42,12 @@ included by default with GNOME 2.22.
 
 #### PulseAudio
 
+PulseAudio is a free and open source sound server for Unix and Unix-like
+systems, mainly Linux but also with ports to other platforms. Ubuntu 8.04
+included version 0.9.6 of the sound server.
+
+### Wubi installer
+
 ### Core
 
 #### Linux kernel <version>
