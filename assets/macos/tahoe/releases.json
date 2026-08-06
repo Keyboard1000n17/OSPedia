@@ -125,14 +125,14 @@
     "release": "June 29, 2026",
     "darwinVersion": "25.5.0<p><small>xnu-12377.121.10~1</small></p><p><small>Tue Jun 9 22:26:22 PDT 2026</small></p>",
     "description": "This update provides bug fixes and security updates for macOS.<p><a href=\"https://support.apple.com/en-us/127595\" rel=\"nofollow\" class=\"external-links\">About the security content of macOS Tahoe 26.5.2</a></p>",
-    "class": "current-release"
+    "class": "previous-release"
   },
   {
-    "version": "26.6 beta 5",
-    "build": "25G5065a",
-    "release": "May 26, 2026",
-    "darwinVersion": "25.6.0",
-    "description": "—",
-    "class": "beta-release"
+    "version": "26.6",
+    "build": "25G72",
+    "release": "July 27, 2026",
+    "darwinVersion": "25.6.0<p><small>xnu-12377.161.13~4</small></p><p><small>Sat Jul 11 15:27:02 PDT 2026</small></p>",
+    "description": "This update addresses bugs and security issues and also optimizes the Spotlight index in preparation for macOS 27.<p><a href=\"https://support.apple.com/en-us/128067\" class=\"external-links\" rel=\"nofollow\">About the security content of macOS Tahoe 26.6.</a></p> ",
+    "class": "current-release"
   }
 ]
