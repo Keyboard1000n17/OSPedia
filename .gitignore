@@ -12,3 +12,7 @@ _site/
 
 # macOS bullshit
 **/.DS_Store
+
+# lazygit
+lazygit
+lazygit.tar.gz
